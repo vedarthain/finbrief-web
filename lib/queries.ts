@@ -14,7 +14,10 @@ export interface ClusterEntity {
   company_name: string;
   price_at_publish: number;
   price_latest: number;
-  price_change_pct: number;
+  price_change_pct: number;        // since news broke
+  price_change_1w_pct: number | null;
+  price_change_1m_pct: number | null;
+  sector: string | null;
   direction: "up" | "down" | "flat";
 }
 
@@ -72,12 +75,15 @@ async function getStoriesForDate(
          FROM (
            SELECT DISTINCT ON (ce2.ticker)
              json_build_object(
-               'ticker',           ce2.ticker,
-               'company_name',     ce2.company_name,
-               'price_at_publish', ce2.price_at_publish,
-               'price_latest',     ce2.price_latest,
-               'price_change_pct', ce2.price_change_pct,
-               'direction',        ce2.direction
+               'ticker',              ce2.ticker,
+               'company_name',        ce2.company_name,
+               'price_at_publish',    ce2.price_at_publish,
+               'price_latest',        ce2.price_latest,
+               'price_change_pct',    ce2.price_change_pct,
+               'price_change_1w_pct', ce2.price_change_1w_pct,
+               'price_change_1m_pct', ce2.price_change_1m_pct,
+               'sector',              ce2.sector,
+               'direction',           ce2.direction
              ) AS e
            FROM cluster_entities ce2
            WHERE ce2.cluster_id = c.id
@@ -109,7 +115,7 @@ async function getStoriesForDate(
 }
 
 export async function getTopIndiaStories(
-  limit = 50,       // show full day's India coverage
+  limit = 500,      // show full day's India coverage — DB has 100s/day
   date?: string
 ): Promise<Cluster[]> {
   const d = date ?? new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
@@ -117,7 +123,7 @@ export async function getTopIndiaStories(
 }
 
 export async function getTopGlobalStories(
-  limit = 20,       // full day's global coverage
+  limit = 200,      // full day's global coverage
   date?: string
 ): Promise<Cluster[]> {
   const d = date ?? new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
@@ -179,8 +185,16 @@ export async function getPriceHistory(ticker: string): Promise<PriceHistory[]> {
 }
 
 // ── Market strip ─────────────────────────────────────────────────────────────
-const INDIA_STRIP  = ["^NSEI", "^BSESN", "^NSEBANK", "USDINR=X"];
-const GLOBAL_STRIP = ["^GSPC", "^IXIC", "^HSI", "^N225", "GC=F", "CL=F", "BZ=F"];
+const INDIA_STRIP  = [
+  "^NSEI", "^BSESN", "^NSEBANK", "^NSEMDCP50",
+  "^CNXIT", "^CNXAUTO", "^CNXFMCG", "^CNXPHARMA", "^CNXMETAL", "^CNXENERGY",
+  "USDINR=X",
+];
+const GLOBAL_STRIP = [
+  "^GSPC", "^IXIC", "^DJI",
+  "^HSI", "^N225", "^FTSE", "^GDAXI", "^STOXX50E",
+  "GC=F", "SI=F", "CL=F", "BZ=F", "DX-Y.NYB",
+];
 
 export async function getMarketStrip(type: "india" | "global"): Promise<Ticker[]> {
   const tickers = type === "india" ? INDIA_STRIP : GLOBAL_STRIP;
