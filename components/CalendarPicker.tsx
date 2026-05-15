@@ -74,14 +74,14 @@ export default function CalendarPicker({
       {/* Trigger button */}
       <button
         onClick={() => setOpen(!open)}
-        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[12px] font-semibold bg-white border border-gray-200 hover:border-gray-400 transition-colors"
+        className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[14px] sm:text-[13px] font-semibold bg-white border border-gray-200 hover:border-gray-400 transition-colors"
       >
         <svg className="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
             d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
         </svg>
         <span className="text-gray-900">{displayLabel}</span>
-        <span className="text-[10px] text-gray-400 tabular-nums">
+        <span className="text-[12px] text-gray-400 tabular-nums">
           {countMap.get(activeDate) ? `${countMap.get(activeDate)} stories` : ""}
         </span>
         <svg className={`w-3 h-3 text-gray-400 transition-transform ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ export default function CalendarPicker({
         <div className="hidden sm:inline-flex items-center gap-1.5 ml-2">
           <button
             onClick={() => navigate(todayIST)}
-            className={`px-2.5 py-1 rounded-full text-[11px] font-medium border transition-colors ${
+            className={`px-3 py-1.5 rounded-full text-[13px] font-medium border transition-colors ${
               isToday
                 ? "bg-gray-900 border-gray-900 text-white"
                 : "bg-white border-gray-200 text-gray-600 hover:border-gray-400"
@@ -104,7 +104,7 @@ export default function CalendarPicker({
           </button>
           <button
             onClick={() => navigate(yesterdayIST)}
-            className={`px-2.5 py-1 rounded-full text-[11px] font-medium border transition-colors ${
+            className={`px-3 py-1.5 rounded-full text-[13px] font-medium border transition-colors ${
               isYesterday
                 ? "bg-gray-900 border-gray-900 text-white"
                 : "bg-white border-gray-200 text-gray-600 hover:border-gray-400"
@@ -128,7 +128,7 @@ export default function CalendarPicker({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <span className="text-[13px] font-bold text-gray-900">{monthLabel}</span>
+            <span className="text-[14px] font-bold text-gray-900">{monthLabel}</span>
             <button
               onClick={() => setViewMonth(new Date(year, month + 1, 1))}
               className="w-7 h-7 inline-flex items-center justify-center rounded hover:bg-gray-100 transition-colors"
@@ -142,7 +142,7 @@ export default function CalendarPicker({
           {/* Day labels */}
           <div className="grid grid-cols-7 gap-1 mb-1">
             {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => (
-              <div key={i} className="text-center text-[10px] font-bold text-gray-400 py-1">{d}</div>
+              <div key={i} className="text-center text-[11px] font-bold text-gray-400 py-1">{d}</div>
             ))}
           </div>
 
@@ -160,7 +160,7 @@ export default function CalendarPicker({
                   key={i}
                   onClick={() => hasStories && navigate(ds)}
                   disabled={!hasStories}
-                  className={`relative h-9 rounded-md text-[12px] font-medium transition-colors ${
+                  className={`relative h-10 rounded-md text-[13px] font-medium transition-colors ${
                     isActive
                       ? "bg-gray-900 text-white"
                       : hasStories
@@ -178,7 +178,7 @@ export default function CalendarPicker({
             })}
           </div>
 
-          <div className="mt-3 pt-3 border-t border-gray-100 text-[10px] text-gray-400 flex items-center gap-2">
+          <div className="mt-3 pt-3 border-t border-gray-100 text-[11px] text-gray-400 flex items-center gap-2">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400" />
             <span>has stories</span>
             <span className="ml-auto">{days.length} days with coverage</span>

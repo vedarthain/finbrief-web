@@ -53,10 +53,10 @@ export default function MarketStrip({
     const chg   = Number(t.change_pct);
     const up = chg > 0, dn = chg < 0;
     return (
-      <div className="shrink-0 flex items-baseline gap-1.5 px-3 py-1 rounded-md bg-gray-50 border border-gray-200 mx-1">
-        <span className="text-[11px] text-gray-500 font-medium">{LABELS[t.ticker] ?? t.ticker}</span>
-        <span className="text-[13px] font-mono font-bold text-gray-900 tabular-nums">{fmt(price, t.ticker)}</span>
-        <span className={`text-[11px] font-mono font-bold tabular-nums ${up ? "text-emerald-600" : dn ? "text-red-500" : "text-gray-400"}`}>
+      <div className="shrink-0 flex items-baseline gap-2 px-3 py-1.5 rounded-md bg-gray-50 border border-gray-200 mx-1">
+        <span className="text-[13px] text-gray-500 font-medium">{LABELS[t.ticker] ?? t.ticker}</span>
+        <span className="text-[14px] font-mono font-bold text-gray-900 tabular-nums">{fmt(price, t.ticker)}</span>
+        <span className={`text-[13px] font-mono font-bold tabular-nums ${up ? "text-emerald-600" : dn ? "text-red-500" : "text-gray-400"}`}>
           {up ? "▲" : dn ? "▼" : "–"}{Math.abs(chg).toFixed(2)}%
         </span>
       </div>
@@ -66,7 +66,7 @@ export default function MarketStrip({
   return (
     <div className="bg-white border-b border-gray-200 px-4 py-2 shadow-sm overflow-hidden">
       <div className="mx-auto max-w-7xl flex items-center gap-3">
-        <span className="shrink-0 text-[10px] font-black tracking-[0.18em] text-gray-400 uppercase">
+        <span className="shrink-0 text-[12px] font-black tracking-[0.18em] text-gray-400 uppercase">
           {label}
         </span>
         <div className="w-px h-4 bg-gray-200 shrink-0" />

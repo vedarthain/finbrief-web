@@ -107,14 +107,14 @@ export default function StoriesPanel({
               <button
                 key={tab.id}
                 onClick={() => { setActiveCat(tab.id); setActiveGroup(null); setExpandedId(null); }}
-                className={`shrink-0 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[12px] font-semibold border transition-all duration-150 ${
+                className={`shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-[14px] sm:text-[13px] font-semibold border transition-all duration-150 ${
                   active
                     ? "bg-gray-900 border-gray-900 text-white shadow-sm"
-                    : "bg-white border-gray-200 text-gray-600 hover:border-gray-400 hover:text-gray-900"
+                    : "bg-white border-gray-200 text-gray-700 hover:border-gray-400 hover:text-gray-900"
                 }`}
               >
                 {tab.label}
-                <span className={`text-[10px] font-bold tabular-nums ${active ? "text-white/60" : "text-gray-400"}`}>
+                <span className={`text-[12px] sm:text-[11px] font-bold tabular-nums ${active ? "text-white/60" : "text-gray-400"}`}>
                   {count}
                 </span>
               </button>
@@ -124,15 +124,15 @@ export default function StoriesPanel({
 
         {activeCat === "companies" && (
           <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-hide">
-            <span className="shrink-0 text-[10px] font-black tracking-[0.15em] text-gray-400 uppercase mr-1">
+            <span className="shrink-0 text-[11px] font-black tracking-[0.15em] text-gray-400 uppercase mr-1">
               Group
             </span>
             <button
               onClick={() => setActiveGroup(null)}
-              className={`shrink-0 px-2.5 py-0.5 rounded-full text-[11px] font-medium border transition-colors ${
+              className={`shrink-0 px-3 py-1 rounded-full text-[13px] sm:text-[12px] font-medium border transition-colors ${
                 activeGroup === null
                   ? "bg-gray-900 border-gray-900 text-white"
-                  : "bg-white border-gray-200 text-gray-500 hover:text-gray-900"
+                  : "bg-white border-gray-200 text-gray-600 hover:text-gray-900"
               }`}
             >
               All
@@ -145,7 +145,7 @@ export default function StoriesPanel({
                 <button
                   key={group}
                   onClick={() => setActiveGroup(active ? null : group)}
-                  className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-[11px] font-medium border transition-colors ${
+                  className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[13px] sm:text-[12px] font-medium border transition-colors ${
                     active
                       ? "bg-gray-900 border-gray-900 text-white"
                       : "bg-white border-gray-200 text-gray-500 hover:text-gray-900"
@@ -153,7 +153,7 @@ export default function StoriesPanel({
                 >
                   <span>{GROUP_EMOJI[group]}</span>
                   <span>{group}</span>
-                  <span className={`text-[9px] font-bold tabular-nums ${active ? "text-white/60" : "text-gray-400"}`}>{n}</span>
+                  <span className={`text-[11px] font-bold tabular-nums ${active ? "text-white/60" : "text-gray-400"}`}>{n}</span>
                 </button>
               );
             })}
@@ -163,10 +163,10 @@ export default function StoriesPanel({
 
       {filtered.length === 0 ? (
         <div className="rounded-xl border border-dashed border-gray-200 bg-white py-12 text-center">
-          <p className="text-[13px] text-gray-400">No stories match these filters.</p>
+          <p className="text-[14px] text-gray-400">No stories match these filters.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="rounded-xl bg-white border border-gray-200 overflow-hidden divide-y divide-gray-100">
             {colA.map((s) => (
               <StoryRow key={s.id} story={s} sparklines={sparklines}
@@ -207,26 +207,26 @@ function StoryRow({
     <div>
       <button
         onClick={onToggle}
-        className={`group w-full text-left px-3 py-2 transition-colors flex items-start gap-2 ${
-          expanded ? "bg-amber-50/40" : "hover:bg-gray-50"
+        className={`group w-full text-left px-4 py-3 sm:py-2.5 transition-colors flex items-start gap-2.5 ${
+          expanded ? "bg-amber-50/40" : "hover:bg-gray-50 active:bg-gray-100"
         }`}
       >
-        <span className={`mt-1.5 shrink-0 w-2 h-2 rounded-full ${CAT_COLOR[story.category] ?? "bg-gray-300"}`} />
+        <span className={`mt-2 shrink-0 w-2.5 h-2.5 rounded-full ${CAT_COLOR[story.category] ?? "bg-gray-300"}`} />
         <div className="flex-1 min-w-0">
           <div className="flex items-start gap-2">
-            <h3 className={`flex-1 text-[14px] font-semibold leading-snug tracking-tight transition-colors ${
+            <h3 className={`flex-1 text-[16px] sm:text-[15px] font-semibold leading-snug tracking-tight transition-colors ${
               expanded ? "text-blue-700" : "text-gray-900 group-hover:text-blue-700"
             }`}>
               {story.headline}
             </h3>
-            <span className="shrink-0 text-[10.5px] text-gray-400 font-medium tabular-nums whitespace-nowrap pt-0.5">
+            <span className="shrink-0 text-[12px] sm:text-[11px] text-gray-400 font-medium tabular-nums whitespace-nowrap pt-1">
               {timeStr(story.published_at)} · {timeAgo(story.published_at)}
             </span>
           </div>
 
           {lead && (
-            <div className="flex items-center gap-1.5 flex-wrap mt-1">
-              <span className={`inline-flex items-center gap-1 text-[10px] font-mono font-semibold px-1.5 py-0.5 rounded ${
+            <div className="flex items-center gap-2 flex-wrap mt-1.5">
+              <span className={`inline-flex items-center gap-1.5 text-[12px] sm:text-[11px] font-mono font-semibold px-2 py-0.5 rounded ${
                 sup ? "bg-emerald-50 text-emerald-700"
                     : sdn ? "bg-red-50 text-red-600"
                           : "bg-gray-50 text-gray-500"
@@ -250,31 +250,31 @@ function StoryRow({
                 )}
               </span>
               {story.entities.length > 1 && (
-                <span className="text-[10px] text-gray-400 font-medium">+{story.entities.length - 1}</span>
+                <span className="text-[12px] sm:text-[11px] text-gray-400 font-medium">+{story.entities.length - 1}</span>
               )}
             </div>
           )}
         </div>
-        <svg className={`shrink-0 w-3.5 h-3.5 text-gray-300 mt-1 transition-transform ${expanded ? "rotate-90" : ""}`}
+        <svg className={`shrink-0 w-4 h-4 text-gray-300 mt-1 transition-transform ${expanded ? "rotate-90" : ""}`}
              fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
       {expanded && (
-        <div className="px-4 pb-3 pt-1 bg-amber-50/20 border-t border-amber-100">
-          <p className="text-[13px] text-gray-700 leading-relaxed mb-3">{story.summary}</p>
+        <div className="px-4 pb-4 pt-2 bg-amber-50/20 border-t border-amber-100">
+          <p className="text-[15px] sm:text-[14px] text-gray-700 leading-relaxed mb-4">{story.summary}</p>
 
           {story.entities.length > 0 && (
-            <div className="space-y-1.5 mb-3">
+            <div className="space-y-2 mb-4">
               {story.entities.map((e) => {
                 const sn = Number(e.price_change_pct ?? 0);
                 const u = e.direction === "up", d = e.direction === "down";
                 return (
-                  <div key={e.ticker} className="flex items-center gap-2 text-[11.5px]">
+                  <div key={e.ticker} className="flex items-center gap-2 text-[13px] sm:text-[12px] flex-wrap">
                     <span className="font-bold text-gray-800 min-w-[120px]">{e.company_name}</span>
                     {e.sector && !NON_COMPANY.has(e.sector) && (
-                      <span className="text-[9px] font-medium text-gray-500 bg-white border border-gray-200 px-1.5 py-0.5 rounded">
+                      <span className="text-[11px] font-medium text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">
                         {e.sector}
                       </span>
                     )}
@@ -323,10 +323,10 @@ function StoryRow({
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-1 text-[10.5px] text-gray-500 hover:text-blue-600 transition-colors"
+                  className="inline-flex items-center gap-1 text-[12px] text-gray-500 hover:text-blue-600 transition-colors"
                 >
                   {s.source.replace(/_/g, " ")}
-                  <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </a>

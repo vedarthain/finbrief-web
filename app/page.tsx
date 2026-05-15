@@ -68,19 +68,19 @@ export default async function HomePage({
               <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center shadow-sm">
                 <span className="text-white text-[11px] font-black tracking-tight">FB</span>
               </div>
-              <span className="text-[18px] font-black tracking-tight text-gray-900">
+              <span className="text-[20px] font-black tracking-tight text-gray-900">
                 Fin<span className="text-amber-500">Brief</span>
               </span>
             </div>
             <div className="hidden md:block w-px h-5 bg-gray-200" />
-            <span className="hidden md:block text-[12px] text-gray-400 font-medium">
+            <span className="hidden md:block text-[13px] text-gray-400 font-medium">
               Financial Intelligence
             </span>
           </div>
 
           <div className="flex items-center gap-3">
-            <span className="text-[12px] text-gray-400 hidden sm:block">{istTime} IST</span>
-            <span className={`inline-flex items-center gap-1.5 text-[12px] font-semibold px-3 py-1.5 rounded-full border ${
+            <span className="text-[13px] text-gray-400 hidden sm:block">{istTime} IST</span>
+            <span className={`inline-flex items-center gap-1.5 text-[13px] font-semibold px-3 py-1.5 rounded-full border ${
               status.live
                 ? "bg-emerald-50 border-emerald-200 text-emerald-700"
                 : "bg-gray-50 border-gray-200 text-gray-500"
@@ -102,7 +102,7 @@ export default async function HomePage({
         {/* Top bar: country + story count + calendar */}
         <div className="flex items-center gap-3 mb-4 flex-wrap">
           <CountryToggle region={region} activeDate={activeDate} />
-          <span className="text-[12px] text-gray-500 font-medium">
+          <span className="text-[14px] text-gray-500 font-medium">
             {stories.length} stories
           </span>
           <div className="ml-auto">
@@ -113,7 +113,7 @@ export default async function HomePage({
         {stories.length === 0 ? (
           <div className="rounded-xl border border-dashed border-gray-200 bg-white py-16 text-center shadow-sm">
             <p className="text-3xl mb-3">📰</p>
-            <p className="text-[14px] text-gray-400">
+            <p className="text-[15px] text-gray-400">
               {activeDate === todayIST
                 ? "No stories yet — pipeline runs every 15 min."
                 : `No ${region === "global" ? "global" : "India"} stories on ${activeDate}.`}
@@ -134,11 +134,11 @@ export default async function HomePage({
             <div className="w-5 h-5 rounded bg-gray-900 flex items-center justify-center">
               <span className="text-white text-[8px] font-black">FB</span>
             </div>
-            <span className="text-[12px] text-gray-400 font-medium">
+            <span className="text-[13px] text-gray-400 font-medium">
               FinBrief · Prices delayed · Not investment advice
             </span>
           </div>
-          <span className="text-[12px] text-gray-300">
+          <span className="text-[13px] text-gray-300">
             Sources: ET · Livemint · BusinessLine · NDTV Profit · CNBC · FT · MarketWatch
           </span>
         </div>
