@@ -1,0 +1,198 @@
+{
+  "edition": "Mumbai",
+  "paper_date": "2026-08-31",
+  "stories": [
+    {
+      "section": "Front Page",
+      "page_number": 1,
+      "headline": "Big investment treaties may include qualified MFN rule",
+      "summary": "A Cabinet note on India's bilateral investment treaty revamp doubles post-deal investor protection to 10 years and proposes a qualified most-favoured-nation framework — an attempt to balance demands from the US and EU for broader treatment against India's push to close loopholes like third-party litigation funding."
+    },
+    {
+      "section": "Front Page",
+      "page_number": 1,
+      "headline": "Tax cuts fuel the drive; costlier oil can't brake it",
+      "summary": "The GST rate cut rolled out last fall keeps auto sales buoyant even as manufacturers pass on higher input costs. Passenger vehicle sales grew 16.8% y-o-y in the January-March quarter and two-wheelers 20.98%; EV penetration keeps climbing and E2W sales have already surpassed 2025's full-year record in just eight months."
+    },
+    {
+      "section": "Front Page",
+      "page_number": 1,
+      "headline": "Dy MD Bharucha among two for HDFC CEO post",
+      "summary": "HDFC Bank is likely to name deputy managing director Kaizad Bharucha, a long-serving executive overseeing retail and wholesale businesses, as one of two internal options for CEO, alongside an external search, as incumbent Sashidhar Jagdishan retires at the end of his second term in October."
+    },
+    {
+      "section": "Front Page",
+      "page_number": 1,
+      "headline": "After Byju's fiasco, edtech finds a new growth model",
+      "summary": "The edtech sector is recovering from the funding-led boom and bust of the Byju's era with a leaner playbook focused on profitability over enrolments. PhysicsWallah's net loss narrowed 90% to ₹24 crore in FY26 on revenue growth of 35%; upGrad's loss fell 52% to ₹130 crore."
+    },
+    {
+      "section": "Front Page",
+      "page_number": 1,
+      "headline": "'I own it, you run it': Whirlpool tries new way to run an MNC",
+      "summary": "Whirlpool has cut its stake in the Indian subsidiary to around 40%, given local management the authority to run the business, and asked key executives — including the MD and CFO — to invest their own money in the company, as Whirlpool India's market cap has fallen nearly 60% in two years."
+    },
+    {
+      "section": "Front Page",
+      "page_number": 1,
+      "headline": "India, Uzbekistan set $5-bn trade target by 2030",
+      "summary": "PM Modi and President Mirziyoyev elevated ties to a comprehensive strategic partnership and agreed a framework for long-term uranium supply from Uzbekistan to India's civil-nuclear programme."
+    },
+    {
+      "section": "Economy",
+      "page_number": 2,
+      "headline": "Investments spur industrial activity as demand falters",
+      "summary": "IIP grew 6.3% in the first four months of FY27, up from 4% a year ago, driven by capital goods output (+15.4%) and infrastructure/construction goods, even as consumer non-durables growth stayed weak — a sign the recovery is investment-led rather than demand-led."
+    },
+    {
+      "section": "Economy",
+      "page_number": 2,
+      "headline": "AI boom puts Jamnagar, Thane under water stress",
+      "summary": "India's Jamnagar and Thane are among the world's most exposed locations to data-centre-driven water stress as AI infrastructure expansion sharpens cooling-water demand; the two regions could together account for 34% of global direct data-centre water use by 2030, per Rystad Energy."
+    },
+    {
+      "section": "Economy",
+      "page_number": 3,
+      "headline": "On track to cut debt to 50% of GDP by 2030: FM",
+      "summary": "Finance Minister Nirmala Sitharaman said the government remains committed to bringing India's public debt down to 50% of GDP by 2030, adding that a fertiliser shortage was avoided by keeping markets informed of India's supply requirements."
+    },
+    {
+      "section": "Economy",
+      "page_number": 2,
+      "headline": "Total overhaul of quality controls needed for doing business: Experts",
+      "summary": "Industry wants a comprehensive review of Quality Control Orders rather than piecemeal changes. QCOs surged from 88 in 2019 to a peak of 790 before easing to about 600; 72% of Japanese manufacturers in India report BIS-related operational impact, per a JETRO survey."
+    },
+    {
+      "section": "Companies",
+      "page_number": 4,
+      "headline": "Vi faces tariff dilemma as Jio, Airtel drive up Arpu",
+      "summary": "Vodafone Idea must weigh a steep tariff hike against the risk to its still-fragile subscriber recovery, as Jio and Airtel push customers toward premium plans. Vi's mobile ARPU rose to ₹195 in Q1FY27 but trails Jio's ₹190 and Airtel's ₹264."
+    },
+    {
+      "section": "Companies",
+      "page_number": 4,
+      "headline": "Chandra says borrowers to settle ₹4,262-cr claims",
+      "summary": "Zee Group founder Subhash Chandra issued a fresh clarification on his personal insolvency proceedings, saying borrowers linked to his personal guarantees have assured him they will settle the remaining ₹4,262 crore claimed by lenders, subject to reconciliation."
+    },
+    {
+      "section": "Companies",
+      "page_number": 4,
+      "headline": "E2W sales hit new high, surpass 2025 record in just eight months",
+      "summary": "India's electric two-wheeler registrations between January and August surpassed the full-year 2025 tally, hitting 1.35 million and setting a new annual record. TVS, Bajaj Auto and Ather Energy lead; Ola Electric is the only major laggard."
+    },
+    {
+      "section": "Companies",
+      "page_number": 4,
+      "headline": "CNH to invest ₹2,000 crore, double its tractor capacity",
+      "summary": "CNH India plans to invest ₹2,000 crore through 2030 and double its tractor manufacturing capacity to 140,000 units, betting on India as a global hub for utility, light and compact tractors backed by its manufacturing and R&D capabilities."
+    },
+    {
+      "section": "Companies",
+      "page_number": 4,
+      "headline": "Rural resilience, urban catch-up: FMCG, durables hold up despite volatility",
+      "summary": "Demand for everyday goods and consumer durables held up across 8 million retail outlets despite West Asia conflict pushing up crude-linked packaging and input costs. FMCG value growth rose to 6.8% in April-June; AC sales surged 20-25% y-o-y on heatwave demand."
+    },
+    {
+      "section": "Markets",
+      "page_number": 6,
+      "headline": "Scale achieved, promise unfinished",
+      "summary": "As Sashidhar Jagdishan prepares to leave HDFC Bank on October 26, he leaves behind a balance sheet that expanded 77% since FY23 to ₹43.64 lakh crore in FY26 — but also slower growth, weaker stock performance, and governance controversies that clouded his final years."
+    },
+    {
+      "section": "Markets",
+      "page_number": 6,
+      "headline": "Passive funds find favour with HNIs",
+      "summary": "Passive investing is fast becoming a favourite of high-net-worth individuals seeking predictable portfolio returns. The share of HNI money in passive assets nearly tripled in five years, from 6.6% in March 2021 to 19.9% in March 2026, per AMFI and CRISIL data."
+    },
+    {
+      "section": "Markets",
+      "page_number": 6,
+      "headline": "Money that crosses the border & why the taxman is counting it",
+      "summary": "The income tax department has launched a nationwide verification exercise into suspicious outward remittances estimated to exceed ₹30,000 crore over three years, covering 394 entities including 117 based in land-border states and 36 professionals under investigation."
+    },
+    {
+      "section": "Personal Finance",
+      "page_number": 7,
+      "headline": "Stagger bets in top-rated bonds for steady cash flow",
+      "summary": "With equity returns flat, corporate bonds are offering yields of 8-10% for AA-rated issuers and 11-14% for BBB-rated ones. Advisers recommend laddering bets across maturities and favouring higher-rated issuers over yield-chasing in mid-tier credits."
+    },
+    {
+      "section": "Personal Finance",
+      "page_number": 7,
+      "headline": "UG at home, PG abroad: how Tier-2 is shaping India's foreign education pipeline",
+      "summary": "Ambitious students are increasingly completing undergraduate degrees domestically before heading overseas for postgraduate specialisation. Students from Tier-2 and Tier-3 cities now account for 79% of India's international student loans, per Prodigy Finance data."
+    },
+    {
+      "section": "Opinion",
+      "page_number": 8,
+      "headline": "Succession by scramble",
+      "summary": "Editorial: Sashidhar Jagdishan's decision not to seek a third term at HDFC Bank is a graceful exit, but the board's failure to plan for succession is not — leaving an interim chairman and an unfinished search just as the CEO's term ends."
+    },
+    {
+      "section": "Opinion",
+      "page_number": 8,
+      "headline": "Food vs fuel: Time to recalibrate",
+      "summary": "Sugar prices climbed nearly 44% between July 24 and August 24 as a tightening supply squeeze collided with festival-season demand. ICRIER economists Ashok Gulati and Tanmoy Adhikari argue India's ethanol-blending programme needs a rethink to stop diverting sugar feedstock and pressuring food prices."
+    },
+    {
+      "section": "BrandWagon",
+      "page_number": 9,
+      "headline": "Changing the game",
+      "summary": "Broadcasters face a growing squeeze as the cost of exclusive sports rights outstrips ad yields and subscription revenue. IPL's media rights business is now valued at $20 billion, per Houlihan Lokey, pushing networks to diversify into kabaddi and football for cheaper, more targeted audiences."
+    },
+    {
+      "section": "World",
+      "page_number": 11,
+      "headline": "White House exodus poses new challenge for Trump",
+      "summary": "President Trump has lost his chief spokesperson, top legal adviser, a key national security adviser and his liaison to Capitol Hill within the last month, entering a critical stretch of his second term with historically low approval ratings ahead of the November midterms."
+    },
+    {
+      "section": "World",
+      "page_number": 11,
+      "headline": "SpaceX launches NASA's Roman space telescope",
+      "summary": "NASA's roughly $4-billion Nancy Grace Roman Space Telescope launched aboard a SpaceX Falcon Heavy rocket, headed toward Lagrange Point 2 about a million miles from Earth on a five-year mission to probe dark energy, dark matter and exoplanets."
+    },
+    {
+      "section": "World",
+      "page_number": 14,
+      "headline": "Flood toll nears 800 as Nepal prepares for mass cremation",
+      "summary": "Nepal's government has decided to move toward mass cremation amid a dearth of mortuary facilities as the confirmed flood death toll reached 781, with about 2,500 still missing after an ice-rock avalanche near a glacial lake worsened flooding on August 26."
+    },
+    {
+      "section": "IPO & Legal Notices",
+      "page_number": 1,
+      "headline": "Purple Style Labs (Pernia's Pop-Up Shop) opens ₹6,800-mn IPO",
+      "summary": "Purple Style Labs Limited, operator of luxury omni-channel fashion platform Pernia's Pop-Up Shop, opened its main-board IPO on BSE and NSE with a price band of ₹546-575 per share, aggregating up to ₹6,800 million as a fresh issue. The company posted a loss of ₹2,853.99 million in FY26 and flagged negative cash flows, high indebtedness, and dependence on top designer brands and its Experience Centers as key risks. Bid/issue closes September 2, 2026."
+    },
+    {
+      "section": "IPO & Legal Notices",
+      "page_number": 13,
+      "headline": "Viceroy Hotels launches ₹10,583-lakh rights issue",
+      "summary": "Viceroy Hotels Limited will issue up to 92,03,000 rights equity shares at ₹115 per share (6 shares for every 7 held) aggregating up to ₹10,583.45 lakh. The issue opens September 3 and closes September 11, 2026; promoter M/s Loko Hospitality Private Limited backs the offer."
+    },
+    {
+      "section": "IPO & Legal Notices",
+      "page_number": 15,
+      "headline": "Ducon Infratechnologies opens ₹24,994-lakh rights issue",
+      "summary": "Ducon Infratechnologies Limited will issue up to 24,99,42,759 rights equity shares at face value of ₹1 each (10 shares for every 13 held), aggregating up to ₹24,994.28 lakh, to part-fund operations. The issue opens September 3 and closes September 10, 2026."
+    },
+    {
+      "section": "IPO & Legal Notices",
+      "page_number": 16,
+      "headline": "Augmont Enterprises IPO allotment finalised at ₹788/share",
+      "summary": "Augmont Enterprises Limited finalised its basis of allotment for a ₹8,250-million IPO (₹6,200 million fresh issue plus offer for sale) at an offer price of ₹788 per share — 157.6 times face value. The QIB portion was subscribed 237.94 times and retail 33.08 times; listing and trading of shares on BSE and NSE was expected on or about August 31, 2026."
+    },
+    {
+      "section": "IPO & Legal Notices",
+      "page_number": 12,
+      "headline": "Companies notify AGMs and e-voting windows for FY26",
+      "summary": "Several listed companies issued statutory AGM notices for the year: KEI Industries (Sept 28), Waaree Energies (Sept 24), Valiant Laboratories (Sept 28), Shanti Gold International (Sept 25), Mold-Tek Technologies (Sept 22), Tega Industries (Sept 24 — 50th AGM), Bharat Forge, NCDEX, DCM Limited (Sept 26), Kalamandir Jewellers and others, most offering remote e-voting through NSDL/CDSL ahead of their respective record dates."
+    },
+    {
+      "section": "IPO & Legal Notices",
+      "page_number": 22,
+      "headline": "Banks and ARCs issue SARFAESI auction and demand notices across Maharashtra",
+      "summary": "Bank of Baroda, Kotak Mahindra Bank, Muthoot Homefin, IKF Home Finance, Edelweiss Asset Reconstruction, Phoenix ARC, Authum Investment & Infrastructure, Hinduja Housing Finance and Tata Capital Housing Finance published possession, demand and e-auction notices under the SARFAESI Act for multiple mortgaged residential and commercial properties across Pune, Navi Mumbai, Raigad and other Maharashtra locations, with auction dates through September and October 2026."
+    }
+  ]
+}

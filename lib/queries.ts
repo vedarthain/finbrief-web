@@ -212,3 +212,45 @@ export async function getMarketStrip(type: "india" | "global"): Promise<Ticker[]
   );
   return rows.sort((a, b) => tickers.indexOf(a.ticker) - tickers.indexOf(b.ticker));
 }
+
+// ── Today's Paper — manually-extracted e-paper stories ───────────────────────
+// Isolated from clusters/cluster_entities/prices — no tickers, no source URLs.
+export interface PaperStory {
+  id: number;
+  edition: string;
+  paper_date: string;
+  section: string;
+  headline: string;
+  summary: string;
+  page_number: number | null;
+}
+
+export async function getPaperStories(date?: string, edition?: string): Promise<PaperStory[]> {
+  const d = date ?? new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+  const params: (string)[] = [d];
+  let where = `paper_date = $1`;
+  if (edition) {
+    params.push(edition);
+    where += ` AND edition = $2`;
+  }
+  const { rows } = await pool.query(
+    `
+    SELECT id, edition, paper_date::text, section, headline, summary, page_number
+    FROM paper_stories
+    WHERE ${where}
+    ORDER BY display_order ASC, page_number ASC NULLS LAST, id ASC
+    `,
+    params
+  );
+  return rows;
+}
+
+export async function getPaperDays(): Promise<{ date: string; edition: string }[]> {
+  const { rows } = await pool.query(`
+    SELECT DISTINCT paper_date::text AS date, edition
+    FROM paper_stories
+    ORDER BY date DESC
+    LIMIT 30
+  `);
+  return rows;
+}

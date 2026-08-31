@@ -11,6 +11,7 @@ import StoriesPanel from "@/components/StoriesPanel";
 import CalendarPicker from "@/components/CalendarPicker";
 import CountryToggle from "@/components/CountryToggle";
 import SectorLegend from "@/components/SectorLegend";
+import Link from "next/link";
 
 export const revalidate = 300;
 
@@ -79,6 +80,12 @@ export default async function HomePage({
           </div>
 
           <div className="flex items-center gap-3">
+            <Link
+              href="/paper"
+              className="text-[13px] font-semibold px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50 transition-colors"
+            >
+              🗞️ Today&apos;s Paper
+            </Link>
             <span className="text-[13px] text-gray-400 hidden sm:block">{istTime} IST</span>
             <span className={`inline-flex items-center gap-1.5 text-[13px] font-semibold px-3 py-1.5 rounded-full border ${
               status.live
