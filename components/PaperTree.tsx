@@ -41,7 +41,7 @@ export default function PaperTree({
   const rows = activeSection ? bySection[activeSection] ?? [] : [];
 
   return (
-    <div className="flex gap-5 items-start">
+    <div className="flex flex-col md:flex-row gap-5 items-start">
       {/* ── Left: section tree ─────────────────────────────────────────── */}
       <aside className="w-full md:w-64 shrink-0 md:sticky md:top-20">
         <nav className="rounded-lg bg-white border border-gray-200 overflow-hidden">
