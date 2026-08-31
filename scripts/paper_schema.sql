@@ -14,3 +14,11 @@ CREATE TABLE IF NOT EXISTS paper_stories (
 );
 
 CREATE INDEX IF NOT EXISTS idx_paper_stories_date ON paper_stories (paper_date, display_order);
+
+-- Per-day metadata not tied to a single story, e.g. "Stocks in Focus" picks.
+CREATE TABLE IF NOT EXISTS paper_meta (
+  edition          TEXT NOT NULL,
+  paper_date       DATE NOT NULL,
+  stocks_in_focus  JSONB NOT NULL DEFAULT '[]',  -- [{ "name": "...", "note": "..." }]
+  PRIMARY KEY (edition, paper_date)
+);

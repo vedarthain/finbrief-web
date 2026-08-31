@@ -1,7 +1,25 @@
 "use client";
 
 import { useState } from "react";
-import { PaperStory } from "@/lib/queries";
+import { PaperStory, StockInFocus } from "@/lib/queries";
+
+function renderSummary(text: string, dimClass: string) {
+  return text.split(/(\[\[[^\]]+\]\])/g).map((part, i) => {
+    const match = part.match(/^\[\[([^\]]+)\]\]$/);
+    if (match) {
+      return (
+        <span key={i} className="text-emerald-700 font-semibold">
+          {match[1]}
+        </span>
+      );
+    }
+    return (
+      <span key={i} className={dimClass}>
+        {part}
+      </span>
+    );
+  });
+}
 
 const SECTION_STYLE: Record<string, string> = {
   "Front Page":          "text-amber-700 bg-amber-50",
@@ -31,8 +49,10 @@ const SECTION_BAR: Record<string, string> = {
 
 export default function PaperTree({
   bySection,
+  stocksInFocus,
 }: {
   bySection: Record<string, PaperStory[]>;
+  stocksInFocus: StockInFocus[];
 }) {
   const sections = Object.keys(bySection);
   const [activeSection, setActiveSection] = useState<string | null>(sections[0] ?? null);
@@ -80,6 +100,21 @@ export default function PaperTree({
             </span>
           </div>
         )}
+        {activeSection === "IPO & Legal Notices" && stocksInFocus.length > 0 && (
+          <div className="px-4 py-3.5 bg-emerald-50/50">
+            <p className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wide mb-2">
+              Stocks in Focus Today
+            </p>
+            <ul className="space-y-1.5">
+              {stocksInFocus.map((s) => (
+                <li key={s.name} className="text-[14px] leading-snug">
+                  <span className="text-emerald-700 font-semibold">{s.name}</span>
+                  <span className="text-gray-500"> — {s.note}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         {rows.map((s) => {
           const open = expandedId === s.id;
           return (
@@ -94,8 +129,8 @@ export default function PaperTree({
                       {s.headline}
                     </h3>
                     {!open && (
-                      <p className="text-[14px] text-gray-500 leading-snug mt-1 line-clamp-1">
-                        {s.summary}
+                      <p className="text-[14px] leading-snug mt-1 line-clamp-1">
+                        {renderSummary(s.summary, "text-gray-400")}
                       </p>
                     )}
                   </div>
@@ -106,8 +141,8 @@ export default function PaperTree({
               </button>
               {open && (
                 <div className="px-4 pb-4 -mt-1">
-                  <p className="text-[15px] text-gray-700 leading-relaxed">
-                    {s.summary}
+                  <p className="text-[15px] leading-relaxed">
+                    {renderSummary(s.summary, "text-gray-500")}
                   </p>
                   {s.page_number != null && (
                     <p className="text-[12px] text-gray-400 mt-2">Page {s.page_number}</p>

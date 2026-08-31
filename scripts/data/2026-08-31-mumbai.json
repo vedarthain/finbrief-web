@@ -1,6 +1,16 @@
 {
   "edition": "Mumbai",
   "paper_date": "2026-08-31",
+  "stocksInFocus": [
+    { "name": "Augmont Enterprises", "note": "Lists on BSE/NSE today after IPO allotted at ₹788/share, 157.6x subscribed" },
+    { "name": "HDFC Bank", "note": "CEO succession in focus as Jagdishan's term ends; Kaizad Bharucha a leading internal contender" },
+    { "name": "Vodafone Idea", "note": "Weighing a tariff hike as ARPU (₹195) still trails Jio and Airtel" },
+    { "name": "Whirlpool India", "note": "Ownership restructuring after market cap fell ~60% in two years" },
+    { "name": "Sintex Industries", "note": "NCLAT upholds 'clean slate' principle in its insolvency case" },
+    { "name": "Purple Style Labs", "note": "₹6,800-mn IPO open, bidding closes September 2" },
+    { "name": "Viceroy Hotels", "note": "₹10,583-lakh rights issue opens September 3" },
+    { "name": "Ducon Infratechnologies", "note": "₹24,994-lakh rights issue opens September 3" }
+  ],
   "stories": [
     {
       "section": "Front Page",
@@ -18,19 +28,19 @@
       "section": "Front Page",
       "page_number": 1,
       "headline": "Dy MD Bharucha among two for HDFC CEO post",
-      "summary": "HDFC Bank likely to shortlist deputy MD Kaizad Bharucha as an internal CEO candidate alongside an external search, as Sashidhar Jagdishan retires in October."
+      "summary": "[[HDFC Bank]] likely to shortlist deputy MD Kaizad Bharucha as an internal CEO candidate alongside an external search, as Sashidhar Jagdishan retires in October."
     },
     {
       "section": "Front Page",
       "page_number": 1,
       "headline": "After Byju's fiasco, edtech finds a new growth model",
-      "summary": "Edtech pivots from funding-led growth to profitability. PhysicsWallah's net loss narrowed 90% to ₹24 cr in FY26 on 35% revenue growth; upGrad's loss fell 52% to ₹130 cr."
+      "summary": "Edtech pivots from funding-led growth to profitability. [[PhysicsWallah]]'s net loss narrowed 90% to ₹24 cr in FY26 on 35% revenue growth; [[upGrad]]'s loss fell 52% to ₹130 cr."
     },
     {
       "section": "Front Page",
       "page_number": 1,
       "headline": "'I own it, you run it': Whirlpool tries new way to run an MNC",
-      "summary": "Whirlpool cut its India stake to ~40%, handed local management control, and asked the MD and CFO to co-invest, after Whirlpool India's market cap fell nearly 60% in two years."
+      "summary": "[[Whirlpool]] cut its India stake to ~40%, handed local management control, and asked the MD and CFO to co-invest, after Whirlpool India's market cap fell nearly 60% in two years."
     },
     {
       "section": "Front Page",
@@ -48,7 +58,7 @@
       "section": "Economy",
       "page_number": 2,
       "headline": "AI boom puts Jamnagar, Thane under water stress",
-      "summary": "Jamnagar and Thane rank among the world's most exposed sites to data-centre water stress; the two could account for 34% of global direct data-centre water use by 2030, per Rystad Energy."
+      "summary": "Jamnagar and Thane rank among the world's most exposed sites to data-centre water stress; the two could account for 34% of global direct data-centre water use by 2030, per [[Rystad Energy]]."
     },
     {
       "section": "Economy",
@@ -60,7 +70,7 @@
       "section": "Economy",
       "page_number": 2,
       "headline": "Total overhaul of quality controls needed for doing business: Experts",
-      "summary": "Industry wants a full QCO review, not piecemeal fixes. QCOs rose from 88 (2019) to a peak of 790, now ~600; 72% of Japanese manufacturers in India report BIS-related impact, per JETRO."
+      "summary": "Industry wants a full QCO review, not piecemeal fixes. QCOs rose from 88 (2019) to a peak of 790, now ~600; 72% of Japanese manufacturers in India report BIS-related impact, per [[JETRO]]."
     },
     {
       "section": "Economy",
@@ -72,7 +82,7 @@
       "section": "Economy",
       "page_number": 3,
       "headline": "NCLAT upholds clean slate for Sintex Industries in insolvency case",
-      "summary": "NCLAT affirmed the 'clean slate principle' under the IBC, reinstating pre-resolution shareholders' rights and rejecting claims against a former Sintex Industries director."
+      "summary": "NCLAT affirmed the 'clean slate principle' under the IBC, reinstating pre-resolution shareholders' rights and rejecting claims against a former [[Sintex Industries]] director."
     },
     {
       "section": "Economy",
@@ -84,13 +94,13 @@
       "section": "Economy",
       "page_number": 3,
       "headline": "'Deepwater can boost India's energy security': BP India chairman Kartikeya Dube",
-      "summary": "BP India chairman Kartikeya Dube: the ₹84,084-cr Samudra Manthan programme has shifted BP's India focus to deepwater exploration in KG, Mahanadi and Saurashtra basins, deepening ties with ONGC and Reliance."
+      "summary": "[[BP]] India chairman Kartikeya Dube: the ₹84,084-cr Samudra Manthan programme has shifted BP's India focus to deepwater exploration in KG, Mahanadi and Saurashtra basins, deepening ties with [[ONGC]] and [[Reliance]]."
     },
     {
       "section": "Companies",
       "page_number": 4,
       "headline": "Vi faces tariff dilemma as Jio, Airtel drive up Arpu",
-      "summary": "Vodafone Idea weighs a tariff hike against subscriber-recovery risk. Vi's ARPU rose to ₹195 (Q1FY27) but trails Jio's ₹190 and Airtel's ₹264."
+      "summary": "[[Vodafone Idea]] weighs a tariff hike against subscriber-recovery risk. Vi's ARPU rose to ₹195 (Q1FY27) but trails [[Jio]]'s ₹190 and [[Airtel]]'s ₹264."
     },
     {
       "section": "Companies",
@@ -102,13 +112,13 @@
       "section": "Companies",
       "page_number": 4,
       "headline": "E2W sales hit new high, surpass 2025 record in just eight months",
-      "summary": "India's E2W registrations (Jan-Aug) hit 1.35 mn, beating 2025's full-year total. TVS, Bajaj Auto and Ather lead; Ola Electric is the lone major laggard."
+      "summary": "India's E2W registrations (Jan-Aug) hit 1.35 mn, beating 2025's full-year total. [[TVS]], [[Bajaj Auto]] and [[Ather]] lead; [[Ola Electric]] is the lone major laggard."
     },
     {
       "section": "Companies",
       "page_number": 4,
       "headline": "CNH to invest ₹2,000 crore, double its tractor capacity",
-      "summary": "CNH India to invest ₹2,000 cr through 2030, doubling tractor capacity to 140,000 units, positioning India as a global hub for utility, light and compact tractors."
+      "summary": "[[CNH India]] to invest ₹2,000 cr through 2030, doubling tractor capacity to 140,000 units, positioning India as a global hub for utility, light and compact tractors."
     },
     {
       "section": "Companies",
@@ -120,13 +130,13 @@
       "section": "Markets",
       "page_number": 6,
       "headline": "Scale achieved, promise unfinished",
-      "summary": "Jagdishan leaves HDFC Bank Oct 26 with the balance sheet up 77% since FY23 to ₹43.64 lakh cr — but also slower growth, weaker stock performance and governance controversies."
+      "summary": "Jagdishan leaves [[HDFC Bank]] Oct 26 with the balance sheet up 77% since FY23 to ₹43.64 lakh cr — but also slower growth, weaker stock performance and governance controversies."
     },
     {
       "section": "Markets",
       "page_number": 6,
       "headline": "Passive funds find favour with HNIs",
-      "summary": "HNI money in passive assets nearly tripled in five years, from 6.6% (Mar 2021) to 19.9% (Mar 2026), per AMFI/CRISIL data."
+      "summary": "HNI money in passive assets nearly tripled in five years, from 6.6% (Mar 2021) to 19.9% (Mar 2026), per [[AMFI]]/[[CRISIL]] data."
     },
     {
       "section": "Markets",
@@ -144,13 +154,13 @@
       "section": "Personal Finance",
       "page_number": 7,
       "headline": "UG at home, PG abroad: how Tier-2 is shaping India's foreign education pipeline",
-      "summary": "Students increasingly do UG in India, PG abroad. Tier-2/3 cities now account for 79% of India's international student loans, per Prodigy Finance."
+      "summary": "Students increasingly do UG in India, PG abroad. Tier-2/3 cities now account for 79% of India's international student loans, per [[Prodigy Finance]]."
     },
     {
       "section": "Opinion",
       "page_number": 8,
       "headline": "Succession by scramble",
-      "summary": "Editorial: Jagdishan's exit from HDFC Bank is graceful, but the board's lack of succession planning isn't — leaving an interim chairman and an unfinished search."
+      "summary": "Editorial: Jagdishan's exit from [[HDFC Bank]] is graceful, but the board's lack of succession planning isn't — leaving an interim chairman and an unfinished search."
     },
     {
       "section": "Opinion",
@@ -162,7 +172,7 @@
       "section": "BrandWagon",
       "page_number": 9,
       "headline": "Changing the game",
-      "summary": "Sports-rights costs are outpacing ad and subscription revenue for broadcasters. IPL media rights now valued at $20 bn (Houlihan Lokey), pushing networks toward kabaddi and football."
+      "summary": "Sports-rights costs are outpacing ad and subscription revenue for broadcasters. IPL media rights now valued at $20 bn ([[Houlihan Lokey]]), pushing networks toward kabaddi and football."
     },
     {
       "section": "World",
@@ -174,7 +184,7 @@
       "section": "World",
       "page_number": 11,
       "headline": "SpaceX launches NASA's Roman space telescope",
-      "summary": "NASA's ~$4-bn Nancy Grace Roman Space Telescope launched on a SpaceX Falcon Heavy, headed to Lagrange Point 2 for a five-year mission probing dark energy, dark matter and exoplanets."
+      "summary": "NASA's ~$4-bn Nancy Grace Roman Space Telescope launched on a [[SpaceX]] Falcon Heavy, headed to Lagrange Point 2 for a five-year mission probing dark energy, dark matter and exoplanets."
     },
     {
       "section": "World",
@@ -186,19 +196,19 @@
       "section": "Technology",
       "page_number": 10,
       "headline": "'AI is shifting the value from code to context': Mastek CEO Umang Nahata",
-      "summary": "Mastek CEO Umang Nahata: the firm's 'Lead with AI' push is moving it from time-and-materials to outcome-based models, with strong demand in financial services, manufacturing and healthcare."
+      "summary": "[[Mastek]] CEO Umang Nahata: the firm's 'Lead with AI' push is moving it from time-and-materials to outcome-based models, with strong demand in financial services, manufacturing and healthcare."
     },
     {
       "section": "Technology",
       "page_number": 10,
       "headline": "Anthropic wants AI to run machines",
-      "summary": "Anthropic previewed the Model Hardware Standard (MHS), letting AI agents operate lab and manufacturing machines; tests with Carnegie Mellon and Genentech cut integration time from weeks to hours."
+      "summary": "[[Anthropic]] previewed the Model Hardware Standard (MHS), letting AI agents operate lab and manufacturing machines; tests with [[Carnegie Mellon]] and [[Genentech]] cut integration time from weeks to hours."
     },
     {
       "section": "Technology",
       "page_number": 10,
       "headline": "Nvidia is making Silicon Valley think like China",
-      "summary": "US export curbs are pushing Meta, Microsoft and OpenAI toward software that cuts AI-model memory needs by up to 96%, echoing techniques Chinese firms adopted after losing chip access."
+      "summary": "US export curbs are pushing [[Meta]], [[Microsoft]] and [[OpenAI]] toward software that cuts AI-model memory needs by up to 96%, echoing techniques Chinese firms adopted after losing chip access."
     },
     {
       "section": "Technology",
@@ -210,55 +220,55 @@
       "section": "Technology",
       "page_number": 10,
       "headline": "A Fold for everyday tasks: Pixel 11 Pro Fold review",
-      "summary": "Pixel 11 Pro Fold (₹1,86,999, 16GB+512GB): Tensor G6 chip, 1-120Hz LTPO OLED display, 48MP+10.8MP+10.5MP camera setup; praised for thin, light build over pure spec superiority."
+      "summary": "[[Google]]'s Pixel 11 Pro Fold (₹1,86,999, 16GB+512GB): Tensor G6 chip, 1-120Hz LTPO OLED display, 48MP+10.8MP+10.5MP camera setup; praised for thin, light build over pure spec superiority."
     },
     {
       "section": "Technology",
       "page_number": 10,
       "headline": "Earbuds get smarter, more connected",
-      "summary": "Plaud's $250 wireless, 4G-connected earbuds record conversations and run AI-assistant tasks on the go, joining Meta's Ray-Ban glasses and Apple's AirPods in the 'always-on' AI audio wave."
+      "summary": "[[Plaud]]'s $250 wireless, 4G-connected earbuds record conversations and run AI-assistant tasks on the go, joining [[Meta]]'s Ray-Ban glasses and [[Apple]]'s AirPods in the 'always-on' AI audio wave."
     },
     {
       "section": "Technology",
       "page_number": 10,
       "headline": "Tech Bytes: Gemini Enterprise for Legal, LTM's Kolkata hub, WhatsApp's tighter security",
-      "summary": "Google Cloud launched Gemini Enterprise for Legal; LTM opened a Kolkata AI delivery centre; WhatsApp expanded two-step verification and multi-passkey support on Android and iOS."
+      "summary": "[[Google Cloud]] launched Gemini Enterprise for Legal; [[LTM]] opened a Kolkata AI delivery centre; [[WhatsApp]] expanded two-step verification and multi-passkey support on Android and iOS."
     },
     {
       "section": "IPO & Legal Notices",
       "page_number": 1,
       "headline": "Purple Style Labs (Pernia's Pop-Up Shop) opens ₹6,800-mn IPO",
-      "summary": "Price band ₹546-575/share, ₹6,800 mn fresh issue. FY26 loss ₹2,853.99 mn; flagged negative cash flows, high debt and brand dependence as key risks. Bid closes September 2, 2026."
+      "summary": "[[Purple Style Labs]]: price band ₹546-575/share, ₹6,800 mn fresh issue. FY26 loss ₹2,853.99 mn; flagged negative cash flows, high debt and brand dependence as key risks. Bid closes September 2, 2026."
     },
     {
       "section": "IPO & Legal Notices",
       "page_number": 13,
       "headline": "Viceroy Hotels launches ₹10,583-lakh rights issue",
-      "summary": "Up to 92,03,000 rights shares at ₹115/share (6:7 ratio), aggregating ₹10,583.45 lakh. Opens Sept 3, closes Sept 11, 2026; backed by promoter Loko Hospitality."
+      "summary": "[[Viceroy Hotels]]: up to 92,03,000 rights shares at ₹115/share (6:7 ratio), aggregating ₹10,583.45 lakh. Opens Sept 3, closes Sept 11, 2026; backed by promoter [[Loko Hospitality]]."
     },
     {
       "section": "IPO & Legal Notices",
       "page_number": 15,
       "headline": "Ducon Infratechnologies opens ₹24,994-lakh rights issue",
-      "summary": "Up to 24,99,42,759 rights shares at ₹1 face value (10:13 ratio), aggregating ₹24,994.28 lakh. Opens Sept 3, closes Sept 10, 2026."
+      "summary": "[[Ducon Infratechnologies]]: up to 24,99,42,759 rights shares at ₹1 face value (10:13 ratio), aggregating ₹24,994.28 lakh. Opens Sept 3, closes Sept 10, 2026."
     },
     {
       "section": "IPO & Legal Notices",
       "page_number": 16,
       "headline": "Augmont Enterprises IPO allotment finalised at ₹788/share",
-      "summary": "₹8,250 mn IPO allotted at ₹788/share — 157.6x face value. QIB portion subscribed 237.94x, retail 33.08x. Listing on BSE/NSE expected around August 31, 2026."
+      "summary": "[[Augmont Enterprises]]: ₹8,250 mn IPO allotted at ₹788/share — 157.6x face value. QIB portion subscribed 237.94x, retail 33.08x. Listing on BSE/NSE expected around August 31, 2026."
     },
     {
       "section": "IPO & Legal Notices",
       "page_number": 12,
       "headline": "Companies notify AGMs and e-voting windows for FY26",
-      "summary": "AGM/EGM notices filed by KEI Industries, Waaree Energies, Valiant Laboratories, Mold-Tek, Tega Industries, Bharat Forge, NCDEX, DCM, Kalamandir Jewellers, Harrisons Malayalam, Acutaas Chemicals, Websol Energy, Onida Electronics, Magnum Ventures, Chalet Hotels, Kanara Consumer, Rajeswari Infrastructure, Ace Alpha Tech and Kalyan Capitals, most with remote e-voting via NSDL/CDSL. Jet Airways invited e-auction bids for six aircraft-linked lots; Creativity At Best Technologies and Astron Paper & Board Mill filed Form G insolvency invitations; Mangalore SEZ invited renewable-power e-tenders."
+      "summary": "AGM/EGM notices filed by [[KEI Industries]], [[Waaree Energies]], [[Valiant Laboratories]], [[Mold-Tek]], [[Tega Industries]], [[Bharat Forge]], [[NCDEX]], [[DCM]], [[Kalamandir Jewellers]], [[Harrisons Malayalam]], [[Acutaas Chemicals]], [[Websol Energy]], [[Onida Electronics]], [[Magnum Ventures]], [[Chalet Hotels]], [[Kanara Consumer]], [[Rajeswari Infrastructure]], [[Ace Alpha Tech]] and [[Kalyan Capitals]], most with remote e-voting via NSDL/CDSL. [[Jet Airways]] invited e-auction bids for six aircraft-linked lots; [[Creativity At Best Technologies]] and [[Astron Paper & Board Mill]] filed Form G insolvency invitations; [[Mangalore SEZ]] invited renewable-power e-tenders."
     },
     {
       "section": "IPO & Legal Notices",
       "page_number": 22,
       "headline": "Banks and ARCs issue SARFAESI auction and demand notices across Maharashtra",
-      "summary": "Bank of Baroda, Kotak Mahindra, Muthoot Homefin, IKF Home Finance, Edelweiss ARC, Hinduja Housing Finance and others published possession/e-auction notices for mortgaged properties across Pune, Navi Mumbai and Raigad, with auctions through Sept-Oct 2026."
+      "summary": "[[Bank of Baroda]], [[Kotak Mahindra]], [[Muthoot Homefin]], [[IKF Home Finance]], [[Edelweiss ARC]], [[Hinduja Housing Finance]] and others published possession/e-auction notices for mortgaged properties across Pune, Navi Mumbai and Raigad, with auctions through Sept-Oct 2026."
     }
   ]
 }

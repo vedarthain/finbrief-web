@@ -245,6 +245,26 @@ export async function getPaperStories(date?: string, edition?: string): Promise<
   return rows;
 }
 
+export interface StockInFocus {
+  name: string;
+  note: string;
+}
+
+export async function getStocksInFocus(date?: string, edition?: string): Promise<StockInFocus[]> {
+  const d = date ?? new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+  const params: (string)[] = [d];
+  let where = `paper_date = $1`;
+  if (edition) {
+    params.push(edition);
+    where += ` AND edition = $2`;
+  }
+  const { rows } = await pool.query(
+    `SELECT stocks_in_focus FROM paper_meta WHERE ${where} LIMIT 1`,
+    params
+  );
+  return rows[0]?.stocks_in_focus ?? [];
+}
+
 export async function getPaperDays(): Promise<{ date: string; edition: string }[]> {
   const { rows } = await pool.query(`
     SELECT DISTINCT paper_date::text AS date, edition

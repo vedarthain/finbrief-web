@@ -1,4 +1,4 @@
-import { getPaperStories, getPaperDays } from "@/lib/queries";
+import { getPaperStories, getPaperDays, getStocksInFocus } from "@/lib/queries";
 import Link from "next/link";
 import PaperTree from "@/components/PaperTree";
 
@@ -13,9 +13,10 @@ export default async function HomePage({
   const todayIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
   const activeDate = params.date ?? todayIST;
 
-  const [stories, days] = await Promise.all([
+  const [stories, days, stocksInFocus] = await Promise.all([
     getPaperStories(activeDate, params.edition),
     getPaperDays(),
+    getStocksInFocus(activeDate, params.edition),
   ]);
 
   const bySection = stories.reduce<Record<string, typeof stories>>((acc, s) => {
@@ -76,7 +77,7 @@ export default async function HomePage({
             <p className="text-[15px] text-gray-400">No paper stories published for {activeDate} yet.</p>
           </div>
         ) : (
-          <PaperTree bySection={bySection} />
+          <PaperTree bySection={bySection} stocksInFocus={stocksInFocus} />
         )}
       </main>
 

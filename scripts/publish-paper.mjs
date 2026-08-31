@@ -27,7 +27,7 @@ if (!jsonPath) {
   process.exit(1);
 }
 
-const { edition, paper_date, stories } = JSON.parse(readFileSync(jsonPath, "utf8"));
+const { edition, paper_date, stories, stocksInFocus } = JSON.parse(readFileSync(jsonPath, "utf8"));
 if (!edition || !paper_date || !Array.isArray(stories) || stories.length === 0) {
   console.error("Invalid input: need edition, paper_date, and a non-empty stories array.");
   process.exit(1);
@@ -52,6 +52,13 @@ try {
       [edition, paper_date, s.section, s.headline, s.summary, s.page_number ?? null, order++]
     );
   }
+
+  await client.query(
+    `INSERT INTO paper_meta (edition, paper_date, stocks_in_focus)
+     VALUES ($1, $2, $3)
+     ON CONFLICT (edition, paper_date) DO UPDATE SET stocks_in_focus = EXCLUDED.stocks_in_focus`,
+    [edition, paper_date, JSON.stringify(stocksInFocus ?? [])]
+  );
 
   await client.query("COMMIT");
   console.log(`Published ${stories.length} stories for ${edition} — ${paper_date}.`);
