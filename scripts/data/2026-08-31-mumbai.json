@@ -63,6 +63,30 @@
       "summary": "Industry wants a comprehensive review of Quality Control Orders rather than piecemeal changes. QCOs surged from 88 in 2019 to a peak of 790 before easing to about 600; 72% of Japanese manufacturers in India report BIS-related operational impact, per a JETRO survey."
     },
     {
+      "section": "Economy",
+      "page_number": 3,
+      "headline": "Modi arrives in Kyrgyzstan to attend SCO summit",
+      "summary": "Prime Minister Narendra Modi arrived in Bishkek on Sunday to take part in the 26th SCO Leadership Summit, where he will hold a series of bilateral meetings with heads of state and government on the sidelines. Modi was received at the airport by Kyrgyz Cabinet of Ministers chairman Adylbek Kasymaliev and greeted with 'Vande Mataram' chants and a traditional welcome at his hotel."
+    },
+    {
+      "section": "Economy",
+      "page_number": 3,
+      "headline": "NCLAT upholds clean slate for Sintex Industries in insolvency case",
+      "summary": "The Insolvency Appellate Tribunal (NCLAT) affirmed the 'clean slate principle' under the Insolvency and Bankruptcy Code, reinstating pre-resolution shareholders' rights and rejecting claims made against a former director of Sintex Industries in the insolvency proceedings."
+    },
+    {
+      "section": "Economy",
+      "page_number": 3,
+      "headline": "Commerce ministry to meet exporters on India-US trade issues on September 1",
+      "summary": "The Commerce Ministry will meet industry associations and export promotion councils on September 1 to discuss trends and sector-wise performance of India-US trade, chaired by Additional Secretary Darpan Jain, the country's chief negotiator for the India-US Bilateral Trade Agreement. Commerce and Industry Minister Piyush Goyal is expected to visit the US in mid-September for the G-20 Trade Ministerial and bilateral talks with USTR Jamieson Greer, with the two-day ministerial beginning September 30."
+    },
+    {
+      "section": "Economy",
+      "page_number": 3,
+      "headline": "'Deepwater can boost India's energy security': BP India chairman Kartikeya Dube",
+      "summary": "In an interview, BP India chairman Kartikeya Dube says the government's ₹84,084-crore Samudra Manthan programme has changed BP's India investment outlook, with deepwater and frontier exploration in the Krishna-Godavari, Mahanadi and Saurashtra basins now central to its strategy. BP is deepening technical-services partnerships with ONGC across its entire Western Offshore Basin and continuing joint exploration with Reliance under the Saurashtra OALP-IX block, as India targets raising oil and gas production from around 62 MTOE to 80 MTOE annually."
+    },
+    {
       "section": "Companies",
       "page_number": 4,
       "headline": "Vi faces tariff dilemma as Jio, Airtel drive up Arpu",
@@ -159,6 +183,48 @@
       "summary": "Nepal's government has decided to move toward mass cremation amid a dearth of mortuary facilities as the confirmed flood death toll reached 781, with about 2,500 still missing after an ice-rock avalanche near a glacial lake worsened flooding on August 26."
     },
     {
+      "section": "Technology",
+      "page_number": 10,
+      "headline": "'AI is shifting the value from code to context': Mastek CEO Umang Nahata",
+      "summary": "Mastek CEO Umang Nahata says the Mumbai-based firm's 'Lead with AI' strategy reflects a shift from AI adoption as a side pilot to becoming foundational to how the company delivers value, moving from time-and-materials to outcome-based engagement models. He cites strong AI demand in financial services, manufacturing and private healthcare, with the UK, Europe and North America as core growth markets for FY27."
+    },
+    {
+      "section": "Technology",
+      "page_number": 10,
+      "headline": "Anthropic wants AI to run machines",
+      "summary": "Anthropic has introduced a research preview of the Model Hardware Standard (MHS), a new interface designed to let its AI agents communicate with and operate programmable machines used in laboratories, manufacturing and scientific research. Testing with partners including Carnegie Mellon and Genentech showed AI agents coordinating lab equipment and liquid-handling devices, cutting integration time from weeks to hours in some experiments — though the tests also exposed the limits of AI reasoning about the physical world."
+    },
+    {
+      "section": "Technology",
+      "page_number": 10,
+      "headline": "Nvidia is making Silicon Valley think like China",
+      "summary": "As US export curbs continue to block China from buying Nvidia's most powerful chips, Nvidia is pushing major customers such as Meta, Microsoft and OpenAI toward more efficient software that compresses the memory needs of AI models by as much as 96% — mirroring techniques Chinese firms were forced to adopt after losing access to advanced hardware."
+    },
+    {
+      "section": "Technology",
+      "page_number": 10,
+      "headline": "A smarter return to work: AI-enabled reskilling for women professionals",
+      "summary": "With India's female labour-force participation at 45.9% among women aged 15 and above but urban participation still just 27.7% (PLFS 2025), HR experts argue AI-enabled 'returnship' programmes combining domain refreshers, fluency training and mentoring could help women re-enter the workforce after career breaks without having to prove their capabilities all over again."
+    },
+    {
+      "section": "Technology",
+      "page_number": 10,
+      "headline": "A Fold for everyday tasks: Pixel 11 Pro Fold review",
+      "summary": "Google's Pixel 11 Pro Fold (₹1,86,999 for 16GB RAM + 512GB storage) pairs a Tensor G6 chip with a 1-120Hz LTPO OLED display and Gboard's on-device speech tools. The review praises its thin, light foldable build, HiLight notification ring, and 48MP main + 10.8MP telephoto + 10.5MP ultrawide camera setup, over pure spec-sheet superiority against rival foldables."
+    },
+    {
+      "section": "Technology",
+      "page_number": 10,
+      "headline": "Earbuds get smarter, more connected",
+      "summary": "San Francisco-based startup Plaud has unveiled $250 wireless, 4G-connected earbuds shaped like AirPods that record conversations and complete AI-assistant tasks on the go, joining a wave of 'always-on' AI-native audio gadgets alongside Meta's camera-equipped Ray-Ban smart glasses and Apple's premium AirPods with real-time translation."
+    },
+    {
+      "section": "Technology",
+      "page_number": 10,
+      "headline": "Tech Bytes: Gemini Enterprise for Legal, LTM's Kolkata hub, WhatsApp's tighter security",
+      "summary": "Google Cloud launched Gemini Enterprise for Legal, an agentic AI tool to automate contract review, regulatory monitoring and data subject access requests. LTM opened a new global delivery and AI competency centre in Kolkata to support clients' AI initiatives. WhatsApp is tightening account security with expanded two-step verification and passkey support across Android and iOS, including support for multiple passkeys per account."
+    },
+    {
       "section": "IPO & Legal Notices",
       "page_number": 1,
       "headline": "Purple Style Labs (Pernia's Pop-Up Shop) opens ₹6,800-mn IPO",
@@ -186,7 +252,7 @@
       "section": "IPO & Legal Notices",
       "page_number": 12,
       "headline": "Companies notify AGMs and e-voting windows for FY26",
-      "summary": "Several listed companies issued statutory AGM notices for the year: KEI Industries (Sept 28), Waaree Energies (Sept 24), Valiant Laboratories (Sept 28), Shanti Gold International (Sept 25), Mold-Tek Technologies (Sept 22), Tega Industries (Sept 24 — 50th AGM), Bharat Forge, NCDEX, DCM Limited (Sept 26), Kalamandir Jewellers and others, most offering remote e-voting through NSDL/CDSL ahead of their respective record dates."
+      "summary": "Several listed companies issued statutory AGM notices for the year: KEI Industries (Sept 28), Waaree Energies (Sept 24), Valiant Laboratories (Sept 28), Shanti Gold International (Sept 25), Mold-Tek Technologies (Sept 22), Tega Industries (Sept 24 — 50th AGM), Bharat Forge, NCDEX (Sept 23), DCM Limited (Sept 26), Kalamandir Jewellers and others, most offering remote e-voting through NSDL/CDSL ahead of their respective record dates. Also filing notices: Harrisons Malayalam (49th AGM, Sept 29), Acutaas Chemicals (19th AGM, Sept 24), Websol Energy System (36th AGM, Sept 22), Onida Electronics (45th AGM, Sept 24), Magnum Ventures (46th AGM, Sept 25), Taurian MPS (EGM, Sept 20), Chalet Hotels (41st AGM, Sept 21), Kanara Consumer Products (64th AGM, Sept 22), Rajeswari Infrastructure (33rd AGM, Sept 29), Ace Alpha Tech (14th AGM, Sept 24) and Kalyan Capitals (42nd AGM, Sept 28). Jet Airways (India) Ltd, under liquidation, invited e-auction bids for six aircraft-linked asset lots through the Baankate platform; Creativity At Best Technologies and Astron Paper & Board Mill filed Form G invitations for expressions of interest under insolvency resolution; Mangalore SEZ invited e-tenders for renewable-power procurement; and Kalamandir Jewellers filed a deposit-scheme disclosure circular under the Companies (Acceptance of Deposits) Rules."
     },
     {
       "section": "IPO & Legal Notices",

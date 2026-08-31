@@ -36,9 +36,9 @@ export default async function HomePage({
         <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center shadow-sm">
-              <span className="text-white text-[11px] font-black tracking-tight">FB</span>
+              <span className="text-white text-[11px] font-bold tracking-tight">FB</span>
             </div>
-            <span className="text-[20px] font-black tracking-tight text-gray-900">
+            <span className="text-[19px] font-bold tracking-tight text-gray-900">
               Fin<span className="text-amber-500">Brief</span>
             </span>
           </div>
@@ -49,8 +49,8 @@ export default async function HomePage({
       <main className="mx-auto max-w-7xl px-4 py-6">
         {/* Title bar + day picker */}
         <div className="flex items-center gap-2 mb-6 flex-wrap">
-          <h1 className="text-[26px] font-black tracking-tight text-gray-900">Today&apos;s Paper</h1>
-          <span className="text-[14px] text-gray-400 font-medium ml-1">
+          <h1 className="text-[24px] font-bold tracking-tight text-gray-900">Today&apos;s Paper</h1>
+          <span className="text-[14px] text-gray-400 font-normal ml-1">
             {stories.length} stories · {activeDate}
           </span>
           <div className="ml-auto flex items-center gap-1.5 flex-wrap">
@@ -58,7 +58,7 @@ export default async function HomePage({
               <Link
                 key={d.date}
                 href={`/?date=${d.date}`}
-                className={`text-[13px] font-semibold px-3 py-1.5 rounded-full border transition-colors ${
+                className={`text-[13px] font-medium px-3 py-1.5 rounded-full border transition-colors ${
                   d.date === activeDate
                     ? "bg-gray-900 border-gray-900 text-white"
                     : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
