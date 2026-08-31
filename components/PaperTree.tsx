@@ -8,7 +8,7 @@ function renderSummary(text: string, dimClass: string) {
     const match = part.match(/^\[\[([^\]]+)\]\]$/);
     if (match) {
       return (
-        <span key={i} className="text-emerald-700 font-semibold">
+        <span key={i} className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">
           {match[1]}
         </span>
       );
@@ -32,6 +32,7 @@ const SECTION_STYLE: Record<string, string> = {
   "BrandWagon":          "text-fuchsia-600 bg-fuchsia-50",
   "Technology":          "text-cyan-600 bg-cyan-50",
   "IPO & Legal Notices": "text-orange-700 bg-orange-50",
+  "Stocks in Focus":     "text-emerald-700 bg-emerald-50",
 };
 
 const SECTION_BAR: Record<string, string> = {
@@ -45,7 +46,10 @@ const SECTION_BAR: Record<string, string> = {
   "BrandWagon":          "bg-fuchsia-500",
   "Technology":          "bg-cyan-500",
   "IPO & Legal Notices": "bg-orange-500",
+  "Stocks in Focus":     "bg-emerald-500",
 };
+
+const STOCKS_TAB = "Stocks in Focus";
 
 export default function PaperTree({
   bySection,
@@ -54,11 +58,17 @@ export default function PaperTree({
   bySection: Record<string, PaperStory[]>;
   stocksInFocus: StockInFocus[];
 }) {
-  const sections = Object.keys(bySection);
+  const storySections = Object.keys(bySection);
+  const sections = [...storySections];
+  if (stocksInFocus.length > 0) {
+    const ipoIdx = sections.indexOf("IPO & Legal Notices");
+    const insertAt = ipoIdx === -1 ? sections.length : ipoIdx + 1;
+    sections.splice(insertAt, 0, STOCKS_TAB);
+  }
   const [activeSection, setActiveSection] = useState<string | null>(sections[0] ?? null);
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  const rows = activeSection ? bySection[activeSection] ?? [] : [];
+  const rows = activeSection && activeSection !== STOCKS_TAB ? bySection[activeSection] ?? [] : [];
 
   return (
     <div className="flex flex-col md:flex-row gap-5 items-start">
@@ -82,7 +92,7 @@ export default function PaperTree({
               />
               <span className="truncate">{section}</span>
               <span className={`ml-auto text-[11px] tabular-nums ${activeSection === section ? "text-gray-300" : "text-gray-400"}`}>
-                {bySection[section].length}
+                {section === STOCKS_TAB ? stocksInFocus.length : bySection[section].length}
               </span>
             </button>
           ))}
@@ -100,15 +110,12 @@ export default function PaperTree({
             </span>
           </div>
         )}
-        {activeSection === "IPO & Legal Notices" && stocksInFocus.length > 0 && (
-          <div className="px-4 py-3.5 bg-emerald-50/50">
-            <p className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wide mb-2">
-              Stocks in Focus Today
-            </p>
-            <ul className="space-y-1.5">
+        {activeSection === STOCKS_TAB && (
+          <div className="px-4 py-3.5">
+            <ul className="space-y-3">
               {stocksInFocus.map((s) => (
                 <li key={s.name} className="text-[14px] leading-snug">
-                  <span className="text-emerald-700 font-semibold">{s.name}</span>
+                  <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">{s.name}</span>
                   <span className="text-gray-500"> — {s.note}</span>
                 </li>
               ))}
