@@ -118,6 +118,29 @@ export default function PaperTree({
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const [focusIndex, setFocusIndex] = useState(0);
 
+  // ── Font-size control: user-adjustable scale, persisted across visits ──
+  // Starts at the default step on both server and client (avoids a hydration
+  // mismatch), then syncs from localStorage right after mount.
+  const FONT_STEPS = [0.8, 0.9, 1, 1.1, 1.25, 1.4, 1.6];
+  const [fontStepIdx, setFontStepIdx] = useState(2);
+  useEffect(() => {
+    const saved = Number(localStorage.getItem("paper-font-step"));
+    if (!Number.isNaN(saved) && saved >= 0 && saved < FONT_STEPS.length && saved !== 2) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time sync from localStorage after mount, not a render-triggered loop
+      setFontStepIdx(saved);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  function bumpFont(delta: number) {
+    setFontStepIdx((i) => {
+      const next = Math.min(FONT_STEPS.length - 1, Math.max(0, i + delta));
+      localStorage.setItem("paper-font-step", String(next));
+      return next;
+    });
+  }
+  const fontScale = FONT_STEPS[fontStepIdx];
+  const px = (base: number) => `${Math.round(base * fontScale * 10) / 10}px`;
+
   const rows = activeLeaf && activeLeaf !== STOCKS_TAB ? bySection[activeLeaf] ?? [] : [];
   const itemCount = activeLeaf === STOCKS_TAB ? stocksInFocus.length : rows.length;
 
@@ -127,8 +150,8 @@ export default function PaperTree({
     setActiveLeaf(leaf);
     setFocusIndex(focusAt);
     if (!g.single) setOpenGroup(g.label);
-    const leafRows = leaf === STOCKS_TAB ? null : bySection[leaf] ?? [];
-    setExpandedId(leafRows && leafRows[focusAt] ? leafRows[focusAt].id : null);
+    // Navigating never auto-opens a story — only a click does. Just move the highlight.
+    setExpandedId(null);
   }
 
   function toggleGroup(g: (typeof resolvedGroups)[number]) {
@@ -142,9 +165,9 @@ export default function PaperTree({
   // ── Arrow-key navigation: Up/Down move within a section, Left/Right switch sections ──
   // Keep a ref mirror of everything the handler needs so the listener (attached
   // once, on mount) always reads fresh values instead of a stale closure.
-  const liveRef = useRef({ activeLeaf, focusIndex, itemCount, rows, flatLeaves });
+  const liveRef = useRef({ activeLeaf, focusIndex, itemCount, flatLeaves });
   useEffect(() => {
-    liveRef.current = { activeLeaf, focusIndex, itemCount, rows, flatLeaves };
+    liveRef.current = { activeLeaf, focusIndex, itemCount, flatLeaves };
   });
 
   useEffect(() => {
@@ -153,7 +176,7 @@ export default function PaperTree({
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return;
 
-      const { activeLeaf, focusIndex, itemCount, rows, flatLeaves } = liveRef.current;
+      const { activeLeaf, focusIndex, itemCount, flatLeaves } = liveRef.current;
       e.preventDefault();
 
       if (e.key === "ArrowDown" || e.key === "ArrowUp") {
@@ -162,7 +185,7 @@ export default function PaperTree({
           ? Math.min(focusIndex + 1, itemCount - 1)
           : Math.max(focusIndex - 1, 0);
         setFocusIndex(next);
-        if (activeLeaf !== STOCKS_TAB && rows[next]) setExpandedId(rows[next].id);
+        // Up/Down only moves the highlight — the story stays collapsed until clicked.
         rowRefs.current[next]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
         return;
       }
@@ -184,7 +207,28 @@ export default function PaperTree({
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row gap-4 items-start">
+    <div className="flex flex-col gap-3">
+      {/* ── Font-size control ──────────────────────────────────────────── */}
+      <div className="flex items-center justify-end gap-1.5">
+        <span className="text-[11px] text-gray-400 mr-1">Text size</span>
+        <button
+          onClick={() => bumpFont(-1)}
+          disabled={fontStepIdx === 0}
+          aria-label="Decrease text size"
+          className="w-7 h-7 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-[12px] font-semibold"
+        >
+          A−
+        </button>
+        <button
+          onClick={() => bumpFont(1)}
+          disabled={fontStepIdx === FONT_STEPS.length - 1}
+          aria-label="Increase text size"
+          className="w-7 h-7 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-[14px] font-semibold"
+        >
+          A+
+        </button>
+      </div>
+      <div className="flex flex-col md:flex-row gap-4 items-start">
       {/* ── Left: section tree ─────────────────────────────────────────── */}
       <aside className="w-full md:w-56 shrink-0 md:sticky md:top-20">
         <nav className="rounded-lg bg-white border border-gray-200 overflow-hidden">
@@ -269,7 +313,8 @@ export default function PaperTree({
                 <li
                   key={s.name}
                   ref={(el) => { rowRefs.current[i] = el; }}
-                  className={`text-[17px] leading-snug rounded px-2 py-1 -mx-2 transition-colors ${
+                  style={{ fontSize: px(17) }}
+                  className={`leading-snug rounded px-2 py-1 -mx-2 transition-colors ${
                     focusIndex === i ? "bg-amber-100 ring-1 ring-amber-300" : ""
                   }`}
                 >
@@ -295,7 +340,10 @@ export default function PaperTree({
                 className="w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors"
               >
                 <div className="flex items-center gap-2">
-                  <h3 className="flex-1 min-w-0 truncate text-[17px] font-semibold text-gray-900 leading-snug">
+                  <h3
+                    style={{ fontSize: px(17) }}
+                    className="flex-1 min-w-0 truncate font-semibold text-gray-900 leading-snug"
+                  >
                     {s.headline}
                   </h3>
                   {multiEdition && <EditionBadge edition={s.edition} />}
@@ -306,7 +354,7 @@ export default function PaperTree({
               </button>
               {open && (
                 <div className="px-4 pb-4 -mt-0.5">
-                  <p className="text-[15.5px] leading-relaxed">
+                  <p style={{ fontSize: px(15.5) }} className="leading-relaxed">
                     {renderSummary(s.summary, "text-gray-500")}
                   </p>
                   {s.page_number != null && (
@@ -317,6 +365,7 @@ export default function PaperTree({
             </div>
           );
         })}
+      </div>
       </div>
     </div>
   );
