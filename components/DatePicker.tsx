@@ -62,14 +62,35 @@ export default function DatePicker({
     weekday: "short", day: "numeric", month: "short", year: "numeric",
   });
 
+  const sortedDates = [...availableDates].sort();
+  const activeIdx = sortedDates.indexOf(activeDate);
+  const prevDate = activeIdx > 0 ? sortedDates[activeIdx - 1] : null;
+  const nextDate = activeIdx !== -1 && activeIdx < sortedDates.length - 1 ? sortedDates[activeIdx + 1] : null;
+
   return (
-    <div className="relative" ref={ref}>
+    <div className="relative flex items-center gap-1" ref={ref}>
+      <button
+        onClick={() => prevDate && router.push(`/?date=${prevDate}`)}
+        disabled={!prevDate}
+        aria-label="Previous day"
+        className="w-7 h-7 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+      >
+        ‹
+      </button>
       <button
         onClick={() => setOpen((o) => !o)}
         className="flex items-center gap-1.5 text-[13px] font-medium px-3 py-1.5 rounded-full border bg-white border-gray-200 text-gray-700 hover:border-gray-300 transition-colors"
       >
         <span aria-hidden>📅</span>
         <span>{activeLabel}</span>
+      </button>
+      <button
+        onClick={() => nextDate && router.push(`/?date=${nextDate}`)}
+        disabled={!nextDate}
+        aria-label="Next day"
+        className="w-7 h-7 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+      >
+        ›
       </button>
       {open && (
         <div className="absolute right-0 mt-2 w-72 rounded-lg border border-gray-200 bg-white shadow-lg p-3 z-30">

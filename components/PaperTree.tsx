@@ -139,11 +139,18 @@ export default function PaperTree({
   }
 
   // ── Arrow-key navigation: Up/Down move within a section, Left/Right switch sections ──
+  // Keep a ref mirror of everything the handler needs so the listener (attached
+  // once, on mount) always reads fresh values instead of a stale closure.
+  const liveRef = useRef({ activeLeaf, focusIndex, itemCount, rows, flatLeaves });
+  liveRef.current = { activeLeaf, focusIndex, itemCount, rows, flatLeaves };
+
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
       if (!["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) return;
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return;
+
+      const { activeLeaf, focusIndex, itemCount, rows, flatLeaves } = liveRef.current;
       e.preventDefault();
 
       if (e.key === "ArrowDown" || e.key === "ArrowUp") {
@@ -157,19 +164,21 @@ export default function PaperTree({
         return;
       }
 
-      // ArrowLeft / ArrowRight — move to previous/next leaf section
+      // ArrowLeft / ArrowRight — move to previous/next leaf section, crossing group boundaries
       const curIdx = flatLeaves.findIndex((f) => f.leaf === activeLeaf);
       if (curIdx === -1) return;
       const nextIdx = e.key === "ArrowRight"
         ? Math.min(curIdx + 1, flatLeaves.length - 1)
         : Math.max(curIdx - 1, 0);
+      if (nextIdx === curIdx) return;
       const { leaf, group } = flatLeaves[nextIdx];
       selectLeaf(group, leaf, 0);
     }
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    window.addEventListener("keydown", onKeyDown, { capture: true });
+    return () => window.removeEventListener("keydown", onKeyDown, { capture: true });
+    // Mount-only: onKeyDown reads current values via liveRef, so it never goes stale.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeLeaf, focusIndex, itemCount, rows, flatLeaves]);
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row gap-4 items-start">
@@ -184,7 +193,7 @@ export default function PaperTree({
               <div key={g.label} className="border-b border-gray-100 last:border-b-0">
                 <button
                   onClick={() => toggleGroup(g)}
-                  className={`w-full flex items-center gap-2 px-3 py-1.5 text-[12px] md:text-[11.5px] transition-colors ${
+                  className={`w-full flex items-center gap-2 px-3 py-2 text-[13px] transition-colors ${
                     !isGroup && activeLeaf === g.single
                       ? "bg-gray-900 text-white font-medium"
                       : isActiveLeafHere
@@ -211,7 +220,7 @@ export default function PaperTree({
                       <button
                         key={leaf}
                         onClick={() => selectLeaf(g, leaf)}
-                        className={`w-full flex items-center gap-2 pl-7 pr-3 py-1.5 text-[11.5px] md:text-[11px] transition-colors ${
+                        className={`w-full flex items-center gap-2 pl-7 pr-3 py-1.5 text-[12.5px] transition-colors ${
                           activeLeaf === leaf
                             ? "bg-gray-900 text-white font-medium"
                             : "text-gray-500 hover:bg-gray-100"
@@ -242,8 +251,8 @@ export default function PaperTree({
       {/* ── Right: row list, expand on click or arrow keys ────────────── */}
       <div className="flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
         {activeLeaf && (
-          <div className="flex items-center gap-2 px-4 py-2">
-            <span className={`text-[10px] md:text-[9.5px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded ${
+          <div className="flex items-center gap-2 px-4 py-2.5">
+            <span className={`text-[11px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded ${
               SECTION_STYLE[activeLeaf] ?? "text-gray-500 bg-gray-50"
             }`}>
               {activeLeaf}
@@ -251,14 +260,14 @@ export default function PaperTree({
           </div>
         )}
         {activeLeaf === STOCKS_TAB && (
-          <div className="px-4 py-3">
-            <ul className="space-y-2.5">
+          <div className="px-4 py-3.5">
+            <ul className="space-y-3">
               {stocksInFocus.map((s, i) => (
                 <li
                   key={s.name}
                   ref={(el) => { rowRefs.current[i] = el; }}
-                  className={`text-[13px] md:text-[12.5px] leading-snug rounded px-1.5 py-0.5 -mx-1.5 transition-colors ${
-                    focusIndex === i ? "bg-amber-50 ring-1 ring-amber-200" : ""
+                  className={`text-[15px] leading-snug rounded px-2 py-1 -mx-2 transition-colors ${
+                    focusIndex === i ? "bg-amber-100 ring-1 ring-amber-300" : ""
                   }`}
                 >
                   <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">{s.name}</span>
@@ -276,29 +285,29 @@ export default function PaperTree({
             <div
               key={s.id}
               ref={(el) => { rowRefs.current[i] = el; }}
-              className={focused ? "bg-amber-50/70" : undefined}
+              className={focused ? "bg-amber-100/80" : undefined}
             >
               <button
                 onClick={() => { setFocusIndex(i); setExpandedId(open ? null : s.id); }}
-                className="w-full text-left px-4 py-2.5 hover:bg-gray-50 transition-colors"
+                className="w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors"
               >
                 <div className="flex items-center gap-2">
-                  <h3 className="flex-1 min-w-0 truncate text-[14px] md:text-[13px] font-semibold text-gray-900">
+                  <h3 className="flex-1 min-w-0 truncate text-[15px] font-semibold text-gray-900 leading-snug">
                     {s.headline}
                   </h3>
                   {multiEdition && <EditionBadge edition={s.edition} />}
-                  <span className="text-gray-300 text-[12px] shrink-0">
+                  <span className="text-gray-300 text-[13px] shrink-0">
                     {open ? "–" : "+"}
                   </span>
                 </div>
               </button>
               {open && (
-                <div className="px-4 pb-3.5 -mt-0.5">
-                  <p className="text-[13px] md:text-[12.5px] leading-relaxed">
+                <div className="px-4 pb-4 -mt-0.5">
+                  <p className="text-[14px] leading-relaxed">
                     {renderSummary(s.summary, "text-gray-500")}
                   </p>
                   {s.page_number != null && (
-                    <p className="text-[11px] text-gray-400 mt-2">Page {s.page_number}</p>
+                    <p className="text-[12px] text-gray-400 mt-2">Page {s.page_number}</p>
                   )}
                 </div>
               )}
