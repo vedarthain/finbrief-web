@@ -16,6 +16,35 @@ const STATUS_STYLE: Record<string, string> = {
   listed:   "text-gray-600 bg-gray-100",
 };
 
+const EXCHANGE_STYLE: Record<string, string> = {
+  NSE: "text-indigo-700 bg-indigo-50 border-indigo-200",
+  BSE: "text-orange-700 bg-orange-50 border-orange-200",
+};
+
+// Splits a free-text exchange string ("BSE, NSE" / "NSE Emerge" / "BSE SME")
+// into individual badges so NSE/BSE always stand out clearly.
+function ExchangeBadges({ exchange }: { exchange: string | null }) {
+  if (!exchange) return <span className="text-gray-300">—</span>;
+  const parts = exchange.split(/[,/]/).map((p) => p.trim()).filter(Boolean);
+  return (
+    <div className="flex flex-wrap gap-1">
+      {parts.map((part, i) => {
+        const key = part.match(/^(NSE|BSE)/i)?.[1]?.toUpperCase();
+        return (
+          <span
+            key={i}
+            className={`text-[10.5px] font-semibold px-1.5 py-0.5 rounded border whitespace-nowrap ${
+              (key && EXCHANGE_STYLE[key]) ?? "text-gray-600 bg-gray-50 border-gray-200"
+            }`}
+          >
+            {part}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function IpoTable({ listings }: { listings: IpoListing[] }) {
   if (listings.length === 0) {
     return (
@@ -32,6 +61,7 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
         <thead>
           <tr className="border-b border-gray-200 text-left text-gray-400 text-[11px] uppercase tracking-wide">
             <th className="px-4 py-2.5 font-medium">Company</th>
+            <th className="px-3 py-2.5 font-medium">Exchange</th>
             <th className="px-3 py-2.5 font-medium">Status</th>
             <th className="px-3 py-2.5 font-medium">Price Band</th>
             <th className="px-3 py-2.5 font-medium">Open</th>
@@ -47,8 +77,10 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
             <tr key={l.id} className="hover:bg-gray-50/60 transition-colors">
               <td className="px-4 py-3">
                 <div className="font-semibold text-gray-900">{l.company_name}</div>
-                {l.exchange && <div className="text-[11.5px] text-gray-400">{l.exchange}</div>}
                 {l.notes && <div className="text-[12px] text-gray-400 mt-0.5 max-w-xs">{l.notes}</div>}
+              </td>
+              <td className="px-3 py-3">
+                <ExchangeBadges exchange={l.exchange} />
               </td>
               <td className="px-3 py-3">
                 <span className={`text-[10.5px] font-medium uppercase tracking-wide px-2 py-0.5 rounded ${STATUS_STYLE[l.status] ?? "text-gray-500 bg-gray-50"}`}>
