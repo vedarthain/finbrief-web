@@ -1,9 +1,19 @@
+import { unstable_cache } from "next/cache";
 import { getPaperStories, getPaperDays, getStocksInFocus } from "@/lib/queries";
 import PaperTree from "@/components/PaperTree";
 import DatePicker from "@/components/DatePicker";
 import NavTabs from "@/components/NavTabs";
 
 export const revalidate = 300;
+
+// Reading `searchParams` below makes this route fully dynamic — Next.js skips
+// ISR entirely for dynamic routes, so `revalidate` above has no effect on its
+// own and every request would otherwise hit Postgres live. Wrap the queries
+// in unstable_cache (keyed on their args) so repeat requests for the same
+// date/edition reuse a cached result for 5 minutes instead.
+const cachedGetPaperStories = unstable_cache(getPaperStories, ["paper-stories"], { revalidate: 300 });
+const cachedGetPaperDays = unstable_cache(getPaperDays, ["paper-days"], { revalidate: 300 });
+const cachedGetStocksInFocus = unstable_cache(getStocksInFocus, ["stocks-in-focus"], { revalidate: 300 });
 
 export default async function HomePage({
   searchParams,
@@ -15,9 +25,9 @@ export default async function HomePage({
   const activeDate = params.date ?? todayIST;
 
   const [stories, days, stocksInFocus] = await Promise.all([
-    getPaperStories(activeDate, params.edition),
-    getPaperDays(),
-    getStocksInFocus(activeDate, params.edition),
+    cachedGetPaperStories(activeDate, params.edition),
+    cachedGetPaperDays(),
+    cachedGetStocksInFocus(activeDate, params.edition),
   ]);
 
   const bySection = stories.reduce<Record<string, typeof stories>>((acc, s) => {
