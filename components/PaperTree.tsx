@@ -60,8 +60,7 @@ const SECTION_BAR: Record<string, string> = {
 // children all end up empty for the day are dropped at render time.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Economy", single: "Economy" },
-  { label: "Policy", single: "Policy" },
-  { label: "Regulatory", single: "Regulatory" },
+  { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
   { label: "In Focus", children: ["Sector", STOCKS_TAB] },
   { label: "Stocks", children: ["Corporate Events", "IPO", "Market", "Trade", "Insurance"] },
   { label: "Growth & Development", single: "Growth & Development" },
@@ -113,9 +112,6 @@ export default function PaperTree({
   }, [bySection, stocksInFocus]);
 
   const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
-  const [openGroup, setOpenGroup] = useState<string | null>(
-    resolvedGroups.find((g) => !g.single)?.label ?? resolvedGroups[0]?.label ?? null
-  );
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const [focusIndex, setFocusIndex] = useState(0);
 
@@ -147,21 +143,22 @@ export default function PaperTree({
 
   const rowRefs = useRef<Record<number, HTMLElement | null>>({});
 
-  function selectLeaf(g: (typeof resolvedGroups)[number], leaf: string, focusAt = 0) {
+  function selectLeaf(leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
     setFocusIndex(focusAt);
-    if (!g.single) setOpenGroup(g.label);
     // Navigating never auto-opens a story — only a click does. Just move the highlight.
     setExpandedId(null);
   }
 
-  function toggleGroup(g: (typeof resolvedGroups)[number]) {
-    if (g.single) {
-      selectLeaf(g, g.single);
-      return;
-    }
-    setOpenGroup((prev) => (prev === g.label ? null : g.label));
+  // Clicking a group in the left panel jumps to whichever of its tabs is
+  // already active, or the first one — the right panel then shows tabs for
+  // every child of that group so the user can switch without leaving it.
+  function selectGroup(g: (typeof resolvedGroups)[number]) {
+    const current = g.resolvedChildren.includes(activeLeaf ?? "") ? (activeLeaf as string) : g.resolvedChildren[0];
+    selectLeaf(current);
   }
+
+  const activeGroup = resolvedGroups.find((g) => g.resolvedChildren.includes(activeLeaf ?? "")) ?? null;
 
   // ── Arrow-key navigation: Up/Down move within a section, Left/Right switch sections ──
   // Keep a ref mirror of everything the handler needs so the listener (attached
@@ -202,13 +199,12 @@ export default function PaperTree({
         ? Math.min(curIdx + 1, flatLeaves.length - 1)
         : Math.max(curIdx - 1, 0);
       if (nextIdx === curIdx) return;
-      const { leaf, group } = flatLeaves[nextIdx];
-      selectLeaf(group, leaf, 0);
+      const { leaf } = flatLeaves[nextIdx];
+      selectLeaf(leaf, 0);
     }
     window.addEventListener("keydown", onKeyDown, { capture: true });
     return () => window.removeEventListener("keydown", onKeyDown, { capture: true });
     // Mount-only: onKeyDown reads current values via liveRef, so it never goes stale.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -238,60 +234,25 @@ export default function PaperTree({
       <aside className="w-full md:w-56 shrink-0 md:sticky md:top-20">
         <nav className="rounded-lg bg-white border border-gray-200 overflow-hidden">
           {resolvedGroups.map((g) => {
-            const isGroup = !g.single;
-            const isOpen = isGroup && openGroup === g.label;
-            const isActiveLeafHere = g.resolvedChildren.includes(activeLeaf ?? "");
+            const isActiveGroup = g.resolvedChildren.includes(activeLeaf ?? "");
             return (
-              <div key={g.label} className="border-b border-gray-100 last:border-b-0">
-                <button
-                  onClick={() => toggleGroup(g)}
-                  className={`w-full flex items-center gap-2 px-3 py-2 text-[14.5px] transition-colors ${
-                    !isGroup && activeLeaf === g.single
-                      ? "bg-gray-900 text-white font-medium"
-                      : isActiveLeafHere
-                      ? "bg-gray-50 text-gray-900 font-medium"
-                      : "text-gray-600 hover:bg-gray-50"
+              <button
+                key={g.label}
+                onClick={() => selectGroup(g)}
+                className={`w-full flex items-center gap-2 px-3 py-2 text-[14.5px] transition-colors border-b border-gray-100 last:border-b-0 ${
+                  isActiveGroup ? "bg-gray-900 text-white font-medium" : "text-gray-600 hover:bg-gray-50"
+                }`}
+              >
+                <span
+                  className={`w-1.5 h-1.5 rounded-full shrink-0 ${
+                    isActiveGroup ? "bg-white" : SECTION_BAR[g.resolvedChildren[0]] ?? "bg-gray-400"
                   }`}
-                >
-                  <span
-                    className={`w-1.5 h-1.5 rounded-full shrink-0 ${
-                      !isGroup && activeLeaf === g.single ? "bg-white" : SECTION_BAR[g.resolvedChildren[0]] ?? "bg-gray-400"
-                    }`}
-                  />
-                  <span className="truncate">{g.label}</span>
-                  <span className={`ml-auto text-[10px] tabular-nums ${!isGroup && activeLeaf === g.single ? "text-gray-300" : "text-gray-400"}`}>
-                    {g.resolvedChildren.reduce((sum, c) => sum + countOf(c), 0)}
-                  </span>
-                  {isGroup && (
-                    <span className={`text-[9px] ${isOpen ? "rotate-180" : ""} transition-transform text-gray-400`}>▾</span>
-                  )}
-                </button>
-                {isGroup && isOpen && (
-                  <div className="bg-gray-50/60">
-                    {g.resolvedChildren.map((leaf) => (
-                      <button
-                        key={leaf}
-                        onClick={() => selectLeaf(g, leaf)}
-                        className={`w-full flex items-center gap-2 pl-7 pr-3 py-1.5 text-[14px] transition-colors ${
-                          activeLeaf === leaf
-                            ? "bg-gray-900 text-white font-medium"
-                            : "text-gray-500 hover:bg-gray-100"
-                        }`}
-                      >
-                        <span
-                          className={`w-1.5 h-1.5 rounded-full shrink-0 ${
-                            activeLeaf === leaf ? "bg-white" : SECTION_BAR[leaf] ?? "bg-gray-400"
-                          }`}
-                        />
-                        <span className="truncate">{leaf}</span>
-                        <span className={`ml-auto text-[10px] tabular-nums ${activeLeaf === leaf ? "text-gray-300" : "text-gray-400"}`}>
-                          {countOf(leaf)}
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
+                />
+                <span className="truncate">{g.label}</span>
+                <span className={`ml-auto text-[10px] tabular-nums ${isActiveGroup ? "text-gray-300" : "text-gray-400"}`}>
+                  {g.resolvedChildren.reduce((sum, c) => sum + countOf(c), 0)}
+                </span>
+              </button>
             );
           })}
         </nav>
@@ -302,13 +263,24 @@ export default function PaperTree({
 
       {/* ── Right: row list, expand on click or arrow keys ────────────── */}
       <div className="flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
-        {activeLeaf && (
-          <div className="flex items-center gap-2 px-4 py-2.5">
-            <span className={`text-[12px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded ${
-              SECTION_STYLE[activeLeaf] ?? "text-gray-500 bg-gray-50"
-            }`}>
-              {activeLeaf}
-            </span>
+        {activeGroup && (
+          <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
+            {activeGroup.resolvedChildren.map((leaf) => (
+              <button
+                key={leaf}
+                onClick={() => selectLeaf(leaf)}
+                className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
+                  activeLeaf === leaf
+                    ? SECTION_STYLE[leaf] ?? "text-gray-700 bg-gray-100"
+                    : "text-gray-400 hover:bg-gray-50"
+                }`}
+              >
+                {leaf}
+                <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
+                  {countOf(leaf)}
+                </span>
+              </button>
+            ))}
           </div>
         )}
         {activeLeaf === STOCKS_TAB && (
