@@ -248,8 +248,12 @@ export async function getPaperStories(date?: string, edition?: string): Promise<
 export interface StockInFocus {
   name: string;
   note: string;
+  edition?: string;
 }
 
+// Merges stocks_in_focus across every edition published for the date (not just
+// one) so that once a second newspaper is added, both editions' highlights show
+// up here instead of one silently winning an arbitrary LIMIT 1.
 export async function getStocksInFocus(date?: string, edition?: string): Promise<StockInFocus[]> {
   const d = date ?? new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
   const params: (string)[] = [d];
@@ -259,10 +263,13 @@ export async function getStocksInFocus(date?: string, edition?: string): Promise
     where += ` AND edition = $2`;
   }
   const { rows } = await pool.query(
-    `SELECT stocks_in_focus FROM paper_meta WHERE ${where} LIMIT 1`,
+    `SELECT edition, stocks_in_focus FROM paper_meta WHERE ${where}`,
     params
   );
-  return rows[0]?.stocks_in_focus ?? [];
+  const multiEdition = rows.length > 1;
+  return rows.flatMap((r) =>
+    (r.stocks_in_focus ?? []).map((s: StockInFocus) => (multiEdition ? { ...s, edition: r.edition } : s))
+  );
 }
 
 export async function getPaperDays(): Promise<{ date: string; edition: string }[]> {

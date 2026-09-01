@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { PaperStory, StockInFocus } from "@/lib/queries";
 
 function renderSummary(text: string, dimClass: string) {
@@ -68,6 +68,14 @@ const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Others", single: "Others" },
 ];
 
+function EditionBadge({ edition }: { edition: string }) {
+  return (
+    <span className="shrink-0 text-[9px] font-medium uppercase tracking-wide px-1.5 py-0.5 rounded border border-gray-200 text-gray-400 bg-gray-50">
+      {edition}
+    </span>
+  );
+}
+
 export default function PaperTree({
   bySection,
   stocksInFocus,
@@ -87,27 +95,81 @@ export default function PaperTree({
     })
     .filter((g): g is { label: string; single?: string; children?: string[]; resolvedChildren: string[] } => g !== null);
 
+  // Flattened leaf order — drives ArrowLeft/ArrowRight navigation across sections.
+  const flatLeaves = useMemo(
+    () => resolvedGroups.flatMap((g) => g.resolvedChildren.map((leaf) => ({ leaf, group: g }))),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [resolvedGroups.map((g) => g.label + g.resolvedChildren.join(",")).join("|")]
+  );
+
+  // More than one distinct edition present anywhere → show source badges.
+  const multiEdition = useMemo(() => {
+    const editions = new Set<string>();
+    Object.values(bySection).forEach((rows) => rows.forEach((r) => editions.add(r.edition)));
+    stocksInFocus.forEach((s) => s.edition && editions.add(s.edition));
+    return editions.size > 1;
+  }, [bySection, stocksInFocus]);
+
   const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
   const [openGroup, setOpenGroup] = useState<string | null>(
     resolvedGroups.find((g) => !g.single)?.label ?? resolvedGroups[0]?.label ?? null
   );
   const [expandedId, setExpandedId] = useState<number | null>(null);
+  const [focusIndex, setFocusIndex] = useState(0);
 
   const rows = activeLeaf && activeLeaf !== STOCKS_TAB ? bySection[activeLeaf] ?? [] : [];
+  const itemCount = activeLeaf === STOCKS_TAB ? stocksInFocus.length : rows.length;
 
-  function selectLeaf(g: typeof resolvedGroups[number], leaf: string) {
+  const rowRefs = useRef<Record<number, HTMLDivElement | null>>({});
+
+  function selectLeaf(g: (typeof resolvedGroups)[number], leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
-    setExpandedId(null);
+    setFocusIndex(focusAt);
     if (!g.single) setOpenGroup(g.label);
+    const leafRows = leaf === STOCKS_TAB ? null : bySection[leaf] ?? [];
+    setExpandedId(leafRows && leafRows[focusAt] ? leafRows[focusAt].id : null);
   }
 
-  function toggleGroup(g: typeof resolvedGroups[number]) {
+  function toggleGroup(g: (typeof resolvedGroups)[number]) {
     if (g.single) {
       selectLeaf(g, g.single);
       return;
     }
     setOpenGroup((prev) => (prev === g.label ? null : g.label));
   }
+
+  // ── Arrow-key navigation: Up/Down move within a section, Left/Right switch sections ──
+  useEffect(() => {
+    function onKeyDown(e: KeyboardEvent) {
+      if (!["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) return;
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA") return;
+      e.preventDefault();
+
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        if (itemCount === 0) return;
+        const next = e.key === "ArrowDown"
+          ? Math.min(focusIndex + 1, itemCount - 1)
+          : Math.max(focusIndex - 1, 0);
+        setFocusIndex(next);
+        if (activeLeaf !== STOCKS_TAB && rows[next]) setExpandedId(rows[next].id);
+        rowRefs.current[next]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+        return;
+      }
+
+      // ArrowLeft / ArrowRight — move to previous/next leaf section
+      const curIdx = flatLeaves.findIndex((f) => f.leaf === activeLeaf);
+      if (curIdx === -1) return;
+      const nextIdx = e.key === "ArrowRight"
+        ? Math.min(curIdx + 1, flatLeaves.length - 1)
+        : Math.max(curIdx - 1, 0);
+      const { leaf, group } = flatLeaves[nextIdx];
+      selectLeaf(group, leaf, 0);
+    }
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeLeaf, focusIndex, itemCount, rows, flatLeaves]);
 
   return (
     <div className="flex flex-col md:flex-row gap-4 items-start">
@@ -172,9 +234,12 @@ export default function PaperTree({
             );
           })}
         </nav>
+        <p className="hidden md:block mt-2 px-1 text-[10.5px] text-gray-400">
+          ↑↓ move between stories · ←→ switch section
+        </p>
       </aside>
 
-      {/* ── Right: row list, expand on click ──────────────────────────── */}
+      {/* ── Right: row list, expand on click or arrow keys ────────────── */}
       <div className="flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
         {activeLeaf && (
           <div className="flex items-center gap-2 px-4 py-2">
@@ -188,27 +253,40 @@ export default function PaperTree({
         {activeLeaf === STOCKS_TAB && (
           <div className="px-4 py-3">
             <ul className="space-y-2.5">
-              {stocksInFocus.map((s) => (
-                <li key={s.name} className="text-[13px] md:text-[12.5px] leading-snug">
+              {stocksInFocus.map((s, i) => (
+                <li
+                  key={s.name}
+                  ref={(el) => { rowRefs.current[i] = el; }}
+                  className={`text-[13px] md:text-[12.5px] leading-snug rounded px-1.5 py-0.5 -mx-1.5 transition-colors ${
+                    focusIndex === i ? "bg-amber-50 ring-1 ring-amber-200" : ""
+                  }`}
+                >
                   <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">{s.name}</span>
                   <span className="text-gray-500"> — {s.note}</span>
+                  {multiEdition && s.edition && <EditionBadge edition={s.edition} />}
                 </li>
               ))}
             </ul>
           </div>
         )}
-        {rows.map((s) => {
+        {rows.map((s, i) => {
           const open = expandedId === s.id;
+          const focused = focusIndex === i;
           return (
-            <div key={s.id}>
+            <div
+              key={s.id}
+              ref={(el) => { rowRefs.current[i] = el; }}
+              className={focused ? "bg-amber-50/70" : undefined}
+            >
               <button
-                onClick={() => setExpandedId(open ? null : s.id)}
+                onClick={() => { setFocusIndex(i); setExpandedId(open ? null : s.id); }}
                 className="w-full text-left px-4 py-2.5 hover:bg-gray-50 transition-colors"
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2">
                   <h3 className="flex-1 min-w-0 truncate text-[14px] md:text-[13px] font-semibold text-gray-900">
                     {s.headline}
                   </h3>
+                  {multiEdition && <EditionBadge edition={s.edition} />}
                   <span className="text-gray-300 text-[12px] shrink-0">
                     {open ? "–" : "+"}
                   </span>

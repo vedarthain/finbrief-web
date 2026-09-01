@@ -11,6 +11,10 @@ This is a recurring daily task. Follow this exact pipeline instead of re-derivin
 
 PDF lives in `~/Documents/epapers/`. Ask the user for the exact filename/date/edition if not obvious (usually "Mumbai" edition). Determine the target `paper_date` (IST date, `YYYY-MM-DD`).
 
+**Multiple newspapers on the same date are supported.** `paper_stories`/`paper_meta` are keyed on `(edition, paper_date)`, so a second title (e.g. a different newspaper brand, not just a different city edition of the same paper) publishes as its own `edition` value without touching the first one's rows — `publish-paper.mjs` only deletes+reinserts rows matching the `edition` in the JSON file being published. The UI (`components/PaperTree.tsx`) automatically shows a small source badge on every story once it detects more than one distinct `edition` value for the date; with only one edition (today's default) no badge is shown, so no UI change is needed when adding a second paper.
+
+**Cross-edition dedup:** if two different newspapers cover the same underlying event on the same date (e.g. both report the same GDP print or the same company's results), do not publish it as two separate stories under two editions. Pick the more complete/better-written version as the single published story, and only keep both if they add genuinely distinct facts (in which case merge them into one story per the dedup rule in §3a, same as within-paper dedup). The goal is one story per real-world event across the whole day's paper set, not one per source.
+
 ## 2. Read the PDF — mind the page offset
 
 The `Read` tool's internal PDF page index is **NOT** the same as the printed page number.
@@ -48,7 +52,7 @@ The `section` field must be one of these 12 fixed leaf values. The UI groups the
 
 **The IPO-vs-Market test:** if the story is about a specific company's capital-raise event (new listing, IPO price band/allotment, rights/preferential issue), it's IPO. If it's about trading/liquidity/index mechanics, currency, credit growth, or fund flows not tied to one company's capital raise, it's Market.
 
-**Dedup rule:** if the same underlying event (e.g. a GDP print) generates multiple candidate stories from different pages (the data page, a reaction/quote page, an opinion piece restating the number), merge them into **one** comprehensive story under the correct category — do not publish near-duplicate stories that just restate the same headline fact from different angles. A distinct opinion/editorial take can still go to Others if it adds real independent argument, not just a restatement.
+**Dedup rule:** if the same underlying event (e.g. a GDP print) generates multiple candidate stories from different pages (the data page, a reaction/quote page, an opinion piece restating the number), merge them into **one** comprehensive story under the correct category — do not publish near-duplicate stories that just restate the same headline fact from different angles. A distinct opinion/editorial take can still go to Others if it adds real independent argument, not just a restatement. This applies **across editions too** when more than one newspaper is published for the same date — see §1's "Cross-edition dedup" note.
 
 ## 3b. Only highlight actual company/corporate names with `[[...]]` — never people, ministries, or agencies
 
