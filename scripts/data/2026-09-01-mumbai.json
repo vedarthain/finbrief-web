@@ -430,5 +430,85 @@
       "name": "Veegaland Developers",
       "note": "Sets IPO price band at ₹130-140/share; bidding opens September 10"
     }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Symbiotec Pharmalab",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 988,
+      "issue_price_high": 988,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-01",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "API/CDMO manufacturer; fresh issue ₹1,500M + OFS ₹16,070M; QIB subscribed 180.85x"
+    },
+    {
+      "company_name": "Skyways Air Services",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 138,
+      "issue_price_high": 138,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-01",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "Air/ocean/express cargo forwarder; ₹58,279.60 lakh issue; QIB subscribed 139.36x"
+    },
+    {
+      "company_name": "ABH Healthcare",
+      "ticker": null,
+      "exchange": "NSE Emerge",
+      "issue_price_low": 102,
+      "issue_price_high": 102,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-01",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "SME IPO; operator of Anil Baghi Hospital, Ferozepur; ₹3,498.19 lakh issue, subscribed 1.42x"
+    },
+    {
+      "company_name": "Veegaland Developers",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 130,
+      "issue_price_high": 140,
+      "open_date": "2026-09-10",
+      "close_date": "2026-09-15",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Kerala residential developer (\"Veegaland Homes\"); up to ₹21,000 lakh"
+    },
+    {
+      "company_name": "NCL Research and Financial Services",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": 1,
+      "issue_price_high": 1,
+      "open_date": "2026-09-03",
+      "close_date": "2026-09-18",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Rights issue, 7:15 ratio, up to ₹4,994.86 lakh"
+    },
+    {
+      "company_name": "Alan Scott Enterprises",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": 75,
+      "issue_price_high": 75,
+      "open_date": "2026-09-01",
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "Rights issue, 1:6 ratio, up to ₹714.70 lakh (corrigendum updated dates)"
+    }
   ]
 }
