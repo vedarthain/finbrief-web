@@ -3,267 +3,81 @@
   "paper_date": "2026-09-01",
   "stories": [
     {
-      "section": "Economy & Policy",
+      "section": "Economy",
       "headline": "Q1 GDP beats forecasts to grow at 7.8%",
-      "summary": "India's economy grew a stronger-than-expected 7.8% in the April-June quarter despite the West Asia war and accompanying energy-price shock, driven by robust investments, resilient services and a pickup in exports. GVA expanded 8.2%, with services growing 10% and the secondary sector 8.6%. [[Prime Minister Narendra Modi]] called it a herculean feat and said \"doomsayers\" had been proven wrong, crediting the country's collective strength; Finance Minister [[Nirmala Sitharaman]] credited the hard work of the people of India. Economists at [[Morgan Stanley]], [[State Bank of India]], [[CareEdge Ratings]], [[HDFC Bank]] and [[India Ratings and Research]] raised their FY27 growth forecasts to 7-7.5%, with [[ANZ Bank]] expecting the RBI's Monetary Policy Committee to deliver 50 basis points of rate cuts in December.",
+      "summary": "India's economy grew a stronger-than-expected 7.8% in the April-June quarter despite the West Asia war and accompanying energy-price shock, driven by robust investments, resilient services and a pickup in exports. GVA expanded 8.2%, with services growing 10% and the secondary sector 8.6%. Prime Minister Narendra Modi called it a herculean feat and said \"doomsayers\" had been proven wrong, crediting the country's collective strength; Finance Minister Nirmala Sitharaman credited the hard work of the people of India. Economists at [[Morgan Stanley]], [[State Bank of India]], CareEdge Ratings, [[HDFC Bank]] and India Ratings and Research raised their FY27 growth forecasts to 7-7.5%, with [[ANZ Bank]] expecting the RBI's Monetary Policy Committee to deliver 50 basis points of rate cuts in December.",
       "page_number": 1
     },
     {
-      "section": "Economy & Policy",
+      "section": "Economy",
       "headline": "Growth strong, external risks persist: CEA",
-      "summary": "India's economic growth remains resilient despite global uncertainties, with strong domestic demand, improving investment activity and robust exports, Chief Economic Adviser [[Anantha Nageswaran]] said on Monday. He flagged risks from geopolitical tensions in West Asia, particularly their potential impact on energy prices and global demand, and said India would need to continue diversifying its exports while maintaining cost competitiveness.",
+      "summary": "India's economic growth remains resilient despite global uncertainties, with strong domestic demand, improving investment activity and robust exports, Chief Economic Adviser Anantha Nageswaran said on Monday. He flagged risks from geopolitical tensions in West Asia, particularly their potential impact on energy prices and global demand, and said India would need to continue diversifying its exports while maintaining cost competitiveness.",
       "page_number": 2
     },
     {
-      "section": "Economy & Policy",
+      "section": "Economy",
       "headline": "Fiscal deficit at 26.8% of FY27 target",
-      "summary": "The Centre's fiscal deficit was contained at 26.8% of the annual target in the first four months of FY27, aided by strong revenue growth even as capex surged. Net tax collections rose 27.6% in April-July, capex grew a robust 30% year-on-year, and gross tax revenues rose 11% compared to our current-year projection of a double-digit nominal GDP growth for the fiscal, [[ICRA]] chief economist [[Aditi Nayar]] said.",
+      "summary": "The Centre's fiscal deficit was contained at 26.8% of the annual target in the first four months of FY27, aided by strong revenue growth even as capex surged. Net tax collections rose 27.6% in April-July, capex grew a robust 30% year-on-year, and gross tax revenues rose 11% compared to our current-year projection of a double-digit nominal GDP growth for the fiscal, ICRA chief economist Aditi Nayar said.",
       "page_number": 2
     },
     {
-      "section": "Economy & Policy",
-      "headline": "Centre weighs easing FDI norms for defence further",
-      "summary": "The government is considering easing foreign direct investment norms in the defence sector to facilitate more projects where global giants can participate, per sources. Companies reported ₹6,671-crore FDI inflows as of March. Foreign OEMs utilising the 74% automatic FDI route find themselves disqualified from major domestic procurement tenders, a core issue cited by foreign investors, said the [[Department for Promotion of Industry and Internal Trade]].",
-      "page_number": 3
-    },
-    {
-      "section": "Economy & Policy",
+      "section": "Economy",
       "headline": "FinMin: Tracking global bond yields and inflation risks",
       "summary": "India is closely tracking global sovereign bond yields, competition for international investment capital and the risk of higher global inflation, the finance ministry said in its August monthly economic report. Domestic economic activity remained resilient through July, though the pace of expansion moderated across some high-frequency indicators, including manufacturing and services PMI and e-way bill generation.",
       "page_number": 3
     },
     {
-      "section": "Economy & Policy",
+      "section": "Economy",
       "headline": "Services sector growth recovers in June",
-      "summary": "India's services sector output growth recovered in May, according to the trial Index of Services Production released Monday by the [[Ministry of Statistics and Programme Implementation]]. Twelve of the 19 sectors tracked under ISP saw higher growth in June compared to May. [[IT and computer-related services]], which has the highest weight in ISP, grew 13.5% in June, higher than 10.3% in May.",
+      "summary": "India's services sector output growth recovered in May, according to the trial Index of Services Production released Monday by the Ministry of Statistics and Programme Implementation. Twelve of the 19 sectors tracked under ISP saw higher growth in June compared to May. IT and computer-related services, which has the highest weight in ISP, grew 13.5% in June, higher than 10.3% in May.",
       "page_number": 3
     },
     {
-      "section": "IPO & Market",
-      "headline": "Symbiotec Pharmalab lists on BSE, NSE after IPO",
-      "summary": "[[Symbiotec Pharmalab Limited]], an API and CDMO manufacturer, completed its basis of allotment for an IPO of 17,786,442 equity shares at ₹988 per share, with trading expected to commence September 1, 2026. The offer comprised a fresh issue of ₹1,500 million and an offer for sale of ₹16,070 million by promoters [[Anil Satwani]], [[Kashish Satwani]], [[Sushil Satwani]] and [[Satwani Holdings LLP]] along with [[Rosewood Investments]] and [[India Business Excellence Fund - III]]. The QIB portion was subscribed 180.85 times.",
-      "page_number": 12
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Skyways Air Services lists on BSE, NSE main board",
-      "summary": "[[Skyways Air Services Limited]], an air, ocean and express cargo forwarder, finalised its basis of allotment for an IPO of 4,22,31,600 equity shares at ₹138 per share, aggregating ₹58,279.60 lakh, with promoters [[Yashpal Sharma]] and [[Tarun Sharma]]; trading was expected to commence September 1, 2026. Air cargo services contributed 77.02% of FY26 revenue of ₹2,75,178.15 lakh; the QIB portion was subscribed 139.36 times.",
-      "page_number": 22
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "ABH Healthcare (Anil Baghi Hospital) lists on NSE Emerge",
-      "summary": "[[ABH Healthcare Limited]], operator of the [[Anil Baghi Hospital]] in Ferozepur, Punjab, completed its basis of allotment for an SME IPO of 34,29,600 equity shares at ₹102 per share, aggregating ₹3,498.19 lakhs, with trading on [[NSE Emerge]] expected to commence September 1, 2026. Promoters are [[Dr Kamal Baghi]], [[Dr Saurabh Baghi]] and [[Dr Vaishali Saini]]; the issue was subscribed 1.42 times overall.",
-      "page_number": 26
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Veegaland Developers sets IPO price band at ₹130-140",
-      "summary": "[[Veegaland Developers Limited]], a Kerala-focused residential real estate developer operating under the \"Veegaland Homes\" brand with promoters [[Kochouseph Thomas Chittilappilly]] and [[K Chittilappilly Trust]], set its IPO price band at ₹130-140 per share, aggregating up to ₹21,000 lakh. The issue opens September 10 and closes September 15, 2026. Revenue from operations grew to ₹25,097.62 lakh in FY26 with profit after tax of ₹2,661.46 lakh; weighted average return on net worth for the last three fiscals was 23.52%.",
-      "page_number": 28
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "NCL Research and Financial Services launches ₹4,994.86-lakh rights issue",
-      "summary": "[[NCL Research and Financial Services Limited]] is issuing up to 49,94,86,400 rights equity shares at ₹1 per share (face value ₹1) in the ratio of 7 rights shares for every 15 fully paid-up shares held, aggregating up to ₹4,994.86 lakhs. The issue opens September 3, 2026 and closes September 18, 2026, with on-market renunciation permitted until September 15.",
-      "page_number": 24
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Alan Scott Enterprises issues corrigendum to ₹714.70-lakh rights issue",
-      "summary": "[[Alan Scott Enterprises Limited]], promoted by [[Sureshkumar Jain]], issued a corrigendum to its August 13, 2026 Letter of Offer for a rights issue of up to 9,52,932 partly paid-up equity shares at ₹75 per share aggregating up to ₹714.70 lakhs, in the ratio of 1 rights share for every 6 equity shares held, updating the issue opening and on-market renunciation dates to Tuesday, September 1, 2026.",
-      "page_number": 32
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Bliss GVS Pharma: post-offer advertisement on open offer completion",
-      "summary": "[[Anupam Rasayan India Limited]] (acquirer) together with [[Mates Visa Consultancy Private Limited]] (PAC) completed a post-offer open offer for up to 2,77,26,848 equity shares (26% of expanded voting share capital) of [[Bliss GVS Pharma Limited]] at ₹299 per share; 1,669 shares were tendered and accepted in the offer, which closed August 24, 2026, taking the acquirer's post-offer stake to 79.22%.",
-      "page_number": 11
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "MSCI rebalancing fires up NSE closing auction",
-      "summary": "The [[National Stock Exchange]]'s closing auction session received a record turnover of nearly ₹40,000 crore on Monday as MSCI index-adjustment orders routed through the CAS mechanism, pushing almost a third of stocks traded in the auction to their daily 3% price limits. Volume of 678.11 million shares was more than 30 times the average. [[Eternal]], [[Laurus Labs]], [[Reliance Industries]], [[Adani Energy Solutions]] and [[Adani Enterprises]] were among the most actively traded stocks.",
-      "page_number": 1
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Bank credit grows 18.28%",
-      "summary": "Growth in bank credit remained robust, with total outstanding credit rising 18.28% year-on-year to ₹220 lakh crore as of August 15, according to the latest [[Reserve Bank of India]] data. However, growth moderated from 19.33% in the previous fortnight. Deposit growth eased to 14.74% from 15.37% over the same period, with the credit-deposit ratio at 81.72%.",
-      "page_number": 6
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "RBI support, inflows push rupee to near 1-mth high",
-      "summary": "The rupee strengthened to nearly a one-month high, supported by likely intervention from the central bank and equity-related inflows, market participants said. The domestic currency rose 21 paise to 95.17 against the dollar, its highest level since August 5. \"The rupee was supported by the RBI intervention and MSCI-related outflows. A softer dollar index also aided the currency,\" said [[Dilip Parmar]], research analyst, [[HDFC Securities]].",
-      "page_number": 6
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "NIIF infra fund secures ₹19,000-cr first close",
-      "summary": "[[National Investment and Infrastructure Fund]] on Monday said it has secured ₹19,000 crore (around $2 billion) in the first close of its latest infrastructure fund, NIIF Infrastructure Fund II, which represents more than 60% of the overall ₹30,000-crore target size. [[Vinod Giri]], managing partner of NIIF's infrastructure fund, said the fund now plans to raise the remaining portion within 18 months, betting on infrastructure boom while drawing long-term overseas capital.",
-      "page_number": 6
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Liquidity tops ₹5L cr",
-      "summary": "Banking system liquidity has strengthened significantly on account of inflows from foreign currency non-resident (FCNR) deposits, the RBI conducted two variable rate reverse repo (VRRR) auctions with 15-day and overnight tenors on Monday. The 15-day VRRR saw less demand, receiving bids notified of ₹6 crore against the notified amount of ₹1.35 crore, while system liquidity stood at ₹72.8 billion.",
-      "page_number": 6
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "$50-bn medtech sector by FY30, but funding lags",
-      "summary": "India's medical device sector, currently worth around $12 billion in FY24, is expected to grow at 15% annually to reach $50 billion by FY30, according to a study by the [[Department of Pharmaceuticals]]. Small manufacturers struggle to raise start-up capital as MNCs control 80-90% of the specialised, high-end device market, while domestic manufacturers face inadequate infrastructure and high financing costs.",
-      "page_number": 2
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "Premium phones fly, budget ones flag",
-      "summary": "India's smartphone shipments dropped 10% year-on-year in April-June, the steepest fall in six years, per [[Counterpoint Research]], with damage concentrated in phones priced below ₹15,000 which crashed nearly 50%. Average selling price climbed to around ₹30,000, up almost 20% year-on-year, as affordable credit and premium upgrades drive the shift; sales of the [[iPhone 17]] and [[iPhone Air]] added 16% to smartphone sales.",
-      "page_number": 1
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "Analogue paneer ban to lift organised mkt",
-      "summary": "The ongoing crackdown by the [[Food Safety and Standards Authority of India]] on analogue dairy products across several states could significantly expand the opportunity for organised dairy companies in India's estimated ₹1-lakh-crore paneer market, according to [[Milky Mist Dairy Food]] Chief Executive [[K Rathnam]]. India's paneer market is estimated at ₹1 lakh crore, with the unorganised sector accounting for about 94% and organised players the remaining 6-7%.",
-      "page_number": 4
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "Taking AI from pilot to scale",
-      "summary": "The real opportunity now lies in turning AI pilots into measurable business value, writes [[Manish Prasad]], President & MD of [[SAP Indian Subcontinent]]. AI currently supports 33% of business tasks in India and is expected to reach 51% within the next two years, according to SAP's 2026 Value of AI research; 71% of AI businesses now have an AI strategy aligned with their business goals.",
-      "page_number": 9
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "The biggest gains will come from execution",
-      "summary": "India's AI opportunity lies in moving faster, as much as it rests on moving differently, argues [[Rajesh Nambiar]], President of [[Nasscom]]. TCS's annualised AI revenue run-rate reached $2.6 billion in Q1 FY27, up 13.6% quarter-on-quarter; [[Infosys]] reported AI revenue of $417 million and [[HCLTech]]'s AI revenue rose 10.3% sequentially to $171 million.",
-      "page_number": 9
-    },
-    {
-      "section": "Environment & Resources",
-      "headline": "Sept monsoon to be below normal: IMD",
-      "summary": "Rainfall in September, the last month of the southwest monsoon season, is likely to be less than 91% of the benchmark long period average, the [[India Meteorological Department]] said, citing strengthening El Nino conditions. With a monsoon deficit of 13.8% against LPA after the first three months of the 2026 southwest monsoon season, overall seasonal rainfall is likely to be below 90% of the benchmark, the lowest since 2009.",
-      "page_number": 10
-    },
-    {
-      "section": "Environment & Resources",
-      "headline": "Nepal floods: Death toll crosses 930",
-      "summary": "The death toll from the flash floods in Nepal rose to more than 939 on Monday, with more bodies being recovered, even as more than 4,000 people remain missing, authorities said. In Nepal, 272 bodies have so far been recovered in Chitwan district, 207 in Nawalparasi East, 151 in Nawalparasi West, 95 in Nuwakot, 62 in Gorkha, 55 in Dhading, 37 in Tanahu and 24 in Rasuwa.",
-      "page_number": 20
-    },
-    {
-      "section": "Growth & Development",
-      "headline": "Semicon 2.0 notified to widen push beyond fabs",
-      "summary": "The government notified detailed guidelines for Semicon 2.0, broadening its ₹1.27-lakh-crore chip strategy from attracting fabrication plants to building capabilities across design, equipment and materials. Large silicon wafer fabs get 40% fiscal support; smaller fabs with a minimum ₹500 crore investment are eligible for support of 35%. IT Minister [[Ashwini Vaishnaw]] said the scheme targets 100,000 more semiconductor engineers.",
-      "page_number": 1
-    },
-    {
-      "section": "Growth & Development",
-      "headline": "Highway project awards may increase in FY27",
-      "summary": "Road awards by the [[Ministry of Road Transport and Highways]] are expected to rise to 8,000-8,500 km in FY27 from around 7,000 km in the previous year, per a report from rating agency [[Icra]]. Engineering, procurement and construction contracts remained the preferred routing mode, accounting for 65-70% of the total awards, while hybrid annuity mode projects accounted for 25-30%.",
-      "page_number": 2
-    },
-    {
-      "section": "International News",
-      "headline": "US, Iran exchange attacks; UAE and Jordan targeted",
-      "summary": "US President [[Donald Trump]] promised to \"hit them hard\" after Iran launched missiles overnight at two US air bases in Jordan in response to a US attack on Iran's Larak island, a source said, adding that conflict extended. Oil prices rose over 2% to above $90, with Brent crude futures up $2.35, or 2.67%, to $90.45 a barrel. A senior Iranian source said Tehran would deliver a harsh response if attacked further.",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "Aon to acquire USI from KKR in $17-bn deal",
-      "summary": "[[Aon]] said on Monday it will buy rival [[USI Insurance Services]] in a $17 billion deal from private equity firm [[KKR]], one of the biggest insurance acquisitions in recent years. Mega buyouts have become more typical in the highly fragmented insurance brokerage industry as companies turn more willing to pay top dollar to bolster their market presence and competitive edge, said [[Aon]] CEO [[Greg Case]].",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "Chinese factory slump eases, but services struggle",
-      "summary": "China's factory activity improved in August under stronger demand, while services activity stayed weak, underscoring deepening imbalances in the economy and fuelling calls for policy measures to boost growth. The official manufacturing purchasing managers' index picked up to 49.8 in August from 49.2 in July, remaining below the 50-mark separating growth from contraction, a survey by the [[National Bureau of Statistics]] showed.",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "Nvidia to invest $3.5 bn in chipmaker MediaTek",
-      "summary": "[[Nvidia]] is investing $3.5 billion in [[MediaTek]], deepening collaboration with the Taiwanese chipmaker at a time when it's working to persuade more firms to build chips that plug into its dominant data centre components. [[Nvidia]] will buy bonds convertible into [[MediaTek]] shares, and the transaction will be Nvidia's largest direct investment outside the US, CEO [[Jensen Huang]] said.",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "OpenAI's ad business hits $1-bn run rate",
-      "summary": "[[OpenAI]] on Monday said [[ChatGPT]] Ads, the company's ad business, has reached $1 billion in annual revenue run rate, as adoption picks up and global expansion rolls on. The company started testing ads in ChatGPT US earlier this year and has steadily expanded to add advertisers and tap into more markets, as banks weigh to boost overall revenue growth ahead of an IPO.",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "Three Asians get Ramon Magsaysay Awards",
-      "summary": "A Singaporean lawyer and diplomat who led an international conference that adopted the [[United Nations Convention]] on the Law of the Sea, a Myanmar activist whose group documents human rights atrocities, and a former Bangladeshi teacher who has helped provide aid to her country's poorest were named among the winners of this year's Ramon Magsaysay Awards, honouring \"greatness of spirit\" through selfless service across Asia.",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "Japan seeks $56-bn defence budget",
-      "summary": "Japan's defence ministry is seeking record spending of $56 billion in the fiscal year starting in April, and the final bill could be larger as Prime Minister [[Sanae Takaichi]] prepares to launch a new military buildup plan later this year.",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "Yen breaches 160 to dollar again",
-      "summary": "The yen's breach of 160 versus the dollar underscores the Japanese currency's vulnerability to further weakness and the heightened risk of authorities entering the market again to slow its decline.",
-      "page_number": 7
-    },
-    {
-      "section": "International News",
-      "headline": "Move from endless war to end of war: PM tells Putin",
-      "summary": "Calling for an immediate end to the Russia-Ukraine conflict, [[Prime Minister Narendra Modi]] urged Russian President [[Vladimir Putin]] to move from \"endless war towards end of war,\" asserting that a peaceful resolution of the conflict is humanity's shared priority, at a meeting on the sidelines of the [[Shanghai Cooperation Organisation]] summit in Bishkek, Kyrgyzstan.",
-      "page_number": 20
-    },
-    {
-      "section": "International News",
-      "headline": "The battle for AI hegemony",
-      "summary": "Chinese President [[Xi Jinping]] positioned China as the leader of a new AI global order at the opening ceremony of the [[World Artificial Intelligence Conference]] in Shanghai, reiterating Chinese intent to not just shape, but govern the AI space, writes [[Anil Nair]] of [[ThinkStreet]]. While the US retains decisive advantage in frontier model performance, hi-end compute and private capital, China already leads in research, patent volume and industrial deployment.",
-      "page_number": 8
+      "section": "Policy",
+      "headline": "Centre weighs easing FDI norms for defence further",
+      "summary": "The government is considering easing foreign direct investment norms in the defence sector to facilitate more projects where global giants can participate, per sources. Companies reported ₹6,671-crore FDI inflows as of March. Foreign OEMs utilising the 74% automatic FDI route find themselves disqualified from major domestic procurement tenders, a core issue cited by foreign investors, said the Department for Promotion of Industry and Internal Trade.",
+      "page_number": 3
     },
     {
       "section": "Regulatory",
       "headline": "Twist in Chandra case: NCLT says no consensus",
-      "summary": "The repayment plan proposed by [[Zee Group]] founder [[Subhash Chandra]] faces another round of scrutiny after the original [[National Company Law Tribunal]] bench held that no majority view had emerged on the proposal. A newly formed five-member special bench under NCLT president [[Ravindra Chaturvedi]] will resolve the conflicting opinions on September 1; [[IndusInd Bank]], [[HDFC Bank]] and [[Canara Bank]] have opposed the plan.",
+      "summary": "The repayment plan proposed by [[Zee Group]] founder Subhash Chandra faces another round of scrutiny after the original National Company Law Tribunal bench held that no majority view had emerged on the proposal. A newly formed five-member special bench under NCLT president Ravindra Chaturvedi will resolve the conflicting opinions on September 1; [[IndusInd Bank]], [[HDFC Bank]] and [[Canara Bank]] have opposed the plan.",
       "page_number": 4
     },
     {
       "section": "Regulatory",
       "headline": "SRTT trustees make fresh bid to lift meeting ban",
-      "summary": "Three trustees of the [[Sir Ratan Tata Trust]] — [[Noel Tata]], [[Darius Khambata]] and [[Jehangir HC Jehangir]] — have individually approached the Maharashtra Charity Commissioner afresh, seeking partial relief from the ban on board meetings so that the trust can take up urgent business, including matters related to the selection of the next [[Tata Sons]] chairman. Philanthropic grants of nearly ₹400 crore remain in limbo.",
+      "summary": "Three trustees of the [[Sir Ratan Tata Trust]] — Noel Tata, Darius Khambata and Jehangir HC Jehangir — have individually approached the Maharashtra Charity Commissioner afresh, seeking partial relief from the ban on board meetings so that the trust can take up urgent business, including matters related to the selection of the next [[Tata Sons]] chairman. Philanthropic grants of nearly ₹400 crore remain in limbo.",
       "page_number": 5
     },
     {
       "section": "Regulatory",
       "headline": "SC dismisses PIL for ethanol disclosure at petrol pumps",
-      "summary": "The [[Supreme Court]] on Monday dismissed a PIL seeking a directive to the Centre to ensure mandatory and uniform labelling on every dispensing nozzle at fuel pumps disclosing the exact percentage of ethanol in petrol. A bench of Justices [[MM Sundresh]] and [[PB Varale]] said it is not going to entertain the PIL under Article 32 when the petitioner could approach the high court for relief.",
+      "summary": "The Supreme Court on Monday dismissed a PIL seeking a directive to the Centre to ensure mandatory and uniform labelling on every dispensing nozzle at fuel pumps disclosing the exact percentage of ethanol in petrol. A bench of Justices MM Sundresh and PB Varale said it is not going to entertain the PIL under Article 32 when the petitioner could approach the high court for relief.",
       "page_number": 20
     },
     {
       "section": "Regulatory",
       "headline": "Post-approval litigation bleeding IBC",
-      "summary": "The Supreme Court's dismissal of the [[Vantage Point]] review petition has signalled that forum hunting and endless litigation cannot gut the insolvency resolution ad infinitum, writes [[Shriram Subramanian]], Founder and MD of [[InGovern Research Services]]. The IBC was drafted with the precise purpose of avoiding the failures of earlier insolvency regimes that were scattered under multiple statutes.",
+      "summary": "The Supreme Court's dismissal of the [[Vantage Point]] review petition has signalled that forum hunting and endless litigation cannot gut the insolvency resolution ad infinitum, writes Shriram Subramanian, Founder and MD of InGovern Research Services. The IBC was drafted with the precise purpose of avoiding the failures of earlier insolvency regimes that were scattered under multiple statutes.",
       "page_number": 8
     },
     {
       "section": "Regulatory",
       "headline": "Taxi, rickshaw fares to increase in Mumbai region",
-      "summary": "Passengers will have to pay a minimum fare of ₹27 for an auto-rickshaw and ₹33 for a black-and-yellow taxi in the Mumbai Metropolitan Region from Tuesday, officials said. The revised fares, approved by the [[Mumbai Metropolitan Region Transport Authority]], take effect from September 1 and mark the first hike in 18 months, with drivers given three months to recalibrate their meters.",
+      "summary": "Passengers will have to pay a minimum fare of ₹27 for an auto-rickshaw and ₹33 for a black-and-yellow taxi in the Mumbai Metropolitan Region from Tuesday, officials said. The revised fares, approved by the Mumbai Metropolitan Region Transport Authority, take effect from September 1 and mark the first hike in 18 months, with drivers given three months to recalibrate their meters.",
       "page_number": 3
     },
     {
       "section": "Regulatory",
       "headline": "Vedanta Group entities seek shareholder approval via postal ballot",
-      "summary": "[[Vedanta Limited]], [[Vedanta Iron And Steel Limited]] and [[Vedanta Aluminium Metal Limited]] each issued postal ballot and remote e-voting notices seeking shareholder approval for employee stock option and share purchase plans, provision of money for buyback of own shares through trusts, and re-appointment of directors including [[Kumar Prasun Mukherjee]] and [[Arun Misra]] at [[Vedanta Limited]], with e-voting periods running through September 2026.",
+      "summary": "[[Vedanta Limited]], [[Vedanta Iron And Steel Limited]] and [[Vedanta Aluminium Metal Limited]] each issued postal ballot and remote e-voting notices seeking shareholder approval for employee stock option and share purchase plans, provision of money for buyback of own shares through trusts, and re-appointment of directors including Kumar Prasun Mukherjee and Arun Misra at [[Vedanta Limited]], with e-voting periods running through September 2026.",
       "page_number": 11
     },
     {
       "section": "Regulatory",
       "headline": "Loss of share certificates: Cipla and JSW Steel notify duplicate issuance",
-      "summary": "[[Cipla Limited]] issued notice for loss of original physical share certificates held by [[Pradeep Kumar Daga]] and [[Deepak Daga]] covering 900 shares, inviting objections within 15 days before issuing duplicates. Separately, [[JSW Steel Limited]] issued a similar notice for loss of share certificates held by [[Atul Mehta]] and [[Surendra Kumar Dakalia]] covering 1,850 shares.",
+      "summary": "[[Cipla Limited]] issued notice for loss of original physical share certificates held by Pradeep Kumar Daga and Deepak Daga covering 900 shares, inviting objections within 15 days before issuing duplicates. Separately, [[JSW Steel Limited]] issued a similar notice for loss of share certificates held by Atul Mehta and Surendra Kumar Dakalia covering 1,850 shares.",
       "page_number": 16
     },
     {
@@ -279,45 +93,57 @@
       "page_number": 33
     },
     {
-      "section": "Trade",
-      "headline": "India, Brazil agree to double trade",
-      "summary": "India and Brazil have agreed to double bilateral trade to $30 billion by 2030, underscoring a deepening economic partnership focused on pharmaceuticals, agriculture, energy and expanded trade agreements. The commitment was reaffirmed during the 8th Meeting of the India-Brazil Trade Monitoring Mechanism, co-chaired by Commerce Secretary [[Rajesh Agrawal]] and Brazil's Secretary of Foreign Trade [[Tatiana Lacerda Prazeres]].",
+      "section": "Sector",
+      "headline": "$50-bn medtech sector by FY30, but funding lags",
+      "summary": "India's medical device sector, currently worth around $12 billion in FY24, is expected to grow at 15% annually to reach $50 billion by FY30, according to a study by the Department of Pharmaceuticals. Small manufacturers struggle to raise start-up capital as MNCs control 80-90% of the specialised, high-end device market, while domestic manufacturers face inadequate infrastructure and high financing costs.",
       "page_number": 2
     },
     {
-      "section": "Trade",
-      "headline": "Toyota & Honda may get stuck with Trump's Canada tariff bill",
-      "summary": "US President [[Donald Trump]] is targeting Ottawa with a proposed 50% tariff on Canadian car imports, but Japan's [[Toyota]] and [[Honda]] may end up footing the bill since the two Japanese automakers account for more than three-quarters of all cars made in Canada, according to [[Barclays]] analysts. Doubling the levies from the current 25% could force the two companies to shutter some production lines.",
-      "page_number": 7
+      "section": "Sector",
+      "headline": "Premium phones fly, budget ones flag",
+      "summary": "India's smartphone shipments dropped 10% year-on-year in April-June, the steepest fall in six years, per Counterpoint Research, with damage concentrated in phones priced below ₹15,000 which crashed nearly 50%. Average selling price climbed to around ₹30,000, up almost 20% year-on-year, as affordable credit and premium upgrades drive the shift; sales of the iPhone 17 and iPhone Air added 16% to smartphone sales.",
+      "page_number": 1
     },
     {
-      "section": "Insurance",
-      "headline": "Seventy years of LIC: An institution evolves",
-      "summary": "On September 1, 1956, [[Life Insurance Corporation of India]] was born; the institution now completes 70 years of operations with total assets of ₹59.04 lakh crore, up from ₹411 crore in 1956. For FY26, total premium income stood at ₹5,35,984 crore, up 9.80%, while profit after tax rose 19.25% to a record ₹57,419 crore. LIC accounted for 56.66% of India's life insurance market by first-year premium income in FY25-26.",
-      "page_number": 10
+      "section": "Sector",
+      "headline": "Analogue paneer ban to lift organised mkt",
+      "summary": "The ongoing crackdown by the Food Safety and Standards Authority of India on analogue dairy products across several states could significantly expand the opportunity for organised dairy companies in India's estimated ₹1-lakh-crore paneer market, according to [[Milky Mist Dairy Food]] Chief Executive K Rathnam. India's paneer market is estimated at ₹1 lakh crore, with the unorganised sector accounting for about 94% and organised players the remaining 6-7%.",
+      "page_number": 4
+    },
+    {
+      "section": "Sector",
+      "headline": "Taking AI from pilot to scale",
+      "summary": "The real opportunity now lies in turning AI pilots into measurable business value, writes Manish Prasad, President & MD of [[SAP Indian Subcontinent]]. AI currently supports 33% of business tasks in India and is expected to reach 51% within the next two years, according to SAP's 2026 Value of AI research; 71% of AI businesses now have an AI strategy aligned with their business goals.",
+      "page_number": 9
+    },
+    {
+      "section": "Sector",
+      "headline": "The biggest gains will come from execution",
+      "summary": "India's AI opportunity lies in moving faster, as much as it rests on moving differently, argues Rajesh Nambiar, President of Nasscom. TCS's annualised AI revenue run-rate reached $2.6 billion in Q1 FY27, up 13.6% quarter-on-quarter; [[Infosys]] reported AI revenue of $417 million and [[HCLTech]]'s AI revenue rose 10.3% sequentially to $171 million.",
+      "page_number": 9
     },
     {
       "section": "Corporate Events",
       "headline": "HDFC Bank's succession goes beyond CEO",
-      "summary": "[[Sashidhar Jagdishan]]'s impending exit removes one uncertainty for [[HDFC Bank]], but the succession challenge extends beyond the CEO's office as brokerages lower target prices. Executive Director [[V Srinivasa Rangan]]'s term ends in November 2026, CFO [[Srinivasan Vaidyanathan]] is also due to retire in November, while [[Bhavin Lakhpatwala]], head of strategy and investor relations, resigned in June. [[HDFC Bank]] shares have fallen 28% in 2026.",
+      "summary": "Sashidhar Jagdishan's impending exit removes one uncertainty for [[HDFC Bank]], but the succession challenge extends beyond the CEO's office as brokerages lower target prices. Executive Director V Srinivasa Rangan's term ends in November 2026, CFO Srinivasan Vaidyanathan is also due to retire in November, while Bhavin Lakhpatwala, head of strategy and investor relations, resigned in June. [[HDFC Bank]] shares have fallen 28% in 2026.",
       "page_number": 1
     },
     {
       "section": "Corporate Events",
       "headline": "Kotak bank shortlists two EDs for CEO post",
-      "summary": "[[Kotak Mahindra Bank]] has recommended Executive Directors [[Anup Saha]] and [[Paritosh Kashyap]] to the RBI for the post of CEO, per sources cited by a Reuters report. Current CEO [[Ashok Vaswani]]'s term ends December 31, 2026 and he will not be seeking reappointment. [[Saha]] oversees retail banking; [[Kashyap]] heads wholesale banking.",
+      "summary": "[[Kotak Mahindra Bank]] has recommended Executive Directors Anup Saha and Paritosh Kashyap to the RBI for the post of CEO, per sources cited by a Reuters report. Current CEO Ashok Vaswani's term ends December 31, 2026 and he will not be seeking reappointment. Saha oversees retail banking; Kashyap heads wholesale banking.",
       "page_number": 1
     },
     {
       "section": "Corporate Events",
       "headline": "Maruti to invest ₹77,500 cr by FY31, bets on small cars",
-      "summary": "[[Maruti Suzuki]] will invest ₹77,500 crore between FY27 and FY31 as the country's largest carmaker prepares for higher vehicle demand, with spending earmarked for capacity expansion, new models, R&D, plant maintenance and marketing. Installed production capacity is set to rise to 3.65 million vehicles by FY31 from 2.9 million by FY27. Small-car sales jumped 35% in Q1 FY27; Chairman [[RC Bhargava]] said the company is reassessing its manufacturing strategy for the segment.",
+      "summary": "[[Maruti Suzuki]] will invest ₹77,500 crore between FY27 and FY31 as the country's largest carmaker prepares for higher vehicle demand, with spending earmarked for capacity expansion, new models, R&D, plant maintenance and marketing. Installed production capacity is set to rise to 3.65 million vehicles by FY31 from 2.9 million by FY27. Small-car sales jumped 35% in Q1 FY27; Chairman RC Bhargava said the company is reassessing its manufacturing strategy for the segment.",
       "page_number": 4
     },
     {
       "section": "Corporate Events",
       "headline": "ITC Infotech to buy 22% stake in Happiest Minds for ₹1,330 cr",
-      "summary": "Mid-tier IT services company [[Happiest Minds Technologies]] on Monday announced that its founder and promoter [[Ashok Soota]] and [[Ashok Soota Medical Research LLP]] will sell a 22.1% stake in the company to [[ITC Infotech]] for ₹1,329.72 crore. [[ITC Infotech]] said the amalgamation would create a scaled, future-ready, AI-first Global Technology Services Enterprise with $1 billion revenue by FY28.",
+      "summary": "Mid-tier IT services company [[Happiest Minds Technologies]] on Monday announced that its founder and promoter Ashok Soota and [[Ashok Soota Medical Research LLP]] will sell a 22.1% stake in the company to [[ITC Infotech]] for ₹1,329.72 crore. [[ITC Infotech]] said the amalgamation would create a scaled, future-ready, AI-first Global Technology Services Enterprise with $1 billion revenue by FY28.",
       "page_number": 4
     },
     {
@@ -329,13 +155,13 @@
     {
       "section": "Corporate Events",
       "headline": "Adani calls for wider lens in infrastructure ratings",
-      "summary": "Rating frameworks need to evolve to capture the value and complexity of multi-layered, futuristic infrastructure rather than assessing individual assets in isolation, [[Adani Group]] Chairman [[Gautam Adani]] said at an event in Mumbai organised by [[CareEdge Ratings]]. \"Transformational infrastructure can be constrained not only by a lack of ambition or capital, but also by the frameworks through which we assess such projects,\" he said.",
+      "summary": "Rating frameworks need to evolve to capture the value and complexity of multi-layered, futuristic infrastructure rather than assessing individual assets in isolation, [[Adani Group]] Chairman Gautam Adani said at an event in Mumbai organised by CareEdge Ratings. \"Transformational infrastructure can be constrained not only by a lack of ambition or capital, but also by the frameworks through which we assess such projects,\" he said.",
       "page_number": 4
     },
     {
       "section": "Corporate Events",
       "headline": "Parth Jindal new chairman of JSW MG Motor India",
-      "summary": "[[JSW MG Motor]] has appointed [[Parth Jindal]] as chairman with immediate effect, marking a leadership transition at the automaker's board level. [[Jindal]] has been on the board of [[JSW MG Motor]] since the formation of the JSW-SAIC joint venture and has been closely involved in the company's product strategy, manufacturing expansion and localisation programme. He also serves as MD of [[JSW Cement]] and [[JSW Paints]].",
+      "summary": "[[JSW MG Motor]] has appointed Parth Jindal as chairman with immediate effect, marking a leadership transition at the automaker's board level. Jindal has been on the board of [[JSW MG Motor]] since the formation of the JSW-SAIC joint venture and has been closely involved in the company's product strategy, manufacturing expansion and localisation programme. He also serves as MD of [[JSW Cement]] and [[JSW Paints]].",
       "page_number": 4
     },
     {
@@ -353,7 +179,7 @@
     {
       "section": "Corporate Events",
       "headline": "Allcargo Terminals gets new MD",
-      "summary": "[[Allcargo Group]] and CFS-ICD network operator [[Allcargo Terminals]] announced the appointment of [[Pranav Choudhary]] as Managing Director with effect from September 1, succeeding incumbent [[Suresh Kumar Ramiah]].",
+      "summary": "[[Allcargo Group]] and CFS-ICD network operator [[Allcargo Terminals]] announced the appointment of Pranav Choudhary as Managing Director with effect from September 1, succeeding incumbent Suresh Kumar Ramiah.",
       "page_number": 5
     },
     {
@@ -381,6 +207,180 @@
       "page_number": 10
     },
     {
+      "section": "IPO",
+      "headline": "Symbiotec Pharmalab lists on BSE, NSE after IPO",
+      "summary": "[[Symbiotec Pharmalab Limited]], an API and CDMO manufacturer, completed its basis of allotment for an IPO of 17,786,442 equity shares at ₹988 per share, with trading expected to commence September 1, 2026. The offer comprised a fresh issue of ₹1,500 million and an offer for sale of ₹16,070 million by promoters Anil Satwani, Kashish Satwani, Sushil Satwani and [[Satwani Holdings LLP]] along with [[Rosewood Investments]] and India Business Excellence Fund - III. The QIB portion was subscribed 180.85 times.",
+      "page_number": 12
+    },
+    {
+      "section": "IPO",
+      "headline": "Skyways Air Services lists on BSE, NSE main board",
+      "summary": "[[Skyways Air Services Limited]], an air, ocean and express cargo forwarder, finalised its basis of allotment for an IPO of 4,22,31,600 equity shares at ₹138 per share, aggregating ₹58,279.60 lakh, with promoters Yashpal Sharma and Tarun Sharma; trading was expected to commence September 1, 2026. Air cargo services contributed 77.02% of FY26 revenue of ₹2,75,178.15 lakh; the QIB portion was subscribed 139.36 times.",
+      "page_number": 22
+    },
+    {
+      "section": "IPO",
+      "headline": "ABH Healthcare (Anil Baghi Hospital) lists on NSE Emerge",
+      "summary": "[[ABH Healthcare Limited]], operator of the [[Anil Baghi Hospital]] in Ferozepur, Punjab, completed its basis of allotment for an SME IPO of 34,29,600 equity shares at ₹102 per share, aggregating ₹3,498.19 lakhs, with trading on NSE Emerge expected to commence September 1, 2026. Promoters are Dr Kamal Baghi, Dr Saurabh Baghi and Dr Vaishali Saini; the issue was subscribed 1.42 times overall.",
+      "page_number": 26
+    },
+    {
+      "section": "IPO",
+      "headline": "Veegaland Developers sets IPO price band at ₹130-140",
+      "summary": "[[Veegaland Developers Limited]], a Kerala-focused residential real estate developer operating under the \"Veegaland Homes\" brand with promoters Kochouseph Thomas Chittilappilly and [[K Chittilappilly Trust]], set its IPO price band at ₹130-140 per share, aggregating up to ₹21,000 lakh. The issue opens September 10 and closes September 15, 2026. Revenue from operations grew to ₹25,097.62 lakh in FY26 with profit after tax of ₹2,661.46 lakh; weighted average return on net worth for the last three fiscals was 23.52%.",
+      "page_number": 28
+    },
+    {
+      "section": "IPO",
+      "headline": "NCL Research and Financial Services launches ₹4,994.86-lakh rights issue",
+      "summary": "[[NCL Research and Financial Services Limited]] is issuing up to 49,94,86,400 rights equity shares at ₹1 per share (face value ₹1) in the ratio of 7 rights shares for every 15 fully paid-up shares held, aggregating up to ₹4,994.86 lakhs. The issue opens September 3, 2026 and closes September 18, 2026, with on-market renunciation permitted until September 15.",
+      "page_number": 24
+    },
+    {
+      "section": "IPO",
+      "headline": "Alan Scott Enterprises issues corrigendum to ₹714.70-lakh rights issue",
+      "summary": "[[Alan Scott Enterprises Limited]], promoted by Sureshkumar Jain, issued a corrigendum to its August 13, 2026 Letter of Offer for a rights issue of up to 9,52,932 partly paid-up equity shares at ₹75 per share aggregating up to ₹714.70 lakhs, in the ratio of 1 rights share for every 6 equity shares held, updating the issue opening and on-market renunciation dates to Tuesday, September 1, 2026.",
+      "page_number": 32
+    },
+    {
+      "section": "Market",
+      "headline": "Bliss GVS Pharma: post-offer advertisement on open offer completion",
+      "summary": "[[Anupam Rasayan India Limited]] (acquirer) together with [[Mates Visa Consultancy Private Limited]] (PAC) completed a post-offer open offer for up to 2,77,26,848 equity shares (26% of expanded voting share capital) of [[Bliss GVS Pharma Limited]] at ₹299 per share; 1,669 shares were tendered and accepted in the offer, which closed August 24, 2026, taking the acquirer's post-offer stake to 79.22%.",
+      "page_number": 11
+    },
+    {
+      "section": "Market",
+      "headline": "MSCI rebalancing fires up NSE closing auction",
+      "summary": "The [[National Stock Exchange]]'s closing auction session received a record turnover of nearly ₹40,000 crore on Monday as MSCI index-adjustment orders routed through the CAS mechanism, pushing almost a third of stocks traded in the auction to their daily 3% price limits. Volume of 678.11 million shares was more than 30 times the average. [[Eternal]], [[Laurus Labs]], [[Reliance Industries]], [[Adani Energy Solutions]] and [[Adani Enterprises]] were among the most actively traded stocks.",
+      "page_number": 1
+    },
+    {
+      "section": "Market",
+      "headline": "Bank credit grows 18.28%",
+      "summary": "Growth in bank credit remained robust, with total outstanding credit rising 18.28% year-on-year to ₹220 lakh crore as of August 15, according to the latest Reserve Bank of India data. However, growth moderated from 19.33% in the previous fortnight. Deposit growth eased to 14.74% from 15.37% over the same period, with the credit-deposit ratio at 81.72%.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "RBI support, inflows push rupee to near 1-mth high",
+      "summary": "The rupee strengthened to nearly a one-month high, supported by likely intervention from the central bank and equity-related inflows, market participants said. The domestic currency rose 21 paise to 95.17 against the dollar, its highest level since August 5. \"The rupee was supported by the RBI intervention and MSCI-related outflows. A softer dollar index also aided the currency,\" said Dilip Parmar, research analyst, [[HDFC Securities]].",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "NIIF infra fund secures ₹19,000-cr first close",
+      "summary": "[[National Investment and Infrastructure Fund]] on Monday said it has secured ₹19,000 crore (around $2 billion) in the first close of its latest infrastructure fund, NIIF Infrastructure Fund II, which represents more than 60% of the overall ₹30,000-crore target size. Vinod Giri, managing partner of NIIF's infrastructure fund, said the fund now plans to raise the remaining portion within 18 months, betting on infrastructure boom while drawing long-term overseas capital.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "Liquidity tops ₹5L cr",
+      "summary": "Banking system liquidity has strengthened significantly on account of inflows from foreign currency non-resident (FCNR) deposits, the RBI conducted two variable rate reverse repo (VRRR) auctions with 15-day and overnight tenors on Monday. The 15-day VRRR saw less demand, receiving bids notified of ₹6 crore against the notified amount of ₹1.35 crore, while system liquidity stood at ₹72.8 billion.",
+      "page_number": 6
+    },
+    {
+      "section": "Trade",
+      "headline": "India, Brazil agree to double trade",
+      "summary": "India and Brazil have agreed to double bilateral trade to $30 billion by 2030, underscoring a deepening economic partnership focused on pharmaceuticals, agriculture, energy and expanded trade agreements. The commitment was reaffirmed during the 8th Meeting of the India-Brazil Trade Monitoring Mechanism, co-chaired by Commerce Secretary Rajesh Agrawal and Brazil's Secretary of Foreign Trade Tatiana Lacerda Prazeres.",
+      "page_number": 2
+    },
+    {
+      "section": "Trade",
+      "headline": "Toyota & Honda may get stuck with Trump's Canada tariff bill",
+      "summary": "US President Donald Trump is targeting Ottawa with a proposed 50% tariff on Canadian car imports, but Japan's [[Toyota]] and [[Honda]] may end up footing the bill since the two Japanese automakers account for more than three-quarters of all cars made in Canada, according to [[Barclays]] analysts. Doubling the levies from the current 25% could force the two companies to shutter some production lines.",
+      "page_number": 7
+    },
+    {
+      "section": "Insurance",
+      "headline": "Seventy years of LIC: An institution evolves",
+      "summary": "On September 1, 1956, [[Life Insurance Corporation of India]] was born; the institution now completes 70 years of operations with total assets of ₹59.04 lakh crore, up from ₹411 crore in 1956. For FY26, total premium income stood at ₹5,35,984 crore, up 9.80%, while profit after tax rose 19.25% to a record ₹57,419 crore. LIC accounted for 56.66% of India's life insurance market by first-year premium income in FY25-26.",
+      "page_number": 10
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Semicon 2.0 notified to widen push beyond fabs",
+      "summary": "The government notified detailed guidelines for Semicon 2.0, broadening its ₹1.27-lakh-crore chip strategy from attracting fabrication plants to building capabilities across design, equipment and materials. Large silicon wafer fabs get 40% fiscal support; smaller fabs with a minimum ₹500 crore investment are eligible for support of 35%. IT Minister Ashwini Vaishnaw said the scheme targets 100,000 more semiconductor engineers.",
+      "page_number": 1
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Highway project awards may increase in FY27",
+      "summary": "Road awards by the Ministry of Road Transport and Highways are expected to rise to 8,000-8,500 km in FY27 from around 7,000 km in the previous year, per a report from rating agency Icra. Engineering, procurement and construction contracts remained the preferred routing mode, accounting for 65-70% of the total awards, while hybrid annuity mode projects accounted for 25-30%.",
+      "page_number": 2
+    },
+    {
+      "section": "International News",
+      "headline": "US, Iran exchange attacks; UAE and Jordan targeted",
+      "summary": "US President Donald Trump promised to \"hit them hard\" after Iran launched missiles overnight at two US air bases in Jordan in response to a US attack on Iran's Larak island, a source said, adding that conflict extended. Oil prices rose over 2% to above $90, with Brent crude futures up $2.35, or 2.67%, to $90.45 a barrel. A senior Iranian source said Tehran would deliver a harsh response if attacked further.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Aon to acquire USI from KKR in $17-bn deal",
+      "summary": "[[Aon]] said on Monday it will buy rival [[USI Insurance Services]] in a $17 billion deal from private equity firm [[KKR]], one of the biggest insurance acquisitions in recent years. Mega buyouts have become more typical in the highly fragmented insurance brokerage industry as companies turn more willing to pay top dollar to bolster their market presence and competitive edge, said [[Aon]] CEO Greg Case.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Chinese factory slump eases, but services struggle",
+      "summary": "China's factory activity improved in August under stronger demand, while services activity stayed weak, underscoring deepening imbalances in the economy and fuelling calls for policy measures to boost growth. The official manufacturing purchasing managers' index picked up to 49.8 in August from 49.2 in July, remaining below the 50-mark separating growth from contraction, a survey by the National Bureau of Statistics showed.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Nvidia to invest $3.5 bn in chipmaker MediaTek",
+      "summary": "[[Nvidia]] is investing $3.5 billion in [[MediaTek]], deepening collaboration with the Taiwanese chipmaker at a time when it's working to persuade more firms to build chips that plug into its dominant data centre components. [[Nvidia]] will buy bonds convertible into [[MediaTek]] shares, and the transaction will be Nvidia's largest direct investment outside the US, CEO Jensen Huang said.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "OpenAI's ad business hits $1-bn run rate",
+      "summary": "[[OpenAI]] on Monday said ChatGPT Ads, the company's ad business, has reached $1 billion in annual revenue run rate, as adoption picks up and global expansion rolls on. The company started testing ads in ChatGPT US earlier this year and has steadily expanded to add advertisers and tap into more markets, as banks weigh to boost overall revenue growth ahead of an IPO.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Three Asians get Ramon Magsaysay Awards",
+      "summary": "A Singaporean lawyer and diplomat who led an international conference that adopted the United Nations Convention on the Law of the Sea, a Myanmar activist whose group documents human rights atrocities, and a former Bangladeshi teacher who has helped provide aid to her country's poorest were named among the winners of this year's Ramon Magsaysay Awards, honouring \"greatness of spirit\" through selfless service across Asia.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Japan seeks $56-bn defence budget",
+      "summary": "Japan's defence ministry is seeking record spending of $56 billion in the fiscal year starting in April, and the final bill could be larger as Prime Minister Sanae Takaichi prepares to launch a new military buildup plan later this year.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Yen breaches 160 to dollar again",
+      "summary": "The yen's breach of 160 versus the dollar underscores the Japanese currency's vulnerability to further weakness and the heightened risk of authorities entering the market again to slow its decline.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Move from endless war to end of war: PM tells Putin",
+      "summary": "Calling for an immediate end to the Russia-Ukraine conflict, Prime Minister Narendra Modi urged Russian President Vladimir Putin to move from \"endless war towards end of war,\" asserting that a peaceful resolution of the conflict is humanity's shared priority, at a meeting on the sidelines of the Shanghai Cooperation Organisation summit in Bishkek, Kyrgyzstan.",
+      "page_number": 20
+    },
+    {
+      "section": "International News",
+      "headline": "The battle for AI hegemony",
+      "summary": "Chinese President Xi Jinping positioned China as the leader of a new AI global order at the opening ceremony of the World Artificial Intelligence Conference in Shanghai, reiterating Chinese intent to not just shape, but govern the AI space, writes Anil Nair of ThinkStreet. While the US retains decisive advantage in frontier model performance, hi-end compute and private capital, China already leads in research, patent volume and industrial deployment.",
+      "page_number": 8
+    },
+    {
+      "section": "Others",
+      "headline": "Sept monsoon to be below normal: IMD",
+      "summary": "Rainfall in September, the last month of the southwest monsoon season, is likely to be less than 91% of the benchmark long period average, the India Meteorological Department said, citing strengthening El Nino conditions. With a monsoon deficit of 13.8% against LPA after the first three months of the 2026 southwest monsoon season, overall seasonal rainfall is likely to be below 90% of the benchmark, the lowest since 2009.",
+      "page_number": 10
+    },
+    {
+      "section": "Others",
+      "headline": "Nepal floods: Death toll crosses 930",
+      "summary": "The death toll from the flash floods in Nepal rose to more than 939 on Monday, with more bodies being recovered, even as more than 4,000 people remain missing, authorities said. In Nepal, 272 bodies have so far been recovered in Chitwan district, 207 in Nawalparasi East, 151 in Nawalparasi West, 95 in Nuwakot, 62 in Gorkha, 55 in Dhading, 37 in Tanahu and 24 in Rasuwa.",
+      "page_number": 20
+    },
+    {
       "section": "Others",
       "headline": "Resilient India",
       "summary": "The Indian economy has demonstrated resilience amid the disruptions caused by the war in West Asia, with a stellar 7.8% year-on-year expansion in the June quarter that few expected. Gross value added grew even stronger at 8.2%, supported by both manufacturing and services, while gross fixed capital formation surged nearly 12%, its strongest showing in the new gross domestic product series.",
@@ -389,19 +389,46 @@
     {
       "section": "Others",
       "headline": "Lionel Messi retires from international football",
-      "summary": "[[Lionel Messi]], who captained Argentina to World Cup victory in 2022 and the 2026 final, is retiring from international football, he said on Monday. The record eight-times Ballon d'Or winner is his country's record appearance-maker and scorer with 125 goals in 207 games, having transformed a complicated relationship with the national team into a story of redemption and triumph.",
+      "summary": "Lionel Messi, who captained Argentina to World Cup victory in 2022 and the 2026 final, is retiring from international football, he said on Monday. The record eight-times Ballon d'Or winner is his country's record appearance-maker and scorer with 125 goals in 207 games, having transformed a complicated relationship with the national team into a story of redemption and triumph.",
       "page_number": 20
     }
   ],
   "stocksInFocus": [
-    { "name": "Skyways Air Services", "note": "Lists on BSE/NSE main board today after IPO at ₹138/share; QIB portion subscribed 139.36x" },
-    { "name": "Symbiotec Pharmalab", "note": "Lists on BSE/NSE today after IPO at ₹988/share; QIB portion subscribed 180.85x" },
-    { "name": "ABH Healthcare", "note": "Lists on NSE Emerge today after SME IPO at ₹102/share" },
-    { "name": "HDFC Bank", "note": "Succession concerns widen beyond CEO as multiple senior executives exit; shares down 28% in 2026" },
-    { "name": "Kotak Mahindra Bank", "note": "Shortlists Anup Saha and Paritosh Kashyap as internal CEO candidates for RBI approval" },
-    { "name": "Happiest Minds Technologies", "note": "ITC Infotech to acquire 22.1% stake for ₹1,329.72 crore from founder Ashok Soota" },
-    { "name": "Maruti Suzuki", "note": "To invest ₹77,500 crore by FY31 on capacity expansion and small-car push; small-car sales up 35% in Q1 FY27" },
-    { "name": "Eternal (Zomato)", "note": "Bans analogue dairy dishes on platform; most actively traded stock in MSCI-driven NSE closing auction" },
-    { "name": "Veegaland Developers", "note": "Sets IPO price band at ₹130-140/share; bidding opens September 10" }
+    {
+      "name": "Skyways Air Services",
+      "note": "Lists on BSE/NSE main board today after IPO at ₹138/share; QIB portion subscribed 139.36x"
+    },
+    {
+      "name": "Symbiotec Pharmalab",
+      "note": "Lists on BSE/NSE today after IPO at ₹988/share; QIB portion subscribed 180.85x"
+    },
+    {
+      "name": "ABH Healthcare",
+      "note": "Lists on NSE Emerge today after SME IPO at ₹102/share"
+    },
+    {
+      "name": "HDFC Bank",
+      "note": "Succession concerns widen beyond CEO as multiple senior executives exit; shares down 28% in 2026"
+    },
+    {
+      "name": "Kotak Mahindra Bank",
+      "note": "Shortlists Anup Saha and Paritosh Kashyap as internal CEO candidates for RBI approval"
+    },
+    {
+      "name": "Happiest Minds Technologies",
+      "note": "ITC Infotech to acquire 22.1% stake for ₹1,329.72 crore from founder Ashok Soota"
+    },
+    {
+      "name": "Maruti Suzuki",
+      "note": "To invest ₹77,500 crore by FY31 on capacity expansion and small-car push; small-car sales up 35% in Q1 FY27"
+    },
+    {
+      "name": "Eternal (Zomato)",
+      "note": "Bans analogue dairy dishes on platform; most actively traded stock in MSCI-driven NSE closing auction"
+    },
+    {
+      "name": "Veegaland Developers",
+      "note": "Sets IPO price band at ₹130-140/share; bidding opens September 10"
+    }
   ]
 }

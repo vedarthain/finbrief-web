@@ -3,111 +3,21 @@
   "paper_date": "2026-08-30",
   "stories": [
     {
-      "section": "Economy & Policy",
+      "section": "Policy",
       "headline": "GST Council to meet on September 12",
-      "summary": "The 57th [[GST Council]] meeting, chaired by the finance minister, will take up litigation reduction, input tax credit issues, compensation cess transition and possible changes to the petroleum tax framework.",
+      "summary": "The 57th GST Council meeting, chaired by the finance minister, will take up litigation reduction, input tax credit issues, compensation cess transition and possible changes to the petroleum tax framework.",
       "page_number": 1
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Madhur Knit Crafts lists on NSE Emerge September 1",
-      "summary": "[[Madhur Knit Crafts Limited]]'s ₹53.27-crore SME IPO on NSE Emerge was subscribed 3.30x overall (individual investors 6.10x) at a price band of ₹95-100; allotment was finalised August 28 and shares list Tuesday, September 1, 2026.",
-      "page_number": 12
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Aar Shyam India Investment faces 26% open offer",
-      "summary": "[[Radha Krishna Avudari]], [[Sudha Rani Avudari]] and [[Nagabhyru Srikanth]] launched an open offer to acquire up to 26% of [[Aar Shyam India Investment Company]] at ₹15/share, following a share purchase agreement for a 40.54% stake from [[Guruomega Private Limited]]; tendering period runs October 16-30, 2026.",
-      "page_number": 14
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Brainbees Solutions (FirstCry) seeks nod to reallocate ₹216.2-crore IPO proceeds",
-      "summary": "[[Brainbees Solutions]] (FirstCry) proposed shifting unutilised IPO proceeds worth ₹216.2 crore away from BabyHug-branded stores and Saudi warehouse plans toward FirstCry-branded stores, technology/cloud infrastructure and sales & marketing, and widened its Globalbees Brands investment mandate; shareholders vote September 22, 2026.",
-      "page_number": 17
-    },
-    {
-      "section": "IPO & Market",
-      "headline": "Tembo Global Industries to redirect ₹114-crore preferential issue toward defence, solar units",
-      "summary": "[[Tembo Global Industries]] revised the utilisation plan for its ₹114-crore preferential issue proceeds, directing funds into subsidiaries and associates including Tembo PES JV, Tembo Solar Power, Tembo Renewal Energy and Tembo Classic Engineering for EPC, defence and working-capital needs.",
-      "page_number": 21
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "Malls turn into F&B, entertainment hangouts as retail mix shifts",
-      "summary": "F&B and entertainment now account for 32% of mall leasing space in H1 CY26, up from ~20% in 2020, per [[Anarock Group]]. Apparel's share fell from 35% to 28% over the same period as [[DLF Retail]], [[LuLu Group India]], [[PVR INOX]] and [[KidZania India]] expand experiential formats.",
-      "page_number": 1
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "Delhi CNG price rises ₹3.89/kg amid West Asia crisis",
-      "summary": "[[Indraprastha Gas]] raised CNG prices in Delhi-NCR by ₹3.89/kg to ₹86.98/kg, the fifth hike this year, as the West Asia conflict disrupts LNG cargo through the Strait of Hormuz and pushes up import costs.",
-      "page_number": 1
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "New e-scooter launches from Ather, Simple Energy target mass market",
-      "summary": "[[Ather Energy]] launched its Konarc scooter at ₹99,999, built on a new EL platform, aiming to pull customers from petrol scooters like the [[Honda Activa]]; [[Simple Energy]]'s Simple Wave, [[Honda]]'s QC3 and [[Ultraviolette]]'s Tesseract are also launching soon.",
-      "page_number": 1
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "'Humanising' AI: apps now add deliberate mistakes to sound more human",
-      "summary": "Startups including [[ElevenLabs]], [[OpenAI]], [[Hume AI]], [[WriteHuman]] and [[StealthWriter]] are building tools that add natural imperfections — filler words, background noise, uneven phrasing — to make AI-generated text, voice and video sound more human and harder to detect.",
-      "page_number": 8
-    },
-    {
-      "section": "Sectors in Focus",
-      "headline": "Premium condiments and jamun-flavoured drinks gain shelf space",
-      "summary": "Indian condiment makers including [[Nestle]], [[Hindustan Unilever]], [[Craft Heinz]] and [[Capital Foods]] are launching global-fusion sauces and pastes as 40% of urban Indians seek exotic flavours, per an [[IMARC]] report; separately, jamun is showing up in premium drinks from [[Diageo India]]'s Smirnoff, [[Radico Khaitan]] and [[Kwality Wall's]] ice cream.",
-      "page_number": 6
-    },
-    {
-      "section": "Environment & Resources",
-      "headline": "Nepal may need $4-5 billion to rebuild after floods",
-      "summary": "Nepal's finance minister [[Swarnim Wagle]] estimated $4-5 billion is needed to rebuild after floods killed over 675 people, with nearly 3,000 still missing; India and China have sent relief teams and tunnel-rescue crews.",
-      "page_number": 1
-    },
-    {
-      "section": "Environment & Resources",
-      "headline": "Kashmiris can see climate change, but schools and awareness lag",
-      "summary": "Farmers, tourism workers and students across Jammu & Kashmir report warmer winters, shrinking snowfall and erratic rain, but a Yale survey found 58% of Indians know little about climate science; the J&K Climate Change Action Plan flags weak public awareness as a key resilience gap.",
-      "page_number": 11
-    },
-    {
-      "section": "International News",
-      "headline": "OpenAI to cut off AI models for SpaceX",
-      "summary": "[[OpenAI]] said it will stop providing AI models to [[Cursor]], the coding-tool company owned by [[Elon Musk]]'s [[SpaceX]], citing concerns SpaceX will use the technology outside its contract terms — a fresh escalation between [[OpenAI]] CEO [[Sam Altman]] and Musk.",
-      "page_number": 24
-    },
-    {
-      "section": "International News",
-      "headline": "Iran acknowledges war toll on economy but signals no retreat",
-      "summary": "Iranian leaders admitted sanctions and war with the US have shrunk foreign trade by a third and complicated inflation control, but the government reiterated no retreat on its nuclear stance six months after US-Israel strikes on Iranian sites.",
-      "page_number": 24
-    },
-    {
-      "section": "International News",
-      "headline": "US taking partial control of Venezuela's oil reserves: Trump",
-      "summary": "[[Donald Trump]] said US-linked companies secured majority control of more than 65 billion barrels of Venezuelan proven oil reserves through a partnership with [[PDVSA]] interim president [[Delcy Rodriguez]], as Washington deepens pressure on [[Venezuela]].",
-      "page_number": 24
-    },
-    {
-      "section": "International News",
-      "headline": "PM Modi holds talks with Uzbekistan on two-day visit",
-      "summary": "[[Narendra Modi]] met Uzbekistan President [[Shavkat Mirziyoyev]] in Tashkent during a two-day visit, with both leaders set to discuss bilateral cooperation.",
-      "page_number": 24
     },
     {
       "section": "Regulatory",
       "headline": "Lenders to challenge NCLAT order on Chandra repayment plan",
-      "summary": "[[LIC Housing Finance]], [[Union Bank of India]] and [[Canara Bank]] plan to challenge before the NCLAT the repayment plan approved for [[Essel Group]] founder [[Subhash Chandra]], under which creditors get just ₹6.25 crore against admitted claims of ₹22,006.57 crore.",
+      "summary": "[[LIC Housing Finance]], [[Union Bank of India]] and [[Canara Bank]] plan to challenge before the NCLAT the repayment plan approved for [[Essel Group]] founder Subhash Chandra, under which creditors get just ₹6.25 crore against admitted claims of ₹22,006.57 crore.",
       "page_number": 1
     },
     {
       "section": "Regulatory",
       "headline": "FSSAI bans hing sale by Everest, Laljee Godhoo",
-      "summary": "[[FSSAI]] prohibited sale of compounded asafoetida made by [[Everest Food Products]] and [[Laljee Godhoo and Company]] after lab tests found sub-standard alcohol-soluble extract (0%) and hing content (3.29-4.4%) against a required minimum of 5%.",
+      "summary": "FSSAI prohibited sale of compounded asafoetida made by [[Everest Food Products]] and [[Laljee Godhoo and Company]] after lab tests found sub-standard alcohol-soluble extract (0%) and hing content (3.29-4.4%) against a required minimum of 5%.",
       "page_number": 3
     },
     {
@@ -131,7 +41,7 @@
     {
       "section": "Regulatory",
       "headline": "Banks issue SARFAESI possession and demand notices across Maharashtra",
-      "summary": "[[Central Bank of India]] issued a possession notice against [[Neelam Sushil Singhvi]] and [[Shushil Shantilal Singhvi]] (Bhiwandi, ₹39.82 lakh); [[Bank of Baroda]] issued notices to [[Zaheer Gulam Shaikh]] (Virar) and took possession from [[Anil Singh]] and [[Anvarika Singh]] (Vasai, ₹18.76 lakh); [[Ambit Finvest]] will e-auction four Vajreshwari properties linked to [[Asha Grain Store]] and [[Vijay Pandharinath Pakhare]]; [[Karnataka Bank]] declared a Powai flat linked to [[Harriet Roselind Joseph]] and [[Japa Singh Joseph]] an NPA over ₹14.82 lakh in dues.",
+      "summary": "[[Central Bank of India]] issued a possession notice against Neelam Sushil Singhvi and Shushil Shantilal Singhvi (Bhiwandi, ₹39.82 lakh); [[Bank of Baroda]] issued notices to Zaheer Gulam Shaikh (Virar) and took possession from Anil Singh and Anvarika Singh (Vasai, ₹18.76 lakh); [[Ambit Finvest]] will e-auction four Vajreshwari properties linked to [[Asha Grain Store]] and Vijay Pandharinath Pakhare; [[Karnataka Bank]] declared a Powai flat linked to Harriet Roselind Joseph and Japa Singh Joseph an NPA over ₹14.82 lakh in dues.",
       "page_number": 22
     },
     {
@@ -165,27 +75,45 @@
       "page_number": 16
     },
     {
-      "section": "Trade",
-      "headline": "FM urges US investors to make in India for the world",
-      "summary": "[[Nirmala Sitharaman]] invited US businesses to co-develop and manufacture in India during her Chicago roundtable, citing India's engineering talent, scale and digital infrastructure such as [[Aadhaar]], [[UPI]] and [[India Stack]].",
+      "section": "Sector",
+      "headline": "Malls turn into F&B, entertainment hangouts as retail mix shifts",
+      "summary": "F&B and entertainment now account for 32% of mall leasing space in H1 CY26, up from ~20% in 2020, per [[Anarock Group]]. Apparel's share fell from 35% to 28% over the same period as [[DLF Retail]], [[LuLu Group India]], [[PVR INOX]] and [[KidZania India]] expand experiential formats.",
       "page_number": 1
     },
     {
-      "section": "Trade",
-      "headline": "India, Argentina in talks for expansion of lithium mining",
-      "summary": "India's [[KABIL]] (Khanij Bidesh India) has advanced Phase-II drilling at its lithium project in Argentina's Catamarca province and is exploring further tie-ups in Salta and Jujuy as part of the South America Lithium Triangle.",
-      "page_number": 3
+      "section": "Sector",
+      "headline": "Delhi CNG price rises ₹3.89/kg amid West Asia crisis",
+      "summary": "[[Indraprastha Gas]] raised CNG prices in Delhi-NCR by ₹3.89/kg to ₹86.98/kg, the fifth hike this year, as the West Asia conflict disrupts LNG cargo through the Strait of Hormuz and pushes up import costs.",
+      "page_number": 1
+    },
+    {
+      "section": "Sector",
+      "headline": "New e-scooter launches from Ather, Simple Energy target mass market",
+      "summary": "[[Ather Energy]] launched its Konarc scooter at ₹99,999, built on a new EL platform, aiming to pull customers from petrol scooters like the Honda Activa; [[Simple Energy]]'s Simple Wave, [[Honda]]'s QC3 and [[Ultraviolette]]'s Tesseract are also launching soon.",
+      "page_number": 1
+    },
+    {
+      "section": "Sector",
+      "headline": "'Humanising' AI: apps now add deliberate mistakes to sound more human",
+      "summary": "Startups including [[ElevenLabs]], [[OpenAI]], [[Hume AI]], [[WriteHuman]] and [[StealthWriter]] are building tools that add natural imperfections — filler words, background noise, uneven phrasing — to make AI-generated text, voice and video sound more human and harder to detect.",
+      "page_number": 8
+    },
+    {
+      "section": "Sector",
+      "headline": "Premium condiments and jamun-flavoured drinks gain shelf space",
+      "summary": "Indian condiment makers including [[Nestle]], [[Hindustan Unilever]], [[Craft Heinz]] and [[Capital Foods]] are launching global-fusion sauces and pastes as 40% of urban Indians seek exotic flavours, per an IMARC report; separately, jamun is showing up in premium drinks from [[Diageo India]]'s Smirnoff, [[Radico Khaitan]] and [[Kwality Wall's]] ice cream.",
+      "page_number": 6
     },
     {
       "section": "Corporate Events",
       "headline": "HDFC Bank CEO to step down",
-      "summary": "[[HDFC Bank]] MD & CEO [[Sashidhar Jagdishan]] will not seek re-appointment when his term ends October 26; the board will fast-track selection of a successor. His tenure faced scrutiny over the [[Credit Suisse]] AT1 bond mis-selling issue and the [[HDFC]] merger integration.",
+      "summary": "[[HDFC Bank]] MD & CEO Sashidhar Jagdishan will not seek re-appointment when his term ends October 26; the board will fast-track selection of a successor. His tenure faced scrutiny over the [[Credit Suisse]] AT1 bond mis-selling issue and the [[HDFC]] merger integration.",
       "page_number": 1
     },
     {
       "section": "Corporate Events",
       "headline": "'Our push is premium; a budget brand just food for thought': ITC Hotels MD",
-      "summary": "[[ITC Hotels]] MD [[Anil Chadha]] said the group targets a 50-55% premiumisation share within five years, plans to grow its managed portfolio from 8,600 to 15,000 keys, and is pursuing expansion in Dubai, Sri Lanka and Nepal.",
+      "summary": "[[ITC Hotels]] MD Anil Chadha said the group targets a 50-55% premiumisation share within five years, plans to grow its managed portfolio from 8,600 to 15,000 keys, and is pursuing expansion in Dubai, Sri Lanka and Nepal.",
       "page_number": 1
     },
     {
@@ -197,31 +125,103 @@
     {
       "section": "Corporate Events",
       "headline": "Dilmah chairman: fine tea remains an untapped market in South Asia",
-      "summary": "[[Dilmah]] chairman [[Dilhan C Fernando]] said India's premium hospitality boom offers an opportunity for fine tea despite historically thin margins, as the company launches its India-exclusive Thambapanni Luxury Collection with 26 artisanal tea and spice blends.",
+      "summary": "[[Dilmah]] chairman Dilhan C Fernando said India's premium hospitality boom offers an opportunity for fine tea despite historically thin margins, as the company launches its India-exclusive Thambapanni Luxury Collection with 26 artisanal tea and spice blends.",
       "page_number": 7
+    },
+    {
+      "section": "IPO",
+      "headline": "Madhur Knit Crafts lists on NSE Emerge September 1",
+      "summary": "[[Madhur Knit Crafts Limited]]'s ₹53.27-crore SME IPO on NSE Emerge was subscribed 3.30x overall (individual investors 6.10x) at a price band of ₹95-100; allotment was finalised August 28 and shares list Tuesday, September 1, 2026.",
+      "page_number": 12
+    },
+    {
+      "section": "IPO",
+      "headline": "Brainbees Solutions (FirstCry) seeks nod to reallocate ₹216.2-crore IPO proceeds",
+      "summary": "[[Brainbees Solutions]] (FirstCry) proposed shifting unutilised IPO proceeds worth ₹216.2 crore away from BabyHug-branded stores and Saudi warehouse plans toward FirstCry-branded stores, technology/cloud infrastructure and sales & marketing, and widened its Globalbees Brands investment mandate; shareholders vote September 22, 2026.",
+      "page_number": 17
+    },
+    {
+      "section": "IPO",
+      "headline": "Tembo Global Industries to redirect ₹114-crore preferential issue toward defence, solar units",
+      "summary": "[[Tembo Global Industries]] revised the utilisation plan for its ₹114-crore preferential issue proceeds, directing funds into subsidiaries and associates including Tembo PES JV, Tembo Solar Power, Tembo Renewal Energy and Tembo Classic Engineering for EPC, defence and working-capital needs.",
+      "page_number": 21
+    },
+    {
+      "section": "Market",
+      "headline": "Aar Shyam India Investment faces 26% open offer",
+      "summary": "Radha Krishna Avudari, Sudha Rani Avudari and Nagabhyru Srikanth launched an open offer to acquire up to 26% of [[Aar Shyam India Investment Company]] at ₹15/share, following a share purchase agreement for a 40.54% stake from [[Guruomega Private Limited]]; tendering period runs October 16-30, 2026.",
+      "page_number": 14
+    },
+    {
+      "section": "Trade",
+      "headline": "FM urges US investors to make in India for the world",
+      "summary": "Nirmala Sitharaman invited US businesses to co-develop and manufacture in India during her Chicago roundtable, citing India's engineering talent, scale and digital infrastructure such as Aadhaar, UPI and India Stack.",
+      "page_number": 1
+    },
+    {
+      "section": "Trade",
+      "headline": "India, Argentina in talks for expansion of lithium mining",
+      "summary": "India's [[KABIL]] (Khanij Bidesh India) has advanced Phase-II drilling at its lithium project in Argentina's Catamarca province and is exploring further tie-ups in Salta and Jujuy as part of the South America Lithium Triangle.",
+      "page_number": 3
+    },
+    {
+      "section": "International News",
+      "headline": "OpenAI to cut off AI models for SpaceX",
+      "summary": "[[OpenAI]] said it will stop providing AI models to [[Cursor]], the coding-tool company owned by Elon Musk's [[SpaceX]], citing concerns SpaceX will use the technology outside its contract terms — a fresh escalation between [[OpenAI]] CEO Sam Altman and Musk.",
+      "page_number": 24
+    },
+    {
+      "section": "International News",
+      "headline": "Iran acknowledges war toll on economy but signals no retreat",
+      "summary": "Iranian leaders admitted sanctions and war with the US have shrunk foreign trade by a third and complicated inflation control, but the government reiterated no retreat on its nuclear stance six months after US-Israel strikes on Iranian sites.",
+      "page_number": 24
+    },
+    {
+      "section": "International News",
+      "headline": "US taking partial control of Venezuela's oil reserves: Trump",
+      "summary": "Donald Trump said US-linked companies secured majority control of more than 65 billion barrels of Venezuelan proven oil reserves through a partnership with [[PDVSA]] interim president Delcy Rodriguez, as Washington deepens pressure on Venezuela.",
+      "page_number": 24
+    },
+    {
+      "section": "International News",
+      "headline": "PM Modi holds talks with Uzbekistan on two-day visit",
+      "summary": "Narendra Modi met Uzbekistan President Shavkat Mirziyoyev in Tashkent during a two-day visit, with both leaders set to discuss bilateral cooperation.",
+      "page_number": 24
+    },
+    {
+      "section": "Others",
+      "headline": "Nepal may need $4-5 billion to rebuild after floods",
+      "summary": "Nepal's finance minister Swarnim Wagle estimated $4-5 billion is needed to rebuild after floods killed over 675 people, with nearly 3,000 still missing; India and China have sent relief teams and tunnel-rescue crews.",
+      "page_number": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Kashmiris can see climate change, but schools and awareness lag",
+      "summary": "Farmers, tourism workers and students across Jammu & Kashmir report warmer winters, shrinking snowfall and erratic rain, but a Yale survey found 58% of Indians know little about climate science; the J&K Climate Change Action Plan flags weak public awareness as a key resilience gap.",
+      "page_number": 11
     },
     {
       "section": "Others",
       "headline": "Musafir Cafe's 'Nayi Hindi' signals a new grammar for Hindi storytelling",
-      "summary": "Columnist [[Ashwani Kumar]] argues [[Divya Prakash Dubey]]'s novel-turned-Netflix hit 'Musafir Cafe' captures Gen Z's language and attitudes toward love and marriage through hybrid, colloquial Hindi-English prose.",
+      "summary": "Columnist Ashwani Kumar argues Divya Prakash Dubey's novel-turned-Netflix hit 'Musafir Cafe' captures Gen Z's language and attitudes toward love and marriage through hybrid, colloquial Hindi-English prose.",
       "page_number": 10
     },
     {
       "section": "Others",
       "headline": "Small dreams deserve as much focus as big infrastructure goals: Tavleen Singh",
-      "summary": "Columnist [[Tavleen Singh]] writes India's push for big-ticket infrastructure and a 2047 developed-nation vision has come at the cost of small but essential fixes — clean water, functioning schools and toilets — citing a Yale survey ranking India near the bottom on environmental performance.",
+      "summary": "Columnist Tavleen Singh writes India's push for big-ticket infrastructure and a 2047 developed-nation vision has come at the cost of small but essential fixes — clean water, functioning schools and toilets — citing a Yale survey ranking India near the bottom on environmental performance.",
       "page_number": 10
     },
     {
       "section": "Others",
       "headline": "New book 'Open to Work' argues AI creates opportunities, not just threats",
-      "summary": "In their book 'Open to Work', [[LinkedIn]] CEO [[Ryan Roslansky]] and chief economic opportunity officer [[Aneesh Raman]] argue AI is a general-purpose technology like electricity, and identify five human skills — curiosity, courage, creativity, compassion and communication — that AI cannot replicate.",
+      "summary": "In their book 'Open to Work', [[LinkedIn]] CEO Ryan Roslansky and chief economic opportunity officer Aneesh Raman argue AI is a general-purpose technology like electricity, and identify five human skills — curiosity, courage, creativity, compassion and communication — that AI cannot replicate.",
       "page_number": 4
     },
     {
       "section": "Others",
       "headline": "India's esports contingent eyes 11 medal events at Asian Games",
-      "summary": "India will field 15 esports athletes across titles including [[League of Legends]], DOTA 2 and Street Fighter V at the September 19-October 4 Asian Games in Aichi-Nagoya, Japan, where esports offers a record 11 of 469 medal events; India's gaming market has crossed $1 billion in annual revenue, per [[Niko Partners]].",
+      "summary": "India will field 15 esports athletes across titles including League of Legends, DOTA 2 and Street Fighter V at the September 19-October 4 Asian Games in Aichi-Nagoya, Japan, where esports offers a record 11 of 469 medal events; India's gaming market has crossed $1 billion in annual revenue, per Niko Partners.",
       "page_number": 5
     },
     {
