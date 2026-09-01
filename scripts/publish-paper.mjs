@@ -1,4 +1,5 @@
-// Publishes manually-extracted e-paper stories into paper_stories.
+// Publishes manually-extracted e-paper stories into paper_stories, and (if
+// present) upserts structured IPO/listing entries into ipo_listings.
 // Usage: node scripts/publish-paper.mjs path/to/stories.json
 //
 // stories.json shape:
@@ -7,6 +8,13 @@
 //   "paper_date": "2026-08-31",
 //   "stories": [
 //     { "section": "Front Page", "headline": "...", "summary": "...", "page_number": 1 }
+//   ],
+//   "ipoListings": [
+//     { "company_name": "...", "ticker": "...", "exchange": "BSE, NSE",
+//       "issue_price_low": 546, "issue_price_high": 575,
+//       "open_date": "2026-08-31", "close_date": "2026-09-02",
+//       "listing_date": null, "listing_price": null,
+//       "status": "open", "notes": "..." }
 //   ]
 // }
 import { readFileSync } from "fs";
@@ -27,7 +35,7 @@ if (!jsonPath) {
   process.exit(1);
 }
 
-const { edition, paper_date, stories, stocksInFocus } = JSON.parse(readFileSync(jsonPath, "utf8"));
+const { edition, paper_date, stories, stocksInFocus, ipoListings } = JSON.parse(readFileSync(jsonPath, "utf8"));
 if (!edition || !paper_date || !Array.isArray(stories) || stories.length === 0) {
   console.error("Invalid input: need edition, paper_date, and a non-empty stories array.");
   process.exit(1);
@@ -60,8 +68,46 @@ try {
     [edition, paper_date, JSON.stringify(stocksInFocus ?? [])]
   );
 
+  for (const l of ipoListings ?? []) {
+    if (!l.company_name) throw new Error(`ipoListings entry missing company_name: ${JSON.stringify(l)}`);
+    await client.query(
+      `INSERT INTO ipo_listings
+         (company_name, ticker, exchange, issue_price_low, issue_price_high,
+          open_date, close_date, listing_date, listing_price, status, notes, updated_at)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, now())
+       ON CONFLICT (company_name) DO UPDATE SET
+         ticker           = EXCLUDED.ticker,
+         exchange         = EXCLUDED.exchange,
+         issue_price_low  = EXCLUDED.issue_price_low,
+         issue_price_high = EXCLUDED.issue_price_high,
+         open_date        = EXCLUDED.open_date,
+         close_date       = EXCLUDED.close_date,
+         listing_date     = EXCLUDED.listing_date,
+         listing_price    = EXCLUDED.listing_price,
+         status           = EXCLUDED.status,
+         notes            = EXCLUDED.notes,
+         updated_at       = now()`,
+      [
+        l.company_name,
+        l.ticker ?? null,
+        l.exchange ?? null,
+        l.issue_price_low ?? null,
+        l.issue_price_high ?? null,
+        l.open_date ?? null,
+        l.close_date ?? null,
+        l.listing_date ?? null,
+        l.listing_price ?? null,
+        l.status ?? "upcoming",
+        l.notes ?? null,
+      ]
+    );
+  }
+
   await client.query("COMMIT");
-  console.log(`Published ${stories.length} stories for ${edition} — ${paper_date}.`);
+  console.log(
+    `Published ${stories.length} stories for ${edition} — ${paper_date}` +
+    (ipoListings?.length ? `, upserted ${ipoListings.length} IPO/listing entries.` : ".")
+  );
 } catch (err) {
   await client.query("ROLLBACK");
   throw err;

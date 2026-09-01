@@ -93,6 +93,37 @@ Separately from the story list, curate a short list (typically 5-10) of the day'
 
 This renders as the "Stocks in Focus" tab, grouped alongside "Sector" under the "In Focus" top-level tab. (Note: this is a different grouping from the "Stocks" top-level tab, which holds Corporate Events/IPO/Market/Trade/Insurance — don't confuse the two.)
 
+## 6a. Build `ipoListings` — structured data for the separate "IPO & Listings" tab
+
+This is a **separate feature from the "IPO" section/tab** built in §3a-§6 above. The IPO section holds prose story summaries; `ipoListings` feeds a dedicated table page (`/ipo`, `components/IpoTable.tsx`) with structured columns (price band, dates, listing price, live current price). Populate both — they render in different places and are not redundant.
+
+For every story you classified as `section: "IPO"` (new listings, price bands, allotments, rights/preferential issues) **and** any other page that reports an IPO opening/closing/listing today, also add one entry to a top-level `ipoListings` array:
+
+```json
+"ipoListings": [
+  {
+    "company_name": "Purple Style Labs",
+    "ticker": null,
+    "exchange": "BSE, NSE",
+    "issue_price_low": 546,
+    "issue_price_high": 575,
+    "open_date": "2026-08-31",
+    "close_date": "2026-09-02",
+    "listing_date": null,
+    "listing_price": null,
+    "status": "open",
+    "notes": "Main-board IPO; ₹6,800M fresh issue"
+  }
+]
+```
+
+Rules:
+- `company_name` is the upsert key (`ipo_listings.company_name UNIQUE`) — use the exact same spelling every time this company appears across days so re-publishing updates the same row instead of creating a duplicate as the IPO progresses through its lifecycle.
+- `status` — pick exactly one: `"upcoming"` (announced, bidding not yet open), `"open"` (bidding window active on `paper_date`), `"closed"` (bidding closed, allotment/listing pending), `"listed"` (listed on or before `paper_date`).
+- `ticker` — only set it if the paper states the exact listed ticker/symbol (usually only known once `status` is `"listed"` or allotment is announced). Leave `null` otherwise — do not guess a ticker. When a `ticker` is set and that symbol is already tracked in the `prices` table, the UI automatically shows a live current price and %-change since listing; if not tracked, those columns just stay blank, which is fine.
+- `listing_price` — only set once the stock has actually listed (i.e. `status: "listed"`); leave `null` before that.
+- Re-extraction across days: if the same IPO is mentioned again on a later day's paper (e.g. it closed, or it listed), update `status`/`close_date`/`listing_date`/`listing_price`/`ticker` in that day's `ipoListings` entry — the upsert on `company_name` keeps a single row per company current.
+
 ## 7. Write the JSON file
 
 Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `scripts/data/2026-08-31-mumbai.json`):
@@ -106,9 +137,16 @@ Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `script
   ],
   "stocksInFocus": [
     { "name": "...", "note": "..." }
+  ],
+  "ipoListings": [
+    { "company_name": "...", "ticker": null, "exchange": "...", "issue_price_low": 0, "issue_price_high": 0,
+      "open_date": "...", "close_date": "...", "listing_date": null, "listing_price": null,
+      "status": "open", "notes": "..." }
   ]
 }
 ```
+
+`ipoListings` is optional — omit it entirely on days with no IPO/listing activity.
 
 If updating an existing day (re-extraction), edit the existing file rather than starting a new one — check `scripts/data/` first.
 
@@ -118,7 +156,7 @@ If updating an existing day (re-extraction), edit the existing file rather than 
 node scripts/publish-paper.mjs scripts/data/<paper_date>-<edition-lowercase>.json
 ```
 
-This transactionally deletes+reinserts `paper_stories` for that edition+date and upserts the `paper_meta.stocks_in_focus` JSONB column. Safe to re-run if you edit and republish.
+This transactionally deletes+reinserts `paper_stories` for that edition+date, upserts the `paper_meta.stocks_in_focus` JSONB column, and upserts any `ipoListings` entries into `ipo_listings` (keyed on `company_name`, so it's safe to re-run and safe for the same company to reappear across multiple days as its IPO progresses). Safe to re-run if you edit and republish.
 
 ## 9. Publish and push — no local validation
 
@@ -136,5 +174,7 @@ git add -A && git commit -m "..." && git push
 
 - `paper_stories`: `edition, paper_date, section, headline, summary, page_number, display_order` — isolated from `clusters`/`cluster_entities`/`prices`.
 - `paper_meta`: `edition, paper_date, stocks_in_focus JSONB` — day-level metadata, PK on (edition, paper_date).
-- Query layer: `lib/queries.ts` — `getPaperStories`, `getPaperDays`, `getStocksInFocus`.
-- Render layer: `components/PaperTree.tsx` — section-tree sidebar + click-to-expand row list; `renderSummary()` parses `[[...]]` markers.
+- `ipo_listings`: `company_name (UNIQUE), ticker, exchange, issue_price_low, issue_price_high, open_date, close_date, listing_date, listing_price, status, notes` — separate table backing the "IPO & Listings" tab (`/ipo`); upserted on `company_name` by the `ipoListings` array in the same publish JSON (§6a). `ticker`, when set and present in `prices`, drives a live current-price/% column — see `scripts/ipo_schema.sql`.
+- Query layer: `lib/queries.ts` — `getPaperStories`, `getPaperDays`, `getStocksInFocus`, `getIpoListings`.
+- Render layer: `components/PaperTree.tsx` — section-tree sidebar + click-to-expand row list; `renderSummary()` parses `[[...]]` markers. `components/IpoTable.tsx` — structured IPO/listing table, separate page (`app/ipo/page.tsx`).
+- Standalone publish path for the IPO table without a full e-paper pull: `node scripts/publish-ipo.mjs path/to/ipos.json` (same shape/upsert semantics as the `ipoListings` array, useful for out-of-band updates like a listing-day price correction).
