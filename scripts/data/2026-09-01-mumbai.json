@@ -96,31 +96,36 @@
       "section": "Sector",
       "headline": "$50-bn medtech sector by FY30, but funding lags",
       "summary": "India's medical device sector, currently worth around $12 billion in FY24, is expected to grow at 15% annually to reach $50 billion by FY30, according to a study by the Department of Pharmaceuticals. Small manufacturers struggle to raise start-up capital as MNCs control 80-90% of the specialised, high-end device market, while domestic manufacturers face inadequate infrastructure and high financing costs.",
-      "page_number": 2
+      "page_number": 2,
+      "industry": "Medtech"
     },
     {
       "section": "Sector",
       "headline": "Premium phones fly, budget ones flag",
       "summary": "India's smartphone shipments dropped 10% year-on-year in April-June, the steepest fall in six years, per Counterpoint Research, with damage concentrated in phones priced below ₹15,000 which crashed nearly 50%. Average selling price climbed to around ₹30,000, up almost 20% year-on-year, as affordable credit and premium upgrades drive the shift; sales of the iPhone 17 and iPhone Air added 16% to smartphone sales.",
-      "page_number": 1
+      "page_number": 1,
+      "industry": "Smartphones"
     },
     {
       "section": "Sector",
       "headline": "Analogue paneer ban to lift organised mkt",
       "summary": "The ongoing crackdown by the Food Safety and Standards Authority of India on analogue dairy products across several states could significantly expand the opportunity for organised dairy companies in India's estimated ₹1-lakh-crore paneer market, according to [[Milky Mist Dairy Food]] Chief Executive K Rathnam. India's paneer market is estimated at ₹1 lakh crore, with the unorganised sector accounting for about 94% and organised players the remaining 6-7%.",
-      "page_number": 4
+      "page_number": 4,
+      "industry": "Dairy/FMCG"
     },
     {
       "section": "Sector",
       "headline": "Taking AI from pilot to scale",
       "summary": "The real opportunity now lies in turning AI pilots into measurable business value, writes Manish Prasad, President & MD of [[SAP Indian Subcontinent]]. AI currently supports 33% of business tasks in India and is expected to reach 51% within the next two years, according to SAP's 2026 Value of AI research; 71% of AI businesses now have an AI strategy aligned with their business goals.",
-      "page_number": 9
+      "page_number": 9,
+      "industry": "AI/Enterprise Tech"
     },
     {
       "section": "Sector",
       "headline": "The biggest gains will come from execution",
       "summary": "India's AI opportunity lies in moving faster, as much as it rests on moving differently, argues Rajesh Nambiar, President of Nasscom. TCS's annualised AI revenue run-rate reached $2.6 billion in Q1 FY27, up 13.6% quarter-on-quarter; [[Infosys]] reported AI revenue of $417 million and [[HCLTech]]'s AI revenue rose 10.3% sequentially to $171 million.",
-      "page_number": 9
+      "page_number": 9,
+      "industry": "AI/Enterprise Tech"
     },
     {
       "section": "Corporate Events",

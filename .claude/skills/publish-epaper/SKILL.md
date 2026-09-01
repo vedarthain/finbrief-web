@@ -38,7 +38,7 @@ The `section` field must be one of these 12 fixed leaf values. The UI groups the
 1. **Economy** — macro data and government economic commentary: GDP, fiscal deficit, RBI/CEA/FinMin commentary, PMI, services-sector output, debt targets. *(Top-level tab: Economy)*
 2. **Policy** — government policy decisions/proposals: FDI-norm changes, GST Council meetings, sector policy notifications. *(Grouped under "Policy & Regulatory")*
 3. **Regulatory** — court/tribunal/NCLT/NCLAT rulings, SEBI/FSSAI/regulator orders and bans, AGM/e-voting notices, SARFAESI/possession notices, lost-share-certificate notices, government fare/price orders. *(Grouped under "Policy & Regulatory")*
-4. **Sector** — industry-wide trends that aren't about one company: e.g. "$50-bn medtech sector by FY30" or "premium phones fly, budget ones flag" — a whole sector's dynamics, not a single stock's news. *(Grouped under "In Focus", alongside the separately-curated `stocksInFocus` "Stocks in Focus" tab)*
+4. **Sector** — industry-wide trends that aren't about one company: e.g. "$50-bn medtech sector by FY30" or "premium phones fly, budget ones flag" — a whole sector's dynamics, not a single stock's news. *(Grouped under "In Focus", alongside the separately-curated `stocksInFocus` "Stocks in Focus" tab)* Every Sector story must also carry an `"industry"` field — a short (1-3 word) tag naming the specific industry, e.g. `"Medtech"`, `"Smartphones"`, `"Dairy/FMCG"`, `"AI/Enterprise Tech"`. This renders as a small badge next to the headline so readers can tell sectors apart at a glance without opening each story. `industry` is optional on every other section (leave it off) — it only applies to `section: "Sector"`.
 5. **Corporate Events** — single-company news: results, capex/capacity announcements, M&A, leadership changes, stake sales — e.g. "SJVN capacity up 1,730 MW" is stock-specific, so it's Corporate Events, not Sector. *(Grouped under "Stocks")*
 6. **IPO** — new listings, IPO price bands/allotments/proceeds, rights issues, preferential issues. *(Grouped under "Stocks")*
 7. **Market** — index/auction moves, currency, bank credit/liquidity, mutual/HNI fund flows, open offers, post-offer advertisements. *(Grouped under "Stocks")*
@@ -133,7 +133,8 @@ Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `script
   "edition": "Mumbai",
   "paper_date": "2026-08-31",
   "stories": [
-    { "section": "Front Page", "headline": "...", "summary": "... [[Company]] ...", "page_number": 1 }
+    { "section": "Front Page", "headline": "...", "summary": "... [[Company]] ...", "page_number": 1 },
+    { "section": "Sector", "headline": "...", "summary": "...", "page_number": 5, "industry": "Medtech" }
   ],
   "stocksInFocus": [
     { "name": "...", "note": "..." }

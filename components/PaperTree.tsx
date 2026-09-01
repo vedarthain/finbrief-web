@@ -346,6 +346,11 @@ export default function PaperTree({
                   >
                     {s.headline}
                   </h3>
+                  {s.industry && (
+                    <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-cyan-200 text-cyan-700 bg-cyan-50">
+                      {s.industry}
+                    </span>
+                  )}
                   {multiEdition && <EditionBadge edition={s.edition} />}
                   <span className="text-gray-300 text-[14px] shrink-0">
                     {open ? "–" : "+"}

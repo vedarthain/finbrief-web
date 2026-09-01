@@ -55,9 +55,9 @@ try {
   let order = 0;
   for (const s of stories) {
     await client.query(
-      `INSERT INTO paper_stories (edition, paper_date, section, headline, summary, page_number, display_order)
-       VALUES ($1, $2, $3, $4, $5, $6, $7)`,
-      [edition, paper_date, s.section, s.headline, s.summary, s.page_number ?? null, order++]
+      `INSERT INTO paper_stories (edition, paper_date, section, headline, summary, page_number, industry, display_order)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+      [edition, paper_date, s.section, s.headline, s.summary, s.page_number ?? null, s.industry ?? null, order++]
     );
   }
 

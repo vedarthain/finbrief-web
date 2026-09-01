@@ -223,6 +223,7 @@ export interface PaperStory {
   headline: string;
   summary: string;
   page_number: number | null;
+  industry: string | null;
 }
 
 export async function getPaperStories(date?: string, edition?: string): Promise<PaperStory[]> {
@@ -235,7 +236,7 @@ export async function getPaperStories(date?: string, edition?: string): Promise<
   }
   const { rows } = await pool.query(
     `
-    SELECT id, edition, paper_date::text, section, headline, summary, page_number
+    SELECT id, edition, paper_date::text, section, headline, summary, page_number, industry
     FROM paper_stories
     WHERE ${where}
     ORDER BY display_order ASC, page_number ASC NULLS LAST, id ASC

@@ -9,9 +9,12 @@ CREATE TABLE IF NOT EXISTS paper_stories (
   headline      TEXT NOT NULL,
   summary       TEXT NOT NULL,
   page_number   INT,
+  industry      TEXT,                   -- e.g. "Medtech", "FMCG" — only set for section = 'Sector' stories
   display_order INT NOT NULL DEFAULT 0,
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+ALTER TABLE paper_stories ADD COLUMN IF NOT EXISTS industry TEXT;
 
 CREATE INDEX IF NOT EXISTS idx_paper_stories_date ON paper_stories (paper_date, display_order);
 
