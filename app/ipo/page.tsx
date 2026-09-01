@@ -1,29 +1,11 @@
-import { getPaperStories, getPaperDays, getStocksInFocus } from "@/lib/queries";
-import PaperTree from "@/components/PaperTree";
-import DatePicker from "@/components/DatePicker";
+import { getIpoListings } from "@/lib/queries";
+import IpoTable from "@/components/IpoTable";
 import NavTabs from "@/components/NavTabs";
 
 export const revalidate = 300;
 
-export default async function HomePage({
-  searchParams,
-}: {
-  searchParams: Promise<{ date?: string; edition?: string }>;
-}) {
-  const params = await searchParams;
-  const todayIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
-  const activeDate = params.date ?? todayIST;
-
-  const [stories, days, stocksInFocus] = await Promise.all([
-    getPaperStories(activeDate, params.edition),
-    getPaperDays(),
-    getStocksInFocus(activeDate, params.edition),
-  ]);
-
-  const bySection = stories.reduce<Record<string, typeof stories>>((acc, s) => {
-    (acc[s.section] ??= []).push(s);
-    return acc;
-  }, {});
+export default async function IpoPage() {
+  const listings = await getIpoListings();
 
   const istTime = new Date().toLocaleString("en-IN", {
     timeZone: "Asia/Kolkata", weekday: "short",
@@ -50,25 +32,12 @@ export default async function HomePage({
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-4">
-        {/* Title bar + day picker */}
         <div className="flex items-center gap-2 mb-3 flex-wrap">
-          <h1 className="text-[20px] font-bold tracking-tight text-gray-900">Today&apos;s Paper</h1>
-          <span className="text-[13px] text-gray-400 font-normal ml-1">
-            {stories.length} stories · {activeDate}
-          </span>
-          <div className="ml-auto">
-            <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
-          </div>
+          <h1 className="text-[20px] font-bold tracking-tight text-gray-900">IPO &amp; New Listings</h1>
+          <span className="text-[13px] text-gray-400 font-normal ml-1">{listings.length} tracked</span>
         </div>
 
-        {stories.length === 0 ? (
-          <div className="rounded-xl border border-dashed border-gray-200 bg-white py-16 text-center shadow-sm">
-            <p className="text-3xl mb-3">🗞️</p>
-            <p className="text-[15px] text-gray-400">No paper stories published for {activeDate} yet.</p>
-          </div>
-        ) : (
-          <PaperTree bySection={bySection} stocksInFocus={stocksInFocus} />
-        )}
+        <IpoTable listings={listings} />
       </main>
 
       {/* ── Footer ─────────────────────────────────────────────────────────── */}

@@ -207,15 +207,15 @@ export default function PaperTree({
   }, []);
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-1.5">
       {/* ── Font-size control ──────────────────────────────────────────── */}
-      <div className="flex items-center justify-end gap-1.5">
-        <span className="text-[11px] text-gray-400 mr-1">Text size</span>
+      <div className="flex items-center justify-end gap-1">
+        <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
         <button
           onClick={() => bumpFont(-1)}
           disabled={fontStepIdx === 0}
           aria-label="Decrease text size"
-          className="w-7 h-7 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-[12px] font-semibold"
+          className="w-5 h-5 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-[10px] font-semibold"
         >
           A−
         </button>
@@ -223,12 +223,12 @@ export default function PaperTree({
           onClick={() => bumpFont(1)}
           disabled={fontStepIdx === FONT_STEPS.length - 1}
           aria-label="Increase text size"
-          className="w-7 h-7 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-[14px] font-semibold"
+          className="w-5 h-5 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 hover:border-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-[11px] font-semibold"
         >
           A+
         </button>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 items-start">
+      <div className="flex flex-col md:flex-row gap-3 items-start">
       {/* ── Left: section tree ─────────────────────────────────────────── */}
       <aside className="w-full md:w-56 shrink-0 md:sticky md:top-20">
         <nav className="rounded-lg bg-white border border-gray-200 overflow-hidden">

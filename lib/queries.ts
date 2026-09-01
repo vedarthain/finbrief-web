@@ -281,3 +281,44 @@ export async function getPaperDays(): Promise<{ date: string; edition: string }[
   `);
   return rows;
 }
+
+// ── IPO & New Listings — manually-tracked, isolated from paper_stories ──────
+export interface IpoListing {
+  id: number;
+  company_name: string;
+  ticker: string | null;
+  exchange: string | null;
+  issue_price_low: number | null;
+  issue_price_high: number | null;
+  open_date: string | null;
+  close_date: string | null;
+  listing_date: string | null;
+  listing_price: number | null;
+  status: string;
+  notes: string | null;
+  current_price: number | null;
+  change_pct: number | null;   // vs listing_price, using latest known price
+}
+
+export async function getIpoListings(): Promise<IpoListing[]> {
+  const { rows } = await pool.query(`
+    SELECT
+      l.id, l.company_name, l.ticker, l.exchange,
+      l.issue_price_low, l.issue_price_high,
+      l.open_date::text, l.close_date::text, l.listing_date::text,
+      l.listing_price, l.status, l.notes,
+      p.price AS current_price,
+      CASE WHEN l.listing_price IS NOT NULL AND p.price IS NOT NULL AND l.listing_price != 0
+        THEN ROUND(((p.price - l.listing_price) / l.listing_price * 100)::numeric, 2)
+        ELSE NULL
+      END AS change_pct
+    FROM ipo_listings l
+    LEFT JOIN LATERAL (
+      SELECT price FROM prices WHERE ticker = l.ticker ORDER BY recorded_at DESC LIMIT 1
+    ) p ON true
+    ORDER BY
+      COALESCE(l.listing_date, l.close_date, l.open_date) DESC NULLS LAST,
+      l.company_name ASC
+  `);
+  return rows;
+}
