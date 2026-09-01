@@ -1,6 +1,6 @@
 import { getPaperStories, getPaperDays, getStocksInFocus } from "@/lib/queries";
-import Link from "next/link";
 import PaperTree from "@/components/PaperTree";
+import DatePicker from "@/components/DatePicker";
 
 export const revalidate = 300;
 
@@ -54,20 +54,8 @@ export default async function HomePage({
           <span className="text-[14px] text-gray-400 font-normal ml-1">
             {stories.length} stories · {activeDate}
           </span>
-          <div className="ml-auto flex items-center gap-1.5 flex-wrap">
-            {days.map((d) => (
-              <Link
-                key={d.date}
-                href={`/?date=${d.date}`}
-                className={`text-[13px] font-medium px-3 py-1.5 rounded-full border transition-colors ${
-                  d.date === activeDate
-                    ? "bg-gray-900 border-gray-900 text-white"
-                    : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
-                }`}
-              >
-                {d.date}
-              </Link>
-            ))}
+          <div className="ml-auto">
+            <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
           </div>
         </div>
 

@@ -22,31 +22,33 @@ function renderSummary(text: string, dimClass: string) {
 }
 
 const SECTION_STYLE: Record<string, string> = {
-  "Front Page":          "text-amber-700 bg-amber-50",
-  "Markets":             "text-blue-600 bg-blue-50",
-  "Economy":             "text-teal-600 bg-teal-50",
-  "Companies":           "text-violet-600 bg-violet-50",
-  "World":               "text-rose-600 bg-rose-50",
-  "Personal Finance":    "text-emerald-600 bg-emerald-50",
-  "Opinion":             "text-slate-600 bg-slate-100",
-  "BrandWagon":          "text-fuchsia-600 bg-fuchsia-50",
-  "Technology":          "text-cyan-600 bg-cyan-50",
-  "IPO & Legal Notices": "text-orange-700 bg-orange-50",
-  "Stocks in Focus":     "text-emerald-700 bg-emerald-50",
+  "Economy & Policy":      "text-teal-600 bg-teal-50",
+  "IPO & Market":          "text-orange-700 bg-orange-50",
+  "Sectors in Focus":      "text-cyan-600 bg-cyan-50",
+  "Environment & Resources": "text-lime-700 bg-lime-50",
+  "Growth & Development":  "text-amber-700 bg-amber-50",
+  "International News":    "text-rose-600 bg-rose-50",
+  "Regulatory":            "text-slate-600 bg-slate-100",
+  "Trade":                 "text-indigo-600 bg-indigo-50",
+  "Insurance":             "text-blue-600 bg-blue-50",
+  "Corporate Events":      "text-violet-600 bg-violet-50",
+  "Others":                "text-gray-500 bg-gray-50",
+  "Stocks in Focus":       "text-emerald-700 bg-emerald-50",
 };
 
 const SECTION_BAR: Record<string, string> = {
-  "Front Page":          "bg-amber-500",
-  "Markets":             "bg-blue-500",
-  "Economy":             "bg-teal-500",
-  "Companies":           "bg-violet-500",
-  "World":               "bg-rose-500",
-  "Personal Finance":    "bg-emerald-500",
-  "Opinion":             "bg-slate-500",
-  "BrandWagon":          "bg-fuchsia-500",
-  "Technology":          "bg-cyan-500",
-  "IPO & Legal Notices": "bg-orange-500",
-  "Stocks in Focus":     "bg-emerald-500",
+  "Economy & Policy":      "bg-teal-500",
+  "IPO & Market":          "bg-orange-500",
+  "Sectors in Focus":      "bg-cyan-500",
+  "Environment & Resources": "bg-lime-500",
+  "Growth & Development":  "bg-amber-500",
+  "International News":    "bg-rose-500",
+  "Regulatory":            "bg-slate-500",
+  "Trade":                 "bg-indigo-500",
+  "Insurance":             "bg-blue-500",
+  "Corporate Events":      "bg-violet-500",
+  "Others":                "bg-gray-400",
+  "Stocks in Focus":       "bg-emerald-500",
 };
 
 const STOCKS_TAB = "Stocks in Focus";
@@ -61,7 +63,7 @@ export default function PaperTree({
   const storySections = Object.keys(bySection);
   const sections = [...storySections];
   if (stocksInFocus.length > 0) {
-    const ipoIdx = sections.indexOf("IPO & Legal Notices");
+    const ipoIdx = sections.indexOf("IPO & Market");
     const insertAt = ipoIdx === -1 ? sections.length : ipoIdx + 1;
     sections.splice(insertAt, 0, STOCKS_TAB);
   }

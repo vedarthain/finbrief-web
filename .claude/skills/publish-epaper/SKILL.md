@@ -23,9 +23,29 @@ The `Read` tool's internal PDF page index is **NOT** the same as the printed pag
 
 **Do not skip IPO / legal / AGM / rights-issue notices.** These pages (often near the back) contain dense small-print notices — read them carefully and extract every distinct company/entity, not just a couple of examples. If several near-identical AGM/SARFAESI notices exist for many companies on one page, capture them as one consolidated story per notice-type but list every company name individually (so each name can later be wrapped in `[[...]]` for highlighting).
 
-Cover every section present in the paper: Front Page, Markets, Economy, Companies, World, Personal Finance, Opinion, BrandWagon, Technology, IPO & Legal Notices (this list is not exhaustive — use whatever section names appear in the paper).
+Read across the whole paper regardless of which physical page/section a story runs on — Front Page, Markets, Economy, Companies, World, Personal Finance, Opinion, BrandWagon, Technology, AI@Work, Back Page, IPO & Legal Notices, etc. **Do not use these page-section names as the `section` field.** They exist only to make sure you don't skip content while reading.
 
 No Claude API call is used for extraction — read the PDF directly and write the structured JSON yourself in-chat.
+
+## 3a. Classify every story into a fixed topic taxonomy — never by page
+
+The `section` field must be one of these 11 fixed values, in this exact order (this is also the required sidebar/display order — write the `stories` array grouped in this sequence):
+
+1. **Economy & Policy** — macro data and government economic policy: GDP, fiscal deficit, RBI/CEA/FinMin commentary, FDI policy, PMI, services-sector output, GST Council, debt targets.
+2. **IPO & Market** — anything about the capital markets: new listings, IPO price bands/allotments, rights issues, open offers, buybacks, stock index/auction moves, currency, bank credit/liquidity, mutual/HNI fund flows.
+3. **Sectors in Focus** — industry-wide trends that aren't about one company: e.g. "$50-bn medtech sector by FY30" or "premium phones fly, budget ones flag" — a whole sector's dynamics, not a single stock's news.
+4. **Environment & Resources** — climate, monsoon, floods, water stress, natural-resource stories.
+5. **Growth & Development** — infrastructure and capability-building initiatives: highway awards, Semicon-type schemes, industrial corridors.
+6. **International News** — foreign geopolitics, foreign companies/economies, global markets not centred on an Indian listed company.
+7. **Regulatory** — court/tribunal/NCLT/NCLAT rulings, SEBI/FSSAI/regulator orders and bans, AGM/e-voting notices, SARFAESI/possession notices, lost-share-certificate notices, government fare/price orders.
+8. **Trade** — bilateral/multilateral trade deals, tariffs, trade missions, investment treaties.
+9. **Insurance** — insurance-sector and insurer-specific stories.
+10. **Corporate Events** — single-company news: results, capex/capacity announcements, M&A, leadership changes, stake sales — e.g. "SJVN capacity up 1,730 MW" is stock-specific, so it's Corporate Events, not Sectors in Focus.
+11. **Others** — opinion/editorial pieces, human-interest, sport, product reviews, anything that genuinely doesn't fit above.
+
+**The sector-vs-stock test:** if the story is about one identifiable listed company's numbers/decisions, it's Corporate Events. If it's about an industry/market segment as a whole (even if it names a few example companies), it's Sectors in Focus.
+
+**Dedup rule:** if the same underlying event (e.g. a GDP print) generates multiple candidate stories from different pages (the data page, a reaction/quote page, an opinion piece restating the number), merge them into **one** comprehensive story under the correct category — do not publish near-duplicate stories that just restate the same headline fact from different angles. A distinct opinion/editorial take can still go to Others if it adds real independent argument, not just a restatement.
 
 ## 4. Write summaries — terse, fact-led, key-information only
 
@@ -49,7 +69,7 @@ Separately from the story list, curate a short list (typically 5-10) of the day'
 ]
 ```
 
-This renders as its own sidebar tab ("Stocks in Focus"), positioned right after "IPO & Legal Notices" — it is not embedded inside that section.
+This renders as its own sidebar tab ("Stocks in Focus"), positioned right after "IPO & Market" — it is not embedded inside that section.
 
 ## 7. Write the JSON file
 
