@@ -59,45 +59,45 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
     <div className="rounded-lg bg-white border border-gray-200 overflow-x-auto">
       <table className="w-full text-[13.5px] border-collapse">
         <thead>
-          <tr className="border-b border-gray-200 text-left text-gray-400 text-[11px] uppercase tracking-wide">
-            <th className="px-4 py-2.5 font-medium">Company</th>
-            <th className="px-3 py-2.5 font-medium">Exchange</th>
-            <th className="px-3 py-2.5 font-medium">Status</th>
-            <th className="px-3 py-2.5 font-medium">Price Band</th>
-            <th className="px-3 py-2.5 font-medium">Open</th>
-            <th className="px-3 py-2.5 font-medium">Close</th>
-            <th className="px-3 py-2.5 font-medium">Listing Date</th>
-            <th className="px-3 py-2.5 font-medium text-right">Listing Price</th>
-            <th className="px-3 py-2.5 font-medium text-right">Current Price</th>
-            <th className="px-4 py-2.5 font-medium text-right">Since Listing</th>
+          <tr className="text-left text-gray-400 text-[11px] uppercase tracking-wide">
+            <th className="px-4 py-2.5 font-medium border border-gray-200">Company</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200">Exchange</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200">Status</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200">Price Band</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200">Open</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200">Close</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200">Listing Date</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200 text-right">Listing Price</th>
+            <th className="px-3 py-2.5 font-medium border border-gray-200 text-right">Current Price</th>
+            <th className="px-4 py-2.5 font-medium border border-gray-200 text-right">Since Listing</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-gray-100">
+        <tbody>
           {listings.map((l) => (
             <tr key={l.id} className="hover:bg-gray-50/60 transition-colors">
-              <td className="px-4 py-3">
+              <td className="px-4 py-3 border border-gray-200">
                 <div className="font-semibold text-gray-900">{l.company_name}</div>
                 {l.notes && <div className="text-[12px] text-gray-400 mt-0.5 max-w-xs">{l.notes}</div>}
               </td>
-              <td className="px-3 py-3">
+              <td className="px-3 py-3 border border-gray-200">
                 <ExchangeBadges exchange={l.exchange} />
               </td>
-              <td className="px-3 py-3">
+              <td className="px-3 py-3 border border-gray-200">
                 <span className={`text-[10.5px] font-medium uppercase tracking-wide px-2 py-0.5 rounded ${STATUS_STYLE[l.status] ?? "text-gray-500 bg-gray-50"}`}>
                   {l.status}
                 </span>
               </td>
-              <td className="px-3 py-3 text-gray-600 whitespace-nowrap">
+              <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">
                 {l.issue_price_low != null || l.issue_price_high != null
                   ? `${fmtPrice(l.issue_price_low)} – ${fmtPrice(l.issue_price_high)}`
                   : "—"}
               </td>
-              <td className="px-3 py-3 text-gray-600 whitespace-nowrap">{fmtDate(l.open_date)}</td>
-              <td className="px-3 py-3 text-gray-600 whitespace-nowrap">{fmtDate(l.close_date)}</td>
-              <td className="px-3 py-3 text-gray-600 whitespace-nowrap">{fmtDate(l.listing_date)}</td>
-              <td className="px-3 py-3 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.listing_price)}</td>
-              <td className="px-3 py-3 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.current_price)}</td>
-              <td className="px-4 py-3 text-right whitespace-nowrap">
+              <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.open_date)}</td>
+              <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.close_date)}</td>
+              <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.listing_date)}</td>
+              <td className="px-3 py-3 border border-gray-200 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.listing_price)}</td>
+              <td className="px-3 py-3 border border-gray-200 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.current_price)}</td>
+              <td className="px-4 py-3 border border-gray-200 text-right whitespace-nowrap">
                 {l.change_pct == null ? (
                   <span className="text-gray-300">—</span>
                 ) : (
