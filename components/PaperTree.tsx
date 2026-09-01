@@ -319,7 +319,7 @@ export default function PaperTree({
                   }`}
                 >
                   <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">{s.name}</span>
-                  <span className="text-gray-500"> — {s.note}</span>
+                  <span className="text-gray-700"> — {s.note}</span>
                   {multiEdition && s.edition && <EditionBadge edition={s.edition} />}
                 </li>
               ))}
@@ -355,7 +355,7 @@ export default function PaperTree({
               {open && (
                 <div className="px-4 pb-4 -mt-0.5">
                   <p style={{ fontSize: px(15.5) }} className="leading-relaxed">
-                    {renderSummary(s.summary, "text-gray-500")}
+                    {renderSummary(s.summary, "text-gray-700")}
                   </p>
                   {s.page_number != null && (
                     <p className="text-[13px] text-gray-400 mt-2">Page {s.page_number}</p>
