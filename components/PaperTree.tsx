@@ -39,9 +39,25 @@ const SECTION_STYLE: Record<string, string> = {
   "Others":                "text-gray-500 bg-gray-50",
 };
 
-// Top-level tab bar definition. A tab is either a standalone section
-// ("single") or a group with sub-tabs ("children"). Groups whose children
-// all end up empty for the day are dropped at render time.
+const SECTION_BAR: Record<string, string> = {
+  "Economy":               "bg-teal-500",
+  "Policy":                "bg-sky-500",
+  "Regulatory":            "bg-slate-500",
+  "Sector":                "bg-cyan-500",
+  [STOCKS_TAB]:            "bg-emerald-500",
+  "Corporate Events":      "bg-violet-500",
+  "IPO":                   "bg-orange-500",
+  "Market":                "bg-pink-500",
+  "Trade":                 "bg-indigo-500",
+  "Insurance":             "bg-blue-500",
+  "Growth & Development":  "bg-amber-500",
+  "International News":    "bg-rose-500",
+  "Others":                "bg-gray-400",
+};
+
+// Sidebar tree definition. A node is either a standalone leaf section
+// ("single") or a group with child leaves ("children"). Groups whose
+// children all end up empty for the day are dropped at render time.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Economy", single: "Economy" },
   { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
@@ -71,74 +87,109 @@ export default function PaperTree({
     })
     .filter((g): g is { label: string; single?: string; children?: string[]; resolvedChildren: string[] } => g !== null);
 
-  const [activeGroupLabel, setActiveGroupLabel] = useState<string | null>(resolvedGroups[0]?.label ?? null);
-  const [activeChild, setActiveChild] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
+  const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
+  const [openGroup, setOpenGroup] = useState<string | null>(
+    resolvedGroups.find((g) => !g.single)?.label ?? resolvedGroups[0]?.label ?? null
+  );
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  const activeGroup = resolvedGroups.find((g) => g.label === activeGroupLabel) ?? null;
-  const rows = activeChild && activeChild !== STOCKS_TAB ? bySection[activeChild] ?? [] : [];
+  const rows = activeLeaf && activeLeaf !== STOCKS_TAB ? bySection[activeLeaf] ?? [] : [];
 
-  function selectGroup(g: typeof resolvedGroups[number]) {
-    setActiveGroupLabel(g.label);
-    setActiveChild(g.resolvedChildren[0]);
+  function selectLeaf(g: typeof resolvedGroups[number], leaf: string) {
+    setActiveLeaf(leaf);
     setExpandedId(null);
+    if (!g.single) setOpenGroup(g.label);
+  }
+
+  function toggleGroup(g: typeof resolvedGroups[number]) {
+    if (g.single) {
+      selectLeaf(g, g.single);
+      return;
+    }
+    setOpenGroup((prev) => (prev === g.label ? null : g.label));
   }
 
   return (
-    <div className="flex flex-col gap-3">
-      {/* ── Top-level tab bar ─────────────────────────────────────────── */}
-      <nav className="flex flex-wrap gap-1.5">
-        {resolvedGroups.map((g) => (
-          <button
-            key={g.label}
-            onClick={() => selectGroup(g)}
-            className={`px-3.5 py-1.5 rounded-full text-[13px] font-medium transition-colors ${
-              activeGroupLabel === g.label
-                ? "bg-gray-900 text-white"
-                : "bg-white text-gray-600 border border-gray-200 hover:bg-gray-50"
-            }`}
-          >
-            {g.label}
-          </button>
-        ))}
-      </nav>
-
-      {/* ── Sub-tab row (only for multi-child groups) ────────────────── */}
-      {activeGroup && activeGroup.resolvedChildren.length > 1 && (
-        <nav className="flex flex-wrap gap-1.5 pl-1">
-          {activeGroup.resolvedChildren.map((child) => (
-            <button
-              key={child}
-              onClick={() => { setActiveChild(child); setExpandedId(null); }}
-              className={`px-3 py-1 rounded-full text-[12px] font-medium border transition-colors ${
-                activeChild === child
-                  ? "bg-gray-800 text-white border-gray-800"
-                  : "bg-gray-50 text-gray-500 border-gray-200 hover:bg-gray-100"
-              }`}
-            >
-              {child}
-              <span className="ml-1.5 tabular-nums opacity-70">{countOf(child)}</span>
-            </button>
-          ))}
+    <div className="flex flex-col md:flex-row gap-4 items-start">
+      {/* ── Left: section tree ─────────────────────────────────────────── */}
+      <aside className="w-full md:w-56 shrink-0 md:sticky md:top-20">
+        <nav className="rounded-lg bg-white border border-gray-200 overflow-hidden">
+          {resolvedGroups.map((g) => {
+            const isGroup = !g.single;
+            const isOpen = isGroup && openGroup === g.label;
+            const isActiveLeafHere = g.resolvedChildren.includes(activeLeaf ?? "");
+            return (
+              <div key={g.label} className="border-b border-gray-100 last:border-b-0">
+                <button
+                  onClick={() => toggleGroup(g)}
+                  className={`w-full flex items-center gap-2 px-3 py-1.5 text-[12px] md:text-[11.5px] transition-colors ${
+                    !isGroup && activeLeaf === g.single
+                      ? "bg-gray-900 text-white font-medium"
+                      : isActiveLeafHere
+                      ? "bg-gray-50 text-gray-900 font-medium"
+                      : "text-gray-600 hover:bg-gray-50"
+                  }`}
+                >
+                  <span
+                    className={`w-1.5 h-1.5 rounded-full shrink-0 ${
+                      !isGroup && activeLeaf === g.single ? "bg-white" : SECTION_BAR[g.resolvedChildren[0]] ?? "bg-gray-400"
+                    }`}
+                  />
+                  <span className="truncate">{g.label}</span>
+                  <span className={`ml-auto text-[10px] tabular-nums ${!isGroup && activeLeaf === g.single ? "text-gray-300" : "text-gray-400"}`}>
+                    {g.resolvedChildren.reduce((sum, c) => sum + countOf(c), 0)}
+                  </span>
+                  {isGroup && (
+                    <span className={`text-[9px] ${isOpen ? "rotate-180" : ""} transition-transform text-gray-400`}>▾</span>
+                  )}
+                </button>
+                {isGroup && isOpen && (
+                  <div className="bg-gray-50/60">
+                    {g.resolvedChildren.map((leaf) => (
+                      <button
+                        key={leaf}
+                        onClick={() => selectLeaf(g, leaf)}
+                        className={`w-full flex items-center gap-2 pl-7 pr-3 py-1.5 text-[11.5px] md:text-[11px] transition-colors ${
+                          activeLeaf === leaf
+                            ? "bg-gray-900 text-white font-medium"
+                            : "text-gray-500 hover:bg-gray-100"
+                        }`}
+                      >
+                        <span
+                          className={`w-1.5 h-1.5 rounded-full shrink-0 ${
+                            activeLeaf === leaf ? "bg-white" : SECTION_BAR[leaf] ?? "bg-gray-400"
+                          }`}
+                        />
+                        <span className="truncate">{leaf}</span>
+                        <span className={`ml-auto text-[10px] tabular-nums ${activeLeaf === leaf ? "text-gray-300" : "text-gray-400"}`}>
+                          {countOf(leaf)}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </nav>
-      )}
+      </aside>
 
-      {/* ── Content panel ─────────────────────────────────────────────── */}
-      <div className="rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
-        {activeChild && (
-          <div className="flex items-center gap-2 px-4 py-2.5">
-            <span className={`text-[11px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded ${
-              SECTION_STYLE[activeChild] ?? "text-gray-500 bg-gray-50"
+      {/* ── Right: row list, expand on click ──────────────────────────── */}
+      <div className="flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
+        {activeLeaf && (
+          <div className="flex items-center gap-2 px-4 py-2">
+            <span className={`text-[10px] md:text-[9.5px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded ${
+              SECTION_STYLE[activeLeaf] ?? "text-gray-500 bg-gray-50"
             }`}>
-              {activeChild}
+              {activeLeaf}
             </span>
           </div>
         )}
-        {activeChild === STOCKS_TAB && (
-          <div className="px-4 py-3.5">
-            <ul className="space-y-3">
+        {activeLeaf === STOCKS_TAB && (
+          <div className="px-4 py-3">
+            <ul className="space-y-2.5">
               {stocksInFocus.map((s) => (
-                <li key={s.name} className="text-[14px] leading-snug">
+                <li key={s.name} className="text-[13px] md:text-[12.5px] leading-snug">
                   <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">{s.name}</span>
                   <span className="text-gray-500"> — {s.note}</span>
                 </li>
@@ -152,31 +203,24 @@ export default function PaperTree({
             <div key={s.id}>
               <button
                 onClick={() => setExpandedId(open ? null : s.id)}
-                className="w-full text-left px-4 py-3.5 hover:bg-gray-50 transition-colors"
+                className="w-full text-left px-4 py-2.5 hover:bg-gray-50 transition-colors"
               >
-                <div className="flex items-start gap-3">
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-[16px] font-semibold text-gray-900 leading-snug">
-                      {s.headline}
-                    </h3>
-                    {!open && (
-                      <p className="text-[14px] leading-snug mt-1 line-clamp-1">
-                        {renderSummary(s.summary, "text-gray-400")}
-                      </p>
-                    )}
-                  </div>
-                  <span className="text-gray-300 text-[13px] shrink-0 mt-0.5">
+                <div className="flex items-center gap-3">
+                  <h3 className="flex-1 min-w-0 truncate text-[14px] md:text-[13px] font-semibold text-gray-900">
+                    {s.headline}
+                  </h3>
+                  <span className="text-gray-300 text-[12px] shrink-0">
                     {open ? "–" : "+"}
                   </span>
                 </div>
               </button>
               {open && (
-                <div className="px-4 pb-4 -mt-1">
-                  <p className="text-[15px] leading-relaxed">
+                <div className="px-4 pb-3.5 -mt-0.5">
+                  <p className="text-[13px] md:text-[12.5px] leading-relaxed">
                     {renderSummary(s.summary, "text-gray-500")}
                   </p>
                   {s.page_number != null && (
-                    <p className="text-[12px] text-gray-400 mt-2">Page {s.page_number}</p>
+                    <p className="text-[11px] text-gray-400 mt-2">Page {s.page_number}</p>
                   )}
                 </div>
               )}
