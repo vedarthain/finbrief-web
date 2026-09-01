@@ -314,8 +314,8 @@ export default function PaperTree({
                   key={s.name}
                   ref={(el) => { rowRefs.current[i] = el; }}
                   style={{ fontSize: px(17) }}
-                  className={`leading-snug rounded px-2 py-1 -mx-2 transition-colors ${
-                    focusIndex === i ? "bg-amber-100 ring-1 ring-amber-300" : ""
+                  className={`leading-snug rounded px-2 py-1 -mx-2 transition-colors bg-white ${
+                    focusIndex === i ? "ring-1 ring-gray-300" : ""
                   }`}
                 >
                   <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">{s.name}</span>
@@ -333,7 +333,7 @@ export default function PaperTree({
             <div
               key={s.id}
               ref={(el) => { rowRefs.current[i] = el; }}
-              className={focused ? "bg-amber-100/80" : undefined}
+              className={`bg-white transition-colors ${focused ? "ring-1 ring-inset ring-gray-300" : ""}`}
             >
               <button
                 onClick={() => { setFocusIndex(i); setExpandedId(open ? null : s.id); }}
