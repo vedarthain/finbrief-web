@@ -60,7 +60,8 @@ const SECTION_BAR: Record<string, string> = {
 // children all end up empty for the day are dropped at render time.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Economy", single: "Economy" },
-  { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
+  { label: "Policy", single: "Policy" },
+  { label: "Regulatory", single: "Regulatory" },
   { label: "In Focus", children: ["Sector", STOCKS_TAB] },
   { label: "Stocks", children: ["Corporate Events", "IPO", "Market", "Trade", "Insurance"] },
   { label: "Growth & Development", single: "Growth & Development" },
@@ -165,9 +166,9 @@ export default function PaperTree({
   // ── Arrow-key navigation: Up/Down move within a section, Left/Right switch sections ──
   // Keep a ref mirror of everything the handler needs so the listener (attached
   // once, on mount) always reads fresh values instead of a stale closure.
-  const liveRef = useRef({ activeLeaf, focusIndex, itemCount, flatLeaves });
+  const liveRef = useRef({ activeLeaf, focusIndex, itemCount, flatLeaves, bySection });
   useEffect(() => {
-    liveRef.current = { activeLeaf, focusIndex, itemCount, flatLeaves };
+    liveRef.current = { activeLeaf, focusIndex, itemCount, flatLeaves, bySection };
   });
 
   useEffect(() => {
@@ -176,7 +177,7 @@ export default function PaperTree({
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return;
 
-      const { activeLeaf, focusIndex, itemCount, flatLeaves } = liveRef.current;
+      const { activeLeaf, focusIndex, itemCount, flatLeaves, bySection } = liveRef.current;
       e.preventDefault();
 
       if (e.key === "ArrowDown" || e.key === "ArrowUp") {
@@ -185,7 +186,11 @@ export default function PaperTree({
           ? Math.min(focusIndex + 1, itemCount - 1)
           : Math.max(focusIndex - 1, 0);
         setFocusIndex(next);
-        // Up/Down only moves the highlight — the story stays collapsed until clicked.
+        // Up/Down moves the highlight and opens that row's summary inline.
+        if (activeLeaf && activeLeaf !== STOCKS_TAB) {
+          const story = (bySection[activeLeaf] ?? [])[next];
+          if (story) setExpandedId(story.id);
+        }
         rowRefs.current[next]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
         return;
       }
