@@ -96,10 +96,11 @@ export default function PaperTree({
     .filter((g): g is { label: string; single?: string; children?: string[]; resolvedChildren: string[] } => g !== null);
 
   // Flattened leaf order — drives ArrowLeft/ArrowRight navigation across sections.
+  const resolvedGroupsKey = resolvedGroups.map((g) => g.label + g.resolvedChildren.join(",")).join("|");
   const flatLeaves = useMemo(
     () => resolvedGroups.flatMap((g) => g.resolvedChildren.map((leaf) => ({ leaf, group: g }))),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [resolvedGroups.map((g) => g.label + g.resolvedChildren.join(",")).join("|")]
+    [resolvedGroupsKey]
   );
 
   // More than one distinct edition present anywhere → show source badges.
@@ -120,7 +121,7 @@ export default function PaperTree({
   const rows = activeLeaf && activeLeaf !== STOCKS_TAB ? bySection[activeLeaf] ?? [] : [];
   const itemCount = activeLeaf === STOCKS_TAB ? stocksInFocus.length : rows.length;
 
-  const rowRefs = useRef<Record<number, HTMLDivElement | null>>({});
+  const rowRefs = useRef<Record<number, HTMLElement | null>>({});
 
   function selectLeaf(g: (typeof resolvedGroups)[number], leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
@@ -142,7 +143,9 @@ export default function PaperTree({
   // Keep a ref mirror of everything the handler needs so the listener (attached
   // once, on mount) always reads fresh values instead of a stale closure.
   const liveRef = useRef({ activeLeaf, focusIndex, itemCount, rows, flatLeaves });
-  liveRef.current = { activeLeaf, focusIndex, itemCount, rows, flatLeaves };
+  useEffect(() => {
+    liveRef.current = { activeLeaf, focusIndex, itemCount, rows, flatLeaves };
+  });
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
@@ -193,7 +196,7 @@ export default function PaperTree({
               <div key={g.label} className="border-b border-gray-100 last:border-b-0">
                 <button
                   onClick={() => toggleGroup(g)}
-                  className={`w-full flex items-center gap-2 px-3 py-2 text-[13px] transition-colors ${
+                  className={`w-full flex items-center gap-2 px-3 py-2 text-[14.5px] transition-colors ${
                     !isGroup && activeLeaf === g.single
                       ? "bg-gray-900 text-white font-medium"
                       : isActiveLeafHere
@@ -220,7 +223,7 @@ export default function PaperTree({
                       <button
                         key={leaf}
                         onClick={() => selectLeaf(g, leaf)}
-                        className={`w-full flex items-center gap-2 pl-7 pr-3 py-1.5 text-[12.5px] transition-colors ${
+                        className={`w-full flex items-center gap-2 pl-7 pr-3 py-1.5 text-[14px] transition-colors ${
                           activeLeaf === leaf
                             ? "bg-gray-900 text-white font-medium"
                             : "text-gray-500 hover:bg-gray-100"
@@ -252,7 +255,7 @@ export default function PaperTree({
       <div className="flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
         {activeLeaf && (
           <div className="flex items-center gap-2 px-4 py-2.5">
-            <span className={`text-[11px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded ${
+            <span className={`text-[12px] font-semibold tracking-wide uppercase px-2 py-0.5 rounded ${
               SECTION_STYLE[activeLeaf] ?? "text-gray-500 bg-gray-50"
             }`}>
               {activeLeaf}
@@ -266,7 +269,7 @@ export default function PaperTree({
                 <li
                   key={s.name}
                   ref={(el) => { rowRefs.current[i] = el; }}
-                  className={`text-[15px] leading-snug rounded px-2 py-1 -mx-2 transition-colors ${
+                  className={`text-[17px] leading-snug rounded px-2 py-1 -mx-2 transition-colors ${
                     focusIndex === i ? "bg-amber-100 ring-1 ring-amber-300" : ""
                   }`}
                 >
@@ -292,22 +295,22 @@ export default function PaperTree({
                 className="w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors"
               >
                 <div className="flex items-center gap-2">
-                  <h3 className="flex-1 min-w-0 truncate text-[15px] font-semibold text-gray-900 leading-snug">
+                  <h3 className="flex-1 min-w-0 truncate text-[17px] font-semibold text-gray-900 leading-snug">
                     {s.headline}
                   </h3>
                   {multiEdition && <EditionBadge edition={s.edition} />}
-                  <span className="text-gray-300 text-[13px] shrink-0">
+                  <span className="text-gray-300 text-[14px] shrink-0">
                     {open ? "–" : "+"}
                   </span>
                 </div>
               </button>
               {open && (
                 <div className="px-4 pb-4 -mt-0.5">
-                  <p className="text-[14px] leading-relaxed">
+                  <p className="text-[15.5px] leading-relaxed">
                     {renderSummary(s.summary, "text-gray-500")}
                   </p>
                   {s.page_number != null && (
-                    <p className="text-[12px] text-gray-400 mt-2">Page {s.page_number}</p>
+                    <p className="text-[13px] text-gray-400 mt-2">Page {s.page_number}</p>
                   )}
                 </div>
               )}
