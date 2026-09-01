@@ -79,7 +79,7 @@ export default function DatePicker({
       </button>
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex items-center gap-1.5 text-[13px] font-medium px-3 py-1.5 rounded-full border bg-white border-gray-200 text-gray-700 hover:border-gray-300 transition-colors"
+        className="flex items-center gap-1.5 text-[13px] font-medium px-3 py-1.5 rounded-full border bg-white border-gray-200 text-gray-700 hover:border-gray-300 transition-colors whitespace-nowrap"
       >
         <span aria-hidden>📅</span>
         <span>{activeLabel}</span>

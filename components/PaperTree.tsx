@@ -229,7 +229,12 @@ export default function PaperTree({
           A+
         </button>
       </div>
-      <div className="flex flex-col md:flex-row gap-3 items-start">
+      {/* items-stretch (not items-start) on mobile: in the flex-col layout this is
+          the CROSS axis, so it's what makes the story-list column fill the full
+          viewport width instead of shrinking to its content width. On md+ the
+          layout switches to flex-row, where items-start is what we actually want
+          (keeps the sticky sidebar top-aligned instead of stretched to match height). */}
+      <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-start">
       {/* ── Left: section tree ─────────────────────────────────────────── */}
       <aside className="w-full md:w-56 shrink-0 md:sticky md:top-20">
         <nav className="rounded-lg bg-white border border-gray-200 overflow-hidden">
@@ -262,7 +267,7 @@ export default function PaperTree({
       </aside>
 
       {/* ── Right: row list, expand on click or arrow keys ────────────── */}
-      <div className="flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
+      <div className="w-full flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
         {activeGroup && (
           <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
             {activeGroup.resolvedChildren.map((leaf) => (

@@ -45,17 +45,17 @@ export default async function HomePage({
 
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <header className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
-        <div className="mx-auto max-w-7xl px-4 py-2.5 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center shadow-sm">
+        <div className="mx-auto max-w-7xl px-4 py-2.5 flex items-center justify-between gap-2 flex-wrap">
+          <div className="flex items-center gap-2.5 shrink-0">
+            <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center shadow-sm shrink-0">
               <span className="text-white text-[11px] font-bold tracking-tight">FB</span>
             </div>
-            <span className="text-[19px] font-bold tracking-tight text-gray-900">
+            <span className="text-[19px] font-bold tracking-tight text-gray-900 whitespace-nowrap">
               Fin<span className="text-amber-500">Brief</span>
             </span>
           </div>
           <NavTabs />
-          <span className="text-[13px] text-gray-400">{istTime} IST</span>
+          <span className="hidden sm:inline text-[13px] text-gray-400 whitespace-nowrap ml-auto">{istTime} IST</span>
         </div>
       </header>
 
