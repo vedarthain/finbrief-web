@@ -123,6 +123,19 @@ export default function PaperTree({
   const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
   const [focusIndex, setFocusIndex] = useState(0);
 
+  // ── Persist the active section tab across refreshes ──
+  // Starts on the first leaf (same on server and client, avoiding a hydration
+  // mismatch), then — right after mount — swaps in whatever the user was last
+  // viewing, provided that section still exists for this day's paper.
+  useEffect(() => {
+    const saved = localStorage.getItem("paper-active-leaf");
+    if (saved && flatLeaves.some((f) => f.leaf === saved)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time sync from localStorage after mount, not a render-triggered loop
+      setActiveLeaf(saved);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // ── Font-size control: user-adjustable scale, persisted across visits ──
   // Starts at the default step on both server and client (avoids a hydration
   // mismatch), then syncs from localStorage right after mount.
@@ -163,6 +176,7 @@ export default function PaperTree({
   function selectLeaf(leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
     setFocusIndex(focusAt);
+    localStorage.setItem("paper-active-leaf", leaf);
   }
 
   // Clicking a group in the left panel jumps to whichever of its tabs is
