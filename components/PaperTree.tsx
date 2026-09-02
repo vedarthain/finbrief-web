@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { PaperStory, StockInFocus } from "@/lib/queries";
-import CorporateEventsTable from "./CorporateEventsTable";
+import PaperSectionTable, { TableRow } from "./PaperSectionTable";
 
 export function renderSummary(text: string, dimClass: string) {
   return text.split(/(\[\[[^\]]+\]\])/g).map((part, i) => {
@@ -113,7 +113,6 @@ export default function PaperTree({
   }, [bySection, stocksInFocus]);
 
   const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
-  const [expandedId, setExpandedId] = useState<number | null>(null);
   const [focusIndex, setFocusIndex] = useState(0);
 
   // ── Font-size control: user-adjustable scale, persisted across visits ──
@@ -142,13 +141,20 @@ export default function PaperTree({
   const rows = activeLeaf && activeLeaf !== STOCKS_TAB ? bySection[activeLeaf] ?? [] : [];
   const itemCount = activeLeaf === STOCKS_TAB ? stocksInFocus.length : rows.length;
 
-  const rowRefs = useRef<Record<number, HTMLElement | null>>({});
+  // Every section — including Stocks in Focus — renders through the same
+  // generic table component, so build a uniform row shape for whichever
+  // data source is active.
+  const tableRows: TableRow[] = activeLeaf === STOCKS_TAB
+    ? stocksInFocus.map((s, i) => ({ key: `sif-${i}`, headline: s.name, edition: s.edition }))
+    : rows.map((s) => ({ key: s.id, headline: s.headline, industry: s.industry, edition: s.edition }));
+
+  const selIndex = Math.min(Math.max(focusIndex, 0), Math.max(tableRows.length - 1, 0));
+  const selectedStory = activeLeaf !== STOCKS_TAB ? rows[selIndex] ?? null : null;
+  const selectedStock = activeLeaf === STOCKS_TAB ? stocksInFocus[selIndex] ?? null : null;
 
   function selectLeaf(leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
     setFocusIndex(focusAt);
-    // Navigating never auto-opens a story — only a click does. Just move the highlight.
-    setExpandedId(null);
   }
 
   // Clicking a group in the left panel jumps to whichever of its tabs is
@@ -161,12 +167,14 @@ export default function PaperTree({
 
   const activeGroup = resolvedGroups.find((g) => g.resolvedChildren.includes(activeLeaf ?? "")) ?? null;
 
-  // ── Arrow-key navigation: Up/Down move within a section, Left/Right switch sections ──
+  // ── Arrow-key navigation: Up/Down move the selected headline (within the
+  // current section's table, flipping pages automatically at page edges via
+  // the table's own pageStart-based selection), Left/Right switch sections ──
   // Keep a ref mirror of everything the handler needs so the listener (attached
   // once, on mount) always reads fresh values instead of a stale closure.
-  const liveRef = useRef({ activeLeaf, focusIndex, itemCount, flatLeaves, bySection });
+  const liveRef = useRef({ activeLeaf, focusIndex, itemCount, flatLeaves });
   useEffect(() => {
-    liveRef.current = { activeLeaf, focusIndex, itemCount, flatLeaves, bySection };
+    liveRef.current = { activeLeaf, focusIndex, itemCount, flatLeaves };
   });
 
   useEffect(() => {
@@ -175,7 +183,7 @@ export default function PaperTree({
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return;
 
-      const { activeLeaf, focusIndex, itemCount, flatLeaves, bySection } = liveRef.current;
+      const { activeLeaf, focusIndex, itemCount, flatLeaves } = liveRef.current;
       e.preventDefault();
 
       if (e.key === "ArrowDown" || e.key === "ArrowUp") {
@@ -184,12 +192,6 @@ export default function PaperTree({
           ? Math.min(focusIndex + 1, itemCount - 1)
           : Math.max(focusIndex - 1, 0);
         setFocusIndex(next);
-        // Up/Down moves the highlight and opens that row's summary inline.
-        if (activeLeaf && activeLeaf !== STOCKS_TAB) {
-          const story = (bySection[activeLeaf] ?? [])[next];
-          if (story) setExpandedId(story.id);
-        }
-        rowRefs.current[next]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
         return;
       }
 
@@ -267,94 +269,76 @@ export default function PaperTree({
         </p>
       </aside>
 
-      {/* ── Right: row list, expand on click or arrow keys ────────────── */}
-      <div className="w-full flex-1 min-w-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
-        {activeGroup && (
-          <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
-            {activeGroup.resolvedChildren.map((leaf) => (
-              <button
-                key={leaf}
-                onClick={() => selectLeaf(leaf)}
-                className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
-                  activeLeaf === leaf
-                    ? SECTION_STYLE[leaf] ?? "text-gray-700 bg-gray-100"
-                    : "text-gray-400 hover:bg-gray-50"
-                }`}
-              >
-                {leaf}
-                <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
-                  {countOf(leaf)}
-                </span>
-              </button>
-            ))}
-          </div>
-        )}
-        {activeLeaf === STOCKS_TAB && (
-          <div className="px-4 py-3.5">
-            <ul className="space-y-3">
-              {stocksInFocus.map((s, i) => (
-                <li
-                  key={s.name}
-                  ref={(el) => { rowRefs.current[i] = el; }}
-                  style={{ fontSize: px(17) }}
-                  className={`leading-snug rounded px-2 py-1 -mx-2 transition-colors bg-white ${
-                    focusIndex === i ? "ring-1 ring-gray-300" : ""
+      {/* ── Right: paginated headline table + separate detail box below ─── */}
+      <div className="w-full flex-1 min-w-0 flex flex-col gap-3">
+        <div className="rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
+          {activeGroup && (
+            <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
+              {activeGroup.resolvedChildren.map((leaf) => (
+                <button
+                  key={leaf}
+                  onClick={() => selectLeaf(leaf)}
+                  className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
+                    activeLeaf === leaf
+                      ? SECTION_STYLE[leaf] ?? "text-gray-700 bg-gray-100"
+                      : "text-gray-400 hover:bg-gray-50"
                   }`}
                 >
-                  <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">{s.name}</span>
-                  <span className="text-gray-700"> — {s.note}</span>
-                  {multiEdition && s.edition && <EditionBadge edition={s.edition} />}
-                </li>
+                  {leaf}
+                  <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
+                    {countOf(leaf)}
+                  </span>
+                </button>
               ))}
-            </ul>
-          </div>
-        )}
-        {activeLeaf === "Corporate Events" ? (
-          <CorporateEventsTable stories={rows} multiEdition={multiEdition} px={px} />
-        ) : rows.map((s, i) => {
-          const open = expandedId === s.id;
-          const focused = focusIndex === i;
-          return (
-            <div
-              key={s.id}
-              ref={(el) => { rowRefs.current[i] = el; }}
-              className={`bg-white transition-colors ${focused ? "ring-1 ring-inset ring-gray-300" : ""}`}
-            >
-              <button
-                onClick={() => { setFocusIndex(i); setExpandedId(open ? null : s.id); }}
-                className="w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors"
-              >
-                <div className="flex items-center gap-2">
-                  <h3
-                    style={{ fontSize: px(17) }}
-                    className="flex-1 min-w-0 truncate font-semibold text-gray-900 leading-snug"
-                  >
-                    {s.headline}
+            </div>
+          )}
+          <PaperSectionTable
+            rows={tableRows}
+            selectedIndex={selIndex}
+            onSelectIndex={setFocusIndex}
+            multiEdition={multiEdition}
+            px={px}
+          />
+        </div>
+
+        {(selectedStory || selectedStock) && (
+          <div className="rounded-lg bg-white border border-gray-200 p-4 shadow-sm">
+            {selectedStory && (
+              <>
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                  <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
+                    {selectedStory.headline}
                   </h3>
-                  {s.industry && (
+                  {selectedStory.industry && (
                     <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-cyan-200 text-cyan-700 bg-cyan-50">
-                      {s.industry}
+                      {selectedStory.industry}
                     </span>
                   )}
-                  {multiEdition && <EditionBadge edition={s.edition} />}
-                  <span className="text-gray-300 text-[14px] shrink-0">
-                    {open ? "–" : "+"}
-                  </span>
+                  {multiEdition && <EditionBadge edition={selectedStory.edition} />}
                 </div>
-              </button>
-              {open && (
-                <div className="px-4 pb-4 -mt-0.5">
-                  <p style={{ fontSize: px(15.5) }} className="leading-relaxed">
-                    {renderSummary(s.summary, "text-gray-700")}
-                  </p>
-                  {s.page_number != null && (
-                    <p className="text-[13px] text-gray-400 mt-2">Page {s.page_number}</p>
-                  )}
+                <p style={{ fontSize: px(15.5) }} className="leading-relaxed">
+                  {renderSummary(selectedStory.summary, "text-gray-700")}
+                </p>
+                {selectedStory.page_number != null && (
+                  <p className="text-[13px] text-gray-400 mt-2">Page {selectedStory.page_number}</p>
+                )}
+              </>
+            )}
+            {selectedStock && (
+              <>
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                  <h3 className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2" style={{ fontSize: px(17) }}>
+                    {selectedStock.name}
+                  </h3>
+                  {multiEdition && selectedStock.edition && <EditionBadge edition={selectedStock.edition} />}
                 </div>
-              )}
-            </div>
-          );
-        })}
+                <p style={{ fontSize: px(15.5) }} className="leading-relaxed text-gray-700">
+                  {selectedStock.note}
+                </p>
+              </>
+            )}
+          </div>
+        )}
       </div>
       </div>
     </div>
