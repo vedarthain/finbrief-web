@@ -16,9 +16,17 @@ const PAGE_SIZE = 16;
 const PER_COL = 8;
 
 function EditionBadge({ edition }: { edition: string }) {
+  const isBS = edition === "Business Standard";
+  const label = isBS ? "BS" : "FX";
+  const colorClasses = isBS
+    ? "border-orange-200 text-orange-600 bg-orange-50"
+    : "border-blue-200 text-blue-600 bg-blue-50";
   return (
-    <span className="shrink-0 text-[9px] font-medium uppercase tracking-wide px-1.5 py-0.5 rounded border border-gray-200 text-gray-400 bg-gray-50">
-      {edition}
+    <span
+      title={edition}
+      className={`shrink-0 text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded border ${colorClasses}`}
+    >
+      {label}
     </span>
   );
 }
