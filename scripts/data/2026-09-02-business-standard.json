@@ -1,0 +1,210 @@
+{
+  "edition": "Business Standard",
+  "paper_date": "2026-09-02",
+  "stories": [
+    {
+      "section": "Policy",
+      "headline": "Government module to track VIP references in real time goes live",
+      "summary": "The Centre has launched a module that lets departments track and respond to VIP references — requests and recommendations routed through ministers, MPs and senior officials — on a real-time basis. The system is aimed at cutting delays and improving accountability in how such references are processed and closed across government offices.",
+      "page_number": 7
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Supreme Court quashes all FIRs against CJP protesters, says government cannot compel one belief",
+      "summary": "The Supreme Court quashed all FIRs registered against protesters affiliated with the Coordination for Justice and Peace, ruling that the government cannot use criminal law to compel citizens to adopt a single approved belief or viewpoint. The court held the prosecutions were an overreach against protected dissent.",
+      "page_number": 11
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Copyright office rejects DABUS as an eligible \"author\" of AI-generated work",
+      "summary": "India's copyright office turned down an application listing the AI system DABUS as the author of a generated work, holding that authorship under Indian copyright law requires a natural person. The ruling keeps India aligned with jurisdictions such as the US and UK that have similarly rejected AI-only authorship claims.",
+      "page_number": 20
+    },
+    {
+      "section": "Sector",
+      "headline": "EV charging adoption unusually slow in NCR since February",
+      "industry": "EV Infrastructure",
+      "summary": "Adoption of public EV charging points around the National Capital Region has slowed sharply since February 2026, even as electric-vehicle sales keep climbing, industry data shows. Operators point to uneven utilisation, tariff uncertainty and slow public land approvals as the main drags on new-station rollout.",
+      "page_number": 5
+    },
+    {
+      "section": "Sector",
+      "headline": "Construction equipment industry raises FY27 growth forecast to 10-12%",
+      "industry": "Construction Equipment",
+      "summary": "Makers of construction and earthmoving equipment have raised their FY27 growth outlook to 10-12%, citing sustained order flows from highway, metro and industrial-corridor projects. Manufacturers said a pickup in private capex alongside continued government infrastructure spending is broadening demand beyond road-building alone.",
+      "page_number": 6
+    },
+    {
+      "section": "Sector",
+      "headline": "Firms struggle to get real value from AI deployments: Wipro CTO",
+      "industry": "AI/Enterprise Tech",
+      "summary": "Enterprises are finding it hard to convert AI pilots into measurable business value, Wipro's chief technology officer said, pointing to fragmented data, unclear ROI metrics and skills gaps as the main blockers. He said most large organisations remain stuck in proof-of-concept mode more than a year after adopting generative-AI tools widely.",
+      "page_number": 17
+    },
+    {
+      "section": "Sector",
+      "headline": "Battle for beds: private hospitals race to add capacity",
+      "industry": "Healthcare Infrastructure",
+      "summary": "An increase in private hospital bed capacity is being driven by a larger, more urban and ageing patient pool, with capacity additions concentrated in tier-1 and tier-2 cities. The additional beds are pushing up complex and high-value procedures, but developers flag rising real-estate, staffing and equipment costs as key constraints on expansion.",
+      "page_number": 18
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "[[Vodafone Idea]] launches new logo, signs Shah Rukh Khan as brand ambassador",
+      "summary": "[[Vodafone Idea]] unveiled a new corporate logo and roped in actor Shah Rukh Khan as its brand ambassador, part of a broader relaunch as \"VI\" aimed at rebuilding subscriber sentiment. The company said the rebrand will run across a new advertising campaign as it looks to stem subscriber losses and reposition itself against larger rivals.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "[[Tata Motors]] takes biggest PV market share gain in Jan-Aug",
+      "summary": "[[Tata Motors]] posted the largest market-share gain among passenger-vehicle makers in the January-August period, helped by strong demand for its SUV and EV lineup. The company extended its lead over rivals even as overall industry volumes stayed choppy through the period.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "[[ITC Infotech]]-[[Happiest Minds]] merger to help win larger deals",
+      "summary": "The merger of [[ITC Infotech]] into [[Happiest Minds]] will strengthen the combined firm's ability to bid for and win bigger enterprise deals, Happiest Minds' management said, citing the enlarged scale, broader service lines and combined client base created by the deal.",
+      "page_number": 7
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "[[Tata Elxsi]] ties up with Safran Aviation to develop aircraft avionics chips",
+      "summary": "[[Tata Elxsi]] signed a partnership with Safran Aviation to co-develop chips for aircraft avionics systems, aiming to combine Tata Elxsi's design engineering capabilities with Safran's aerospace systems expertise. The tie-up targets next-generation avionics hardware for commercial and defence aircraft.",
+      "page_number": 7
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "[[Nalco]] gears up for next phase of growth",
+      "summary": "[[National Aluminium Company]] outlined plans for its next growth phase, including capacity expansion in alumina refining and captive power, as it looks to capitalise on firm aluminium demand. The company said funding for the expansion will be balanced between internal accruals and structured debt.",
+      "page_number": 10
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "[[Krafton]] wants India's game-makers to level up",
+      "summary": "[[Krafton]] said it is expanding support for Indian game developers through funding, incubation and publishing tie-ups, as it looks to build a pipeline of homegrown titles beyond its flagship BGMI franchise. The company said it sees India as a long-term production hub, not just a consumption market, for gaming content.",
+      "page_number": 16
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "[[Navi]] AMC launches India's first floating-rate debt fund",
+      "summary": "[[Navi Mutual Fund]] launched what it called India's first floating-rate debt fund, designed to reduce interest-rate sensitivity for investors as rate-cut expectations build. The fund will invest predominantly in floating-rate instruments and money-market securities.",
+      "page_number": 21
+    },
+    {
+      "section": "IPO",
+      "headline": "[[Jaykay Enterprises]] launches rights issue",
+      "summary": "[[Jaykay Enterprises]] opened a rights issue of equity shares for existing shareholders, with the issue opening September 7, the last date for renunciation September 15, and the issue closing September 18, 2026.",
+      "page_number": 4
+    },
+    {
+      "section": "IPO",
+      "headline": "[[ESDS Software Solution]] IPO subscription closes",
+      "summary": "The IPO of [[ESDS Software Solution]] closed with subscription figures released on the concluding day, as investor demand was tallied across retail, institutional and HNI categories ahead of allotment.",
+      "page_number": 21
+    },
+    {
+      "section": "IPO",
+      "headline": "[[Priority Jewels]] IPO subscribed 100.15x on final day",
+      "summary": "The IPO of [[Priority Jewels]] was subscribed 100.15 times on its final bidding day, driven by strong retail and HNI demand, ahead of allotment and listing.",
+      "page_number": 21
+    },
+    {
+      "section": "Market",
+      "headline": "Large-cap IT finds no place in nearly a quarter of focused equity funds",
+      "summary": "About a fourth of focused equity mutual fund schemes have no exposure to large-cap IT stocks, fund data shows, as managers rotate toward domestic-cyclicals and away from export-facing technology names amid a weak revenue-growth outlook for the sector.",
+      "page_number": 21
+    },
+    {
+      "section": "Market",
+      "headline": "₹1-trillion mid-cap mutual fund club swells 27% to 119 schemes in FY27 so far",
+      "summary": "The number of mid-cap-oriented mutual fund schemes and portfolios managing over ₹1 trillion in assets has grown 27% to 119 so far in FY27, reflecting sustained retail inflows into the mid-cap category even as valuations in the segment remain elevated.",
+      "page_number": 21
+    },
+    {
+      "section": "Market",
+      "headline": "Nifty Internet index outperforms as new-age tech stocks shrug off broader market weakness",
+      "summary": "The Nifty Internet index has outperformed the broader market even as overall sentiment stayed weak, with new-age technology and internet-platform stocks drawing renewed investor interest on improving profitability trends at several constituents.",
+      "page_number": 21
+    },
+    {
+      "section": "Market",
+      "headline": "UPI International, built for inbound tourists, now used for Nepal flood donations",
+      "summary": "The UPI International rail, originally rolled out to let foreign tourists pay Indian merchants via UPI, is now also being used to route donations to Nepal for flood relief, as the payments network extends its cross-border reach beyond retail transactions into cross-border remittance-style flows.",
+      "page_number": 16
+    },
+    {
+      "section": "Insurance",
+      "headline": "Irdai seeks to consolidate insurance data into one public registry",
+      "summary": "The Insurance Regulatory and Development Authority of India is working on a single public registry to consolidate policyholder and claims data currently scattered across insurers, aiming to speed up claim verification, curb fraud and improve portability between insurers.",
+      "page_number": 10
+    },
+    {
+      "section": "International News",
+      "headline": "US likely to announce fresh Iran bank sanctions this week",
+      "summary": "The US is expected to announce new sanctions on Iranian banks this week, aimed at further squeezing Tehran's access to international financial channels. The move follows continued tension over Iran's nuclear programme and comes as Washington keeps up pressure alongside allied restrictions.",
+      "page_number": 12
+    },
+    {
+      "section": "International News",
+      "headline": "Solar surpasses coal as China's top source of power-generation capacity",
+      "summary": "Installed solar capacity in China has overtaken coal for the first time, making it the country's largest single source of power-generation capacity, as Beijing continues to add renewable capacity at record pace even while coal still supplies the bulk of actual electricity generated.",
+      "page_number": 12
+    },
+    {
+      "section": "Others",
+      "headline": "Data centres aren't India's water villain",
+      "summary": "An opinion piece argues that data centres are being wrongly singled out as major drivers of India's water stress, noting their actual water footprint is small relative to agriculture and municipal use, and calls for policy focus to shift toward metering and pricing water use more broadly rather than targeting data centres specifically.",
+      "page_number": 13
+    }
+  ],
+  "stocksInFocus": [
+    { "name": "Vodafone Idea", "note": "Rebrands as \"VI\" with new logo, signs Shah Rukh Khan as brand ambassador" },
+    { "name": "Tata Motors", "note": "Biggest PV market-share gainer among carmakers, Jan-Aug" },
+    { "name": "Nalco", "note": "Outlines alumina-refining and captive-power capacity expansion" },
+    { "name": "Happiest Minds", "note": "ITC Infotech merger seen strengthening large-deal wins" },
+    { "name": "ESDS Software Solution", "note": "IPO subscription closed ahead of allotment" },
+    { "name": "Priority Jewels", "note": "IPO subscribed 100.15x on final day" },
+    { "name": "Jaykay Enterprises", "note": "Rights issue open Sept 7-18" }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Jaykay Enterprises",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": "2026-09-07",
+      "close_date": "2026-09-18",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Rights issue; renunciation last date Sept 15, 2026"
+    },
+    {
+      "company_name": "ESDS Software Solution",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": "2026-09-01",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "closed",
+      "notes": "IPO subscription closed on concluding day, allotment pending"
+    },
+    {
+      "company_name": "Priority Jewels",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": "2026-09-01",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "closed",
+      "notes": "IPO subscribed 100.15x on final bidding day"
+    }
+  ]
+}
