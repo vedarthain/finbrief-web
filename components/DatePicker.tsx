@@ -93,7 +93,7 @@ export default function DatePicker({
         ›
       </button>
       {open && (
-        <div className="absolute right-0 mt-2 w-72 rounded-lg border border-gray-200 bg-white shadow-lg p-3 z-30">
+        <div className="absolute right-0 top-full mt-2 w-72 rounded-lg border border-gray-200 bg-white shadow-xl p-3 z-50">
           <div className="flex items-center justify-between mb-2">
             <button
               onClick={() => go(-1)}

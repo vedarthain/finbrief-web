@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { PaperStory, StockInFocus } from "@/lib/queries";
+import CorporateEventsTable from "./CorporateEventsTable";
 
-function renderSummary(text: string, dimClass: string) {
+export function renderSummary(text: string, dimClass: string) {
   return text.split(/(\[\[[^\]]+\]\])/g).map((part, i) => {
     const match = part.match(/^\[\[([^\]]+)\]\]$/);
     if (match) {
@@ -308,7 +309,9 @@ export default function PaperTree({
             </ul>
           </div>
         )}
-        {rows.map((s, i) => {
+        {activeLeaf === "Corporate Events" ? (
+          <CorporateEventsTable stories={rows} multiEdition={multiEdition} px={px} />
+        ) : rows.map((s, i) => {
           const open = expandedId === s.id;
           const focused = focusIndex === i;
           return (
