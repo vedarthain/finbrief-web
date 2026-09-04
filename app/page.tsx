@@ -37,6 +37,9 @@ export default async function HomePage({
     return acc;
   }, {});
 
+  const noticeCount = stories.filter((s) => s.is_notice).length;
+  const visibleCount = stories.length - noticeCount;
+
   const istTime = new Date().toLocaleString("en-IN", {
     timeZone: "Asia/Kolkata", weekday: "short",
     day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
@@ -66,7 +69,9 @@ export default async function HomePage({
         <div className="flex items-center gap-2 mb-3 flex-wrap">
           <h1 className="text-[20px] font-bold tracking-tight text-gray-900">Today&apos;s Paper</h1>
           <span className="text-[13px] text-gray-400 font-normal ml-1">
-            {stories.length} stories · {activeDate}
+            {visibleCount} stories
+            {noticeCount > 0 && <span className="text-gray-400"> · {noticeCount} routine notices hidden</span>}
+            {" "}· {activeDate}
           </span>
           <div className="ml-auto">
             <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
