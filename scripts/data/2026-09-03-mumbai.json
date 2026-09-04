@@ -6,459 +6,414 @@
       "section": "Economy",
       "headline": "Hiring picks up in August after five-month fall; IT stays weak",
       "summary": "India's white-collar hiring activity rebounded in August after five straight months of decline, per the foundit employment index, led by BFSI, retail and manufacturing. IT hiring remained the weak spot, staying subdued even as overall sentiment improved ahead of the festive season.",
-      "page_number": 20
+      "page_number": 20,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Regulatory",
       "headline": "CCI clears Trustees Association of India, three debenture trustees of fee-fixing charges",
       "summary": "The Competition Commission of India closed its probe into the Trustees Association of India and three debenture trustees over alleged fee-fixing, finding no evidence of anti-competitive conduct and imposing no penalty.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Regulatory",
       "headline": "Subhash Chandra contests NCLT order invoking his personal guarantee",
       "summary": "Zee TV founder Subhash Chandra has contested an NCLT order allowing invocation of his personal guarantee under the IBC framework, arguing the order overreaches. The case tests how far lenders can pursue promoter guarantors once a corporate debtor is under insolvency resolution.",
-      "page_number": 11
+      "page_number": 11,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Sector",
       "headline": "43 GW of wind energy capacity set up in India",
       "industry": "Wind Energy",
       "summary": "India has commissioned 43 GW of cumulative wind power capacity, industry data shows, as developers keep adding capacity to meet renewable-energy targets. The build-out spans both established wind corridors and newer sites opened up by improved transmission access.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Solar module makers running at 35-40% utilisation despite 233 GW installed capacity",
       "industry": "Solar Manufacturing",
       "summary": "Domestic solar-module manufacturers are operating factories at only 35-40% utilisation even though installed manufacturing capacity has reached 233 GW, as demand growth lags the capacity build-out. Industry players flagged a supply glut and pricing pressure as key near-term risks.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Gulf, US vie to reclaim India's LNG/LPG import share",
       "industry": "Energy Imports",
       "summary": "Gulf suppliers are working to reclaim LNG and LPG import share in India even as the US remains the country's top supplier of both fuels, reflecting intensifying competition among exporters for India's growing energy-import demand.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "AI-driven \"reset\" seen reshuffling India's IT sector pecking order",
       "industry": "IT Services",
       "summary": "A broad AI-led reset in enterprise technology spending is likely to reshuffle the competitive ranking within India's IT services sector, with mid-tier firms seen as better placed to gain share from larger incumbents as clients rebalance vendor budgets toward AI capability.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Sector",
       "headline": "Quick-commerce to drive half of India's e-retail growth by 2030",
       "industry": "Quick Commerce",
       "summary": "Quick-commerce is projected to account for roughly half of India's incremental e-retail growth through 2030, industry estimates show, as rapid-delivery platforms keep expanding dark-store networks and category coverage beyond groceries.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Two-wheeler makers sustain growth momentum in August",
       "industry": "Two-Wheelers",
       "summary": "Two-wheeler manufacturers reported sustained growth in August sales across the industry, with dealer bodies flagging dealer profitability as a key priority even as volumes hold up ahead of the festive season.",
-      "page_number": 5
+      "page_number": 5,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "India's PC market grows 12% in Q2 as AI-capable device demand surges",
       "industry": "PC/Hardware",
       "summary": "India's PC market grew 12% year-on-year in the June quarter, per IDC data, with shipments of AI-capable PCs up 110% y-o-y as enterprises and consumers upgrade toward AI-ready hardware.",
-      "page_number": 9
+      "page_number": 9,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Government to give chipmakers a BIS-standards waiver",
       "industry": "Semiconductors",
       "summary": "The government is preparing to waive certain BIS certification requirements for chip companies, a move flagged at ACMA's 66th session, aimed at easing compliance costs for semiconductor and electronics manufacturers setting up in India.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Auto industry pushes for shift from \"Make in India\" to tech ownership",
       "industry": "Automobile",
       "summary": "Senior auto-industry executives, including from Maruti Suzuki, Tata Motors and Hyundai, called at an ACMA session for India's manufacturing strategy to shift from assembly-led \"Make in India\" toward genuine technology ownership and in-house R&D capability.",
-      "page_number": 5
+      "page_number": 5,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "[[Reliance Industries]]' digital platforms struggle to convert reach into user habit",
       "summary": "Reliance Industries' e-commerce and retail digital platforms are struggling to convert their large user reach into sustained engagement, with active-user numbers slipping even as overall app downloads stay high. The company is working on a broader digital reset to improve retention.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "[[Zoho]] unveils cloud development platform \"Catalyst 3.0\"",
       "summary": "Zoho launched Catalyst 3.0, an upgraded cloud application-development platform aimed at enterprise developers, adding new low-code and AI-assisted build tools as the company expands its enterprise software suite beyond its core CRM business.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "[[SML Mahindra]] targets 12% commercial-vehicle market share by FY31",
       "summary": "SML Mahindra outlined plans to raise its commercial-vehicle market share to 12% by FY31, backed by new product launches and capacity expansion, as it looks to compete more aggressively with larger CV makers.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "Enterprise AI-OS startup [[Wonderful]] raises $550 million at $5-billion valuation",
       "summary": "Enterprise AI operating-system startup Wonderful raised $550 million in a fresh funding round that values the company at $5 billion, as investors continue backing enterprise-AI infrastructure plays at steep valuations.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "[[Amazon]] to create 160,000 seasonal jobs in India for festive season",
       "summary": "Amazon said it will create 160,000 seasonal jobs across its India operations ahead of the festive shopping season, spanning fulfilment centres, delivery stations and logistics roles to handle the anticipated surge in order volumes.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "[[Airtel]]'s ARPU projected to rise ~25% to ₹325 by FY29",
       "summary": "Bharti Airtel's average revenue per user is projected to climb about 25% to ₹325 by FY29, analysts estimate, driven by continued tariff hikes, premiumisation of its subscriber base and rising data consumption.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "[[Tilaknagar Industries]] to buy 30% stake in [[Black Tiger Distilleries]]",
       "summary": "Tilaknagar Industries agreed to acquire a 30% stake in Black Tiger Distilleries, as the liquor maker looks to expand its portfolio and distribution reach through the partial acquisition.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "[[Simple Energy]] eyes fundraise ahead of planned IPO",
       "summary": "Electric two-wheeler maker Simple Energy is working on a fresh fundraise as it builds toward a planned IPO, as the company looks to shore up its balance sheet ahead of a public listing.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "Canada's CDPQ invests ₹12,100 crore for 24% stake in [[Altius Telecom Infrastructure Trust]]",
       "summary": "Canadian pension fund CDPQ (La Caisse) invested ₹12,100 crore to acquire a 24% stake in Altius Telecom Infrastructure Trust, marking one of the largest recent foreign investments into India's telecom-tower infrastructure segment.",
-      "page_number": 5
+      "page_number": 5,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "[[Air India Express]] pilots seek 70-hour flying-time allowance",
       "summary": "Pilots at Air India Express are pressing management for an increase in the permissible monthly flying-time allowance to 70 hours, citing rostering and crew-availability pressures as the airline scales up capacity.",
-      "page_number": 5
+      "page_number": 5,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "[[Sun TV Network]]'s FY26 promoter profit hit by Chennai Super Kings' worst-ever IPL finish",
       "summary": "Sun TV Network promoter earnings tied to Chennai Super Kings took a hit in FY26 after the IPL franchise recorded its worst-ever finish in the tournament, denting the usual playoff and sponsorship-linked revenue boost.",
-      "page_number": 5
+      "page_number": 5,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "Mundra port disruption deepens trade strain as [[Adani Ports and Special Economic Zone]] freezes container storage",
       "summary": "Adani Ports and Special Economic Zone froze empty-container-yard storage at Mundra port amid a strike notice and the wider West Asia trade crisis, putting an estimated 5,000 containers a day at risk of delay and adding to strain on India's west-coast trade flows.",
-      "page_number": 11
+      "page_number": 11,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "IPO",
       "headline": "[[Kwick Forensic Solutions]] lists on BSE SME today after IPO subscribed 276.93x",
       "summary": "Kwick Forensic Solutions is set to list on BSE SME's Emerge platform today after its ₹5,077.44-lakh IPO, priced at ₹90 a share, was subscribed 276.93 times overall — with the retail category alone subscribed 323.97 times. The offer comprised a ₹4,105.44-lakh fresh issue and an offer for sale.",
-      "page_number": 42
+      "page_number": 42,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "[[Lumino Industries]] lists on BSE, NSE main board today after IPO subscribed 88.25x",
       "summary": "Lumino Industries, an aluminium-conductor and power-cable maker, is set to list on the BSE and NSE main board today after its ₹7,000-million IPO, priced at ₹82 a share, was subscribed 88.25 times. The offer comprised a ₹5,000-million fresh issue and a ₹2,000-million offer for sale by promoters.",
-      "page_number": 52
+      "page_number": 52,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "IPO",
       "headline": "[[Mahanadi Coalfields]] files DRHP for IPO via offer for sale",
       "summary": "Mahanadi Coalfields, the Coal India subsidiary owned by the President of India through the Ministry of Coal, filed a draft red herring prospectus for an IPO comprising an offer for sale of up to 661,836,300 equity shares by the government. Price band is yet to be announced.",
-      "page_number": 43
+      "page_number": 43,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "[[Prasol Chemicals]] sets IPO price band at ₹643-676; issue opens September 8",
       "summary": "Prasol Chemicals, a specialty chemicals maker, set its IPO price band at ₹643-676 per share, targeting up to ₹5,000-million total offer size comprising an ₹800-million fresh issue and a ₹4,200-million offer for sale. Anchor bidding is September 7; the issue opens September 8 and closes September 10, 2026.",
-      "page_number": 46
+      "page_number": 46,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "IPO",
       "headline": "[[Kanohar Electricals]] sets IPO price band at ₹601-632; issue opens September 8",
       "summary": "Transformer manufacturer Kanohar Electricals set its main-board IPO price band at ₹601-632 per share. Anchor bidding is September 7; the issue opens September 8 and closes September 10, 2026.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "IPO",
       "headline": "[[Asset Reconstruction Company (India)]] (Arcil) sets IPO price band at ₹132-139; issue opens September 9",
       "summary": "Asset Reconstruction Company (India), branded Arcil, set its main-board IPO price band at ₹132-139 per share, structured as a pure offer for sale. Anchor bidding is September 8; the issue opens September 9 and closes September 11, 2026.",
-      "page_number": 28
+      "page_number": 28,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "[[Glass Wall Systems (India)]] sets IPO price band at ₹172-182; issue opens September 8",
       "summary": "Façade-solutions company Glass Wall Systems (India) set its main-board IPO price band at ₹172-182 per share. Anchor bidding is September 7; the issue opens September 8 and closes September 10, 2026.",
-      "page_number": 32
+      "page_number": 32,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "IPO",
       "headline": "[[Vishal Nirmiti]] files DRHP addendum ahead of IPO",
       "summary": "Vishal Nirmiti filed an addendum to its draft red herring prospectus ahead of its planned IPO. The price band has not yet been announced.",
-      "page_number": 36
+      "page_number": 36,
+      "is_notice": false,
+      "importance": 1
     },
     {
       "section": "IPO",
       "headline": "[[Purple Style Labs]] IPO subscribed 1.29x on final bidding day",
       "summary": "The IPO of Purple Style Labs, operator of luxury fashion platform Pernia's Pop-Up Shop, closed subscribed 1.29 times on its final bidding day, reflecting muted demand relative to other recent main-board issues.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "IPO",
       "headline": "[[Deepa Jewellers]] IPO subscribed 3.61x on Day 2 of bidding",
       "summary": "The IPO of Deepa Jewellers was subscribed 3.61 times by the end of Day 2 of bidding, as demand builds across retail and non-institutional investor categories ahead of the issue's close.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Market",
       "headline": "Sensex, Nifty fall for third straight day on West Asia tensions; GIFT City posts record forex mobilisation",
       "summary": "The Sensex fell 373.93 points to 76,570.35 and the Nifty slipped to 23,914.45, marking a third straight day of declines as West Asia tensions weighed on sentiment. Separately, GIFT City channelled nearly $53 billion in mobilisation under the FCNR(B) special swap window, with mid- and small-cap indices outperforming the Sensex so far in FY27.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "Market",
       "headline": "[[BSE]] courts high-frequency trading firms to boost CAS liquidity",
       "summary": "BSE is stepping up efforts to attract high-frequency trading firms to its platform in a bid to improve liquidity under the contract-addition system rollout, as exchanges compete for order flow following recent derivatives-market changes.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Market",
       "headline": "Darsh Advisory to acquire 26% stake in [[Kenrik Industries]] via open offer",
       "summary": "[[Darsh Advisory]] launched an open offer to acquire a 26% stake in Kenrik Industries, proposing to buy 32,49,454 shares at ₹10 per share, in a takeover move under SEBI's open-offer regulations.",
-      "page_number": 16
+      "page_number": 16,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "US strikes Iran's nuclear sites, Tehran retaliates against bases in West Asia",
       "summary": "The US carried out military strikes on Iranian nuclear-linked sites, prompting Tehran to retaliate against US bases in the region, sharply escalating the West Asia conflict and raising fresh concerns over regional shipping and energy-supply disruption.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "International News",
       "headline": "[[Uber]] to lay off 10% of its workforce",
       "summary": "Uber announced plans to cut 10% of its global workforce as part of a cost-restructuring drive, joining a wave of tech-sector layoffs even as the company continues to post steady ride-hailing and delivery revenue growth.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "[[BP]] appoints Ian Tyler as permanent chair",
       "summary": "BP named Ian Tyler as its permanent chairman, ending a period of interim leadership at the energy major's board as the company continues to reset its strategy under investor pressure.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "Germany's cabinet approves €10-billion income-tax reform package",
       "summary": "Germany's federal cabinet approved a €10-billion income-tax reform package aimed at easing the burden on households and businesses, part of the coalition government's broader push to revive growth in Europe's largest economy.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "Xi Jinping calls for new West Asia security framework during Egypt visit",
       "summary": "Chinese President Xi Jinping urged the establishment of a new regional security framework for West Asian nations during a visit to Egypt, positioning China as a broker for regional stability amid the escalating US-Iran conflict.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "[[Tesla]]'s China-made EV sales rise 3.6% y-o-y in August",
       "summary": "Tesla's China-made electric-vehicle sales rose 3.6% year-on-year in August, a modest gain that lagged the broader growth in China's EV market as domestic rivals continue to take share with lower-priced models.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "[[Chevron]] to invest $7 billion in Venezuela",
       "summary": "Chevron committed to a $7-billion investment in Venezuela's oil sector, expanding its presence in the country as sanctions relief opens up new opportunities for foreign energy majors.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "Fed's Kevin Warsh's Jackson Hole \"encore\" speech may scrutinise Trump's inflation record",
       "summary": "Federal Reserve official Kevin Warsh is expected to revisit his Jackson Hole themes in an upcoming speech that may scrutinise the Trump administration's inflation record, adding to market focus on the Fed's independence and policy direction.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "[[Honda]] aims to cut $9 billion in costs to compete with Chinese rivals",
       "summary": "Honda outlined plans to cut $9 billion in costs as it restructures to compete more effectively against low-cost Chinese automakers, part of a broader efficiency drive across its global manufacturing and product-development operations.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "Nepal seeks flood compensation from China, US and India",
       "summary": "Nepal is seeking climate-change compensation from China, the US and India over recent flood damage, arguing that emissions from major economies have intensified extreme-weather events affecting vulnerable Himalayan nations.",
-      "page_number": 20
+      "page_number": 20,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "Sandhya Devanathan named VP-designate for [[OpenAI]] Southeast Asia and Australia",
       "summary": "Sandhya Devanathan was named vice-president-designate for OpenAI's Southeast Asia and Australia operations, as the company continues expanding its regional leadership team to support growth across Asia-Pacific markets.",
-      "page_number": 20
+      "page_number": 20,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Others",
       "headline": "India needs a unified ministry for energy security, argues opinion piece",
       "summary": "An opinion piece argues that India's energy-security policy is fragmented across multiple ministries and would benefit from consolidation into a single unified ministry, to better coordinate oil, gas, coal, power and renewable-energy strategy under one authority.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     }
   ],
-  "stocksInFocus": [
-    { "name": "Lumino Industries", "note": "Lists on BSE/NSE main board today after IPO subscribed 88.25x" },
-    { "name": "Kwick Forensic Solutions", "note": "Lists on BSE SME today after IPO subscribed 276.93x" },
-    { "name": "Reliance Industries", "note": "JioMart, Ajio digital platforms struggle to convert reach into active usage" },
-    { "name": "Tilaknagar Industries", "note": "To acquire 30% stake in Black Tiger Distilleries" },
-    { "name": "Airtel", "note": "ARPU projected to rise ~25% to ₹325 by FY29" },
-    { "name": "Adani Ports and Special Economic Zone", "note": "Mundra port container-storage freeze deepens trade strain" },
-    { "name": "Kenrik Industries", "note": "Darsh Advisory to acquire 26% stake via open offer" },
-    { "name": "Sun TV Network", "note": "CSK's worst-ever IPL finish hits FY26 promoter profit" }
-  ],
-  "ipoListings": [
-    {
-      "company_name": "Kanohar Electricals",
-      "ticker": null,
-      "exchange": "BSE, NSE",
-      "issue_price_low": 601,
-      "issue_price_high": 632,
-      "open_date": "2026-09-08",
-      "close_date": "2026-09-10",
-      "listing_date": null,
-      "listing_price": null,
-      "status": "upcoming",
-      "notes": "Transformer manufacturer; anchor bidding Sept 7, 2026"
-    },
-    {
-      "company_name": "Asset Reconstruction Company (India)",
-      "ticker": null,
-      "exchange": "BSE, NSE",
-      "issue_price_low": 132,
-      "issue_price_high": 139,
-      "open_date": "2026-09-09",
-      "close_date": "2026-09-11",
-      "listing_date": null,
-      "listing_price": null,
-      "status": "upcoming",
-      "notes": "Branded Arcil; pure offer-for-sale; anchor bidding Sept 8, 2026"
-    },
-    {
-      "company_name": "Glass Wall Systems (India)",
-      "ticker": null,
-      "exchange": "BSE, NSE",
-      "issue_price_low": 172,
-      "issue_price_high": 182,
-      "open_date": "2026-09-08",
-      "close_date": "2026-09-10",
-      "listing_date": null,
-      "listing_price": null,
-      "status": "upcoming",
-      "notes": "Façade-solutions company; anchor bidding Sept 7, 2026"
-    },
-    {
-      "company_name": "Sumax Engineering",
-      "ticker": null,
-      "exchange": "NSE Emerge",
-      "issue_price_low": 101,
-      "issue_price_high": 101,
-      "open_date": "2026-08-25",
-      "close_date": "2026-08-28",
-      "listing_date": "2026-09-02",
-      "listing_price": null,
-      "status": "listed",
-      "notes": "Fixed-price SME IPO; subscribed 152.29x"
-    },
-    {
-      "company_name": "Vishal Nirmiti",
-      "ticker": null,
-      "exchange": null,
-      "issue_price_low": null,
-      "issue_price_high": null,
-      "open_date": null,
-      "close_date": null,
-      "listing_date": null,
-      "listing_price": null,
-      "status": "upcoming",
-      "notes": "DRHP addendum filed; price band not yet announced"
-    },
-    {
-      "company_name": "Kwick Forensic Solutions",
-      "ticker": null,
-      "exchange": "BSE SME (Emerge)",
-      "issue_price_low": 90,
-      "issue_price_high": 90,
-      "open_date": "2026-08-27",
-      "close_date": "2026-08-31",
-      "listing_date": "2026-09-03",
-      "listing_price": null,
-      "status": "listed",
-      "notes": "Forensic solutions company; subscribed 276.93x overall"
-    },
-    {
-      "company_name": "Lumino Industries",
-      "ticker": null,
-      "exchange": "BSE, NSE",
-      "issue_price_low": 82,
-      "issue_price_high": 82,
-      "open_date": "2026-08-27",
-      "close_date": "2026-08-31",
-      "listing_date": "2026-09-03",
-      "listing_price": null,
-      "status": "listed",
-      "notes": "Aluminium conductor and power-cable maker; subscribed 88.25x"
-    },
-    {
-      "company_name": "Mahanadi Coalfields",
-      "ticker": null,
-      "exchange": "BSE, NSE",
-      "issue_price_low": null,
-      "issue_price_high": null,
-      "open_date": null,
-      "close_date": null,
-      "listing_date": null,
-      "listing_price": null,
-      "status": "upcoming",
-      "notes": "PSU coal miner; DRHP filed; offer for sale via Ministry of Coal/Coal India"
-    },
-    {
-      "company_name": "Prasol Chemicals",
-      "ticker": null,
-      "exchange": "BSE, NSE",
-      "issue_price_low": 643,
-      "issue_price_high": 676,
-      "open_date": "2026-09-08",
-      "close_date": "2026-09-10",
-      "listing_date": null,
-      "listing_price": null,
-      "status": "upcoming",
-      "notes": "Specialty chemicals (acetone/phosphorous-based); anchor bidding Sept 7, 2026"
-    },
-    {
-      "company_name": "Purple Style Labs",
-      "ticker": null,
-      "exchange": null,
-      "issue_price_low": null,
-      "issue_price_high": null,
-      "open_date": null,
-      "close_date": null,
-      "listing_date": null,
-      "listing_price": null,
-      "status": "closed",
-      "notes": "IPO subscribed 1.29x on final bidding day"
-    },
-    {
-      "company_name": "Deepa Jewellers",
-      "ticker": null,
-      "exchange": null,
-      "issue_price_low": null,
-      "issue_price_high": null,
-      "open_date": null,
-      "close_date": null,
-      "listing_date": null,
-      "listing_price": null,
-      "status": "open",
-      "notes": "Subscribed 3.61x on Day 2 of bidding"
-    }
+  "topStories": [
+    { "headline": "Sensex, Nifty fall for third straight day on West Asia tensions; GIFT City posts record forex mobilisation", "section": "Market", "note": "Third straight day of declines on geopolitical risk" },
+    { "headline": "US strikes Iran's nuclear sites, Tehran retaliates against bases in West Asia", "section": "International News", "note": "Major escalation in West Asia conflict" },
+    { "headline": "Hiring picks up in August after five-month fall; IT stays weak", "section": "Economy", "note": "White-collar hiring rebounds after five-month slump" },
+    { "headline": "Subhash Chandra contests NCLT order invoking his personal guarantee", "section": "Regulatory", "note": "Tests limits of promoter personal-guarantee enforcement under IBC" },
+    { "headline": "[[Reliance Industries]]' digital platforms struggle to convert reach into user habit", "section": "Corporate Events" },
+    { "headline": "Enterprise AI-OS startup [[Wonderful]] raises $550 million at $5-billion valuation", "section": "Corporate Events", "note": "Large enterprise-AI infrastructure funding round" },
+    { "headline": "Canada's CDPQ invests ₹12,100 crore for 24% stake in [[Altius Telecom Infrastructure Trust]]", "section": "Corporate Events", "note": "Among largest recent foreign investments in telecom-tower infra" },
+    { "headline": "Mundra port disruption deepens trade strain as [[Adani Ports and Special Economic Zone]] freezes container storage", "section": "Corporate Events", "note": "~5,000 containers/day at risk of delay" },
+    { "headline": "AI-driven \"reset\" seen reshuffling India's IT sector pecking order", "section": "Sector", "note": "AI spend rebalancing competitive ranking among IT services firms" },
+    { "headline": "[[Lumino Industries]] lists on BSE, NSE main board today after IPO subscribed 88.25x", "section": "IPO", "note": "Strong main-board listing demand" }
   ]
 }

@@ -6,211 +6,279 @@
       "section": "Economy",
       "headline": "FCNR(B) haul soars to $127 billion on final sprint",
       "summary": "Foreign Currency Non-Resident (Bank) deposit inflows surged to $127 billion in a final sprint before the special window closed, banks said. GIFT-IFSC banking units separately sanctioned $84 billion worth of FCNR(B)-linked business, underscoring how much of the flow was channelled through the offshore financial centre.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Economy",
       "headline": "Government asserts no 'mechanical' boost aided Q1 GDP growth print",
       "summary": "The government pushed back on suggestions that base-effect or methodology changes artificially inflated the Q1 GDP growth print, saying the reported expansion reflects genuine underlying momentum rather than a statistical 'mechanical' boost.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "Economy",
       "headline": "JCR upgrades India's sovereign rating to A-",
       "summary": "Japan Credit Rating Agency upgraded India's sovereign rating to A-, citing improving fiscal metrics and growth resilience, adding to a run of positive rating actions this year and giving the government further room to argue its fiscal consolidation path is credible.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "Economy",
       "headline": "Banking system liquidity surplus tops ₹7.75 trillion",
       "summary": "Surplus liquidity in the banking system rose past ₹7.75 trillion, driven by government spending and FCNR(B)-linked inflows, keeping short-term money-market rates soft ahead of the RBI's next policy review.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Policy",
       "headline": "India backs US on global imbalances at G20, but China's opposition stalls consensus",
       "summary": "India backed the US position on addressing global trade imbalances at G20 deliberations, but China's opposition prevented the grouping from reaching a joint consensus text, leaving the imbalances debate unresolved ahead of the leaders' summit.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Policy",
       "headline": "Refurbished medical device import policy still in the works",
       "summary": "The government's policy for regulating imports of refurbished medical devices remains under discussion, with industry seeking clarity on quality and safety norms even as demand for lower-cost refurbished equipment grows among smaller hospitals.",
-      "page_number": 13
+      "page_number": 13,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Regulatory",
       "headline": "USFDA warns [[Reliance Life Sciences]] over Navi Mumbai unit violations",
       "summary": "The US FDA issued a warning letter to [[Reliance Life Sciences]] flagging manufacturing violations at its Navi Mumbai unit, a step that can restrict the company's ability to ship products to the US market until the flagged issues are resolved and verified.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Regulatory",
       "headline": "RBI's Murmu calls for professional boards at co-operative banks",
       "summary": "RBI Deputy Governor Swaminathan J Murmu urged co-operative banks to professionalise their boards, saying weak governance and inadequate independent oversight remain key vulnerabilities in the sector even as several banks have improved capital buffers.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Auto industry must stay ahead of hackers: Maruti CEO",
       "industry": "Auto/Cybersecurity",
       "summary": "[[Maruti Suzuki]]'s chief executive said the auto industry must invest ahead of the curve on cybersecurity as vehicles become increasingly connected, warning that hacking risks will only grow as more functions move online in modern cars.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "CV sales rise in August ahead of festive season",
       "industry": "Commercial Vehicles",
       "summary": "Commercial vehicle sales rose in August as fleet operators began restocking ahead of the festive season, with dealers citing improved freight demand and better financing availability as key drivers of the pickup.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "E-com, quick-commerce and logistics firms ramp up hiring for festival demand",
       "industry": "E-commerce/Logistics",
       "summary": "E-commerce, quick-commerce and logistics companies are ramping up seasonal hiring to handle an expected surge in festival-season order volumes, with warehousing, last-mile delivery and gig-rider roles accounting for most of the added headcount.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Sugar mills question high retail prices even as ex-mill rates keep falling",
       "industry": "Sugar",
       "summary": "Sugar millers said retail prices remain elevated even as ex-mill wholesale rates continue to decline, pointing to a widening gap between farm-gate/mill pricing and what consumers pay, and are pressing for a review of the distribution margin structure.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Sector",
       "headline": "Mid-size car exports slow even as multi-utility vehicle exports zoom ahead",
       "industry": "Passenger Vehicles",
       "summary": "Exports of mid-size passenger cars have slipped into a slow lane even as shipments of multi-utility vehicles (MUVs/SUVs) accelerate, reflecting a shift in overseas demand toward larger, higher-margin body styles.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Sector",
       "headline": "Kiranas to quick commerce: how the investment landscape for retail trade has changed",
       "industry": "Retail/Quick Commerce",
       "summary": "Investor interest in Indian retail has shifted decisively from traditional kirana-linked models toward quick-commerce platforms, reshaping funding flows and valuations across the retail trade as capital chases faster-growing delivery-first formats.",
-      "page_number": 17
+      "page_number": 17,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "[[Tata Trusts]] gets tax all-clear on NRTT share transfer",
       "summary": "[[Tata Trusts]] received tax clearance for the transfer of shares held via the Navajbai Ratan Tata Trust (NRTT) structure, removing a compliance overhang that had clouded the trusts' shareholding arrangements within the Tata group.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "[[Hyundai Motor India]] expects 8-10% FY27 growth, outpacing industry",
       "summary": "[[Hyundai Motor India]] said it expects 8-10% sales growth in FY27, ahead of the broader industry's projected pace, citing a stronger SUV lineup and expanding rural and export demand as key drivers.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "[[VinFast]] steps up localisation push in India",
       "summary": "[[VinFast]] is deepening local sourcing and manufacturing in India as it looks to cut costs and improve price competitiveness for its electric vehicles against established domestic and global rivals.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "Range Rover goes electric as [[JLR]] aims for recharging growth",
       "summary": "[[Jaguar Land Rover]]'s Range Rover marque is expanding its electric line-up as the company looks to reignite growth through its premium EV push, betting on charging-network buildout and brand strength to win over luxury buyers.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "[[Swiggy]] partners [[Hero MotoCorp]] to help delivery riders with vehicle ownership",
       "summary": "[[Swiggy]] tied up with [[Hero MotoCorp]] to offer its delivery riders easier access to two-wheeler ownership through financing and leasing tie-ups, part of a broader push to improve rider retention and earnings stability.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "[[ICICI Bank]] reshuffles top brass, [[ICICI Securities]] MD moves to parent",
       "summary": "[[ICICI Bank]] announced a reshuffle of its senior management, with the managing director of [[ICICI Securities]] moving to a role at the parent bank as part of a broader leadership rotation across the group.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "[[Hexaware Technologies]] names Vivek Jetley as CEO-designate",
       "summary": "[[Hexaware Technologies]] named Vivek Jetley as chief executive officer-designate, positioning him to take over leadership as the IT services company continues its post-listing growth push.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "[[Nalco]] offers fresh shares via OFS on NSE and BSE",
       "summary": "[[National Aluminium Company]] launched an offer-for-sale of fresh equity shares on the NSE and BSE, giving the government a route to pare its stake while the company presses ahead with its capacity-expansion plans.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "[[NMDC]] August production up 21%",
       "summary": "[[NMDC]] reported a 21% year-on-year rise in iron-ore production for August, as the state-run miner ramped up output to meet steady steel-sector demand.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "[[Deepa Jewellers]] gears up for main-board listing on BSE and NSE",
       "summary": "[[Deepa Jewellers]] published its pre-issue price-band and offer-price disclosures ahead of a main-board IPO to be listed on both the BSE and NSE, with the standard ASBA application process available to retail and institutional investors.",
-      "page_number": 5
+      "page_number": 5,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Market",
       "headline": "India vs developed markets: bond yield gap narrows",
       "summary": "The spread between Indian and developed-market government bond yields has narrowed, reflecting both firmer global yields and steady demand for Indian debt, a shift that could affect the relative appeal of India bonds to foreign portfolio investors.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Market",
       "headline": "Rising bond yields make largecaps attractive; mid- and small-caps may lag",
       "summary": "Strategists said rising bond yields are tilting equity positioning back toward largecaps, which are better placed to absorb higher discount rates, while mid- and small-cap stocks — trading at richer valuations — could underperform in the near term.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Market",
       "headline": "US 10-year bond yield topping 5% is a risk for markets: Chris Wood",
       "summary": "Strategist Christopher Wood flagged the US 10-year Treasury yield crossing 5% as a key risk for global equity markets, warning that sustained higher US yields could pressure valuations across emerging markets including India.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Market",
       "headline": "F&O turnover slumps to 14-month low as CAS rollout bites",
       "summary": "Average daily turnover in equity futures and options fell to a 14-month low of ₹3.47 trillion, as the rollout of the Close Auction Session (CAS) mechanism curbed some of the speculative volumes that had built up in the derivatives segment.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Market",
       "headline": "NCDEX signs pact with cotton body to deepen role in derivatives",
       "summary": "Commodity exchange NCDEX signed an agreement with a cotton industry body aimed at expanding participation in cotton derivatives, as the exchange looks to deepen liquidity and improve price discovery for the crop.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Trade",
       "headline": "Belgian PM to focus on diamonds, defence ties during India visit",
       "summary": "Belgium's Prime Minister is set to focus talks during an India visit on strengthening the diamond trade relationship — a mainstay of Belgium-India commerce — alongside deepening defence-industry cooperation between the two countries.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "US-Iran escalation renews war fears as tankers targeted in the Strait",
       "summary": "Fresh incidents involving tankers near the Strait of Hormuz, linked to the ongoing US-Iran standoff, have renewed fears of wider military escalation in the Gulf, with both sides trading blame as regional shipping and insurance costs rise.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "International News",
       "headline": "Xi urges new security order for West Asia",
       "summary": "Chinese President Xi Jinping called for a new regional security architecture for West Asia, positioning China as a stabilising broker in the region even as US-Iran tensions escalate.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "International News",
       "headline": "[[Apple]] approves new CEO pay structure",
       "summary": "[[Apple]]'s board approved a revised compensation structure for its chief executive, tying a larger share of pay to long-term performance metrics as the company navigates a leadership transition period.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Growth & Development",
       "headline": "India must introduce thorium into its nuclear power programme",
       "summary": "A nuclear-energy expert argued India should accelerate induction of thorium-based fuel cycles into its nuclear power programme, saying the country's large thorium reserves remain underused relative to their potential to support long-term energy security.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 2
     }
   ],
   "stocksInFocus": [
@@ -236,5 +304,20 @@
       "status": "upcoming",
       "notes": "Pre-issue price-band/offer-price disclosures published ahead of main-board IPO; exact dates and band not yet stated"
     }
+  ],
+  "topStories": [
+    { "headline": "Government asserts no 'mechanical' boost aided Q1 GDP growth print", "section": "Economy", "note": "Government pushes back on claims of a statistical boost" },
+    { "headline": "JCR upgrades India's sovereign rating to A-", "section": "Economy", "note": "Latest in a run of positive sovereign rating actions" },
+    { "headline": "FCNR(B) haul soars to $127 billion on final sprint", "section": "Economy" },
+    { "headline": "India backs US on global imbalances at G20, but China's opposition stalls consensus", "section": "Policy" },
+    { "headline": "USFDA warns [[Reliance Life Sciences]] over Navi Mumbai unit violations", "section": "Regulatory" },
+    { "headline": "[[Tata Trusts]] gets tax all-clear on NRTT share transfer", "section": "Corporate Events" },
+    { "headline": "[[ICICI Bank]] reshuffles top brass, [[ICICI Securities]] MD moves to parent", "section": "Corporate Events" },
+    { "headline": "[[Hyundai Motor India]] expects 8-10% FY27 growth, outpacing industry", "section": "Corporate Events" },
+    { "headline": "India vs developed markets: bond yield gap narrows", "section": "Market" },
+    { "headline": "US 10-year bond yield topping 5% is a risk for markets: Chris Wood", "section": "Market" },
+    { "headline": "F&O turnover slumps to 14-month low as CAS rollout bites", "section": "Market" },
+    { "headline": "US-Iran escalation renews war fears as tankers targeted in the Strait", "section": "International News", "note": "Strait of Hormuz tensions raise wider-war fears" },
+    { "headline": "Xi urges new security order for West Asia", "section": "International News" }
   ]
 }

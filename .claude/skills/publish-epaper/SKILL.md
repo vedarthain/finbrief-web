@@ -54,6 +54,28 @@ The `section` field must be one of these 12 fixed leaf values. The UI groups the
 
 **Dedup rule:** if the same underlying event (e.g. a GDP print) generates multiple candidate stories from different pages (the data page, a reaction/quote page, an opinion piece restating the number), merge them into **one** comprehensive story under the correct category — do not publish near-duplicate stories that just restate the same headline fact from different angles. A distinct opinion/editorial take can still go to Others if it adds real independent argument, not just a restatement. This applies **across editions too** when more than one newspaper is published for the same date — see §1's "Cross-edition dedup" note.
 
+## 3c. Flag routine notices with `is_notice` — don't let compliance filings drown the news
+
+AGM notices, postal-ballot notices, SARFAESI/possession/demand notices, lost-share-certificate notices, e-auction sale notices, and open-offer corrigenda are real content (still classify them under `Regulatory` per §3a) but are **not news** — a reader shouldn't have to page past 80 of them to find the 3 regulatory stories that matter. Set `"is_notice": true` on every one of these. The UI hides `is_notice: true` stories from the default section view and puts them behind a "Show N routine notices" toggle — so still extract every distinct company/entity name per §3 (don't skip them), just tag them correctly so they don't bury real news.
+
+Only routine/templated compliance filings get `is_notice: true`. A regulator *ruling*, *order*, *ban*, or *policy review* (SC/NCLT judgment, Sebi order, FSSAI crackdown, CCI action) is real regulatory news — leave `is_notice` unset (defaults to `false`) even though it's also classified as `Regulatory`.
+
+## 3d. Score `importance` 1–5 on every story
+
+Add `"importance"` (integer 1–5) to every story — it drives the default sort within each section (highest first) and feeds the Top Stories digest in §6b. Calibrate roughly:
+
+- **5** — front-page-lead-caliber: major index moves, marquee M&A, big-name IPO listings, landmark court/regulator rulings, significant macro prints (GDP, budget, RBI policy).
+- **4** — solidly newsworthy single-company or sector story most readers would want to see.
+- **3** (default, omit the field to accept this) — routine but real news: a smaller corporate announcement, a minor policy update.
+- **2** — marginal/niche interest.
+- **1** — filler; typically pairs with `is_notice: true`, though not every `importance: 1` story need be a notice.
+
+Don't grade on a curve within one paper — use the same 1–5 scale you'd apply across any day so sort order stays meaningful.
+
+## 3e. Notices don't need highlighting or IPO-listing entries
+
+`is_notice: true` stories are exempt from the terse-summary style in §4 (a one-line "Company X: notice of Nth AGM" is fine) and from `[[...]]` highlighting in §3b/§5 — they're not prose the reader is meant to read closely, just kept queryable/searchable. Do not create `ipoListings` entries from notice-type stories (SARFAESI/lost-share-cert/AGM) — `ipoListings` is only for actual capital-raise events per §6a.
+
 ## 3b. Only highlight actual company/corporate names with `[[...]]` — never people, ministries, or agencies
 
 Apply `[[...]]` **only** to the genuine company/corporate/fund entity that is the subject of the story: listed companies, PSUs, banks, NBFCs, insurers, promoter holding entities/trusts/LLPs holding shares, and stock exchanges/depositories when referenced as an entity.
@@ -92,6 +114,18 @@ Separately from the story list, curate a short list (typically 5-10) of the day'
 ```
 
 This renders as the "Stocks in Focus" tab, grouped alongside "Sector" under the "In Focus" top-level tab. (Note: this is a different grouping from the "Stocks" top-level tab, which holds Corporate Events/IPO/Market/Trade/Insurance — don't confuse the two.)
+
+## 6b. Build `topStories` — a cross-section digest so a reader never has to open every tab
+
+Separately from `stocksInFocus`, curate a top-level `topStories` array: 10-15 of the single most important items of the day, spanning **any** section (not just Stocks/IPO) — this is what actually solves "too many stories to read." Pull from your own `importance: 5` (and top `importance: 4`) picks:
+
+```json
+"topStories": [
+  { "headline": "Sensex swings ~4,000 points intraday, triggers Sebi review", "section": "Market", "note": "One-line context beyond the headline, optional." }
+]
+```
+
+`headline` should match (or closely mirror) the corresponding story's headline so a reader can find the full item in its section; `section` is whatever leaf section it lives under (for display only, not a lookup key); `note` is optional. This renders as its own top-level "Top Stories" tab, shown first.
 
 ## 6a. Build `ipoListings` — structured data for the separate "IPO & Listings" tab
 
@@ -133,11 +167,15 @@ Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `script
   "edition": "Mumbai",
   "paper_date": "2026-08-31",
   "stories": [
-    { "section": "Front Page", "headline": "...", "summary": "... [[Company]] ...", "page_number": 1 },
-    { "section": "Sector", "headline": "...", "summary": "...", "page_number": 5, "industry": "Medtech" }
+    { "section": "Front Page", "headline": "...", "summary": "... [[Company]] ...", "page_number": 1, "importance": 5 },
+    { "section": "Sector", "headline": "...", "summary": "...", "page_number": 5, "industry": "Medtech", "importance": 3 },
+    { "section": "Regulatory", "headline": "Foo Ltd: notice of 20th AGM", "summary": "Foo Ltd: notice of 20th AGM.", "page_number": 18, "is_notice": true, "importance": 1 }
   ],
   "stocksInFocus": [
     { "name": "...", "note": "..." }
+  ],
+  "topStories": [
+    { "headline": "...", "section": "Market", "note": "..." }
   ],
   "ipoListings": [
     { "company_name": "...", "ticker": null, "exchange": "...", "issue_price_low": 0, "issue_price_high": 0,
@@ -146,6 +184,8 @@ Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `script
   ]
 }
 ```
+
+`importance` and `is_notice` are both optional per story (default `3` and `false` respectively) — set them explicitly per §3c/§3d rather than relying on the default whenever you have a real signal. `topStories` is optional; omit only if truly nothing rises above routine that day.
 
 `ipoListings` is optional — omit it entirely on days with no IPO/listing activity.
 
@@ -173,9 +213,9 @@ git add -A && git commit -m "..." && git push
 
 ## Schema reference
 
-- `paper_stories`: `edition, paper_date, section, headline, summary, page_number, display_order` — isolated from `clusters`/`cluster_entities`/`prices`.
-- `paper_meta`: `edition, paper_date, stocks_in_focus JSONB` — day-level metadata, PK on (edition, paper_date).
+- `paper_stories`: `edition, paper_date, section, headline, summary, page_number, industry, display_order, is_notice, importance` — isolated from `clusters`/`cluster_entities`/`prices`. `is_notice` (§3c) and `importance` (§3d) are the two ranking/filtering signals; `getPaperStories` sorts `is_notice ASC, importance DESC, display_order ASC`.
+- `paper_meta`: `edition, paper_date, stocks_in_focus JSONB, top_stories JSONB` — day-level metadata, PK on (edition, paper_date). `top_stories` is the §6b cross-section digest.
 - `ipo_listings`: `company_name (UNIQUE), ticker, exchange, issue_price_low, issue_price_high, open_date, close_date, listing_date, listing_price, status, notes` — separate table backing the "IPO & Listings" tab (`/ipo`); upserted on `company_name` by the `ipoListings` array in the same publish JSON (§6a). `ticker`, when set and present in `prices`, drives a live current-price/% column — see `scripts/ipo_schema.sql`.
-- Query layer: `lib/queries.ts` — `getPaperStories`, `getPaperDays`, `getStocksInFocus`, `getIpoListings`.
-- Render layer: `components/PaperTree.tsx` — section-tree sidebar + click-to-expand row list; `renderSummary()` parses `[[...]]` markers. `components/IpoTable.tsx` — structured IPO/listing table, separate page (`app/ipo/page.tsx`).
+- Query layer: `lib/queries.ts` — `getPaperStories`, `getPaperDays`, `getStocksInFocus`, `getTopStories`, `getIpoListings`.
+- Render layer: `components/PaperTree.tsx` — "Top Stories" tab (from `getTopStories`) shown first, then section-tree sidebar + click-to-expand row list; a search box filters headline+summary across every section; `is_notice` stories are hidden per-section behind a "Show N routine notices" toggle; `renderSummary()` parses `[[...]]` markers. `components/IpoTable.tsx` — structured IPO/listing table, separate page (`app/ipo/page.tsx`).
 - Standalone publish path for the IPO table without a full e-paper pull: `node scripts/publish-ipo.mjs path/to/ipos.json` (same shape/upsert semantics as the `ipoListings` array, useful for out-of-band updates like a listing-day price correction).

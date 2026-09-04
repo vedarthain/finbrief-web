@@ -6,884 +6,1176 @@
       "section": "Economy",
       "headline": "Methodology of new GDP series is questionable: Pronab Sen",
       "summary": "Pronab Sen, India's first chief statistician, questioned the methodology behind the new GDP series, especially the shift to double deflation using the Producer Price Index (PPI) instead of the Wholesale Price Index (WPI). He said the PPI remains an experimental, unreleased dataset with limited transparency, and that sharp revisions this time (7-8 percentage points) reflect a substantive data problem rather than routine correction.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Economy",
       "headline": "Services PMI rises to 54.1 in August, but stays near 4-year low",
       "summary": "The HSBC India Services PMI rose to 54.1 in August from 53.3 in July, still below the long-run average of 54.5 and the second-weakest reading since March 2022. New business and export orders rose, but manufacturing employment contracted for the first time in over two years even as services hiring improved.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Economy",
       "headline": "Swap windows: $ inflows far exceed those in 2013",
       "summary": "RBI's concessional FCNR(B) swap facility, closed a month ahead of schedule on August 31, mobilised $127.2 billion in deposits, far outpacing the $26 billion raised in the 2013 window under then-governor Raghuram Rajan. FCNR(B)'s share of NRI deposits rose to 21% by FY27 (as of June), still just over half the 2013-14 level of 40%.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Policy",
       "headline": "India unveils 10-year road map for defence diplomacy",
       "summary": "Defence Minister Rajnath Singh unveiled 'Raksha', a first-of-its-kind document setting a decade-long road map for India's defence diplomacy, framing defence as a pillar of foreign policy alongside plans to position India as a global defence-manufacturing hub. It was released ahead of the 18th BRICS summit that India will host in New Delhi on September 12-13.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Policy",
       "headline": "Auto cos must prepare for end of EV subsidies: Heavy Industries secy",
       "summary": "Heavy Industries Secretary Kamran Rizvi told automakers at the Siam annual convention that government subsidies for electric vehicles will end in the coming years and companies must prepare for reduced state support, while urging larger R&D spending and scale.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Policy",
       "headline": "Goyal warns auto cos on 'nominal' localisation",
       "summary": "Commerce and Industry Minister Piyush Goyal warned automobile companies against indigenising components only on a 'nominal' 10-15% value-addition basis while routing imports through Indian entities, saying the government is monitoring import-export data to assess actual localisation and may require deeper indigenisation disclosures.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Policy",
       "headline": "N K Singh says panel should look beyond exam reforms",
       "summary": "N K Singh, former chairman of the Fifteenth Finance Commission, said the Nandan Nilekani-led panel constituted to reform India's examination ecosystem should take a holistic view rather than treating exams as one isolated component, and flagged concerns about AI's impact on children's cognitive abilities and the risk of 'cognitive surrender'.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Policy",
       "headline": "Gadkari launches retrofit device to cut emissions, urges OEMs to back scrappage",
       "summary": "Road Transport and Highways Minister Nitin Gadkari announced government approval of new AIS 228 standards for retrofitting rear emission-control devices on pre-BS6 heavy vehicles, developed by an IIT Delhi-led team at a cost of roughly ₹4,000-5,000 per vehicle, and urged OEMs to offer discounts to customers scrapping old vehicles under the government's vehicle-scrappage push.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "CAS effect: Sebi to review derivatives trades pricing",
       "summary": "The Securities and Exchange Board of India is set to issue a consultation paper within a week proposing changes to the methodology for determining settlement prices of derivative contracts, following feedback on the recently rolled-out Close Auction Session (CAS) mechanism. Sharp divergences were noted between BSE Sensex and NSE Nifty settlement/expiry prices after CAS implementation from August 3.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "Regulatory",
       "headline": "Revolving credit ban will impact a larger section, NBFCs tell RBI",
       "summary": "The Finance Industry Development Council told the RBI that its proposal to restrict revolving credit offered by non-banking financial companies would hit a much wider section of players and products than intended, and urged a rethink from a blanket ban toward a partial restriction that preserves limited redraw or replenishment within existing sanctioned facilities.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "BCI has no power to act against law students before enrolment: SC",
       "summary": "The Supreme Court held that the Bar Council of India has no statutory authority to take disciplinary action against law students before they enrol as advocates, ruling that disciplinary control over students rests with the university or educational institution where they study, in a bench led by Chief Justice of India Surya Kant.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "Diversify funding sources: Murmu to NBFCs, HFCs",
       "summary": "RBI Deputy Governor Shirish Chandra Murmu urged non-banking financial companies and housing finance companies to diversify funding sources and reduce reliance on market sentiment, noting NBFC credit stands at 16.7% of nominal GDP and 27% of extended scheduled commercial bank credit, up from 15.9% and 26% a year earlier.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "Sebi's Demat 2.0 to debut next week with REC's tokenised bond pilot",
       "summary": "The Securities and Exchange Board of India is preparing to launch Demat 2.0, a new framework to hold tokenised assets using distributed ledger technology, with state-owned power financier [[REC]] expected to issue the country's first tokenised bond under the pilot. The RBI's digital rupee (CBDC) will facilitate payment and settlement, with tokenised bonds carrying an initial three-month lock-in.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Regulatory",
       "headline": "SC disposes of Sebi's pleas against NSE after ₹1,500 cr settlement",
       "summary": "The Supreme Court disposed of pleas by the Securities and Exchange Board of India against the [[National Stock Exchange]] in the co-location and dark-fibre cases after Sebi approved a ₹1,500 crore settlement with the exchange, completing the ₹1,491.21 crore settlement amount agreed under revised terms following in-principle approval in July.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Regulatory",
       "headline": "Sebi mulls net settlement of cash mkt obligations for mutual funds",
       "summary": "The Securities and Exchange Board of India proposed in a consultation paper permitting net settlement of funds for mutual fund scheme transactions in the cash market on a gross basis, aimed at improving settlement efficiency and reducing temporary liquidity requirements while continuing safeguards on delivery-versus-payment and investor protection.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "CCI asks TAI, three debenture trustees not to cartelise",
       "summary": "The Competition Commission of India issued a 'cease and desist' order against the Trustees' Association of India (TAI) and three of its member debenture trustees — [[IDBI Trusteeship Services]], [[Axis Trustee Services]] and [[SBI CAP Trustee Company]] — for allegedly cartelising to fix the fee for trusteeship services during FY21 and FY22.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "FSSAI crackdown spooks food business",
       "summary": "A crackdown by the Food Safety and Standards Authority of India (FSSAI) on restaurants has triggered a roughly 40% rise in compliance-related queries since July, with consultants reporting a 10-15-fold jump in training sessions on hygiene, storage and food-prep norms. Enforcement action against [[CG Foods India]], maker of Wai-Wai noodles, over alleged unsafe processing and predated packaging has heightened scrutiny, particularly in Maharashtra.",
-      "page_number": 20
+      "page_number": 20,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "Lavasa terms Election Commission's SIR legal but unfair, urges civil servants to have empathy",
       "summary": "Former Election Commissioner Ashok Lavasa said the Election Commission's Special Intensive Revision (SIR), which has struck nearly 130 million electors off rolls, is legal but unfair, and cautioned that the disenfranchisement risks alienating people from the process of democracy.",
-      "page_number": 19
+      "page_number": 19,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "What homebuyers should do if developer asks them to pay stamp duty",
       "summary": "The Maharashtra Real Estate Regulatory Authority (MahaRERA) ruled that a developer cannot shift stamp duty and registration charges onto a homebuyer after promising to bear them at booking, rejecting a builder's argument that the project brochure's contrary statement was a typographical error and directing the developer to bear the charges.",
-      "page_number": 22
+      "page_number": 22,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Regulatory",
       "headline": "Whose line is it anyway? Case for reviving a unified financial sector appellate tribunal",
       "summary": "A Business Standard analysis revisited the Financial Sector Legislative Reforms Commission's 2013 recommendation for a unified Financial Sector Appellate Tribunal (FSAT) that never came into being, arguing rising cross-cutting risks from financial conglomerates with multiple regulators — RBI, Sebi, [[IRDAI]], PFRDA — justify a fresh look at coordinated appellate and enforcement mechanisms.",
-      "page_number": 18
+      "page_number": 18,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Regulatory",
       "headline": "Shankara Building Products: open offer public announcement and corrigendum",
       "summary": "[[Shankara Building Products Limited]] shareholders received a corrigendum to the detailed public statement for an open offer by the Ballygunge Family Trust and PACs to acquire 63,04,825 equity shares. The revised schedule sets the tendering period from September 7 to September 21, 2026, with settlement by October 6, 2026.",
-      "page_number": 11
+      "page_number": 11,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "SBFC Finance issues SARFAESI possession notices against two Maharashtra/Karnataka borrowers",
       "summary": "[[SBFC Finance Limited]] took symbolic and physical possession under the SARFAESI Act of mortgaged properties in Buldhana, Maharashtra (Shriram Offset Printers/Vijay and Manoj Nikhare, dues of ₹15,39,375) and Bidar, Karnataka (Santoshkumar Chinirathod, dues of ₹27,08,471), and separately issued an auction-cum-sale notice for a Thane property (Sanjana Sahil Transport, dues of ₹27,24,021).",
-      "page_number": 15
+      "page_number": 15,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Bank of India exercises call option on Basel III Tier II bond series",
       "summary": "[[Bank of India]] said it will exercise the call option on its 7.14% Basel III-compliant Tier II Bond Series XV (ISIN INE084A08151), issued on September 30, 2021, with September 15, 2026 fixed as the record date for bondholders.",
-      "page_number": 16
+      "page_number": 16,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Alkyl Amines Chemicals: public notice on disputed transfer of lost share certificate",
       "summary": "[[Alkyl Amines Chemicals Limited]] issued a public notice on a proposed transfer of 500 equity shares, originally jointly held by Sandhya Kejriwal and Rajendra Rai and claimed lost, to Sandhya Kejriwal alone, inviting objections within 30 days.",
-      "page_number": 17
+      "page_number": 17,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "SBI issues SARFAESI demand notices against defaulting Mumbai, Nanded borrowers",
       "summary": "[[State Bank of India]] issued demand notices under the SARFAESI Act against two borrowers whose loan accounts were classified as non-performing — a Kurla, Mumbai residential property (dues of ₹1,44,18,139) and a Nanded property (dues of ₹27,08,481) — calling for repayment within 60 days.",
-      "page_number": 17
+      "page_number": 17,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Canara Bank issues SARFAESI demand notice against Dhule borrower",
       "summary": "[[Canara Bank]] issued a demand notice under the SARFAESI Act against a housing-loan borrower in Dhule, Maharashtra, for outstanding dues of ₹1,85,49,469 against a sanctioned loan of ₹6.30 crore, warning of enforcement action if dues are not cleared.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "St Gregorios Education & Medical Trust invites offers for sale of immovable property",
       "summary": "The St. Gregorios Education & Medical Trust invited sealed offers for sale of an immovable property named 'Origin' in Chembur, Mumbai, with a reserve price of ₹7.70 crore and earnest money deposit of ₹15,000, with sealed offers due by October 7.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Elcid Investments opens special window for re-lodgement of physical share transfers",
       "summary": "[[Elcid Investments Limited]] said Sebi has extended a special window until February 4, 2027 for the re-lodgement of physical share transfer requests that were earlier rejected, returned, or not attended to before the April 2019 demat deadline.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Mahindra & Mahindra: notice of loss of share certificates",
       "summary": "[[Mahindra & Mahindra Limited]] issued a notice for loss of original share certificates covering two folios held jointly by Sohrab Parvez Dalal and Mani Sohrab Dalal, inviting objections before issuing duplicates.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Signpost India opens special window for transfer and dematerialisation of physical shares",
       "summary": "[[Signpost India Limited]] notified shareholders of a Sebi-mandated special window, open for one year from February 2026, allowing transfer and dematerialisation of physical share deeds that were earlier rejected or not processed due to deficiencies.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Thyrocare Technologies: unclaimed dividend shares to be transferred to IEPF",
       "summary": "[[Thyrocare Technologies Limited]] notified shareholders that equity shares linked to dividends unclaimed for seven consecutive years since FY2018-19 will be transferred to the Investor Education and Protection Fund (IEPF) unless claimed before December 7, 2026.",
-      "page_number": 13
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "PVR Inox issues corrigendum to buyback public announcement",
       "summary": "[[PVR Inox Limited]] issued a corrigendum to its public announcement for the buyback of equity shares, correcting the company's website address and updating disclosure on promoter-group directors' share pledge and sale transactions at [[ATC Logistical Solutions]].",
-      "page_number": 13
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Amber Enterprises to transfer unpaid/unclaimed FY2019-20 dividend shares to IEPF",
       "summary": "[[Amber Enterprises India Limited]] notified shareholders that dividend amounts and underlying shares unclaimed for seven consecutive years since FY2019-20 are due for transfer to the Investor Education and Protection Fund by December 8, 2026 unless claimed.",
-      "page_number": 13
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Tata Capital Housing Finance to close Khopoli branch",
       "summary": "[[Tata Capital Housing Finance Limited]] issued a public notice for the closure of its branch office at Khopoli, Raigad, Maharashtra, effective December 8, 2026.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Gayatri Highways Limited: notice of 20th AGM",
       "summary": "[[Gayatri Highways Limited]] notified its 20th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 via video conferencing/OAVM (Friday, September 25 (9:00 a.m.) to Monday, September 28, 2026 (5:00 p.m.)).",
-      "page_number": 10
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "ABC India Limited: notice of 53rd AGM",
       "summary": "[[ABC India Limited]] notified its 53rd Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 3:00 p.m. via video conferencing/OAVM (Friday, September 25 (10:00 a.m.) to Sunday, September 27, 2026 (5:00 p.m.)).",
-      "page_number": 10
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Berger Paints India Limited: notice of postal ballot",
       "summary": "[[Berger Paints India Limited]] issued a notice of postal ballot, Monday, September 7 (9:00 a.m.) to Tuesday, October 6, 2026 (5:00 p.m.), with results by October 6, 2026.",
-      "page_number": 10
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Sona BLW Precision Forgings Limited: notice of postal ballot",
       "summary": "[[Sona BLW Precision Forgings Limited]] issued a notice of postal ballot.",
-      "page_number": 10
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Authum Investment & Infrastructure Limited: notice of 44th AGM",
       "summary": "[[Authum Investment & Infrastructure Limited]] notified its 44th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 4:30 p.m. via video conferencing/OAVM.",
-      "page_number": 10
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Gallant Ispat Limited: notice of 22nd AGM",
       "summary": "[[Gallant Ispat Limited]] notified its 22nd Annual General Meeting for FY2025-26, to be held on Wednesday, September 30, 2026 at 12:30 p.m. via video conferencing/OAVM.",
-      "page_number": 10
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "FDC Limited: notice of 86th AGM",
       "summary": "[[FDC Limited]] notified its 86th Annual General Meeting for FY2025-26, to be held on Thursday, September 24, 2026 at 10:00 a.m. via video conferencing/OAVM.",
-      "page_number": 12
+      "page_number": 12,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Dhatre Udyog Limited (formerly Narayani Steels): notice of 31st AGM",
       "summary": "[[Dhatre Udyog Limited (formerly Narayani Steels)]] notified its 31st Annual General Meeting for FY2025-26, to be held on Saturday, September 26, 2026 at 1:00 p.m. via video conferencing/OAVM.",
-      "page_number": 13
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "R.P.P Infra Projects Ltd: notice of 31st AGM",
       "summary": "[[R.P.P Infra Projects Ltd]] notified its 31st Annual General Meeting for FY2025-26, to be held on Friday, September 25, 2026 at 12:15 p.m. via video conferencing/OAVM.",
-      "page_number": 13
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Earthstahl & Alloys Limited: notice of 17th AGM",
       "summary": "[[Earthstahl & Alloys Limited]] notified its 17th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 3:30 p.m. via video conferencing/OAVM.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Eighty Jewellers Limited: notice of 16th AGM",
       "summary": "[[Eighty Jewellers Limited]] notified its 16th Annual General Meeting for FY2025-26, to be held on Thursday, September 29, 2026 at 12:00 noon via video conferencing/OAVM.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Jana Small Finance Bank Limited: notice of 20th AGM",
       "summary": "[[Jana Small Finance Bank Limited]] notified its 20th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 11:00 a.m. via video conferencing/OAVM.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Shree Vasu Logistics Limited: notice of 20th AGM",
       "summary": "[[Shree Vasu Logistics Limited]] notified its 20th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 via video conferencing/OAVM.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "A2Z Infra Engineering Limited: notice of 25th AGM",
       "summary": "[[A2Z Infra Engineering Limited]] notified its 25th Annual General Meeting for FY2025-26, to be held on Saturday, September 26, 2026 at 2:30 p.m. via video conferencing/OAVM.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Coromandel Engineering Company Limited: notice of 78th AGM",
       "summary": "[[Coromandel Engineering Company Limited]] notified its 78th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 2:30 p.m. via video conferencing/OAVM.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Uniparts India Limited: notice of 32nd AGM",
       "summary": "[[Uniparts India Limited]] notified its 32nd Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 4:30 p.m. via video conferencing/OAVM.",
-      "page_number": 15
+      "page_number": 15,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Indian Renewable Energy Development Agency Limited: notice of 39th AGM",
       "summary": "[[Indian Renewable Energy Development Agency Limited]] notified its 39th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 12:00 noon via video conferencing/OAVM.",
-      "page_number": 15
+      "page_number": 15,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Lambodhara Textiles Limited: notice of 32nd AGM",
       "summary": "[[Lambodhara Textiles Limited]] notified its 32nd Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 3:00 p.m. via video conferencing/OAVM.",
-      "page_number": 15
+      "page_number": 15,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Clear Secured Services Limited: notice of 18th AGM",
       "summary": "[[Clear Secured Services Limited]] notified its 18th Annual General Meeting for FY2025-26, to be held on Thursday, September 24, 2026 at 12:30 p.m. via video conferencing/OAVM.",
-      "page_number": 16
+      "page_number": 16,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Honasa Consumer Limited: notice of 10th AGM",
       "summary": "[[Honasa Consumer Limited]] notified its 10th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 4:00 p.m. via video conferencing/OAVM.",
-      "page_number": 16
+      "page_number": 16,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "JIK Industries Limited: notice of 34th AGM",
       "summary": "[[JIK Industries Limited]] notified its 34th Annual General Meeting for FY2025-26, to be held on Saturday, September 26, 2026 at 4:00 p.m. via video conferencing/OAVM.",
-      "page_number": 17
+      "page_number": 17,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Quality Power Electrical Equipments Limited: notice of 25th AGM",
       "summary": "[[Quality Power Electrical Equipments Limited]] notified its 25th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 4:00 p.m. via video conferencing/OAVM.",
-      "page_number": 17
+      "page_number": 17,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "3B BlackBio DX Limited (formerly Kilpest India): notice of 54th AGM",
       "summary": "[[3B BlackBio DX Limited (formerly Kilpest India)]] notified its 54th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 11:30 a.m. via video conferencing/OAVM.",
-      "page_number": 17
+      "page_number": 17,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Balu Forge Industries Limited: notice of 37th AGM",
       "summary": "[[Balu Forge Industries Limited]] notified its 37th Annual General Meeting for FY2025-26, to be held on to be held through video conferencing via video conferencing/OAVM.",
-      "page_number": 18
+      "page_number": 18,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Brigade Hotel Ventures Limited: notice of postal ballot",
       "summary": "[[Brigade Hotel Ventures Limited]] issued a notice of postal ballot, Friday, September 4 to Saturday, October 3, 2026.",
-      "page_number": 18
+      "page_number": 18,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Netlink Solutions (India) Limited: notice of 41st AGM",
       "summary": "[[Netlink Solutions (India) Limited]] notified its 41st Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 via video conferencing/OAVM (Friday, September 4 to Saturday, October 3, 2026).",
-      "page_number": 18
+      "page_number": 18,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Webfil Limited: notice of 46th AGM",
       "summary": "[[Webfil Limited]] notified its 46th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 4:30 p.m. via video conferencing/OAVM.",
-      "page_number": 19
+      "page_number": 19,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Jupiter Infomedia Limited: notice of 21st AGM",
       "summary": "[[Jupiter Infomedia Limited]] notified its 21st Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 1:30 p.m. via video conferencing/OAVM.",
-      "page_number": 19
+      "page_number": 19,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Sical Logistics Limited: notice of 71st AGM",
       "summary": "[[Sical Logistics Limited]] notified its 71st Annual General Meeting for FY2025-26, to be held on Wednesday, September 30, 2026 at 1:00 p.m. via video conferencing/OAVM.",
-      "page_number": 19
+      "page_number": 19,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Shree Krishna Paper Mills & Industries Ltd: notice of 54th AGM",
       "summary": "[[Shree Krishna Paper Mills & Industries Ltd]] notified its 54th Annual General Meeting for FY2025-26, to be held on Saturday, September 26, 2026 at 11:00 a.m. via video conferencing/OAVM.",
-      "page_number": 19
+      "page_number": 19,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Rana Sugars Limited: notice of 34th AGM",
       "summary": "[[Rana Sugars Limited]] notified its 34th Annual General Meeting for FY2025-26, to be held on Wednesday, September 30, 2026 at 12:30 p.m. via video conferencing/OAVM.",
-      "page_number": 22
+      "page_number": 22,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Sri Kannapiran Mills Limited: notice of 80th AGM",
       "summary": "[[Sri Kannapiran Mills Limited]] notified its 80th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 10:45 a.m. via video conferencing/OAVM.",
-      "page_number": 22
+      "page_number": 22,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Benchmark Computer Solutions Limited: notice of 23rd AGM",
       "summary": "[[Benchmark Computer Solutions Limited]] notified its 23rd Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 3:00 p.m. via video conferencing/OAVM.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Bharat Agri Fert & Realty Limited: notice of 41st AGM",
       "summary": "[[Bharat Agri Fert & Realty Limited]] notified its 41st Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 via video conferencing/OAVM.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "GCM Securities Limited: notice of 31st AGM",
       "summary": "[[GCM Securities Limited]] notified its 31st Annual General Meeting for FY2025-26, to be held on Tuesday, September 22, 2026 at 11:30 a.m. via video conferencing/OAVM.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Zodiac Ventures Limited: notice of 45th AGM",
       "summary": "[[Zodiac Ventures Limited]] notified its 45th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 2:00 p.m. via video conferencing/OAVM.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Global Capital Markets Limited: notice of 37th AGM",
       "summary": "[[Global Capital Markets Limited]] notified its 37th Annual General Meeting for FY2025-26, to be held on Friday, September 25, 2026 at 12:45 p.m. via video conferencing/OAVM.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Shri Krishna Devcon Limited: notice of 32nd AGM",
       "summary": "[[Shri Krishna Devcon Limited]] notified its 32nd Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 4:30 p.m. via video conferencing/OAVM.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Mackinnon Mackenzie and Co Limited: notice of 75th AGM",
       "summary": "[[Mackinnon Mackenzie and Co Limited]] notified its 75th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 4:30 p.m. via video conferencing/OAVM.",
-      "page_number": 24
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Colab Platforms Limited: notice of 37th AGM",
       "summary": "[[Colab Platforms Limited]] notified its 37th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 12:00 noon via video conferencing/OAVM.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Avatar Industries Limited: notice of 35th AGM",
       "summary": "[[Avatar Industries Limited]] notified its 35th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 11:00 a.m. via video conferencing/OAVM.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Garodia Chemicals Limited: notice of 34th AGM",
       "summary": "[[Garodia Chemicals Limited]] notified its 34th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 4:00 p.m. via video conferencing/OAVM.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Organic Recycling Systems Limited: notice of 18th AGM",
       "summary": "[[Organic Recycling Systems Limited]] notified its 18th Annual General Meeting for FY2025-26, to be held on Wednesday, September 30, 2026 at 11:30 a.m. via video conferencing/OAVM.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Macmillan Equity Shares Trust: notice of postal ballot",
       "summary": "[[Macmillan Equity Shares Trust]] issued a notice of postal ballot, Saturday, September 27 to Tuesday, September 29, 2026, with results to be declared by 3:30 p.m., September 24, 2026.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Steel City Securities Limited: notice of postal ballot",
       "summary": "[[Steel City Securities Limited]] issued a notice of postal ballot, Saturday, September 5 to Sunday, October 4, 2026.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Mukat Pipes Limited: notice of 39th AGM",
       "summary": "[[Mukat Pipes Limited]] notified its 39th Annual General Meeting for FY2025-26, to be held on Saturday, September 26, 2026 at 2:00 p.m. via video conferencing/OAVM.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Sudal Industries Limited: notice of 47th AGM",
       "summary": "[[Sudal Industries Limited]] notified its 47th Annual General Meeting for FY2025-26, to be held on Friday, September 25, 2026 at 9:00 a.m. via video conferencing/OAVM.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Prakash Steelage Limited: notice of 35th AGM",
       "summary": "[[Prakash Steelage Limited]] notified its 35th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 via video conferencing/OAVM.",
-      "page_number": 25
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Chemtech Industrial Valves Limited: notice of 30th AGM",
       "summary": "[[Chemtech Industrial Valves Limited]] notified its 30th Annual General Meeting for FY2025-26, to be held on Wednesday, September 30, 2026 at 11:00 a.m. via video conferencing/OAVM.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Genus Power Infrastructures Limited: notice of 34th AGM",
       "summary": "[[Genus Power Infrastructures Limited]] notified its 34th Annual General Meeting for FY2025-26, to be held on Friday, September 25, 2026 at 11:00 a.m. via video conferencing/OAVM.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Ganesha Ecoverse Limited: notice of 23rd AGM",
       "summary": "[[Ganesha Ecoverse Limited]] notified its 23rd Annual General Meeting for FY2025-26, to be held on Saturday, September 26, 2026 at 2:00 p.m. via video conferencing/OAVM.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Dixon Technologies (India) Limited: notice of 33rd AGM",
       "summary": "[[Dixon Technologies (India) Limited]] notified its 33rd Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 at 11:00 a.m. via video conferencing/OAVM.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Sterlite Electric Limited: notice of 11th AGM",
       "summary": "[[Sterlite Electric Limited]] notified its 11th Annual General Meeting for FY2025-26, to be held on Tuesday, September 29, 2026 at 12:00 noon via video conferencing/OAVM.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Regulatory",
       "headline": "Kaushalya Infrastructure Development Corporation Limited: notice of 34th AGM",
       "summary": "[[Kaushalya Infrastructure Development Corporation Limited]] notified its 34th Annual General Meeting for FY2025-26, to be held on Monday, September 28, 2026 via video conferencing/OAVM.",
-      "page_number": 26
+      "page_number": 26,
+      "is_notice": true,
+      "importance": 1
     },
     {
       "section": "Sector",
       "headline": "PV sector may grow 10% in FY27: Maruti",
       "summary": "[[Maruti Suzuki India]]'s senior executive officer Partho Banerjee said the passenger vehicle industry is expected to grow at least 10% year-on-year in FY27, with the pace likely to be higher in the first half before moderating; industry-wide monthly volumes currently average around 450,000 units.",
       "page_number": 2,
-      "industry": "Passenger Vehicles"
+      "industry": "Passenger Vehicles",
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Sector",
       "headline": "Firms not cutting jobs due to AI: Microsoft India head",
       "summary": "Puneet Chandok, president of [[Microsoft]] India and South Asia, said technology companies are not using AI as a pretext to cut jobs but are reskilling staff as the nature of work changes, even as job cuts continue across the sector — including around 250 layoffs at Microsoft's India technology centre and about 500 at [[Visa]].",
       "page_number": 3,
-      "industry": "IT Services"
+      "industry": "IT Services",
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Credit card industry sees cyclical shifts: Axis Bank's credit card head",
       "summary": "[[Axis Bank]]'s head of cards, payments and wealth management, Arnika Dixit, said India's credit card industry is undergoing a cyclical adjustment with revolving credit levels down as consumers become more conscious of timely repayments and digital payment reminders reduce carried balances.",
       "page_number": 4,
-      "industry": "Credit Cards"
+      "industry": "Credit Cards",
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Sugar price spike reflects rising food-fuel demand gap",
       "summary": "A new policy paper from the Indian Council for Research on International Economic Relations found retail sugar prices rose even as ex-mill wholesale rates fell, driven by widening feedstock competition between sugar and ethanol amid India's rapid ethanol-blending expansion, which the authors warned could raise prices of eggs, meat and milk if similar pressures spread to other crops.",
       "page_number": 6,
-      "industry": "Sugar/Ethanol"
+      "industry": "Sugar/Ethanol",
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Cost pressures may impact near-term margins of cement firms",
       "summary": "Cement makers face soft second-quarter volumes due to the monsoon even as costs for power, fuel and packaging rise; Ebitda per tonne declined 7-8% quarter-on-quarter and 15% year-on-year to around ₹1,005/tonne in Q1FY27, with players such as [[UltraTech Cement]], [[Shree Cement]] and [[Ambuja Cements]] adding capacity while margins stay under pressure.",
       "page_number": 21,
-      "industry": "Cement"
+      "industry": "Cement",
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Platform workers deal with high risks, have little protection",
       "summary": "A nationwide survey by labour-rights body Janpahal and the Gig Workers Association found 96.6% of gig workers said extreme heat affected their ability to work, 82.7% got no safety training from platforms, and 62.2% and 44.2% respectively lacked health and accident insurance, calling for stronger, standardised occupational protections.",
       "page_number": 20,
-      "industry": "Gig Economy"
+      "industry": "Gig Economy",
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Sector",
       "headline": "Redevelopment outpaces new housing sales in Mumbai, a first",
       "summary": "A JLL-Naredco report found more than 1,000 redevelopment projects have launched in Mumbai since 2020, accounting for 13% of overall residential supply, with redevelopment launches outpacing new housing sales in the first half of 2026 for the first time as the city faces a scarcity of developable land.",
       "page_number": 20,
-      "industry": "Real Estate"
+      "industry": "Real Estate",
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "Brigade Group's ₹20K cr capex bet: build now, earn annuity later",
       "summary": "[[Brigade Group]] managing director Pavitra Shankar said the Bengaluru-based developer is entering a capex cycle of up to ₹20,000 crore to scale its residential, office, mall and hotel portfolio, funded via internal accruals, construction finance and debt, with FY27 launch guidance of 11.5-12 million square feet.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "EVs may account for 7-8% of FY28 sales: Hyundai India",
       "summary": "[[Hyundai Motor India]] MD & CEO Tarun Garg said electric vehicles, hybrids and CNG together are expected to account for around 50% of the company's sales by 2030, with EVs alone rising to 7-8% of sales next fiscal from the current 400-500 units a month, while the Creta Electric anchors its EV portfolio.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "Aditya Birla group launches wires and cables business",
       "summary": "The [[Aditya Birla Group]] launched Ultravolt, a new wires and cables business backed by an investment of ₹1,800 crore, positioning it to become the second-largest player in the segment by capacity as parent [[UltraTech Cement]] also enters the space.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "FLY91 places $1 billion order for 40 ATR 72-600 aircraft",
       "summary": "Goa-based regional airline [[FLY91]] placed a firm order for 40 ATR 72-600 turboprop aircraft worth $1 billion, its largest ATR order yet, as it expands its fleet from six to eight aircraft before the new year and targets more than 60 aircraft over the coming years.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Corporate Events",
       "headline": "Mercedes-Benz plans to launch many more models in India",
       "summary": "[[Mercedes-Benz]] chief executive Ola Kallenius said India remains a key growth market and technology hub for the German automaker, which plans to launch many more models in the country over the coming years.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "VLCC raises ₹110 crore from BlackSoil Capital",
       "summary": "Beauty and wellness brand [[VLCC]] raised ₹110 crore in structured debt financing from [[BlackSoil Capital]] to support its next phase of growth across beauty, wellness and personal-care businesses, including product introduction and store network expansion.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "Premiumisation, beer reforms to aid UBL's growth target",
       "summary": "[[United Breweries]], part of [[Heineken]], is targeting mid-teens revenue growth and margin expansion by leaning on premiumisation, technology and automation, citing India's low per-capita beer consumption of around 2.5 litres annually against a global average of 25-plus litres.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "France's Carrefour returns to India, open to acquisitions for growth",
       "summary": "French retailer [[Carrefour]] re-entered India via a partnership with [[Apparel Group]], opening its first 50,000 sq ft store in Greater Noida West, with plans for around 50 stores in five years, a supermarket format, and openness to mergers and acquisitions as part of a 'make or buy' expansion strategy.",
-      "page_number": 2
+      "page_number": 2,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "PayPal cuts 220 India jobs as part of restructuring plan",
       "summary": "[[PayPal]] cut 220 jobs in India as part of a previously announced multi-year transformation plan aimed at simplifying global operations and strengthening execution, the company confirmed.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "WhatsApp launches bill payments in India, deepening fintech play",
       "summary": "[[WhatsApp]] launched a native bill-payments feature in India, letting users find, manage and pay household and utility bills within the app via the Bharat Connect (Bharat Bill Payments System) network, covering 22,722 billers across 30 categories.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Corporate Events",
       "headline": "Cradlewise raises $12 mn in Series A round",
       "summary": "AI-first wellness startup [[Cradlewise]], focused on infant and child sleep, raised a $12 million Series A round led by [[Point72 Capital]] and [[Prudent Investment Management]], taking its total funding to $26 million, to be used for growth, channel expansion and product research.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "Swiggy's concierge platform Crew enters travel segment",
       "summary": "[[Swiggy]]'s premium concierge platform Crew announced its entry into the travel space, offering a paid, invite-only service for members that handles itinerary planning, bookings, local recommendations and AI-assisted, human-backed travel concierge support.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "Leanwatts raises ₹18.15 cr in seed funding round",
       "summary": "Power electronics startup [[Leanwatts]] raised approximately ₹18.15 crore in a seed round across two tranches led by [[Trivest Partners]], with participation from angel investors, to expand manufacturing capacity, R&D and validation infrastructure for EV charging and power-conversion platforms.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Corporate Events",
       "headline": "Godrej Consumer has to execute to rerate",
       "summary": "[[Godrej Consumer Products]]' stock fell over 3% in the past year even after it reiterated FY27 growth guidance, as investors weigh new CEO Aasif Malbari's turnaround agenda in soap and household insecticide amid near-term margin pressure and channel headwinds; brokerages have cut target multiples and mostly retain 'buy' ratings.",
-      "page_number": 22
+      "page_number": 22,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "Kanohar Electricals, Arcil, Glass Wall Systems fix IPO price bands",
       "summary": "[[Glass Wall Systems]] priced its facade-solutions IPO at ₹172-182 per share (₹60 crore fresh issue plus an offer for sale of 20.21 million shares), opening Tuesday, September 8 and closing Thursday, September 10. Transformer maker [[Kanohar Electricals]] priced its issue between ₹601 and ₹632 per share (₹300 crore fresh issue plus an offer for sale of 11.96 million shares) over the same window. Debt-resolution firm [[Asset Reconstruction Company (India)]] priced its ₹732.97 crore offer for sale at ₹132-139 per share, opening Wednesday, September 9 and closing Friday, September 11.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "Lumino Industries debuts strong with 35% premium",
       "summary": "[[Lumino Industries]] made a strong debut on the bourses, trading at a 34.62% premium to its ₹82 issue price and closing at ₹110.39, valuing the company at a market capitalisation of ₹663.69 crore; the IPO was subscribed 124.02 times.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "Rays of Belief public offer gets nearly 108x subscription on Day 3",
       "summary": "The initial share sale of [[Rays of Belief]], operating under the Mom's Belief brand, received bids for 33,79,79,918 shares against 31,37,810 shares on offer — nearly 108 times subscription — on the final day of bidding, led by strong demand from non-institutional and retail investors.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "IPO",
       "headline": "Paluck Technologies basis of allotment finalised for BSE SME listing",
       "summary": "[[Paluck Technologies Limited]] finalised the basis of allotment for its ₹33.00 crore SME IPO of 68,76,000 shares at a fixed price of ₹48 per share, after the issue was subscribed 254.68 times overall (293.67 times excluding the anchor portion); shares are proposed to list on the BSE SME platform.",
-      "page_number": 12
+      "page_number": 12,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "IPO",
       "headline": "PapTech Corp files draft prospectus for SME IPO",
       "summary": "[[PapTech Corp Limited]] (formerly Pap Tech Sales Corporation), promoted by Hardik Savla, Pritesh Shah, Rushabh Savla and Kirtikumar Gala, filed its draft red herring prospectus for an initial public offer of up to 39,96,000 equity shares of ₹10 each, proposed to list on the SME platform of BSE.",
-      "page_number": 14
+      "page_number": 14,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Market",
       "headline": "In Q1, GIFT IFSC-based fund commitments top $45 billion",
       "summary": "The fund-management ecosystem at [[GIFT City]] saw cumulative commitments in non-retail schemes under the International Financial Services Centre rise to $45.08 billion by June 30, from $39.09 billion at the March-end, with funds and schemes rising to 401 from 360 and total investors crossing 16,150, more than doubling retail-scheme investors to 8,467.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Market",
       "headline": "Bank stocks surge on robust FCNR(B) deposit mobilisation",
       "summary": "Bank stocks gained after RBI data showed lenders mobilised $127.2 billion through the FCNR(B) window by August 31; [[RBL Bank]] shares closed up 4.80% at ₹408.10 after raising $3.4 billion, while [[IDFC First Bank]] shares rose 2.83% after mobilising $3.57 billion, and [[ICICI Bank]], [[HDFC Bank]] and [[Axis Bank]] were also among top mobilisers.",
-      "page_number": 21
+      "page_number": 21,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Market",
       "headline": "Stocks in the news: Raymond, Solar Industries, Bandhan Bank, PTC Industries",
       "summary": "[[Raymond]] was the top gainer among A-group stocks, up 13.6% to ₹667.10; [[Solar Industries India]] hit a fresh all-time high on the BSE at ₹21,640, up 4.2%; [[Bandhan Bank]] snapped an eight-day losing streak, up 1.5% to ₹164.20; and [[PTC Industries]] hit a new high of ₹24,000, surging 59% this fiscal.",
-      "page_number": 23
+      "page_number": 23,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Trade",
       "headline": "India, Belgium expand defence ties, set to double trade in 5 yrs",
       "summary": "India and Belgium announced a defence pact and nine other outcomes after talks between Prime Minister Narendra Modi and Belgian PM Bart De Wever, including agreements involving [[Exail Belgium]], [[Larsen & Toubro]], [[Thales Belgium]] and [[Anglo Belgian Corporation]], and set a target to double bilateral trade in five years from ₹13.01 billion in FY26.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Trade",
       "headline": "PM to visit Brussels in December for the India-EU FTA signing",
       "summary": "Prime Minister Narendra Modi is likely to visit Brussels in December to attend the signing of India's free trade agreement with the European Union, following the completion of legal scrubbing of the deal's text in January and Cabinet clearance for implementation legislation in India.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Trade",
       "headline": "India-New Zealand FTA likely to take effect next month",
       "summary": "India's free-trade agreement with [[New Zealand]] is likely to come into effect next month after New Zealand's Parliament introduced implementing legislation in June; the pact commits New Zealand to lowering tariffs on around 95% of imports from India and increasing investment access over the next 15 years.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Insurance",
       "headline": "Misselling has to be addressed at the point of sale: LIC's Doraiswamy",
       "summary": "[[Life Insurance Corporation of India]] MD & CEO R Doraiswamy said misselling must be tackled at the point of sale regardless of channel, as the insurer targets a value of new business (VNB) margin of 24-25% after it jumped to 22.9% in Q1, and said LIC could consider a strategic stake in fintech if a suitable business and investment opportunity arises.",
-      "page_number": 6
+      "page_number": 6,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Growth & Development",
       "headline": "'Rare-earth magnet issue showed how a country can hold us to ransom'",
       "summary": "Tarun Kapoor, advisor to the Prime Minister, said China's export restrictions on heavy rare-earth elements this year exposed India's supply-chain vulnerabilities, and that the government is building a ₹7,280 crore rare-earth magnet manufacturing scheme targeting 6,000 tonnes of annual domestic capacity under the Semicon 2.0 programme.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Growth & Development",
       "headline": "Odisha eyes Gulf investors seeking a hedge against West Asia risks",
       "summary": "Odisha will pitch 30 investment projects worth a proposed pipeline of investments — including a rare-earth mineral park, a critical-mineral park and a metallurgical SEZ — to nearly 30 large fund houses and Gulf investors during a UAE roadshow from September 8-11, led by Chief Minister Mohan Charan Majhi.",
-      "page_number": 7
+      "page_number": 7,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Growth & Development",
       "headline": "Sonowal reviews zero-emission shipping corridors",
       "summary": "Minister of Ports, Shipping and Waterways Sarbananda Sonowal reviewed progress on proposed green shipping corridors and port readiness for alternative fuels, as part of a broader push to position India as a hub for cleaner maritime trade routes and green shipping decarbonisation initiatives.",
-      "page_number": 4
+      "page_number": 4,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Growth & Development",
       "headline": "Indian Railways approves ₹272 crore bypass line between Adra and Joychandipahar",
       "summary": "Indian Railways approved construction of an 11-km bypass line between Adra and Joychandipahar in South Eastern Railway at a cost of ₹272 crore, to strengthen freight movement and ease congestion, supporting SAIL's 23.40 MTPA iron-ore demand and increasing corridor capacity to 56.45% by 2028-29.",
-      "page_number": 22
+      "page_number": 22,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "US strikes light-touch AI regulation accord at G20",
       "summary": "Representatives of G20 economies unanimously endorsed US-proposed guidelines favouring a lighter-touch, sector-specific approach to regulating AI and emerging technologies, avoiding new AI-specific regulatory bodies, in a framework agreed at a tech and innovation summit hosted by the Trump administration in North Carolina.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "International News",
       "headline": "Mamdani bans AI tools till class VIII in NYC public schools",
       "summary": "New York City Mayor Zohran Mamdani and the city's schools chancellor introduced a new policy banning AI tools and restricting screen time for elementary and middle-school students across roughly 600,000 public schools starting the week of September 10.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "Iran retaliates after US attacks, strikes Kuwait",
       "summary": "Iran fired at Kuwait as part of its retaliation for US bombardments earlier in the week, with air-defence sirens sounding as Kuwait and Bahrain intercepted Iranian missiles and drones, deepening fears of wider Gulf escalation and disruption to shipping through the Strait of Hormuz.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "International News",
       "headline": "Dutch shift gold to London from US",
       "summary": "The Dutch central bank shifted about $12 billion of gold reserves from New York and Ottawa to London, citing concerns about increasing global geopolitical unrest, moving roughly a quarter of the bullion held in Canada and the US to the world's most liquid gold market.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "US journalist gets 2-year sentence for acting as illegal Chinese agent",
       "summary": "An American journalist, Thomas Weir Pauken II, was sentenced to two years in prison for acting as an illegal agent of the Chinese government in the US without proper disclosure, amid a series of federal prosecutions of people accused of working for the Chinese government.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "Norway seizes Russian ship for Ukraine",
       "summary": "Norwegian authorities seized a Russian vessel in Svalbard at Ukraine's request as part of an effort to enforce a $4.22 billion arbitration award Ukraine's Naftogaz is trying to recover from Russia over the 2014 annexation of Crimea and seizure of Ukrainian energy assets.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "CNBC closes Hong Kong office, cuts daily live shows",
       "summary": "[[CNBC]], part of Versant Media, is shutting its Hong Kong office and scrapping several daily live shows including Inside India, The China Connection and Europe Early Edition, as the network winds down some regional programming after Comcast's cable-TV spin-off.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "International News",
       "headline": "Court bars Trump's bid to curb 'birth tourism'",
       "summary": "A US federal judge blocked President Trump's latest attempt to limit birthright citizenship, granting a preliminary injunction against an executive order that sought to deny citizenship to children born to people in the US illegally or temporarily.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "International News",
       "headline": "Broadcom raises AI chip sales forecast to $115 bn by 2028",
       "summary": "[[Broadcom]] forecast strong AI chip sales for the next two years, offering fresh evidence that Big Tech's AI infrastructure appetite remains undiminished, even as its shares fell over 1% in extended trading on investor concerns about returns on massive spending.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "International News",
       "headline": "Nvidia acquires AI startup Hugging Face for $12.9 billion",
       "summary": "[[Nvidia]] said it has acquired AI startup [[Hugging Face]] for $12.93 billion, an acquisition that will scale up Hugging Face's platform to strengthen its infrastructure for AI development and expand access to it for developers and institutions worldwide.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 5
     },
     {
       "section": "International News",
       "headline": "Moonshot files confidentially for Hong Kong IPO",
       "summary": "Beijing-based startup [[Moonshot]] has confidentially filed for a Hong Kong initial public offering, in what people with knowledge of the plans said is likely to be among the most anticipated near-term listings by a Chinese AI company, as it aims to raise $3 billion.",
-      "page_number": 3
+      "page_number": 3,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Others",
       "headline": "El Niño may intensify, could become the strongest ever: WMO",
       "summary": "The World Meteorological Organization said the El Niño weather phenomenon is set to intensify further into 2027 and could become the strongest ever recorded, raising risks of extreme weather including intense rains and droughts across Latin America, with effects continuing into 2027.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Others",
       "headline": "Obituary: Jazz singer Cassandra Wilson, who won the Grammy twice",
       "summary": "Grammy Award-winning jazz singer and songwriter Cassandra Wilson, rooted in the blues tradition of her native Mississippi and known for reinterpreting songs across genres, died in Jackson, Mississippi. She was 70.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Others",
       "headline": "Obituary: Gloria Steinem, US feminist and Ms magazine co-founder",
       "summary": "Gloria Steinem, celebrated author, activist and co-founder of Ms. magazine who became one of the most visible voices of the US women's movement, died at her New York City home. She was 92.",
-      "page_number": 8
+      "page_number": 8,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Others",
       "headline": "False nine, true champion: Messi exits the national team in a blaze of glory",
       "summary": "An editorial marked Lionel Messi's retirement from international football at age 39, tracing his career from six World Cup and Olympic Gold to the 2026 World Cup final loss to Spain, comparing his career arc with that of Cristiano Ronaldo.",
-      "page_number": 9
+      "page_number": 9,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Others",
       "headline": "Yielding trouble: rising bond yields can create risks",
       "summary": "An editorial warned that rising global bond yields — with US 30-year yields nearing 6% and Indian 10-year yields near multi-decade highs — are driven by war-related oil-price shocks, ballooning government debt and AI-capex financing needs, and could raise solvency risks for leveraged entities and emerging markets like India.",
-      "page_number": 9
+      "page_number": 9,
+      "is_notice": false,
+      "importance": 4
     },
     {
       "section": "Others",
       "headline": "Beyond compliance, the real test: good governance and effective assurance",
       "summary": "RBI Deputy Governor Swaminathan J, writing in a column, argued that governance in banks and NBFCs must go beyond regulatory compliance to sound, forward-looking judgement, with boards setting risk appetite and independent assurance functions testing whether risks are truly being managed as intended.",
-      "page_number": 9
+      "page_number": 9,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Others",
       "headline": "Defence FDI rules belong to a different era",
       "summary": "An opinion piece by Ajay Kumar, former Defence Secretary, argued India's defence FDI screening framework — dominated by public-sector legacy rules — has not kept pace with a new wave of dual-use, minority-investment-driven strategic technology ventures, and called for an adaptive screening framework focused on specific critical technologies rather than ownership thresholds.",
-      "page_number": 9
+      "page_number": 9,
+      "is_notice": false,
+      "importance": 3
     },
     {
       "section": "Others",
       "headline": "Book review: The hidden complexities of daily life",
       "summary": "A review of London-based journalist Samanth Subramanian's new essay collection 'The Web Beneath the Waves', spanning 15 years of reportage on politics, conflict, science, technology, sport and culture across continents.",
-      "page_number": 9
+      "page_number": 9,
+      "is_notice": false,
+      "importance": 1
     },
     {
       "section": "Others",
       "headline": "Used-car loans: how to limit borrowing risks",
       "summary": "A personal-finance explainer said used-car loans recorded a five-year compound annual growth rate of 26.2%, and advised buyers to assess loan-to-value ratios, limit tenure to match the vehicle's remaining useful life, and compare lenders' processing fees — citing [[Axis Bank]], [[Bandhan Bank]], [[Punjab National Bank]], [[IDFC First Bank]] and [[Bank of India]] among lenders with the lowest used-car loan rates.",
-      "page_number": 22
+      "page_number": 22,
+      "is_notice": false,
+      "importance": 2
     },
     {
       "section": "Others",
       "headline": "1991 liberalisation made a break with the past: C Rangarajan",
       "summary": "Former RBI governor C Rangarajan, in an interview marking 35 years of liberalisation, recalled the two-step rupee devaluation of July 1-3, 1991 that he oversaw as deputy governor, saying it was crucial for the government to go through with the second step despite opposition, and that banking reforms and capital-account liberalisation remain a continuing, unfinished agenda.",
-      "page_number": 1
+      "page_number": 1,
+      "is_notice": false,
+      "importance": 4
     }
   ],
   "stocksInFocus": [
@@ -1019,6 +1311,66 @@
       "listing_price": null,
       "status": "closed",
       "notes": "Mom's Belief brand; received bids for 33,79,79,918 shares against 31,37,810 shares on offer (~108x subscription) on final bidding day"
+    }
+  ],
+  "topStories": [
+    {
+      "headline": "CAS effect: Sebi to review derivatives trades pricing",
+      "section": "Regulatory",
+      "note": "Sharp Sensex/Nifty settlement divergences after new Close Auction Session mechanism"
+    },
+    {
+      "headline": "Iran retaliates after US attacks, strikes Kuwait",
+      "section": "International News",
+      "note": "Deepening Gulf escalation, risk to Strait of Hormuz shipping"
+    },
+    {
+      "headline": "Nvidia acquires AI startup Hugging Face for $12.9 billion",
+      "section": "International News"
+    },
+    {
+      "headline": "Methodology of new GDP series is questionable: Pronab Sen",
+      "section": "Economy",
+      "note": "Former chief statistician flags 7-8 percentage point revisions"
+    },
+    {
+      "headline": "Swap windows: $ inflows far exceed those in 2013",
+      "section": "Economy",
+      "note": "FCNR(B) window mobilised $127.2 billion vs $26 billion in 2013"
+    },
+    {
+      "headline": "India unveils 10-year road map for defence diplomacy",
+      "section": "Policy",
+      "note": "Ahead of BRICS summit hosted in New Delhi"
+    },
+    {
+      "headline": "Sebi's Demat 2.0 to debut next week with REC's tokenised bond pilot",
+      "section": "Regulatory"
+    },
+    {
+      "headline": "PV sector may grow 10% in FY27: Maruti",
+      "section": "Sector"
+    },
+    {
+      "headline": "Brigade Group's ₹20K cr capex bet: build now, earn annuity later",
+      "section": "Corporate Events"
+    },
+    {
+      "headline": "Bank stocks surge on robust FCNR(B) deposit mobilisation",
+      "section": "Market"
+    },
+    {
+      "headline": "India, Belgium expand defence ties, set to double trade in 5 yrs",
+      "section": "Trade"
+    },
+    {
+      "headline": "'Rare-earth magnet issue showed how a country can hold us to ransom'",
+      "section": "Growth & Development"
+    },
+    {
+      "headline": "1991 liberalisation made a break with the past: C Rangarajan",
+      "section": "Others",
+      "note": "35 years since liberalisation, ex-RBI governor interview"
     }
   ]
 }

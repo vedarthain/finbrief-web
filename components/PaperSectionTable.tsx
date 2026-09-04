@@ -10,6 +10,8 @@ export interface TableRow {
   headline: string;
   industry?: string | null;
   edition?: string;
+  section?: string;
+  isNotice?: boolean;
 }
 
 const PAGE_SIZE = 16;
@@ -68,11 +70,16 @@ export default function PaperSectionTable({
         <h4
           style={{ fontSize: px(14.5) }}
           className={`flex-1 min-w-0 truncate leading-snug ${
-            active ? "text-violet-800 font-semibold" : "text-gray-800 font-medium"
+            active ? "text-violet-800 font-semibold" : r.isNotice ? "text-gray-500 font-normal" : "text-gray-800 font-medium"
           }`}
         >
           {r.headline}
         </h4>
+        {r.section && (
+          <span className="shrink-0 text-[10px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
+            {r.section}
+          </span>
+        )}
         {r.industry && (
           <span className="shrink-0 text-[10px] font-medium px-1.5 py-0.5 rounded border border-cyan-200 text-cyan-700 bg-cyan-50">
             {r.industry}

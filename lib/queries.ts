@@ -224,6 +224,8 @@ export interface PaperStory {
   summary: string;
   page_number: number | null;
   industry: string | null;
+  is_notice: boolean;
+  importance: number;
 }
 
 export async function getPaperStories(date?: string, edition?: string): Promise<PaperStory[]> {
@@ -236,14 +238,42 @@ export async function getPaperStories(date?: string, edition?: string): Promise<
   }
   const { rows } = await pool.query(
     `
-    SELECT id, edition, paper_date::text, section, headline, summary, page_number, industry
+    SELECT id, edition, paper_date::text, section, headline, summary, page_number, industry, is_notice, importance
     FROM paper_stories
     WHERE ${where}
-    ORDER BY display_order ASC, page_number ASC NULLS LAST, id ASC
+    ORDER BY is_notice ASC, importance DESC, display_order ASC, page_number ASC NULLS LAST, id ASC
     `,
     params
   );
   return rows;
+}
+
+export interface TopStory {
+  headline: string;
+  section: string;
+  note?: string;
+  edition?: string;
+}
+
+// Cross-section "Top Stories" digest, curated at publish time (paper_meta.top_stories) —
+// lets a reader see the day's most important items without opening every section tab.
+// Merged across editions the same way getStocksInFocus is, for the same reason.
+export async function getTopStories(date?: string, edition?: string): Promise<TopStory[]> {
+  const d = date ?? new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+  const params: (string)[] = [d];
+  let where = `paper_date = $1`;
+  if (edition) {
+    params.push(edition);
+    where += ` AND edition = $2`;
+  }
+  const { rows } = await pool.query(
+    `SELECT edition, top_stories FROM paper_meta WHERE ${where}`,
+    params
+  );
+  const multiEdition = rows.length > 1;
+  return rows.flatMap((r) =>
+    (r.top_stories ?? []).map((s: TopStory) => (multiEdition ? { ...s, edition: r.edition } : s))
+  );
 }
 
 export interface StockInFocus {

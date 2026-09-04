@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { PaperStory, StockInFocus } from "@/lib/queries";
+import { PaperStory, StockInFocus, TopStory } from "@/lib/queries";
 import PaperSectionTable, { TableRow } from "./PaperSectionTable";
 
 export function renderSummary(text: string, dimClass: string) {
@@ -23,8 +23,10 @@ export function renderSummary(text: string, dimClass: string) {
 }
 
 const STOCKS_TAB = "Stocks in Focus";
+const TOP_TAB = "Top Stories";
 
 const SECTION_STYLE: Record<string, string> = {
+  [TOP_TAB]:               "text-red-700 bg-red-50",
   "Economy":               "text-teal-600 bg-teal-50",
   "Policy":                "text-sky-600 bg-sky-50",
   "Regulatory":            "text-slate-600 bg-slate-100",
@@ -41,6 +43,7 @@ const SECTION_STYLE: Record<string, string> = {
 };
 
 const SECTION_BAR: Record<string, string> = {
+  [TOP_TAB]:               "bg-red-500",
   "Economy":               "bg-teal-500",
   "Policy":                "bg-sky-500",
   "Regulatory":            "bg-slate-500",
@@ -60,6 +63,7 @@ const SECTION_BAR: Record<string, string> = {
 // ("single") or a group with child leaves ("children"). Groups whose
 // children all end up empty for the day are dropped at render time.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
+  { label: TOP_TAB, single: TOP_TAB },
   { label: "Economy", single: "Economy" },
   { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
   { label: "In Focus", children: ["Sector", STOCKS_TAB] },
@@ -88,11 +92,40 @@ function EditionBadge({ edition }: { edition: string }) {
 export default function PaperTree({
   bySection,
   stocksInFocus,
+  topStories,
 }: {
   bySection: Record<string, PaperStory[]>;
   stocksInFocus: StockInFocus[];
+  topStories: TopStory[];
 }) {
-  const countOf = (key: string) => (key === STOCKS_TAB ? stocksInFocus.length : bySection[key]?.length ?? 0);
+  // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
+  // etc.) are real content but not "news" — keep them out of each section's default
+  // view. getPaperStories already sorts is_notice=false first, so the notices are a
+  // contiguous tail slice per section.
+  const visibleOf = (key: string, includeNotices: boolean) => {
+    const all = bySection[key] ?? [];
+    return includeNotices ? all : all.filter((s) => !s.is_notice);
+  };
+  const noticeCountOf = (key: string) => (bySection[key] ?? []).filter((s) => s.is_notice).length;
+  const countOf = (key: string) =>
+    key === STOCKS_TAB ? stocksInFocus.length : key === TOP_TAB ? topStories.length : visibleOf(key, false).length;
+
+  // ── Global search across every story in every section (and Stocks in Focus) ──
+  const [query, setQuery] = useState("");
+  const searchActive = query.trim().length >= 2;
+  const searchResults = useMemo(() => {
+    if (!searchActive) return [];
+    const q = query.trim().toLowerCase();
+    const matches: (PaperStory & { key: string })[] = [];
+    Object.values(bySection).forEach((rows) => {
+      rows.forEach((s) => {
+        if (s.headline.toLowerCase().includes(q) || s.summary.toLowerCase().includes(q)) {
+          matches.push({ ...s, key: `search-${s.id}` });
+        }
+      });
+    });
+    return matches;
+  }, [query, searchActive, bySection]);
 
   const resolvedGroups = GROUPS
     .map((g) => {
@@ -117,8 +150,9 @@ export default function PaperTree({
     const editions = new Set<string>();
     Object.values(bySection).forEach((rows) => rows.forEach((r) => editions.add(r.edition)));
     stocksInFocus.forEach((s) => s.edition && editions.add(s.edition));
+    topStories.forEach((s) => s.edition && editions.add(s.edition));
     return editions.size > 1;
-  }, [bySection, stocksInFocus]);
+  }, [bySection, stocksInFocus, topStories]);
 
   const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
   const [focusIndex, setFocusIndex] = useState(0);
@@ -159,19 +193,46 @@ export default function PaperTree({
   const fontScale = FONT_STEPS[fontStepIdx];
   const px = (base: number) => `${Math.round(base * fontScale * 10) / 10}px`;
 
-  const rows = activeLeaf && activeLeaf !== STOCKS_TAB ? bySection[activeLeaf] ?? [] : [];
-  const itemCount = activeLeaf === STOCKS_TAB ? stocksInFocus.length : rows.length;
+  // Per-section "show routine notices" toggle — off by default everywhere.
+  const [noticesShownFor, setNoticesShownFor] = useState<Set<string>>(new Set());
+  const showNoticesForActive = activeLeaf ? noticesShownFor.has(activeLeaf) : false;
+  function toggleNotices(leaf: string) {
+    setNoticesShownFor((prev) => {
+      const next = new Set(prev);
+      if (next.has(leaf)) next.delete(leaf); else next.add(leaf);
+      return next;
+    });
+  }
 
-  // Every section — including Stocks in Focus — renders through the same
-  // generic table component, so build a uniform row shape for whichever
-  // data source is active.
-  const tableRows: TableRow[] = activeLeaf === STOCKS_TAB
+  const isSpecialTab = activeLeaf === STOCKS_TAB || activeLeaf === TOP_TAB;
+  const rows = !searchActive && activeLeaf && !isSpecialTab ? visibleOf(activeLeaf, showNoticesForActive) : [];
+  const itemCount = searchActive
+    ? searchResults.length
+    : activeLeaf === STOCKS_TAB
+    ? stocksInFocus.length
+    : activeLeaf === TOP_TAB
+    ? topStories.length
+    : rows.length;
+
+  // Every section — including Stocks in Focus, Top Stories and search results —
+  // renders through the same generic table component, so build a uniform row
+  // shape for whichever data source is active.
+  const tableRows: TableRow[] = searchActive
+    ? searchResults.map((s) => ({ key: s.key, headline: s.headline, industry: s.industry, edition: s.edition, section: s.section, isNotice: s.is_notice }))
+    : activeLeaf === STOCKS_TAB
     ? stocksInFocus.map((s, i) => ({ key: `sif-${i}`, headline: s.name, edition: s.edition }))
-    : rows.map((s) => ({ key: s.id, headline: s.headline, industry: s.industry, edition: s.edition }));
+    : activeLeaf === TOP_TAB
+    ? topStories.map((s, i) => ({ key: `top-${i}`, headline: s.headline, edition: s.edition, section: s.section }))
+    : rows.map((s) => ({ key: s.id, headline: s.headline, industry: s.industry, edition: s.edition, isNotice: s.is_notice }));
 
   const selIndex = Math.min(Math.max(focusIndex, 0), Math.max(tableRows.length - 1, 0));
-  const selectedStory = activeLeaf !== STOCKS_TAB ? rows[selIndex] ?? null : null;
-  const selectedStock = activeLeaf === STOCKS_TAB ? stocksInFocus[selIndex] ?? null : null;
+  const selectedStory = searchActive
+    ? searchResults[selIndex] ?? null
+    : !isSpecialTab
+    ? rows[selIndex] ?? null
+    : null;
+  const selectedStock = !searchActive && activeLeaf === STOCKS_TAB ? stocksInFocus[selIndex] ?? null : null;
+  const selectedTop = !searchActive && activeLeaf === TOP_TAB ? topStories[selIndex] ?? null : null;
 
   function selectLeaf(leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
@@ -234,8 +295,27 @@ export default function PaperTree({
 
   return (
     <div className="flex flex-col gap-1.5">
-      {/* ── Font-size control ──────────────────────────────────────────── */}
-      <div className="flex items-center justify-end gap-1">
+      {/* ── Search + font-size control ───────────────────────────────────── */}
+      <div className="flex items-center justify-between gap-2 flex-wrap">
+        <div className="relative w-full sm:w-72">
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search all stories…"
+            className="w-full text-[13px] pl-3 pr-7 py-1.5 rounded-lg border border-gray-200 bg-white text-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          />
+          {query && (
+            <button
+              onClick={() => setQuery("")}
+              aria-label="Clear search"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-[13px]"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+        <div className="flex items-center gap-1">
         <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
         <button
           onClick={() => bumpFont(-1)}
@@ -253,6 +333,7 @@ export default function PaperTree({
         >
           A+
         </button>
+        </div>
       </div>
       {/* items-stretch (not items-start) on mobile: in the flex-col layout this is
           the CROSS axis, so it's what makes the story-list column fill the full
@@ -294,25 +375,44 @@ export default function PaperTree({
       {/* ── Right: paginated headline table + separate detail box below ─── */}
       <div className="w-full flex-1 min-w-0 flex flex-col gap-3">
         <div className="rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
-          {activeGroup && (
-            <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
-              {activeGroup.resolvedChildren.map((leaf) => (
-                <button
-                  key={leaf}
-                  onClick={() => selectLeaf(leaf)}
-                  className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
-                    activeLeaf === leaf
-                      ? SECTION_STYLE[leaf] ?? "text-gray-700 bg-gray-100"
-                      : "text-gray-400 hover:bg-gray-50"
-                  }`}
-                >
-                  {leaf}
-                  <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
-                    {countOf(leaf)}
-                  </span>
-                </button>
-              ))}
+          {searchActive ? (
+            <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100">
+              <span className="text-[12px] font-semibold tracking-wide uppercase text-gray-700">
+                Search results
+              </span>
+              <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70 text-gray-400">
+                {searchResults.length}
+              </span>
             </div>
+          ) : (
+            activeGroup && (
+              <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
+                {activeGroup.resolvedChildren.map((leaf) => (
+                  <button
+                    key={leaf}
+                    onClick={() => selectLeaf(leaf)}
+                    className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
+                      activeLeaf === leaf
+                        ? SECTION_STYLE[leaf] ?? "text-gray-700 bg-gray-100"
+                        : "text-gray-400 hover:bg-gray-50"
+                    }`}
+                  >
+                    {leaf}
+                    <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
+                      {countOf(leaf)}
+                    </span>
+                  </button>
+                ))}
+                {activeLeaf && noticeCountOf(activeLeaf) > 0 && (
+                  <button
+                    onClick={() => toggleNotices(activeLeaf)}
+                    className="ml-auto text-[11px] font-medium text-gray-400 hover:text-gray-600 underline decoration-dotted underline-offset-2"
+                  >
+                    {showNoticesForActive ? "Hide" : "Show"} {noticeCountOf(activeLeaf)} routine notices
+                  </button>
+                )}
+              </div>
+            )
           )}
           <PaperSectionTable
             rows={tableRows}
@@ -323,7 +423,7 @@ export default function PaperTree({
           />
         </div>
 
-        {(selectedStory || selectedStock) && (
+        {(selectedStory || selectedStock || selectedTop) && (
           <div className="rounded-lg bg-white border border-gray-200 p-4 shadow-sm">
             {selectedStory && (
               <>
@@ -331,6 +431,11 @@ export default function PaperTree({
                   <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
                     {selectedStory.headline}
                   </h3>
+                  {searchActive && (
+                    <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
+                      {selectedStory.section}
+                    </span>
+                  )}
                   {selectedStory.industry && (
                     <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-cyan-200 text-cyan-700 bg-cyan-50">
                       {selectedStory.industry}
@@ -343,6 +448,24 @@ export default function PaperTree({
                 </p>
                 {selectedStory.page_number != null && (
                   <p className="text-[13px] text-gray-400 mt-2">Page {selectedStory.page_number}</p>
+                )}
+              </>
+            )}
+            {selectedTop && (
+              <>
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                  <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
+                    {selectedTop.headline}
+                  </h3>
+                  <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
+                    {selectedTop.section}
+                  </span>
+                  {multiEdition && selectedTop.edition && <EditionBadge edition={selectedTop.edition} />}
+                </div>
+                {selectedTop.note && (
+                  <p style={{ fontSize: px(15.5) }} className="leading-relaxed text-gray-700">
+                    {selectedTop.note}
+                  </p>
                 )}
               </>
             )}
