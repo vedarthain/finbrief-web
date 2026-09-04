@@ -1,0 +1,726 @@
+{
+  "edition": "Mumbai",
+  "paper_date": "2026-09-04",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "RBI meets bankers amid banking-system liquidity glut",
+      "summary": "[[RBI]] meets bankers as banking-system liquidity glut deepens. Surplus liquidity has pressured short-term rates lower; RBI officials discussed absorption tools with bank treasury heads. Move follows months of surplus infusion via OMOs and FX operations.",
+      "page_number": 1
+    },
+    {
+      "section": "Economy",
+      "headline": "India a trusted investment destination, says Sitharaman",
+      "summary": "India is a trusted investment destination, says finance minister. FM Sitharaman cited macro stability, reform continuity and expanding manufacturing base as draws for global capital. Remarks made at an investor-facing forum in Mumbai.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "NK Singh panel proposes new GDP base-year series",
+      "summary": "NK Singh-headed panel moots a new GDP base-year series to better capture the digital and services economy. Panel flagged data gaps in informal-sector measurement. Recommendation likely to feed into MoSPI's next base revision.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "Private capex overtakes government capex as growth driver",
+      "summary": "Private capex overtakes government capex push as the primary investment driver, per new data cited in the paper. Multi-year public capital-expenditure ramp-up is now crowding in private investment across manufacturing and infrastructure.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "Data centres to add just 0.13% to GDP: Moody's",
+      "summary": "Data centres will add just 0.13% to India's GDP by FY30, says Moody's. Report tempers expectations around the AI/data-centre capex boom's macro impact despite heavy corporate investment announcements.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "Retail sugar prices ease on higher domestic supply",
+      "summary": "Retail sugar prices ease on higher domestic supply and improved crushing estimates for the new season. Traders expect prices to stay soft through the festive quarter.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "Crude oil import basket nears $100 a barrel",
+      "summary": "India's crude oil import basket price nears $100 a barrel, adding to import-bill and inflation concerns. Rise tracks global crude firming amid Middle East tensions.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "RBI accounting norms deprive government of full surplus",
+      "summary": "Opinion piece argues [[RBI]]'s accounting framework deprives the government of its full transferable surplus. Analysis contends conservative provisioning norms understate distributable profits versus global central-bank peers.",
+      "page_number": 8
+    },
+    {
+      "section": "Policy",
+      "headline": "Goyal touts tariff advantage from bilateral trade pacts",
+      "summary": "Commerce minister Goyal touts tariff advantage India gains under new bilateral trade agreements (BTAs). He said preferential access under recent pacts positions Indian exporters ahead of competing nations facing higher US tariffs.",
+      "page_number": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "PM exhorts carmakers to expand global export presence",
+      "summary": "PM exhorts carmakers to expand global presence and use India as an export manufacturing base. Comments made at an industry event alongside domestic demand push for the festive season.",
+      "page_number": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sebi may review index-linked product methodology",
+      "summary": "[[Sebi]] may review the methodology behind index-linked product construction after recent market volatility. Review follows scrutiny of derivative-linked products and index rebalancing practices.",
+      "page_number": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "India stalls Alipay+ cross-border payment network rollout",
+      "summary": "India stalls rollout of [[Alipay+]]'s cross-border payment network amid regulatory and security concerns. Move follows heightened scrutiny of Chinese-linked payment platforms operating in India.",
+      "page_number": 6
+    },
+    {
+      "section": "Regulatory",
+      "headline": "FSSAI takes action against CG Foods over food safety",
+      "summary": "[[FSSAI]] takes regulatory action against [[CG Foods]] over food-safety compliance issues. Enforcement flagged at a facility inspection; company disputes the findings.",
+      "page_number": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Tata Trusts vindicated in 1989 share-transfer probe",
+      "summary": "[[Tata Trusts]] says its stand is vindicated in the long-running probe into a 1989 share-transfer transaction. Development closes out one thread of the ongoing Tata group governance dispute.",
+      "page_number": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Bharat NCAP 2.0 crash-test rating to launch October 2027",
+      "summary": "Bharat NCAP 2.0, the upgraded crash-test rating programme, will launch in October 2027, says minister Gadkari. New protocol will raise safety-testing thresholds for passenger vehicles sold in India.",
+      "page_number": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Government weighs Delhi-style curbs on ageing petrol vehicles",
+      "summary": "Government weighs Delhi-style curbs on ageing petrol-engine vehicles in other major cities to cut emissions. Proposal follows Delhi's existing age-based restriction on older vehicles.",
+      "page_number": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Ishaan Infrastructures faces open-offer notice under Sebi rules",
+      "summary": "[[Ishaan Infrastructures and Shelters]] is subject to an open-offer notice under Sebi's takeover regulations. Filing discloses acquirer details and offer price for public shareholders.",
+      "page_number": 38
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Colinz Laboratories shareholders face open-offer advertisement",
+      "summary": "[[Colinz Laboratories]] shareholders face a post-offer open-offer advertisement from acquirers [[Annjana Dugar]], [[Likhitha Dugar]] and [[Antariksh Dugar]] acting in concert. Acquirers picked up roughly 15% stake pre-offer and made an open offer for an additional 26% under Sebi SAST rules; offer period ran August 7-20, 2026.",
+      "page_number": 38
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Jet Airways lenders issue fresh e-auction sale notice",
+      "summary": "Lenders to [[Jet Airways]] issue a fresh e-auction sale notice for the grounded airline's assets under insolvency proceedings. Notice covers remaining aircraft-related and other assets pending liquidation.",
+      "page_number": 40
+    },
+    {
+      "section": "Sector",
+      "headline": "IEX electricity trading volume grows 20% on festive demand",
+      "summary": "Electricity trading volume on [[IEX]] grows 20% as short-term power demand rises ahead of the festive season. Spot-market prices remained range-bound despite the volume jump.",
+      "page_number": 5,
+      "industry": "Power"
+    },
+    {
+      "section": "Sector",
+      "headline": "Pharma exporters target $1.4 billion in incremental exports",
+      "summary": "India's pharma exporters body targets $1.4 billion in incremental exports this fiscal, backed by new market approvals. Body flagged US and African markets as key growth drivers.",
+      "page_number": 5,
+      "industry": "Pharmaceuticals"
+    },
+    {
+      "section": "Sector",
+      "headline": "Industry urges India to build indigenous battery-storage base",
+      "summary": "Industry leaders urge government to prioritise India's indigenous battery-storage manufacturing base. Call comes as import dependence on Chinese cells continues to weigh on the sector's cost competitiveness.",
+      "page_number": 5,
+      "industry": "Energy Storage"
+    },
+    {
+      "section": "Sector",
+      "headline": "Carmakers ramp up production for festive season: SIAM",
+      "summary": "Carmakers ramp up production capacity for festive-season demand, says [[SIAM]]. Industry body expects dealer inventories to rebuild ahead of the upcoming festive buying window.",
+      "page_number": 5,
+      "industry": "Automobiles"
+    },
+    {
+      "section": "Sector",
+      "headline": "ISRO, Tea Board, NIT Rourkela build AI satellite for tea crops",
+      "summary": "[[ISRO]], the Tea Board and [[NIT Rourkela]] jointly develop an AI-based satellite system for tea-crop monitoring. Pilot aims to improve yield forecasting and plantation health tracking in tea-growing regions.",
+      "page_number": 5,
+      "industry": "Agritech"
+    },
+    {
+      "section": "Sector",
+      "headline": "SUV buyers still favour manual transmissions in India",
+      "summary": "SUV buyers in India continue to favour manual transmissions over automatics, contrary to global trend. Survey data shows manual variants still account for the bulk of compact-SUV sales.",
+      "page_number": 24,
+      "industry": "Automobiles"
+    },
+    {
+      "section": "Sector",
+      "headline": "India's micro-drama market to grow tenfold by FY32: Redseer",
+      "summary": "India's micro-drama market will grow tenfold by FY32, projects [[Redseer]]. Short-form vertical video content is emerging as a fast-growing mobile-entertainment category.",
+      "page_number": 24,
+      "industry": "Media & Entertainment"
+    },
+    {
+      "section": "Sector",
+      "headline": "Advertisers plan higher festive-season ad spends this year",
+      "summary": "Advertisers plan to bring back festive-season sparkle with higher ad spends this year. Category heads expect double-digit growth in festive ad budgets across TV and digital.",
+      "page_number": 9,
+      "industry": "Advertising"
+    },
+    {
+      "section": "Sector",
+      "headline": "Independent creative agencies gain ground on ad networks",
+      "summary": "Independent creative agencies gain ground against large holding-company networks in India's advertising business. Trend reflects clients' growing preference for nimbler, specialised shops.",
+      "page_number": 9,
+      "industry": "Advertising"
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Persistent Systems plans $1.25-billion fundraise for acquisitions",
+      "summary": "[[Persistent Systems]] plans a $1.25-billion fundraise to fund acquisitions and expansion. Fundraise size marks one of the IT sector's larger capital-raising moves this year.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "United Breweries, Heineken feature in ownership-structure reports",
+      "summary": "[[United Breweries]] and [[Heineken]] discussions feature in reports on the beer maker's ownership structure. Development ties into ongoing strategic review of the India beer business.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Air India nears Rs 10,000-crore Tata Sons, SIA funding",
+      "summary": "[[Air India]] is close to securing ₹10,000 crore in funding from [[Tata Sons]] and [[Singapore Airlines]]. Capital infusion is aimed at supporting the airline's fleet expansion and turnaround plan.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "SpiceJet inducts 20 additional aircraft to rebuild fleet",
+      "summary": "[[SpiceJet]] inducts 20 additional aircraft into its fleet as it rebuilds capacity. Move follows a period of fleet contraction and financial restructuring at the airline.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Adani Group eyes expansion in real estate business",
+      "summary": "[[Adani Group]] eyes expansion in the real-estate and property business. Group is evaluating new project launches across residential and commercial segments.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Afcom proposes buying four Boeing freighter aircraft",
+      "summary": "[[Afcom]] proposes buying four Boeing freighter aircraft to expand cargo capacity. Deal would add dedicated freighter capability to the operator's fleet.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Shiseido deepens India beauty-market push with new launches",
+      "summary": "Japan's [[Shiseido]] deepens its India beauty-market push with new product launches and retail expansion. Company is targeting India's growing premium beauty and skincare segment.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "SBI mobilises $10 billion via FCNR(B) deposits",
+      "summary": "[[SBI]] mobilises $10 billion via FCNR(B) deposits, among its largest such fundraises. Inflows are seen supporting the rupee and gilt markets amid global rate uncertainty.",
+      "page_number": 6
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Tips Music announces up to Rs 44.5-crore buyback",
+      "summary": "[[Tips Music]] announces a buyback of equity shares worth up to ₹44.5 crore at a maximum price of ₹750 per share from the open market. Buyback opens September 9, 2026 and closes within 66 working days; promoters will not participate.",
+      "page_number": 5
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "OpenAI names Sandhya Devanathan as India vice-president",
+      "summary": "[[OpenAI]] names Sandhya Devanathan as its India vice-president. Appointment underscores OpenAI's push to deepen its presence and enterprise partnerships in the Indian market.",
+      "page_number": 5
+    },
+    {
+      "section": "IPO",
+      "headline": "Prasol Chemicals sets price band for September 8 IPO",
+      "summary": "[[Prasol Chemicals]] sets a price band of ₹643-676 for its IPO opening September 8 and closing September 10. Specialty chemicals maker's anchor bidding is scheduled for September 7.",
+      "page_number": 6
+    },
+    {
+      "section": "IPO",
+      "headline": "Deepa Jewellers IPO sees strong demand on Day 2",
+      "summary": "[[Deepa Jewellers]] IPO subscription update shows strong demand as bidding progresses toward closing. Company had been subscribed 3.61 times through Day 2 as of the prior session.",
+      "page_number": 6
+    },
+    {
+      "section": "IPO",
+      "headline": "Rentomojo sets price band for IPO opening September 8",
+      "summary": "[[Rentomojo]] sets a price band of ₹384-404 for its IPO opening September 8 and closing September 11. Furniture and appliance rental platform's issue includes both fresh issue and offer-for-sale components.",
+      "page_number": 12
+    },
+    {
+      "section": "IPO",
+      "headline": "Manipal Payment and Identity Solutions sets IPO price band",
+      "summary": "[[Manipal Payment and Identity Solutions]] sets a price band of ₹322-339 for its IPO opening September 8 and closing September 11. Company operates in the payments and identity-solutions technology space.",
+      "page_number": 16
+    },
+    {
+      "section": "IPO",
+      "headline": "LCC Projects sets price band for SME IPO",
+      "summary": "[[LCC Projects]] sets a price band of ₹139-146 for its IPO opening September 8 and closing September 11. SME-platform issue from the infrastructure and construction-projects company.",
+      "page_number": 20
+    },
+    {
+      "section": "IPO",
+      "headline": "Karamtara Engineering sets price band for September IPO",
+      "summary": "[[Karamtara Engineering]] sets a price band of ₹241-254 for its IPO opening September 8 and closing September 11. Engineering components maker's issue targets both institutional and retail investors.",
+      "page_number": 26
+    },
+    {
+      "section": "IPO",
+      "headline": "Priority Jewels completes allotment ahead of SME listing",
+      "summary": "[[Priority Jewels]] completes allotment finalisation ahead of its listing today on the SME platform. Issue drew strong retail and HNI demand during bidding.",
+      "page_number": 33
+    },
+    {
+      "section": "IPO",
+      "headline": "CSML lists on BSE SME platform today",
+      "summary": "[[Complete Sports and Management India]] (CSML) lists on the BSE SME platform today, September 4, 2026, following completed allotment. Company operates in the sports-management and events services space.",
+      "page_number": 34
+    },
+    {
+      "section": "IPO",
+      "headline": "ESDS Software Solution lists on main board at Rs 429",
+      "summary": "[[ESDS Software Solution]] lists on the main board today, September 4, 2026, at an issue price of ₹429 per share. Cloud infrastructure and data-centre services company's listing follows a strong subscription during bidding.",
+      "page_number": 36
+    },
+    {
+      "section": "IPO",
+      "headline": "Vinod Texworld launches fixed-price SME IPO at Rs 94",
+      "summary": "[[Vinod Texworld]] launches a fixed-price SME IPO of ₹94 per share, opening September 9 and closing September 11, 2026 on NSE Emerge. Textile fabric processor's issue comprises a fresh issue of ₹42.83 crore.",
+      "page_number": 42
+    },
+    {
+      "section": "Market",
+      "headline": "Sensex swings nearly 4,000 points in two minutes",
+      "summary": "The Sensex swings nearly 4,000 points within a two-minute window during intraday trade. Sharp volatility spike prompted scrutiny of possible algorithmic-trading triggers behind the move.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "August bulk, block-deal value hits 26-month high",
+      "summary": "August's bulk and block-deal value hits a 26-month high on Indian exchanges. Surge reflects heavy institutional and promoter-level transactions during the month.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "FCNR(B) inflows support gilt yields and the rupee",
+      "summary": "Inflows via FCNR(B) deposits support gilt yields and the rupee amid global rate volatility. Banks' dollar mobilisation drive is helping cushion India's external funding position.",
+      "page_number": 6
+    },
+    {
+      "section": "Trade",
+      "headline": "Low-margin export shipments show signs of revival",
+      "summary": "Low-margin export shipments show signs of revival after a prolonged slowdown. Exporters cite improving order books in low-value-add categories despite thin margins.",
+      "page_number": 10
+    },
+    {
+      "section": "Trade",
+      "headline": "India-Chile CEPA talks progress toward finalisation",
+      "summary": "India-Chile Comprehensive Economic Partnership Agreement (CEPA) talks progress toward finalisation. Deal would expand preferential market access for both countries' exporters.",
+      "page_number": 10
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Hiring activity picks up in August across key sectors",
+      "summary": "Hiring activity picks up in August across key sectors, per new employment data. Report points to improved job-market momentum heading into the festive quarter.",
+      "page_number": 10
+    },
+    {
+      "section": "International News",
+      "headline": "Iran conflict escalation pushes civilian death toll higher",
+      "summary": "Escalation in the Iran conflict pushes the civilian death toll higher. International pressure mounts for a ceasefire as the situation deteriorates further.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Oil prices hit fresh six-week highs on Mideast tensions",
+      "summary": "Oil prices hit fresh six-week highs amid escalating Middle East tensions. Crude benchmarks extended gains on supply-disruption concerns.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Wall Street climbs on renewed Fed rate-cut bets",
+      "summary": "Wall Street indexes climb on renewed bets of a Federal Reserve rate cut. Gains were broad-based across major US benchmarks.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "US official Lutnick apologises for civilian conflict deaths",
+      "summary": "US commerce official Lutnick apologises for civilian deaths linked to the ongoing conflict. Statement follows international criticism over the mounting casualty toll.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Putin cites chance for peace deal amid diplomacy",
+      "summary": "Russian President Putin cites a chance for a peace deal amid ongoing diplomatic efforts. Remarks come as international mediators push for renewed ceasefire talks.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "US trade gap widens 24% as imports outpace exports",
+      "summary": "US trade gap widens 24% as imports outpace export growth. Widening deficit adds to trade-policy debate ahead of upcoming tariff decisions.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Tech professionals increasingly flock to China",
+      "summary": "Tech professionals increasingly flock to China amid shifting global talent flows. Trend reflects growing opportunities in China's tech and manufacturing sectors.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Apple faces $2.7-billion UK App Store lawsuit",
+      "summary": "[[Apple]] faces a $2.7-billion lawsuit in the UK over alleged anti-competitive App Store practices. Case adds to Apple's mounting regulatory and legal challenges in Europe.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Airbus flags quality issues with A330neo programme",
+      "summary": "[[Airbus]] flags quality issues with its A330neo aircraft programme. Manufacturer is working with airline customers to address the identified defects.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "King Charles to host Sultan of Oman in UK",
+      "summary": "King Charles to host the Sultan of Oman in a state visit to the UK. Visit is expected to focus on bilateral trade and investment ties.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Nepal flood death toll rises to 1,259",
+      "summary": "Nepal flood death toll rises to 1,259 as families conduct last rites for victims. Nepal separately seeks compensation for flood damage from neighbouring authorities.",
+      "page_number": 24
+    },
+    {
+      "section": "Others",
+      "headline": "India's Common Application System needs a reset: opinion",
+      "summary": "Opinion piece argues India's Common Application System (CAS) for higher education admissions needs a reset. Analysis flags implementation gaps since the system's rollout.",
+      "page_number": 8
+    },
+    {
+      "section": "Others",
+      "headline": "Beyond the headline 7.8% GDP growth number: opinion",
+      "summary": "Opinion piece looks beyond the headline 7.8% GDP growth figure to examine underlying sectoral trends. Analysis questions the durability of the growth print given uneven demand signals.",
+      "page_number": 8
+    },
+    {
+      "section": "Others",
+      "headline": "Pushback grows against AI-generated songs in music industry",
+      "summary": "Pushback grows against AI-generated songs in the music industry. Artists and labels raise concerns over copyright and creative-attribution issues.",
+      "page_number": 8
+    },
+    {
+      "section": "Others",
+      "headline": "Delhi court grants bail to Satyendar Jain",
+      "summary": "Delhi court grants bail to former minister Satyendar Jain. Order comes in one of the pending cases against him.",
+      "page_number": 10
+    },
+    {
+      "section": "Others",
+      "headline": "Bengal CM warns schools over compliance directive",
+      "summary": "West Bengal chief minister issues a warning to schools over a compliance directive. Statement addresses schools' handling of a state-mandated requirement.",
+      "page_number": 10
+    }
+  ],
+  "stocksInFocus": [
+    {
+      "name": "Air India",
+      "note": "Close to securing ₹10,000 crore funding from Tata Sons and Singapore Airlines for fleet and turnaround plan"
+    },
+    {
+      "name": "Persistent Systems",
+      "note": "Planning $1.25-billion fundraise to fund acquisitions and expansion"
+    },
+    {
+      "name": "Tips Music",
+      "note": "Board approved buyback of up to ₹44.5 crore worth of shares at max price ₹750; opens September 9"
+    },
+    {
+      "name": "Swiggy",
+      "note": "Forays into travel-booking segment, expanding beyond food delivery and quick commerce"
+    },
+    {
+      "name": "SBI",
+      "note": "Mobilised $10 billion via FCNR(B) deposits, among its largest such fundraises"
+    },
+    {
+      "name": "ESDS Software Solution",
+      "note": "Lists on main board today at issue price of ₹429/share"
+    },
+    {
+      "name": "Carrefour",
+      "note": "Evaluating smaller-format store model for India expansion"
+    },
+    {
+      "name": "Nvidia",
+      "note": "To acquire Hugging Face for $13 billion, expanding AI software capabilities"
+    },
+    {
+      "name": "SpiceJet",
+      "note": "Inducts 20 additional aircraft as it rebuilds fleet capacity"
+    },
+    {
+      "name": "United Breweries",
+      "note": "Featured in reports on Heineken ownership discussions for the India beer business"
+    }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Kanohar Electricals",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 601,
+      "issue_price_high": 632,
+      "open_date": "2026-09-08",
+      "close_date": "2026-09-10",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Transformer manufacturer; anchor bidding Sept 7, 2026"
+    },
+    {
+      "company_name": "Asset Reconstruction Company (India)",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 132,
+      "issue_price_high": 139,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Branded Arcil; pure offer-for-sale; anchor bidding Sept 8, 2026"
+    },
+    {
+      "company_name": "Glass Wall Systems (India)",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 172,
+      "issue_price_high": 182,
+      "open_date": "2026-09-08",
+      "close_date": "2026-09-10",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Façade-solutions company; anchor bidding Sept 7, 2026"
+    },
+    {
+      "company_name": "Sumax Engineering",
+      "ticker": null,
+      "exchange": "NSE SME",
+      "issue_price_low": 101,
+      "issue_price_high": 101,
+      "open_date": "2026-08-25",
+      "close_date": "2026-08-28",
+      "listing_date": "2026-09-02",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "Fixed-price SME IPO; subscribed 152.29x"
+    },
+    {
+      "company_name": "Vishal Nirmiti",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "DRHP addendum filed; price band not yet announced"
+    },
+    {
+      "company_name": "Kwick Forensic Solutions",
+      "ticker": null,
+      "exchange": "NSE SME",
+      "issue_price_low": 90,
+      "issue_price_high": 90,
+      "open_date": "2026-08-27",
+      "close_date": "2026-08-31",
+      "listing_date": "2026-09-03",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "Forensic solutions company; subscribed 276.93x overall"
+    },
+    {
+      "company_name": "Lumino Industries",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 82,
+      "issue_price_high": 82,
+      "open_date": "2026-08-27",
+      "close_date": "2026-08-31",
+      "listing_date": "2026-09-03",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "Aluminium conductor and power-cable maker; subscribed 88.25x"
+    },
+    {
+      "company_name": "Mahanadi Coalfields",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "PSU coal miner; DRHP filed; offer for sale via Ministry of Coal/Coal India"
+    },
+    {
+      "company_name": "Prasol Chemicals",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 643,
+      "issue_price_high": 676,
+      "open_date": "2026-09-08",
+      "close_date": "2026-09-10",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Specialty chemicals (acetone/phosphorous-based); anchor bidding Sept 7, 2026"
+    },
+    {
+      "company_name": "Purple Style Labs",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "closed",
+      "notes": "IPO subscribed 1.29x on final bidding day"
+    },
+    {
+      "company_name": "Deepa Jewellers",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "Subscription progressing; 3.61x on Day 2 of bidding per prior update, exact Sept 4 figure unverified"
+    },
+    {
+      "company_name": "Rentomojo",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 384,
+      "issue_price_high": 404,
+      "open_date": "2026-09-08",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Furniture/appliance rental platform"
+    },
+    {
+      "company_name": "Manipal Payment and Identity Solutions",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 322,
+      "issue_price_high": 339,
+      "open_date": "2026-09-08",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Payments and identity-solutions technology company"
+    },
+    {
+      "company_name": "LCC Projects",
+      "ticker": null,
+      "exchange": "NSE SME",
+      "issue_price_low": 139,
+      "issue_price_high": 146,
+      "open_date": "2026-09-08",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Infrastructure/construction projects company"
+    },
+    {
+      "company_name": "Karamtara Engineering",
+      "ticker": null,
+      "exchange": "BSE/NSE",
+      "issue_price_low": 241,
+      "issue_price_high": 254,
+      "open_date": "2026-09-08",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Engineering components manufacturer"
+    },
+    {
+      "company_name": "Priority Jewels",
+      "ticker": null,
+      "exchange": "SME platform",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-04",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "Allotment finalized; lists on SME platform today"
+    },
+    {
+      "company_name": "Complete Sports and Management India",
+      "ticker": "CSML",
+      "exchange": "BSE SME",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-04",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "Sports-management and events services company; allotment completed"
+    },
+    {
+      "company_name": "ESDS Software Solution",
+      "ticker": null,
+      "exchange": "BSE/NSE main board",
+      "issue_price_low": 429,
+      "issue_price_high": 429,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-04",
+      "listing_price": 429,
+      "status": "listed",
+      "notes": "Cloud infrastructure/data-centre services company; main board listing"
+    },
+    {
+      "company_name": "Vinod Texworld",
+      "ticker": null,
+      "exchange": "NSE Emerge",
+      "issue_price_low": 94,
+      "issue_price_high": 94,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Fixed-price SME IPO; textile fabric processor; fresh issue of ₹42.83 crore"
+    }
+  ]
+}
