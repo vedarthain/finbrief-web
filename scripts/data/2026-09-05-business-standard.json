@@ -1,0 +1,675 @@
+{
+  "edition": "Business Standard",
+  "paper_date": "2026-09-05",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "30-day VRRR sharpens odds of rate hike in Oct",
+      "summary": "The RBI's 30-day variable rate reverse repo (VRRR) auction for ₹7 trillion, announced Monday with the reversal date coinciding with the October 5-7 policy review, has raised the probability of a rate hike at the next MPC meeting. FX reserves swelled to a record $740.8 billion for the week ended August 28, driven by a $136 billion rise in foreign currency assets under the RBI's concessional swap window opened June 8. Liquidity surplus in the banking system hit ₹10.3 trillion on Thursday, the highest since July, and banks expect up to 50 bps reduction in funding costs on the glut.",
+      "page_number": 1,
+      "importance": 5
+    },
+    {
+      "section": "Sector",
+      "headline": "Indian miners building critical assets in Africa",
+      "summary": "An army of little-known Indian and Indian-origin miners is building mineral assets across resource-rich African countries such as the Democratic Republic of Congo, Tanzania, Zambia and Mozambique, in a strategy that stands in contrast to state-backed Chinese acquisitions. [[Sakariya Mines & Minerals]] is developing Tanzania's fifth-largest flake graphite deposit, planning to invest $150-200 million in its first development phase. [[Punia Kasese Mining]], a joint venture between a Ugandan construction group and the Congolese state-owned mining company [[SAKIMA]], holds mining assets in tin, tantalum and tungsten. [[Deccan Gold Mines]] is exploring lithium and tantalum assets in Mozambique and Spain.",
+      "page_number": 1,
+      "industry": "Mining & Minerals",
+      "importance": 4
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Banks that neglect customer service, succession planning risk market cap hit: Ex-HDFC Bank chair",
+      "summary": "Former [[HDFC Bank]] chairman Atanu Chakraborty, who resigned abruptly in March citing concerns over \"certain practices\" at the private lender, said banks across the industry — not just private ones — that fail on customer service and succession planning will lose out on market capitalisation. The bank is expected to name a successor to MD and CEO Sashidhar Jagdishan, who informed the board in August he would not seek re-appointment after his six-year tenure ends October 26.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Silver screen: A split picture — 35 years of liberalisation",
+      "summary": "The rise of multiplexes, enabled by 1991 liberalisation reforms that allowed foreign investment and technology into distribution, has been the biggest catalyst determining what movies India makes and watches. Shah Rukh Khan's career trajectory — from single-screen releases capped at low ticket prices to the multiplex era of the 2000s — illustrates how deregulation opened India's cinema business to FDI, satellite TV and eventually streaming, which now accounts for over 240 billion viewing minutes a year against 12,000 single screens.",
+      "page_number": 1,
+      "importance": 2
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "HUL aims to chase premiumisation, enter new spaces",
+      "summary": "[[Hindustan Unilever]] is shifting strategy from \"Winning in Many Indias\" to \"Winning in New India\", aiming to raise consumption by offering more premium benefits, bringing in more users and entering new categories, HUL said at its investor Capital Markets Day. The premium segment is growing 1.3 times as fast as regular products; HUL is investing over 60 per cent more in digital media spend and will use AI to increase R&D for faster innovation, deeper market penetration and go-to-market planning.",
+      "page_number": 2,
+      "importance": 4
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "TaMo PV grows South Africa portfolio with Nexon rollout",
+      "summary": "[[Tata Motors Passenger Vehicles]] launched the Nexon, branded as Osprey, in South Africa — its fifth PV offering there alongside the Tiago, Punch, Curvv and Harrier — as it steps up exports which nearly quadrupled year-on-year in FY26 to over 10,000 units. The company is targeting 70-100 per cent growth this year in South Africa, its largest overseas export market, and expects exports across five markets to cross 20,000 units in FY27.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Moopen family raises stake in Aster DM in ₹350 cr deal",
+      "summary": "The founding family of [[Aster DM Quality Care]] has increased its stake to 24.58 per cent, acquiring shares worth about ₹350 crore from Carlyle-backed [[Centella Mauritius Holdings]] at ₹760 apiece — an aggregate consideration of ₹350.34 crore. The transaction increases the family's economic interest two months after the merger of Aster DM Healthcare and Quality Care India became effective, forming a combined entity spanning Aster, CARE Hospitals, Evercare and KIMS-Health with 39 hospitals across 28 cities.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Moustache appoints PwC for raising ₹30-35 crore from family offices",
+      "summary": "Jaipur-headquartered hospitality chain [[India Hostels]], which operates under the Moustache brand, has mandated PwC to raise ₹30-35 crore over the next four to five months to fund expansion and works towards a market listing by 2030. The company plans to add 15 new properties within a year and expects institutional investors to enter next.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NCLT questions EY's 1% success fee, rejects insolvency plea against Mobase",
+      "summary": "The National Company Law Tribunal, Chennai, questioned the validity of a 1 per cent outcome-based fee claimed by [[Ernst & Young LLP]] for securing relief for [[Mobase Electronics India]] in GST proceedings, and rejected EY's plea under Section 9 of the Insolvency and Bankruptcy Code to initiate insolvency proceedings against Mobase over an alleged operational debt of about ₹3.11 crore. Mobase disputed the claim, saying the agreed fee was only ₹25 lakh which had already been paid.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Tata Realty appoints Gaurav Jain MD & CEO",
+      "summary": "[[Tata Realty & Infrastructure]] has appointed Gaurav Jain as its new MD and CEO effective October 1, succeeding Sanjay Dutt, who became TRIL's MD and CEO in April 2018.",
+      "page_number": 2,
+      "importance": 1
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Dadachanji Group launches Kaisha Pharma with €45 mn investment",
+      "summary": "The Dadachanji Group has launched pharmaceutical glass-packaging venture [[Kaisha Pharma]] with an initial investment of €45 million, targeting Indian and global pharma and biotech customers with vials, syringes, ampoules, prefilled syringes and cartridges.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "YouTube & Balaji Telefilms partner for five original shows",
+      "summary": "[[YouTube]] and Ekta Kapoor's [[Balaji Telefilms]] will launch five original shows spanning 200 episodes, with Balaji creating the content and YouTube providing global distribution and monetisation.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Zollner enters India with Avalon JV, to invest ₹1,000 cr in TN",
+      "summary": "German electronics manufacturing services company [[Zollner Elektronik AG]] will set up a ₹1,000-crore joint venture with [[Avalon Technologies]] for high-precision manufacturing of PCBAs, cable harnesses and sub-assemblies in Kanchipuram, Tamil Nadu.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "The entrepreneur who refuses to retire: Ashok Soota scales down Happiest Minds stake",
+      "summary": "Serial entrepreneur Ashok Soota, 83, is scaling back his involvement with [[Happiest Minds]], the IT firm he founded in 2011 and took public at a 110 per cent premium in 2020, transferring his role to fund new ventures. About 22.1 per cent of his stake is being transferred for ₹1,300 crore in cash from the sale of a couple of block deals, with the ITC subsidiary and other shareholders becoming minority stakeholders as the company becomes minority family-held with 7.55 per cent stake.",
+      "page_number": 3,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Odisha Yatri rolls out safety app with shake alert, live tracking",
+      "summary": "Odisha has launched Yatri, described as the country's first state-owned safety app, integrating emergency-response tools into its public mobility platform, with one-click SOS, live location sharing, trusted contacts, emergency helplines and a \"Shake and Alert\" feature to unlock the phone and navigate through an emergency.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Comet raises ₹100 crore in Series-B funding",
+      "summary": "Homegrown sneaker brand [[Comet]], founded by Utkarsh Gupta and Dishant Daryani, has raised ₹100 crore in a Series-B round led by global investment firm [[Verlinvest]], with existing investors [[Elevation Capital]] and [[Nexus Venture Partners]] also participating, doubling down on their investment.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "IIT-G researchers unveil AI model for energy-efficient, long-range data processing",
+      "summary": "Researchers at the Indian Institute of Technology, Guwahati, have developed a brain-inspired artificial intelligence model, titled \"Spiking Heterogeneous Resonate-and-Fire State Space Model\" (SIHRFSSN), that can process long sequences of data with significantly lower estimated energy costs than many conventional AI approaches, potentially aiding deployment on resource-constrained devices.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Sector",
+      "headline": "Qcom firms ramping up dark store capex 2.5 times: UBS report",
+      "summary": "Quick commerce companies such as [[Eternal]]'s Blinkit and [[Swiggy]]'s Instamart are significantly increasing capital infusion into their dark stores as the industry shifts towards larger fulfilment centres. Based on a UBS report, stores of around 2,500-3,000 sq ft currently cost around ₹1.4-1.6 crore, while a 5,000 sq ft store can come for ₹2.4-2.5 crore, and a 7,000 sq ft facility can cost around ₹3 crore, as players raise capex guidance per dark store to around ₹2.5 crore from an earlier ₹1 crore estimate.",
+      "page_number": 3,
+      "industry": "Quick Commerce",
+      "importance": 3
+    },
+    {
+      "section": "Economy",
+      "headline": "Eway bills cross 139 mn in Aug, 3rd-highest ever",
+      "summary": "Eway bill generation rose 7.7 per cent year-on-year to 139.08 million in August, the third-highest monthly count on record, signalling sustained momentum in goods movement and formal economic activity. The August figure was 9.5 per cent higher than 129.13 million eway bills generated in August 2025, though it declined marginally 0.51 per cent from July's 139.79 million, the second-highest monthly count on record.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "PowerMin body for 10% energy storage for RE plans after Jul '27",
+      "summary": "The Central Electricity Authority has proposed in a draft regulation that all ground-mounted solar and wind energy projects commissioned after July 2027 must include energy storage with a minimum two-hour storage duration equal to at least 10 per cent of installed capacity, mandating from April 2027 that at least 15 per cent of inverters be equipped with grid-forming control. India curtailed 8,133 GWh of solar power output between April and June 2026 due to the grid's struggle to absorb excess solar generation.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "Norms allowing ecom firms exports-only inventory notified",
+      "summary": "The finance ministry notified changes to FDI norms allowing ecommerce firms to maintain inventory only for export purposes, requiring such firms to export goods manufactured or produced in India, though FDI in inventory-based ecommerce retailing has not been permitted.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "No application so far for ₹37,500 cr coal gasification scheme",
+      "summary": "The government's ₹37,500-crore financial incentive scheme for coal gasification has found no takers so far, ahead of a September 7 deadline, raising concerns about the viability of the coal ministry's push to gasify 75 million tonnes of coal and lignite.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "275 Indians still missing in Nepal floods: MEA",
+      "summary": "Two hundred seventy-five Indians remain missing while 166 others were rescued following devastating flash floods along the Nepal-Tibet border, the Ministry of External Affairs said, adding 1,907 Indian nationals have safely crossed over to Nepal from China and 95 tonnes of relief material had been supplied since August 26.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Trade",
+      "headline": "India, Belgium should join hands on lab-grown diamonds: Goyal",
+      "summary": "Union Commerce Minister Piyush Goyal suggested India and Belgium work together on lab-grown diamonds, speaking at a dialogue on the India-EU free-trade agreement in the presence of visiting Belgian PM Bart De Wever. A Belgian diamond-grading company expanded its facility at the Bharat Diamond Bourse to increase research capacity by 30 per cent. The India-EU FTA signed in January will reduce tariffs on 95 per cent of India-EU goods exports, with a case for going down to zero on diamonds.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NFRA sets up panel on audit quality, AI, tech risks",
+      "summary": "The National Financial Reporting Authority constituted an advisory committee on \"audit quality, assurance and technology\" to examine risks and practical implementation issues arising from the use of data analytics, automation, artificial intelligence and machine learning in the conduct of audits and related matters — the third such committee set up by NFRA.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "Only 7% of candidates placed after PMKVY training",
+      "summary": "The government's flagship skilling scheme, Pradhan Mantri Kaushal Vikas Yojana, has recorded placements of just 7 per cent of the 3.54 million candidates enrolled, pointing to a sharp gap between training and employment outcomes. Telecom saw the strongest placement rate at 17.5 per cent, followed by handicrafts at 14.4 per cent, while management had the weakest placement rate at 1.1 per cent.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "'India's next infra phase needs state, city-level financing'",
+      "summary": "India's urban infrastructure investment remains below the roughly $60 billion a year needed, ADB Vice-President Bhargav Dasgupta said, calling for stronger sub-national creditworthiness, fiscal discipline and governance reforms as the single most important reform to unlock long-term private capital. ADB has arranged a $462 million long-tenor finance package for the ReNew Peak Power Project, India's first ADB-financed round-the-clock renewable energy project with battery storage.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "9 days after Nepal flash floods, 2 rescued from tunnel",
+      "summary": "Two men were rescued alive from a tunnel at the Trishuli 3A hydropower project on Friday, nine days after a flash flood tore through the Trishuli river corridor in central Nepal, having survived by chanting the Hare Krishna mahamantra while trapped inside.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "US job growth surges in Aug; unemployment holds steady",
+      "summary": "US job growth accelerated sharply in August while the unemployment rate held steady at 4.1 per cent, improving labour market data that keeps an interest rate cut from the Federal Reserve this month on the table. Employers added 162,000 positions in August, a larger-than-expected increase reflecting a rebound in leisure and hospitality employment.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "OpenAI launches Astra model amid growing safety scrutiny",
+      "summary": "[[OpenAI]] on Thursday unveiled a new AI model it calls its best yet, but cautioned that it also sometimes attempts to evade human monitoring, concerns similar to ones observed at rival [[Anthropic]], as developers race to deploy increasingly advanced models designed to run with little to no human intervention.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Volkswagen doubles job cuts to 100,000",
+      "summary": "[[Volkswagen]] shares hit an 11-week high after the supervisory board of Europe's largest automaker late Thursday struck an ambitious turnaround agreement that put the focus on sweeping job cuts and averted a clash between major stakeholders, adding a further 50,000 job cuts to the total agreed at 100,000, and leaves open the future of four German plants. VW's India unit is accelerating a three-year restructuring plan that will cut about 12 per cent of its workforce.",
+      "page_number": 8,
+      "importance": 4
+    },
+    {
+      "section": "International News",
+      "headline": "US targets Turkish entities with Iran-related sanctions",
+      "summary": "The US Treasury Department issued new Iran-related sanctions on Friday, targeting three Turkey-based entities — [[Golden Global Portfoy Yonetimi Anonim Sirketi]], [[Golden Global Varlik Kiralama Anonim Sirketi]] and [[Golden Global Yatirim Bankasi Anonim Sirketi]] — as part of a campaign to economically pressure Tehran back to the negotiating table.",
+      "page_number": 8,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "World food prices highest since November 2022: FAO",
+      "summary": "World food prices rose in August to their highest since late 2022, as adverse weather and trade disruption caused by the Ukraine and Iran wars unsettled agricultural markets, pushing grain prices to three-year highs and sugar to a one-year high, according to the UN Food and Agriculture Organization's price index, which averaged 133.3 points in August.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "A year after Armani's death, firm faces challenge of 'inevitable evolution'",
+      "summary": "One year after the death of founder Giorgio Armani, the Italian fashion house is entering a pivotal period as the late designer's heirs and advisers must now focus on evolving the brand while keeping it relevant, with plans for an initial stake sale of around 15 per cent of the company between 12 and 18 months after Armani's death, as stipulated in his will. Bankers and advisers have put the group's valuation at €5 billion to €7 billion, with [[LVMH]], France's [[EssilorLuxottica]] and [[L'Oréal]] among potential buyers.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "India's tightrope walk on Brics finance",
+      "summary": "The Brics summit next week in New Delhi will test India's ability to navigate the changing currency landscape as it seeks to de-risk from the dollar without being drawn into an alternative China-led global currency and finance system, particularly the mBridge cross-border payments project centred on the People's Bank of China, the Hong Kong Monetary Authority, the UAE and Saudi Arabia, which the US has threatened tariffs over.",
+      "page_number": 9,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "The GDP number puzzle",
+      "summary": "Preliminary estimates of first-quarter (Q1FY27) GDP growth of 7.8 per cent beat consensus but drew controversy over whether real growth is below 3 per cent, given a new statistical series with a rebased 2022-23 base year, methodological changes to deflation treatment, and unusual behaviour in variables like electricity consumption, which fell 1.5 per cent year-on-year despite double-digit output growth — suggestive of an unusually low-power-demand year.",
+      "page_number": 9,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "The big farm flip-flop: government reverses course on sugar imports",
+      "summary": "The government last month allowed import of a million tonnes of raw sugar after a gap of almost 10 years, just three months after it had banned sugar exports, highlighting fault lines in the broader agriculture trade policy regime. Traders said sugar prices had surged sharply due to a mismatch between supply and demand, with ex-mill prices around ₹50 per kg threatening to hurt sugar mills' margins as production costs are estimated at ₹42-43 per kg — the government cited a production drop from 34.3 million tonnes in 2024-25 to 30.6 million tonnes in 2025-26 to defend the export ban that preceded the import reversal.",
+      "page_number": 18,
+      "importance": 3
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "State fast-tracks acquisition of 25K hectares near expressways",
+      "summary": "The Uttar Pradesh government is expediting acquisition of 25,000 hectares of land along major expressways for planned industrial development under the public-private partnership model, to develop 27 Industrial Manufacturing and Logistics Clusters. The Uttar Pradesh Expressway Industrial Development Authority has identified 5,000 hectares so far, of which more than 4,250 hectares have already been acquired, as part of the state's ₹1 trillion investment target.",
+      "page_number": 19,
+      "importance": 3
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Odisha plans varsity township with industry focus",
+      "summary": "Odisha is working on an ambitious plan to establish an integrated university township that will bring together higher education, research, skill development and innovation under one roof, with three potential locations identified — Kamakhyanagar in Dhenkanal, Balukhand in Puri and Jatni-Tangi in Khordha — considering proximity to industrial and logistics corridors and about 1,000 acres of land.",
+      "page_number": 19,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "New digital fertiliser system draws Opposition's flak",
+      "summary": "The Rajasthan government has extended digital sale of fertilisers to 11 more districts, as agriculture department official Naresh Kumar Goyal said results of the first two phases have been encouraging, but the Opposition Congress condemned the move, flagging issues farmers face while accessing the online facility, with more than 100,000 farmers having booked approximately 15,000 mt urea through the system so far.",
+      "page_number": 19,
+      "importance": 2
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "A-I flight faced triple hydraulic loss, not adverse weather: AAIB",
+      "summary": "[[Air India]]'s August 4 Phuket-Delhi flight, which faced a sudden loss of altitude for some time and injured 24 people on board, temporarily lost pressure in all three hydraulic systems while cruising at 36,000 feet, triggering autopilot disengagement and a stall warning, the Aircraft Accident Investigation Bureau said in its preliminary report, adding no adverse weather was reported. The services of the pilot-in-command, who tested positive for drug use, were terminated.",
+      "page_number": 20,
+      "importance": 4
+    },
+    {
+      "section": "IPO",
+      "headline": "Ending a decade-long wait, NSE public offering gets Sebi nod",
+      "summary": "The Securities and Exchange Board of India has approved the long-awaited initial public offering of the [[National Stock Exchange]], expected to be the largest fundraise from the primary market at an estimated size of ₹30,000 crore. The IPO comprises up to 148.9 million equity shares (about 6 per cent stake) offered entirely by existing shareholders including SBI, SBI Capital, Canada Pension Plan Investment Board, Aranda Investments and LIC, with the exchange itself not receiving any proceeds. The offer is expected to open by September 15 with listing around September 25.",
+      "page_number": 21,
+      "importance": 5
+    },
+    {
+      "section": "Market",
+      "headline": "Sept IPO pipeline may eclipse July milestone",
+      "summary": "Primary market activity, which registered record fund-raising in July led by marquee issuances like SBI Funds Management, is set to see an unprecedented surge in September, even though most initial public offerings have not given returns. July recorded 10 IPOs with subscriptions exceeding 100 times each, the highest monthly total for such massive subscriptions since 2006, according to Prime Database.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Rentomojo, Manipal Payment, Karamtara Engineering, LCC Projects price IPOs",
+      "summary": "[[Rentomojo]], [[LCC Projects]], [[Karamtara Engineering]] and [[Manipal Payment and Identity Solutions]] have announced price bands for their upcoming IPOs, all of which open on Wednesday, September 9, and close Friday, September 11. Rental platform Rentomojo set its price band at ₹384-404 per share for its ₹1,255.57-crore issue; EPM firm LCC Projects priced its IPO at ₹139-146 crore; Karamtara Engineering fixed its price band at ₹241-254 per share for its ₹875-crore offering; and Manipal Payment and Identity Solutions set its price band at ₹322-339 per share.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sebi, Esma sign pact on clearing houses",
+      "summary": "The Securities and Exchange Board of India and the European Securities and Markets Authority signed a memorandum of understanding to strengthen cooperation and exchange of information relating to central counterparties, replacing an earlier MoU between the two regulators signed on June 21, 2017.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "Sensex snaps 4-day losses on rally in metal, oil shares",
+      "summary": "The BSE Sensex rebounded 362.57 points, or 0.48 per cent, to settle at 76,515.4 on Friday, cutting short its four-day losing streak on buying in metal, private banking and oil and gas shares amid gains in global stock markets, with 20 of 30 constituents ending higher.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "ESDS Software, Priority Jewels soar on debut with 109% and 18% gains",
+      "summary": "[[Priority Jewels]] and [[ESDS Software Solution]] both debuted strong on the bourses Friday. Priority Jewels closed at ₹236.45, an 18.23 per cent premium to its issue price, moving its free-float market capitalisation to ₹79.27 crore, while ESDS Software closed at ₹895.55, a 108.75 per cent premium to its issue price, pushing its free-float market capitalisation up to ₹1,152.79 crore.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Apana Logistics' SME IPO to open on Monday; to raise ₹34.14 cr",
+      "summary": "[[Apana Logistics]], which provides logistics support for container handling and transportation, will launch its initial public offering on September 7 to raise ₹34.14 crore for its expansion initiatives, according to a statement. The Kolkata-based logistics company has fixed the issue price at ₹60 per share for its SME IPO, which will open September 7 and conclude September 9, with shares tentatively listing September 15 on the BSE SME platform.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Vinod Texworld SME IPO to raise ₹42.83 cr",
+      "summary": "Textile manufacturer [[Vinod Texworld]] has fixed the price of its ₹42.83-crore initial share sale at ₹94 per share, with the issue set to open for subscription September 9 and remain open till September 11. The Ahmedabad-based company said the planned expansion of its existing processing and dyeing plant, along with investments in working capital and reduction of borrowings, is expected to strengthen its operational capabilities and support its growth plans over the coming years.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "Sector",
+      "headline": "Ultravolt enters crowded field but demand may hold the wires",
+      "summary": "[[UltraTech Cement]] has formally started commercial production at its greenfield wires and cables facility in Jhagadia in the Bharuch district of Gujarat under its new Ultravolt brand, aiming to go pan-India in one shot lining up more than 100,000 retailers and offering availability through 5,000 UltraTech Building Solutions outlets, entering as the second-largest player in capacity and targeting to become one of the top five players within five years. The group has invested ₹1,800 crore, around 2 per cent of UltraTech's employed capital.",
+      "page_number": 21,
+      "industry": "Wires & Cables",
+      "importance": 3
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Multiple triggers boost Street view of Lodha",
+      "summary": "Shares of [[Lodha Developers]], India's second most valuable real estate firm, have jumped 40 per cent to ₹1,214 apiece in the last three months, with brokerages optimistic on a strong launch pipeline, improving balance sheet and higher land prices in Palava, the best-performing among listed peers. Analysts at Emkay Research and Motilal Oswal Research believe the conclusion of the data centre land transaction at a higher-than-expected valuation in the June quarter reinforces optimism on Lodha's prospects.",
+      "page_number": 22,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "How to manage duration risk amid rising bond yields",
+      "summary": "The recent rise in bond yields has created concern about duration risk for debt-fund investors, with the 10-year government security (G-sec) yield closing at 6.97 per cent on September 4, up from a low of 6.69 per cent on July 6, 2026, driven by high fiscal deficits, rising defence budgets and ageing populations across developed markets that have compounded fragile fundamentals and pushed global bond yields to decade highs.",
+      "page_number": 22,
+      "importance": 2
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Edelweiss group entities to divest majority stake in Nido Home Finance to Carlyle affiliate",
+      "summary": "[[Nido Home Finance]] (formerly [[Edelweiss Housing Finance]]) will see [[CA Sardo]], an affiliate of [[The Carlyle Group]], and [[Salisbury Investments]] acquire majority shareholding through a combination of secondary transfer of equity shares from existing shareholders including [[Edelweiss Financial Services]], [[Edelweiss Rural & Corporate Services]] and [[Edel Finance Company]], and primary capital infusion by subscription of equity shares and warrants. Upon completion, CA Sardo will hold approximately 72.18 per cent and Salisbury Investments approximately 0.52 per cent of Nido's equity, with Nido ceasing to be a subsidiary of Edelweiss.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "Axis Bank invites expressions of interest for sale of secured loan pool worth ₹332.83 crore",
+      "summary": "[[Axis Bank]] is seeking expressions of interest from asset reconstruction companies, banks, financial institutions and eligible non-banking financial companies for sale of a pool portfolio of secured stressed loans with 966 accounts, an aggregate principal outstanding of ₹332.83 crore, at a reserve price/binding offer floor of ₹176.44 crore.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "IDFC First Bank invites bids for sale of CMI Limited loan account under Swiss Challenge",
+      "summary": "[[IDFC First Bank]] is inviting bids from eligible parties for sale/assignment of a financial asset/loan account of [[CMI Limited]] under the Swiss Challenge Method, with total outstanding as of July 31, 2026 of ₹119.47 crore and a reserve price of ₹20.10 crore, an offer already in hand from an existing bidder.",
+      "page_number": 29,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NCLT to hear scheme of amalgamation petitions for Hill View Infrabuild-Salasar Techno Engineering and Nico Extrusions-Metalloys Recycling",
+      "summary": "The National Company Law Tribunal, Allahabad Bench, has listed hearings on petitions seeking sanction of schemes of amalgamation: [[Hill View Infrabuild Limited]] with [[Salasar Techno Engineering Limited]], and [[Nico Extrusions Limited]] (transferor) with [[Metalloys Recycling Limited]] (transferee), inviting objections from any person opposing the schemes to be filed before the respective hearing dates.",
+      "page_number": 27,
+      "is_notice": true,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Loss of share certificate notices published by listed companies",
+      "summary": "Public notices of lost/misplaced share certificates requesting duplicate issuance were published by [[Hindustan Unilever]] (in the name of Velji Purshottam Shethia) and [[The Dhanalakshmi Mills]] (in the name of Ramesh S Paryani and family), inviting objections within 15 days.",
+      "page_number": 25,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "SARFAESI possession, demand and e-auction notices from banks and asset reconstruction companies",
+      "summary": "Multiple lenders and asset reconstruction companies published statutory notices under the SARFAESI Act, 2002 concerning possession, demand and e-auction of secured properties, including [[Dhanlaxmi Bank]] (Thrissur branch, multiple defaulting borrowers), [[Federal Bank]] (auction of defaulted gold loan jewellery across 177 accounts in Mumbai and Thane), [[Canara Bank]] (Nashik region e-auction, September 25), [[Bank of Maharashtra]] (Chalisgaon branch possession notice), [[GIC Housing Finance]] (e-auction of properties across Borivali and Boisar, September 24), [[Omkara Assets Reconstruction]] (possession notices for Hem Tools Centre and related borrowers), [[Asset Reconstruction Company (India) Limited]] i.e. Arcil (EOI for assignment of Jog Engineering Limited debt), [[Muthoot Homefin (India)]] (possession notices, Jalgaon) and [[Hero Housing Finance]] (e-auction notice).",
+      "page_number": 24,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Annual general meeting and e-voting notices published by listed companies",
+      "summary": "Numerous listed companies published statutory notices convening their annual general meetings through video conferencing/OAVM with remote e-voting facilities, including [[Master Trust]], [[Health X Platform]], [[Global Defence Industries]], [[Nainital Bank]], [[InCred Holdings]], [[Kanani Industries]], [[Newmalayalam Steel]], [[Yuvraj Hygiene Products]], [[Fedbank Financial Services]], [[Technocraft Industries (India)]], [[J G Chemicals]], [[Nibe]], [[Ravi Kumar Distilleries]], [[Maharaja Shree Umaid Mills]], [[Wardwizard Foods and Beverages]], [[Akar Auto Industries]], [[I Secure Credit & Capital Services]], [[Krebs Biochemicals & Industries]], [[Carrier Airconditioning & Refrigeration]], [[National Peroxide]], [[Ceinsys Tech]], [[ASK Investment Managers]], [[Imagicaaworld Entertainment]], [[Choice International]], [[DCW Limited]], [[Beekay Steel Industries]], [[Prisma Global]], [[Continental Controls]], [[Sri Chamundeswari Sugars]], [[Apeejay Surrendra Park Hotels]], [[Ravindra Energy]], [[Carrier Technologies India]], [[Kiran Vyapar]], [[The Peria Karamalai Tea & Produce Company]], [[Exato Technologies]], [[Manas Agro Industries & Infrastructure]], [[Agri-Tech (India)]], [[Gajanan Securities Services]], [[Sunraj Diamond Exports]], [[Plada Infotech Services]], [[Galaxy Supermarket]], [[Kaarya Facilities and Services]], [[Shreeji Translogistics]], [[Techindia Nirman]], [[Ambani Orgochem]], [[Nath Bio-Genes (India)]], [[Simandhar Impex]], [[Upsurge Investment and Finance]], [[Goldiam International]], [[Skyline Millars]], [[Crysdale Industries]], [[Innovasynth Technologies (India)]], [[Vadivarhe Speciality Chemicals]] and [[JIK Industries]].",
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Transfer of unclaimed shares to IEPF: Marksans Pharma",
+      "summary": "[[Marksans Pharma]] notified shareholders that unclaimed dividends and corresponding shares for seven consecutive years, declared under FY2018-19 and remaining unpaid or unclaimed, are due to be transferred to the Investor Education and Protection Fund on or before October 31, 2026 as per Section 124 and 125 of the Companies Act.",
+      "page_number": 30,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Corporate Events",
+      "headline": "Sona Comstar seeks shareholder approval for related-party transaction via postal ballot",
+      "summary": "[[Sona BLW Precision Forgings]] (Sona Comstar) issued a postal ballot notice seeking shareholder ratification of material related-party transactions and arrangements between the company and [[Sona Comstar Edrive Private Limited]], with e-voting through September 3 to October 3, 2026.",
+      "page_number": 3,
+      "is_notice": true,
+      "importance": 1
+    }
+  ],
+  "stocksInFocus": [
+    {
+      "name": "National Stock Exchange",
+      "note": "Gets Sebi nod for ₹30,000-cr IPO; expected to open Sept 15, list around Sept 25"
+    },
+    {
+      "name": "Adobe",
+      "note": "Names India-born Anil Chakravarthy as next CEO, effective Dec 1"
+    },
+    {
+      "name": "Hindustan Unilever",
+      "note": "Shifts strategy to chase premiumisation and new categories under 'Winning in New India'"
+    },
+    {
+      "name": "Aster DM Quality Care",
+      "note": "Moopen family raises stake to 24.58% in ₹350 cr deal from Carlyle-backed seller"
+    },
+    {
+      "name": "Air India",
+      "note": "AAIB report finds triple hydraulic loss on Aug 4 Phuket-Delhi flight; pilot-in-command's services terminated"
+    },
+    {
+      "name": "Lodha Developers",
+      "note": "Stock up 40% in 3 months on strong launch pipeline and data-centre land monetisation"
+    },
+    {
+      "name": "ESDS Software Solution",
+      "note": "Debuted with 108.75% premium to issue price"
+    },
+    {
+      "name": "Priority Jewels",
+      "note": "Debuted with 18.23% premium to issue price"
+    },
+    {
+      "name": "Dixon Technologies",
+      "note": "Eyes foray into aerospace, defence and other high-value manufacturing verticals"
+    },
+    {
+      "name": "Nido Home Finance",
+      "note": "Edelweiss group entities to sell majority stake to Carlyle affiliate CA Sardo"
+    }
+  ],
+  "topStories": [
+    {
+      "headline": "30-day VRRR sharpens odds of rate hike in Oct",
+      "section": "Economy",
+      "note": "RBI's liquidity mop-up raises rate-hike odds ahead of Oct policy review; FX reserves hit record $740.8 bn"
+    },
+    {
+      "headline": "Ending a decade-long wait, NSE public offering gets Sebi nod",
+      "section": "IPO",
+      "note": "India's largest-ever IPO at ~₹30,000 cr; opening likely Sept 15, listing Sept 25"
+    },
+    {
+      "headline": "Anil Chakravarthy is next Adobe CEO",
+      "section": "Corporate Events",
+      "note": "India-born executive to succeed Shantanu Narayen as Adobe focuses on agentic AI"
+    },
+    {
+      "headline": "HUL aims to chase premiumisation, enter new spaces",
+      "section": "Corporate Events",
+      "note": "Shifts to 'Winning in New India' strategy, doubling digital media spend on premium brands"
+    },
+    {
+      "headline": "A-I flight faced triple hydraulic loss, not adverse weather: AAIB",
+      "section": "Corporate Events",
+      "note": "Preliminary probe into Aug 4 Phuket-Delhi incident; pilot-in-command's services terminated"
+    },
+    {
+      "headline": "'Eye in the sky': India's first imaging satellite in geo-orbit",
+      "section": "Growth & Development",
+      "note": "Isro launches EOS-05, India's heaviest Earth observation satellite, via GSLV-F17"
+    },
+    {
+      "headline": "Mkts regulator presses ahead against Hindenburg, others in Adani case",
+      "section": "Regulatory",
+      "note": "Sebi seeks to recover gains from short-seller's trades ahead of 2023 Adani report"
+    },
+    {
+      "headline": "Sensex snaps 4-day losses on rally in metal, oil shares",
+      "section": "Market",
+      "note": "Sensex up 362.57 points to 76,515.4 on broad-based buying"
+    },
+    {
+      "headline": "Volkswagen doubles job cuts to 100,000",
+      "section": "International News",
+      "note": "VW group turnaround deal adds 50,000 more cuts; India unit trims 12% of workforce"
+    },
+    {
+      "headline": "World food prices highest since November 2022: FAO",
+      "section": "International News",
+      "note": "Grain prices at 3-year highs, sugar at 1-year high on weather and trade disruption"
+    },
+    {
+      "headline": "Sept IPO pipeline may eclipse July milestone",
+      "section": "Market",
+      "note": "Primary market activity surges after record July fund-raising and oversubscriptions"
+    },
+    {
+      "headline": "Banks that neglect customer service, succession planning risk market cap hit",
+      "section": "Corporate Events",
+      "note": "Ex-HDFC Bank chairman Atanu Chakraborty on banking-sector governance gaps"
+    },
+    {
+      "headline": "Indian miners building critical assets in Africa",
+      "section": "Sector",
+      "note": "Little-known Indian miners quietly build mineral assets across DRC, Tanzania, Zambia, Mozambique"
+    },
+    {
+      "headline": "NCLT questions EY's 1% success fee, rejects insolvency plea against Mobase",
+      "section": "Regulatory",
+      "note": "Tribunal dismisses EY's Section 9 IBC plea over disputed ₹3.11 crore fee claim"
+    }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "National Stock Exchange",
+      "ticker": null,
+      "exchange": "BSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": "2026-09-15",
+      "close_date": null,
+      "listing_date": "2026-09-25",
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Sebi-approved OFS of 148.9 mn shares (~6% stake); estimated size ₹30,000 cr; unlisted shares trading near ₹1,975"
+    },
+    {
+      "company_name": "Rentomojo",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 384,
+      "issue_price_high": 404,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "₹1,255.57-crore issue"
+    },
+    {
+      "company_name": "LCC Projects",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 139,
+      "issue_price_high": 146,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "EPC firm IPO"
+    },
+    {
+      "company_name": "Karamtara Engineering",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 241,
+      "issue_price_high": 254,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "₹875-crore offering"
+    },
+    {
+      "company_name": "Manipal Payment and Identity Solutions",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 322,
+      "issue_price_high": 339,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": ""
+    },
+    {
+      "company_name": "ESDS Software Solution",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-04",
+      "listing_price": 429,
+      "status": "listed",
+      "notes": "Debuted at 108.75% premium; closed ₹895.55"
+    },
+    {
+      "company_name": "Priority Jewels",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-04",
+      "listing_price": 200,
+      "status": "listed",
+      "notes": "Debuted at 18.23% premium; closed ₹236.45"
+    },
+    {
+      "company_name": "Apana Logistics",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 60,
+      "issue_price_high": 60,
+      "open_date": "2026-09-07",
+      "close_date": "2026-09-09",
+      "listing_date": "2026-09-15",
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "₹34.14-crore SME IPO"
+    },
+    {
+      "company_name": "Vinod Texworld",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 94,
+      "issue_price_high": 94,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "₹42.83-crore SME IPO"
+    }
+  ]
+}
