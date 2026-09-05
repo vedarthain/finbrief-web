@@ -485,6 +485,30 @@ export default function PaperTree({
                 </p>
               </>
             )}
+
+            {/* Mobile-only prev/next — on md+ the Up/Down arrow-key hint above
+                the section tree already covers this, but on touch devices
+                there's no keyboard, so give readers a thumb-reachable way to
+                move between headlines without scrolling back up to the list. */}
+            <div className="md:hidden flex items-center justify-between gap-2 mt-4 pt-3 border-t border-gray-100">
+              <button
+                onClick={() => setFocusIndex(Math.max(0, selIndex - 1))}
+                disabled={selIndex === 0}
+                className="flex-1 text-[13px] font-medium px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed active:bg-gray-50 transition-colors"
+              >
+                ‹ Previous
+              </button>
+              <span className="shrink-0 text-[11px] text-gray-400 tabular-nums">
+                {selIndex + 1} / {itemCount}
+              </span>
+              <button
+                onClick={() => setFocusIndex(Math.min(itemCount - 1, selIndex + 1))}
+                disabled={selIndex >= itemCount - 1}
+                className="flex-1 text-[13px] font-medium px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed active:bg-gray-50 transition-colors"
+              >
+                Next ›
+              </button>
+            </div>
           </div>
         )}
       </div>

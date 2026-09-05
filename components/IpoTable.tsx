@@ -60,6 +60,7 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
       <table className="w-full text-[13.5px] border-collapse">
         <thead>
           <tr className="text-left text-gray-400 text-[11px] uppercase tracking-wide">
+            <th className="px-3 py-2.5 font-medium border border-gray-200 text-right">#</th>
             <th className="px-4 py-2.5 font-medium border border-gray-200">Company</th>
             <th className="px-3 py-2.5 font-medium border border-gray-200">Exchange</th>
             <th className="px-3 py-2.5 font-medium border border-gray-200">Status</th>
@@ -73,8 +74,9 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
           </tr>
         </thead>
         <tbody>
-          {listings.map((l) => (
+          {listings.map((l, i) => (
             <tr key={l.id} className="hover:bg-gray-50/60 transition-colors">
+              <td className="px-3 py-3 border border-gray-200 text-right text-gray-400">{i + 1}</td>
               <td className="px-4 py-3 border border-gray-200">
                 <div className="font-semibold text-gray-900">{l.company_name}</div>
                 {l.notes && <div className="text-[12px] text-gray-400 mt-0.5 max-w-xs">{l.notes}</div>}
