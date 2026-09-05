@@ -49,43 +49,43 @@
       "page_number": 18
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Vodafone Idea]] launches new logo, signs Shah Rukh Khan as brand ambassador",
       "summary": "[[Vodafone Idea]] unveiled a new corporate logo and roped in actor Shah Rukh Khan as its brand ambassador, part of a broader relaunch as \"VI\" aimed at rebuilding subscriber sentiment. The company said the rebrand will run across a new advertising campaign as it looks to stem subscriber losses and reposition itself against larger rivals.",
       "page_number": 5
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Tata Motors]] takes biggest PV market share gain in Jan-Aug",
       "summary": "[[Tata Motors]] posted the largest market-share gain among passenger-vehicle makers in the January-August period, helped by strong demand for its SUV and EV lineup. The company extended its lead over rivals even as overall industry volumes stayed choppy through the period.",
       "page_number": 5
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[ITC Infotech]]-[[Happiest Minds]] merger to help win larger deals",
       "summary": "The merger of [[ITC Infotech]] into [[Happiest Minds]] will strengthen the combined firm's ability to bid for and win bigger enterprise deals, Happiest Minds' management said, citing the enlarged scale, broader service lines and combined client base created by the deal.",
       "page_number": 7
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Tata Elxsi]] ties up with Safran Aviation to develop aircraft avionics chips",
       "summary": "[[Tata Elxsi]] signed a partnership with Safran Aviation to co-develop chips for aircraft avionics systems, aiming to combine Tata Elxsi's design engineering capabilities with Safran's aerospace systems expertise. The tie-up targets next-generation avionics hardware for commercial and defence aircraft.",
       "page_number": 7
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "[[Nalco]] gears up for next phase of growth",
       "summary": "[[National Aluminium Company]] outlined plans for its next growth phase, including capacity expansion in alumina refining and captive power, as it looks to capitalise on firm aluminium demand. The company said funding for the expansion will be balanced between internal accruals and structured debt.",
       "page_number": 10
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "[[Krafton]] wants India's game-makers to level up",
       "summary": "[[Krafton]] said it is expanding support for Indian game developers through funding, incubation and publishing tie-ups, as it looks to build a pipeline of homegrown titles beyond its flagship BGMI franchise. The company said it sees India as a long-term production hub, not just a consumption market, for gaming content.",
       "page_number": 16
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Navi]] AMC launches India's first floating-rate debt fund",
       "summary": "[[Navi Mutual Fund]] launched what it called India's first floating-rate debt fund, designed to reduce interest-rate sensitivity for investors as rate-cut expectations build. The fund will invest predominantly in floating-rate instruments and money-market securities.",
       "page_number": 21
@@ -158,13 +158,34 @@
     }
   ],
   "stocksInFocus": [
-    { "name": "Vodafone Idea", "note": "Rebrands as \"VI\" with new logo, signs Shah Rukh Khan as brand ambassador" },
-    { "name": "Tata Motors", "note": "Biggest PV market-share gainer among carmakers, Jan-Aug" },
-    { "name": "Nalco", "note": "Outlines alumina-refining and captive-power capacity expansion" },
-    { "name": "Happiest Minds", "note": "ITC Infotech merger seen strengthening large-deal wins" },
-    { "name": "ESDS Software Solution", "note": "IPO subscription closed ahead of allotment" },
-    { "name": "Priority Jewels", "note": "IPO subscribed 100.15x on final day" },
-    { "name": "Jaykay Enterprises", "note": "Rights issue open Sept 7-18" }
+    {
+      "name": "Vodafone Idea",
+      "note": "Rebrands as \"VI\" with new logo, signs Shah Rukh Khan as brand ambassador"
+    },
+    {
+      "name": "Tata Motors",
+      "note": "Biggest PV market-share gainer among carmakers, Jan-Aug"
+    },
+    {
+      "name": "Nalco",
+      "note": "Outlines alumina-refining and captive-power capacity expansion"
+    },
+    {
+      "name": "Happiest Minds",
+      "note": "ITC Infotech merger seen strengthening large-deal wins"
+    },
+    {
+      "name": "ESDS Software Solution",
+      "note": "IPO subscription closed ahead of allotment"
+    },
+    {
+      "name": "Priority Jewels",
+      "note": "IPO subscribed 100.15x on final day"
+    },
+    {
+      "name": "Jaykay Enterprises",
+      "note": "Rights issue open Sept 7-18"
+    }
   ],
   "ipoListings": [
     {

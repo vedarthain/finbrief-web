@@ -236,7 +236,7 @@
       "importance": 2
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "Persistent Systems plans $1.25-billion fundraise for acquisitions",
       "summary": "[[Persistent Systems]] plans a $1.25-billion fundraise to fund acquisitions and expansion. Fundraise size marks one of the IT sector's larger capital-raising moves this year.",
       "page_number": 5,
@@ -244,7 +244,7 @@
       "importance": 4
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "United Breweries, Heineken feature in ownership-structure reports",
       "summary": "[[United Breweries]] and [[Heineken]] discussions feature in reports on the beer maker's ownership structure. Development ties into ongoing strategic review of the India beer business.",
       "page_number": 5,
@@ -252,7 +252,7 @@
       "importance": 4
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "Air India nears Rs 10,000-crore Tata Sons, SIA funding",
       "summary": "[[Air India]] is close to securing ₹10,000 crore in funding from [[Tata Sons]] and [[Singapore Airlines]]. Capital infusion is aimed at supporting the airline's fleet expansion and turnaround plan.",
       "page_number": 5,
@@ -260,7 +260,7 @@
       "importance": 5
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "SpiceJet inducts 20 additional aircraft to rebuild fleet",
       "summary": "[[SpiceJet]] inducts 20 additional aircraft into its fleet as it rebuilds capacity. Move follows a period of fleet contraction and financial restructuring at the airline.",
       "page_number": 5,
@@ -268,7 +268,7 @@
       "importance": 3
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "Adani Group eyes expansion in real estate business",
       "summary": "[[Adani Group]] eyes expansion in the real-estate and property business. Group is evaluating new project launches across residential and commercial segments.",
       "page_number": 5,
@@ -276,7 +276,7 @@
       "importance": 3
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "Afcom proposes buying four Boeing freighter aircraft",
       "summary": "[[Afcom]] proposes buying four Boeing freighter aircraft to expand cargo capacity. Deal would add dedicated freighter capability to the operator's fleet.",
       "page_number": 5,
@@ -284,7 +284,7 @@
       "importance": 2
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "Shiseido deepens India beauty-market push with new launches",
       "summary": "Japan's [[Shiseido]] deepens its India beauty-market push with new product launches and retail expansion. Company is targeting India's growing premium beauty and skincare segment.",
       "page_number": 5,
@@ -292,7 +292,7 @@
       "importance": 2
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "SBI mobilises $10 billion via FCNR(B) deposits",
       "summary": "[[SBI]] mobilises $10 billion via FCNR(B) deposits, among its largest such fundraises. Inflows are seen supporting the rupee and gilt markets amid global rate uncertainty.",
       "page_number": 6,
@@ -300,7 +300,7 @@
       "importance": 4
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "Tips Music announces up to Rs 44.5-crore buyback",
       "summary": "[[Tips Music]] announces a buyback of equity shares worth up to ₹44.5 crore at a maximum price of ₹750 per share from the open market. Buyback opens September 9, 2026 and closes within 66 working days; promoters will not participate.",
       "page_number": 5,
@@ -308,7 +308,7 @@
       "importance": 3
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "OpenAI names Sandhya Devanathan as India vice-president",
       "summary": "[[OpenAI]] names Sandhya Devanathan as its India vice-president. Appointment underscores OpenAI's push to deepen its presence and enterprise partnerships in the Indian market.",
       "page_number": 5,
@@ -573,19 +573,62 @@
     }
   ],
   "topStories": [
-    { "headline": "Air India nears Rs 10,000-crore Tata Sons, SIA funding", "section": "Corporate Events", "note": "Major turnaround-financing deal for the national carrier" },
-    { "headline": "Sensex swings nearly 4,000 points in two minutes", "section": "Market", "note": "Extreme intraday volatility spike prompts scrutiny of algo triggers" },
-    { "headline": "RBI meets bankers amid banking-system liquidity glut", "section": "Economy" },
-    { "headline": "Private capex overtakes government capex as growth driver", "section": "Economy" },
-    { "headline": "Crude oil import basket nears $100 a barrel", "section": "Economy", "note": "Adds to import-bill and inflation concerns" },
-    { "headline": "Sebi may review index-linked product methodology", "section": "Regulatory" },
-    { "headline": "India stalls Alipay+ cross-border payment network rollout", "section": "Regulatory" },
-    { "headline": "Persistent Systems plans $1.25-billion fundraise for acquisitions", "section": "Corporate Events" },
-    { "headline": "United Breweries, Heineken feature in ownership-structure reports", "section": "Corporate Events" },
-    { "headline": "SBI mobilises $10 billion via FCNR(B) deposits", "section": "Corporate Events" },
-    { "headline": "Iran conflict escalation pushes civilian death toll higher", "section": "International News" },
-    { "headline": "Oil prices hit fresh six-week highs on Mideast tensions", "section": "International News" },
-    { "headline": "Beyond the headline 7.8% GDP growth number: opinion", "section": "Others", "note": "Questions durability of the 7.8% growth print" }
+    {
+      "headline": "Air India nears Rs 10,000-crore Tata Sons, SIA funding",
+      "section": "Events",
+      "note": "Major turnaround-financing deal for the national carrier"
+    },
+    {
+      "headline": "Sensex swings nearly 4,000 points in two minutes",
+      "section": "Market",
+      "note": "Extreme intraday volatility spike prompts scrutiny of algo triggers"
+    },
+    {
+      "headline": "RBI meets bankers amid banking-system liquidity glut",
+      "section": "Economy"
+    },
+    {
+      "headline": "Private capex overtakes government capex as growth driver",
+      "section": "Economy"
+    },
+    {
+      "headline": "Crude oil import basket nears $100 a barrel",
+      "section": "Economy",
+      "note": "Adds to import-bill and inflation concerns"
+    },
+    {
+      "headline": "Sebi may review index-linked product methodology",
+      "section": "Regulatory"
+    },
+    {
+      "headline": "India stalls Alipay+ cross-border payment network rollout",
+      "section": "Regulatory"
+    },
+    {
+      "headline": "Persistent Systems plans $1.25-billion fundraise for acquisitions",
+      "section": "Announcements"
+    },
+    {
+      "headline": "United Breweries, Heineken feature in ownership-structure reports",
+      "section": "Announcements"
+    },
+    {
+      "headline": "SBI mobilises $10 billion via FCNR(B) deposits",
+      "section": "Events"
+    },
+    {
+      "headline": "Iran conflict escalation pushes civilian death toll higher",
+      "section": "International News"
+    },
+    {
+      "headline": "Oil prices hit fresh six-week highs on Mideast tensions",
+      "section": "International News"
+    },
+    {
+      "headline": "Beyond the headline 7.8% GDP growth number: opinion",
+      "section": "Others",
+      "note": "Questions durability of the 7.8% growth print"
+    }
   ],
   "stocksInFocus": [
     {

@@ -33,22 +33,27 @@ No Claude API call is used for extraction — read the PDF directly and write th
 
 ## 3a. Classify every story into a fixed topic taxonomy — never by page
 
-The `section` field must be one of these 12 fixed leaf values. The UI groups them into top-level tabs (with sub-tabs for grouped ones) — write the `stories` array in this exact leaf order, since `display_order` is derived purely from array position:
+The `section` field must be one of these 13 fixed leaf values. The UI groups them into top-level tabs (with sub-tabs for grouped ones) — write the `stories` array in this exact leaf order, since `display_order` is derived purely from array position:
 
 1. **Economy** — macro data and government economic commentary: GDP, fiscal deficit, RBI/CEA/FinMin commentary, PMI, services-sector output, debt targets. *(Top-level tab: Economy)*
 2. **Policy** — government policy decisions/proposals: FDI-norm changes, GST Council meetings, sector policy notifications. *(Grouped under "Policy & Regulatory")*
 3. **Regulatory** — court/tribunal/NCLT/NCLAT rulings, SEBI/FSSAI/regulator orders and bans, AGM/e-voting notices, SARFAESI/possession notices, lost-share-certificate notices, government fare/price orders. *(Grouped under "Policy & Regulatory")*
 4. **Sector** — industry-wide trends that aren't about one company: e.g. "$50-bn medtech sector by FY30" or "premium phones fly, budget ones flag" — a whole sector's dynamics, not a single stock's news. *(Grouped under "In Focus", alongside the separately-curated `stocksInFocus` "Stocks in Focus" tab)* Every Sector story must also carry an `"industry"` field — a short (1-3 word) tag naming the specific industry, e.g. `"Medtech"`, `"Smartphones"`, `"Dairy/FMCG"`, `"AI/Enterprise Tech"`. This renders as a small badge next to the headline so readers can tell sectors apart at a glance without opening each story. `industry` is optional on every other section (leave it off) — it only applies to `section: "Sector"`.
-5. **Corporate Events** — single-company news: results, capex/capacity announcements, M&A, leadership changes, stake sales — e.g. "SJVN capacity up 1,730 MW" is stock-specific, so it's Corporate Events, not Sector. *(Grouped under "Stocks")*
-6. **IPO** — new listings, IPO price bands/allotments/proceeds, rights issues, preferential issues. *(Grouped under "Stocks")*
-7. **Market** — index/auction moves, currency, bank credit/liquidity, mutual/HNI fund flows, open offers, post-offer advertisements. *(Grouped under "Stocks")*
-8. **Trade** — bilateral/multilateral trade deals, tariffs, trade missions, investment treaties. *(Grouped under "Stocks")*
-9. **Insurance** — insurance-sector and insurer-specific stories. *(Grouped under "Stocks")*
-10. **Growth & Development** — infrastructure and capability-building initiatives: highway awards, Semicon-type schemes, industrial corridors. *(Standalone top-level tab)*
-11. **International News** — foreign geopolitics, foreign companies/economies, global markets not centred on an Indian listed company. *(Standalone top-level tab)*
-12. **Others** — opinion/editorial pieces, human-interest, sport, product reviews, climate/monsoon/flood/water-stress/natural-resource stories, anything that genuinely doesn't fit above. *(Standalone top-level tab; Environment & Resources-type stories now fold in here — there is no separate Environment tab.)*
+5. **Announcements** — single-company news that is a statement, plan, or personnel move rather than a completed transaction: leadership/board appointments (CEO/MD/chairman named, resigns, succeeds), stated intentions/plans not yet executed ("eyes foray into X", "aims to chase Y", "mulls Z"), corporate statements/clarifications/responses to press queries. *(Grouped under new "Corporate" top-level tab)*
+6. **Events** — single-company news describing something that concretely happened/closed: results announced, M&A or stake-sale deals signed/closed, capex/capacity commissioned or expanded, regulatory clearance obtained for a completed deal, funding rounds closed, facility/JV launches — e.g. "SJVN capacity up 1,730 MW" or "Zollner enters India with Avalon JV" is a completed action, so it's Events, not Announcements. *(Grouped under "Corporate")*
+7. **IPO** — new listings, IPO price bands/allotments/proceeds, rights issues, preferential issues. *(Grouped under "Stocks")*
+8. **Market** — index/auction moves, currency, bank credit/liquidity, mutual/HNI fund flows, open offers, post-offer advertisements. *(Grouped under "Stocks")*
+9. **Trade** — bilateral/multilateral trade deals, tariffs, trade missions, investment treaties. *(Grouped under "Stocks")*
+10. **Insurance** — insurance-sector and insurer-specific stories. *(Grouped under "Stocks")*
+11. **Growth & Development** — infrastructure and capability-building initiatives: highway awards, Semicon-type schemes, industrial corridors. *(Standalone top-level tab)*
+12. **International News** — foreign geopolitics, foreign companies/economies, global markets not centred on an Indian listed company. *(Standalone top-level tab)*
+13. **Others** — opinion/editorial pieces, human-interest, sport, product reviews, climate/monsoon/flood/water-stress/natural-resource stories, anything that genuinely doesn't fit above. *(Standalone top-level tab; Environment & Resources-type stories now fold in here — there is no separate Environment tab.)*
 
-**The sector-vs-stock test:** if the story is about one identifiable listed company's numbers/decisions, it's Corporate Events. If it's about an industry/market segment as a whole (even if it names a few example companies), it's Sector.
+**The Announcements-vs-Events test:** if the story is a plan, intention, statement, or personnel appointment, it's Announcements. If it's a transaction/action that has actually closed or occurred (results, a signed deal, a commissioned plant, a cleared regulatory approval), it's Events. When in doubt, ask "did this already happen, or is it being said/planned/appointed?" — happened → Events, said/planned/appointed → Announcements.
+
+**Note:** "Corporate Events" (singular combined section) no longer exists — it has been split into "Announcements" and "Events" above, both grouped under a new "Corporate" top-level tab (previously these were grouped under "Stocks").
+
+**The sector-vs-stock test:** if the story is about one identifiable listed company's numbers/decisions, it's Announcements or Events (see the Announcements-vs-Events test above). If it's about an industry/market segment as a whole (even if it names a few example companies), it's Sector.
 
 **The IPO-vs-Market test:** if the story is about a specific company's capital-raise event (new listing, IPO price band/allotment, rights/preferential issue), it's IPO. If it's about trading/liquidity/index mechanics, currency, credit growth, or fund flows not tied to one company's capital raise, it's Market.
 
@@ -113,7 +118,7 @@ Separately from the story list, curate a short list (typically 5-10) of the day'
 ]
 ```
 
-This renders as the "Stocks in Focus" tab, grouped alongside "Sector" under the "In Focus" top-level tab. (Note: this is a different grouping from the "Stocks" top-level tab, which holds Corporate Events/IPO/Market/Trade/Insurance — don't confuse the two.)
+This renders as the "Stocks in Focus" tab, grouped alongside "Sector" under the "In Focus" top-level tab. (Note: this is a different grouping from the "Stocks" top-level tab, which holds IPO/Market/Trade/Insurance, and different again from the "Corporate" top-level tab, which holds Announcements/Events — don't confuse the three.)
 
 ## 6b. Build `topStories` — a cross-section digest so a reader never has to open every tab
 

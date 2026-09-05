@@ -121,7 +121,7 @@
       "importance": 3
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Tata Trusts]] gets tax all-clear on NRTT share transfer",
       "summary": "[[Tata Trusts]] received tax clearance for the transfer of shares held via the Navajbai Ratan Tata Trust (NRTT) structure, removing a compliance overhang that had clouded the trusts' shareholding arrangements within the Tata group.",
       "page_number": 1,
@@ -129,7 +129,7 @@
       "importance": 4
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Hyundai Motor India]] expects 8-10% FY27 growth, outpacing industry",
       "summary": "[[Hyundai Motor India]] said it expects 8-10% sales growth in FY27, ahead of the broader industry's projected pace, citing a stronger SUV lineup and expanding rural and export demand as key drivers.",
       "page_number": 8,
@@ -137,7 +137,7 @@
       "importance": 4
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[VinFast]] steps up localisation push in India",
       "summary": "[[VinFast]] is deepening local sourcing and manufacturing in India as it looks to cut costs and improve price competitiveness for its electric vehicles against established domestic and global rivals.",
       "page_number": 8,
@@ -145,7 +145,7 @@
       "importance": 2
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "Range Rover goes electric as [[JLR]] aims for recharging growth",
       "summary": "[[Jaguar Land Rover]]'s Range Rover marque is expanding its electric line-up as the company looks to reignite growth through its premium EV push, betting on charging-network buildout and brand strength to win over luxury buyers.",
       "page_number": 8,
@@ -153,7 +153,7 @@
       "importance": 3
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Swiggy]] partners [[Hero MotoCorp]] to help delivery riders with vehicle ownership",
       "summary": "[[Swiggy]] tied up with [[Hero MotoCorp]] to offer its delivery riders easier access to two-wheeler ownership through financing and leasing tie-ups, part of a broader push to improve rider retention and earnings stability.",
       "page_number": 8,
@@ -161,7 +161,7 @@
       "importance": 2
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "[[ICICI Bank]] reshuffles top brass, [[ICICI Securities]] MD moves to parent",
       "summary": "[[ICICI Bank]] announced a reshuffle of its senior management, with the managing director of [[ICICI Securities]] moving to a role at the parent bank as part of a broader leadership rotation across the group.",
       "page_number": 6,
@@ -169,7 +169,7 @@
       "importance": 4
     },
     {
-      "section": "Corporate Events",
+      "section": "Announcements",
       "headline": "[[Hexaware Technologies]] names Vivek Jetley as CEO-designate",
       "summary": "[[Hexaware Technologies]] named Vivek Jetley as chief executive officer-designate, positioning him to take over leadership as the IT services company continues its post-listing growth push.",
       "page_number": 3,
@@ -177,7 +177,7 @@
       "importance": 3
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[Nalco]] offers fresh shares via OFS on NSE and BSE",
       "summary": "[[National Aluminium Company]] launched an offer-for-sale of fresh equity shares on the NSE and BSE, giving the government a route to pare its stake while the company presses ahead with its capacity-expansion plans.",
       "page_number": 25,
@@ -185,7 +185,7 @@
       "importance": 3
     },
     {
-      "section": "Corporate Events",
+      "section": "Events",
       "headline": "[[NMDC]] August production up 21%",
       "summary": "[[NMDC]] reported a 21% year-on-year rise in iron-ore production for August, as the state-run miner ramped up output to meet steady steel-sector demand.",
       "page_number": 4,
@@ -282,13 +282,34 @@
     }
   ],
   "stocksInFocus": [
-    { "name": "Tata Trusts", "note": "Gets tax clearance on NRTT share-transfer structure" },
-    { "name": "Hyundai Motor India", "note": "Guides to 8-10% FY27 growth, ahead of industry" },
-    { "name": "ICICI Bank", "note": "Top management reshuffle; ICICI Securities MD moves to parent" },
-    { "name": "Nalco", "note": "Fresh share OFS on NSE/BSE alongside capacity-expansion plans" },
-    { "name": "NMDC", "note": "August iron-ore production up 21% YoY" },
-    { "name": "Deepa Jewellers", "note": "Pre-issue disclosures filed ahead of BSE/NSE main-board IPO" },
-    { "name": "Reliance Life Sciences", "note": "USFDA warning letter over Navi Mumbai unit violations" }
+    {
+      "name": "Tata Trusts",
+      "note": "Gets tax clearance on NRTT share-transfer structure"
+    },
+    {
+      "name": "Hyundai Motor India",
+      "note": "Guides to 8-10% FY27 growth, ahead of industry"
+    },
+    {
+      "name": "ICICI Bank",
+      "note": "Top management reshuffle; ICICI Securities MD moves to parent"
+    },
+    {
+      "name": "Nalco",
+      "note": "Fresh share OFS on NSE/BSE alongside capacity-expansion plans"
+    },
+    {
+      "name": "NMDC",
+      "note": "August iron-ore production up 21% YoY"
+    },
+    {
+      "name": "Deepa Jewellers",
+      "note": "Pre-issue disclosures filed ahead of BSE/NSE main-board IPO"
+    },
+    {
+      "name": "Reliance Life Sciences",
+      "note": "USFDA warning letter over Navi Mumbai unit violations"
+    }
   ],
   "ipoListings": [
     {
@@ -306,18 +327,60 @@
     }
   ],
   "topStories": [
-    { "headline": "Government asserts no 'mechanical' boost aided Q1 GDP growth print", "section": "Economy", "note": "Government pushes back on claims of a statistical boost" },
-    { "headline": "JCR upgrades India's sovereign rating to A-", "section": "Economy", "note": "Latest in a run of positive sovereign rating actions" },
-    { "headline": "FCNR(B) haul soars to $127 billion on final sprint", "section": "Economy" },
-    { "headline": "India backs US on global imbalances at G20, but China's opposition stalls consensus", "section": "Policy" },
-    { "headline": "USFDA warns [[Reliance Life Sciences]] over Navi Mumbai unit violations", "section": "Regulatory" },
-    { "headline": "[[Tata Trusts]] gets tax all-clear on NRTT share transfer", "section": "Corporate Events" },
-    { "headline": "[[ICICI Bank]] reshuffles top brass, [[ICICI Securities]] MD moves to parent", "section": "Corporate Events" },
-    { "headline": "[[Hyundai Motor India]] expects 8-10% FY27 growth, outpacing industry", "section": "Corporate Events" },
-    { "headline": "India vs developed markets: bond yield gap narrows", "section": "Market" },
-    { "headline": "US 10-year bond yield topping 5% is a risk for markets: Chris Wood", "section": "Market" },
-    { "headline": "F&O turnover slumps to 14-month low as CAS rollout bites", "section": "Market" },
-    { "headline": "US-Iran escalation renews war fears as tankers targeted in the Strait", "section": "International News", "note": "Strait of Hormuz tensions raise wider-war fears" },
-    { "headline": "Xi urges new security order for West Asia", "section": "International News" }
+    {
+      "headline": "Government asserts no 'mechanical' boost aided Q1 GDP growth print",
+      "section": "Economy",
+      "note": "Government pushes back on claims of a statistical boost"
+    },
+    {
+      "headline": "JCR upgrades India's sovereign rating to A-",
+      "section": "Economy",
+      "note": "Latest in a run of positive sovereign rating actions"
+    },
+    {
+      "headline": "FCNR(B) haul soars to $127 billion on final sprint",
+      "section": "Economy"
+    },
+    {
+      "headline": "India backs US on global imbalances at G20, but China's opposition stalls consensus",
+      "section": "Policy"
+    },
+    {
+      "headline": "USFDA warns [[Reliance Life Sciences]] over Navi Mumbai unit violations",
+      "section": "Regulatory"
+    },
+    {
+      "headline": "[[Tata Trusts]] gets tax all-clear on NRTT share transfer",
+      "section": "Events"
+    },
+    {
+      "headline": "[[ICICI Bank]] reshuffles top brass, [[ICICI Securities]] MD moves to parent",
+      "section": "Announcements"
+    },
+    {
+      "headline": "[[Hyundai Motor India]] expects 8-10% FY27 growth, outpacing industry",
+      "section": "Events"
+    },
+    {
+      "headline": "India vs developed markets: bond yield gap narrows",
+      "section": "Market"
+    },
+    {
+      "headline": "US 10-year bond yield topping 5% is a risk for markets: Chris Wood",
+      "section": "Market"
+    },
+    {
+      "headline": "F&O turnover slumps to 14-month low as CAS rollout bites",
+      "section": "Market"
+    },
+    {
+      "headline": "US-Iran escalation renews war fears as tankers targeted in the Strait",
+      "section": "International News",
+      "note": "Strait of Hormuz tensions raise wider-war fears"
+    },
+    {
+      "headline": "Xi urges new security order for West Asia",
+      "section": "International News"
+    }
   ]
 }

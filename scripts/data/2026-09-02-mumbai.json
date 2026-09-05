@@ -2,84 +2,456 @@
   "edition": "Mumbai",
   "paper_date": "2026-09-02",
   "stories": [
-    { "section": "Economy", "headline": "FCNR(B) inflows cross $100 billion mark", "summary": "Capital inflows under the Foreign Currency Non-Resident (Bank) deposit scheme crossed the $100-billion mark by the August 31 deadline, surpassing the RBI's earlier $80-billion projection across FCNR(B), ECB and OFCB schemes. FCNR(B) alone stood at $65.4 billion of the $72.85 billion total as of August 21, with ECB/OFCB windows staying open till December 31 even as the FCNR(B) window shut a month early on September 11.", "page_number": 1 },
-    { "section": "Economy", "headline": "GST receipts grow 14.8% to ₹2 lakh crore in August", "summary": "Gross GST collections rose 14.8% year-on-year to ₹2 lakh crore in August, driven by higher revenue from imported products and services; on a month-on-month basis collections were down 5.4% from July. April-August FY27 mop-up stands at ₹10.41 lakh crore, up 11% over the same period a year ago, with domestic collections up 9.3% to ₹1.37 lakh crore.", "page_number": 1 },
-    { "section": "Economy", "headline": "CAD widens slightly to 0.5% of GDP in Q1, reserves shrink by $8.1 billion", "summary": "India's current account deficit widened marginally to $4.2 billion (0.5% of GDP) in Q1FY27 from $3.4 billion a year ago, due to higher energy prices and a wider goods trade deficit amid the West Asia war. The financial account saw a BoP deficit of $8.1 billion in April-June against a $9.6-billion surplus a year ago, though FDI inflows rose to $6.1 billion from $5.2 billion.", "page_number": 2 },
-    { "section": "Economy", "headline": "Manufacturing PMI hits 5-year low of 52.8 in August", "summary": "India's HSBC manufacturing PMI fell for the third straight month to 52.8 in August from 53.5 in July, the lowest since August 2021, as softer demand weighed on output, new orders and hiring. Input-buying growth hit a 62-month low while price pressures eased to their weakest level in 45 months.", "page_number": 2 },
-    { "section": "Economy", "headline": "Modi: keep growing, ignore naysayers on GDP", "summary": "PM Narendra Modi said India's economy remained resilient with 7.8% Q1FY27 GDP growth despite global headwinds including the West Asia war, and urged citizens to embrace \"Swadeshi\" and self-reliance, including avoiding gold and unnecessary foreign travel. Finance Minister Nirmala Sitharaman said the growth is secular and broad-based.", "page_number": 2 },
-    { "section": "Economy", "headline": "ITR filings for AY27 touch record 78 million", "summary": "Over 78 million income-tax returns were filed for assessment year 2026-27 till August 31, the income tax department said, up from 73 million ITRs filed by the extended deadline last year (September 16, 2025).", "page_number": 2 },
-    { "section": "Policy", "headline": "Diesel export levy hiked to ₹25/litre, petrol to ₹1.5", "summary": "The government raised the export levy on diesel to ₹25 per litre from ₹24, and on petrol to ₹1.5 per litre from zero, effective September 1, tightening curbs on overseas fuel sales as the West Asia crisis strains global crude and product markets. ATF export levy was marginally cut to ₹19 from ₹19.5 per litre.", "page_number": 3 },
-    { "section": "Policy", "headline": "Govt halves sugar stockholding limit for dealers to 2,000 quintals", "summary": "The Centre tightened the stock-holding limit for sugar dealers to 2,000 quintals from 4,000 quintals effective September 15 to November 30, aimed at ensuring adequate domestic supply and checking hoarding and speculative trading amid rising retail prices.", "page_number": 3 },
-    { "section": "Sector", "headline": "Car sales rev up 36% in pre-festive spark", "summary": "Passenger vehicle wholesales surged 35.7% year-on-year to a record 448,319 units in August, led by strong consumer demand, GST-led tailwinds and lower interest rates. [[Maruti Suzuki India]] led with 176,971 units (up 34.8%), followed by [[Tata Motors]] (65,253), [[Mahindra & Mahindra]] (59,257) and [[Hyundai Motor]] (54,396); electric car registrations rose 50% to 30,325 units.", "page_number": 4, "industry": "Auto/PVs" },
-    { "section": "Sector", "headline": "PC shipments rise as retailers stock up ahead of price hikes", "summary": "India's PC market grew 12.1% year-on-year to 3.9 million units in the June quarter as retailers and channel partners stocked up ahead of expected price hikes, IDC said. Notebooks grew 14% while commercial shipments rose 16.6-22%; [[HP]] led with 29.4% market share, ahead of [[Lenovo]], [[Dell]] and [[Acer]].", "page_number": 4, "industry": "PCs/Laptops" },
-    { "section": "Sector", "headline": "Refurbished smartphone volumes grow 13% in H1 2026", "summary": "India's refurbished smartphone volumes rose 13% year-on-year in H1 2026 even as new-device sales fell 11%, as rising handset prices push consumers toward lower-cost alternatives, according to Counterpoint Research. [[Samsung]] led the refurbished market with 30% share, followed by [[Apple]] (23%) and [[Vivo]] (10%).", "page_number": 5, "industry": "Smartphones" },
-    { "section": "Sector", "headline": "Domestic air demand falls 6.3% in July, weakest among major markets", "summary": "India's domestic air passenger demand fell 6.3% year-on-year in July, the weakest performance among major global aviation markets, per IATA data, as airlines cut domestic seat capacity by 6% even while passenger load factor rose to 82.7%.", "page_number": 5, "industry": "Aviation" },
-    { "section": "Sector", "headline": "Petrol, diesel sales soar on erratic monsoon", "summary": "Petrol and diesel sales by India's state-run fuel retailers surged in August as erratic monsoon rainfall boosted fuel demand from farmers and motorists; petrol sales by [[Indian Oil]], [[Bharat Petroleum]] and [[Hindustan Petroleum]] rose 9.1% and diesel 3.48 million tonnes, up from 3.19 million tonnes a year ago.", "page_number": 2, "industry": "Auto Fuel/OMCs" },
-    { "section": "Sector", "headline": "Rollout of agentic payments on UPI may come soon", "summary": "The government is preparing a framework to let AI agents make small digital payments without manual approval for every transaction, with UPI seen as well-placed to capture early use cases such as groceries and e-commerce. Global card networks Mastercard and Visa are separately building agentic payment capabilities in India.", "page_number": 6, "industry": "Fintech/Payments" },
-    { "section": "Sector", "headline": "Bank loan reclassification masks microfinance growth: MFIN", "summary": "Banks' reclassification of microfinance loans weighed on overall credit growth in the sector even as the gross loan portfolio grew 1.1% sequentially to ₹3.29 lakh crore in Q1FY27, per MFIN. NBFC-MFIs accounted for 44.3% of total industry portfolio, followed by banks at 25.3%, with portfolio-at-risk (31-180 days) falling to 1.6% from 5.6% a year earlier.", "page_number": 10, "industry": "Microfinance" },
-    { "section": "Trade", "headline": "US trade talks: Govt seeks exporters' inputs ahead of Goyal's US visit", "summary": "The commerce ministry met exporters and industry on Tuesday to hear concerns over US market access ahead of Commerce Minister Piyush Goyal's US visit for the G-20 trade ministerial (Sept 30-Oct 1) and bilateral trade agreement talks. Exporters flagged risks including a 10% additional US tariff and a Section 301 investigation into India's excess capacity.", "page_number": 2 },
-    { "section": "Corporate Events", "headline": "Vedanta bets big on Northeast oil", "summary": "[[Vedanta Oil & Gas]] has partnered with Belcip-Franlab India to accelerate exploration and production in the Northeast, targeting up to 300 million barrels of oil-equivalent additional resources across nine Open Acreage Licensing Policy blocks and one Discovered Small Field block, including Hazarigaon and Rudra.", "page_number": 2 },
-    { "section": "Growth & Development", "headline": "Railways clears ₹800-crore safety projects", "summary": "Indian Railways approved four projects worth ₹800 crore, including deployment of Kavach 4.0 across 712 route km, modernisation of signalling at 21 stations, construction of a freight bypass in South Eastern Railway and re-modelling of a yard in Gujarat, aimed at decongesting a terminal and supporting up to 8.88 million tonnes of freight traffic per annum.", "page_number": 2 },
-    { "section": "Corporate Events", "headline": "Sun Pharma inks US deal to bypass Section 232 tariffs", "summary": "[[Sun Pharmaceutical Industries]] signed an agreement with the US government to supply medicines to American patients at affordable rates, securing a waiver from Section 232 tariffs on innovative and specialty drugs for over two years. Sun is one of nine global drugmakers, alongside [[Pfizer]], [[AstraZeneca]] and [[Dr Reddy's]], to sign such Most Favoured Nation pricing pacts with the US.", "page_number": 1 },
-    { "section": "Regulatory", "headline": "Setback for Subhash Chandra as NCLT stays ₹6.5-crore settlement order", "summary": "A five-member NCLT bench stayed the August 25 order approving a ₹6.25-crore repayment plan against admitted creditor claims of ₹22,006.57 crore in the personal insolvency case against Zee Group founder Subhash Chandra, and issued fresh notice to all parties. The bench will hear the case afresh, with next hearing on September 23.", "page_number": 1 },
-    { "section": "Corporate Events", "headline": "OVL seeks $500-million Venezuela dividend payout in cash or oil", "summary": "State-run [[ONGC Videsh]] is negotiating with Venezuelan authorities and PDVSA to recover nearly $500 million of stuck dividends, with payment options including cash or crude oil supplies, as it prepares to revive operations following an OFAC general licence secured in July. OVL holds a 40% stake in the San Cristobal oil project and 11% in Carabobo.", "page_number": 3 },
-    { "section": "Corporate Events", "headline": "Coal India liquidates 55 MT of pithead coal stocks", "summary": "[[Coal India]] has liquidated around 55 million tonnes of pithead coal stocks in the first five months of FY27, helped by higher dispatches, even as total supplies rose 5.5% year-on-year to 60.60 MT in August, reflecting stronger evacuation despite the monsoon period.", "page_number": 3 },
-    { "section": "Corporate Events", "headline": "RIL scoops up ice-cream opportunity with Bombay Creamery launch", "summary": "[[Reliance Consumer]], the FMCG arm of [[Reliance Industries]], entered the ₹18,000-crore organised ice-cream market with the launch of Bombay Creamery, an accessible dairy brand starting at ₹10/unit, positioned to compete with [[Amul]] and rivals including [[Kwality Wall's]], [[Mother Dairy]] and [[Vadilal]]. Reliance Consumer's beverage business, led by Campa, recorded around ₹2,900 crore in sales in the June quarter.", "page_number": 4 },
-    { "section": "Others", "headline": "IIT Kanpur startups valued at ₹11,355 crore", "summary": "Startups incubated at IIT Kanpur have reached a cumulative valuation of around ₹11,355 crore as the institute moves its 25-year-old startup ecosystem beyond incubation towards scaling technologies into commercially viable businesses via its Startup Innovation and Incubation Centre.", "page_number": 4 },
-    { "section": "Corporate Events", "headline": "upGrad acquires Unacademy at a valuation 90% below 2021 peak", "summary": "[[upGrad]] completed its all-stock acquisition of edtech firm [[Unacademy]] at a valuation of just over $200 million — more than 90% below its 2021 peak of $3.44 billion — after nearly 10 months of on-and-off talks. [[Unacademy]]'s parent Sorting Hat Technologies retains a term sheet valuing the company at about ₹2,055 crore.", "page_number": 4 },
-    { "section": "Corporate Events", "headline": "JioHotstar expands to UK, Canada and Singapore", "summary": "[[JioHotstar]], the streaming platform of [[JioStar]], launched in the UK, Canada and Singapore, marking its first major international expansion as the company looks to take its Indian entertainment content to global audiences, with more than 30,000 hours of fresh content.", "page_number": 4 },
-    { "section": "Corporate Events", "headline": "Parle Biscuits names PepsiCo veteran George Kovoor as first-ever CEO", "summary": "[[Parle Biscuits]] appointed George Kovoor, a PepsiCo veteran, as its first-ever chief executive officer effective September 1, signalling a new phase for the family-run company as it expands beyond its traditional biscuit and confectionery business and eyes a $1-billion IPO.", "page_number": 4 },
-    { "section": "Corporate Events", "headline": "Pilots' body flags crew exodus at Air India Express", "summary": "The Airline Pilots' Association of India (Alpa India) raised concerns over the loss of experienced pilots across the [[Air India]] Group, particularly at [[Air India Express]], warning that attrition among commanders and senior pilots over pay and working conditions could have operational safety implications.", "page_number": 5 },
-    { "section": "Regulatory", "headline": "SC extends time for Kalyani family mediation till October", "summary": "The Supreme Court extended mediation in the nearly two-decade-old Kalyani family dispute until the end of October and directed circuits hearing related cases to defer proceedings, giving family members more time to work towards a settlement. The dispute pits siblings Baba Kalyani, Sugandha Hiremath and Gaurishankar against each other over ancestral family wealth estimated at more than ₹1 lakh crore.", "page_number": 5 },
-    { "section": "Corporate Events", "headline": "SpiceJet ends Boeing 737 MAX 8 operations", "summary": "Cash-strapped [[SpiceJet]] has ended operations of the Boeing 737 MAX 8, with its three remaining airworthy aircraft to leave the fleet, though its overall fleet size stays unchanged at 11 as the airline inducts three Airbus A320s on wet lease from Cambodia-based SkyAngkor Airways.", "page_number": 5 },
-    { "section": "Corporate Events", "headline": "IndiGo flight returns after engine failure", "summary": "A Delhi-bound [[IndiGo]] flight carrying 229 passengers returned to Goa soon after take-off following a failure in one of its engines and made an emergency landing; a technical issue was detected before take-off and the pilots followed standard operating procedures.", "page_number": 5 },
-    { "section": "Market", "headline": "Bond yields hover near 7% as markets brace for rate hike", "summary": "Government bond yields closed in on the psychologically crucial 7% mark, with the 10-year yield ending at 6.96% on Tuesday, its highest level since June, as traders priced in a possible near-term rate hike following hawkish signals from global central banks and renewed geopolitical tensions.", "page_number": 6 },
-    { "section": "Market", "headline": "Blackstone's ₹12,000-crore REIT sale fully booked", "summary": "The ₹12,000-crore offer for sale of US-based fund house [[Blackstone]]'s stake in [[Knowledge Realty Trust]] was subscribed 2.5 times, with retail investors participating on Tuesday. The deal will reduce Blackstone's stake in the REIT to 21.5% from 46.5%, joining venture partner Sattva Group.", "page_number": 6 },
-    { "section": "Market", "headline": "RBI intervention takes rupee to 2-month high", "summary": "The rupee extended gains for the fourth consecutive session, supported by RBI intervention and dollar inflows, closing at 94.95 against the dollar on Tuesday, its best-performing Asian currency so far in the calendar year, having strengthened 1.85% in the past week amid a rise in oil prices.", "page_number": 6 },
-    { "section": "Policy", "headline": "Bank unions to go on nationwide strike on September 11", "summary": "The United Forum of Bank Unions (UFBU) has decided to go on a nationwide strike on September 11 over delays in implementing five-day banking, differences over performance-linked incentive scheme and pending demands including pension-related issues, which could impact banking services for four straight days in many parts of the country.", "page_number": 6 },
-    { "section": "Insurance", "headline": "Irdai proposes insurance registry for transparency", "summary": "The Insurance Regulatory and Development Authority of India (Irdai) proposed creation of a Public Insurance Registry (PIR), an interoperable and non-exclusionary digital public infrastructure aimed at making the insurance ecosystem more connected, transparent and accessible, with comments due by September 30.", "page_number": 6 },
-    { "section": "Corporate Events", "headline": "Symbiotec Pharma gains over 11% on debut", "summary": "Shares of pharma and biotech company [[Symbiotec Pharmalab]] made a muted market debut but bounced back later, ending 11% higher against the issue price of ₹988, before recovering further intraday to jump 18.80% to ₹1,173.80; the company's market valuation stood at ₹7,042.15 crore.", "page_number": 6 },
-    { "section": "Corporate Events", "headline": "Skyways Air makes disappointing market debut", "summary": "Shares of air freight forwarding and logistics firm [[Skyways Air Services]] closed on a 9% discount to their issue price of ₹138 on debut, having begun trading at ₹124.50, down 9.78% from the issue price, before falling further intraday to ₹119.", "page_number": 6 },
-    { "section": "Market", "headline": "Helios Mutual Fund crosses ₹15,000 crore in AUM", "summary": "The Samir Arora-founded [[Helios Mutual Fund]] crossed ₹15,000 crore in assets under management, marking over 200% year-on-year AUM growth; the fund house added ₹5,000 crore to assets from April to August 2026.", "page_number": 6 },
-    { "section": "Market", "headline": "UPI transaction volumes hit record high in August", "summary": "Volumes through the Unified Payments Interface hit a record high crossing 24 billion in August, per NPCI data, with total payment value reaching ₹29.82 lakh crore, up from ₹29.88 lakh crore in July, driven by festive activity such as Raksha Bandhan and Onam.", "page_number": 6 },
-    { "section": "Insurance", "headline": "InsuranceDekho, RenewBuy merge to create largest AI-enabled insurance distribution platform", "summary": "[[InsuranceDekho]] and [[RenewBuy]] announced consolidation of their businesses to create one of India's largest AI-enabled insurance distribution platforms, with the combined business operating under the InsuranceDekho brand under founder Ankit Agrawal. The merged entity has more than ₹6,600 crore in insurance premium generated, over 600,000 digital partners and coverage across 98.57% of India's postal codes.", "page_number": 6 },
-    { "section": "Corporate Events", "headline": "Revolving loan bar to have limited impact: Shriram Finance's Revankar", "summary": "[[Shriram Finance]] executive vice-chairman Umesh Revankar said the RBI's proposal to restrict NBFCs from offering revolving loan products is unlikely to have a major effect on the company since such products account for around ₹2 lakh crore of the ₹30-lakh-crore total NBFC book size. Shriram is targeting 18% AUM growth for the full financial year.", "page_number": 6 },
-    { "section": "Corporate Events", "headline": "Ujjivan SFB MD Nautiyal steps down; stock falls 5.4%", "summary": "[[Ujjivan Small Finance Bank]] managing director and CEO Sanjeev Nautiyal has sought early retirement on health grounds, with the board appointing Carol Furtado as acting MD and CEO with immediate effect, subject to RBI approval. The stock fell 5.4% to close at ₹65.37 on the news.", "page_number": 10 },
-    { "section": "Market", "headline": "Report: Top 3 AMCs account for 53% of industry earnings", "summary": "Top three fund houses — [[SBI Mutual Fund]], [[ICICI Prudential AMC]] and [[HDFC AMC]] — dominated industry earnings in FY26, accounting for 53% of the overall net profit, per an Equirus Securities report. Net profit of the industry rose 14% to ₹17,285 crore in the previous fiscal.", "page_number": 10 },
-    { "section": "Others", "headline": "The Himalayas are billing us in real time", "summary": "Following the August 26 glacier collapse on the Nepal-Tibet border that sent a debris flow killing over 675 people in Nepal and seven in Tibet, geologists warn Himalayan disaster losses totalled roughly ₹13 lakh crore between 1991 and 2021, with only 8% insured. The piece calls for binding geo-linked planning instruments and a resettlement framework to preempt future disasters.", "page_number": 10 },
-    { "section": "Insurance", "headline": "LIC introduces two new products on 70th anniversary", "summary": "[[Life Insurance Corporation of India]] launched two new policies, Bima Platinum and Jeevan Raksha, on the occasion of the corporation's 70th anniversary. Bima Platinum is a non-par, non-linked individual plan offering a combination of savings and protection.", "page_number": 1 },
-    { "section": "International News", "headline": "Apple's 2,300% gain under Cook is tough act for Ternus to follow", "summary": "[[Apple]]'s Tim Cook handed over the reins to John Ternus as chief executive officer, capping a tenure that saw shares soar 2,258% and the company become one of the most reliable global brands, though shares dipped in premarket trading on the first day with Ternus at the helm.", "page_number": 7 },
-    { "section": "International News", "headline": "US launches fresh strikes as Iran urges deal compliance", "summary": "The US military said it began striking Islamic Revolutionary Guard Corps targets in Iran on Tuesday night, following recent attempted IRGC attacks against commercial shipping and American service members deployed to the region, after President Trump renewed threats against Tehran. Oil prices rose more than 2% on the escalation.", "page_number": 7 },
-    { "section": "International News", "headline": "Bond sell-off deepens as Japan's 10-year yield hits 3% for first time since 1996", "summary": "A sell-off in global bond markets deepened on Tuesday, with Japan's 10-year yield hitting 3% for the first time in 30 years amid trader angst over energy-driven inflation, monetary tightening and worsening fiscal conditions; British and euro-zone yields also hit fresh highs.", "page_number": 7 },
-    { "section": "International News", "headline": "Russian air attacks kill 12 in Kyiv region", "summary": "Russian air attacks killed 12 people and injured many more in Kyiv and the surrounding region early Tuesday, marking the sixth straight day of intense strikes on the Ukrainian capital.", "page_number": 7 },
-    { "section": "International News", "headline": "Former UK PM Starmer quits London MP seat", "summary": "Former British PM Keir Starmer announced he is stepping down as the Member of Parliament for Holborn and St Pancras, triggering an upcoming by-election in the London constituency.", "page_number": 7 },
-    { "section": "International News", "headline": "Destry becomes first woman to lead Indonesia's central bank", "summary": "Indonesia's parliament voted on Tuesday to appoint Destry Damayanti as the first woman to head the central bank, and she announced an upgraded economic forecast predicting growth could reach 6% next year for the first time since 2012.", "page_number": 7 },
-    { "section": "International News", "headline": "Pakistan inflation surges over 11% in August", "summary": "Pakistan's inflation rose faster than expected last month, keeping policymakers on guard as West Asia conflict risks add to cost pressures and complicate the economic outlook; the CPI rose 11.15% in August from a year earlier, per data from the Pakistan Bureau of Statistics.", "page_number": 7 },
-    { "section": "International News", "headline": "Bessent ramps up pressure on BoJ to raise rates further", "summary": "US Treasury Secretary Scott Bessent stepped up public pressure on Japan to raise interest rates as the yen continued to weaken and the nation's 10-year bond yield touched 3% for the first time since 1996, in an interview with Tokyo-based NHK.", "page_number": 7 },
-    { "section": "International News", "headline": "At SCO summit, Modi calls for dismantling of terror infrastructure as Pakistan PM listens", "summary": "PM Narendra Modi told leaders of the Shanghai Cooperation Organisation in Bishkek that \"conflict in one region does not remain confined\" and impacts global energy security, maritime trade and supply chains, calling for security to be treated as a key priority for the SCO's next 25 years.", "page_number": 14 },
-    { "section": "International News", "headline": "Russia assures support to Iran", "summary": "Russian President Vladimir Putin told Iranian President Masoud Pezeshkian at a meeting in Bishkek that Moscow stood in solidarity with the Iranian people in their fight for their interests amid the ongoing Iran-US conflict, and reaffirmed economic and trade ties.", "page_number": 14 },
-    { "section": "International News", "headline": "Nepal flood toll crosses 1,000; nearly 4,000 remain missing", "summary": "The death toll in Nepal's catastrophic flood crossed 1,000 on Tuesday, as rescuers using heavy machinery, helicopters and excavators continue searching for thousands still missing nearly a week after the August 26 glacier collapse devastated towns and valleys in the Himalayas.", "page_number": 14 },
-    { "section": "Regulatory", "headline": "NEET stir: SC quashes all FIRs against CJP protesters", "summary": "The Supreme Court quashed all FIRs registered against students who participated in the Cockroach Janta Party-led protests across the country between July 20 and 25, directing the Centre to provide compensation within three months to families of students who ended their lives over the NEET paper leak.", "page_number": 14 },
-    { "section": "Others", "headline": "Own the phone: MPMS raises the bar on domestic smartphone brands", "summary": "The new Mobile Phone Manufacturing Scheme (MPMS) tries to create an Indian smartphone brand with real scale and R&D capability, unlike the first PLI scheme which was overwhelmingly about manufacturing success rather than domestic ownership. The government offers 5% incentives on eligible sales, another 3% for design and R&D, and up to 1.5% for domestic sourcing, targeting brands with over 51% Indian ownership.", "page_number": 8 },
-    { "section": "Others", "headline": "Iranian sanction, Chinese arena: US sanctions campaign against Iran less a test of Tehran than Beijing", "summary": "The US's Operation Economic Outcast sanctions campaign against Iran, unveiled August 24, targets around 60 entities across jurisdictions including the UAE, China, Hong Kong, Singapore, India and Europe, but its real strategic contest lies in whether China retreats from buying Iranian crude given Beijing's dominant 80-90% share of Iranian oil exports.", "page_number": 8 },
-    { "section": "Others", "headline": "Trump's popularity has reached a critical point", "summary": "President Trump's approval ratings have cratered in data gathered by Morgan Consult, Rasmussen Reports and RMG Research, averaging a hair under 40% — dismal one for his polarizing second term — even as his loyal voting base remains invested in him.", "page_number": 8 },
-    { "section": "Others", "headline": "Coping with food and fuel shocks amid Russia-Ukraine war and West Asia conflict", "summary": "Intensifying the Russia-Ukraine war and elusive prospects for peace in the US-Israel conflict with Iran are bad news for the Global South including India, as global wheat and fuel prices surge; sugar production has declined across the Asia-Pacific region as strong El Nino episodes hit India's cane belt.", "page_number": 8 },
-    { "section": "Sector", "headline": "'All spending will become digital in some shape or form': Sir Martin Sorrell", "summary": "S4 Capital founder Sir Martin Sorrell said the $1.2-trillion global advertising market, of which digital already accounts for $900 billion, will cross $1.3 trillion this year, with the four biggest hyperscalers set to spend a trillion dollars each year on AI infrastructure for the next five years, squeezing traditional agencies further.", "page_number": 9, "industry": "Advertising/AdTech" },
-    { "section": "Others", "headline": "Spotify reverses outdoor advertising to reward fans stealing posters", "summary": "Spotify's Fan Life campaign put up tearable posters designed with perforated sections, allowing fans to take home posters of their favourite artists as part of an interactive outdoor ad campaign celebrating fan communities.", "page_number": 9 },
-    { "section": "IPO", "headline": "Pranav Constructions launches ₹3,510-million IPO at ₹118-124 price band", "summary": "[[Pranav Constructions Limited]], a Mumbai-focused redevelopment real-estate developer, will open its main-board IPO on BSE and NSE with a price band of ₹118-124 per share, comprising a fresh issue of up to ₹3,156 million and an offer-for-sale of up to ₹354.25 million by selling shareholder BioUrja India Infra, aggregating to a total offer size of up to ₹3,510.25 million. Anchor bidding is on September 4; the issue opens September 7 and closes September 9, 2026.", "page_number": 16 },
-    { "section": "IPO", "headline": "Annu Projects lists on BSE and NSE at ₹99 issue price", "summary": "[[Annu Projects Limited]], a telecom and sewerage infrastructure contractor, listed on the main boards of BSE and NSE on September 2, 2026 after its ₹1,750.62-million fresh-issue IPO at an issue price of ₹99 per share was subscribed 2.93 times overall, with the retail category subscribed 2.66 times. Promoters Sanjay Kumar Sarraf and Krishna Ranjan retain 63.98% post-issue.", "page_number": 20 },
-    { "section": "Market", "headline": "Mitshi India: Karron Naresh Bajaj opens offer to acquire 26% stake at ₹15/share", "summary": "Acquirer Karron Naresh Bajaj has made an open offer to public shareholders of [[Mitshi India Limited]] to acquire up to 22,88,000 equity shares, representing 26% of the target company, at an offer price of ₹15 per share, as required under SEBI's Takeover Regulations following the underlying share purchase agreement. The tendering period is expected to run through mid-October 2026.", "page_number": 28 },
-    { "section": "Regulatory", "headline": "Banks issue SARFAESI possession and demand notices against defaulting borrowers", "summary": "Multiple banks published statutory SARFAESI Act notices this week: [[Saraswat Co-operative Bank]] issued a consolidated possession notice against dozens of individual borrowers with mortgaged residential plots in Surat district; [[Bank of Baroda]], [[Punjab National Bank]], [[Unity Small Finance Bank]], [[LIC Housing Finance]], [[Tamilnad Mercantile Bank]] and [[Rajarambapu Sahakari Bank]] separately issued possession, demand or property-sale notices against individual retail borrowers across Maharashtra, Gujarat and Karnataka for defaults on mortgage and business loans.", "page_number": 30 }
+    {
+      "section": "Economy",
+      "headline": "FCNR(B) inflows cross $100 billion mark",
+      "summary": "Capital inflows under the Foreign Currency Non-Resident (Bank) deposit scheme crossed the $100-billion mark by the August 31 deadline, surpassing the RBI's earlier $80-billion projection across FCNR(B), ECB and OFCB schemes. FCNR(B) alone stood at $65.4 billion of the $72.85 billion total as of August 21, with ECB/OFCB windows staying open till December 31 even as the FCNR(B) window shut a month early on September 11.",
+      "page_number": 1
+    },
+    {
+      "section": "Economy",
+      "headline": "GST receipts grow 14.8% to ₹2 lakh crore in August",
+      "summary": "Gross GST collections rose 14.8% year-on-year to ₹2 lakh crore in August, driven by higher revenue from imported products and services; on a month-on-month basis collections were down 5.4% from July. April-August FY27 mop-up stands at ₹10.41 lakh crore, up 11% over the same period a year ago, with domestic collections up 9.3% to ₹1.37 lakh crore.",
+      "page_number": 1
+    },
+    {
+      "section": "Economy",
+      "headline": "CAD widens slightly to 0.5% of GDP in Q1, reserves shrink by $8.1 billion",
+      "summary": "India's current account deficit widened marginally to $4.2 billion (0.5% of GDP) in Q1FY27 from $3.4 billion a year ago, due to higher energy prices and a wider goods trade deficit amid the West Asia war. The financial account saw a BoP deficit of $8.1 billion in April-June against a $9.6-billion surplus a year ago, though FDI inflows rose to $6.1 billion from $5.2 billion.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "Manufacturing PMI hits 5-year low of 52.8 in August",
+      "summary": "India's HSBC manufacturing PMI fell for the third straight month to 52.8 in August from 53.5 in July, the lowest since August 2021, as softer demand weighed on output, new orders and hiring. Input-buying growth hit a 62-month low while price pressures eased to their weakest level in 45 months.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "Modi: keep growing, ignore naysayers on GDP",
+      "summary": "PM Narendra Modi said India's economy remained resilient with 7.8% Q1FY27 GDP growth despite global headwinds including the West Asia war, and urged citizens to embrace \"Swadeshi\" and self-reliance, including avoiding gold and unnecessary foreign travel. Finance Minister Nirmala Sitharaman said the growth is secular and broad-based.",
+      "page_number": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "ITR filings for AY27 touch record 78 million",
+      "summary": "Over 78 million income-tax returns were filed for assessment year 2026-27 till August 31, the income tax department said, up from 73 million ITRs filed by the extended deadline last year (September 16, 2025).",
+      "page_number": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "Diesel export levy hiked to ₹25/litre, petrol to ₹1.5",
+      "summary": "The government raised the export levy on diesel to ₹25 per litre from ₹24, and on petrol to ₹1.5 per litre from zero, effective September 1, tightening curbs on overseas fuel sales as the West Asia crisis strains global crude and product markets. ATF export levy was marginally cut to ₹19 from ₹19.5 per litre.",
+      "page_number": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "Govt halves sugar stockholding limit for dealers to 2,000 quintals",
+      "summary": "The Centre tightened the stock-holding limit for sugar dealers to 2,000 quintals from 4,000 quintals effective September 15 to November 30, aimed at ensuring adequate domestic supply and checking hoarding and speculative trading amid rising retail prices.",
+      "page_number": 3
+    },
+    {
+      "section": "Sector",
+      "headline": "Car sales rev up 36% in pre-festive spark",
+      "summary": "Passenger vehicle wholesales surged 35.7% year-on-year to a record 448,319 units in August, led by strong consumer demand, GST-led tailwinds and lower interest rates. [[Maruti Suzuki India]] led with 176,971 units (up 34.8%), followed by [[Tata Motors]] (65,253), [[Mahindra & Mahindra]] (59,257) and [[Hyundai Motor]] (54,396); electric car registrations rose 50% to 30,325 units.",
+      "page_number": 4,
+      "industry": "Auto/PVs"
+    },
+    {
+      "section": "Sector",
+      "headline": "PC shipments rise as retailers stock up ahead of price hikes",
+      "summary": "India's PC market grew 12.1% year-on-year to 3.9 million units in the June quarter as retailers and channel partners stocked up ahead of expected price hikes, IDC said. Notebooks grew 14% while commercial shipments rose 16.6-22%; [[HP]] led with 29.4% market share, ahead of [[Lenovo]], [[Dell]] and [[Acer]].",
+      "page_number": 4,
+      "industry": "PCs/Laptops"
+    },
+    {
+      "section": "Sector",
+      "headline": "Refurbished smartphone volumes grow 13% in H1 2026",
+      "summary": "India's refurbished smartphone volumes rose 13% year-on-year in H1 2026 even as new-device sales fell 11%, as rising handset prices push consumers toward lower-cost alternatives, according to Counterpoint Research. [[Samsung]] led the refurbished market with 30% share, followed by [[Apple]] (23%) and [[Vivo]] (10%).",
+      "page_number": 5,
+      "industry": "Smartphones"
+    },
+    {
+      "section": "Sector",
+      "headline": "Domestic air demand falls 6.3% in July, weakest among major markets",
+      "summary": "India's domestic air passenger demand fell 6.3% year-on-year in July, the weakest performance among major global aviation markets, per IATA data, as airlines cut domestic seat capacity by 6% even while passenger load factor rose to 82.7%.",
+      "page_number": 5,
+      "industry": "Aviation"
+    },
+    {
+      "section": "Sector",
+      "headline": "Petrol, diesel sales soar on erratic monsoon",
+      "summary": "Petrol and diesel sales by India's state-run fuel retailers surged in August as erratic monsoon rainfall boosted fuel demand from farmers and motorists; petrol sales by [[Indian Oil]], [[Bharat Petroleum]] and [[Hindustan Petroleum]] rose 9.1% and diesel 3.48 million tonnes, up from 3.19 million tonnes a year ago.",
+      "page_number": 2,
+      "industry": "Auto Fuel/OMCs"
+    },
+    {
+      "section": "Sector",
+      "headline": "Rollout of agentic payments on UPI may come soon",
+      "summary": "The government is preparing a framework to let AI agents make small digital payments without manual approval for every transaction, with UPI seen as well-placed to capture early use cases such as groceries and e-commerce. Global card networks Mastercard and Visa are separately building agentic payment capabilities in India.",
+      "page_number": 6,
+      "industry": "Fintech/Payments"
+    },
+    {
+      "section": "Sector",
+      "headline": "Bank loan reclassification masks microfinance growth: MFIN",
+      "summary": "Banks' reclassification of microfinance loans weighed on overall credit growth in the sector even as the gross loan portfolio grew 1.1% sequentially to ₹3.29 lakh crore in Q1FY27, per MFIN. NBFC-MFIs accounted for 44.3% of total industry portfolio, followed by banks at 25.3%, with portfolio-at-risk (31-180 days) falling to 1.6% from 5.6% a year earlier.",
+      "page_number": 10,
+      "industry": "Microfinance"
+    },
+    {
+      "section": "Trade",
+      "headline": "US trade talks: Govt seeks exporters' inputs ahead of Goyal's US visit",
+      "summary": "The commerce ministry met exporters and industry on Tuesday to hear concerns over US market access ahead of Commerce Minister Piyush Goyal's US visit for the G-20 trade ministerial (Sept 30-Oct 1) and bilateral trade agreement talks. Exporters flagged risks including a 10% additional US tariff and a Section 301 investigation into India's excess capacity.",
+      "page_number": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Vedanta bets big on Northeast oil",
+      "summary": "[[Vedanta Oil & Gas]] has partnered with Belcip-Franlab India to accelerate exploration and production in the Northeast, targeting up to 300 million barrels of oil-equivalent additional resources across nine Open Acreage Licensing Policy blocks and one Discovered Small Field block, including Hazarigaon and Rudra.",
+      "page_number": 2
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Railways clears ₹800-crore safety projects",
+      "summary": "Indian Railways approved four projects worth ₹800 crore, including deployment of Kavach 4.0 across 712 route km, modernisation of signalling at 21 stations, construction of a freight bypass in South Eastern Railway and re-modelling of a yard in Gujarat, aimed at decongesting a terminal and supporting up to 8.88 million tonnes of freight traffic per annum.",
+      "page_number": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Sun Pharma inks US deal to bypass Section 232 tariffs",
+      "summary": "[[Sun Pharmaceutical Industries]] signed an agreement with the US government to supply medicines to American patients at affordable rates, securing a waiver from Section 232 tariffs on innovative and specialty drugs for over two years. Sun is one of nine global drugmakers, alongside [[Pfizer]], [[AstraZeneca]] and [[Dr Reddy's]], to sign such Most Favoured Nation pricing pacts with the US.",
+      "page_number": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Setback for Subhash Chandra as NCLT stays ₹6.5-crore settlement order",
+      "summary": "A five-member NCLT bench stayed the August 25 order approving a ₹6.25-crore repayment plan against admitted creditor claims of ₹22,006.57 crore in the personal insolvency case against Zee Group founder Subhash Chandra, and issued fresh notice to all parties. The bench will hear the case afresh, with next hearing on September 23.",
+      "page_number": 1
+    },
+    {
+      "section": "Announcements",
+      "headline": "OVL seeks $500-million Venezuela dividend payout in cash or oil",
+      "summary": "State-run [[ONGC Videsh]] is negotiating with Venezuelan authorities and PDVSA to recover nearly $500 million of stuck dividends, with payment options including cash or crude oil supplies, as it prepares to revive operations following an OFAC general licence secured in July. OVL holds a 40% stake in the San Cristobal oil project and 11% in Carabobo.",
+      "page_number": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Coal India liquidates 55 MT of pithead coal stocks",
+      "summary": "[[Coal India]] has liquidated around 55 million tonnes of pithead coal stocks in the first five months of FY27, helped by higher dispatches, even as total supplies rose 5.5% year-on-year to 60.60 MT in August, reflecting stronger evacuation despite the monsoon period.",
+      "page_number": 3
+    },
+    {
+      "section": "Events",
+      "headline": "RIL scoops up ice-cream opportunity with Bombay Creamery launch",
+      "summary": "[[Reliance Consumer]], the FMCG arm of [[Reliance Industries]], entered the ₹18,000-crore organised ice-cream market with the launch of Bombay Creamery, an accessible dairy brand starting at ₹10/unit, positioned to compete with [[Amul]] and rivals including [[Kwality Wall's]], [[Mother Dairy]] and [[Vadilal]]. Reliance Consumer's beverage business, led by Campa, recorded around ₹2,900 crore in sales in the June quarter.",
+      "page_number": 4
+    },
+    {
+      "section": "Others",
+      "headline": "IIT Kanpur startups valued at ₹11,355 crore",
+      "summary": "Startups incubated at IIT Kanpur have reached a cumulative valuation of around ₹11,355 crore as the institute moves its 25-year-old startup ecosystem beyond incubation towards scaling technologies into commercially viable businesses via its Startup Innovation and Incubation Centre.",
+      "page_number": 4
+    },
+    {
+      "section": "Events",
+      "headline": "upGrad acquires Unacademy at a valuation 90% below 2021 peak",
+      "summary": "[[upGrad]] completed its all-stock acquisition of edtech firm [[Unacademy]] at a valuation of just over $200 million — more than 90% below its 2021 peak of $3.44 billion — after nearly 10 months of on-and-off talks. [[Unacademy]]'s parent Sorting Hat Technologies retains a term sheet valuing the company at about ₹2,055 crore.",
+      "page_number": 4
+    },
+    {
+      "section": "Events",
+      "headline": "JioHotstar expands to UK, Canada and Singapore",
+      "summary": "[[JioHotstar]], the streaming platform of [[JioStar]], launched in the UK, Canada and Singapore, marking its first major international expansion as the company looks to take its Indian entertainment content to global audiences, with more than 30,000 hours of fresh content.",
+      "page_number": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "Parle Biscuits names PepsiCo veteran George Kovoor as first-ever CEO",
+      "summary": "[[Parle Biscuits]] appointed George Kovoor, a PepsiCo veteran, as its first-ever chief executive officer effective September 1, signalling a new phase for the family-run company as it expands beyond its traditional biscuit and confectionery business and eyes a $1-billion IPO.",
+      "page_number": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "Pilots' body flags crew exodus at Air India Express",
+      "summary": "The Airline Pilots' Association of India (Alpa India) raised concerns over the loss of experienced pilots across the [[Air India]] Group, particularly at [[Air India Express]], warning that attrition among commanders and senior pilots over pay and working conditions could have operational safety implications.",
+      "page_number": 5
+    },
+    {
+      "section": "Regulatory",
+      "headline": "SC extends time for Kalyani family mediation till October",
+      "summary": "The Supreme Court extended mediation in the nearly two-decade-old Kalyani family dispute until the end of October and directed circuits hearing related cases to defer proceedings, giving family members more time to work towards a settlement. The dispute pits siblings Baba Kalyani, Sugandha Hiremath and Gaurishankar against each other over ancestral family wealth estimated at more than ₹1 lakh crore.",
+      "page_number": 5
+    },
+    {
+      "section": "Events",
+      "headline": "SpiceJet ends Boeing 737 MAX 8 operations",
+      "summary": "Cash-strapped [[SpiceJet]] has ended operations of the Boeing 737 MAX 8, with its three remaining airworthy aircraft to leave the fleet, though its overall fleet size stays unchanged at 11 as the airline inducts three Airbus A320s on wet lease from Cambodia-based SkyAngkor Airways.",
+      "page_number": 5
+    },
+    {
+      "section": "Events",
+      "headline": "IndiGo flight returns after engine failure",
+      "summary": "A Delhi-bound [[IndiGo]] flight carrying 229 passengers returned to Goa soon after take-off following a failure in one of its engines and made an emergency landing; a technical issue was detected before take-off and the pilots followed standard operating procedures.",
+      "page_number": 5
+    },
+    {
+      "section": "Market",
+      "headline": "Bond yields hover near 7% as markets brace for rate hike",
+      "summary": "Government bond yields closed in on the psychologically crucial 7% mark, with the 10-year yield ending at 6.96% on Tuesday, its highest level since June, as traders priced in a possible near-term rate hike following hawkish signals from global central banks and renewed geopolitical tensions.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "Blackstone's ₹12,000-crore REIT sale fully booked",
+      "summary": "The ₹12,000-crore offer for sale of US-based fund house [[Blackstone]]'s stake in [[Knowledge Realty Trust]] was subscribed 2.5 times, with retail investors participating on Tuesday. The deal will reduce Blackstone's stake in the REIT to 21.5% from 46.5%, joining venture partner Sattva Group.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "RBI intervention takes rupee to 2-month high",
+      "summary": "The rupee extended gains for the fourth consecutive session, supported by RBI intervention and dollar inflows, closing at 94.95 against the dollar on Tuesday, its best-performing Asian currency so far in the calendar year, having strengthened 1.85% in the past week amid a rise in oil prices.",
+      "page_number": 6
+    },
+    {
+      "section": "Policy",
+      "headline": "Bank unions to go on nationwide strike on September 11",
+      "summary": "The United Forum of Bank Unions (UFBU) has decided to go on a nationwide strike on September 11 over delays in implementing five-day banking, differences over performance-linked incentive scheme and pending demands including pension-related issues, which could impact banking services for four straight days in many parts of the country.",
+      "page_number": 6
+    },
+    {
+      "section": "Insurance",
+      "headline": "Irdai proposes insurance registry for transparency",
+      "summary": "The Insurance Regulatory and Development Authority of India (Irdai) proposed creation of a Public Insurance Registry (PIR), an interoperable and non-exclusionary digital public infrastructure aimed at making the insurance ecosystem more connected, transparent and accessible, with comments due by September 30.",
+      "page_number": 6
+    },
+    {
+      "section": "Events",
+      "headline": "Symbiotec Pharma gains over 11% on debut",
+      "summary": "Shares of pharma and biotech company [[Symbiotec Pharmalab]] made a muted market debut but bounced back later, ending 11% higher against the issue price of ₹988, before recovering further intraday to jump 18.80% to ₹1,173.80; the company's market valuation stood at ₹7,042.15 crore.",
+      "page_number": 6
+    },
+    {
+      "section": "Events",
+      "headline": "Skyways Air makes disappointing market debut",
+      "summary": "Shares of air freight forwarding and logistics firm [[Skyways Air Services]] closed on a 9% discount to their issue price of ₹138 on debut, having begun trading at ₹124.50, down 9.78% from the issue price, before falling further intraday to ₹119.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "Helios Mutual Fund crosses ₹15,000 crore in AUM",
+      "summary": "The Samir Arora-founded [[Helios Mutual Fund]] crossed ₹15,000 crore in assets under management, marking over 200% year-on-year AUM growth; the fund house added ₹5,000 crore to assets from April to August 2026.",
+      "page_number": 6
+    },
+    {
+      "section": "Market",
+      "headline": "UPI transaction volumes hit record high in August",
+      "summary": "Volumes through the Unified Payments Interface hit a record high crossing 24 billion in August, per NPCI data, with total payment value reaching ₹29.82 lakh crore, up from ₹29.88 lakh crore in July, driven by festive activity such as Raksha Bandhan and Onam.",
+      "page_number": 6
+    },
+    {
+      "section": "Insurance",
+      "headline": "InsuranceDekho, RenewBuy merge to create largest AI-enabled insurance distribution platform",
+      "summary": "[[InsuranceDekho]] and [[RenewBuy]] announced consolidation of their businesses to create one of India's largest AI-enabled insurance distribution platforms, with the combined business operating under the InsuranceDekho brand under founder Ankit Agrawal. The merged entity has more than ₹6,600 crore in insurance premium generated, over 600,000 digital partners and coverage across 98.57% of India's postal codes.",
+      "page_number": 6
+    },
+    {
+      "section": "Announcements",
+      "headline": "Revolving loan bar to have limited impact: Shriram Finance's Revankar",
+      "summary": "[[Shriram Finance]] executive vice-chairman Umesh Revankar said the RBI's proposal to restrict NBFCs from offering revolving loan products is unlikely to have a major effect on the company since such products account for around ₹2 lakh crore of the ₹30-lakh-crore total NBFC book size. Shriram is targeting 18% AUM growth for the full financial year.",
+      "page_number": 6
+    },
+    {
+      "section": "Announcements",
+      "headline": "Ujjivan SFB MD Nautiyal steps down; stock falls 5.4%",
+      "summary": "[[Ujjivan Small Finance Bank]] managing director and CEO Sanjeev Nautiyal has sought early retirement on health grounds, with the board appointing Carol Furtado as acting MD and CEO with immediate effect, subject to RBI approval. The stock fell 5.4% to close at ₹65.37 on the news.",
+      "page_number": 10
+    },
+    {
+      "section": "Market",
+      "headline": "Report: Top 3 AMCs account for 53% of industry earnings",
+      "summary": "Top three fund houses — [[SBI Mutual Fund]], [[ICICI Prudential AMC]] and [[HDFC AMC]] — dominated industry earnings in FY26, accounting for 53% of the overall net profit, per an Equirus Securities report. Net profit of the industry rose 14% to ₹17,285 crore in the previous fiscal.",
+      "page_number": 10
+    },
+    {
+      "section": "Others",
+      "headline": "The Himalayas are billing us in real time",
+      "summary": "Following the August 26 glacier collapse on the Nepal-Tibet border that sent a debris flow killing over 675 people in Nepal and seven in Tibet, geologists warn Himalayan disaster losses totalled roughly ₹13 lakh crore between 1991 and 2021, with only 8% insured. The piece calls for binding geo-linked planning instruments and a resettlement framework to preempt future disasters.",
+      "page_number": 10
+    },
+    {
+      "section": "Insurance",
+      "headline": "LIC introduces two new products on 70th anniversary",
+      "summary": "[[Life Insurance Corporation of India]] launched two new policies, Bima Platinum and Jeevan Raksha, on the occasion of the corporation's 70th anniversary. Bima Platinum is a non-par, non-linked individual plan offering a combination of savings and protection.",
+      "page_number": 1
+    },
+    {
+      "section": "International News",
+      "headline": "Apple's 2,300% gain under Cook is tough act for Ternus to follow",
+      "summary": "[[Apple]]'s Tim Cook handed over the reins to John Ternus as chief executive officer, capping a tenure that saw shares soar 2,258% and the company become one of the most reliable global brands, though shares dipped in premarket trading on the first day with Ternus at the helm.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "US launches fresh strikes as Iran urges deal compliance",
+      "summary": "The US military said it began striking Islamic Revolutionary Guard Corps targets in Iran on Tuesday night, following recent attempted IRGC attacks against commercial shipping and American service members deployed to the region, after President Trump renewed threats against Tehran. Oil prices rose more than 2% on the escalation.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Bond sell-off deepens as Japan's 10-year yield hits 3% for first time since 1996",
+      "summary": "A sell-off in global bond markets deepened on Tuesday, with Japan's 10-year yield hitting 3% for the first time in 30 years amid trader angst over energy-driven inflation, monetary tightening and worsening fiscal conditions; British and euro-zone yields also hit fresh highs.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Russian air attacks kill 12 in Kyiv region",
+      "summary": "Russian air attacks killed 12 people and injured many more in Kyiv and the surrounding region early Tuesday, marking the sixth straight day of intense strikes on the Ukrainian capital.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Former UK PM Starmer quits London MP seat",
+      "summary": "Former British PM Keir Starmer announced he is stepping down as the Member of Parliament for Holborn and St Pancras, triggering an upcoming by-election in the London constituency.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Destry becomes first woman to lead Indonesia's central bank",
+      "summary": "Indonesia's parliament voted on Tuesday to appoint Destry Damayanti as the first woman to head the central bank, and she announced an upgraded economic forecast predicting growth could reach 6% next year for the first time since 2012.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Pakistan inflation surges over 11% in August",
+      "summary": "Pakistan's inflation rose faster than expected last month, keeping policymakers on guard as West Asia conflict risks add to cost pressures and complicate the economic outlook; the CPI rose 11.15% in August from a year earlier, per data from the Pakistan Bureau of Statistics.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "Bessent ramps up pressure on BoJ to raise rates further",
+      "summary": "US Treasury Secretary Scott Bessent stepped up public pressure on Japan to raise interest rates as the yen continued to weaken and the nation's 10-year bond yield touched 3% for the first time since 1996, in an interview with Tokyo-based NHK.",
+      "page_number": 7
+    },
+    {
+      "section": "International News",
+      "headline": "At SCO summit, Modi calls for dismantling of terror infrastructure as Pakistan PM listens",
+      "summary": "PM Narendra Modi told leaders of the Shanghai Cooperation Organisation in Bishkek that \"conflict in one region does not remain confined\" and impacts global energy security, maritime trade and supply chains, calling for security to be treated as a key priority for the SCO's next 25 years.",
+      "page_number": 14
+    },
+    {
+      "section": "International News",
+      "headline": "Russia assures support to Iran",
+      "summary": "Russian President Vladimir Putin told Iranian President Masoud Pezeshkian at a meeting in Bishkek that Moscow stood in solidarity with the Iranian people in their fight for their interests amid the ongoing Iran-US conflict, and reaffirmed economic and trade ties.",
+      "page_number": 14
+    },
+    {
+      "section": "International News",
+      "headline": "Nepal flood toll crosses 1,000; nearly 4,000 remain missing",
+      "summary": "The death toll in Nepal's catastrophic flood crossed 1,000 on Tuesday, as rescuers using heavy machinery, helicopters and excavators continue searching for thousands still missing nearly a week after the August 26 glacier collapse devastated towns and valleys in the Himalayas.",
+      "page_number": 14
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NEET stir: SC quashes all FIRs against CJP protesters",
+      "summary": "The Supreme Court quashed all FIRs registered against students who participated in the Cockroach Janta Party-led protests across the country between July 20 and 25, directing the Centre to provide compensation within three months to families of students who ended their lives over the NEET paper leak.",
+      "page_number": 14
+    },
+    {
+      "section": "Others",
+      "headline": "Own the phone: MPMS raises the bar on domestic smartphone brands",
+      "summary": "The new Mobile Phone Manufacturing Scheme (MPMS) tries to create an Indian smartphone brand with real scale and R&D capability, unlike the first PLI scheme which was overwhelmingly about manufacturing success rather than domestic ownership. The government offers 5% incentives on eligible sales, another 3% for design and R&D, and up to 1.5% for domestic sourcing, targeting brands with over 51% Indian ownership.",
+      "page_number": 8
+    },
+    {
+      "section": "Others",
+      "headline": "Iranian sanction, Chinese arena: US sanctions campaign against Iran less a test of Tehran than Beijing",
+      "summary": "The US's Operation Economic Outcast sanctions campaign against Iran, unveiled August 24, targets around 60 entities across jurisdictions including the UAE, China, Hong Kong, Singapore, India and Europe, but its real strategic contest lies in whether China retreats from buying Iranian crude given Beijing's dominant 80-90% share of Iranian oil exports.",
+      "page_number": 8
+    },
+    {
+      "section": "Others",
+      "headline": "Trump's popularity has reached a critical point",
+      "summary": "President Trump's approval ratings have cratered in data gathered by Morgan Consult, Rasmussen Reports and RMG Research, averaging a hair under 40% — dismal one for his polarizing second term — even as his loyal voting base remains invested in him.",
+      "page_number": 8
+    },
+    {
+      "section": "Others",
+      "headline": "Coping with food and fuel shocks amid Russia-Ukraine war and West Asia conflict",
+      "summary": "Intensifying the Russia-Ukraine war and elusive prospects for peace in the US-Israel conflict with Iran are bad news for the Global South including India, as global wheat and fuel prices surge; sugar production has declined across the Asia-Pacific region as strong El Nino episodes hit India's cane belt.",
+      "page_number": 8
+    },
+    {
+      "section": "Sector",
+      "headline": "'All spending will become digital in some shape or form': Sir Martin Sorrell",
+      "summary": "S4 Capital founder Sir Martin Sorrell said the $1.2-trillion global advertising market, of which digital already accounts for $900 billion, will cross $1.3 trillion this year, with the four biggest hyperscalers set to spend a trillion dollars each year on AI infrastructure for the next five years, squeezing traditional agencies further.",
+      "page_number": 9,
+      "industry": "Advertising/AdTech"
+    },
+    {
+      "section": "Others",
+      "headline": "Spotify reverses outdoor advertising to reward fans stealing posters",
+      "summary": "Spotify's Fan Life campaign put up tearable posters designed with perforated sections, allowing fans to take home posters of their favourite artists as part of an interactive outdoor ad campaign celebrating fan communities.",
+      "page_number": 9
+    },
+    {
+      "section": "IPO",
+      "headline": "Pranav Constructions launches ₹3,510-million IPO at ₹118-124 price band",
+      "summary": "[[Pranav Constructions Limited]], a Mumbai-focused redevelopment real-estate developer, will open its main-board IPO on BSE and NSE with a price band of ₹118-124 per share, comprising a fresh issue of up to ₹3,156 million and an offer-for-sale of up to ₹354.25 million by selling shareholder BioUrja India Infra, aggregating to a total offer size of up to ₹3,510.25 million. Anchor bidding is on September 4; the issue opens September 7 and closes September 9, 2026.",
+      "page_number": 16
+    },
+    {
+      "section": "IPO",
+      "headline": "Annu Projects lists on BSE and NSE at ₹99 issue price",
+      "summary": "[[Annu Projects Limited]], a telecom and sewerage infrastructure contractor, listed on the main boards of BSE and NSE on September 2, 2026 after its ₹1,750.62-million fresh-issue IPO at an issue price of ₹99 per share was subscribed 2.93 times overall, with the retail category subscribed 2.66 times. Promoters Sanjay Kumar Sarraf and Krishna Ranjan retain 63.98% post-issue.",
+      "page_number": 20
+    },
+    {
+      "section": "Market",
+      "headline": "Mitshi India: Karron Naresh Bajaj opens offer to acquire 26% stake at ₹15/share",
+      "summary": "Acquirer Karron Naresh Bajaj has made an open offer to public shareholders of [[Mitshi India Limited]] to acquire up to 22,88,000 equity shares, representing 26% of the target company, at an offer price of ₹15 per share, as required under SEBI's Takeover Regulations following the underlying share purchase agreement. The tendering period is expected to run through mid-October 2026.",
+      "page_number": 28
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Banks issue SARFAESI possession and demand notices against defaulting borrowers",
+      "summary": "Multiple banks published statutory SARFAESI Act notices this week: [[Saraswat Co-operative Bank]] issued a consolidated possession notice against dozens of individual borrowers with mortgaged residential plots in Surat district; [[Bank of Baroda]], [[Punjab National Bank]], [[Unity Small Finance Bank]], [[LIC Housing Finance]], [[Tamilnad Mercantile Bank]] and [[Rajarambapu Sahakari Bank]] separately issued possession, demand or property-sale notices against individual retail borrowers across Maharashtra, Gujarat and Karnataka for defaults on mortgage and business loans.",
+      "page_number": 30
+    }
   ],
   "stocksInFocus": [
-    { "name": "Sun Pharmaceutical Industries", "note": "Signs US government deal securing 2-year-plus Section 232 tariff waiver on specialty drugs" },
-    { "name": "Reliance Consumer / Reliance Industries", "note": "Enters ₹18,000-crore ice-cream market with new Bombay Creamery brand at ₹10/unit" },
-    { "name": "Annu Projects", "note": "Lists on BSE/NSE today at ₹99 issue price after 2.93x subscription" },
-    { "name": "Symbiotec Pharmalab", "note": "Ends debut day up over 11% against ₹988 issue price, later touching ₹1,173.80 intraday" },
-    { "name": "Skyways Air Services", "note": "Disappointing debut, closes 9% below ₹138 issue price" },
-    { "name": "Ujjivan Small Finance Bank", "note": "Stock falls 5.4% after MD & CEO Sanjeev Nautiyal's early retirement on health grounds" },
-    { "name": "Knowledge Realty Trust / Blackstone", "note": "₹12,000-crore Blackstone REIT stake sale fully booked, subscribed 2.5x" },
-    { "name": "upGrad / Unacademy", "note": "upGrad completes all-stock Unacademy acquisition at $200mn, 90% below 2021's $3.44bn peak" }
+    {
+      "name": "Sun Pharmaceutical Industries",
+      "note": "Signs US government deal securing 2-year-plus Section 232 tariff waiver on specialty drugs"
+    },
+    {
+      "name": "Reliance Consumer / Reliance Industries",
+      "note": "Enters ₹18,000-crore ice-cream market with new Bombay Creamery brand at ₹10/unit"
+    },
+    {
+      "name": "Annu Projects",
+      "note": "Lists on BSE/NSE today at ₹99 issue price after 2.93x subscription"
+    },
+    {
+      "name": "Symbiotec Pharmalab",
+      "note": "Ends debut day up over 11% against ₹988 issue price, later touching ₹1,173.80 intraday"
+    },
+    {
+      "name": "Skyways Air Services",
+      "note": "Disappointing debut, closes 9% below ₹138 issue price"
+    },
+    {
+      "name": "Ujjivan Small Finance Bank",
+      "note": "Stock falls 5.4% after MD & CEO Sanjeev Nautiyal's early retirement on health grounds"
+    },
+    {
+      "name": "Knowledge Realty Trust / Blackstone",
+      "note": "₹12,000-crore Blackstone REIT stake sale fully booked, subscribed 2.5x"
+    },
+    {
+      "name": "upGrad / Unacademy",
+      "note": "upGrad completes all-stock Unacademy acquisition at $200mn, 90% below 2021's $3.44bn peak"
+    }
   ],
   "ipoListings": [
     {
