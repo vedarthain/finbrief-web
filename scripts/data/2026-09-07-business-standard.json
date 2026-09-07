@@ -1,0 +1,411 @@
+{
+  "edition": "Business Standard",
+  "paper_date": "2026-09-07",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "Coal deficit in GDP data is a political issue: Rajeeva Karandikar",
+      "summary": "In an interview, National Statistical Commission chairman Rajeeva Karandikar defended the revised GDP methodology and rejected criticism that coal-output shortfalls are being masked in national accounts, calling the controversy over data revisions more political than statistical. He said the base-year revision follows standard international practice and does not selectively favour any narrative.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Market",
+      "headline": "Retail share in MF pie shrinks for 2nd year, FIIs ramp up bets",
+      "summary": "Retail investors' share of mutual fund industry assets has declined for a second straight year even as overall AUM has grown, with foreign institutional investors raising their allocation instead. Distributors flagged slowing SIP growth and rising direct-plan migration among affluent investors as contributing factors.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "'Regulatory data-sharing process will hurt India's appeal', warns Business Standard roundtable",
+      "summary": "Panellists at a Business Standard roundtable on regulatory reform cautioned that opaque and inconsistent data-sharing requirements across regulators are adding compliance friction for investors and could dent India's appeal as an investment destination unless streamlined.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "Sector",
+      "industry": "Power/Coal",
+      "headline": "Coal stocks at 58 power plants drop to critical levels",
+      "summary": "Coal inventories at 58 thermal power plants have fallen to critical levels amid rising electricity demand and logistics bottlenecks in supply from [[Coal India]] and captive mines, raising concerns about generation shortfalls in the coming weeks. The power ministry is monitoring stock build-up ahead of peak demand season.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "NTPC to draft 5-year plan for nuclear power",
+      "summary": "[[NTPC]] is preparing a five-year roadmap to scale up its nuclear power capacity in partnership with the Department of Atomic Energy, as the state-run utility looks to diversify its generation mix beyond coal and renewables.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "China to pump $4 bn into insurers, banks in capital-boosting push",
+      "summary": "Beijing is injecting fresh capital into state-owned insurers and banks to shore up balance sheets and support lending, part of a broader push to stabilise the financial sector amid slowing growth and property-sector stress.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "PFRDA moves to guarantee returns under new NPS pension plan",
+      "summary": "The Pension Fund Regulatory and Development Authority is finalising norms for a guaranteed-return option under the National Pension System, aimed at making the scheme more attractive against fixed-return products such as EPF.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Sector",
+      "industry": "Auto",
+      "headline": "Maruti bets on premium hatchbacks as demand rises",
+      "summary": "[[Maruti Suzuki]] is betting on rising demand for premium hatchback variants to shore up volumes as entry-level small-car sales continue to stagnate, with the company planning new feature-rich trims across its hatchback range.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Sector",
+      "industry": "Electronics/CCTV",
+      "headline": "Indian CCTV makers move in as Chinese firms face rule hurdle",
+      "summary": "Domestic CCTV manufacturers are expanding capacity to fill the gap left by Chinese brands facing stricter security-clearance and certification rules, as government procurement increasingly favours locally made surveillance equipment.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "RPG Life Sciences eyes larger API assets",
+      "summary": "[[RPG Life Sciences]] is scouting for larger active pharmaceutical ingredient (API) manufacturing assets to expand its bulk-drug business, as the company looks to reduce dependence on contract manufacturing.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "US envoy makes first Kyiv visit amid Trump's war peace push",
+      "summary": "A senior US envoy travelled to Kyiv for the first time since the Trump administration renewed its push for a negotiated end to the Russia-Ukraine war, holding talks on ceasefire terms and security guarantees.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "HFCL-Advanced Materials fires up ₹5,500 crore capex after demerger",
+      "summary": "[[HFCL]]'s newly demerged advanced materials arm has launched a ₹5,500 crore capacity-expansion programme, having completed its separation from the parent telecom-equipment business earlier this year.",
+      "page_number": 2,
+      "importance": 4
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "UP eyes double-digit growth in FY26 push to boost economy",
+      "summary": "Uttar Pradesh's government is targeting double-digit economic growth in FY26, backed by higher capital spending on highways, industrial corridors and the state's investor-outreach programme.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Manipur targets greenfield growth: 80% of 2.4K beds to be built from scratch",
+      "summary": "Manipur's healthcare infrastructure push will see about 80% of a planned 2,400 hospital beds built as new greenfield facilities rather than upgrades, as the state looks to rebuild capacity after recent unrest.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Trade",
+      "headline": "Intraday trade in national currencies on Brics agenda",
+      "summary": "Brics nations are discussing a framework for intraday settlement of trade in local currencies to cut dependence on the US dollar, with India pushing for faster implementation of rupee-based trade settlement mechanisms.",
+      "page_number": 9,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Billed as India's biggest FDI deal, how Posco's Odisha steel project fell through",
+      "summary": "A guest column traces how [[Posco]]'s once-flagship $12-billion Odisha steel project, billed as India's largest FDI proposal, collapsed over more than a decade due to land-acquisition disputes, environmental clearances and shifting state priorities.",
+      "page_number": 17,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "India's wealth story needs a chapter on jobs",
+      "summary": "A guest column argues that India's rising per-capita wealth and equity-market participation mask weak formal-job creation, and that policy focus must shift from asset-price growth to employment generation for the gains to be broad-based.",
+      "page_number": 18,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Bank boardrooms miss succession memo",
+      "summary": "A review of listed banks' governance disclosures finds most boards lack formal, board-approved succession plans for the MD/CEO role, despite repeated regulatory nudges, leaving several lenders exposed to leadership-transition risk.",
+      "page_number": 18,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Renewed regulatory focus on board succession puts spotlight on leadership continuity",
+      "summary": "Accompanying commentary says regulators are likely to tighten disclosure norms around CEO succession planning at banks and large NBFCs after finding gaps in current governance practices.",
+      "page_number": 18,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Case pendency must be seen in light of new filings: Ex-CJI Khanna",
+      "summary": "Former Chief Justice of India Sanjiv Khanna said rising case-pendency numbers should be read alongside the sharp increase in new filings each year, and called for more judges and digital-infrastructure investment rather than viewing pendency as a sign of judicial failure.",
+      "page_number": 20,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "3 dead, many trapped in Delhi building collapse",
+      "summary": "At least three people were killed and several others feared trapped after an old residential building collapsed in Delhi; rescue operations were underway with NDRF teams deployed to the site.",
+      "page_number": 20,
+      "importance": 3
+    },
+    {
+      "section": "Sector",
+      "industry": "Jewellery/Retail",
+      "headline": "Strong demand keeps jewellery retailers shining",
+      "summary": "Organised jewellery retailers are reporting robust footfall and revenue growth this festive season despite elevated gold prices, as consumers shift from unbranded to branded jewellery and lightweight, studded designs gain popularity.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Builder's failure to get OC is deficiency in service: consumer forum",
+      "summary": "A consumer forum ruled that a builder's failure to obtain an occupancy certificate for a completed housing project amounts to deficiency in service, ordering compensation to affected homebuyers even after possession was handed over.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "How to separate quality from hype amid September IPO rush",
+      "summary": "With a cluster of mainboard and SME IPOs opening this month, an advisory column lays out checklist points — promoter track record, use-of-proceeds clarity, and post-listing lock-in structure — for investors to separate durable businesses from hype-driven listings.",
+      "page_number": 23,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Phychem Technologies lists on BSE SME after fixed-price issue",
+      "summary": "[[Phychem Technologies Limited]] made its stock market debut on the BSE SME platform, having raised ₹5.13 crore via a fixed-price issue of shares at ₹19 apiece. The listing gives the specialty-chemicals maker access to public capital for capacity expansion.",
+      "page_number": 22,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Raksan Transformers IPO to open September 10 with price band of ₹258-273",
+      "summary": "[[Raksan Transformers Limited]] will open its book-built IPO on September 10, with a price band of ₹258-273 per share; the issue closes September 15. Proceeds will fund capacity expansion and working-capital needs of the transformer manufacturer.",
+      "page_number": 24,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Maharaja & Speedex India sets price band at ₹177-186 for SME IPO",
+      "summary": "[[Maharaja & Speedex India Limited]] has fixed a price band of ₹177-186 per equity share of face value ₹10 for its SME-platform IPO, with anchor bidding on September 9 ahead of the issue opening to the public.",
+      "page_number": 11,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Century Business Legends Limited's SME IPO to close September 16",
+      "summary": "[[Century Business Legends Limited]], promoted by Shashi Kumar Choudhary, Seema Choudhary, Sangita Dokania and Shriya Choudhary, will close its bid/issue on Wednesday, September 16, ahead of listing on the SME platform of BSE.",
+      "page_number": 14,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Logistrax Infrastructure: notice of Annual General Meeting",
+      "summary": "Logistrax Infrastructure Limited has issued notice of its Annual General Meeting to shareholders.",
+      "page_number": 27,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "C.som Distilleries and Breweries Limited: notice of Annual General Meeting",
+      "summary": "C.som Distilleries and Breweries Limited has issued notice of its Annual General Meeting to shareholders.",
+      "page_number": 27,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Quality Power Engineering Products Limited: notice of Annual General Meeting",
+      "summary": "Quality Power Engineering Products Limited has issued notice of its Annual General Meeting to shareholders.",
+      "page_number": 27,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Nath Industries Limited: notice of Annual General Meeting",
+      "summary": "Nath Industries Limited has issued notice of its Annual General Meeting to shareholders.",
+      "page_number": 29,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Deccan Cements Limited: notice of 46th Annual General Meeting",
+      "summary": "Deccan Cements Limited has issued notice of its 46th Annual General Meeting to shareholders.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "P N Gadgil Jewellers Limited: notice of 13th Annual General Meeting",
+      "summary": "P N Gadgil Jewellers Limited has issued notice of its 13th Annual General Meeting to shareholders, to be held via video conferencing on Monday, September 28, 2026.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Carrier Technologies India Limited: notice of Annual General Meeting and e-voting",
+      "summary": "Carrier Technologies India Limited has issued notice of its Annual General Meeting along with remote e-voting instructions to shareholders.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Ravindra Energy Limited: notice to shareholders",
+      "summary": "Ravindra Energy Limited has issued a statutory notice to its shareholders.",
+      "page_number": 30,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Salasar Techno Engineering: notice of Annual General Meeting",
+      "summary": "Salasar Techno Engineering Limited has issued notice of its Annual General Meeting, to be held through video conferencing.",
+      "page_number": 31,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Manthan Softech: notice to shareholders",
+      "summary": "Manthan Softech Limited has issued a statutory notice to its shareholders.",
+      "page_number": 32,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "SEPC Limited: notice to shareholders",
+      "summary": "SEPC Limited has issued a statutory notice to its shareholders.",
+      "page_number": 32,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Gillette India Limited: notice of Annual General Meeting",
+      "summary": "Gillette India Limited has issued notice of its Annual General Meeting to shareholders.",
+      "page_number": 28,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Dhanlaxmi Cotex Limited: notice to shareholders",
+      "summary": "Dhanlaxmi Cotex Limited has issued a statutory notice to its shareholders.",
+      "page_number": 28,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "KJMC Corporate Advisors (India) Limited: notice of Annual General Meeting",
+      "summary": "KJMC Corporate Advisors (India) Limited has issued notice of its Annual General Meeting to shareholders.",
+      "page_number": 30,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Aegis Logistics Ltd: notice to shareholders",
+      "summary": "Aegis Logistics Ltd has issued a statutory notice to its shareholders.",
+      "page_number": 30,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Lodha: public notice",
+      "summary": "A Lodha group entity has issued a public notice regarding its property/title matter.",
+      "page_number": 28,
+      "is_notice": true,
+      "importance": 1
+    }
+  ],
+  "stocksInFocus": [
+    { "name": "Phychem Technologies", "note": "Debuts on BSE SME after ₹5.13 crore fixed-price issue at ₹19/share" },
+    { "name": "Raksan Transformers", "note": "IPO opens Sept 10, price band ₹258-273" },
+    { "name": "Maharaja & Speedex India", "note": "SME IPO price band set at ₹177-186; anchor bidding Sept 9" },
+    { "name": "Century Business Legends", "note": "SME IPO bid/issue closes Sept 16" },
+    { "name": "Maruti Suzuki", "note": "Betting on premium hatchback variants as entry-level demand stays weak" },
+    { "name": "HFCL", "note": "Advanced materials arm launches ₹5,500 crore capex after demerger" },
+    { "name": "NTPC", "note": "Drafting five-year roadmap for nuclear power capacity" }
+  ],
+  "topStories": [
+    { "headline": "Coal stocks at 58 power plants drop to critical levels", "section": "Sector", "note": "Inventories fall amid rising demand and supply bottlenecks." },
+    { "headline": "Retail share in MF pie shrinks for 2nd year, FIIs ramp up bets", "section": "Market" },
+    { "headline": "HFCL-Advanced Materials fires up ₹5,500 crore capex after demerger", "section": "Events" },
+    { "headline": "China to pump $4 bn into insurers, banks in capital-boosting push", "section": "International News" },
+    { "headline": "Coal deficit in GDP data is a political issue: Rajeeva Karandikar", "section": "Economy" },
+    { "headline": "NTPC to draft 5-year plan for nuclear power", "section": "Announcements" },
+    { "headline": "3 dead, many trapped in Delhi building collapse", "section": "Others" },
+    { "headline": "Strong demand keeps jewellery retailers shining", "section": "Sector" },
+    { "headline": "Phychem Technologies lists on BSE SME after fixed-price issue", "section": "IPO" },
+    { "headline": "Bank boardrooms miss succession memo", "section": "Regulatory" },
+    { "headline": "Billed as India's biggest FDI deal, how Posco's Odisha steel project fell through", "section": "Others" },
+    { "headline": "Raksan Transformers IPO to open September 10 with price band of ₹258-273", "section": "IPO" }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Phychem Technologies",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 19,
+      "issue_price_high": 19,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-07",
+      "listing_price": 19,
+      "status": "listed",
+      "notes": "Fixed-price SME IPO; ₹5.13 crore raised"
+    },
+    {
+      "company_name": "Raksan Transformers",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 258,
+      "issue_price_high": 273,
+      "open_date": "2026-09-10",
+      "close_date": "2026-09-15",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Book-built SME IPO; proceeds for capacity expansion and working capital"
+    },
+    {
+      "company_name": "Maharaja & Speedex India",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 177,
+      "issue_price_high": 186,
+      "open_date": "2026-09-10",
+      "close_date": "2026-09-15",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Anchor investor bidding September 9, 2026; face value ₹10 per share"
+    },
+    {
+      "company_name": "Century Business Legends",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": "2026-09-16",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "Promoted by Shashi Kumar Choudhary, Seema Choudhary, Sangita Dokania and Shriya Choudhary"
+    }
+  ]
+}
