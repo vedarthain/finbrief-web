@@ -1,0 +1,677 @@
+{
+  "edition": "Financial Express",
+  "paper_date": "2026-09-08",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "OMC marketing margins collapse as crude stays above $100",
+      "summary": "Marketing margins of state oil marketing companies have turned sharply negative, down about ₹4.2 a litre on petrol and ₹25 a litre on diesel, as the Indian crude basket averaged $101.07 a barrel without a corresponding pump-price revision. Sustained crude above $100 threatens the FY27 earnings of [[Indian Oil Corporation]], [[Bharat Petroleum Corporation]] and [[Hindustan Petroleum Corporation]] unless retail prices are raised or excise relief is extended.",
+      "page_number": 2,
+      "importance": 5
+    },
+    {
+      "section": "Economy",
+      "headline": "India's growth holding up amid global turmoil: Amit Shah",
+      "summary": "Home minister Amit Shah said India has retained its position as the fastest-growing major economy despite tariff shocks and geopolitical disruption, crediting fiscal consolidation and domestic demand. He said the government's focus remains on manufacturing scale-up and export diversification.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Economy",
+      "headline": "Sitharaman meets IMF team on growth outlook",
+      "summary": "Finance minister Nirmala Sitharaman met an IMF delegation led by Clarke to review India's growth outlook, external-sector risks and the pace of fiscal consolidation. The discussion covered global trade fragmentation and its impact on emerging-market capital flows.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Economy",
+      "headline": "India needs 10% growth to lift manufacturing to 25% of GDP: BofA",
+      "summary": "Bank of America research says India would need sustained double-digit GDP growth to raise manufacturing's share of output to 25%, against the current low-teens level. The report flags capital intensity, land and logistics costs as the binding constraints rather than demand.",
+      "page_number": 2,
+      "importance": 4
+    },
+    {
+      "section": "Economy",
+      "headline": "Odisha pitches export-led growth model",
+      "summary": "Odisha chief minister Mohan Majhi said the state is pivoting to an export-led growth strategy anchored on metals, chemicals and port infrastructure, targeting a larger share of national merchandise exports.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "SECI plans pooled green power programme for MSMEs",
+      "summary": "The Solar Energy Corporation of India is working on a pooled renewable-power procurement programme for MSMEs, along with a scheme for green industrial process heating. The aim is to give smaller units access to round-the-clock clean power at aggregated tariffs they cannot secure individually.",
+      "page_number": 3,
+      "importance": 4
+    },
+    {
+      "section": "Policy",
+      "headline": "Centre offers 100% funding for medical-devices testing infrastructure",
+      "summary": "Commerce and industry minister Piyush Goyal said the government will fully fund common testing and certification infrastructure for the medical devices sector, cutting a key cost and time barrier for domestic manufacturers seeking regulatory approvals.",
+      "page_number": 3,
+      "importance": 4
+    },
+    {
+      "section": "Policy",
+      "headline": "UK to offset India's carbon price against CBAM liability",
+      "summary": "The UK has agreed to recognise carbon prices paid in India and offset them against liability under its Carbon Border Adjustment Mechanism, easing the cost burden on Indian steel, aluminium and cement exporters once the levy takes effect.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Policy",
+      "headline": "Isro chief flags staffing strain from space privatisation",
+      "summary": "The Isro chairman said the transfer of launch and manufacturing activity to private players has created staffing and role-redefinition challenges within the agency, as experienced personnel move to industry and Isro reorients towards research and deep-space missions.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "CBI files supplementary chargesheet against Reliance ADA group in ₹9,280-crore case",
+      "summary": "The CBI has filed an additional chargesheet in connection with an alleged ₹9,280-crore banking fraud involving [[Reliance Communications]] and other Reliance ADA group entities, expanding the list of accused and detailing alleged diversion of loan proceeds.",
+      "page_number": 6,
+      "importance": 5
+    },
+    {
+      "section": "Regulatory",
+      "headline": "SC: a company can be prosecuted even if no individual accused is named",
+      "summary": "The Supreme Court held that a corporate entity can be prosecuted for an offence even where no individual officer is named as an accused, rejecting the argument that criminal liability of the company is contingent on identifying a natural person. The ruling widens exposure for companies in economic-offence prosecutions.",
+      "page_number": 4,
+      "importance": 5
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Executors of Ratan Tata's will to meet this month after Charity Commissioner order",
+      "summary": "Executors of the late Ratan Tata's will are set to meet later this month following an order from the Charity Commissioner, as the distribution of his estate and associated trust interests moves ahead.",
+      "page_number": 4,
+      "importance": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Tata Sons board may revisit 2025 Divinion probe into group executive",
+      "summary": "The [[Tata Sons]] board is expected to revisit findings of the 2025 Divinion investigation concerning a senior group executive, with directors seeking clarity on the scope of the inquiry and the action taken on its conclusions.",
+      "page_number": 4,
+      "importance": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Karur Vysya Bank puts ₹161.65-crore NPL portfolio up for Swiss-challenge e-auction",
+      "summary": "[[Karur Vysya Bank]] invited bids for a secured non-performing loan portfolio with outstanding dues of ₹161.65 crore, to be sold under the Swiss challenge method to asset reconstruction companies and permitted financial institutions.",
+      "page_number": 27,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Listed companies file AGM notices, e-voting and book-closure information for FY2025-26",
+      "summary": "A large number of listed companies published statutory notices of annual general meetings with remote e-voting and book-closure details, including IRCTC, Le Travenues Technology (ixigo), LT Foods, NLC India, Solarworld Energy, Shiprocket, Xelpmoc Design & Tech, Anheuser Busch InBev India, HMT, Essar Ports, Lancer Container Lines, Kernex Microsystems, Vipul Organics, Remsons Industries, Gayatri Sugars, Nagpur Power & Industries, Sigachi Industries, Three M Paper Boards, Sadhana Nitro Chem, Vishvprabha Ventures, Shahlon Silk Industries, Hilton Metal Forging, J.K. Investo Trade, Shiva Suitings, Sri Lotus Developers and Realty, B.C. Power Controls, SBL Infratech, UVS Hospitality and Services, Team24 Consumer Products, Delta Manufacturing, PrismX Global Ventures, Mohite Industries, AB Corp, Peoples Investments, Velox Shipping and Logistics, Thinking Hats Entertainment Solutions, Baweja Studios, Thomas Scott (India), QMS Medical Allied Services, Asston Pharmaceuticals, Sanmit Infra, Polar Investments, Trescon and Esaar (India).",
+      "page_number": 33,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Companies issue postal-ballot notices for shareholder resolutions",
+      "summary": "Apollo Tyres, UTI Asset Management Company, Sula Vineyards and Godrej Consumer Products issued postal-ballot notices seeking shareholder approval on resolutions ranging from managerial appointments to enabling authorisations.",
+      "page_number": 11,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Companies open special windows for transfer and dematerialisation of physical shares",
+      "summary": "Godfrey Phillips India, Tata Elxsi, Vaibhav Global, VST Tillers Tractors, HPCL, NMDC, JK Lakshmi Cement and Bombay Dyeing opened Sebi-mandated special windows allowing shareholders to lodge physical share certificates for transfer and dematerialisation.",
+      "page_number": 15,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Banks and ARCs issue SARFAESI possession, demand and e-auction notices",
+      "summary": "Janasewa Sahakari Bank (Borivali), Central Bank of India, SMFG India Home Finance, Motilal Oswal Home Finance, Phoenix ARC, Canara Bank, Punjab National Bank and Shivkrupa Sahakari Patpedhi published possession, demand and e-auction sale notices under the SARFAESI Act and co-operative societies rules against defaulting borrowers.",
+      "page_number": 33,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Companies publish IEPF transfer and lost share-certificate notices",
+      "summary": "Crisil and TCI Express issued notices for transfer of unclaimed dividends and corresponding shares to the Investor Education and Protection Fund, while Tata Steel and Tata Elxsi published lost share-certificate public notices ahead of issuing duplicates.",
+      "page_number": 3,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Insolvency and liquidation notices issued for Mudra Denim, Jaisuba Agro and Sakthi Ganesh Textiles",
+      "summary": "Public announcements were issued for the liquidation of Mudra Denim Private Limited, an expression-of-interest invitation for Jaisuba Agro Products Private Limited under the corporate insolvency resolution process, and an e-auction of assets of Sakthi Ganesh Textiles.",
+      "page_number": 40,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Sector",
+      "headline": "Logistics firms brace for a tougher festive season",
+      "summary": "Logistics and last-mile delivery companies expect a harder festive quarter as freight costs rise with fuel prices, discretionary demand softens and quick-commerce players compress delivery windows. Capacity added during last year's peak is running below expected utilisation.",
+      "page_number": 1,
+      "industry": "Logistics",
+      "importance": 4
+    },
+    {
+      "section": "Sector",
+      "headline": "Weight-loss drug market stabilises at ₹247 crore in August",
+      "summary": "Sales of GLP-1 weight-loss therapies steadied at about ₹247 crore in August after months of rapid expansion, as pricing pressure from new entrants offsets volume growth. The category remains one of the fastest-growing in Indian pharma retail.",
+      "page_number": 3,
+      "industry": "Pharma/GLP-1",
+      "importance": 4
+    },
+    {
+      "section": "Sector",
+      "headline": "IPO boom opens a new revenue route for NSE",
+      "summary": "Listing-fee income at the [[National Stock Exchange]] has risen 58% in two years, from ₹223 crore in FY24 to ₹352 crore in FY26, as a sustained pipeline of main-board and SME issues turns listing fees into a meaningful non-transaction revenue stream.",
+      "page_number": 7,
+      "industry": "Exchanges",
+      "importance": 4
+    },
+    {
+      "section": "Sector",
+      "headline": "Cinema economics under strain as admissions fall 6%",
+      "summary": "FY26 box-office collections stood at ₹13,395 crore with admissions down 6%, as ticket-price inflation masked declining footfalls. Analysts argue the exhibition business now depends on a handful of tentpole releases, leaving screens underutilised for much of the year.",
+      "page_number": 8,
+      "industry": "Media/Exhibition",
+      "importance": 3
+    },
+    {
+      "section": "Sector",
+      "headline": "Only 23% of Indian firms report broad returns from AI: Dun & Bradstreet",
+      "summary": "A 2026 Dun & Bradstreet survey found just 23% of Indian companies report broad-based returns from AI deployments and only 4% have data fully AI-ready. Poor data foundations, not model access, are the main reason pilots fail to convert into measurable value.",
+      "page_number": 9,
+      "industry": "Enterprise AI",
+      "importance": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "Air India orders a safety reset across operations",
+      "summary": "[[Air India]] is undertaking a company-wide safety and reliability reset covering maintenance turnaround, crew rostering and fleet induction, with the leadership tightening reporting lines after a period of operational disruption. The review spans both the mainline and low-cost operations following the group's post-privatisation integration.",
+      "page_number": 1,
+      "importance": 5
+    },
+    {
+      "section": "Announcements",
+      "headline": "JLR to cut 4,000 jobs in $2.3-billion savings drive",
+      "summary": "[[Jaguar Land Rover]] will cut about 4,000 jobs as part of a $2.3-billion cost-reduction programme, hitting management and support roles hardest. The reduction follows weaker demand in China and Europe and heavy investment commitments on electrification, and flows through to parent [[Tata Motors]].",
+      "page_number": 4,
+      "importance": 5
+    },
+    {
+      "section": "Announcements",
+      "headline": "Asian Paints names Leo Puri chairman from January 2027",
+      "summary": "[[Asian Paints]] appointed Leo Puri as chairman with effect from January 2027. The appointment comes as the company faces intensifying competition in decorative paints from new entrants and margin pressure from raw-material costs.",
+      "page_number": 4,
+      "importance": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "Godrej Consumer seeks shareholder nod for Aasif Malbari as MD and CEO",
+      "summary": "[[Godrej Consumer Products]] issued a postal ballot seeking shareholder approval to appoint Aasif Malbari as managing director and chief executive officer for five years with effect from August 12, 2026, elevating the company's finance head to the top job.",
+      "page_number": 28,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "DMart picks discipline over digital scale",
+      "summary": "[[Avenue Supermarts]] has narrowed DMart Ready to 11 cities, choosing store-level profitability over an aggressive online expansion. Management is betting that a dense, low-cost physical footprint will outlast the cash-burning quick-commerce model in staples retail.",
+      "page_number": 4,
+      "importance": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "Tata Power to take EV charging beyond metros",
+      "summary": "[[Tata Power]] is expanding its EV charging network into tier-2 and tier-3 cities and highway corridors, moving past the metro-centric build-out that has defined the first phase of India's public charging infrastructure.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "DEE Development Engineers bets on nuclear and data centres",
+      "summary": "[[DEE Development Engineers]] is targeting piping and fabrication orders from nuclear power projects and data-centre cooling systems as growth drivers, diversifying away from its traditional oil and gas customer base.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "Lower margins could hurt hospital investment cycle: Max Healthcare's Abhay Soi",
+      "summary": "[[Max Healthcare]] chairman Abhay Soi warned that pricing pressure and payer-driven margin compression could slow the hospital sector's capacity-addition cycle, since new bed capacity is funded largely out of internal accruals.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "Maruti raises prices for the third time since May",
+      "summary": "[[Maruti Suzuki]] announced another round of price increases, its third since May, citing input-cost inflation and regulatory compliance costs. Repeated hikes come as entry-level demand remains the weakest segment of the passenger vehicle market.",
+      "page_number": 4,
+      "importance": 4
+    },
+    {
+      "section": "Events",
+      "headline": "HDFC Bank cuts MCLR by 5-10 bps across tenors",
+      "summary": "[[HDFC Bank]] reduced its marginal cost of funds-based lending rate by 5-10 basis points, taking the range to 7.90-8.60%. The cut passes through easing funding costs to floating-rate borrowers on MCLR-linked loans.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Events",
+      "headline": "Adani Power gets lenders' nod for GVK Energy acquisition",
+      "summary": "[[Adani Power]] secured lender approval for its acquisition of [[GVK Energy]], clearing a key condition for the transaction. The deal adds gas-based generation capacity to Adani Power's largely thermal portfolio.",
+      "page_number": 5,
+      "importance": 5
+    },
+    {
+      "section": "Events",
+      "headline": "Pixxel raises $100 million Series C, pivots to planetary infrastructure",
+      "summary": "[[Pixxel]] closed a $100-million Series C round and is repositioning from hyperspectral imaging alone to a broader planetary-infrastructure play spanning satellite constellations, data platforms and analytics for climate and resource monitoring.",
+      "page_number": 6,
+      "importance": 5
+    },
+    {
+      "section": "Events",
+      "headline": "REC raises ₹500 crore via tokenised bonds",
+      "summary": "[[REC]] raised ₹500 crore through a tokenised bond issue, among the first such structures by a large Indian public-sector financier. The issue uses distributed-ledger settlement while retaining conventional regulatory and custody arrangements.",
+      "page_number": 3,
+      "importance": 4
+    },
+    {
+      "section": "Events",
+      "headline": "Tata-Boeing JV rolls out 400th Apache fuselage",
+      "summary": "The Tata Advanced Systems-Boeing joint venture in Hyderabad delivered its 400th AH-64 Apache fuselage, underlining India's position in Boeing's global rotorcraft supply chain and the maturing of defence offset manufacturing.",
+      "page_number": 2,
+      "importance": 4
+    },
+    {
+      "section": "Events",
+      "headline": "Godrej Properties settles dispute with Orris",
+      "summary": "[[Godrej Properties]] reached a settlement with Orris resolving a long-running dispute over a joint development project, removing an overhang on the associated land parcel.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Shiprocket's Q1 loss narrows to ₹13.71 crore",
+      "summary": "[[Shiprocket]] cut its first-quarter net loss to ₹13.71 crore on cost rationalisation and improved shipment mix, as the logistics-enablement platform moves closer to operating breakeven ahead of a possible listing.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "360 One chief buys Novartis India shares worth ₹22 crore",
+      "summary": "The chief executive of [[360 One]] purchased 130,000 shares of [[Novartis India]] for about ₹22 crore in a block transaction, a notable personal-account position in a stock with limited free float.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Muthoot FinCorp launches NCD issue of up to ₹700 crore",
+      "summary": "[[Muthoot FinCorp]] opened a public issue of non-convertible debentures of up to ₹700 crore, tapping retail investors for funding as gold-loan demand runs well ahead of overall NBFC credit growth.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Waterfield launches two GIFT City funds",
+      "summary": "Waterfield launched two funds domiciled in GIFT City targeting global allocations for Indian family offices and offshore investors, adding to the growing roster of fund vehicles set up in the international financial services centre.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Upstox opens access to 8,000 US stocks",
+      "summary": "[[Upstox]] began offering Indian retail investors access to about 8,000 US-listed stocks and ETFs under the liberalised remittance scheme, intensifying competition in the cross-border brokerage segment.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "IndianOil co-hosts MC²+ IGNITE energy innovation accelerator at CSIR-NCL Pune",
+      "summary": "[[Indian Oil Corporation]], with the Venture Center and CSIR-National Chemical Laboratory, launched MC²+ IGNITE, an energy innovation accelerator that will select up to 30 deep-tech start-ups across hydrogen and mobility, AI-driven subsurface intelligence, next-generation drilling, bioenergy, compressed bio-gas, refinery process intensification and digital asset management.",
+      "page_number": 40,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Arcil opens ₹132-139 price band for main-board IPO",
+      "summary": "[[Asset Reconstruction Company (India)]], promoted by Avenue India Resurgence Pte and [[State Bank of India]], set a price band of ₹132-139 per share for an offer of up to 52,731,946 equity shares on the main boards of BSE and NSE. Anchor bidding is on September 8, with the issue open September 9-11; [[Lathe Investment]] and [[Federal Bank]] are also selling shareholders, and IIFL Capital, IDBI Capital and JM Financial are book-running lead managers.",
+      "page_number": 34,
+      "importance": 5
+    },
+    {
+      "section": "IPO",
+      "headline": "Jio Platforms to begin IPO marketing next week",
+      "summary": "[[Jio Platforms]] will start investor marketing for its initial public offering next week after receiving Sebi's observation letter on August 28. The issue involves roughly 270 million new shares, about 2.9% of equity, with listing targeted for November.",
+      "page_number": 7,
+      "importance": 5
+    },
+    {
+      "section": "IPO",
+      "headline": "Rentomojo files RHP addendum with ₹384-404 price band",
+      "summary": "[[Rentomojo]] filed an addendum to its red herring prospectus for a main-board listing on BSE and NSE with a floor price of ₹384 and cap of ₹404, comprising a fresh issue of ₹1,500 million and an offer for sale of up to 27,365,529 shares. Secondary sales at ₹404 were made to [[HDFC Life]] and [[Kotak Life]]; Motilal Oswal, Axis Capital and IIFL Capital are the book-running lead managers.",
+      "page_number": 15,
+      "importance": 4
+    },
+    {
+      "section": "IPO",
+      "headline": "Rays of Belief lists today after 65.08x subscription",
+      "summary": "[[Rays of Belief]], which operates the mom's belief platform, allotted 5,230,000 fresh shares at ₹239 raising ₹1,249.97 million. The issue, open September 1-3, was subscribed 65.08 times overall and 194.50 times in the retail portion; trading commences September 8, 2026.",
+      "page_number": 16,
+      "importance": 4
+    },
+    {
+      "section": "IPO",
+      "headline": "Deepa Jewellers debuts after 30.84x subscription",
+      "summary": "[[Deepa Jewellers]] allotted 25,972,633 shares at an offer price of ₹177, aggregating ₹4,597.16 million through a ₹2,500-million fresh issue and ₹2,097.16-million offer for sale. The issue, open September 1-3, was subscribed 30.84 times; trading commences September 8, 2026.",
+      "page_number": 18,
+      "importance": 4
+    },
+    {
+      "section": "IPO",
+      "headline": "Farm Peace lists on BSE SME after scraping past full subscription",
+      "summary": "[[Farm Peace]] issued 54,24,000 shares at ₹59 each raising ₹3,200.16 lakh on the BSE SME platform. The issue, open September 1-3, was subscribed only 1.15 times; trading commences September 8, 2026.",
+      "page_number": 25,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Injecto Polymers sets ₹98-100 band for BSE SME issue",
+      "summary": "[[Injecto Polymers]] fixed a price band of ₹98-100 per share for an offer of up to 56,12,400 shares on the BSE SME platform. Anchor allocation is on September 10, with the issue open September 11-16.",
+      "page_number": 20,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "CJ Darcl Logistics files DRHP addendum as selling shareholder withdraws",
+      "summary": "[[CJ Darcl Logistics]] filed an addendum dated September 7 to its draft red herring prospectus for an offer of up to 36,345,355 shares, comprising 26,470,000 fresh shares and an offer for sale of 9,875,355 shares, after Radhika Agarwal withdrew as a selling shareholder.",
+      "page_number": 26,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "MTE Structures files DRHP for BSE SME listing",
+      "summary": "[[MTE Structures]] filed a draft red herring prospectus for a BSE SME listing of up to 43,60,000 shares, comprising 37,06,000 fresh shares and an offer for sale of 6,54,000 shares. The price band is yet to be fixed.",
+      "page_number": 26,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "Sensex, Nifty slide to six-week low as IT leads losses",
+      "summary": "The Sensex fell 382.62 points to 76,132.81 and the Nifty lost 118.55 points to 23,779.15, both closing at six-week lows. The Nifty IT index dropped 2.3% as rising crude prices and geopolitical risk drove risk-off positioning.",
+      "page_number": 1,
+      "importance": 5
+    },
+    {
+      "section": "Market",
+      "headline": "Demat account additions hit seven-month high in August",
+      "summary": "Investors opened 3.27 million new demat accounts in August, the highest monthly addition in seven months, taking the total to 237.70 million. A heavy IPO calendar was the main driver of new-account creation.",
+      "page_number": 7,
+      "importance": 4
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "PM to dedicate rail and road projects worth over ₹35,000 crore at Vadodara",
+      "summary": "Prime Minister Narendra Modi will dedicate, inaugurate and lay foundation stones for rail and road projects worth more than ₹35,000 crore at Vadodara. These include dedicated freight corridor sections New Sanand (North)-New Makarpura, New Umbergaon Road-New Saphale and New Saphale-New JNPT Mumbai, completing over 2,800 km of the DFC network; the Vadodara-Ratlam third and fourth line (259 km); Vishwamitri-Dabhoi doubling (33 km); Miyagam Karjan-Choranda-Malsar gauge conversion (37 km); six-laning of the Kamrej-Chalthan section of NH-48; and ₹2,597 crore of PMAY and water supply projects in Gujarat.",
+      "page_number": 39,
+      "importance": 4
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Centre steps up coal movement to power plants",
+      "summary": "The Centre raised daily coal rake supply by about 20% and increased the number of plants classified as critical from 45 to 58, moving to rebuild pithead and plant-level stocks before peak demand.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Indian Railways clears ₹125-crore Bhavnagar Para yard remodelling",
+      "summary": "Indian Railways sanctioned a ₹125-crore remodelling of the Bhavnagar Para yard in Gujarat, adding loop lines, an engine reversal line, an ART and ARME siding, a high-level passenger platform, road under bridges and a new foot over bridge to decongest operations and improve punctuality.",
+      "page_number": 40,
+      "importance": 2
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Himachal invites pre-proposal bids for Waknaghat tourism Centre of Excellence",
+      "summary": "The Himachal Pradesh Infrastructure Development Board called a pre-proposal conference on September 21 to select an operator for the upgradation, operation and maintenance of the Centre of Excellence for Tourism and Hospitality at Waknaghat, to be developed under a public-private partnership.",
+      "page_number": 37,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Iran to declare new Gulf restricted zone; Brent tops $97",
+      "summary": "Iran said it will unveil a new restricted maritime zone in the Gulf, tightening navigation constraints on a route carrying a large share of seaborne crude. Brent crude moved above $97 a barrel on the announcement.",
+      "page_number": 10,
+      "importance": 5
+    },
+    {
+      "section": "International News",
+      "headline": "Copper surges to record $14,533 a tonne",
+      "summary": "Copper hit an all-time high of $14,533 a tonne, up about 17%, on supply disruptions and grid and data-centre demand. The move raises input costs for Indian cable, transformer and electrical equipment manufacturers.",
+      "page_number": 10,
+      "importance": 5
+    },
+    {
+      "section": "International News",
+      "headline": "Huawei and Xiaomi launch foldables to counter Apple",
+      "summary": "Huawei unveiled the Mate XT2 and Xiaomi launched a new foldable, both timed ahead of Apple's product cycle. The launches sharpen competition at the premium end of the smartphone market where foldable form factors are the main differentiator.",
+      "page_number": 10,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Volkswagen strikes Osnabrück plant deal with Aurelius",
+      "summary": "[[Volkswagen]] agreed a deal for its Osnabrück plant with Israeli-linked investor Aurelius, resolving uncertainty over the site's future as the carmaker restructures German capacity amid weak EV demand.",
+      "page_number": 10,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "EU to invest €200 million in Greenland",
+      "summary": "The European Union will invest €200 million in Greenland covering critical minerals, infrastructure and education, as competition for Arctic resources and strategic positioning intensifies.",
+      "page_number": 10,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "IIM-Bangalore breaks into global top 25 in FT Masters in Management ranking",
+      "summary": "IIM-Bangalore ranked 21st in the Financial Times Masters in Management 2026 ranking, its first appearance in the global top 25, with five Indian business schools placed in the top 50.",
+      "page_number": 14,
+      "importance": 4
+    },
+    {
+      "section": "Others",
+      "headline": "LIC marks 70th anniversary with 65.16% policy market share",
+      "summary": "[[Life Insurance Corporation of India]] completed 70 years on September 1, retaining a 65.16% share of policies and 56.66% of first-year premium income in FY2025-26. Total assets under management rose 5.08% to ₹57.29 lakh crore, and its Golden Jubilee Foundation has disbursed ₹303 crore and funded 41,776 scholarships worth ₹105.27 crore.",
+      "page_number": 40,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "After the arbitrage: global minimum tax narrows the Dubai advantage",
+      "summary": "The rollout of the 15% global minimum tax erodes the effective-rate arbitrage that drew holding structures to the UAE and other low-tax jurisdictions. The column argues Indian groups will need to justify offshore structures on operational grounds rather than tax rate alone.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "AI is the great equaliser for mid-sized firms: Siddharth Pai",
+      "summary": "Siddharth Pai argues that cheap inference and off-the-shelf models let mid-sized firms deploy capabilities that were previously the preserve of large enterprises with dedicated technology budgets, compressing the scale advantage in services delivery.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Building a global Indian consumer brand: Namit Puri",
+      "summary": "BCG's Namit Puri writes that Indian consumer companies have the manufacturing base and domestic scale to build globally competitive brands but under-invest in design, distribution partnerships and brand equity in export markets.",
+      "page_number": 8,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Central Railway starts Mumbai-Sawantwadi Road daily express for Konkan",
+      "summary": "Central Railway introduced a new daily express train between Chhatrapati Shivaji Maharaj Terminus and Sawantwadi Road, addressing a long-pending demand from Konkan passengers. The inaugural special will depart CSMT on September 3.",
+      "page_number": 40,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "IRCTC launches Vietnam and Japan international tour packages from Mumbai",
+      "summary": "IRCTC announced the 'Classical Vietnam Ex Mumbai' package covering Ho Chi Minh City, Da Nang, Hanoi and a Halong Bay cruise at ₹1,81,449 per person on twin-sharing, and a 'Japan - The Golden Route with Hiroshima' tour from October 25 to November 3 priced at ₹3,36,200 per person.",
+      "page_number": 40,
+      "importance": 2
+    }
+  ],
+  "stocksInFocus": [
+    { "name": "Asset Reconstruction Company (India)", "note": "Main-board IPO price band ₹132-139; anchor book today, issue opens September 9" },
+    { "name": "Tata Motors", "note": "JLR to cut 4,000 jobs in a $2.3-billion savings drive" },
+    { "name": "Adani Power", "note": "Lenders clear the GVK Energy acquisition" },
+    { "name": "Asian Paints", "note": "Leo Puri named chairman effective January 2027" },
+    { "name": "HDFC Bank", "note": "MCLR cut 5-10 bps to a 7.90-8.60% range" },
+    { "name": "Maruti Suzuki", "note": "Third price increase since May on input-cost inflation" },
+    { "name": "Godrej Consumer Products", "note": "Postal ballot to appoint Aasif Malbari as MD and CEO" },
+    { "name": "Rays of Belief", "note": "Lists today at ₹239 after 65.08x subscription" },
+    { "name": "Deepa Jewellers", "note": "Lists today at ₹177 after 30.84x subscription" },
+    { "name": "Rentomojo", "note": "RHP addendum sets ₹384-404 price band for main-board issue" }
+  ],
+  "topStories": [
+    { "headline": "OMC marketing margins collapse as crude stays above $100", "section": "Economy", "note": "Petrol margins down ₹4.2/litre, diesel ₹25/litre with the Indian basket at $101.07" },
+    { "headline": "Sensex, Nifty slide to six-week low as IT leads losses", "section": "Market" },
+    { "headline": "Arcil opens ₹132-139 price band for main-board IPO", "section": "IPO", "note": "SBI-backed ARC's issue opens September 9" },
+    { "headline": "Jio Platforms to begin IPO marketing next week", "section": "IPO", "note": "November listing targeted for ~2.9% of equity" },
+    { "headline": "JLR to cut 4,000 jobs in $2.3-billion savings drive", "section": "Announcements" },
+    { "headline": "Adani Power gets lenders' nod for GVK Energy acquisition", "section": "Events" },
+    { "headline": "CBI files supplementary chargesheet against Reliance ADA group in ₹9,280-crore case", "section": "Regulatory" },
+    { "headline": "SC: a company can be prosecuted even if no individual accused is named", "section": "Regulatory", "note": "Widens corporate exposure in economic-offence cases" },
+    { "headline": "Air India orders a safety reset across operations", "section": "Announcements" },
+    { "headline": "Iran to declare new Gulf restricted zone; Brent tops $97", "section": "International News" },
+    { "headline": "Copper surges to record $14,533 a tonne", "section": "International News", "note": "Raises input costs across Indian electricals" },
+    { "headline": "Pixxel raises $100 million Series C, pivots to planetary infrastructure", "section": "Events" },
+    { "headline": "PM to dedicate rail and road projects worth over ₹35,000 crore at Vadodara", "section": "Growth & Development" },
+    { "headline": "Only 23% of Indian firms report broad returns from AI: Dun & Bradstreet", "section": "Sector" },
+    { "headline": "India needs 10% growth to lift manufacturing to 25% of GDP: BofA", "section": "Economy" }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Asset Reconstruction Company (India)",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 132,
+      "issue_price_high": 139,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Main-board IPO of up to 52,731,946 shares; promoters Avenue India Resurgence Pte and State Bank of India; anchor bidding September 8"
+    },
+    {
+      "company_name": "Rentomojo",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 384,
+      "issue_price_high": 404,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "RHP addendum; ₹1,500M fresh issue plus OFS of up to 27,365,529 shares"
+    },
+    {
+      "company_name": "Rays of Belief",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 239,
+      "issue_price_high": 239,
+      "open_date": "2026-09-01",
+      "close_date": "2026-09-03",
+      "listing_date": "2026-09-08",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "5,230,000 fresh shares aggregating ₹1,249.97M; subscribed 65.08x overall, retail 194.50x"
+    },
+    {
+      "company_name": "Deepa Jewellers",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 177,
+      "issue_price_high": 177,
+      "open_date": "2026-09-01",
+      "close_date": "2026-09-03",
+      "listing_date": "2026-09-08",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "25,972,633 shares aggregating ₹4,597.16M (fresh ₹2,500M + OFS ₹2,097.16M); subscribed 30.84x"
+    },
+    {
+      "company_name": "Farm Peace",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 59,
+      "issue_price_high": 59,
+      "open_date": "2026-09-01",
+      "close_date": "2026-09-03",
+      "listing_date": "2026-09-08",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "54,24,000 shares aggregating ₹3,200.16 lakh; subscribed 1.15x"
+    },
+    {
+      "company_name": "Injecto Polymers",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 98,
+      "issue_price_high": 100,
+      "open_date": "2026-09-11",
+      "close_date": "2026-09-16",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Up to 56,12,400 shares; anchor allocation September 10"
+    },
+    {
+      "company_name": "CJ Darcl Logistics",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "DRHP addendum dated September 7; up to 36,345,355 shares (fresh 26,470,000 + OFS 9,875,355)"
+    },
+    {
+      "company_name": "MTE Structures",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "DRHP filed; up to 43,60,000 shares (fresh 37,06,000 + OFS 6,54,000); price band TBD"
+    },
+    {
+      "company_name": "Jio Platforms",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Sebi observation letter August 28; ~270 million new shares (~2.9% of equity); November listing targeted"
+    }
+  ]
+}
