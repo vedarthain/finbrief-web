@@ -13,6 +13,9 @@
 //   "topStories": [
 //     { "headline": "...", "section": "...", "note": "..." }
 //   ],
+//   "marketImpact": [
+//     { "headline": "...", "section": "...", "note": "..." }
+//   ],
 //   "ipoListings": [
 //     { "company_name": "...", "ticker": "...", "exchange": "BSE, NSE",
 //       "issue_price_low": 546, "issue_price_high": 575,
@@ -39,7 +42,7 @@ if (!jsonPath) {
   process.exit(1);
 }
 
-const { edition, paper_date, stories, stocksInFocus, topStories, ipoListings } = JSON.parse(readFileSync(jsonPath, "utf8"));
+const { edition, paper_date, stories, stocksInFocus, topStories, marketImpact, ipoListings } = JSON.parse(readFileSync(jsonPath, "utf8"));
 if (!edition || !paper_date || !Array.isArray(stories) || stories.length === 0) {
   console.error("Invalid input: need edition, paper_date, and a non-empty stories array.");
   process.exit(1);
@@ -77,10 +80,13 @@ try {
   }
 
   await client.query(
-    `INSERT INTO paper_meta (edition, paper_date, stocks_in_focus, top_stories)
-     VALUES ($1, $2, $3, $4)
-     ON CONFLICT (edition, paper_date) DO UPDATE SET stocks_in_focus = EXCLUDED.stocks_in_focus, top_stories = EXCLUDED.top_stories`,
-    [edition, paper_date, JSON.stringify(stocksInFocus ?? []), JSON.stringify(topStories ?? [])]
+    `INSERT INTO paper_meta (edition, paper_date, stocks_in_focus, top_stories, market_impact)
+     VALUES ($1, $2, $3, $4, $5)
+     ON CONFLICT (edition, paper_date) DO UPDATE SET
+       stocks_in_focus = EXCLUDED.stocks_in_focus,
+       top_stories     = EXCLUDED.top_stories,
+       market_impact   = EXCLUDED.market_impact`,
+    [edition, paper_date, JSON.stringify(stocksInFocus ?? []), JSON.stringify(topStories ?? []), JSON.stringify(marketImpact ?? [])]
   );
 
   for (const l of ipoListings ?? []) {

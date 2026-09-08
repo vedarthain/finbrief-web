@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { PaperStory, StockInFocus, TopStory } from "@/lib/queries";
+import { PaperStory, StockInFocus, TopStory, MarketImpactStory } from "@/lib/queries";
 import PaperSectionTable, { TableRow } from "./PaperSectionTable";
 
 export function renderSummary(text: string, dimClass: string) {
@@ -24,9 +24,11 @@ export function renderSummary(text: string, dimClass: string) {
 
 const STOCKS_TAB = "Stocks in Focus";
 const TOP_TAB = "Top Stories";
+const MARKET_TAB = "Market Impact";
 
 const SECTION_STYLE: Record<string, string> = {
   [TOP_TAB]:               "text-red-700 bg-red-50",
+  [MARKET_TAB]:            "text-yellow-700 bg-yellow-50",
   "Economy":               "text-teal-600 bg-teal-50",
   "Policy":                "text-sky-600 bg-sky-50",
   "Regulatory":            "text-slate-600 bg-slate-100",
@@ -45,6 +47,7 @@ const SECTION_STYLE: Record<string, string> = {
 
 const SECTION_BAR: Record<string, string> = {
   [TOP_TAB]:               "bg-red-500",
+  [MARKET_TAB]:            "bg-yellow-500",
   "Economy":               "bg-teal-500",
   "Policy":                "bg-sky-500",
   "Regulatory":            "bg-slate-500",
@@ -66,6 +69,7 @@ const SECTION_BAR: Record<string, string> = {
 // children all end up empty for the day are dropped at render time.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: TOP_TAB, single: TOP_TAB },
+  { label: MARKET_TAB, single: MARKET_TAB },
   { label: "Economy", single: "Economy" },
   { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
   { label: "In Focus", children: ["Sector", STOCKS_TAB] },
@@ -96,22 +100,38 @@ export default function PaperTree({
   bySection,
   stocksInFocus,
   topStories,
+  marketImpactStories,
 }: {
   bySection: Record<string, PaperStory[]>;
   stocksInFocus: StockInFocus[];
   topStories: TopStory[];
+  marketImpactStories: MarketImpactStory[];
 }) {
   // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
   // etc.) are real content but not "news" — keep them out of each section's default
-  // view. getPaperStories already sorts is_notice=false first, so the notices are a
-  // contiguous tail slice per section.
-  const visibleOf = (key: string, includeNotices: boolean) => {
+  // view, same treatment for importance<=2 filler (routine corporate-brief items,
+  // minor updates) — both hidden by default, both revealable via their own toggle.
+  // getPaperStories already sorts is_notice=false first then importance DESC, so
+  // both buckets are contiguous tail slices per section.
+  const visibleOf = (key: string, includeNotices: boolean, includeLowPriority: boolean) => {
     const all = bySection[key] ?? [];
-    return includeNotices ? all : all.filter((s) => !s.is_notice);
+    return all.filter((s) => {
+      if (s.is_notice) return includeNotices;
+      if (s.importance <= 2) return includeLowPriority;
+      return true;
+    });
   };
   const noticeCountOf = (key: string) => (bySection[key] ?? []).filter((s) => s.is_notice).length;
+  const lowPriorityCountOf = (key: string) =>
+    (bySection[key] ?? []).filter((s) => !s.is_notice && s.importance <= 2).length;
   const countOf = (key: string) =>
-    key === STOCKS_TAB ? stocksInFocus.length : key === TOP_TAB ? topStories.length : visibleOf(key, false).length;
+    key === STOCKS_TAB
+      ? stocksInFocus.length
+      : key === TOP_TAB
+      ? topStories.length
+      : key === MARKET_TAB
+      ? marketImpactStories.length
+      : visibleOf(key, false, false).length;
 
   // ── Global search across every story in every section (and Stocks in Focus) ──
   const [query, setQuery] = useState("");
@@ -154,8 +174,9 @@ export default function PaperTree({
     Object.values(bySection).forEach((rows) => rows.forEach((r) => editions.add(r.edition)));
     stocksInFocus.forEach((s) => s.edition && editions.add(s.edition));
     topStories.forEach((s) => s.edition && editions.add(s.edition));
+    marketImpactStories.forEach((s) => s.edition && editions.add(s.edition));
     return editions.size > 1;
-  }, [bySection, stocksInFocus, topStories]);
+  }, [bySection, stocksInFocus, topStories, marketImpactStories]);
 
   const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
   const [focusIndex, setFocusIndex] = useState(0);
@@ -207,26 +228,49 @@ export default function PaperTree({
     });
   }
 
-  const isSpecialTab = activeLeaf === STOCKS_TAB || activeLeaf === TOP_TAB;
-  const rows = !searchActive && activeLeaf && !isSpecialTab ? visibleOf(activeLeaf, showNoticesForActive) : [];
+  // Per-section "show low-priority items" toggle (importance <= 2) — same
+  // hide-by-default / reveal-on-demand pattern as notices, for filler news
+  // (minor corporate briefs, routine updates) that's still worth keeping but
+  // shouldn't force a reader to scroll past it to find what matters.
+  const [lowPriorityShownFor, setLowPriorityShownFor] = useState<Set<string>>(new Set());
+  const showLowPriorityForActive = activeLeaf ? lowPriorityShownFor.has(activeLeaf) : false;
+  function toggleLowPriority(leaf: string) {
+    setLowPriorityShownFor((prev) => {
+      const next = new Set(prev);
+      if (next.has(leaf)) next.delete(leaf); else next.add(leaf);
+      return next;
+    });
+  }
+
+  const isSpecialTab = activeLeaf === STOCKS_TAB || activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB;
+  const rows =
+    !searchActive && activeLeaf && !isSpecialTab
+      ? visibleOf(activeLeaf, showNoticesForActive, showLowPriorityForActive)
+      : [];
   const itemCount = searchActive
     ? searchResults.length
     : activeLeaf === STOCKS_TAB
     ? stocksInFocus.length
     : activeLeaf === TOP_TAB
     ? topStories.length
+    : activeLeaf === MARKET_TAB
+    ? marketImpactStories.length
     : rows.length;
 
-  // Every section — including Stocks in Focus, Top Stories and search results —
-  // renders through the same generic table component, so build a uniform row
-  // shape for whichever data source is active.
+  // Every section — including Stocks in Focus, Top Stories, Market Impact and
+  // search results — renders through the same generic table component, so
+  // build a uniform row shape for whichever data source is active. `importance`
+  // flows through so the table can badge must-read stories (>= 4) regardless
+  // of which tab they're being viewed in.
   const tableRows: TableRow[] = searchActive
-    ? searchResults.map((s) => ({ key: s.key, headline: s.headline, industry: s.industry, edition: s.edition, section: s.section, isNotice: s.is_notice }))
+    ? searchResults.map((s) => ({ key: s.key, headline: s.headline, industry: s.industry, edition: s.edition, section: s.section, isNotice: s.is_notice, importance: s.importance }))
     : activeLeaf === STOCKS_TAB
     ? stocksInFocus.map((s, i) => ({ key: `sif-${i}`, headline: s.name, edition: s.edition }))
     : activeLeaf === TOP_TAB
     ? topStories.map((s, i) => ({ key: `top-${i}`, headline: s.headline, edition: s.edition, section: s.section }))
-    : rows.map((s) => ({ key: s.id, headline: s.headline, industry: s.industry, edition: s.edition, isNotice: s.is_notice }));
+    : activeLeaf === MARKET_TAB
+    ? marketImpactStories.map((s, i) => ({ key: `mkt-${i}`, headline: s.headline, edition: s.edition, section: s.section }))
+    : rows.map((s) => ({ key: s.id, headline: s.headline, industry: s.industry, edition: s.edition, isNotice: s.is_notice, importance: s.importance }));
 
   const selIndex = Math.min(Math.max(focusIndex, 0), Math.max(tableRows.length - 1, 0));
   const selectedStory = searchActive
@@ -236,6 +280,7 @@ export default function PaperTree({
     : null;
   const selectedStock = !searchActive && activeLeaf === STOCKS_TAB ? stocksInFocus[selIndex] ?? null : null;
   const selectedTop = !searchActive && activeLeaf === TOP_TAB ? topStories[selIndex] ?? null : null;
+  const selectedMarket = !searchActive && activeLeaf === MARKET_TAB ? marketImpactStories[selIndex] ?? null : null;
 
   function selectLeaf(leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
@@ -406,6 +451,14 @@ export default function PaperTree({
                     </span>
                   </button>
                 ))}
+                {activeLeaf && lowPriorityCountOf(activeLeaf) > 0 && (
+                  <button
+                    onClick={() => toggleLowPriority(activeLeaf)}
+                    className={`${noticeCountOf(activeLeaf) > 0 ? "" : "ml-auto"} text-[11px] font-medium text-gray-400 hover:text-gray-600 underline decoration-dotted underline-offset-2`}
+                  >
+                    {showLowPriorityForActive ? "Hide" : "Show"} {lowPriorityCountOf(activeLeaf)} low-priority items
+                  </button>
+                )}
                 {activeLeaf && noticeCountOf(activeLeaf) > 0 && (
                   <button
                     onClick={() => toggleNotices(activeLeaf)}
@@ -426,7 +479,7 @@ export default function PaperTree({
           />
         </div>
 
-        {(selectedStory || selectedStock || selectedTop) && (
+        {(selectedStory || selectedStock || selectedTop || selectedMarket) && (
           <div className="rounded-lg bg-white border border-gray-200 p-4 shadow-sm">
             {selectedStory && (
               <>
@@ -468,6 +521,24 @@ export default function PaperTree({
                 {selectedTop.note && (
                   <p style={{ fontSize: px(15.5) }} className="leading-relaxed text-gray-700">
                     {selectedTop.note}
+                  </p>
+                )}
+              </>
+            )}
+            {selectedMarket && (
+              <>
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                  <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
+                    {selectedMarket.headline}
+                  </h3>
+                  <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-yellow-200 text-yellow-700 bg-yellow-50">
+                    {selectedMarket.section}
+                  </span>
+                  {multiEdition && selectedMarket.edition && <EditionBadge edition={selectedMarket.edition} />}
+                </div>
+                {selectedMarket.note && (
+                  <p style={{ fontSize: px(15.5) }} className="leading-relaxed text-gray-700">
+                    {selectedMarket.note}
                   </p>
                 )}
               </>

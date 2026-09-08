@@ -77,6 +77,10 @@ Add `"importance"` (integer 1–5) to every story — it drives the default sort
 
 Don't grade on a curve within one paper — use the same 1–5 scale you'd apply across any day so sort order stays meaningful.
 
+Stories with `importance <= 2` are hidden by default within their section (same hide-by-default / reveal-on-demand pattern as `is_notice`, via a separate "Show N low-priority items" toggle) — they're kept, not deleted, but a reader shouldn't have to scroll past them to reach what matters. This is a reason to be honest about low scores rather than defaulting everything to 3: a real 2 now declutters the section view instead of just sitting unsorted in the middle of it.
+
+Stories with `importance >= 4` get a small "★ Priority" badge wherever they render (their section tab, search results, Top Stories, Market Impact) — so scoring importance accurately also drives visible UI signal, not just sort order and digest inclusion.
+
 ## 3e. Notices don't need highlighting or IPO-listing entries
 
 `is_notice: true` stories are exempt from the terse-summary style in §4 (a one-line "Company X: notice of Nth AGM" is fine) and from `[[...]]` highlighting in §3b/§5 — they're not prose the reader is meant to read closely, just kept queryable/searchable. Do not create `ipoListings` entries from notice-type stories (SARFAESI/lost-share-cert/AGM) — `ipoListings` is only for actual capital-raise events per §6a.
@@ -132,6 +136,20 @@ Separately from `stocksInFocus`, curate a top-level `topStories` array: 10-15 of
 
 `headline` should match (or closely mirror) the corresponding story's headline so a reader can find the full item in its section; `section` is whatever leaf section it lives under (for display only, not a lookup key); `note` is optional. This renders as its own top-level "Top Stories" tab, shown first.
 
+## 6c. Build `marketImpact` — a causal filter for news that moves prices, not a re-labeling of the "Market" section
+
+Separately again from `stocksInFocus`/`topStories`, curate a top-level `marketImpact` array: every story from the day — from **any** of the 13 sections — that a trader/investor would treat as directly price-moving, either for a broad index or for a specific listed stock. This is not the same thing as `section: "Market"` (which is just one of the 13 fixed taxonomy leaves, covering trading/liquidity/index-mechanics/currency/credit/fund-flow stories as a topic). A story can be `section: "Economy"` or `section: "Events"` and still belong in `marketImpact` if it's the kind of news that would actually swing a price — conversely a routine `section: "Market"` story (e.g. a small mutual-fund-flow update) need not be included here if it's not really moving anything.
+
+Typical candidates: major index/Sensex/Nifty swings and their triggers, RBI policy decisions and rate moves, GDP/inflation/fiscal prints, marquee M&A or stake-sale announcements, quarterly results from large-cap/index-heavyweight companies, big IPO listings/allotments, landmark court or regulator rulings against a listed company, credit-rating actions on listed debt, currency/crude moves with broad market read-through.
+
+```json
+"marketImpact": [
+  { "headline": "Sensex swings ~4,000 points intraday, triggers Sebi review", "section": "Market", "note": "One-line context on why this moves the market, optional." }
+]
+```
+
+Shape is identical to `topStories` (`headline`, `section`, optional `note`) — `headline` should match the corresponding story so the reader can jump to the full item, `section` is the leaf section for display only. Overlap between `topStories` and `marketImpact` is expected and fine (a big Sensex swing is both a top story and market-moving); they are independent curation passes with different questions in mind — "most important today" vs. "moves prices" — not a subset/superset relationship, so don't try to derive one from the other. This renders as its own top-level "Market Impact" tab. `marketImpact` is optional; omit only if truly nothing in the day's paper is price-moving (rare).
+
 ## 6a. Build `ipoListings` — structured data for the separate "IPO & Listings" tab
 
 This is a **separate feature from the "IPO" section/tab** built in §3a-§6 above. The IPO section holds prose story summaries; `ipoListings` feeds a dedicated table page (`/ipo`, `components/IpoTable.tsx`) with structured columns (price band, dates, listing price, live current price). Populate both — they render in different places and are not redundant.
@@ -182,6 +200,9 @@ Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `script
   "topStories": [
     { "headline": "...", "section": "Market", "note": "..." }
   ],
+  "marketImpact": [
+    { "headline": "...", "section": "Economy", "note": "..." }
+  ],
   "ipoListings": [
     { "company_name": "...", "ticker": null, "exchange": "...", "issue_price_low": 0, "issue_price_high": 0,
       "open_date": "...", "close_date": "...", "listing_date": null, "listing_price": null,
@@ -190,7 +211,7 @@ Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `script
 }
 ```
 
-`importance` and `is_notice` are both optional per story (default `3` and `false` respectively) — set them explicitly per §3c/§3d rather than relying on the default whenever you have a real signal. `topStories` is optional; omit only if truly nothing rises above routine that day.
+`importance` and `is_notice` are both optional per story (default `3` and `false` respectively) — set them explicitly per §3c/§3d rather than relying on the default whenever you have a real signal. `topStories` and `marketImpact` are both optional; omit only if truly nothing rises above routine (§6b) or nothing is genuinely price-moving (§6c) that day.
 
 `ipoListings` is optional — omit it entirely on days with no IPO/listing activity.
 
@@ -202,7 +223,7 @@ If updating an existing day (re-extraction), edit the existing file rather than 
 node scripts/publish-paper.mjs scripts/data/<paper_date>-<edition-lowercase>.json
 ```
 
-This transactionally deletes+reinserts `paper_stories` for that edition+date, upserts the `paper_meta.stocks_in_focus` JSONB column, and upserts any `ipoListings` entries into `ipo_listings` (keyed on `company_name`, so it's safe to re-run and safe for the same company to reappear across multiple days as its IPO progresses). Safe to re-run if you edit and republish.
+This transactionally deletes+reinserts `paper_stories` for that edition+date, upserts the `paper_meta.stocks_in_focus`/`top_stories`/`market_impact` JSONB columns, and upserts any `ipoListings` entries into `ipo_listings` (keyed on `company_name`, so it's safe to re-run and safe for the same company to reappear across multiple days as its IPO progresses). Safe to re-run if you edit and republish.
 
 ## 9. Publish and push — no local validation
 
@@ -219,8 +240,8 @@ git add -A && git commit -m "..." && git push
 ## Schema reference
 
 - `paper_stories`: `edition, paper_date, section, headline, summary, page_number, industry, display_order, is_notice, importance` — isolated from `clusters`/`cluster_entities`/`prices`. `is_notice` (§3c) and `importance` (§3d) are the two ranking/filtering signals; `getPaperStories` sorts `is_notice ASC, importance DESC, display_order ASC`.
-- `paper_meta`: `edition, paper_date, stocks_in_focus JSONB, top_stories JSONB` — day-level metadata, PK on (edition, paper_date). `top_stories` is the §6b cross-section digest.
+- `paper_meta`: `edition, paper_date, stocks_in_focus JSONB, top_stories JSONB, market_impact JSONB` — day-level metadata, PK on (edition, paper_date). `top_stories` is the §6b cross-section digest; `market_impact` is the §6c price-moving-news digest.
 - `ipo_listings`: `company_name (UNIQUE), ticker, exchange, issue_price_low, issue_price_high, open_date, close_date, listing_date, listing_price, status, notes` — separate table backing the "IPO & Listings" tab (`/ipo`); upserted on `company_name` by the `ipoListings` array in the same publish JSON (§6a). `ticker`, when set and present in `prices`, drives a live current-price/% column — see `scripts/ipo_schema.sql`.
-- Query layer: `lib/queries.ts` — `getPaperStories`, `getPaperDays`, `getStocksInFocus`, `getTopStories`, `getIpoListings`.
-- Render layer: `components/PaperTree.tsx` — "Top Stories" tab (from `getTopStories`) shown first, then section-tree sidebar + click-to-expand row list; a search box filters headline+summary across every section; `is_notice` stories are hidden per-section behind a "Show N routine notices" toggle; `renderSummary()` parses `[[...]]` markers. `components/IpoTable.tsx` — structured IPO/listing table, separate page (`app/ipo/page.tsx`).
+- Query layer: `lib/queries.ts` — `getPaperStories`, `getPaperDays`, `getStocksInFocus`, `getTopStories`, `getMarketImpactStories`, `getIpoListings`.
+- Render layer: `components/PaperTree.tsx` — "Top Stories" and "Market Impact" tabs (from `getTopStories`/`getMarketImpactStories`) shown as special tabs alongside "Stocks in Focus", then section-tree sidebar + click-to-expand row list; a search box filters headline+summary across every section; `is_notice` stories are hidden per-section behind a "Show N routine notices" toggle, and `importance <= 2` stories are separately hidden per-section behind a "Show N low-priority items" toggle (§3d); stories with `importance >= 4` get a "★ Priority" badge wherever they render (`components/PaperSectionTable.tsx`); `renderSummary()` parses `[[...]]` markers. `components/IpoTable.tsx` — structured IPO/listing table, separate page (`app/ipo/page.tsx`).
 - Standalone publish path for the IPO table without a full e-paper pull: `node scripts/publish-ipo.mjs path/to/ipos.json` (same shape/upsert semantics as the `ipoListings` array, useful for out-of-band updates like a listing-day price correction).

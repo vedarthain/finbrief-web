@@ -1,5 +1,5 @@
 import { unstable_cache } from "next/cache";
-import { getPaperStories, getPaperDays, getStocksInFocus, getTopStories } from "@/lib/queries";
+import { getPaperStories, getPaperDays, getStocksInFocus, getTopStories, getMarketImpactStories } from "@/lib/queries";
 import PaperTree from "@/components/PaperTree";
 import DatePicker from "@/components/DatePicker";
 import NavTabs from "@/components/NavTabs";
@@ -15,6 +15,7 @@ const cachedGetPaperStories = unstable_cache(getPaperStories, ["paper-stories"],
 const cachedGetPaperDays = unstable_cache(getPaperDays, ["paper-days"], { revalidate: 300 });
 const cachedGetStocksInFocus = unstable_cache(getStocksInFocus, ["stocks-in-focus"], { revalidate: 300 });
 const cachedGetTopStories = unstable_cache(getTopStories, ["top-stories"], { revalidate: 300 });
+const cachedGetMarketImpactStories = unstable_cache(getMarketImpactStories, ["market-impact-stories"], { revalidate: 300 });
 
 export default async function HomePage({
   searchParams,
@@ -25,11 +26,12 @@ export default async function HomePage({
   const todayIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
   const activeDate = params.date ?? todayIST;
 
-  const [stories, days, stocksInFocus, topStories] = await Promise.all([
+  const [stories, days, stocksInFocus, topStories, marketImpactStories] = await Promise.all([
     cachedGetPaperStories(activeDate, params.edition),
     cachedGetPaperDays(),
     cachedGetStocksInFocus(activeDate, params.edition),
     cachedGetTopStories(activeDate, params.edition),
+    cachedGetMarketImpactStories(activeDate, params.edition),
   ]);
 
   const bySection = stories.reduce<Record<string, typeof stories>>((acc, s) => {
@@ -84,7 +86,12 @@ export default async function HomePage({
             <p className="text-[15px] text-gray-400">No paper stories published for {activeDate} yet.</p>
           </div>
         ) : (
-          <PaperTree bySection={bySection} stocksInFocus={stocksInFocus} topStories={topStories} />
+          <PaperTree
+            bySection={bySection}
+            stocksInFocus={stocksInFocus}
+            topStories={topStories}
+            marketImpactStories={marketImpactStories}
+          />
         )}
       </main>
 

@@ -12,6 +12,7 @@ export interface TableRow {
   edition?: string;
   section?: string;
   isNotice?: boolean;
+  importance?: number;
 }
 
 const PAGE_SIZE = 16;
@@ -75,6 +76,14 @@ export default function PaperSectionTable({
         >
           {r.headline}
         </h4>
+        {(r.importance ?? 0) >= 4 && (
+          <span
+            title={r.importance === 5 ? "Front-page-lead priority" : "High priority"}
+            className="shrink-0 text-[10px] font-semibold px-1.5 py-0.5 rounded border border-amber-200 text-amber-700 bg-amber-50"
+          >
+            ★ Priority
+          </span>
+        )}
         {r.section && (
           <span className="shrink-0 text-[10px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
             {r.section}

@@ -276,6 +276,37 @@ export async function getTopStories(date?: string, edition?: string): Promise<To
   );
 }
 
+export interface MarketImpactStory {
+  headline: string;
+  section: string;
+  note?: string;
+  edition?: string;
+}
+
+// Cross-section "Market Impact" digest, curated at publish time (paper_meta.market_impact) —
+// news judged likely to move an index or a specific stock's price (macro prints, rate moves,
+// M&A, results, regulatory rulings on listed cos, big listings), regardless of which of the
+// 13 topic sections it's filed under. Distinct from the "Market" section (trading/liquidity/
+// index-mechanics stories) — this is a cause-and-effect filter, not a topic bucket. Merged
+// across editions the same way getTopStories/getStocksInFocus are.
+export async function getMarketImpactStories(date?: string, edition?: string): Promise<MarketImpactStory[]> {
+  const d = date ?? new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+  const params: (string)[] = [d];
+  let where = `paper_date = $1`;
+  if (edition) {
+    params.push(edition);
+    where += ` AND edition = $2`;
+  }
+  const { rows } = await pool.query(
+    `SELECT edition, market_impact FROM paper_meta WHERE ${where}`,
+    params
+  );
+  const multiEdition = rows.length > 1;
+  return rows.flatMap((r) =>
+    (r.market_impact ?? []).map((s: MarketImpactStory) => (multiEdition ? { ...s, edition: r.edition } : s))
+  );
+}
+
 export interface StockInFocus {
   name: string;
   note: string;

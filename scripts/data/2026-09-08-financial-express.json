@@ -555,6 +555,21 @@
     { "headline": "Only 23% of Indian firms report broad returns from AI: Dun & Bradstreet", "section": "Sector" },
     { "headline": "India needs 10% growth to lift manufacturing to 25% of GDP: BofA", "section": "Economy" }
   ],
+  "marketImpact": [
+    { "headline": "OMC marketing margins collapse as crude stays above $100", "section": "Economy", "note": "Petrol margins down ₹4.2/litre, diesel ₹25/litre; hits IOC, BPCL, HPCL FY27 earnings" },
+    { "headline": "Sensex, Nifty slide to six-week low as IT leads losses", "section": "Market" },
+    { "headline": "CBI files supplementary chargesheet against Reliance ADA group in ₹9,280-crore case", "section": "Regulatory" },
+    { "headline": "JLR to cut 4,000 jobs in $2.3-billion savings drive", "section": "Announcements", "note": "Flows through to parent Tata Motors" },
+    { "headline": "Air India orders a safety reset across operations", "section": "Announcements" },
+    { "headline": "Adani Power gets lenders' nod for GVK Energy acquisition", "section": "Events" },
+    { "headline": "HDFC Bank cuts MCLR by 5-10 bps across tenors", "section": "Events" },
+    { "headline": "Arcil opens ₹132-139 price band for main-board IPO", "section": "IPO", "note": "SBI-backed ARC's issue opens September 9" },
+    { "headline": "Jio Platforms to begin IPO marketing next week", "section": "IPO", "note": "November listing targeted for ~2.9% of equity" },
+    { "headline": "Iran to declare new Gulf restricted zone; Brent tops $97", "section": "International News" },
+    { "headline": "Copper surges to record $14,533 a tonne", "section": "International News", "note": "Raises input costs across Indian cable, transformer, electricals" },
+    { "headline": "Maruti raises prices for the third time since May", "section": "Announcements" },
+    { "headline": "Demat account additions hit seven-month high in August", "section": "Market" }
+  ],
   "ipoListings": [
     {
       "company_name": "Asset Reconstruction Company (India)",

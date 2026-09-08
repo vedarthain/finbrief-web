@@ -97,6 +97,18 @@
     { "headline": "Purple Style Labs makes muted market debut; shares end over 1% lower", "section": "IPO" },
     { "headline": "Coal gasification scheme set for first industry test", "section": "Policy", "note": "₹37,500 crore scheme opens applications, targets 100 mt gasification capacity by 2030" }
   ],
+  "marketImpact": [
+    { "headline": "Indian crude basket tops $100 per barrel again", "section": "Economy", "note": "Widens oil import bill and current account deficit; pressures OMC margins" },
+    { "headline": "Tech stocks buckle under rising oil prices, geopolitical pressure", "section": "Market", "note": "Nifty IT selloff drags index to near two-month low" },
+    { "headline": "Blackstone weighs stake buy in IIFL Finance", "section": "Announcements", "note": "Potential ~$6.2 billion stake sale by Fairfax" },
+    { "headline": "Udaan buys Swiggy's LYNK for ₹500 crore", "section": "Events", "note": "Swiggy takes 2.8% stake in Udaan via the deal" },
+    { "headline": "Purple Style Labs makes muted market debut; shares end over 1% lower", "section": "IPO" },
+    { "headline": "Financial stocks attracted a third of FPI haul in Aug", "section": "Market" },
+    { "headline": "Fund houses place heavy bets on fresh offerings", "section": "Market", "note": "Mutual funds building large positions in Shadowfax, Amagi Media" },
+    { "headline": "RBL Bank okays $1 bn EMTN programme", "section": "Events" },
+    { "headline": "Pranav Constructions IPO subscribed 5.69x on Day 1 of bidding", "section": "IPO" },
+    { "headline": "Govt gives initial nod for ₹1.1 trn defence acquisitions", "section": "Policy", "note": "Positive read-through for defence-sector stocks" }
+  ],
   "ipoListings": [
     { "company_name": "Purple Style Labs", "ticker": null, "exchange": "BSE, NSE", "issue_price_low": 575, "issue_price_high": 575, "open_date": null, "close_date": null, "listing_date": "2026-09-07", "listing_price": 568.05, "status": "listed", "notes": "Closed maiden trading session 1.21% below issue price; IPO was subscribed 1.36x" },
     { "company_name": "Steamhouse India", "ticker": null, "exchange": "BSE SME", "issue_price_low": 77, "issue_price_high": 81, "open_date": "2026-09-09", "close_date": "2026-09-11", "listing_date": null, "listing_price": null, "status": "upcoming", "notes": "₹414 crore IPO: ₹353 crore fresh issue plus ₹61 crore offer for sale" },

@@ -25,14 +25,19 @@ ALTER TABLE paper_stories ADD COLUMN IF NOT EXISTS importance SMALLINT NOT NULL 
 CREATE INDEX IF NOT EXISTS idx_paper_stories_date ON paper_stories (paper_date, display_order);
 CREATE INDEX IF NOT EXISTS idx_paper_stories_importance ON paper_stories (paper_date, is_notice, importance DESC);
 
--- Per-day metadata not tied to a single story, e.g. "Stocks in Focus" picks and a
--- cross-section "Top Stories" digest so a reader never has to open every tab.
+-- Per-day metadata not tied to a single story, e.g. "Stocks in Focus" picks, a
+-- cross-section "Top Stories" digest, and a cross-section "Market Impact" digest
+-- (curated news the extraction judged likely to move an index or a specific
+-- stock's price — distinct from the "Market" section, which is just one of the
+-- 13 topic buckets) so a reader never has to open every tab.
 CREATE TABLE IF NOT EXISTS paper_meta (
   edition          TEXT NOT NULL,
   paper_date       DATE NOT NULL,
   stocks_in_focus  JSONB NOT NULL DEFAULT '[]',  -- [{ "name": "...", "note": "..." }]
   top_stories      JSONB NOT NULL DEFAULT '[]',  -- [{ "headline": "...", "section": "...", "note": "..." }]
+  market_impact    JSONB NOT NULL DEFAULT '[]',  -- [{ "headline": "...", "section": "...", "note": "..." }]
   PRIMARY KEY (edition, paper_date)
 );
 
 ALTER TABLE paper_meta ADD COLUMN IF NOT EXISTS top_stories JSONB NOT NULL DEFAULT '[]';
+ALTER TABLE paper_meta ADD COLUMN IF NOT EXISTS market_impact JSONB NOT NULL DEFAULT '[]';
