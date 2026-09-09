@@ -1,0 +1,959 @@
+{
+  "edition": "Business Standard",
+  "paper_date": "2026-09-09",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "India's Q1FY27 GDP grows 7.8%, beats forecasts; PM Modi vows 'reform express', pushes UPI globally",
+      "summary": "India's economy grew 7.8% in the June quarter, ahead of China's 4.3% and Indonesia's 5.3%, and above RBI/SBI/Ind-Ra forecasts that had ranged 7-8%. Speaking at Global Fintech Fest 2026, PM Modi said the 'reform express' would accelerate and highlighted UPI's growth from 17.8 million transactions in FY17 to 241.62 billion in FY26 (value up ~4,000x to ₹314 trillion) — the IMF calls it the world's largest real-time payments system, now live in 11 countries. Modi urged fintechs to extend UPI-style rails to credit, insurance and investment, prioritise cybersecurity and data protection, and cut cross-border remittance costs. Japan's rating agency separately upgraded India to A- from BBB+.",
+      "page_number": 1,
+      "importance": 5
+    },
+    {
+      "section": "Economy",
+      "headline": "Over 11% PPI factory input inflation could have aided fall in deflators",
+      "summary": "Using output PPI as a proxy for the unavailable manufacturing input PPI in GVA calculations, Business Standard's analysis shows May/June 2026 output PPI inflation ran at 9.6-9.7% for all commodities and 11.0-11.5% for manufactured products — implying factory input PPI inflation exceeded 11% in Q1FY27, a factor likely aiding the fall in GDP deflators.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Economy",
+      "headline": "White-collar hiring up 14% in August on non-IT strength",
+      "summary": "Naukri's JobSpeak Index rose to 3,028 in August (from 2,664 a year earlier, +14% YoY) though down 6% month-on-month from July. Growth was led by auto ancillary (+19%), AI/ML roles (+31%), recruitment (+109%), consumer durables (+36%), aviation (+33%), healthcare (+16%) and retail (+15%).",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "Businesses seek seamless cross-state GST credit transfer ahead of Oct 7 Council meet",
+      "summary": "Industry bodies want the GST Council to allow cross-state transfer of unutilised input tax credit (CGST/IGST) between a company's registrations in different states; SGST is likely to stay excluded given state revenue implications. A phased CGST-only approach could unlock roughly half of stranded ITC, according to tax experts.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "Notebook makers seek minimum import price to counter zero-duty Asean imports",
+      "summary": "The All India Notebook Manufacturers Association is seeking a minimum import price on finished notebooks, an anti-dumping probe on Indonesian imports, CGST rule changes for IGST refunds, and a domestic paper-mill pricing inquiry.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "DoT clears decks for satellite broadband services",
+      "summary": "The Digital Communication Commission approved Trai's recommendations on satellite spectrum allocation: a 5% AGR spectrum usage charge (4% in rural/remote areas) and a 5-year spectrum grant with a 2-year extension option. The move still needs inter-ministerial and Cabinet ratification plus security/FDI clearances. It benefits existing GMPCS licence holders [[Eutelsat Oneweb]], [[Starlink]] and [[Jio Satellite]], with [[Amazon Leo]] awaiting approval. India's satcom market is estimated to grow from $3.2 billion (2025) to $6.3 billion by 2034.",
+      "page_number": 4,
+      "importance": 4
+    },
+    {
+      "section": "Policy",
+      "headline": "TDB selects 13 companies under RDI fund's second cohort",
+      "summary": "In an interview, Technology Development Board Secretary Rajesh Kumar Pathak said TDB — a second-level manager for the government's ₹1 trillion RDI fund — has over 30 years signed ~450 funding agreements worth ₹3,260 crore, catalysing over ₹13,000 crore in overall investment. Under its ₹2,000 crore RDI allocation, TDB has committed ₹2,192 crore to 22 companies (14 startups, 5 MSMEs, 3 listed), disbursing ~₹102 crore so far; the second cohort covers 13 companies, 11 of them deep-tech startups. Safeguards include mandatory government permission for over 20% dilution and India-based IP registration.",
+      "page_number": 3,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "Centre working on unified digital land-records database for Delhi",
+      "summary": "Union Capital Development Secretary D Thara said the Centre is building a unified land-records database for Delhi, alongside the Delhi government's proposed Delhi Land Records Bill 2026 to survey and digitise residential and commercial properties. Delhi's Master Plan 2047 also permits an FAR of 500 for transit-oriented development within 500m of Metro/RRTS nodes.",
+      "page_number": 9,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Delhi HC dismisses [[UltraTech Cement]]'s challenge to CCI cartel-probe order",
+      "summary": "The Delhi High Court ruled that the Competition Commission of India can allow any interested party — here the Builders' Association of India — to participate in proceedings, upholding a long-running cement cartelisation probe dating to 2018-19 complaints, with the Director General's report submitted in July 2022.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NCPCR to formally probe [[Meta]] India over child-safety lapses",
+      "summary": "The National Commission for Protection of Child Rights found Meta's response on child sexual abuse material (CSAM) 'inadequate' and has summoned India head Arun Srinivas, following July scrutiny of Instagram ad-based CSAM promotion by MeitY. Meta says it has removed 160,000 CSAM-linked accounts, over 4 million suspicious accounts and 36 million pieces of exploitative content, and has updated under-18 content restrictions.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Delhi HC to hear [[Asian News International]]'s appeal vs [[OpenAI]] on Sept 14",
+      "summary": "A Delhi High Court division bench did not assemble Tuesday to hear ANI's appeal against a single-judge refusal of interim protection in its copyright-infringement suit over OpenAI/ChatGPT's alleged unauthorised commercial use of its news content; the hearing is now set for September 14.",
+      "page_number": 12,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Cauvery authority directs Karnataka to release 6,000 cusecs to Tamil Nadu",
+      "summary": "The Cauvery Water Management Authority, at its 57th meeting in Delhi, directed Karnataka to release 6,000 cusecs of water to Tamil Nadu for 15 days, per the Cauvery Water Regulation Committee's recommendation.",
+      "page_number": 9,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "IFSCA notifies new market-abuse framework for GIFT City",
+      "summary": "The International Financial Services Centres Authority consolidated insider-trading, fraud and unfair-trading rules under a single Prohibition of Market Abuse in Securities Markets Regulations, 2026, replacing Sebi's insider-trading and fraud regimes for the IFSC. It targets spoofing and circular trading; designated persons must now disclose quarterly trades over $25,000 within two days.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sahara Refund Portal restored, to process 2 million pending claims",
+      "summary": "The Ministry of Cooperation restored the Sahara Refund Portal under CRCS after IT, licence and hardware disruptions. About ₹9,267 crore has already been refunded to 4.2 million depositors across four Sahara cooperative societies via Aadhaar-seeded accounts and e-KYC verification.",
+      "page_number": 16,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sumax Engineering — 32nd AGM notice",
+      "summary": "Notice of 32nd AGM on Sept 30, 2026 via VC/OAVM; e-voting window Sept 27-29.",
+      "page_number": 8,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "K.P. Manish Global Ingredients — NCLT demerger scheme notice",
+      "summary": "NCLT Chennai meeting of unsecured creditors for a Scheme of Arrangement (demerger) with [[Kawman Pharma]], Oct 10, 2026 via VC; e-voting Oct 6-9.",
+      "page_number": 10,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "RailTel — tender notices",
+      "summary": "Three tenders from [[RailTel]]: OFC shifting (Lucknow), OFC diversion (Barabanki-Burhwal), and masonry work (Bandariabag).",
+      "page_number": 11,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Razorpay Software — 13th AGM notice",
+      "summary": "Notice of 13th AGM on Sept 30, 2026 in Bengaluru; e-voting Sept 27-29.",
+      "page_number": 11,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Mishra Dhatu Nigam (MIDHANI) — 52nd AGM notice",
+      "summary": "Notice of 52nd AGM on Sept 30, 2026 in Hyderabad; record date/e-voting Sept 23 and Sept 26-29; final FY26 dividend record date Sept 23.",
+      "page_number": 14,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "LGT Global Hospitality — 10th AGM notice",
+      "summary": "Formerly LGT Business Connextions; notice of 10th AGM Sept 30, 2026 in Chennai via VC/OAVM; e-voting Sept 27-29, record date Sept 25.",
+      "page_number": 22,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Udayshivakumar Infra — 7th AGM notice",
+      "summary": "Notice of 7th AGM on Sept 30, 2026 in Davanagere, Karnataka; e-voting Sept 27-29, cut-off date Sept 23.",
+      "page_number": 22,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Innovassynth Technologies (India) — 18th AGM notice",
+      "summary": "Notice of 18th AGM on Sept 30, 2026 in Khopoli via VC/OAVM; e-voting Sept 27-29.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "KCL Infra Projects — 31st AGM notice",
+      "summary": "Notice of 31st AGM on Sept 30, 2026 via VC/OAVM; e-voting Sept 27-29, cut-off Sept 23.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Bank of India — SARFAESI e-auction notice, Raigad Zone",
+      "summary": "Sale notice for seven mortgaged immovable properties across Mahad, Revdanda, Wasambe and Dhatav branches from named borrowers; e-auction Sept 25, 2026 via ebkray.in.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Avance Technologies — 42nd AGM notice",
+      "summary": "Notice of 42nd AGM on Sept 29, 2026 in Mumbai (physical venue); e-voting Sept 26-28.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Arihant Foundations & Housing — 33rd AGM notice",
+      "summary": "Notice of 33rd AGM on Sept 30, 2026 in Chennai via VC/OAVM; e-voting Sept 26-29.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Tembo Global Industries — 16th AGM notice",
+      "summary": "Notice of 16th AGM on Sept 30, 2026 via VC/OAVM; e-voting Sept 27-29.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Deemed conveyance notice — Chinar Co-operative Housing Society",
+      "summary": "Public notice re deemed conveyance dispute vs Sher-E-Punjab CHS/A.K. Enterprises over an Andheri East property; hearing Sept 28, 2026 before the District Deputy Registrar, Co-op Societies, Mumbai City-3.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Deemed conveyance notice — Rizvi Mahal Co-operative Housing Society",
+      "summary": "Public notice re deemed conveyance dispute vs Rizvi Builders over a Bandra West property (73 flats, 12 shops, 10 garages); hearing Sept 21, 2026.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sky Industries — IEPF share-transfer notice",
+      "summary": "Notice that unclaimed FY2018-19 dividend shares will be transferred to the Investor Education and Protection Fund by Nov 19, 2026 unless claimed by Nov 18.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Dnyandeep Co-operative Credit Society — auction notice (Nalasopara)",
+      "summary": "Public auction notice for a Nalasopara flat (borrowers Prakash/Jashoda/Parmanand Rawal); auction Oct 8, 2026, reserve price ₹32.28 lakh.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Gemstone Investments — 32nd AGM notice",
+      "summary": "Notice of 32nd AGM on Tuesday, Sept 29, 2026, Mumbai (physical venue); e-voting Sept 26-28.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Dynamic Microsteppers — 41st AGM notice",
+      "summary": "Notice of 41st AGM on Sept 30, 2026 via OAVM; e-voting Sept 27-29.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Redevelopment notice — Charkop Jeevan Dhara Co-operative Housing Society",
+      "summary": "Public notice (via Solicis Lex Advisory) regarding redevelopment of a Kandivali property; 14-day claim window.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Court proclamation notice — [[Green Malabar Finance Ventures]] Ltd vs Dilip Bhimrao Kshirsagar",
+      "summary": "Proclamation notice under Section 82 Cr.P.C./84 BNSS in a Section 138 NI Act case before the Chennai Metropolitan Magistrate Fast Track Court II; accused to appear Oct 12, 2026.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NCLT order notice — [[Paladin Consultancy]] Private Limited",
+      "summary": "Formerly [[India Resurgence ARC]] Private Limited; NCLT Mumbai confirmed reduction of share capital from ₹144,13,28,400 to ₹15,63,46,120, registered by RoC Mumbai on Sept 4, 2026.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Property purchase notice — Dnyandeep Co-operative Credit Society (Vikhroli)",
+      "summary": "Public notice regarding purchase of a Vikhroli office property from Envecon IT Systems Pvt Ltd; 7-day claim window.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Sector",
+      "headline": "[[Adani Enterprises]] leads bids in coal-gasification incentive scheme",
+      "summary": "Adani Enterprises proposed three urea projects and [[Talcher Fertilisers]] one among seven applications (four for urea) received for the Centre's ~₹37,500 crore coal/lignite gasification scheme, which also drew bids from [[NTPC]], [[Gallantt Ispat]] and [[Shyam SEL & Power]]. The scheme builds on a 2024 ₹8,500 crore incentive round (eight projects already underway) and aims to cut India's ~₹2.77 trillion FY25 LNG/urea/ammonia/methanol import bill; the Coal Ministry has now opened a second application round.",
+      "page_number": 1,
+      "importance": 4,
+      "industry": "Coal Gasification"
+    },
+    {
+      "section": "Sector",
+      "headline": "Only 22% of Indian firms have AI governance despite 119% investment hike",
+      "summary": "ServiceNow's Enterprise AI Maturity Index 2026, surveying 4,500 leaders (350 in India), found India enterprise AI investment rose 119% YoY versus a 110% global average, yet only 22% of firms have AI governance frameworks. AI is projected to reach 21.3% of the average Indian IT budget by 2027, up from 16.6%.",
+      "page_number": 3,
+      "importance": 3,
+      "industry": "Enterprise AI"
+    },
+    {
+      "section": "Sector",
+      "headline": "Electric PV and e2W sales rise on-year, dip sequentially in August",
+      "summary": "Electric passenger-vehicle retail rose 51.9% YoY to 30,696 units (7.6% share vs 5.8%) and electric two-wheelers rose 67.1% YoY to 183,204 units (10.7% share vs 7.7%), though both fell month-on-month ahead of the festive season. [[Tata Motors]] led ePV sales (13,158 units, +63.2% YoY), followed by [[Mahindra & Mahindra]] and [[JSW MG Motor]]; [[VinFast]] climbed to 4th (+48.4% MoM) and [[Hyundai]] registrations more than doubled YoY.",
+      "page_number": 2,
+      "importance": 4,
+      "industry": "Electric Vehicles"
+    },
+    {
+      "section": "Sector",
+      "headline": "India's ecommerce industry pivots to AI, unified commerce for next growth phase",
+      "summary": "Industry leaders at the India E-Commerce Forum 2026 said the discounts/delivery-speed era is giving way to AI-driven personalisation and unified online-offline experiences, with executives from Levi's India, Van Heusen Innerwear/Aditya Birla Lifestyle, TechnoSport, Urban Ladder and NEWME weighing in on customer lifetime value and AI-driven demand prediction.",
+      "page_number": 10,
+      "importance": 2,
+      "industry": "E-commerce"
+    },
+    {
+      "section": "Announcements",
+      "headline": "[[Mastercard]] eyes smaller banks, Tier-II/III cities for India credit-card growth",
+      "summary": "Mastercard India & South Asia president Gautam Aggarwal said India has only 110 million credit cards (55-60 million unique users) versus China's 550 million for a similar population, calling this an opportunity rather than a UPI/RuPay threat. Card issuance slowed last year as RBI pushed banks to clean up inactive cards; the company is targeting affluent customers, SMEs and travel/expense digitisation, and is exploring but has not secured a UPI credit-line linkage.",
+      "page_number": 16,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "[[Visa]] diversifies beyond cards into tokenisation and fraud intelligence",
+      "summary": "Visa group country manager Suresh Sethi said the company is diversifying into tokenisation (55% share of India's 1 billion-plus tokens), fraud/risk intelligence and analytics via acquisitions including Pismo, Featurespace and BioCatch, targeting the affluent segment and cross-border spend as UPI dominates low-value payments. The company is awaiting regulatory clarity on a Visa-UPI linkage and welcomes Apple Pay's India entry.",
+      "page_number": 16,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "ONGC chief: India needs to prioritise technology for energy security",
+      "summary": "[[Oil and Natural Gas Corporation]] Chairman & CEO Arun Kumar Singh, speaking at IIT Bombay, said India should focus resources on technology for energy security, highlighting AI's potential to cut wastage and improve efficiency.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "[[Minda Corporation]] targets ₹1,500 crore exports, eyes EV growth",
+      "summary": "Minda Corp targets more than doubling exports to ₹1,500 crore within four years (from ~₹600 crore), driven by instrument clusters, wiring harnesses and EV electronics; exports are currently 8-9% of revenue. The company plans a new plant once capacity utilisation reaches 80-85% (currently 75-78%).",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "[[Century 21]] to enter India with 126-region franchise model",
+      "summary": "The US-based real-estate brand is entering India's ~$600 billion property market via franchise, targeting 126 regions, ~1,500 offices and 30,000 agents over five years, and is raising capital for the launch.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "[[Ferrero]] looks to sweeten India growth with premium push",
+      "summary": "Ferrero is targeting double-digit growth this festive season in India's chocolate market (growing 7-8%), has launched Ferrero bars, and is expanding retail presence to about 1 million stores.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "RBI Governor: fintech a 'valuable partner' in building India's financial system",
+      "summary": "Speaking at Global Fintech Festival 2026 with PM Modi present, RBI Governor Sanjay Malhotra highlighted UPI, Aadhaar-enabled payments and Jan Dhan, and cited the RBI's regulatory sandbox, Innovation Hub, AI-based fraud detection and industry self-regulation.",
+      "page_number": 9,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "NIXI-APNIC MoU to strengthen internet routing security",
+      "summary": "[[National Internet Exchange of India]] and the Asia Pacific Internet Community signed an MoU to host an APNIC RPKI repository mirror in India, reducing latency and improving IP-address validation and network resilience, while boosting IPv6 adoption (India's IPv6 penetration is already ~80%, the highest in Asia-Pacific).",
+      "page_number": 10,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "[[Zomato]]'s healthy-food orders rise to 7.5% of total",
+      "summary": "Zomato's marketing head said the share of healthy-dish orders rose from 5.3% in 2024 to 7.5% in 2026, with the under-25 cohort growing fastest (3.9% to 6.4%) and Bengaluru leading adoption on the app's dedicated 'Healthy Mode' tab.",
+      "page_number": 10,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Bajaj Finance]] acquires 5% stake in AI video platform TrueFan",
+      "summary": "Bajaj Finance acquired a 5% stake in TrueFan AI, an AI video-generation platform, as part of its Finserv Intelligence initiative; it already uses the platform at scale for personalised customer videos.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "[[HCLTech]] launches ₹185 crore semiconductor lab in Bengaluru",
+      "summary": "HCLTech opened a 40,000 sq ft post-silicon engineering and testing lab equipped with tools from Teradyne, Advantest, Keysight, Tektronix and Thermo Fisher.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Jio-bp]], DRIVN ink charging-solutions pact for commercial EVs",
+      "summary": "The Reliance-BP mobility JV signed an MoU with EV leasing platform DRIVN to build commercial EV charging infrastructure.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Emami]]'s BoroPlus expands into baby care with 'FromMaa'",
+      "summary": "Emami launched a baby-care range under its BoroPlus brand, entering India's roughly ₹40,000 crore baby-care market.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Tata Consultancy Services]] to implement next phase of tech for Odisha government",
+      "summary": "TCS won a ₹122.6 crore bid for OSWAS 3.0 (Odisha State Workflow Automation System phase 2), extending its roughly six-year government partnership, powered by TCS DigiBOLT.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Amazon India]] seller base tops 2 million ahead of festive season",
+      "summary": "Amazon India's seller base crossed 2 million with over 300,000 new sellers added in the past 15-18 months, its strongest year-on-year growth.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Biocon]] secures 10-year Pertuzumab supply contract in Brazil",
+      "summary": "Stock closed at ₹392.6, down 0.2%.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Fredun Pharmaceuticals]] acquires pet-wellness brand Furlicks",
+      "summary": "Acquired from USV and Wellbeing Nutrition; stock closed at ₹1,362.1, down 3.2%.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Clean Max Enviro Energy]] gets Crisil AA/Stable rating for ₹2,500 crore NCDs",
+      "summary": "Stock closed at ₹1,398.0, up 1.2%.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Deep Industries]] bags ₹88 crore ONGC gas-compression order",
+      "summary": "Order for gas compression at Balol; stock closed at ₹818.0, up 4.2%.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Jupiter Wagons]] bags order worth over ₹98 crore from GATX",
+      "summary": "Stock closed at ₹242.5, down 1.0%.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "[[Kuku Technologies]] plans 1,000 hires for AI-native micro-drama content unit",
+      "summary": "Kuku Technologies (Kuku TV, Kuku FM) is building an AI-native production unit — about 200 hired so far of a planned 1,000 by FY-end — developing a proprietary 'AI Storytelling Stack.' It expects AI to eventually drive 80-90% of revenue, reach over 100 million people within six months, and cut production costs to 30-50% of Chinese micro-drama benchmarks.",
+      "page_number": 10,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "[[GE Vernova T&D India]] stock jumps 8.9% on Barmer-Kalamb HVDC order win",
+      "summary": "GE Vernova T&D India achieved L-1 status for a ~₹13,000 crore HVDC contract from [[Power Grid]] (total project value ~₹25,000-26,000 crore) to evacuate renewable power from Barmer to South Kalamb — its second HVDC win after Khavda-South Olpad in December 2026. Order inflow is set to rise to ~₹23,100 crore from ~₹10,100 crore, roughly 4x FY26 revenue; the stock trades at 60-72x forward earnings.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "[[Supreme Industries]] volumes seen recovering in Q2FY27 as PVC prices stabilise",
+      "summary": "India's largest plastic-pipe maker expects better demand and price stability after a weak Q1FY27 (volumes -14% YoY on channel destocking, though revenue +4% YoY on realisations/mix). A minimum import price on PVC has stabilised prices near ₹80-85/kg; Q1 operating profit rose 24.7% YoY with margin up 240bps to 14.6%. ICICI Securities and 360 One both retain 'buy' ratings, and the stock trades cheaper than peer [[Astral]] (28x vs 41x FY28 earnings).",
+      "page_number": 14,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "[[Deepa Jewellers]] lists ~10% above issue price; [[Rays of Belief]] debuts at discount",
+      "summary": "Deepa Jewellers opened at ₹221.05 (+24.88%) versus its ₹177 issue price and closed at ₹194.30 (+9.77%). Rays of Belief closed below its ₹239 issue price, a 4.5% discount on debut.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "[[Prasol Chemicals]] IPO subscribed 41% on Day 1",
+      "summary": "Bids received for 22,43,120 shares against 54,43,229 shares on offer.",
+      "page_number": 13,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "[[MKC Agro Fresh]] files IPO draft papers",
+      "summary": "DRHP filed for a fresh issue of 9.999 million shares plus an offer-for-sale of 6.812 million shares by existing shareholders.",
+      "page_number": 13,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "Nifty, Sensex fall on private-bank selling; closing-auction volatility burns retail options traders",
+      "summary": "The Sensex ended at 75,577.58, down 555 points (0.73%), while the Nifty 50 fell 0.61% to 23,635.1, now 10.4% below its 52-week high. The closing auction session (CAS) saw the indicative price swing to 23,377 before snapping back to 23,600, trapping traders on both sides — the 23,650 put premium spiked from about 11 to 95. [[ICICI Bank]] was the single biggest drag (-1.97%, ~₹20,158 crore of market cap lost), while [[New India Assurance]] fell steepest among the top 500 stocks (-11.24%). Derivatives strategists called for CAS reform via a narrower price band.",
+      "page_number": 13,
+      "importance": 5
+    },
+    {
+      "section": "Market",
+      "headline": "Jefferies sees $60 billion domestic defence capex opportunity, initiates coverage on two private players",
+      "summary": "Jefferies projects India's domestic defence capex growing at a 16% CAGR through FY30 (versus 10% for overall defence capex) and defence exports growing 11% CAGR to ~$84 billion by FY30, aided by Operation Sindoor's validation of Akashteer and BrahMos. It initiated 'buy' on [[Solar Industries]] (target ₹28,160) and [[Astra Microwave]] (target ₹2,055); the Nifty India Defence index rose 2.5% to 9,998.7, up over 29% year-to-date.",
+      "page_number": 13,
+      "importance": 4
+    },
+    {
+      "section": "Market",
+      "headline": "[[Reliance Industries]] plans ₹12,500 crore bond sale, first since 2023",
+      "summary": "Reliance is set to raise funds via 5-year AAA notes at a 7.47% coupon, below the 7.87% average yield on 5-year top-rated corporate bonds — what would be the largest listed local bond deal this year.",
+      "page_number": 13,
+      "importance": 4
+    },
+    {
+      "section": "Market",
+      "headline": "Demat accounts surge by 3.3 million in August, highest since January",
+      "summary": "Total demat accounts hit 237.7 million (from 234.43 million in July) per NSDL/CDSL/Sebi data, driven by anticipation of the NSE and Jio Platforms IPOs. A Business Standard analysis of data from December 2020 to August 2026 found account openings correlate with trailing 12-month smallcap returns rather than same-month returns.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "Rupee posts worst day in eight weeks",
+      "summary": "The rupee settled at 94.83/$ from 94.49, its sharpest single-day fall since July 14, driven by rising crude (Brent nearing $100/bbl amid the Iran war and Houthi attacks on Saudi energy facilities) and weak FII inflows. The 10-year bond yield held flat at 6.97%. RBI has taken steps including an FCNR(B) hedging subsidy, CRR/SLR exemptions, dollar-rupee swaps and tax exemptions for FPIs in G-secs to attract foreign capital.",
+      "page_number": 9,
+      "importance": 4
+    },
+    {
+      "section": "Market",
+      "headline": "[[Neuland Laboratories]] hits all-time high on 65x average volume",
+      "summary": "The stock touched a new all-time high near ₹24,100 on BSE, with trading volume 65 times its two-week average.",
+      "page_number": 15,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "[[Raymond]] hits new high, up 36% month-to-date",
+      "summary": "The stock touched a new high near ₹869.",
+      "page_number": 15,
+      "importance": 3
+    },
+    {
+      "section": "Trade",
+      "headline": "India signs Terms of Reference with Southern African Customs Union for PTA",
+      "summary": "India signed Terms of Reference on Aug 12 with Sacu (South Africa, Namibia, Botswana, Lesotho, Eswatini) for a Preferential Trade Agreement — India's first with an African bloc — with negotiations targeted to conclude within a year. South Africa accounts for ~93% of India-Sacu trade in FY26; the deal could help diversify critical mineral supply given Namibia's uranium deposits, though gold imports and South Africa's manufacturing priorities complicate concessions.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Trade",
+      "headline": "India-Brics trade shows deep import imbalance ahead of Delhi summit",
+      "summary": "Ahead of the 18th Brics Summit in New Delhi this weekend, Brics members account for 42% of India's FY26 merchandise imports but only 22% of exports — imports of $321.8 billion versus exports of $95.7 billion, a $226.1 billion deficit that is 68% of India's total trade deficit. China alone accounts for a $112.2 billion deficit; Commerce Minister Piyush Goyal is expected to raise the imbalance with his Chinese counterpart at the summit.",
+      "page_number": 4,
+      "importance": 4
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Western Dedicated Freight Corridor fully operational, cuts freight transit time 60%",
+      "summary": "PM Modi dedicated the ~₹73,000 crore, 1,506km Western DFC (Dadri-JNPA) to the nation, with the final Vaitarna-JNPA stretch completed after a 2022 termination-notice scare involving the Tata Projects consortium. It gives JNPA double-stacked container capability like Mundra and Pipavav, though operators say weight/dimension rules cap realised cost savings at 6-7% versus a potential 25%; JNPA now charges ~₹1,000 per box for double-stacking. Combined Western and Eastern DFC costs have ballooned from an original ₹21,140 crore estimate (2006) to ~₹1.24 trillion, with the network now running ~435 of 480 daily train capacity.",
+      "page_number": 1,
+      "importance": 5
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "Odisha approves ₹15,949 crore power grid investment",
+      "summary": "Odisha's Cabinet approved the state's largest-ever single power-transmission investment against a backdrop of ~₹20 trillion in pipeline investment across steel, aluminium, chemicals, data centres, semiconductors and renewables. It includes the state's first 765-kV transmission network with three new substations at Khuntuni, Duburi and Kolabira.",
+      "page_number": 9,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Russia backs India's Ukraine peace push ahead of Putin visit",
+      "summary": "Kremlin spokesperson Dmitry Peskov said Russia welcomes Indian peace efforts on Ukraine ahead of a Putin-Modi meeting Friday on the sidelines of the Brics summit, which is expected to cover defence, energy and tech ties including BrahMos upgrades, S-400 deliveries and Su-57 fighter jet supply talks.",
+      "page_number": 9,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "[[Huawei]] heads to trial in US over Iran business dealings",
+      "summary": "Huawei faces trial eight years after the US secretly charged it with defrauding HSBC and other banks over its Iran business, alongside trade-secret theft charges from five US tech companies, North Korea dealings, and supplying surveillance equipment to Iran. Jury selection begins in Brooklyn federal court.",
+      "page_number": 3,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "North Korea, Russia open first road bridge linking the two countries",
+      "summary": "The 1km bridge over the Tumen river connecting Rason and Khasan began construction in April 2025 after Putin's 2024 North Korea visit; Russian PM Mishustin and North Korean Premier Pak Thae Song addressed the opening via video.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Singapore PM, world's highest-paid leader, gets 64% salary hike",
+      "summary": "PM Lawrence Wong's pay rises to S$3.6 million ($2.85 million) from S$2.2 million effective Oct 15; Singapore's median worker earned S$5,775 a month in 2025.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "[[Novartis]] shares sink on latest trial setback",
+      "summary": "Novartis's experimental drug del-desiran, acquired via a $12 billion deal for Avidity, failed a late-stage myotonic dystrophy study, sending shares down about 9% in the company's second major trial setback in days.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "US seeks greater access to Venezuelan gold and minerals",
+      "summary": "The Trump administration is seeking access to Venezuelan gold and minerals beyond oil, and could open the country's mining sector to US investment.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Israel to close UK consulate after West Bank settlement sanctions",
+      "summary": "Israel is closing its UK consulate in East Jerusalem after the UK, France and Canada moved to block West Bank settlement imports; the UK has also exited the US-led Gaza coordination mission, and some UK officials have been banned from entering Israel.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Houthis hit four Saudi cities in widening war",
+      "summary": "Houthi forces attacked Khamis Mushait, Abha, Najran and Jazan with drones and missiles, wounding over 70 and setting oil installations ablaze; more than 18,500 Yemenis fled the fighting in three days. Brent crude rose over 2% to above $99/bbl.",
+      "page_number": 6,
+      "importance": 4
+    },
+    {
+      "section": "International News",
+      "headline": "US imposes more sanctions on Iran's aviation sector",
+      "summary": "The Trump administration sanctioned more than two dozen Iranian commercial and private airlines and foreign cargo providers under 'Operation Economic Outcast.'",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Trump told Putin he wants swift end to Ukraine war: Kremlin",
+      "summary": "A Trump-Putin call discussed the outcome of Witkoff and Kushner's Moscow-Kyiv visit and the possibility of three-way US-Russia-Ukraine talks; both sides agreed on continuing prisoner exchanges.",
+      "page_number": 6,
+      "importance": 4
+    },
+    {
+      "section": "International News",
+      "headline": "Canada imposes up to 50% tariffs on US goods",
+      "summary": "Canada's retaliatory tariffs — covering $20 billion of US goods at 15-50% duties — took effect after talks collapsed, escalating an 18-month trade war; Trump's tariffs last month hit 5% of Canadian exports to the US.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "China's exports rise 25% YoY in August on AI-product demand as trade war escalates",
+      "summary": "China's exports rose 25% year-on-year in August, beating estimates, while imports rose 28.2%; high-tech exports were up 42.9% over eight months, semiconductor export value more than doubled, and car exports rose over 50%.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Australia moves to block targeted algorithms; Macron seeks EU-wide under-15 social media ban",
+      "summary": "Australia's draft 'Digital Duty of Care' bill would let users opt out of algorithmic feeds, with penalties up to A$109.2 million, targeting [[Meta Platforms]], [[TikTok]] and [[Snap Inc]] — Meta has paid up to $18 billion in US state settlements in the past month. Separately, Macron pushed European Commission President von der Leyen for an EU-wide ban on social media for under-15s after France's own ban was struck down by its constitutional court.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Eiffel Tower shut for a day after staff strike over BAPS visit",
+      "summary": "The Paris monument closed Monday after staff struck over female employees being 'moved away' during a visit by about 100 people from BAPS Swaminarayan Sanstha. The CGT union condemned the gender-based sidelining; the tower reopened Tuesday after operator SETE admitted the request 'should not have been accepted,' and BAPS Paris apologised. India's MEA called it a matter between the entities concerned.",
+      "page_number": 12,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "India joins US-led initiative to develop secure 6G networks",
+      "summary": "India joined a 25-country partnership led by the US Department of Commerce (including the UK, Germany and Japan) for secure 6G network standards, tied to Trump's December 2025 'Winning the 6G Race' memorandum; discussed by US Commerce Secretary Howard Lutnick and India's Minister of State Jitin Prasada at the G20 Innovation Ministerial.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Governments changed, liberalisation consensus endured — at varying pace",
+      "summary": "A retrospective on the 35th anniversary of 1991 reforms traces how successive governments (Congress, BJP/NDA, United Front, and the Left Front in West Bengal) each built on predecessor reforms: telecom policy, disinvestment, FRBM, MGNREGA, RTI, Aadhaar, GST, IBC, UPI, and the civil nuclear deal leading to the SHANTI Act. It notes the political risk of reform messaging — Congress lost the 1996 election despite its reform push, and the NDA's 'India Shining' campaign failed in 2004.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Editorial: 'Mission mineral' — India needs stronger backing for overseas critical-mineral ventures",
+      "summary": "India is 100% import-dependent on lithium, cobalt and nickel, and 25% dependent on graphite, while China dominates processing (77% of cobalt, 91% of graphite, 92% of rare earths, 65% of lithium). The editorial calls for stronger institutional and diplomatic backing for private miners pursuing African graphite, cobalt, lithium, tin, tantalum and tungsten assets, alongside KABIL's efforts, and an integrated explore-process-refine-recycle strategy.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Editorial: 'Red alert' — FSSAI's front-of-pack warning label plan has loopholes",
+      "summary": "The Supreme Court-prodded FSSAI has proposed red hexagonal front-of-pack warning labels for high sugar/salt/fat packaged foods, based on ICMR/NIN 2024 guidelines, for phased rollout. The editorial flags loopholes — an added-sugar-only definition and a juice-concentration effect — and calls for a sustained public awareness campaign.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Column: 'Get real on spending' — Finance ministry pushes ministries for realistic budget estimates",
+      "summary": "The finance ministry has asked ministries for realistic FY27/FY28 budget estimates to curb underspending. FY26's fiscal deficit target of 4.4% of GDP was met via expenditure compression — revenue spend down 2.7%, capex down 4.6% versus budget — despite a 7.5% tax-collection shortfall; about ₹69,000 crore remained unused with states across 53 schemes as of December 2025. FY27 April-July expenditure rose 13% to ₹17.62 trillion versus an 8-9% budgeted pace, driven by a 35% rise in subsidies to ₹1.53 trillion.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Column: 'The search for durable capital' — RBI's $136 billion swap window and FPI frictions",
+      "summary": "RBI mobilised $136.37 billion via its dollar-rupee forex swap and FCNR(B) facility (93% share) before closing the window early on strong inflows. Unlike the 2013 taper-tantrum episode, the current account deficit is modest (~0.6-0.7% of GDP), but the scheme will still dent RBI profits and the government's surplus transfer. FPI equity outflows totalled ~$19 billion in 2025 and ~$25 billion so far in 2026; the column flags double taxation (STT plus 12.5-20% capital gains tax) as a friction, and suggests a CRR hike to absorb over ₹8 trillion of surplus liquidity.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Book review: 'India's Industrial Policy: A Reassessment'",
+      "summary": "The review of Padmini Swaminathan's book critiques India's industrial policy against South Korea, Taiwan and Germany, citing low vocational training (5.06% versus South Korea's 95.86%) and declining employment elasticity of manufacturing (from 0.52 to 0.16 between 1983-93 and the 1990s-2000s).",
+      "page_number": 7,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "[[Liverpool FC]] signs five-year shirt deal with [[Turkish Airlines]]",
+      "summary": "The front-of-shirt deal is worth more than £60 million a season from June 2027, ending a 17-season partnership with [[Standard Chartered]], which becomes a junior sponsor shifting focus to F1.",
+      "page_number": 6,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Nationwide monsoon deficit still at 14%",
+      "summary": "South-west monsoon rainfall is 14% below normal cumulatively to Sept 7, with the south peninsula worst-hit at -27%; IMD forecasts below-normal September rainfall. Kharif acreage stands at 108.6 million hectares versus a normal 110.4 million (-1.63%), raising the risk that food inflation stays elevated.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "Pharma and healthcare mutual funds rally 16.6% in a year — how to pick one",
+      "summary": "An advisory piece on choosing between pure-pharma and broader healthcare funds by market-cap orientation, domestic versus global exposure, and active versus passive style. Top funds by AUM include Nippon India Pharma (₹9,279 crore AUM, 11.7% one-year return), ICICI Prudential Healthcare, SBI Healthcare Opportunities, DSP Healthcare and Mirae Asset Healthcare.",
+      "page_number": 14,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "EPFO clarifies: EPF balance keeps earning interest after leaving a job",
+      "summary": "EPF balances continue to earn interest until a member turns 58, even without fresh contributions; EPFO advises transferring the balance via UAN on a job change.",
+      "page_number": 14,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "India's protein consumption seen trebling by 2070, emissions risk flagged",
+      "summary": "A report by Asia Research and Engagement with Ficci projects per-capita protein consumption rising from 9.5kg (2025) to 30kg (2070), driven largely by dairy. Under a business-as-usual path, protein-related emissions could reach 1.92 Gt CO2e by 2070 — seven times a 0.25 Gt climate-safe threshold — though a combined efficiency-and-diversification approach could cut this to 0.30 Gt CO2e. India currently imports about 90% of processed plant-protein isolates.",
+      "page_number": 12,
+      "importance": 2
+    }
+  ],
+  "stocksInFocus": [
+    {
+      "name": "Neuland Laboratories",
+      "note": "Hit all-time high on BSE, trading volume 65x the two-week average"
+    },
+    {
+      "name": "Raymond",
+      "note": "Hit a new high, up 36% month-to-date"
+    },
+    {
+      "name": "GE Vernova T&D India",
+      "note": "Stock jumped 8.9% after L-1 status on ~₹13,000 crore Barmer-Kalamb HVDC order"
+    },
+    {
+      "name": "Reliance Industries",
+      "note": "Planning ₹12,500 crore bond sale, its first since 2023"
+    },
+    {
+      "name": "ICICI Bank",
+      "note": "Biggest single drag on Sensex today, -1.97%, ~₹20,158 crore market cap lost"
+    },
+    {
+      "name": "New India Assurance",
+      "note": "Fell steepest among top-500 stocks, -11.24%"
+    },
+    {
+      "name": "Deepa Jewellers",
+      "note": "Listed ~10% above issue price on debut"
+    },
+    {
+      "name": "Solar Industries / Astra Microwave",
+      "note": "Jefferies initiated 'buy' on both defence stocks, citing a $60bn domestic defence capex opportunity"
+    }
+  ],
+  "topStories": [
+    {
+      "headline": "Nifty, Sensex fall on private-bank selling; closing-auction volatility burns retail options traders",
+      "section": "Market",
+      "note": "CAS indicative price swung from 23,377 to 23,600, trapping traders on both sides."
+    },
+    {
+      "headline": "India's Q1FY27 GDP grows 7.8%, beats forecasts; PM Modi vows 'reform express', pushes UPI globally",
+      "section": "Economy"
+    },
+    {
+      "headline": "Western Dedicated Freight Corridor fully operational, cuts freight transit time 60%",
+      "section": "Growth & Development"
+    },
+    {
+      "headline": "NCPCR to formally probe [[Meta]] India over child-safety lapses",
+      "section": "Regulatory"
+    },
+    {
+      "headline": "Houthis hit four Saudi cities in widening war",
+      "section": "International News",
+      "note": "Brent crude rose over 2% to above $99/bbl."
+    },
+    {
+      "headline": "Trump told Putin he wants swift end to Ukraine war: Kremlin",
+      "section": "International News"
+    },
+    {
+      "headline": "Jefferies sees $60 billion domestic defence capex opportunity, initiates coverage on two private players",
+      "section": "Market"
+    },
+    {
+      "headline": "[[Reliance Industries]] plans ₹12,500 crore bond sale, first since 2023",
+      "section": "Market"
+    },
+    {
+      "headline": "Rupee posts worst day in eight weeks",
+      "section": "Market"
+    },
+    {
+      "headline": "India-Brics trade shows deep import imbalance ahead of Delhi summit",
+      "section": "Trade"
+    },
+    {
+      "headline": "DoT clears decks for satellite broadband services",
+      "section": "Policy"
+    },
+    {
+      "headline": "Electric PV and e2W sales rise on-year, dip sequentially in August",
+      "section": "Sector"
+    },
+    {
+      "headline": "[[Adani Enterprises]] leads bids in coal-gasification incentive scheme",
+      "section": "Sector"
+    }
+  ],
+  "marketImpact": [
+    {
+      "headline": "Nifty, Sensex fall on private-bank selling; closing-auction volatility burns retail options traders",
+      "section": "Market",
+      "note": "Sensex -555pts (0.73%), Nifty -0.61%; ICICI Bank biggest single drag."
+    },
+    {
+      "headline": "Rupee posts worst day in eight weeks",
+      "section": "Market",
+      "note": "Settled at 94.83/$ on rising crude and weak FII inflows."
+    },
+    {
+      "headline": "Jefferies sees $60 billion domestic defence capex opportunity, initiates coverage on two private players",
+      "section": "Market",
+      "note": "Buy calls on Solar Industries and Astra Microwave; Nifty India Defence +2.5%."
+    },
+    {
+      "headline": "[[Reliance Industries]] plans ₹12,500 crore bond sale, first since 2023",
+      "section": "Market"
+    },
+    {
+      "headline": "[[GE Vernova T&D India]] stock jumps 8.9% on Barmer-Kalamb HVDC order win",
+      "section": "Events"
+    },
+    {
+      "headline": "[[Neuland Laboratories]] hits all-time high on 65x average volume",
+      "section": "Market"
+    },
+    {
+      "headline": "[[Raymond]] hits new high, up 36% month-to-date",
+      "section": "Market"
+    },
+    {
+      "headline": "India's Q1FY27 GDP grows 7.8%, beats forecasts; PM Modi vows 'reform express', pushes UPI globally",
+      "section": "Economy"
+    },
+    {
+      "headline": "Demat accounts surge by 3.3 million in August, highest since January",
+      "section": "Market"
+    },
+    {
+      "headline": "[[Deepa Jewellers]] lists ~10% above issue price; [[Rays of Belief]] debuts at discount",
+      "section": "IPO"
+    },
+    {
+      "headline": "Houthis hit four Saudi cities in widening war",
+      "section": "International News",
+      "note": "Brent crude rose over 2% to above $99/bbl, a broad market read-through."
+    },
+    {
+      "headline": "Delhi HC dismisses [[UltraTech Cement]]'s challenge to CCI cartel-probe order",
+      "section": "Regulatory"
+    }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Deepa Jewellers",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 177,
+      "issue_price_high": 177,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-09",
+      "listing_price": 194.3,
+      "status": "listed",
+      "notes": "Opened at ₹221.05 (+24.88%), closed at ₹194.30 (+9.77%) vs ₹177 issue price"
+    },
+    {
+      "company_name": "Rays of Belief",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 239,
+      "issue_price_high": 239,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-09",
+      "listing_price": null,
+      "status": "listed",
+      "notes": "Closed below its ₹239 issue price, a 4.5% discount on debut"
+    },
+    {
+      "company_name": "Prasol Chemicals",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": "2026-09-08",
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "Subscribed 41% on Day 1 (22,43,120 shares bid vs 54,43,229 on offer)"
+    },
+    {
+      "company_name": "MKC Agro Fresh",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Filed DRHP: fresh issue of 9.999mn shares + OFS of 6.812mn shares by existing shareholders"
+    }
+  ]
+}
