@@ -23,16 +23,34 @@ export function renderSummary(text: string, dimClass: string) {
   });
 }
 
+// Clause-introducing words that, when they follow a comma mid-sentence, mark
+// a natural break point — a reporting verb picking up the main clause after
+// an appositive ("AAHL, a subsidiary of X, entered agreements…") or a
+// participial clause tacking on a further fact ("…$1bn, valuing AAHL at
+// $18bn"). Curated from how the daily summaries are actually written, so a
+// long single sentence still splits into separate, standalone points instead
+// of one dense block.
+const CLAUSE_WORDS =
+  "valuing|giving|taking|making|bringing|pushing|raising|adding|translating|" +
+  "reflecting|marking|following|entered|said|announced|agreed|reported|filed|" +
+  "posted|clocked|registered|logged|stated|noted|flagged|warned|forecast|" +
+  "projected|unveiled|launched|opened|closed|signed|inked|secured|clinched|" +
+  "confirmed|plans|aims|expects|targets";
+
 // Break a prose summary into standalone, crisp points so the reader panel can
 // render it as a scannable bullet list instead of a dense paragraph. Splits
 // (a) after sentence-ending punctuation followed by whitespace + a capital
 // letter, a highlight marker, or a rupee sign — good enough to avoid breaking
 // on decimals/abbreviations (e.g. "5.24%", "₹1,846.90") since those aren't
-// followed by a capital/marker — and (b) on semicolons, which the underlying
-// summaries frequently use to chain multiple distinct facts into one sentence.
+// followed by a capital/marker; (b) on semicolons, which the underlying
+// summaries frequently use to chain multiple distinct facts into one
+// sentence; and (c) on a comma immediately before one of CLAUSE_WORDS, which
+// catches the long compound sentences (appositive + main clause, or a
+// trailing "valuing it at…" clause) that would otherwise render as one
+// oversized bullet.
 function splitSentences(text: string): string[] {
   return text
-    .split(/(?:(?<=[.!?])\s+(?=[A-Z₹\[]))|(?:;\s+)/g)
+    .split(new RegExp(`(?:(?<=[.!?])\\s+(?=[A-Z₹\\[]))|(?:;\\s+)|(?:,\\s+(?=(?:${CLAUSE_WORDS})\\b))`, "gi"))
     .map((s) => s.trim())
     .filter(Boolean);
 }
