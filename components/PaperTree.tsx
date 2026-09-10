@@ -603,7 +603,7 @@ export default function PaperTree({
                     onClick={() => selectLeaf(leaf)}
                     className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
                       activeLeaf === leaf
-                        ? SECTION_STYLE[leaf] ?? "text-gray-700 bg-gray-100"
+                        ? "text-white bg-[#182131]"
                         : "text-gray-400 hover:bg-gray-50"
                     }`}
                   >
