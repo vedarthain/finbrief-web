@@ -192,15 +192,14 @@ export default function PaperTree({
   availableDates: string[];
 }) {
   // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
-  // etc.) are real content but not "news" — keep them out of each section's default
-  // view, revealable via their own toggle. getPaperStories already sorts
-  // is_notice=false first then importance DESC, so the notice bucket is a
-  // contiguous tail slice per section. Every other story — regardless of
-  // importance — is shown; importance only drives sort order and the ★
-  // Priority badge, never visibility.
-  const visibleOf = (key: string, includeNotices: boolean) => {
+  // etc.) are real content but not "news" — kept out of each section's default
+  // view. The global "Routine notices" ribbon button is an exclusive mode
+  // switch, not an additive reveal: off shows only real stories, on shows only
+  // the routine notices (and hides everything else) so the reader isn't
+  // wading through both lists at once.
+  const visibleOf = (key: string, onlyNotices: boolean) => {
     const all = bySection[key] ?? [];
-    return all.filter((s) => (s.is_notice ? includeNotices : true));
+    return all.filter((s) => (onlyNotices ? s.is_notice : !s.is_notice));
   };
   const totalNoticeCount = Object.values(bySection).reduce(
     (sum, arr) => sum + arr.filter((s) => s.is_notice).length,
