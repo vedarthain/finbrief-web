@@ -43,29 +43,36 @@ const CLAUSE_WORDS =
 // pretending to be one point.
 const LONG_PIECE_CHARS = 130;
 
-// Trailing attribution tags ("according to a company petition notice",
-// "as per the filing", "in a regulatory filing") aren't a standalone fact —
-// they're a source citation for whatever precedes them. Splitting one off
-// into its own bullet produces a dangling fragment that doesn't read as a
-// complete point on its own (e.g. "according to a company petition
-// notice."). Keep these attached to the clause they're citing instead of
-// spinning them into a separate bullet.
-const ATTRIBUTION_STARTERS =
-  "according to|as per|per the|as stated in|as disclosed|" +
-  "in a regulatory filing|in an exchange filing|in a stock exchange filing|in a filing|in the filing";
-
-// Secondary pass for oversized pieces: split on a comma immediately before a
-// lowercase letter. Natural clause continuations ("…funds, valuing it at…",
-// "…AAHL) , a subsidiary of…") almost always resume lowercase; comma-joined
-// lists of proper nouns ("Alpha Wave Global, Premji Invest, Temasek…") stay
-// intact because each item starts with a capital, so this doesn't shred them
-// into one-name-per-bullet fragments. A comma immediately before an
-// attribution starter (see above) is excluded so source citations stay
-// attached rather than becoming their own thin bullet.
+// Secondary pass for oversized pieces: re-run the same clause-word test as
+// the primary split (a comma directly followed by one of CLAUSE_WORDS).
+//
+// An earlier version of this pass instead split on a bare comma before any
+// lowercase letter, on the theory that comma-joined proper-noun lists
+// ("Alpha Wave Global, Premji Invest, Temasek…") would stay intact since
+// each item starts with a capital. Auditing every published summary against
+// that rule (Sept 2026) showed it fires just as readily on things that
+// are *not* a new independent fact:
+//   - appositives: "…Paradise Plastics, undergoing corporate insolvency at
+//     its Ahmednagar plant, invited EOI…" → "undergoing corporate
+//     insolvency…" has no subject and can't stand alone.
+//   - citation/attribution clauses: "…share capital, according to a company
+//     petition notice." → "according to…" is a source tag, not a fact.
+//   - plain comma-lists of lowercase nouns: "…identify five human skills —
+//     curiosity, courage, creativity, compassion…" → each item became its
+//     own one-word bullet.
+// All three read as abruptly broken fragments rather than crisp, standalone
+// points — exactly the complaint a reader would have. A genuine new fact
+// reliably announces itself with a clause-word (a reporting/result verb:
+// "valuing…", "said…", "adding…") or a semicolon/"while" in the primary
+// pass; a bare comma alone doesn't carry that signal. So the second pass now
+// applies the identical clause-word rule instead of a separate, looser one.
+// Net effect: a long sentence with no real second clause stays as a single
+// (longer, but grammatically whole) bullet rather than getting cut apart at
+// an arbitrary comma.
 function secondarySplit(piece: string): string[] {
   if (piece.length <= LONG_PIECE_CHARS) return [piece];
   return piece
-    .split(new RegExp(`,\\s+(?=[a-z])(?!(?:${ATTRIBUTION_STARTERS})\\b)`, "g"))
+    .split(new RegExp(`,\\s+(?=(?:${CLAUSE_WORDS})\\b)`, "gi"))
     .map((s) => s.trim())
     .filter(Boolean);
 }
@@ -84,9 +91,11 @@ function secondarySplit(piece: string): string[] {
 // summaries use to contrast two distinct figures/facts in one sentence (e.g.
 // "rose 14.8% in August while April-August collections rose 11%") — each
 // side of "while" is its own fact and reads better as its own bullet; and
-// (e) a secondSplit pass (see secondarySplit) on whatever's left that's
-// still long, so a single dense sentence with none of the above markers
-// still comes out as multiple points instead of one.
+// (e) a secondarySplit pass on whatever's left that's still long, reusing
+// the exact same clause-word rule as (c) rather than a looser one — see
+// secondarySplit's comment for why. A piece with no genuine clause boundary
+// stays whole even if long, rather than being fragmented at an arbitrary
+// comma.
 function splitSentences(text: string): string[] {
   const primary = text
     .split(new RegExp(`(?:(?<=[.!?])\\s+(?=[A-Z₹\\[]))|(?:;\\s+)|(?:,\\s+(?=(?:${CLAUSE_WORDS})\\b))|(?:\\s+while\\s+)`, "gi"))
