@@ -169,6 +169,18 @@ export default function PaperTree({
       ? marketImpactStories.length
       : visibleOf(key, false, false).length;
 
+  // Top Stories / Market Impact entries carry a short curation note, but once
+  // selected the reader wants the full story detail, not just that one-liner.
+  // The publish pipeline keeps each digest entry's headline in sync with its
+  // underlying story's headline (see the publish-epaper skill's headline-match
+  // convention), so look the full story up by exact headline match and prefer
+  // it over the note whenever found.
+  const storyByHeadline = useMemo(() => {
+    const map = new Map<string, PaperStory>();
+    Object.values(bySection).forEach((rows) => rows.forEach((s) => map.set(s.headline, s)));
+    return map;
+  }, [bySection]);
+
   // ── Global search across every story in every section (and Stocks in Focus) ──
   const [query, setQuery] = useState("");
   const searchActive = query.trim().length >= 2;
@@ -340,6 +352,8 @@ export default function PaperTree({
   const selectedStock = !searchActive && activeLeaf === STOCKS_TAB ? stocksInFocus[selIndex] ?? null : null;
   const selectedTop = !searchActive && activeLeaf === TOP_TAB ? topStories[selIndex] ?? null : null;
   const selectedMarket = !searchActive && activeLeaf === MARKET_TAB ? marketImpactStories[selIndex] ?? null : null;
+  const selectedTopFull = selectedTop ? storyByHeadline.get(selectedTop.headline) ?? null : null;
+  const selectedMarketFull = selectedMarket ? storyByHeadline.get(selectedMarket.headline) ?? null : null;
 
   function selectLeaf(leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
@@ -601,10 +615,21 @@ export default function PaperTree({
                     </span>
                     {multiEdition && selectedTop.edition && <EditionBadge edition={selectedTop.edition} />}
                   </div>
-                  {selectedTop.note && (
-                    <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
-                      {renderSummaryBullets(selectedTop.note, "text-gray-700")}
-                    </div>
+                  {selectedTopFull ? (
+                    <>
+                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                        {renderSummaryBullets(selectedTopFull.summary, "text-gray-700")}
+                      </div>
+                      {selectedTopFull.page_number != null && (
+                        <p className="text-[13px] text-gray-400 mt-2">Page {selectedTopFull.page_number}</p>
+                      )}
+                    </>
+                  ) : (
+                    selectedTop.note && (
+                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                        {renderSummaryBullets(selectedTop.note, "text-gray-700")}
+                      </div>
+                    )
                   )}
                 </>
               )}
@@ -619,10 +644,21 @@ export default function PaperTree({
                     </span>
                     {multiEdition && selectedMarket.edition && <EditionBadge edition={selectedMarket.edition} />}
                   </div>
-                  {selectedMarket.note && (
-                    <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
-                      {renderSummaryBullets(selectedMarket.note, "text-gray-700")}
-                    </div>
+                  {selectedMarketFull ? (
+                    <>
+                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                        {renderSummaryBullets(selectedMarketFull.summary, "text-gray-700")}
+                      </div>
+                      {selectedMarketFull.page_number != null && (
+                        <p className="text-[13px] text-gray-400 mt-2">Page {selectedMarketFull.page_number}</p>
+                      )}
+                    </>
+                  ) : (
+                    selectedMarket.note && (
+                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                        {renderSummaryBullets(selectedMarket.note, "text-gray-700")}
+                      </div>
+                    )
                   )}
                 </>
               )}
