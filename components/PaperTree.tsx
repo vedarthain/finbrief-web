@@ -202,7 +202,10 @@ export default function PaperTree({
     const all = bySection[key] ?? [];
     return all.filter((s) => (s.is_notice ? includeNotices : true));
   };
-  const noticeCountOf = (key: string) => (bySection[key] ?? []).filter((s) => s.is_notice).length;
+  const totalNoticeCount = Object.values(bySection).reduce(
+    (sum, arr) => sum + arr.filter((s) => s.is_notice).length,
+    0
+  );
   const countOf = (key: string) =>
     key === STOCKS_TAB
       ? stocksInFocus.length
@@ -336,21 +339,14 @@ export default function PaperTree({
   // the summary is (rather than short items collapsing to one thin line).
   const descMinHeight = `${Math.round(15.5 * fontScale * 1.6 * 3.5)}px`;
 
-  // Per-section "show routine notices" toggle — off by default everywhere.
-  const [noticesShownFor, setNoticesShownFor] = useState<Set<string>>(new Set());
-  const showNoticesForActive = activeLeaf ? noticesShownFor.has(activeLeaf) : false;
-  function toggleNotices(leaf: string) {
-    setNoticesShownFor((prev) => {
-      const next = new Set(prev);
-      if (next.has(leaf)) next.delete(leaf); else next.add(leaf);
-      return next;
-    });
-  }
+  // Global "show routine notices" toggle — off by default, applies across every
+  // section at once (button lives in the top ribbon next to Text size).
+  const [showNotices, setShowNotices] = useState(false);
 
   const isSpecialTab = activeLeaf === STOCKS_TAB || activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB;
   const rows =
     !searchActive && activeLeaf && !isSpecialTab
-      ? visibleOf(activeLeaf, showNoticesForActive)
+      ? visibleOf(activeLeaf, showNotices)
       : [];
   const itemCount = searchActive
     ? searchResults.length
@@ -497,6 +493,19 @@ export default function PaperTree({
           </button>
         </div>
         <div className="flex items-center gap-1 shrink-0 ml-auto sm:ml-0">
+        {totalNoticeCount > 0 && (
+          <button
+            onClick={() => setShowNotices((v) => !v)}
+            className={`flex items-center gap-1 text-[11px] font-medium px-2 py-1 rounded-md border transition-colors mr-2 ${
+              showNotices
+                ? "bg-[#182131] border-[#182131] text-white"
+                : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+            }`}
+          >
+            Routine notices
+            <span className="text-[10px] font-normal tabular-nums opacity-70">{totalNoticeCount}</span>
+          </button>
+        )}
         <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
         <button
           onClick={() => bumpFont(-1)}
@@ -613,14 +622,6 @@ export default function PaperTree({
                     </span>
                   </button>
                 ))}
-                {activeLeaf && noticeCountOf(activeLeaf) > 0 && (
-                  <button
-                    onClick={() => toggleNotices(activeLeaf)}
-                    className="ml-auto text-[11px] font-medium text-gray-400 hover:text-gray-600 underline decoration-dotted underline-offset-2"
-                  >
-                    {showNoticesForActive ? "Hide" : "Show"} {noticeCountOf(activeLeaf)} routine notices
-                  </button>
-                )}
               </div>
             )
           )}
