@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { PaperStory, StockInFocus, TopStory, MarketImpactStory } from "@/lib/queries";
 import PaperSectionTable, { TableRow } from "./PaperSectionTable";
+import DatePicker from "./DatePicker";
 
 export function renderSummary(text: string, dimClass: string) {
   return text.split(/(\[\[[^\]]+\]\])/g).map((part, i) => {
@@ -22,15 +23,16 @@ export function renderSummary(text: string, dimClass: string) {
   });
 }
 
-// Break a prose summary into standalone sentences so the reader panel can
+// Break a prose summary into standalone, crisp points so the reader panel can
 // render it as a scannable bullet list instead of a dense paragraph. Splits
-// after sentence-ending punctuation followed by whitespace + a capital
-// letter, a highlight marker, or a rupee sign — good enough to avoid
-// breaking on decimals/abbreviations (e.g. "5.24%", "₹1,846.90") since those
-// aren't followed by a capital/marker.
+// (a) after sentence-ending punctuation followed by whitespace + a capital
+// letter, a highlight marker, or a rupee sign — good enough to avoid breaking
+// on decimals/abbreviations (e.g. "5.24%", "₹1,846.90") since those aren't
+// followed by a capital/marker — and (b) on semicolons, which the underlying
+// summaries frequently use to chain multiple distinct facts into one sentence.
 function splitSentences(text: string): string[] {
   return text
-    .split(/(?<=[.!?])\s+(?=[A-Z₹\[])/g)
+    .split(/(?:(?<=[.!?])\s+(?=[A-Z₹\[]))|(?:;\s+)/g)
     .map((s) => s.trim())
     .filter(Boolean);
 }
@@ -131,11 +133,15 @@ export default function PaperTree({
   stocksInFocus,
   topStories,
   marketImpactStories,
+  activeDate,
+  availableDates,
 }: {
   bySection: Record<string, PaperStory[]>;
   stocksInFocus: StockInFocus[];
   topStories: TopStory[];
   marketImpactStories: MarketImpactStory[];
+  activeDate: string;
+  availableDates: string[];
 }) {
   // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
   // etc.) are real content but not "news" — keep them out of each section's default
@@ -392,9 +398,10 @@ export default function PaperTree({
 
   return (
     <div className="flex flex-col gap-1.5">
-      {/* ── Search + font-size control ───────────────────────────────────── */}
-      <div className="flex items-center justify-between gap-2 flex-wrap">
-        <div className="relative w-full sm:w-72">
+      {/* ── Single top ribbon: title, search, calendar, font-size ─────────── */}
+      <div className="flex items-center gap-2.5 flex-wrap px-3 py-2 rounded-lg bg-white border border-gray-200">
+        <h1 className="text-[16px] font-bold tracking-tight text-gray-900 shrink-0">Today&apos;s Paper</h1>
+        <div className="relative flex-1 min-w-[140px] sm:max-w-xs">
           <input
             type="text"
             value={query}
@@ -412,7 +419,8 @@ export default function PaperTree({
             </button>
           )}
         </div>
-        <div className="flex items-center gap-1">
+        <DatePicker activeDate={activeDate} availableDates={availableDates} />
+        <div className="flex items-center gap-1 shrink-0 ml-auto sm:ml-0">
         <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
         <button
           onClick={() => bumpFont(-1)}

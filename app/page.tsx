@@ -1,7 +1,6 @@
 import { unstable_cache } from "next/cache";
 import { getPaperStories, getPaperDays, getStocksInFocus, getTopStories, getMarketImpactStories } from "@/lib/queries";
 import PaperTree from "@/components/PaperTree";
-import DatePicker from "@/components/DatePicker";
 import NavTabs from "@/components/NavTabs";
 
 export const revalidate = 300;
@@ -66,17 +65,7 @@ export default async function HomePage({
         </div>
       </header>
 
-      <main className="mx-auto max-w-7xl px-4 py-4">
-        {/* Title bar */}
-        <div className="flex items-center gap-2 mb-2 flex-wrap">
-          <h1 className="text-[20px] font-bold tracking-tight text-gray-900">Today&apos;s Paper</h1>
-        </div>
-
-        {/* ── Calendar ribbon ──────────────────────────────────────────────── */}
-        <div className="flex items-center justify-end mb-3 px-3 py-2 rounded-lg bg-white border border-gray-200">
-          <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
-        </div>
-
+      <main className="mx-auto max-w-7xl px-4 py-3">
         {stories.length === 0 ? (
           <div className="rounded-xl border border-dashed border-gray-200 bg-white py-16 text-center shadow-sm">
             <p className="text-3xl mb-3">🗞️</p>
@@ -88,6 +77,8 @@ export default async function HomePage({
             stocksInFocus={stocksInFocus}
             topStories={topStories}
             marketImpactStories={marketImpactStories}
+            activeDate={activeDate}
+            availableDates={days.map((d) => d.date)}
           />
         )}
 
