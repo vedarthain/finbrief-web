@@ -37,6 +37,27 @@ const CLAUSE_WORDS =
   "projected|unveiled|launched|opened|closed|signed|inked|secured|clinched|" +
   "confirmed|plans|aims|expects|targets";
 
+// A piece left over after the primary split (below) that's still this long
+// almost always bundles more than one fact — e.g. a subject clause plus a
+// trailing detail with no semicolon/clause-word/"while" to hang a split off
+// of. Give those a second pass rather than let them render as a paragraph
+// pretending to be one point.
+const LONG_PIECE_CHARS = 130;
+
+// Secondary pass for oversized pieces: split on a comma immediately before a
+// lowercase letter. Natural clause continuations ("…funds, valuing it at…",
+// "…AAHL) , a subsidiary of…") almost always resume lowercase; comma-joined
+// lists of proper nouns ("Alpha Wave Global, Premji Invest, Temasek…") stay
+// intact because each item starts with a capital, so this doesn't shred them
+// into one-name-per-bullet fragments.
+function secondarySplit(piece: string): string[] {
+  if (piece.length <= LONG_PIECE_CHARS) return [piece];
+  return piece
+    .split(/,\s+(?=[a-z])/g)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
 // Break a prose summary into standalone, crisp points so the reader panel can
 // render it as a scannable bullet list instead of a dense paragraph. Splits
 // (a) after sentence-ending punctuation followed by whitespace + a capital
@@ -47,22 +68,26 @@ const CLAUSE_WORDS =
 // sentence; (c) on a comma immediately before one of CLAUSE_WORDS, which
 // catches the long compound sentences (appositive + main clause, or a
 // trailing "valuing it at…"/"saying X…" clause) that would otherwise render
-// as one oversized bullet; and (d) on a standalone " while ", which the
+// as one oversized bullet; (d) on a standalone " while ", which the
 // summaries use to contrast two distinct figures/facts in one sentence (e.g.
 // "rose 14.8% in August while April-August collections rose 11%") — each
-// side of "while" is its own fact and reads better as its own bullet.
+// side of "while" is its own fact and reads better as its own bullet; and
+// (e) a secondSplit pass (see secondarySplit) on whatever's left that's
+// still long, so a single dense sentence with none of the above markers
+// still comes out as multiple points instead of one.
 function splitSentences(text: string): string[] {
-  return text
+  const primary = text
     .split(new RegExp(`(?:(?<=[.!?])\\s+(?=[A-Z₹\\[]))|(?:;\\s+)|(?:,\\s+(?=(?:${CLAUSE_WORDS})\\b))|(?:\\s+while\\s+)`, "gi"))
     .map((s) => s.trim())
     .filter(Boolean);
+  return primary.flatMap(secondarySplit);
 }
 
+// Always renders as a bullet list — even a single short point still gets a
+// "•" so the reader panel never reads as a dense paragraph, keeping every
+// story's presentation consistent regardless of how many points it has.
 export function renderSummaryBullets(text: string, dimClass: string) {
   const sentences = splitSentences(text);
-  if (sentences.length <= 1) {
-    return <p className="leading-relaxed">{renderSummary(text, dimClass)}</p>;
-  }
   return (
     <ul className="space-y-3.5">
       {sentences.map((s, i) => (
