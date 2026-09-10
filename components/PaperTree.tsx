@@ -61,7 +61,7 @@ export function renderSummaryBullets(text: string, dimClass: string) {
     return <p className="leading-relaxed">{renderSummary(text, dimClass)}</p>;
   }
   return (
-    <ul className="space-y-1.5">
+    <ul className="space-y-3.5">
       {sentences.map((s, i) => (
         <li key={i} className="flex gap-2 leading-relaxed">
           <span className="text-gray-300 shrink-0 select-none">•</span>
