@@ -62,10 +62,26 @@ export default function DatePicker({
     weekday: "short", day: "numeric", month: "short", year: "numeric",
   });
 
-  const sortedDates = [...availableDates].sort();
+  // Dedupe (multiple editions on the same date produce duplicate entries) and
+  // sort ascending so prev/next are simple neighbor lookups.
+  const sortedDates = [...new Set(availableDates)].sort();
   const activeIdx = sortedDates.indexOf(activeDate);
-  const prevDate = activeIdx > 0 ? sortedDates[activeIdx - 1] : null;
-  const nextDate = activeIdx !== -1 && activeIdx < sortedDates.length - 1 ? sortedDates[activeIdx + 1] : null;
+  // activeDate may not be in the list at all — e.g. today's paper hasn't been
+  // published yet, so "today" has no stories/rows and never made it into
+  // availableDates. Falling back to indexOf's -1 broke the "previous day"
+  // button in that case (activeIdx > 0 is false for -1, same as index 0).
+  // Instead, find the nearest available date on each side by comparison.
+  let prevDate: string | null;
+  let nextDate: string | null;
+  if (activeIdx === -1) {
+    const before = sortedDates.filter((d) => d < activeDate);
+    const after = sortedDates.filter((d) => d > activeDate);
+    prevDate = before.length > 0 ? before[before.length - 1] : null;
+    nextDate = after.length > 0 ? after[0] : null;
+  } else {
+    prevDate = activeIdx > 0 ? sortedDates[activeIdx - 1] : null;
+    nextDate = activeIdx < sortedDates.length - 1 ? sortedDates[activeIdx + 1] : null;
+  }
 
   return (
     <div className="relative flex items-center gap-1" ref={ref}>

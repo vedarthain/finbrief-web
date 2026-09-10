@@ -143,6 +143,16 @@ const SECTION_BAR: Record<string, string> = {
   "Others":                "bg-gray-400",
 };
 
+// Display-only label overrides — the underlying `section` value (used as the
+// bySection/SECTION_STYLE/SECTION_BAR key, and for onClick/countOf lookups)
+// stays the short taxonomy leaf name; only what's shown to the reader changes.
+const LEAF_LABEL: Record<string, string> = {
+  "Announcements": "Corporate Announcements",
+  "Events": "Corporate Events",
+  "Appointments": "Corporate Appointments",
+};
+const leafLabel = (leaf: string) => LEAF_LABEL[leaf] ?? leaf;
+
 // Sidebar tree definition. A node is either a standalone leaf section
 // ("single") or a group with child leaves ("children"). Groups whose
 // children all end up empty for the day are dropped at render time.
@@ -157,7 +167,9 @@ const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Market", single: "Market" },
   { label: "Trade", single: "Trade" },
   { label: "Insurance", single: "Insurance" },
-  { label: "Corporate", children: ["Announcements", "Events", "Appointments"] },
+  { label: "Corporate Announcements", single: "Announcements" },
+  { label: "Corporate Events", single: "Events" },
+  { label: "Corporate Appointments", single: "Appointments" },
   { label: "Growth & Development", single: "Growth & Development" },
   { label: "International News", single: "International News" },
   { label: "Others", single: "Others" },
@@ -624,7 +636,7 @@ export default function PaperTree({
                         : "text-gray-400 hover:bg-gray-50"
                     }`}
                   >
-                    {leaf}
+                    {leafLabel(leaf)}
                     <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
                       {countOf(leaf)}
                     </span>
@@ -658,7 +670,7 @@ export default function PaperTree({
                     </h3>
                     {searchActive && (
                       <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
-                        {selectedStory.section}
+                        {leafLabel(selectedStory.section)}
                       </span>
                     )}
                     {selectedStory.industry && (
@@ -683,7 +695,7 @@ export default function PaperTree({
                       {selectedTop.headline}
                     </h3>
                     <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
-                      {selectedTop.section}
+                      {leafLabel(selectedTop.section)}
                     </span>
                     {multiEdition && selectedTop.edition && <EditionBadge edition={selectedTop.edition} />}
                   </div>
@@ -712,7 +724,7 @@ export default function PaperTree({
                       {selectedMarket.headline}
                     </h3>
                     <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-yellow-200 text-yellow-700 bg-yellow-50">
-                      {selectedMarket.section}
+                      {leafLabel(selectedMarket.section)}
                     </span>
                     {multiEdition && selectedMarket.edition && <EditionBadge edition={selectedMarket.edition} />}
                   </div>
