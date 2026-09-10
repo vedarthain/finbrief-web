@@ -147,13 +147,17 @@ const SECTION_BAR: Record<string, string> = {
 // Sidebar tree definition. A node is either a standalone leaf section
 // ("single") or a group with child leaves ("children"). Groups whose
 // children all end up empty for the day are dropped at render time.
-// Top Stories / Market Impact live as their own tabs in the top ribbon
-// (next to the calendar/text-size controls), not in this sidebar tree.
+// Top Stories / Market Impact / Stocks in Focus live as their own tabs in
+// the top ribbon (next to the calendar/text-size controls), not in this
+// sidebar tree.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Economy", single: "Economy" },
   { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
-  { label: "In Focus", children: ["Sector", STOCKS_TAB] },
-  { label: "Stocks", children: ["IPO", "Market", "Trade", "Insurance"] },
+  { label: "Sector", single: "Sector" },
+  { label: "IPO", single: "IPO" },
+  { label: "Market", single: "Market" },
+  { label: "Trade", single: "Trade" },
+  { label: "Insurance", single: "Insurance" },
   { label: "Corporate", children: ["Announcements", "Events", "Appointments"] },
   { label: "Growth & Development", single: "Growth & Development" },
   { label: "International News", single: "International News" },
@@ -490,6 +494,17 @@ export default function PaperTree({
             Market Impact
             <span className="text-[10px] font-normal tabular-nums opacity-70">{marketImpactStories.length}</span>
           </button>
+          <button
+            onClick={() => selectLeaf(STOCKS_TAB)}
+            className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
+              !searchActive && activeLeaf === STOCKS_TAB
+                ? "bg-emerald-50 border-emerald-200 text-emerald-700"
+                : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+            }`}
+          >
+            Stocks in Focus
+            <span className="text-[10px] font-normal tabular-nums opacity-70">{stocksInFocus.length}</span>
+          </button>
         </div>
         <div className="flex items-center gap-1 shrink-0 ml-auto sm:ml-0">
         {totalNoticeCount > 0 && (
@@ -589,7 +604,7 @@ export default function PaperTree({
                 {searchResults.length}
               </span>
             </div>
-          ) : activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB ? (
+          ) : activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB || activeLeaf === STOCKS_TAB ? (
             <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
               <span
                 className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded ${
@@ -598,7 +613,7 @@ export default function PaperTree({
               >
                 {activeLeaf}
                 <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
-                  {activeLeaf === TOP_TAB ? topStories.length : marketImpactStories.length}
+                  {activeLeaf === TOP_TAB ? topStories.length : activeLeaf === MARKET_TAB ? marketImpactStories.length : stocksInFocus.length}
                 </span>
               </span>
             </div>
