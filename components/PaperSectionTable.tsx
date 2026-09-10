@@ -1,9 +1,9 @@
 "use client";
 
-// Generic 2-column, paginated headline table used for every "Today's Paper"
+// Generic single-column, paginated headline list used for every "Today's Paper"
 // section tab (including Stocks in Focus) — clicking a row, or moving the
 // selection with the Up/Down arrow keys, selects a story; the caller renders
-// that story's full detail in its own separate box below this table.
+// that story's full detail in a separate panel alongside this list.
 
 export interface TableRow {
   key: string | number;
@@ -15,8 +15,7 @@ export interface TableRow {
   importance?: number;
 }
 
-const PAGE_SIZE = 16;
-const PER_COL = 8;
+const PAGE_SIZE = 15;
 
 function EditionBadge({ edition }: { edition: string }) {
   const isBS = edition === "Business Standard";
@@ -56,8 +55,6 @@ export default function PaperSectionTable({
   const page = Math.floor(clamped / PAGE_SIZE);
   const pageStart = page * PAGE_SIZE;
   const pageItems = rows.slice(pageStart, pageStart + PAGE_SIZE);
-  const col1 = pageItems.slice(0, PER_COL);
-  const col2 = pageItems.slice(PER_COL, PER_COL * 2);
 
   function Row({ r, idx }: { r: TableRow; idx: number }) {
     const active = idx === clamped;
@@ -70,7 +67,7 @@ export default function PaperSectionTable({
       >
         <h4
           style={{ fontSize: px(14.5) }}
-          className={`flex-1 min-w-0 truncate leading-snug ${
+          className={`flex-1 min-w-0 line-clamp-2 leading-snug ${
             active ? "text-violet-800 font-semibold" : r.isNotice ? "text-gray-500 font-normal" : "text-gray-800 font-medium"
           }`}
         >
@@ -101,10 +98,7 @@ export default function PaperSectionTable({
 
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
-        <div>{col1.map((r, i) => <Row key={r.key} r={r} idx={pageStart + i} />)}</div>
-        <div>{col2.map((r, i) => <Row key={r.key} r={r} idx={pageStart + PER_COL + i} />)}</div>
-      </div>
+      <div>{pageItems.map((r, i) => <Row key={r.key} r={r} idx={pageStart + i} />)}</div>
 
       {totalPages > 1 && (
         <div className="flex items-center justify-center gap-3 px-4 py-2 border-t border-gray-100 bg-gray-50/60">

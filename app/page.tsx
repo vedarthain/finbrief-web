@@ -67,17 +67,14 @@ export default async function HomePage({
       </header>
 
       <main className="mx-auto max-w-7xl px-4 py-4">
-        {/* Title bar + day picker */}
-        <div className="flex items-center gap-2 mb-3 flex-wrap">
+        {/* Title bar */}
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
           <h1 className="text-[20px] font-bold tracking-tight text-gray-900">Today&apos;s Paper</h1>
-          <span className="text-[13px] text-gray-400 font-normal ml-1">
-            {visibleCount} stories
-            {noticeCount > 0 && <span className="text-gray-400"> · {noticeCount} routine notices hidden</span>}
-            {" "}· {activeDate}
-          </span>
-          <div className="ml-auto">
-            <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
-          </div>
+        </div>
+
+        {/* ── Calendar ribbon ──────────────────────────────────────────────── */}
+        <div className="flex items-center justify-end mb-3 px-3 py-2 rounded-lg bg-white border border-gray-200">
+          <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
         </div>
 
         {stories.length === 0 ? (
@@ -92,6 +89,15 @@ export default async function HomePage({
             topStories={topStories}
             marketImpactStories={marketImpactStories}
           />
+        )}
+
+        {/* ── Lower ribbon: story counts ───────────────────────────────────── */}
+        {stories.length > 0 && (
+          <div className="mt-3 px-3 py-2 rounded-lg bg-white border border-gray-200 text-[13px] text-gray-400 text-center">
+            {visibleCount} stories
+            {noticeCount > 0 && <span className="text-gray-400"> · {noticeCount} routine notices hidden</span>}
+            {" "}· {activeDate}
+          </div>
         )}
       </main>
 

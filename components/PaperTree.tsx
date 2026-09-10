@@ -22,6 +22,36 @@ export function renderSummary(text: string, dimClass: string) {
   });
 }
 
+// Break a prose summary into standalone sentences so the reader panel can
+// render it as a scannable bullet list instead of a dense paragraph. Splits
+// after sentence-ending punctuation followed by whitespace + a capital
+// letter, a highlight marker, or a rupee sign — good enough to avoid
+// breaking on decimals/abbreviations (e.g. "5.24%", "₹1,846.90") since those
+// aren't followed by a capital/marker.
+function splitSentences(text: string): string[] {
+  return text
+    .split(/(?<=[.!?])\s+(?=[A-Z₹\[])/g)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+export function renderSummaryBullets(text: string, dimClass: string) {
+  const sentences = splitSentences(text);
+  if (sentences.length <= 1) {
+    return <p className="leading-relaxed">{renderSummary(text, dimClass)}</p>;
+  }
+  return (
+    <ul className="space-y-1.5">
+      {sentences.map((s, i) => (
+        <li key={i} className="flex gap-2 leading-relaxed">
+          <span className="text-gray-300 shrink-0 select-none">•</span>
+          <span>{renderSummary(s, dimClass)}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 const STOCKS_TAB = "Stocks in Focus";
 const TOP_TAB = "Top Stories";
 const MARKET_TAB = "Market Impact";
@@ -180,6 +210,25 @@ export default function PaperTree({
 
   const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
   const [focusIndex, setFocusIndex] = useState(0);
+
+  // Collapsible section sidebar (Top Stories / Market Impact / Economy / …) —
+  // expanded by default, persisted across visits like the active-leaf/font prefs.
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  useEffect(() => {
+    const saved = localStorage.getItem("paper-sidebar-open");
+    if (saved === "0") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time sync from localStorage after mount
+      setSidebarOpen(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  function toggleSidebar() {
+    setSidebarOpen((o) => {
+      const next = !o;
+      localStorage.setItem("paper-sidebar-open", next ? "1" : "0");
+      return next;
+    });
+  }
 
   // ── Persist the active section tab across refreshes ──
   // Starts on the first leaf (same on server and client, avoiding a hydration
@@ -389,40 +438,56 @@ export default function PaperTree({
           layout switches to flex-row, where items-start is what we actually want
           (keeps the sticky sidebar top-aligned instead of stretched to match height). */}
       <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-start">
-      {/* ── Left: section tree ─────────────────────────────────────────── */}
-      <aside className="w-full md:w-56 shrink-0 md:sticky md:top-20">
-        <nav className="rounded-lg bg-white border border-gray-200 overflow-hidden">
-          {resolvedGroups.map((g) => {
-            const isActiveGroup = g.resolvedChildren.includes(activeLeaf ?? "");
-            return (
-              <button
-                key={g.label}
-                onClick={() => selectGroup(g)}
-                className={`w-full flex items-center gap-2 px-3 py-2 text-[14.5px] transition-colors border-b border-gray-100 last:border-b-0 ${
-                  isActiveGroup ? "bg-[#182131] text-white font-medium" : "text-gray-600 hover:bg-gray-50"
-                }`}
-              >
-                <span
-                  className={`w-1.5 h-1.5 rounded-full shrink-0 ${
-                    isActiveGroup ? "bg-white" : SECTION_BAR[g.resolvedChildren[0]] ?? "bg-gray-400"
-                  }`}
-                />
-                <span className="truncate">{g.label}</span>
-                <span className={`ml-auto text-[10px] tabular-nums ${isActiveGroup ? "text-gray-300" : "text-gray-400"}`}>
-                  {g.resolvedChildren.reduce((sum, c) => sum + countOf(c), 0)}
-                </span>
-              </button>
-            );
-          })}
-        </nav>
-        <p className="hidden md:block mt-2 px-1 text-[10.5px] text-gray-400">
-          ↑↓ move between stories · ←→ switch section
-        </p>
+      {/* ── Left: collapsible section tree (Top Stories / Market Impact / …) ── */}
+      <aside className={`w-full ${sidebarOpen ? "md:w-56" : "md:w-11"} shrink-0 md:sticky md:top-20 transition-[width] duration-150`}>
+        <div className="rounded-lg bg-white border border-gray-200 overflow-hidden">
+          <button
+            onClick={toggleSidebar}
+            aria-label={sidebarOpen ? "Collapse sections panel" : "Expand sections panel"}
+            className={`w-full flex items-center gap-2 px-3 py-2 text-[11px] font-semibold uppercase tracking-wide text-gray-400 hover:bg-gray-50 transition-colors ${
+              sidebarOpen ? "border-b border-gray-100 justify-between" : "justify-center"
+            }`}
+          >
+            {sidebarOpen && <span>Sections</span>}
+            <span aria-hidden className="text-gray-400">{sidebarOpen ? "«" : "»"}</span>
+          </button>
+          {sidebarOpen && (
+            <nav>
+              {resolvedGroups.map((g) => {
+                const isActiveGroup = g.resolvedChildren.includes(activeLeaf ?? "");
+                return (
+                  <button
+                    key={g.label}
+                    onClick={() => selectGroup(g)}
+                    className={`w-full flex items-center gap-2 px-3 py-2 text-[14.5px] transition-colors border-b border-gray-100 last:border-b-0 ${
+                      isActiveGroup ? "bg-[#182131] text-white font-medium" : "text-gray-600 hover:bg-gray-50"
+                    }`}
+                  >
+                    <span
+                      className={`w-1.5 h-1.5 rounded-full shrink-0 ${
+                        isActiveGroup ? "bg-white" : SECTION_BAR[g.resolvedChildren[0]] ?? "bg-gray-400"
+                      }`}
+                    />
+                    <span className="truncate">{g.label}</span>
+                    <span className={`ml-auto text-[10px] tabular-nums ${isActiveGroup ? "text-gray-300" : "text-gray-400"}`}>
+                      {g.resolvedChildren.reduce((sum, c) => sum + countOf(c), 0)}
+                    </span>
+                  </button>
+                );
+              })}
+            </nav>
+          )}
+        </div>
+        {sidebarOpen && (
+          <p className="hidden md:block mt-2 px-1 text-[10.5px] text-gray-400">
+            ↑↓ move between stories · ←→ switch section
+          </p>
+        )}
       </aside>
 
-      {/* ── Right: paginated headline table + separate detail box below ─── */}
-      <div className="w-full flex-1 min-w-0 flex flex-col gap-3">
-        <div className="rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
+      {/* ── Right: headline list (left column) + description panel (right column) ── */}
+      <div className="w-full flex-1 min-w-0 flex flex-col lg:flex-row gap-3 items-stretch lg:items-start">
+        <div className="w-full lg:w-[400px] shrink-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
           {searchActive ? (
             <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100">
               <span className="text-[12px] font-semibold tracking-wide uppercase text-gray-700">
@@ -479,109 +544,116 @@ export default function PaperTree({
           />
         </div>
 
-        {(selectedStory || selectedStock || selectedTop || selectedMarket) && (
-          <div className="rounded-lg bg-white border border-gray-200 p-4 shadow-sm">
-            {selectedStory && (
-              <>
-                <div className="flex items-center gap-2 mb-2 flex-wrap">
-                  <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
-                    {selectedStory.headline}
-                  </h3>
-                  {searchActive && (
-                    <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
-                      {selectedStory.section}
-                    </span>
-                  )}
-                  {selectedStory.industry && (
-                    <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-cyan-200 text-cyan-700 bg-cyan-50">
-                      {selectedStory.industry}
-                    </span>
-                  )}
-                  {multiEdition && <EditionBadge edition={selectedStory.edition} />}
-                </div>
-                <p style={{ fontSize: px(15.5) }} className="leading-relaxed">
-                  {renderSummary(selectedStory.summary, "text-gray-700")}
-                </p>
-                {selectedStory.page_number != null && (
-                  <p className="text-[13px] text-gray-400 mt-2">Page {selectedStory.page_number}</p>
-                )}
-              </>
-            )}
-            {selectedTop && (
-              <>
-                <div className="flex items-center gap-2 mb-2 flex-wrap">
-                  <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
-                    {selectedTop.headline}
-                  </h3>
-                  <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
-                    {selectedTop.section}
-                  </span>
-                  {multiEdition && selectedTop.edition && <EditionBadge edition={selectedTop.edition} />}
-                </div>
-                {selectedTop.note && (
-                  <p style={{ fontSize: px(15.5) }} className="leading-relaxed text-gray-700">
-                    {selectedTop.note}
-                  </p>
-                )}
-              </>
-            )}
-            {selectedMarket && (
-              <>
-                <div className="flex items-center gap-2 mb-2 flex-wrap">
-                  <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
-                    {selectedMarket.headline}
-                  </h3>
-                  <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-yellow-200 text-yellow-700 bg-yellow-50">
-                    {selectedMarket.section}
-                  </span>
-                  {multiEdition && selectedMarket.edition && <EditionBadge edition={selectedMarket.edition} />}
-                </div>
-                {selectedMarket.note && (
-                  <p style={{ fontSize: px(15.5) }} className="leading-relaxed text-gray-700">
-                    {selectedMarket.note}
-                  </p>
-                )}
-              </>
-            )}
-            {selectedStock && (
-              <>
-                <div className="flex items-center gap-2 mb-2 flex-wrap">
-                  <h3 className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2" style={{ fontSize: px(17) }}>
-                    {selectedStock.name}
-                  </h3>
-                  {multiEdition && selectedStock.edition && <EditionBadge edition={selectedStock.edition} />}
-                </div>
-                <p style={{ fontSize: px(15.5) }} className="leading-relaxed text-gray-700">
-                  {selectedStock.note}
-                </p>
-              </>
-            )}
-
-            {/* Mobile-only prev/next — on md+ the Up/Down arrow-key hint above
-                the section tree already covers this, but on touch devices
-                there's no keyboard, so give readers a thumb-reachable way to
-                move between headlines without scrolling back up to the list. */}
-            <div className="md:hidden flex items-center justify-between gap-2 mt-4 pt-3 border-t border-gray-100">
-              <button
-                onClick={() => setFocusIndex(Math.max(0, selIndex - 1))}
-                disabled={selIndex === 0}
-                className="flex-1 text-[13px] font-medium px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed active:bg-gray-50 transition-colors"
-              >
-                ‹ Previous
-              </button>
-              <span className="shrink-0 text-[11px] text-gray-400 tabular-nums">
-                {selIndex + 1} / {itemCount}
-              </span>
-              <button
-                onClick={() => setFocusIndex(Math.min(itemCount - 1, selIndex + 1))}
-                disabled={selIndex >= itemCount - 1}
-                className="flex-1 text-[13px] font-medium px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed active:bg-gray-50 transition-colors"
-              >
-                Next ›
-              </button>
+        {/* ── Description panel — always present on the right, sticky on desktop ── */}
+        <div className="w-full flex-1 min-w-0 lg:sticky lg:top-20 rounded-lg bg-white border border-gray-200 p-4 shadow-sm">
+          {!(selectedStory || selectedStock || selectedTop || selectedMarket) ? (
+            <div className="py-10 text-center text-[13px] text-gray-400">
+              Select a story from the list to read its summary.
             </div>
-          </div>
-        )}
+          ) : (
+            <>
+              {selectedStory && (
+                <>
+                  <div className="flex items-center gap-2 mb-2 flex-wrap">
+                    <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
+                      {selectedStory.headline}
+                    </h3>
+                    {searchActive && (
+                      <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
+                        {selectedStory.section}
+                      </span>
+                    )}
+                    {selectedStory.industry && (
+                      <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-cyan-200 text-cyan-700 bg-cyan-50">
+                        {selectedStory.industry}
+                      </span>
+                    )}
+                    {multiEdition && <EditionBadge edition={selectedStory.edition} />}
+                  </div>
+                  <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                    {renderSummaryBullets(selectedStory.summary, "text-gray-700")}
+                  </div>
+                  {selectedStory.page_number != null && (
+                    <p className="text-[13px] text-gray-400 mt-2">Page {selectedStory.page_number}</p>
+                  )}
+                </>
+              )}
+              {selectedTop && (
+                <>
+                  <div className="flex items-center gap-2 mb-2 flex-wrap">
+                    <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
+                      {selectedTop.headline}
+                    </h3>
+                    <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
+                      {selectedTop.section}
+                    </span>
+                    {multiEdition && selectedTop.edition && <EditionBadge edition={selectedTop.edition} />}
+                  </div>
+                  {selectedTop.note && (
+                    <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                      {renderSummaryBullets(selectedTop.note, "text-gray-700")}
+                    </div>
+                  )}
+                </>
+              )}
+              {selectedMarket && (
+                <>
+                  <div className="flex items-center gap-2 mb-2 flex-wrap">
+                    <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
+                      {selectedMarket.headline}
+                    </h3>
+                    <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-yellow-200 text-yellow-700 bg-yellow-50">
+                      {selectedMarket.section}
+                    </span>
+                    {multiEdition && selectedMarket.edition && <EditionBadge edition={selectedMarket.edition} />}
+                  </div>
+                  {selectedMarket.note && (
+                    <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                      {renderSummaryBullets(selectedMarket.note, "text-gray-700")}
+                    </div>
+                  )}
+                </>
+              )}
+              {selectedStock && (
+                <>
+                  <div className="flex items-center gap-2 mb-2 flex-wrap">
+                    <h3 className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2" style={{ fontSize: px(17) }}>
+                      {selectedStock.name}
+                    </h3>
+                    {multiEdition && selectedStock.edition && <EditionBadge edition={selectedStock.edition} />}
+                  </div>
+                  <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                    {renderSummaryBullets(selectedStock.note, "text-gray-700")}
+                  </div>
+                </>
+              )}
+
+              {/* Mobile-only prev/next — on lg+ the Up/Down arrow-key hint above
+                  the section tree already covers this, but on touch devices
+                  there's no keyboard, so give readers a thumb-reachable way to
+                  move between headlines without scrolling back up to the list. */}
+              <div className="lg:hidden flex items-center justify-between gap-2 mt-4 pt-3 border-t border-gray-100">
+                <button
+                  onClick={() => setFocusIndex(Math.max(0, selIndex - 1))}
+                  disabled={selIndex === 0}
+                  className="flex-1 text-[13px] font-medium px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed active:bg-gray-50 transition-colors"
+                >
+                  ‹ Previous
+                </button>
+                <span className="shrink-0 text-[11px] text-gray-400 tabular-nums">
+                  {selIndex + 1} / {itemCount}
+                </span>
+                <button
+                  onClick={() => setFocusIndex(Math.min(itemCount - 1, selIndex + 1))}
+                  disabled={selIndex >= itemCount - 1}
+                  className="flex-1 text-[13px] font-medium px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-600 disabled:opacity-30 disabled:cursor-not-allowed active:bg-gray-50 transition-colors"
+                >
+                  Next ›
+                </button>
+              </div>
+            </>
+          )}
+        </div>
       </div>
       </div>
     </div>
