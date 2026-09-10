@@ -114,6 +114,7 @@ const SECTION_STYLE: Record<string, string> = {
   [STOCKS_TAB]:            "text-emerald-700 bg-emerald-50",
   "Announcements":         "text-violet-600 bg-violet-50",
   "Events":                "text-fuchsia-600 bg-fuchsia-50",
+  "Appointments":          "text-purple-600 bg-purple-50",
   "IPO":                   "text-orange-700 bg-orange-50",
   "Market":                "text-pink-600 bg-pink-50",
   "Trade":                 "text-indigo-600 bg-indigo-50",
@@ -133,6 +134,7 @@ const SECTION_BAR: Record<string, string> = {
   [STOCKS_TAB]:            "bg-emerald-500",
   "Announcements":         "bg-violet-500",
   "Events":                "bg-fuchsia-500",
+  "Appointments":          "bg-purple-500",
   "IPO":                   "bg-orange-500",
   "Market":                "bg-pink-500",
   "Trade":                 "bg-indigo-500",
@@ -152,7 +154,7 @@ const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
   { label: "In Focus", children: ["Sector", STOCKS_TAB] },
   { label: "Stocks", children: ["IPO", "Market", "Trade", "Insurance"] },
-  { label: "Corporate", children: ["Announcements", "Events"] },
+  { label: "Corporate", children: ["Announcements", "Events", "Appointments"] },
   { label: "Growth & Development", single: "Growth & Development" },
   { label: "International News", single: "International News" },
   { label: "Others", single: "Others" },
@@ -191,21 +193,16 @@ export default function PaperTree({
 }) {
   // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
   // etc.) are real content but not "news" — keep them out of each section's default
-  // view, same treatment for importance<=2 filler (routine corporate-brief items,
-  // minor updates) — both hidden by default, both revealable via their own toggle.
-  // getPaperStories already sorts is_notice=false first then importance DESC, so
-  // both buckets are contiguous tail slices per section.
-  const visibleOf = (key: string, includeNotices: boolean, includeLowPriority: boolean) => {
+  // view, revealable via their own toggle. getPaperStories already sorts
+  // is_notice=false first then importance DESC, so the notice bucket is a
+  // contiguous tail slice per section. Every other story — regardless of
+  // importance — is shown; importance only drives sort order and the ★
+  // Priority badge, never visibility.
+  const visibleOf = (key: string, includeNotices: boolean) => {
     const all = bySection[key] ?? [];
-    return all.filter((s) => {
-      if (s.is_notice) return includeNotices;
-      if (s.importance <= 2) return includeLowPriority;
-      return true;
-    });
+    return all.filter((s) => (s.is_notice ? includeNotices : true));
   };
   const noticeCountOf = (key: string) => (bySection[key] ?? []).filter((s) => s.is_notice).length;
-  const lowPriorityCountOf = (key: string) =>
-    (bySection[key] ?? []).filter((s) => !s.is_notice && s.importance <= 2).length;
   const countOf = (key: string) =>
     key === STOCKS_TAB
       ? stocksInFocus.length
@@ -213,7 +210,7 @@ export default function PaperTree({
       ? topStories.length
       : key === MARKET_TAB
       ? marketImpactStories.length
-      : visibleOf(key, false, false).length;
+      : visibleOf(key, false).length;
 
   // Top Stories / Market Impact entries carry a short curation note, but once
   // selected the reader wants the full story detail, not just that one-liner.
@@ -350,24 +347,10 @@ export default function PaperTree({
     });
   }
 
-  // Per-section "show low-priority items" toggle (importance <= 2) — same
-  // hide-by-default / reveal-on-demand pattern as notices, for filler news
-  // (minor corporate briefs, routine updates) that's still worth keeping but
-  // shouldn't force a reader to scroll past it to find what matters.
-  const [lowPriorityShownFor, setLowPriorityShownFor] = useState<Set<string>>(new Set());
-  const showLowPriorityForActive = activeLeaf ? lowPriorityShownFor.has(activeLeaf) : false;
-  function toggleLowPriority(leaf: string) {
-    setLowPriorityShownFor((prev) => {
-      const next = new Set(prev);
-      if (next.has(leaf)) next.delete(leaf); else next.add(leaf);
-      return next;
-    });
-  }
-
   const isSpecialTab = activeLeaf === STOCKS_TAB || activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB;
   const rows =
     !searchActive && activeLeaf && !isSpecialTab
-      ? visibleOf(activeLeaf, showNoticesForActive, showLowPriorityForActive)
+      ? visibleOf(activeLeaf, showNoticesForActive)
       : [];
   const itemCount = searchActive
     ? searchResults.length
@@ -630,14 +613,6 @@ export default function PaperTree({
                     </span>
                   </button>
                 ))}
-                {activeLeaf && lowPriorityCountOf(activeLeaf) > 0 && (
-                  <button
-                    onClick={() => toggleLowPriority(activeLeaf)}
-                    className={`${noticeCountOf(activeLeaf) > 0 ? "" : "ml-auto"} text-[11px] font-medium text-gray-400 hover:text-gray-600 underline decoration-dotted underline-offset-2`}
-                  >
-                    {showLowPriorityForActive ? "Hide" : "Show"} {lowPriorityCountOf(activeLeaf)} low-priority items
-                  </button>
-                )}
                 {activeLeaf && noticeCountOf(activeLeaf) > 0 && (
                   <button
                     onClick={() => toggleNotices(activeLeaf)}

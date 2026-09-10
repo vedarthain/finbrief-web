@@ -61,36 +61,21 @@ export default function PaperSectionTable({
     return (
       <button
         onClick={() => onSelectIndex(idx)}
-        className={`w-full text-left px-3 py-2.5 border-b border-gray-100 last:border-b-0 transition-colors flex items-center gap-2 ${
+        className={`w-full text-left px-3 py-2.5 border-b border-gray-100 last:border-b-0 transition-colors flex items-center gap-3 ${
           active ? "bg-violet-50" : "hover:bg-gray-50"
         }`}
       >
+        <span className="shrink-0 w-5 text-[11px] font-mono text-gray-300 tabular-nums">
+          {String(idx + 1).padStart(2, "0")}
+        </span>
         <h4
           style={{ fontSize: px(14.5) }}
-          className={`flex-1 min-w-0 line-clamp-2 leading-snug ${
+          className={`flex-1 min-w-0 truncate leading-snug ${
             active ? "text-violet-800 font-semibold" : r.isNotice ? "text-gray-500 font-normal" : "text-gray-800 font-medium"
           }`}
         >
           {r.headline}
         </h4>
-        {(r.importance ?? 0) >= 4 && (
-          <span
-            title={r.importance === 5 ? "Front-page-lead priority" : "High priority"}
-            className="shrink-0 text-[10px] font-semibold px-1.5 py-0.5 rounded border border-amber-200 text-amber-700 bg-amber-50"
-          >
-            ★ Priority
-          </span>
-        )}
-        {r.section && (
-          <span className="shrink-0 text-[10px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
-            {r.section}
-          </span>
-        )}
-        {r.industry && (
-          <span className="shrink-0 text-[10px] font-medium px-1.5 py-0.5 rounded border border-cyan-200 text-cyan-700 bg-cyan-50">
-            {r.industry}
-          </span>
-        )}
         {multiEdition && r.edition && <EditionBadge edition={r.edition} />}
       </button>
     );
