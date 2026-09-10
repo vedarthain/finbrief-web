@@ -134,7 +134,9 @@ Separately from `stocksInFocus`, curate a top-level `topStories` array: 10-15 of
 ]
 ```
 
-`headline` should match (or closely mirror) the corresponding story's headline so a reader can find the full item in its section; `section` is whatever leaf section it lives under (for display only, not a lookup key); `note` is optional. This renders as its own top-level "Top Stories" tab, shown first.
+`headline` **must be copied verbatim, character-for-character**, from the corresponding entry in `stories` — not paraphrased, reworded, shortened, or "closely mirrored". The UI (`components/PaperTree.tsx`) does an exact-string lookup of `topStories[i].headline` against every story's `headline` to render the full multi-bullet summary when a reader opens a digest item; even a small wording drift (different punctuation, "September 25" vs "Sept 25", a dropped clause) breaks that lookup and silently falls back to showing just the one-line `note` — which is exactly the "scattered as a 1-liner" bug reported and fixed on 2026-09-10 across 17 entries in one day's data. The safest way to guarantee this: write the `stories` array first, then build `topStories`/`marketImpact` by copy-pasting each `headline` string directly out of the story object you're citing, never retyping it from memory. `section` is whatever leaf section it lives under (for display only, not a lookup key); `note` is optional. This renders as its own top-level "Top Stories" tab, shown first.
+
+**Verify before publishing:** every `topStories[i].headline` and `marketImpact[i].headline` must appear as an exact `headline` value somewhere in `stories`. Spot-check this explicitly (e.g. a quick grep/diff pass) before treating the day's JSON as done — do not rely on "it looked close enough" during curation.
 
 ## 6c. Build `marketImpact` — a causal filter for news that moves prices, not a re-labeling of the "Market" section
 
@@ -148,7 +150,7 @@ Typical candidates: major index/Sensex/Nifty swings and their triggers, RBI poli
 ]
 ```
 
-Shape is identical to `topStories` (`headline`, `section`, optional `note`) — `headline` should match the corresponding story so the reader can jump to the full item, `section` is the leaf section for display only. Overlap between `topStories` and `marketImpact` is expected and fine (a big Sensex swing is both a top story and market-moving); they are independent curation passes with different questions in mind — "most important today" vs. "moves prices" — not a subset/superset relationship, so don't try to derive one from the other. This renders as its own top-level "Market Impact" tab. `marketImpact` is optional; omit only if truly nothing in the day's paper is price-moving (rare).
+Shape is identical to `topStories` (`headline`, `section`, optional `note`) — `headline` **must be copied verbatim** from the corresponding `stories` entry, same exact-match rule as §6b (copy-paste it, don't retype it), so the reader can jump to the full item; `section` is the leaf section for display only. Overlap between `topStories` and `marketImpact` is expected and fine (a big Sensex swing is both a top story and market-moving); they are independent curation passes with different questions in mind — "most important today" vs. "moves prices" — not a subset/superset relationship, so don't try to derive one from the other. This renders as its own top-level "Market Impact" tab. `marketImpact` is optional; omit only if truly nothing in the day's paper is price-moving (rare).
 
 ## 6a. Build `ipoListings` — structured data for the separate "IPO & Listings" tab
 

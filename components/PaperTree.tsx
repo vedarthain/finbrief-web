@@ -117,9 +117,9 @@ const SECTION_BAR: Record<string, string> = {
 // Sidebar tree definition. A node is either a standalone leaf section
 // ("single") or a group with child leaves ("children"). Groups whose
 // children all end up empty for the day are dropped at render time.
+// Top Stories / Market Impact live as their own tabs in the top ribbon
+// (next to the calendar/text-size controls), not in this sidebar tree.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
-  { label: TOP_TAB, single: TOP_TAB },
-  { label: MARKET_TAB, single: MARKET_TAB },
   { label: "Economy", single: "Economy" },
   { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
   { label: "In Focus", children: ["Sector", STOCKS_TAB] },
@@ -244,10 +244,15 @@ export default function PaperTree({
     return editions.size > 1;
   }, [bySection, stocksInFocus, topStories, marketImpactStories]);
 
-  const [activeLeaf, setActiveLeaf] = useState<string | null>(resolvedGroups[0]?.resolvedChildren[0] ?? null);
+  // Land on Top Stories by default (falling back to Market Impact, then the
+  // first sidebar section) — same "most important first" precedence as
+  // before, just no longer sourced from the sidebar's GROUPS list.
+  const defaultLeaf =
+    topStories.length > 0 ? TOP_TAB : marketImpactStories.length > 0 ? MARKET_TAB : resolvedGroups[0]?.resolvedChildren[0] ?? null;
+  const [activeLeaf, setActiveLeaf] = useState<string | null>(defaultLeaf);
   const [focusIndex, setFocusIndex] = useState(0);
 
-  // Collapsible section sidebar (Top Stories / Market Impact / Economy / …) —
+  // Collapsible section sidebar (Economy / Policy & Regulatory / …) —
   // expanded by default, persisted across visits like the active-leaf/font prefs.
   const [sidebarOpen, setSidebarOpen] = useState(true);
   useEffect(() => {
@@ -456,6 +461,30 @@ export default function PaperTree({
           )}
         </div>
         <DatePicker activeDate={activeDate} availableDates={availableDates} />
+        <div className="flex items-center gap-1.5 shrink-0">
+          <button
+            onClick={() => selectLeaf(TOP_TAB)}
+            className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
+              !searchActive && activeLeaf === TOP_TAB
+                ? "bg-red-50 border-red-200 text-red-700"
+                : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+            }`}
+          >
+            Top Stories
+            <span className="text-[10px] font-normal tabular-nums opacity-70">{topStories.length}</span>
+          </button>
+          <button
+            onClick={() => selectLeaf(MARKET_TAB)}
+            className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
+              !searchActive && activeLeaf === MARKET_TAB
+                ? "bg-yellow-50 border-yellow-200 text-yellow-700"
+                : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+            }`}
+          >
+            Market Impact
+            <span className="text-[10px] font-normal tabular-nums opacity-70">{marketImpactStories.length}</span>
+          </button>
+        </div>
         <div className="flex items-center gap-1 shrink-0 ml-auto sm:ml-0">
         <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
         <button
@@ -539,6 +568,19 @@ export default function PaperTree({
               </span>
               <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70 text-gray-400">
                 {searchResults.length}
+              </span>
+            </div>
+          ) : activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB ? (
+            <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
+              <span
+                className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded ${
+                  SECTION_STYLE[activeLeaf] ?? "text-gray-700 bg-gray-100"
+                }`}
+              >
+                {activeLeaf}
+                <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
+                  {activeLeaf === TOP_TAB ? topStories.length : marketImpactStories.length}
+                </span>
               </span>
             </div>
           ) : (
