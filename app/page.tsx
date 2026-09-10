@@ -2,6 +2,7 @@ import { unstable_cache } from "next/cache";
 import { getPaperStories, getPaperDays, getStocksInFocus, getTopStories, getMarketImpactStories } from "@/lib/queries";
 import PaperTree from "@/components/PaperTree";
 import NavTabs from "@/components/NavTabs";
+import DatePicker from "@/components/DatePicker";
 
 export const revalidate = 300;
 
@@ -61,6 +62,7 @@ export default async function HomePage({
             </span>
           </div>
           <NavTabs />
+          <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
           <span className="hidden sm:inline text-[13px] text-gray-400 whitespace-nowrap ml-auto">{istTime} IST</span>
         </div>
       </header>
@@ -77,8 +79,6 @@ export default async function HomePage({
             stocksInFocus={stocksInFocus}
             topStories={topStories}
             marketImpactStories={marketImpactStories}
-            activeDate={activeDate}
-            availableDates={days.map((d) => d.date)}
           />
         )}
 

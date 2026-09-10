@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { PaperStory, StockInFocus, TopStory, MarketImpactStory } from "@/lib/queries";
 import PaperSectionTable, { TableRow } from "./PaperSectionTable";
-import DatePicker from "./DatePicker";
 
 export function renderSummary(text: string, dimClass: string) {
   return text.split(/(\[\[[^\]]+\]\])/g).map((part, i) => {
@@ -185,15 +184,11 @@ export default function PaperTree({
   stocksInFocus,
   topStories,
   marketImpactStories,
-  activeDate,
-  availableDates,
 }: {
   bySection: Record<string, PaperStory[]>;
   stocksInFocus: StockInFocus[];
   topStories: TopStory[];
   marketImpactStories: MarketImpactStory[];
-  activeDate: string;
-  availableDates: string[];
 }) {
   // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
   // etc.) are real content but not "news" — kept out of each section's default
@@ -470,7 +465,6 @@ export default function PaperTree({
             </button>
           )}
         </div>
-        <DatePicker activeDate={activeDate} availableDates={availableDates} />
         <div className="flex items-center gap-1.5 shrink-0">
           <button
             onClick={() => selectLeaf(TOP_TAB)}

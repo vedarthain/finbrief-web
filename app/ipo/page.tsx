@@ -1,11 +1,16 @@
-import { getIpoListings } from "@/lib/queries";
+import { unstable_cache } from "next/cache";
+import { getIpoListings, getPaperDays } from "@/lib/queries";
 import IpoTable from "@/components/IpoTable";
 import NavTabs from "@/components/NavTabs";
+import DatePicker from "@/components/DatePicker";
 
 export const revalidate = 300;
 
+const cachedGetPaperDays = unstable_cache(getPaperDays, ["paper-days"], { revalidate: 300 });
+
 export default async function IpoPage() {
-  const listings = await getIpoListings();
+  const [listings, days] = await Promise.all([getIpoListings(), cachedGetPaperDays()]);
+  const todayIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
 
   const istTime = new Date().toLocaleString("en-IN", {
     timeZone: "Asia/Kolkata", weekday: "short",
@@ -27,6 +32,7 @@ export default async function IpoPage() {
             </span>
           </div>
           <NavTabs />
+          <DatePicker activeDate={todayIST} availableDates={days.map((d) => d.date)} />
           <span className="hidden sm:inline text-[13px] text-gray-400 whitespace-nowrap ml-auto">{istTime} IST</span>
         </div>
       </header>
