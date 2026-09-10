@@ -3,6 +3,7 @@ import { getPaperStories, getPaperDays, getStocksInFocus, getTopStories, getMark
 import PaperTree from "@/components/PaperTree";
 import NavTabs from "@/components/NavTabs";
 import DatePicker from "@/components/DatePicker";
+import { TopStoriesRail, MarketImpactRail, StocksInFocusRail } from "@/components/SideRail";
 
 export const revalidate = 300;
 
@@ -67,30 +68,49 @@ export default async function HomePage({
         </div>
       </header>
 
-      <main className="mx-auto max-w-7xl px-4 py-3">
-        {stories.length === 0 ? (
-          <div className="rounded-xl border border-dashed border-gray-200 bg-white py-16 text-center shadow-sm">
-            <p className="text-3xl mb-3">🗞️</p>
-            <p className="text-[15px] text-gray-400">No paper stories published for {activeDate} yet.</p>
-          </div>
-        ) : (
-          <PaperTree
-            bySection={bySection}
-            stocksInFocus={stocksInFocus}
-            topStories={topStories}
-            marketImpactStories={marketImpactStories}
-          />
-        )}
+      {/* mx-auto max-w-[1800px] + a 3-column grid, but the side columns only turn
+          on at 2xl (≥1536px). Below that this collapses to the single center
+          column exactly as before (grid-cols-1, side <aside>s hidden) — no
+          layout change on laptop/tablet. On wide monitors the flat #F2F3F8
+          gutters outside the old max-w-7xl column get a glanceable digest
+          (Top Stories / Market Impact / Stocks in Focus) instead of sitting
+          empty; center column width (minmax(0,1280px) = 80rem) matches the
+          previous max-w-7xl exactly, so the reading column itself is unchanged. */}
+      <div className="mx-auto max-w-[1800px] px-4 py-3 grid grid-cols-1 2xl:grid-cols-[240px_minmax(0,1280px)_240px] gap-4 justify-center">
+        <aside className="hidden 2xl:flex flex-col gap-3 2xl:sticky 2xl:top-20 2xl:self-start">
+          <TopStoriesRail stories={topStories} />
+        </aside>
 
-        {/* ── Lower ribbon: story counts ───────────────────────────────────── */}
-        {stories.length > 0 && (
-          <div className="mt-3 px-3 py-2 rounded-lg bg-white border border-gray-200 text-[13px] text-gray-400 text-center">
-            {visibleCount} stories
-            {noticeCount > 0 && <span className="text-gray-400"> · {noticeCount} routine notices hidden</span>}
-            {" "}· {activeDate}
-          </div>
-        )}
-      </main>
+        <main className="min-w-0">
+          {stories.length === 0 ? (
+            <div className="rounded-xl border border-dashed border-gray-200 bg-white py-16 text-center shadow-sm">
+              <p className="text-3xl mb-3">🗞️</p>
+              <p className="text-[15px] text-gray-400">No paper stories published for {activeDate} yet.</p>
+            </div>
+          ) : (
+            <PaperTree
+              bySection={bySection}
+              stocksInFocus={stocksInFocus}
+              topStories={topStories}
+              marketImpactStories={marketImpactStories}
+            />
+          )}
+
+          {/* ── Lower ribbon: story counts ───────────────────────────────────── */}
+          {stories.length > 0 && (
+            <div className="mt-3 px-3 py-2 rounded-lg bg-white border border-gray-200 text-[13px] text-gray-400 text-center">
+              {visibleCount} stories
+              {noticeCount > 0 && <span className="text-gray-400"> · {noticeCount} routine notices hidden</span>}
+              {" "}· {activeDate}
+            </div>
+          )}
+        </main>
+
+        <aside className="hidden 2xl:flex flex-col gap-3 2xl:sticky 2xl:top-20 2xl:self-start">
+          <MarketImpactRail stories={marketImpactStories} />
+          <StocksInFocusRail stocks={stocksInFocus} />
+        </aside>
+      </div>
 
       {/* ── Footer ─────────────────────────────────────────────────────────── */}
       <footer className="mt-6 border-t border-gray-200 bg-white px-4 py-4">
