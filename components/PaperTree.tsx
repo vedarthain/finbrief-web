@@ -29,12 +29,24 @@ export function renderSummary(text: string, dimClass: string) {
 // $18bn"). Curated from how the daily summaries are actually written, so a
 // long single sentence still splits into separate, standalone points instead
 // of one dense block.
+//
+// Extended (Sept 2026) with contrast/causal conjunctions — but, though, even
+// as, since, after — after auditing every comma-introduced clause across the
+// published corpus. Unlike relative pronouns (which/that/who, deliberately
+// left out below since they introduce a clause describing the preceding
+// noun, not a new standalone fact — "AAHL, which makes X, …" isn't complete
+// on its own), every one of these conjunctions was consistently followed by
+// a full subject+verb clause that reads fine as its own bullet, e.g. "…but
+// the government reiterated no retreat on its nuclear stance…" or "…though
+// FDI inflows rose to $6.1 billion from $5.2 billion." Splitting on them
+// turns dense contrast/causal sentences into their two constituent facts
+// instead of leaving them merged into one oversized bullet.
 const CLAUSE_WORDS =
   "valuing|giving|taking|making|bringing|pushing|raising|adding|translating|" +
   "reflecting|marking|following|entered|said|saying|announced|agreed|reported|filed|" +
   "posted|clocked|registered|logged|stated|noted|flagged|warned|forecast|" +
   "projected|unveiled|launched|opened|closed|signed|inked|secured|clinched|" +
-  "confirmed|plans|aims|expects|targets";
+  "confirmed|plans|aims|expects|targets|but|though|even as|since|after";
 
 // A piece left over after the primary split (below) that's still this long
 // almost always bundles more than one fact — e.g. a subject clause plus a
@@ -124,10 +136,12 @@ export function renderSummaryBullets(text: string, dimClass: string) {
 const STOCKS_TAB = "Stocks in Focus";
 const TOP_TAB = "Top Stories";
 const MARKET_TAB = "Market Impact";
+const NOTICES_TAB = "Routine Notices";
 
 const SECTION_STYLE: Record<string, string> = {
   [TOP_TAB]:               "text-red-700 bg-red-50",
   [MARKET_TAB]:            "text-yellow-700 bg-yellow-50",
+  [NOTICES_TAB]:           "text-slate-600 bg-slate-100",
   "Economy":               "text-teal-600 bg-teal-50",
   "Policy":                "text-sky-600 bg-sky-50",
   "Regulatory":            "text-slate-600 bg-slate-100",
@@ -225,19 +239,19 @@ export default function PaperTree({
   marketImpactStories: MarketImpactStory[];
 }) {
   // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
-  // etc.) are real content but not "news" — kept out of each section's default
-  // view. The global "Routine notices" ribbon button is an exclusive mode
-  // switch, not an additive reveal: off shows only real stories, on shows only
-  // the routine notices (and hides everything else) so the reader isn't
-  // wading through both lists at once.
-  const visibleOf = (key: string, onlyNotices: boolean) => {
-    const all = bySection[key] ?? [];
-    return all.filter((s) => (onlyNotices ? s.is_notice : !s.is_notice));
-  };
-  const totalNoticeCount = Object.values(bySection).reduce(
-    (sum, arr) => sum + arr.filter((s) => s.is_notice).length,
-    0
+  // etc.) are real content but not "news" — every section's default view
+  // filters them out. They surface only via the dedicated "Routine Notices"
+  // ribbon tab, which is a peer of Top Stories / Market Impact / Stocks in
+  // Focus (see NOTICES_TAB below): selecting it, like selecting any of the
+  // other three, is just setting activeLeaf, so exactly one of the four (or
+  // one sidebar section) is ever the active selection at a time — no
+  // separate on/off toggle state needed anymore.
+  const visibleOf = (key: string) => (bySection[key] ?? []).filter((s) => !s.is_notice);
+  const allNotices = useMemo(
+    () => Object.values(bySection).flat().filter((s) => s.is_notice),
+    [bySection]
   );
+  const totalNoticeCount = allNotices.length;
   const countOf = (key: string) =>
     key === STOCKS_TAB
       ? stocksInFocus.length
@@ -245,7 +259,7 @@ export default function PaperTree({
       ? topStories.length
       : key === MARKET_TAB
       ? marketImpactStories.length
-      : visibleOf(key, false).length;
+      : visibleOf(key).length;
 
   // Top Stories / Market Impact entries carry a short curation note, but once
   // selected the reader wants the full story detail, not just that one-liner.
@@ -371,14 +385,16 @@ export default function PaperTree({
   // the summary is (rather than short items collapsing to one thin line).
   const descMinHeight = `${Math.round(15.5 * fontScale * 1.6 * 3.5)}px`;
 
-  // Global "show routine notices" toggle — off by default, applies across every
-  // section at once (button lives in the top ribbon next to Text size).
-  const [showNotices, setShowNotices] = useState(false);
-
   const isSpecialTab = activeLeaf === STOCKS_TAB || activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB;
+  // NOTICES_TAB isn't a sidebar leaf (not in bySection), so its own rows come
+  // from the flattened allNotices list rather than visibleOf. It's still a
+  // plain PaperStory[] like any sidebar section, though, so it flows through
+  // the same "not special" branch below and needs no other special-casing.
   const rows =
     !searchActive && activeLeaf && !isSpecialTab
-      ? visibleOf(activeLeaf, showNotices)
+      ? activeLeaf === NOTICES_TAB
+        ? allNotices
+        : visibleOf(activeLeaf)
       : [];
   const itemCount = searchActive
     ? searchResults.length
@@ -403,7 +419,7 @@ export default function PaperTree({
     ? topStories.map((s, i) => ({ key: `top-${i}`, headline: s.headline, edition: s.edition, section: s.section }))
     : activeLeaf === MARKET_TAB
     ? marketImpactStories.map((s, i) => ({ key: `mkt-${i}`, headline: s.headline, edition: s.edition, section: s.section }))
-    : rows.map((s) => ({ key: s.id, headline: s.headline, industry: s.industry, edition: s.edition, isNotice: s.is_notice, importance: s.importance }));
+    : rows.map((s) => ({ key: s.id, headline: s.headline, industry: s.industry, edition: s.edition, section: s.section, isNotice: s.is_notice, importance: s.importance }));
 
   const selIndex = Math.min(Math.max(focusIndex, 0), Math.max(tableRows.length - 1, 0));
   const selectedStory = searchActive
@@ -499,12 +515,19 @@ export default function PaperTree({
             </button>
           )}
         </div>
+        {/* Top Stories / Market Impact / Stocks in Focus / Routine Notices are four
+            peer selections that all just set activeLeaf, so exactly one of them
+            (or one sidebar section) is ever "on" at a time — never more than one
+            lit up simultaneously. All four share the same dark #182131 active
+            style used everywhere else a selection needs to read as unambiguous
+            (sidebar groups, IPO status pills), instead of each tab's own pale
+            color tint, which was easy to miss at a glance. */}
         <div className="flex items-center gap-1.5 shrink-0">
           <button
             onClick={() => selectLeaf(TOP_TAB)}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === TOP_TAB
-                ? "bg-red-50 border-red-200 text-red-700"
+                ? "bg-[#182131] border-[#182131] text-white"
                 : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
             }`}
           >
@@ -515,7 +538,7 @@ export default function PaperTree({
             onClick={() => selectLeaf(MARKET_TAB)}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === MARKET_TAB
-                ? "bg-yellow-50 border-yellow-200 text-yellow-700"
+                ? "bg-[#182131] border-[#182131] text-white"
                 : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
             }`}
           >
@@ -526,28 +549,28 @@ export default function PaperTree({
             onClick={() => selectLeaf(STOCKS_TAB)}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === STOCKS_TAB
-                ? "bg-emerald-50 border-emerald-200 text-emerald-700"
+                ? "bg-[#182131] border-[#182131] text-white"
                 : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
             }`}
           >
             Stocks in Focus
             <span className="text-[10px] font-normal tabular-nums opacity-70">{stocksInFocus.length}</span>
           </button>
+          {totalNoticeCount > 0 && (
+            <button
+              onClick={() => selectLeaf(NOTICES_TAB)}
+              className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
+                !searchActive && activeLeaf === NOTICES_TAB
+                  ? "bg-[#182131] border-[#182131] text-white"
+                  : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+              }`}
+            >
+              Routine Notices
+              <span className="text-[10px] font-normal tabular-nums opacity-70">{totalNoticeCount}</span>
+            </button>
+          )}
         </div>
         <div className="flex items-center gap-1 shrink-0 ml-auto sm:ml-0">
-        {totalNoticeCount > 0 && (
-          <button
-            onClick={() => setShowNotices((v) => !v)}
-            className={`flex items-center gap-1 text-[11px] font-medium px-2 py-1 rounded-md border transition-colors mr-2 ${
-              showNotices
-                ? "bg-[#182131] border-[#182131] text-white"
-                : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
-            }`}
-          >
-            Routine notices
-            <span className="text-[10px] font-normal tabular-nums opacity-70">{totalNoticeCount}</span>
-          </button>
-        )}
         <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
         <button
           onClick={() => bumpFont(-1)}
@@ -632,7 +655,7 @@ export default function PaperTree({
                 {searchResults.length}
               </span>
             </div>
-          ) : activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB || activeLeaf === STOCKS_TAB ? (
+          ) : activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB || activeLeaf === STOCKS_TAB || activeLeaf === NOTICES_TAB ? (
             <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
               <span
                 className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded ${
@@ -641,7 +664,13 @@ export default function PaperTree({
               >
                 {activeLeaf}
                 <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
-                  {activeLeaf === TOP_TAB ? topStories.length : activeLeaf === MARKET_TAB ? marketImpactStories.length : stocksInFocus.length}
+                  {activeLeaf === TOP_TAB
+                    ? topStories.length
+                    : activeLeaf === MARKET_TAB
+                    ? marketImpactStories.length
+                    : activeLeaf === STOCKS_TAB
+                    ? stocksInFocus.length
+                    : allNotices.length}
                 </span>
               </span>
             </div>
@@ -690,7 +719,7 @@ export default function PaperTree({
                     <h3 style={{ fontSize: px(17) }} className="font-semibold text-gray-900 leading-snug">
                       {selectedStory.headline}
                     </h3>
-                    {searchActive && (
+                    {(searchActive || activeLeaf === NOTICES_TAB) && (
                       <span className="shrink-0 text-[10.5px] font-medium px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 bg-gray-50">
                         {leafLabel(selectedStory.section)}
                       </span>
