@@ -43,16 +43,29 @@ const CLAUSE_WORDS =
 // pretending to be one point.
 const LONG_PIECE_CHARS = 130;
 
+// Trailing attribution tags ("according to a company petition notice",
+// "as per the filing", "in a regulatory filing") aren't a standalone fact —
+// they're a source citation for whatever precedes them. Splitting one off
+// into its own bullet produces a dangling fragment that doesn't read as a
+// complete point on its own (e.g. "according to a company petition
+// notice."). Keep these attached to the clause they're citing instead of
+// spinning them into a separate bullet.
+const ATTRIBUTION_STARTERS =
+  "according to|as per|per the|as stated in|as disclosed|" +
+  "in a regulatory filing|in an exchange filing|in a stock exchange filing|in a filing|in the filing";
+
 // Secondary pass for oversized pieces: split on a comma immediately before a
 // lowercase letter. Natural clause continuations ("…funds, valuing it at…",
 // "…AAHL) , a subsidiary of…") almost always resume lowercase; comma-joined
 // lists of proper nouns ("Alpha Wave Global, Premji Invest, Temasek…") stay
 // intact because each item starts with a capital, so this doesn't shred them
-// into one-name-per-bullet fragments.
+// into one-name-per-bullet fragments. A comma immediately before an
+// attribution starter (see above) is excluded so source citations stay
+// attached rather than becoming their own thin bullet.
 function secondarySplit(piece: string): string[] {
   if (piece.length <= LONG_PIECE_CHARS) return [piece];
   return piece
-    .split(/,\s+(?=[a-z])/g)
+    .split(new RegExp(`,\\s+(?=[a-z])(?!(?:${ATTRIBUTION_STARTERS})\\b)`, "g"))
     .map((s) => s.trim())
     .filter(Boolean);
 }
