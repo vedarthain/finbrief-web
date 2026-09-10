@@ -129,7 +129,7 @@ export default function DatePicker({
                   onClick={() => pick(d)}
                   className={`h-8 w-8 rounded-full text-[12px] flex items-center justify-center transition-colors ${
                     isActive
-                      ? "bg-gray-900 text-white font-semibold"
+                      ? "bg-[#182131] text-white font-semibold"
                       : available
                       ? "text-gray-700 hover:bg-amber-50 font-medium"
                       : "text-gray-300 cursor-not-allowed"

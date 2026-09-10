@@ -399,7 +399,7 @@ export default function PaperTree({
                 key={g.label}
                 onClick={() => selectGroup(g)}
                 className={`w-full flex items-center gap-2 px-3 py-2 text-[14.5px] transition-colors border-b border-gray-100 last:border-b-0 ${
-                  isActiveGroup ? "bg-gray-900 text-white font-medium" : "text-gray-600 hover:bg-gray-50"
+                  isActiveGroup ? "bg-[#182131] text-white font-medium" : "text-gray-600 hover:bg-gray-50"
                 }`}
               >
                 <span

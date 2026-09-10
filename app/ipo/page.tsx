@@ -13,13 +13,13 @@ export default async function IpoPage() {
   });
 
   return (
-    <div className="min-h-screen bg-[#F2F2F7]">
+    <div className="min-h-screen bg-[#F2F3F8]">
 
       {/* ── Header ─────────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+      <header className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-[#E3E6ED]">
         <div className="mx-auto max-w-7xl px-4 py-2.5 flex items-center justify-between gap-2 flex-wrap">
           <div className="flex items-center gap-2.5 shrink-0">
-            <div className="w-8 h-8 rounded-lg bg-gray-900 flex items-center justify-center shadow-sm shrink-0">
+            <div className="w-8 h-8 rounded-lg bg-[#182131] flex items-center justify-center shadow-sm shrink-0">
               <span className="text-white text-[11px] font-bold tracking-tight">FB</span>
             </div>
             <span className="text-[19px] font-bold tracking-tight text-gray-900 whitespace-nowrap">
@@ -44,7 +44,7 @@ export default async function IpoPage() {
       <footer className="mt-6 border-t border-gray-200 bg-white px-4 py-4">
         <div className="mx-auto max-w-7xl flex items-center justify-between flex-wrap gap-3">
           <div className="flex items-center gap-2">
-            <div className="w-5 h-5 rounded bg-gray-900 flex items-center justify-center">
+            <div className="w-5 h-5 rounded bg-[#182131] flex items-center justify-center">
               <span className="text-white text-[8px] font-black">FB</span>
             </div>
             <span className="text-[13px] text-gray-400 font-medium">

@@ -19,7 +19,7 @@ export default function NavTabs() {
             key={t.href}
             href={t.href}
             className={`text-[13px] font-medium px-3 py-1.5 rounded-full transition-colors whitespace-nowrap ${
-              active ? "bg-gray-900 text-white" : "text-gray-500 hover:bg-gray-100"
+              active ? "bg-[#182131] text-white" : "text-gray-500 hover:bg-gray-100"
             }`}
           >
             {t.label}

@@ -3,6 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Quiet editorial "reading desk" palette — cool paper background, soft
+     card borders, muted ink, navy accent (instead of pure black/gray-900). */
+  --paper: #f2f3f8;
+  --card: #ffffff;
+  --ink: #263246;
+  --muted: #647186;
+  --line: #e3e6ed;
+  --accent: #182131;
 }
 
 @theme inline {
