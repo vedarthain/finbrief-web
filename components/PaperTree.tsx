@@ -32,7 +32,7 @@ export function renderSummary(text: string, dimClass: string) {
 // of one dense block.
 const CLAUSE_WORDS =
   "valuing|giving|taking|making|bringing|pushing|raising|adding|translating|" +
-  "reflecting|marking|following|entered|said|announced|agreed|reported|filed|" +
+  "reflecting|marking|following|entered|said|saying|announced|agreed|reported|filed|" +
   "posted|clocked|registered|logged|stated|noted|flagged|warned|forecast|" +
   "projected|unveiled|launched|opened|closed|signed|inked|secured|clinched|" +
   "confirmed|plans|aims|expects|targets";
@@ -44,13 +44,16 @@ const CLAUSE_WORDS =
 // on decimals/abbreviations (e.g. "5.24%", "₹1,846.90") since those aren't
 // followed by a capital/marker; (b) on semicolons, which the underlying
 // summaries frequently use to chain multiple distinct facts into one
-// sentence; and (c) on a comma immediately before one of CLAUSE_WORDS, which
+// sentence; (c) on a comma immediately before one of CLAUSE_WORDS, which
 // catches the long compound sentences (appositive + main clause, or a
-// trailing "valuing it at…" clause) that would otherwise render as one
-// oversized bullet.
+// trailing "valuing it at…"/"saying X…" clause) that would otherwise render
+// as one oversized bullet; and (d) on a standalone " while ", which the
+// summaries use to contrast two distinct figures/facts in one sentence (e.g.
+// "rose 14.8% in August while April-August collections rose 11%") — each
+// side of "while" is its own fact and reads better as its own bullet.
 function splitSentences(text: string): string[] {
   return text
-    .split(new RegExp(`(?:(?<=[.!?])\\s+(?=[A-Z₹\\[]))|(?:;\\s+)|(?:,\\s+(?=(?:${CLAUSE_WORDS})\\b))`, "gi"))
+    .split(new RegExp(`(?:(?<=[.!?])\\s+(?=[A-Z₹\\[]))|(?:;\\s+)|(?:,\\s+(?=(?:${CLAUSE_WORDS})\\b))|(?:\\s+while\\s+)`, "gi"))
     .map((s) => s.trim())
     .filter(Boolean);
 }
