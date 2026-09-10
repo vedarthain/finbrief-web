@@ -271,6 +271,10 @@ export default function PaperTree({
   }
   const fontScale = FONT_STEPS[fontStepIdx];
   const px = (base: number) => `${Math.round(base * fontScale * 10) / 10}px`;
+  // Reserve at least ~3.5 lines of height for the description body so every
+  // story's detail panel reads as a consistent block regardless of how short
+  // the summary is (rather than short items collapsing to one thin line).
+  const descMinHeight = `${Math.round(15.5 * fontScale * 1.6 * 3.5)}px`;
 
   // Per-section "show routine notices" toggle — off by default everywhere.
   const [noticesShownFor, setNoticesShownFor] = useState<Set<string>>(new Set());
@@ -400,7 +404,7 @@ export default function PaperTree({
     <div className="flex flex-col gap-1.5">
       {/* ── Single top ribbon: title, search, calendar, font-size ─────────── */}
       <div className="flex items-center gap-2.5 flex-wrap px-3 py-2 rounded-lg bg-white border border-gray-200">
-        <h1 className="text-[16px] font-bold tracking-tight text-gray-900 shrink-0">Today&apos;s Paper</h1>
+        <h1 className="text-[14px] font-bold tracking-tight text-gray-900 shrink-0">Today&apos;s Paper</h1>
         <div className="relative flex-1 min-w-[140px] sm:max-w-xs">
           <input
             type="text"
@@ -578,7 +582,7 @@ export default function PaperTree({
                     )}
                     {multiEdition && <EditionBadge edition={selectedStory.edition} />}
                   </div>
-                  <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                  <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
                     {renderSummaryBullets(selectedStory.summary, "text-gray-700")}
                   </div>
                   {selectedStory.page_number != null && (
@@ -598,7 +602,7 @@ export default function PaperTree({
                     {multiEdition && selectedTop.edition && <EditionBadge edition={selectedTop.edition} />}
                   </div>
                   {selectedTop.note && (
-                    <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                    <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
                       {renderSummaryBullets(selectedTop.note, "text-gray-700")}
                     </div>
                   )}
@@ -616,7 +620,7 @@ export default function PaperTree({
                     {multiEdition && selectedMarket.edition && <EditionBadge edition={selectedMarket.edition} />}
                   </div>
                   {selectedMarket.note && (
-                    <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                    <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
                       {renderSummaryBullets(selectedMarket.note, "text-gray-700")}
                     </div>
                   )}
@@ -630,7 +634,7 @@ export default function PaperTree({
                     </h3>
                     {multiEdition && selectedStock.edition && <EditionBadge edition={selectedStock.edition} />}
                   </div>
-                  <div style={{ fontSize: px(15.5) }} className="text-gray-700">
+                  <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
                     {renderSummaryBullets(selectedStock.note, "text-gray-700")}
                   </div>
                 </>
