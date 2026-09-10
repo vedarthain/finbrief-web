@@ -1,0 +1,817 @@
+{
+  "edition": "Business Standard",
+  "paper_date": "2026-09-10",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "Mining dependence, rising borrowings hit Chhattisgarh's fiscal health: NCAER study",
+      "summary": "An NCAER study flagged that [[Chhattisgarh]]'s heavy dependence on mining revenue and rising borrowings pose risks to the state's fiscal health, calling for diversification of the revenue base beyond mineral royalties.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Policy",
+      "headline": "Blends beyond E20 only through flex-fuel vehicles: ISMA",
+      "summary": "Any ethanol-blending target beyond E20 will require flex-fuel vehicles capable of running on higher ethanol blends, oil sector veteran Tarun Kapoor told the Indian Sugar and Bio-energy Manufacturers Association, adding that current-generation vehicles are not engineered for blends above 20%.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sebi proposes easier director eligibility norms for market infrastructure institutions",
+      "summary": "The [[Securities and Exchange Board of India]] proposed relaxing director eligibility criteria for market infrastructure institutions (MIIs) such as exchanges, clearing corporations and depositories, aiming to widen the talent pool for board positions.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sebi lifts ban on JPMorgan unit over index manipulation",
+      "summary": "[[Securities and Exchange Board of India]] lifted its earlier ban on a [[JPMorgan]] unit that had been penalised over alleged index manipulation, closing out the enforcement action.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "FSSAI's proposed food warning labels face challenge over 'two-nutrient' trigger",
+      "summary": "The food regulator's proposed front-of-pack warning label rules, which trigger a warning based on any two of sugar, salt and fat thresholds being breached, are facing pushback from industry over the design of the two-nutrient trigger mechanism.",
+      "page_number": 11,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "SFIO recommends probe into Xiaomi India",
+      "summary": "The Serious Fraud Investigation Office recommended a formal probe into [[Xiaomi]]'s India operations, adding to the regulatory scrutiny the Chinese smartphone maker has faced over compliance and remittance issues.",
+      "page_number": 3,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NCLT petition seeks share capital reduction at Bangalore Malur Highways",
+      "summary": "[[Bangalore Malur Highways]] Limited moved the National Company Law Tribunal seeking approval for a reduction of its share capital, according to a company petition notice.",
+      "page_number": 24,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "APAR Industries: notice of transfer of shares to demat account under special window",
+      "summary": "[[APAR Industries]] issued a notice regarding transfer of shares to the demat account of the Investor Education and Protection Fund under the special window facility for eligible shareholders.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sika Interplant Systems: notice of transfer of shares under special window",
+      "summary": "[[Sika Interplant Systems]] issued a notice regarding transfer of unclaimed shares to the demat account of the Investor Education and Protection Fund under the special window facility.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Tata Power Delhi Distribution: tender notice",
+      "summary": "[[Tata Power Delhi Distribution]] issued a tender notice inviting bids for supply/works contracts.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Coromandel International: notice for issue of duplicate share certificate",
+      "summary": "[[Coromandel International]] issued a public notice regarding issuance of a duplicate share certificate in place of one reported lost by a shareholder.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "AstraZeneca Pharma India: postal ballot notice",
+      "summary": "[[AstraZeneca Pharma India]] issued a postal ballot notice seeking shareholder approval on resolutions to be voted on remotely.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Aditya Birla Sun Life Mutual Fund: IDCW record date notice",
+      "summary": "[[Aditya Birla Sun Life Mutual Fund]] announced a record date for income distribution cum capital withdrawal (IDCW) under certain of its schemes.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Raymond Limited: EGM notice",
+      "summary": "[[Raymond]] issued a notice convening an extraordinary general meeting of shareholders to consider resolutions specified in the notice.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Wysali Pharmaceuticals: e-auction sale notice under IBC liquidation",
+      "summary": "[[Wysali Pharmaceuticals]] Limited, undergoing liquidation under the Insolvency and Bankruptcy Code, issued an e-auction sale notice for disposal of its assets.",
+      "page_number": 2,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Dabur India: IEPF share transfer notice",
+      "summary": "[[Dabur India]] issued a notice regarding transfer of unclaimed shares and dividends to the Investor Education and Protection Fund.",
+      "page_number": 5,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "State Bank of India: branch and cybersecurity tender notices",
+      "summary": "[[State Bank of India]] issued tender notices covering its Wadala branch premises and a cybersecurity assessment engagement with SG Global Securities.",
+      "page_number": 5,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "State Bank of India: SARFAESI demand notice against Abhay Pandurang Desai",
+      "summary": "[[State Bank of India]] issued a demand notice under the SARFAESI Act against borrower Abhay Pandurang Desai over a defaulted loan account.",
+      "page_number": 5,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Cochin International Airport: tender notice",
+      "summary": "[[Cochin International Airport]] Limited issued a tender notice inviting bids for airport-related works or services.",
+      "page_number": 10,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Punjab & Sind Bank: AGM and cybersecurity tender notice",
+      "summary": "[[Punjab & Sind Bank]] issued notices covering its annual general meeting and a cybersecurity-related tender.",
+      "page_number": 10,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Telangana Power Generation Corporation: tender notice",
+      "summary": "Telangana Power Generation Corporation issued a tender notice inviting bids for power-sector works or supplies.",
+      "page_number": 10,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Vinyl Chemicals India: special window transfer notice",
+      "summary": "[[Vinyl Chemicals India]] issued a notice regarding transfer of unclaimed shares under the special window facility to the Investor Education and Protection Fund.",
+      "page_number": 10,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Unity Small Finance Bank: locker-defaulter notices",
+      "summary": "[[Unity Small Finance Bank]] issued multiple notices to safe-deposit locker holders in default of rent payments, warning of action including breaking open lockers as per RBI guidelines.",
+      "page_number": 14,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Axis Bank: SARFAESI demand notice against Shekhar Dilip Kasbe",
+      "summary": "[[Axis Bank]] issued a demand notice under the SARFAESI Act against borrower Shekhar Dilip Kasbe over a defaulted loan account.",
+      "page_number": 14,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Everest Kanto Cylinder: 47th AGM notice",
+      "summary": "[[Everest Kanto Cylinder]] Limited issued a notice convening its 47th annual general meeting.",
+      "page_number": 14,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Dhanlaxmi Bank: gold-loan auction notice",
+      "summary": "[[Dhanlaxmi Bank]] issued a public notice for auction of gold ornaments pledged against defaulted gold loans.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Empower India: 44th AGM notice",
+      "summary": "Empower India Limited issued a notice convening its 44th annual general meeting.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Kirloskar Brothers: notice for issue of duplicate share certificate",
+      "summary": "[[Kirloskar Brothers]] issued a public notice regarding issuance of a duplicate share certificate in place of one reported lost by a shareholder.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "SBI Life Insurance: change of registered address notice",
+      "summary": "[[SBI Life Insurance]] issued a public notice announcing a change of its registered office address.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Ujjivan Small Finance Bank: SARFAESI auction notice",
+      "summary": "[[Ujjivan Small Finance Bank]] issued a public auction notice under the SARFAESI Act for secured assets of defaulting borrowers.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Canara Bank: e-auction and demand notices",
+      "summary": "[[Canara Bank]] issued an e-auction sale notice for multiple secured properties in the Nashik region, and a separate demand notice via DRT-II Mumbai against M/s Natalia Tours and Travels.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "East Coast Railway: tender notice",
+      "summary": "East Coast Railway issued a tender notice inviting bids for railway-related works or supplies.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Cupid Limited: IEPF share transfer notice",
+      "summary": "[[Cupid Limited]] issued a notice to shareholders regarding transfer of unclaimed shares to the Investor Education and Protection Fund.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Apna Sahakari Bank: notice for sale of secured assets",
+      "summary": "[[Apna Sahakari Bank]] issued a public notice for sale of secured assets across multiple properties of defaulting borrowers.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Midwest Energy: 36th AGM notice",
+      "summary": "Midwest Energy Limited issued a notice convening its 36th annual general meeting.",
+      "page_number": 3,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "NHPC: special window transfer notice",
+      "summary": "[[NHPC]] issued a notice regarding transfer of unclaimed shares under the special window facility to the Investor Education and Protection Fund.",
+      "page_number": 7,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Special-window and tender notices: PNC Media and Entertainment, DCB Bank, Jamna Auto Industries, Hexaware Technologies, Baroda Sun Technologies, SBI GITC",
+      "summary": "Multiple companies issued routine special-window share-transfer, postal-ballot and tender notices, including [[PNC Media and Entertainment]], [[DCB Bank]], [[Jamna Auto Industries]], [[Hexaware Technologies]], [[Baroda Sun Technologies]] and State Bank of India's Global IT Centre.",
+      "page_number": 7,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Sector",
+      "headline": "Global summits push Delhi's luxury hotel demand to peak",
+      "summary": "A string of large international summits and conferences in the capital has pushed luxury hotel occupancy and room rates in [[Delhi]] to multi-year highs, with operators reporting near-full inventory during peak event windows.",
+      "page_number": 12,
+      "importance": 3,
+      "industry": "Hospitality"
+    },
+    {
+      "section": "Sector",
+      "headline": "Funding needs to scale up to meet PM Modi's fintech vision",
+      "summary": "A Datanomics analysis found that funding flows into India's fintech sector need to scale up meaningfully to match the government's stated ambitions for digital financial inclusion, even as transaction volumes on platforms like UPI keep growing.",
+      "page_number": 6,
+      "importance": 2,
+      "industry": "Fintech"
+    },
+    {
+      "section": "Sector",
+      "headline": "94% of rural two-wheelers still run on petrol: JATO Dynamics",
+      "summary": "Data from JATO Dynamics showed 94% of two-wheelers sold in rural India continue to run on petrol, underscoring the slow pace of electric two-wheeler penetration outside urban markets.",
+      "page_number": 2,
+      "importance": 3,
+      "industry": "Automobiles"
+    },
+    {
+      "section": "Sector",
+      "headline": "Strong defence growth trajectory hinges on execution",
+      "summary": "A Compass column assessed that India's defence manufacturing sector is on a strong growth trajectory driven by indigenisation pushes and export orders, but cautioned that sustaining the momentum depends on execution discipline at PSU and private defence contractors.",
+      "page_number": 13,
+      "importance": 3,
+      "industry": "Defence"
+    },
+    {
+      "section": "Sector",
+      "headline": "Time to plug a chip design gap",
+      "summary": "A feature on India's semiconductor push argued that despite incentives under the Design Linked Incentive scheme, the country still has a significant gap in chip design capability relative to fabrication ambitions, and called for deeper venture capital support for design-stage startups.",
+      "page_number": 10,
+      "importance": 2,
+      "industry": "Semiconductors"
+    },
+    {
+      "section": "Announcements",
+      "headline": "House of Tatas plans governance review meetings amid succession scrutiny",
+      "summary": "[[Tata Sons]] and group governance bodies are set to hold a series of meetings to review board governance practices, amid continued scrutiny of succession planning across the Tata group.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "Meesho discontinues chief product officer role",
+      "summary": "[[Meesho]] discontinued its chief product officer role as part of an internal restructuring of its leadership team.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Classic Legends plans capacity expansion",
+      "summary": "[[Classic Legends]], the maker of Jawa and Yezdi motorcycles, outlined plans to expand manufacturing capacity to meet rising demand for its retro-styled motorcycles.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Razorpay CEO flags AI-driven consolidation risk for startups",
+      "summary": "[[Razorpay]]'s chief executive said the rapid adoption of AI tools could accelerate consolidation among startups, as companies with weaker technology moats struggle to compete with AI-native rivals.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Sarvam executive weighs in on India's AI leadership ambitions",
+      "summary": "A senior [[Sarvam AI]] executive said India has an opportunity to lead in applied AI even without frontier foundation models, by focusing on domain-specific deployment at scale.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Lohum raises stake in Zimbabwe lithium carbonate project",
+      "summary": "Battery-recycling firm [[Lohum]] increased its stake in a lithium carbonate project in Zimbabwe, deepening its access to upstream battery-metal supply as it scales domestic recycling capacity.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "APSEZ wins Paradip Port container berth contract",
+      "summary": "[[Adani Ports and Special Economic Zone]] won a contract to develop and operate a container berth at Paradip Port, adding to its expanding portfolio of port assets on India's east coast.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Adani Group, IHC ink ₹2.1-trillion investment MoUs with Odisha government",
+      "summary": "[[Adani Group]] and Abu Dhabi's International Holding Company signed memoranda of understanding worth ₹2.1 trillion with the Odisha government for investments spanning energy, infrastructure and industrial projects.",
+      "page_number": 2,
+      "importance": 4
+    },
+    {
+      "section": "Events",
+      "headline": "QNu Labs raises ₹200 crore in Series A1 funding",
+      "summary": "Quantum-safe cybersecurity startup [[QNu Labs]] raised ₹200 crore in a Series A1 funding round to scale its quantum-key-distribution and post-quantum cryptography products.",
+      "page_number": 3,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Torrent Pharma posts strong August growth, analysts note",
+      "summary": "[[Torrent Pharmaceuticals]] posted year-on-year growth of 10.7-15.1% in August domestic sales, according to Nomura and HDFC Securities notes, which flagged the company's continued outperformance versus the broader pharma market.",
+      "page_number": 14,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "NCL raises coal output and supply amid power-sector shortages",
+      "summary": "[[Northern Coalfields Limited]], a subsidiary of Coal India, ramped up daily coal output and supply to power plants as receding monsoon rains eased mining disruptions, helping address shortages flagged by several power generators.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Kanohar Electricals IPO bidding closes today; price band ₹601-632",
+      "summary": "[[Kanohar Electricals]] Limited's main-board IPO, priced in a band of ₹601-632 per share, closes for bidding today on BSE and NSE. The Meerut-based transformer manufacturer and EPC contractor is raising funds to expand manufacturing capacity and fund working capital.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Manipal Payment and Identity Solutions IPO open; price band ₹322-339",
+      "summary": "[[Manipal Payment and Identity Solutions]] Limited's main-board IPO, priced in a band of ₹322-339 per share, is open for bidding on BSE and NSE and closes Friday, September 11. The Bengaluru-based company, formerly MCT Cards & Technology, was among the weakest performers on day one, subscribed just 17%.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Maharaja & Speedex India IPO opens today; price band ₹177-186",
+      "summary": "[[Maharaja & Speedex India]] Limited's SME-platform IPO, priced in a band of ₹177-186 per share, opened for bidding today on the BSE SME platform and closes Tuesday, September 15. The Delhi/Haryana-based company makes stainless-steel bottles and drinkware.",
+      "page_number": 1,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Vama Wovenfab IPO to open September 15; price band ₹324-341",
+      "summary": "[[Vama Wovenfab]] Limited's SME IPO, priced in a band of ₹324-341 per share, opens for bidding on the BSE SME platform on September 15 and closes September 17.",
+      "page_number": 16,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Sonaselection India IPO: anchor bidding September 16, opens September 17; price band ₹94-99",
+      "summary": "[[Sonaselection India]] Limited's main-board IPO, priced in a band of ₹94-99 per share, will see anchor investor bidding on September 16, with the public issue opening September 17 and closing September 21 on BSE and NSE.",
+      "page_number": 16,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Oyo-parent Prism Hospitality weighs IPO",
+      "summary": "[[Prism Hospitality]] (Oyo's parent) is weighing plans for a public listing, according to a report, as the hospitality group looks to tap capital markets following improved profitability.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "Net SIP inflows surge to nearly ₹2 trillion in FY26",
+      "summary": "Net systematic investment plan inflows into Indian mutual funds surged to nearly ₹2 trillion in FY26, reflecting sustained retail participation in equity markets even amid recent volatility.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "Bernstein backs commodity derivatives boom, bullish on MCX",
+      "summary": "Brokerage Bernstein turned bullish on India's commodity derivatives boom, citing strong volume growth at the [[Multi Commodity Exchange of India]] as a structural tailwind for the exchange's earnings.",
+      "page_number": 13,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "French FPIs' India assets jump 10% in August",
+      "summary": "Assets held by French foreign portfolio investors in Indian markets jumped 10% in August, according to depository data, as European institutional allocations to India continued to rise.",
+      "page_number": 13,
+      "importance": 2
+    },
+    {
+      "section": "Trade",
+      "headline": "India seeks payment-system alignment under free trade agreements",
+      "summary": "India is pushing to include payment-system interoperability provisions in its ongoing free trade agreement negotiations, seeking to align digital payment rails such as UPI with partner countries as part of broader trade pacts.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Trade",
+      "headline": "India, Thailand discuss deeper trade pact under Asean framework",
+      "summary": "India and Thailand held discussions on deepening bilateral trade ties under the broader Asean trade framework, covering tariff alignment and market access issues.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "At Brics summit, India to position itself as a 'bridge builder'",
+      "summary": "India is set to position itself as a 'bridge builder' among Brics nations at the upcoming summit, seeking to balance its ties with Western economies against deepening engagement with the Brics bloc.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "China's DeepSeek parent readies domestic IPO via CITIC Securities",
+      "summary": "The parent company of Chinese AI model developer [[DeepSeek]] is preparing a domestic listing in China with [[CITIC Securities]] as sponsor, according to a report, as Chinese AI firms look to tap onshore capital markets.",
+      "page_number": 3,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Ajit Mohan steps down as Snap chief business officer",
+      "summary": "Ajit Mohan stepped down as chief business officer of [[Snap Inc]], the parent of Snapchat, in the latest high-profile departure of an Indian-origin executive from a major US technology company.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Hong Kong's first post-colonial leader Tung Chee-hwa dies at 89",
+      "summary": "Tung Chee-hwa, Hong Kong's first chief executive after the 1997 handover from British rule, died at the age of 89.",
+      "page_number": 8,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Bessent warns against China winning global AI race",
+      "summary": "US Treasury Secretary Scott Bessent warned that the United States must not cede leadership in the global AI race to China, calling for continued investment in domestic AI infrastructure.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Apple unveils foldable iPhone",
+      "summary": "[[Apple]] unveiled its first foldable iPhone, entering a device category already contested by several rivals, as the company looks to reignite hardware upgrade demand.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Russia hopes US-mediated Ukraine talks resume",
+      "summary": "Russia said it hopes talks over the Ukraine conflict, mediated by the United States, will resume soon, as diplomatic efforts to end the war continue intermittently.",
+      "page_number": 8,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "India, Bangladesh discuss deepening defence ties",
+      "summary": "India and Bangladesh discussed deepening bilateral defence ties, according to comments from a senior envoy, amid efforts to stabilise the relationship after a period of political transition in Dhaka.",
+      "page_number": 7,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Mounting cost of a stalemate",
+      "summary": "An editorial argued that the continued West Asia stalemate driving oil prices past $100 a barrel carries a mounting economic cost for import-dependent economies like India, and called for accelerated diversification of crude sourcing and strategic reserves.",
+      "page_number": 9,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "A dose of innovation",
+      "summary": "An opinion piece argued that India's pharmaceutical policy framework needs to do more to incentivise genuine drug innovation rather than incremental generics manufacturing.",
+      "page_number": 9,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Banks, beaches, and rapid growth",
+      "summary": "A Policy Pillars column examined Karnataka's economic growth model, weighing its banking-sector strength and coastal tourism potential against infrastructure bottlenecks.",
+      "page_number": 9,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Freebie frenzy vs women's empowerment",
+      "summary": "A SWOT column debated whether state welfare transfer schemes targeted at women constitute genuine empowerment or populist freebies, weighing fiscal costs against social outcomes.",
+      "page_number": 9,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "India's spam crisis is a design flaw, not an enforcement issue",
+      "summary": "An opinion piece argued that India's persistent spam-call and message problem stems from structural design flaws in telecom and KYC systems rather than lax enforcement, and called for platform-level fixes over punitive measures.",
+      "page_number": 10,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Delhi's dichotomy: big infra projects alongside unauthorised sprawl",
+      "summary": "A retrospective feature marking 35 years of economic liberalisation examined how Delhi has combined marquee infrastructure projects with persistent unauthorised urban sprawl, questioning the city's planning priorities.",
+      "page_number": 11,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Indian students rethink the American dream",
+      "summary": "A feature reported that growing visa uncertainty and tightening US immigration policy are prompting more Indian students to reconsider studying in the United States in favour of alternative destinations.",
+      "page_number": 12,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "What to do when a lender loses your property papers",
+      "summary": "An advisory column outlined the legal recourse available to borrowers when a bank or housing finance company loses original property title documents pledged as loan collateral.",
+      "page_number": 14,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Financial emergency: key papers your family should know where to find",
+      "summary": "An advisory column listed the essential financial and legal documents that families should keep accessible and disclosed to next of kin in case of a medical or financial emergency.",
+      "page_number": 14,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Gadkari calls for greater accountability among government officials",
+      "summary": "Union minister Nitin Gadkari called for greater accountability among government officials in project execution, citing delays in infrastructure delivery as a recurring governance challenge.",
+      "page_number": 7,
+      "importance": 1
+    }
+  ],
+  "stocksInFocus": [
+    {
+      "name": "Kanohar Electricals",
+      "note": "Main-board IPO bidding closes today; price band ₹601-632"
+    },
+    {
+      "name": "Manipal Payment and Identity Solutions",
+      "note": "IPO open, closes Sept 11; price band ₹322-339, weakest Day 1 response at 17% subscribed"
+    },
+    {
+      "name": "Adani Ports and Special Economic Zone",
+      "note": "Won Paradip Port container berth contract"
+    },
+    {
+      "name": "Torrent Pharmaceuticals",
+      "note": "August domestic sales grew 10.7-15.1% YoY per Nomura, HDFC Securities notes"
+    },
+    {
+      "name": "QNu Labs",
+      "note": "Raised ₹200 crore in Series A1 funding round"
+    },
+    {
+      "name": "Multi Commodity Exchange of India",
+      "note": "Bernstein turned bullish citing strong derivatives volume growth"
+    },
+    {
+      "name": "Coal India",
+      "note": "Subsidiary NCL ramps up coal output and supply amid power-sector shortages"
+    }
+  ],
+  "topStories": [
+    {
+      "headline": "Oil breaches $100; stocks, rupee slide",
+      "section": "Market",
+      "note": "Enriched with Sensex/Nifty/IT-stock detail from Business Standard."
+    },
+    {
+      "headline": "Coforge chairman OP Bhatt resigns over audit concerns",
+      "section": "Announcements",
+      "note": "Enriched with governance-dispute detail over Advent International board evaluation report."
+    },
+    {
+      "headline": "Adani Group, IHC ink ₹2.1-trillion investment MoUs with Odisha government",
+      "section": "Events"
+    },
+    {
+      "headline": "APSEZ wins Paradip Port container berth contract",
+      "section": "Events"
+    },
+    {
+      "headline": "Kanohar Electricals IPO bidding closes today; price band ₹601-632",
+      "section": "IPO"
+    },
+    {
+      "headline": "NSE eyes listing before September 25",
+      "section": "IPO"
+    },
+    {
+      "headline": "Torrent Pharma posts strong August growth, analysts note",
+      "section": "Events"
+    },
+    {
+      "headline": "Bessent warns against China winning global AI race",
+      "section": "International News"
+    },
+    {
+      "headline": "Apple unveils foldable iPhone",
+      "section": "International News"
+    },
+    {
+      "headline": "China's DeepSeek parent readies domestic IPO via CITIC Securities",
+      "section": "International News"
+    },
+    {
+      "headline": "Net SIP inflows surge to nearly ₹2 trillion in FY26",
+      "section": "Market"
+    },
+    {
+      "headline": "Sebi lifts ban on JPMorgan unit over index manipulation",
+      "section": "Regulatory"
+    }
+  ],
+  "marketImpact": [
+    {
+      "headline": "Oil breaches $100; stocks, rupee slide",
+      "section": "Market"
+    },
+    {
+      "headline": "Adani Group, IHC ink ₹2.1-trillion investment MoUs with Odisha government",
+      "section": "Events"
+    },
+    {
+      "headline": "APSEZ wins Paradip Port container berth contract",
+      "section": "Events"
+    },
+    {
+      "headline": "Torrent Pharma posts strong August growth, analysts note",
+      "section": "Events",
+      "note": "Analyst upgrades cited as potential share-price catalyst."
+    },
+    {
+      "headline": "Bernstein backs commodity derivatives boom, bullish on MCX",
+      "section": "Market"
+    },
+    {
+      "headline": "Net SIP inflows surge to nearly ₹2 trillion in FY26",
+      "section": "Market"
+    },
+    {
+      "headline": "Coforge chairman OP Bhatt resigns over audit concerns",
+      "section": "Announcements",
+      "note": "Stock fell over 5% intraday on the news."
+    },
+    {
+      "headline": "Sebi lifts ban on JPMorgan unit over index manipulation",
+      "section": "Regulatory"
+    },
+    {
+      "headline": "QNu Labs raises ₹200 crore in Series A1 funding",
+      "section": "Events"
+    }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Kanohar Electricals",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 601,
+      "issue_price_high": 632,
+      "open_date": null,
+      "close_date": "2026-09-10",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "Main-board IPO; transformer manufacturer and EPC contractor based in Meerut, UP; bidding closes today."
+    },
+    {
+      "company_name": "Maharaja & Speedex India",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 177,
+      "issue_price_high": 186,
+      "open_date": "2026-09-10",
+      "close_date": "2026-09-15",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "SME IPO; stainless-steel bottles and drinkware maker based in Delhi/Haryana."
+    },
+    {
+      "company_name": "Vama Wovenfab",
+      "ticker": null,
+      "exchange": "BSE SME",
+      "issue_price_low": 324,
+      "issue_price_high": 341,
+      "open_date": "2026-09-15",
+      "close_date": "2026-09-17",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "SME IPO."
+    },
+    {
+      "company_name": "Sonaselection India",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 94,
+      "issue_price_high": 99,
+      "open_date": "2026-09-17",
+      "close_date": "2026-09-21",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Main-board IPO; anchor investor bidding September 16."
+    },
+    {
+      "company_name": "Manipal Payment and Identity Solutions",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 322,
+      "issue_price_high": 339,
+      "open_date": "2026-09-09",
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "open",
+      "notes": "Weakest response among day-one IPOs, subscribed 17% on day one. Bengaluru-based, formerly MCT Cards & Technology."
+    },
+    {
+      "company_name": "National Stock Exchange",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 1700,
+      "issue_price_high": 1800,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Public offer may be priced at ₹1,700-1,800/share per Smart Investor report; company reportedly eyeing listing before September 25 and may trim issue size."
+    }
+  ]
+}
