@@ -43,10 +43,6 @@ export default async function HomePage({
   const noticeCount = stories.filter((s) => s.is_notice).length;
   const visibleCount = stories.length - noticeCount;
 
-  const istTime = new Date().toLocaleString("en-IN", {
-    timeZone: "Asia/Kolkata", weekday: "short",
-    day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
-  });
 
   return (
     <div className="min-h-screen bg-[#F2F3F8]">
@@ -65,9 +61,10 @@ export default async function HomePage({
           <NavTabs />
           <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
           {/* PaperTree portals its search/ribbon-tab/text-size controls in here so
-              they share this one header line instead of a separate row below. */}
+              they share this one header line instead of a separate row below.
+              The search box carries ml-auto so it lands at the far right,
+              where the IST clock used to sit. */}
           <div id="paper-toolbar-slot" className="flex items-center gap-2.5 flex-1 min-w-0 flex-wrap" />
-          <span className="hidden sm:inline text-[13px] text-gray-400 whitespace-nowrap">{istTime} IST</span>
         </div>
       </header>
 

@@ -519,24 +519,6 @@ export default function PaperTree({
   // No "Today's Paper" title here: the active NavTabs pill already says that.
   const ribbon = (
       <>
-        <div className="relative flex-1 min-w-[120px] sm:max-w-[220px]">
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search all stories…"
-            className="w-full text-[13px] pl-3 pr-7 py-1.5 rounded-lg border border-gray-200 bg-white text-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200"
-          />
-          {query && (
-            <button
-              onClick={() => setQuery("")}
-              aria-label="Clear search"
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-[13px]"
-            >
-              ✕
-            </button>
-          )}
-        </div>
         {/* Top Stories / Market Impact / Stocks in Focus / Routine Notices are four
             peer selections that all just set activeLeaf, so exactly one of them
             (or one sidebar section) is ever "on" at a time — never more than one
@@ -596,7 +578,7 @@ export default function PaperTree({
             </button>
           )}
         </div>
-        <div className="flex items-center gap-1 shrink-0 ml-auto sm:ml-0">
+        <div className="flex items-center gap-1 shrink-0">
         <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
         <button
           onClick={() => bumpFont(-1)}
@@ -614,6 +596,25 @@ export default function PaperTree({
         >
           A+
         </button>
+        </div>
+        {/* Pushed to the far right (where the IST clock used to sit) via ml-auto. */}
+        <div className="relative flex-1 min-w-[120px] max-w-[220px] ml-auto">
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search all stories…"
+            className="w-full text-[13px] pl-3 pr-7 py-1.5 rounded-lg border border-gray-200 bg-white text-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          />
+          {query && (
+            <button
+              onClick={() => setQuery("")}
+              aria-label="Clear search"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-[13px]"
+            >
+              ✕
+            </button>
+          )}
         </div>
       </>
   );
