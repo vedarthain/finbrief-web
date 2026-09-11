@@ -198,7 +198,8 @@ const leafLabel = (leaf: string) => LEAF_LABEL[leaf] ?? leaf;
 // sidebar tree.
 const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Economy", single: "Economy" },
-  { label: "Policy & Regulatory", children: ["Policy", "Regulatory"] },
+  { label: "Policy", single: "Policy" },
+  { label: "Regulatory", single: "Regulatory" },
   { label: "Sector", single: "Sector" },
   { label: "IPO", single: "IPO" },
   { label: "Market", single: "Market" },
@@ -707,7 +708,7 @@ export default function PaperTree({
               </span>
             </div>
           ) : (
-            activeGroup && (
+            activeGroup && activeGroup.resolvedChildren.length > 1 && (
               <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
                 {activeGroup.resolvedChildren.map((leaf) => (
                   <button
