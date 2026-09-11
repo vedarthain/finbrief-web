@@ -99,8 +99,8 @@ try {
       `INSERT INTO ipo_listings
          (company_name, ticker, exchange, issue_price_low, issue_price_high,
           open_date, close_date, listing_date, listing_price, status, notes,
-          offer_type, issue_size, sellers, implied_valuation, fresh_issue, offer_for_sale, updated_at)
-       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, now())
+          offer_type, issue_size, sellers, implied_valuation, fresh_issue, offer_for_sale, aliases, updated_at)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, now())
        ON CONFLICT (company_name) DO UPDATE SET
          ticker             = EXCLUDED.ticker,
          exchange           = EXCLUDED.exchange,
@@ -118,6 +118,7 @@ try {
          implied_valuation  = EXCLUDED.implied_valuation,
          fresh_issue        = EXCLUDED.fresh_issue,
          offer_for_sale     = EXCLUDED.offer_for_sale,
+         aliases            = EXCLUDED.aliases,
          updated_at         = now()`,
       [
         l.company_name,
@@ -137,6 +138,7 @@ try {
         l.implied_valuation ?? null,
         l.fresh_issue ?? null,
         l.offer_for_sale ?? null,
+        l.aliases ?? null,
       ]
     );
   }

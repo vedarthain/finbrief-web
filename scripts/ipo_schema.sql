@@ -21,6 +21,10 @@ CREATE TABLE IF NOT EXISTS ipo_listings (
   implied_valuation TEXT,
   fresh_issue       TEXT,               -- fresh-issue portion only, e.g. "₹150 crore"
   offer_for_sale    TEXT,               -- OFS portion only, e.g. "Large OFS by existing investors" or a specific amount
+  aliases           TEXT,               -- comma-separated extra self-referential phrases (NOT bare abbreviations —
+                                         -- see §6a of publish-epaper SKILL.md) so headlines using a short form still
+                                         -- match this row, e.g. "NSE IPO, NSE public offering" for
+                                         -- "National Stock Exchange of India Limited"
   created_at        TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at        TIMESTAMPTZ NOT NULL DEFAULT now()
 );
@@ -32,5 +36,6 @@ ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS sellers TEXT;
 ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS implied_valuation TEXT;
 ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS fresh_issue TEXT;
 ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS offer_for_sale TEXT;
+ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS aliases TEXT;
 
 CREATE INDEX IF NOT EXISTS idx_ipo_listings_dates ON ipo_listings (listing_date DESC NULLS LAST, open_date DESC NULLS LAST);

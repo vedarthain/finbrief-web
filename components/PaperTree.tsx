@@ -21,7 +21,14 @@ function findIpoMatch(headline: string, listings: IpoListing[]): IpoListing | nu
   const h = headline.toLowerCase();
   const candidates = listings.filter((l) => {
     const stem = l.company_name.replace(/\s+(limited|ltd\.?)$/i, "").trim().toLowerCase();
-    return stem.length >= 3 && h.includes(stem);
+    if (stem.length >= 3 && h.includes(stem)) return true;
+    // Some companies are referred to by a short form in headlines ("NSE IPO
+    // shrinks...") that won't ever contain the full legal name. `aliases` is
+    // a curated, comma-separated list of such self-referential phrases —
+    // never a bare abbreviation, since e.g. plain "NSE" also appears in every
+    // other company's "lists on BSE, NSE" venue mention and would false-match.
+    const aliases = (l.aliases ?? "").split(",").map((a) => a.trim().toLowerCase()).filter(Boolean);
+    return aliases.some((a) => a.length >= 3 && h.includes(a));
   });
   if (candidates.length === 0) return null;
   // If the same company shows up more than once (e.g. a stray untrimmed
