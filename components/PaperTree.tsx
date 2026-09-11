@@ -707,25 +707,38 @@ export default function PaperTree({
                 </span>
               </span>
             </div>
+          ) : activeGroup && activeGroup.resolvedChildren.length > 1 ? (
+            <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
+              {activeGroup.resolvedChildren.map((leaf) => (
+                <button
+                  key={leaf}
+                  onClick={() => selectLeaf(leaf)}
+                  className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
+                    activeLeaf === leaf
+                      ? "text-white bg-[#182131]"
+                      : "text-gray-400 hover:bg-gray-50"
+                  }`}
+                >
+                  {leafLabel(leaf)}
+                  <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
+                    {countOf(leaf)}
+                  </span>
+                </button>
+              ))}
+            </div>
           ) : (
-            activeGroup && activeGroup.resolvedChildren.length > 1 && (
+            activeLeaf && (
               <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
-                {activeGroup.resolvedChildren.map((leaf) => (
-                  <button
-                    key={leaf}
-                    onClick={() => selectLeaf(leaf)}
-                    className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
-                      activeLeaf === leaf
-                        ? "text-white bg-[#182131]"
-                        : "text-gray-400 hover:bg-gray-50"
-                    }`}
-                  >
-                    {leafLabel(leaf)}
-                    <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
-                      {countOf(leaf)}
-                    </span>
-                  </button>
-                ))}
+                <span
+                  className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded ${
+                    SECTION_STYLE[activeLeaf] ?? "text-gray-700 bg-gray-100"
+                  }`}
+                >
+                  {leafLabel(activeLeaf)}
+                  <span className="text-[10px] font-normal normal-case tracking-normal tabular-nums opacity-70">
+                    {countOf(activeLeaf)}
+                  </span>
+                </span>
               </div>
             )
           )}
