@@ -28,7 +28,7 @@ export default async function HomePage({
   const todayIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
   const activeDate = params.date ?? todayIST;
 
-  const [stories, days, stocksInFocus, topStories, marketImpactStories, ipoListings] = await Promise.all([
+  const [stories, days, stocksInFocus, topStories, marketImpactStoriesRaw, ipoListings] = await Promise.all([
     cachedGetPaperStories(activeDate, params.edition),
     cachedGetPaperDays(),
     cachedGetStocksInFocus(activeDate, params.edition),
@@ -36,6 +36,14 @@ export default async function HomePage({
     cachedGetMarketImpactStories(activeDate, params.edition),
     cachedGetIpoListings(),
   ]);
+
+  // Top Stories and Market Impact are curated independently and are allowed to
+  // overlap (a story can be both broadly important and price-moving) — but a
+  // reader shouldn't see the exact same headline listed twice across two
+  // separate digests. Top Stories is the primary "read this first" list, so
+  // drop anything from Market Impact that's already surfaced there.
+  const topHeadlines = new Set(topStories.map((s) => s.headline));
+  const marketImpactStories = marketImpactStoriesRaw.filter((s) => !topHeadlines.has(s.headline));
 
   const bySection = stories.reduce<Record<string, typeof stories>>((acc, s) => {
     (acc[s.section] ??= []).push(s);
