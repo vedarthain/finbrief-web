@@ -162,7 +162,7 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
           onClick={() => { setStatusFilter("all"); setShowOlder(false); }}
           className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
             statusFilter === "all"
-              ? "bg-[#182131] border-[#182131] text-white"
+              ? "bg-[#26344a] border-[#26344a] text-white"
               : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
           }`}
         >
@@ -175,7 +175,7 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
             onClick={() => { setStatusFilter(s); setShowOlder(false); }}
             className={`flex items-center gap-1 text-[11.5px] font-semibold capitalize px-2.5 py-1.5 rounded-lg border transition-colors ${
               statusFilter === s
-                ? "bg-[#182131] border-[#182131] text-white"
+                ? "bg-[#26344a] border-[#26344a] text-white"
                 : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
             }`}
           >

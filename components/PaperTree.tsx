@@ -523,7 +523,7 @@ export default function PaperTree({
         {/* Top Stories / Market Impact / Stocks in Focus / Routine Notices are four
             peer selections that all just set activeLeaf, so exactly one of them
             (or one sidebar section) is ever "on" at a time — never more than one
-            lit up simultaneously. All four share the same dark #182131 active
+            lit up simultaneously. All four share the same dark #26344a active
             style used everywhere else a selection needs to read as unambiguous
             (sidebar groups, IPO status pills), instead of each tab's own pale
             color tint, which was easy to miss at a glance. */}
@@ -533,7 +533,7 @@ export default function PaperTree({
             onDoubleClick={() => deselectRibbonTab()}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === TOP_TAB
-                ? "bg-[#182131] border-[#182131] text-white"
+                ? "bg-[#26344a] border-[#26344a] text-white"
                 : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
             }`}
           >
@@ -545,7 +545,7 @@ export default function PaperTree({
             onDoubleClick={() => deselectRibbonTab()}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === MARKET_TAB
-                ? "bg-[#182131] border-[#182131] text-white"
+                ? "bg-[#26344a] border-[#26344a] text-white"
                 : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
             }`}
           >
@@ -557,7 +557,7 @@ export default function PaperTree({
             onDoubleClick={() => deselectRibbonTab()}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === STOCKS_TAB
-                ? "bg-[#182131] border-[#182131] text-white"
+                ? "bg-[#26344a] border-[#26344a] text-white"
                 : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
             }`}
           >
@@ -570,7 +570,7 @@ export default function PaperTree({
               onDoubleClick={() => deselectRibbonTab()}
               className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
                 !searchActive && activeLeaf === NOTICES_TAB
-                  ? "bg-[#182131] border-[#182131] text-white"
+                  ? "bg-[#26344a] border-[#26344a] text-white"
                   : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
               }`}
             >
@@ -651,7 +651,7 @@ export default function PaperTree({
                     key={g.label}
                     onClick={() => selectGroup(g)}
                     className={`w-full flex items-center gap-2 px-3 py-2 text-[14.5px] transition-colors border-b border-gray-100 last:border-b-0 ${
-                      isActiveGroup ? "bg-[#182131] text-white font-medium" : "text-gray-600 hover:bg-gray-50"
+                      isActiveGroup ? "bg-[#26344a] text-white font-medium" : "text-gray-600 hover:bg-gray-50"
                     }`}
                   >
                     <span
@@ -715,7 +715,7 @@ export default function PaperTree({
                   onClick={() => selectLeaf(leaf)}
                   className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded transition-colors ${
                     activeLeaf === leaf
-                      ? "text-white bg-[#182131]"
+                      ? "text-white bg-[#26344a]"
                       : "text-gray-400 hover:bg-gray-50"
                   }`}
                 >
@@ -777,7 +777,7 @@ export default function PaperTree({
                     )}
                     {multiEdition && <EditionBadge edition={selectedStory.edition} />}
                   </div>
-                  <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                  <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
                     {renderSummaryBullets(selectedStory.summary, "text-gray-700")}
                   </div>
                   {selectedStory.page_number != null && (
@@ -798,7 +798,7 @@ export default function PaperTree({
                   </div>
                   {selectedTopFull ? (
                     <>
-                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                      <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
                         {renderSummaryBullets(selectedTopFull.summary, "text-gray-700")}
                       </div>
                       {selectedTopFull.page_number != null && (
@@ -807,7 +807,7 @@ export default function PaperTree({
                     </>
                   ) : (
                     selectedTop.note && (
-                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                      <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
                         {renderSummaryBullets(selectedTop.note, "text-gray-700")}
                       </div>
                     )
@@ -827,7 +827,7 @@ export default function PaperTree({
                   </div>
                   {selectedMarketFull ? (
                     <>
-                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                      <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
                         {renderSummaryBullets(selectedMarketFull.summary, "text-gray-700")}
                       </div>
                       {selectedMarketFull.page_number != null && (
@@ -836,7 +836,7 @@ export default function PaperTree({
                     </>
                   ) : (
                     selectedMarket.note && (
-                      <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                      <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
                         {renderSummaryBullets(selectedMarket.note, "text-gray-700")}
                       </div>
                     )
@@ -851,7 +851,7 @@ export default function PaperTree({
                     </h3>
                     {multiEdition && selectedStock.edition && <EditionBadge edition={selectedStock.edition} />}
                   </div>
-                  <div style={{ fontSize: px(15.5), minHeight: descMinHeight }} className="text-gray-700">
+                  <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
                     {renderSummaryBullets(selectedStock.note, "text-gray-700")}
                   </div>
                 </>
