@@ -53,7 +53,7 @@ export default async function HomePage({
 
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <header className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-[#E3E6ED]">
-        <div className="mx-auto max-w-7xl px-4 py-2.5 flex items-center justify-between gap-2 flex-wrap">
+        <div className="mx-auto max-w-[1800px] px-4 py-2 flex items-center gap-2.5 flex-wrap">
           <div className="flex items-center gap-2.5 shrink-0">
             <div className="w-8 h-8 rounded-lg bg-[#182131] flex items-center justify-center shadow-sm shrink-0">
               <span className="text-white text-[11px] font-bold tracking-tight">FB</span>
@@ -64,7 +64,10 @@ export default async function HomePage({
           </div>
           <NavTabs />
           <DatePicker activeDate={activeDate} availableDates={days.map((d) => d.date)} />
-          <span className="hidden sm:inline text-[13px] text-gray-400 whitespace-nowrap ml-auto">{istTime} IST</span>
+          {/* PaperTree portals its search/ribbon-tab/text-size controls in here so
+              they share this one header line instead of a separate row below. */}
+          <div id="paper-toolbar-slot" className="flex items-center gap-2.5 flex-1 min-w-0 flex-wrap" />
+          <span className="hidden sm:inline text-[13px] text-gray-400 whitespace-nowrap">{istTime} IST</span>
         </div>
       </header>
 

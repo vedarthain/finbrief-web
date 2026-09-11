@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { PaperStory, StockInFocus, TopStory, MarketImpactStory } from "@/lib/queries";
 import PaperSectionTable, { TableRow } from "./PaperSectionTable";
 
@@ -326,6 +327,17 @@ export default function PaperTree({
   const [activeLeaf, setActiveLeaf] = useState<string | null>(defaultLeaf);
   const [focusIndex, setFocusIndex] = useState(0);
 
+  // ── Ribbon (search / tabs / text-size) is portaled into the header's
+  // #paper-toolbar-slot so it shares one line with the FinBrief logo, nav
+  // tabs and date picker instead of sitting in its own row below. The slot
+  // only exists once the header has mounted, so this starts null (SSR-safe)
+  // and picks up the real node on the client.
+  const [toolbarSlot, setToolbarSlot] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time DOM lookup after mount
+    setToolbarSlot(document.getElementById("paper-toolbar-slot"));
+  }, []);
+
   // Collapsible section sidebar (Economy / Policy & Regulatory / …) —
   // expanded by default, persisted across visits like the active-leaf/font prefs.
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -439,6 +451,15 @@ export default function PaperTree({
     localStorage.setItem("paper-active-leaf", leaf);
   }
 
+  // Double-clicking one of the four ribbon tabs (Top Stories / Market Impact /
+  // Stocks in Focus / Routine Notices) unchecks it — falls back to the first
+  // sidebar section instead of leaving a special tab "stuck" selected.
+  function deselectRibbonTab() {
+    const fallback = resolvedGroups[0]?.resolvedChildren[0] ?? null;
+    if (!fallback) return;
+    selectLeaf(fallback);
+  }
+
   // Clicking a group in the left panel jumps to whichever of its tabs is
   // already active, or the first one — the right panel then shows tabs for
   // every child of that group so the user can switch without leaving it.
@@ -492,12 +513,13 @@ export default function PaperTree({
     // Mount-only: onKeyDown reads current values via liveRef, so it never goes stale.
   }, []);
 
-  return (
-    <div className="flex flex-col gap-1.5">
-      {/* ── Single top ribbon: title, search, calendar, font-size ─────────── */}
-      <div className="flex items-center gap-2.5 flex-wrap px-3 py-2 rounded-lg bg-white border border-gray-200">
-        <h1 className="text-[14px] font-bold tracking-tight text-gray-900 shrink-0">Today&apos;s Paper</h1>
-        <div className="relative flex-1 min-w-[140px] sm:max-w-xs">
+  // ── Ribbon: search, ribbon tabs, font-size — portaled into the header's
+  // #paper-toolbar-slot (see toolbarSlot above) so it shares one line with
+  // the FinBrief logo / nav tabs / date picker instead of its own row below.
+  // No "Today's Paper" title here: the active NavTabs pill already says that.
+  const ribbon = (
+      <>
+        <div className="relative flex-1 min-w-[120px] sm:max-w-[220px]">
           <input
             type="text"
             value={query}
@@ -525,6 +547,7 @@ export default function PaperTree({
         <div className="flex items-center gap-1.5 shrink-0">
           <button
             onClick={() => selectLeaf(TOP_TAB)}
+            onDoubleClick={() => deselectRibbonTab()}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === TOP_TAB
                 ? "bg-[#182131] border-[#182131] text-white"
@@ -536,6 +559,7 @@ export default function PaperTree({
           </button>
           <button
             onClick={() => selectLeaf(MARKET_TAB)}
+            onDoubleClick={() => deselectRibbonTab()}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === MARKET_TAB
                 ? "bg-[#182131] border-[#182131] text-white"
@@ -547,6 +571,7 @@ export default function PaperTree({
           </button>
           <button
             onClick={() => selectLeaf(STOCKS_TAB)}
+            onDoubleClick={() => deselectRibbonTab()}
             className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
               !searchActive && activeLeaf === STOCKS_TAB
                 ? "bg-[#182131] border-[#182131] text-white"
@@ -559,6 +584,7 @@ export default function PaperTree({
           {totalNoticeCount > 0 && (
             <button
               onClick={() => selectLeaf(NOTICES_TAB)}
+              onDoubleClick={() => deselectRibbonTab()}
               className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
                 !searchActive && activeLeaf === NOTICES_TAB
                   ? "bg-[#182131] border-[#182131] text-white"
@@ -589,7 +615,12 @@ export default function PaperTree({
           A+
         </button>
         </div>
-      </div>
+      </>
+  );
+
+  return (
+    <div className="flex flex-col gap-1.5">
+      {toolbarSlot && createPortal(ribbon, toolbarSlot)}
       {/* items-stretch (not items-start) on mobile: in the flex-col layout this is
           the CROSS axis, so it's what makes the story-list column fill the full
           viewport width instead of shrinking to its content width. On md+ the
