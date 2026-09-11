@@ -21,7 +21,10 @@
 //       "issue_price_low": 546, "issue_price_high": 575,
 //       "open_date": "2026-08-31", "close_date": "2026-09-02",
 //       "listing_date": null, "listing_price": null,
-//       "status": "open", "notes": "..." }
+//       "status": "open", "notes": "...",
+//       "offer_type": "Entirely offer for sale", "issue_size": "Up to 5.27 crore shares",
+//       "sellers": "Avenue India Resurgence, SBI, Lathe Investment, Federal Bank",
+//       "implied_valuation": "Up to ₹4,516.07 crore" }
 //   ]
 // }
 import { readFileSync } from "fs";
@@ -94,20 +97,25 @@ try {
     await client.query(
       `INSERT INTO ipo_listings
          (company_name, ticker, exchange, issue_price_low, issue_price_high,
-          open_date, close_date, listing_date, listing_price, status, notes, updated_at)
-       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, now())
+          open_date, close_date, listing_date, listing_price, status, notes,
+          offer_type, issue_size, sellers, implied_valuation, updated_at)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, now())
        ON CONFLICT (company_name) DO UPDATE SET
-         ticker           = EXCLUDED.ticker,
-         exchange         = EXCLUDED.exchange,
-         issue_price_low  = EXCLUDED.issue_price_low,
-         issue_price_high = EXCLUDED.issue_price_high,
-         open_date        = EXCLUDED.open_date,
-         close_date       = EXCLUDED.close_date,
-         listing_date     = EXCLUDED.listing_date,
-         listing_price    = EXCLUDED.listing_price,
-         status           = EXCLUDED.status,
-         notes            = EXCLUDED.notes,
-         updated_at       = now()`,
+         ticker             = EXCLUDED.ticker,
+         exchange           = EXCLUDED.exchange,
+         issue_price_low    = EXCLUDED.issue_price_low,
+         issue_price_high   = EXCLUDED.issue_price_high,
+         open_date          = EXCLUDED.open_date,
+         close_date         = EXCLUDED.close_date,
+         listing_date       = EXCLUDED.listing_date,
+         listing_price      = EXCLUDED.listing_price,
+         status             = EXCLUDED.status,
+         notes              = EXCLUDED.notes,
+         offer_type         = EXCLUDED.offer_type,
+         issue_size         = EXCLUDED.issue_size,
+         sellers            = EXCLUDED.sellers,
+         implied_valuation  = EXCLUDED.implied_valuation,
+         updated_at         = now()`,
       [
         l.company_name,
         l.ticker ?? null,
@@ -120,6 +128,10 @@ try {
         l.listing_price ?? null,
         l.status ?? "upcoming",
         l.notes ?? null,
+        l.offer_type ?? null,
+        l.issue_size ?? null,
+        l.sellers ?? null,
+        l.implied_valuation ?? null,
       ]
     );
   }

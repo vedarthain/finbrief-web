@@ -162,7 +162,7 @@ For every story you classified as `section: "IPO"` (new listings, price bands, a
 ```json
 "ipoListings": [
   {
-    "company_name": "Purple Style Labs",
+    "company_name": "Purple Style Labs Limited",
     "ticker": null,
     "exchange": "BSE, NSE",
     "issue_price_low": 546,
@@ -172,17 +172,22 @@ For every story you classified as `section: "IPO"` (new listings, price bands, a
     "listing_date": null,
     "listing_price": null,
     "status": "open",
-    "notes": "Main-board IPO; ₹6,800M fresh issue"
+    "notes": "Main-board IPO; ₹6,800M fresh issue",
+    "offer_type": "Fresh issue",
+    "issue_size": "Up to ₹6,800 million",
+    "sellers": null,
+    "implied_valuation": null
   }
 ]
 ```
 
 Rules:
-- `company_name` is the upsert key (`ipo_listings.company_name UNIQUE`) — use the exact same spelling every time this company appears across days so re-publishing updates the same row instead of creating a duplicate as the IPO progresses through its lifecycle.
+- `company_name` is the upsert key (`ipo_listings.company_name UNIQUE`) — use the exact same spelling every time this company appears across days so re-publishing updates the same row instead of creating a duplicate as the IPO progresses through its lifecycle. **Always use the company's full registered/legal name** (including "Limited"/"Ltd" if that's how the paper refers to it in the prospectus context), not a shortened informal form — a later day dropping or adding "Limited" is the single most common cause of accidental duplicate rows for the same company.
 - `status` — pick exactly one: `"upcoming"` (announced, bidding not yet open), `"open"` (bidding window active on `paper_date`), `"closed"` (bidding closed, allotment/listing pending), `"listed"` (listed on or before `paper_date`).
 - `ticker` — only set it if the paper states the exact listed ticker/symbol (usually only known once `status` is `"listed"` or allotment is announced). Leave `null` otherwise — do not guess a ticker. When a `ticker` is set and that symbol is already tracked in the `prices` table, the UI automatically shows a live current price and %-change since listing; if not tracked, those columns just stay blank, which is fine.
 - `listing_price` — only set once the stock has actually listed (i.e. `status: "listed"`); leave `null` before that.
-- Re-extraction across days: if the same IPO is mentioned again on a later day's paper (e.g. it closed, or it listed), update `status`/`close_date`/`listing_date`/`listing_price`/`ticker` in that day's `ipoListings` entry — the upsert on `company_name` keeps a single row per company current.
+- `offer_type`/`issue_size`/`sellers`/`implied_valuation` — short display strings (not raw numbers) that feed the click-to-expand fact-sheet card on the IPO & Listings page (`components/IpoTable.tsx`). Populate whichever of these the paper actually states for that entry that day — it's fine to leave any of them `null` if the source doesn't report that detail (e.g. a subscription-update story with no offer breakdown legitimately has all four `null`; the UI falls back to showing `notes` as plain text when none of the four are set). Don't infer or estimate a number that isn't stated in the paper.
+- Re-extraction across days: if the same IPO is mentioned again on a later day's paper (e.g. it closed, or it listed), update `status`/`close_date`/`listing_date`/`listing_price`/`ticker` in that day's `ipoListings` entry — the upsert on `company_name` keeps a single row per company current. Same rule applies to `offer_type`/`issue_size`/`sellers`/`implied_valuation`: update them if the later story adds/corrects that detail, otherwise leave them as previously set (the upsert overwrites with whatever you send, including `null`, so only omit re-sending a field's known value if you genuinely don't want to touch it — safest is to re-send the same value you already have on file if you're not re-deriving it fresh).
 
 ## 7. Write the JSON file
 
@@ -209,7 +214,8 @@ Create/update `scripts/data/<paper_date>-<edition-lowercase>.json` (e.g. `script
   "ipoListings": [
     { "company_name": "...", "ticker": null, "exchange": "...", "issue_price_low": 0, "issue_price_high": 0,
       "open_date": "...", "close_date": "...", "listing_date": null, "listing_price": null,
-      "status": "open", "notes": "..." }
+      "status": "open", "notes": "...",
+      "offer_type": "...", "issue_size": "...", "sellers": null, "implied_valuation": null }
   ]
 }
 ```

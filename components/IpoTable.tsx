@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { IpoListing } from "@/lib/queries";
 
 function fmtDate(d: string | null) {
@@ -64,9 +64,60 @@ function isPending(l: IpoListing) {
   return l.status === "upcoming" || l.status === "open";
 }
 
+// ── Expanded fact-sheet card: Key detail / Information rows, shown when a
+// row is clicked. Prefers the structured fields (offer_type/issue_size/
+// sellers/implied_valuation) captured at extraction time; older listings
+// published before those columns existed fall back to the free-text notes
+// blob so nothing goes blank for historical rows. ──
+function IpoFactSheet({ l }: { l: IpoListing }) {
+  const priceBand =
+    l.issue_price_low != null || l.issue_price_high != null
+      ? `₹${l.issue_price_low ?? "—"}–${l.issue_price_high ?? "—"}/share`
+      : null;
+  const structuredRows: [string, string | null][] = [
+    ["Offer type", l.offer_type],
+    ["Issue size", l.issue_size],
+    ["Sellers", l.sellers],
+    ["Implied valuation", l.implied_valuation],
+    ["Bidding closes", fmtDate(l.close_date)],
+    ["Expected listing", fmtDate(l.listing_date)],
+  ].filter(([, v]) => v && v !== "—") as [string, string][];
+  const hasStructuredDetail = l.offer_type || l.issue_size || l.sellers || l.implied_valuation;
+
+  return (
+    <div className="px-5 py-4 max-w-2xl">
+      <h4 className="text-[17px] font-bold text-gray-900">{l.company_name}</h4>
+      {priceBand && <p className="text-[15px] font-semibold text-gray-900 mt-1">{priceBand}</p>}
+      {l.exchange && <p className="text-[13px] text-gray-500 mt-0.5">{l.exchange}</p>}
+
+      {hasStructuredDetail ? (
+        <table className="w-full mt-3 text-[13px] border-collapse">
+          <thead>
+            <tr className="text-left text-gray-500 font-semibold border-b border-gray-200">
+              <th className="py-2 pr-4 font-semibold w-[38%]">Key detail</th>
+              <th className="py-2 font-semibold">Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            {structuredRows.map(([k, v]) => (
+              <tr key={k} className="border-b border-gray-100 last:border-b-0">
+                <td className="py-2.5 pr-4 text-gray-500 align-top">{k}</td>
+                <td className="py-2.5 text-gray-800 align-top">{v}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        l.notes && <p className="text-[13px] text-gray-600 mt-3 leading-relaxed">{l.notes}</p>
+      )}
+    </div>
+  );
+}
+
 export default function IpoTable({ listings }: { listings: IpoListing[] }) {
   const [statusFilter, setStatusFilter] = useState<string>("all");
   const [showOlder, setShowOlder] = useState(false);
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
   const counts = useMemo(() => {
     const c: Record<string, number> = { all: listings.length };
@@ -173,42 +224,62 @@ export default function IpoTable({ listings }: { listings: IpoListing[] }) {
               </tr>
             </thead>
             <tbody>
-              {visible.map((l, i) => (
-                <tr key={l.id} className="hover:bg-gray-50/60 transition-colors">
-                  <td className="px-3 py-3 border border-gray-200 text-right text-gray-400">{i + 1}</td>
-                  <td className="px-4 py-3 border border-gray-200">
-                    <div className="font-semibold text-gray-900">{l.company_name}</div>
-                    {l.notes && <div className="text-[12px] text-gray-400 mt-0.5 max-w-xs">{l.notes}</div>}
-                  </td>
-                  <td className="px-3 py-3 border border-gray-200">
-                    <ExchangeBadges exchange={l.exchange} />
-                  </td>
-                  <td className="px-3 py-3 border border-gray-200">
-                    <span className={`text-[10.5px] font-medium uppercase tracking-wide px-2 py-0.5 rounded ${STATUS_STYLE[l.status] ?? "text-gray-500 bg-gray-50"}`}>
-                      {l.status}
-                    </span>
-                  </td>
-                  <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">
-                    {l.issue_price_low != null || l.issue_price_high != null
-                      ? `${fmtPrice(l.issue_price_low)} – ${fmtPrice(l.issue_price_high)}`
-                      : "—"}
-                  </td>
-                  <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.open_date)}</td>
-                  <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.close_date)}</td>
-                  <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.listing_date)}</td>
-                  <td className="px-3 py-3 border border-gray-200 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.listing_price)}</td>
-                  <td className="px-3 py-3 border border-gray-200 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.current_price)}</td>
-                  <td className="px-4 py-3 border border-gray-200 text-right whitespace-nowrap">
-                    {l.change_pct == null ? (
-                      <span className="text-gray-300">—</span>
-                    ) : (
-                      <span className={l.change_pct >= 0 ? "text-emerald-600 font-medium" : "text-red-500 font-medium"}>
-                        {l.change_pct >= 0 ? "+" : ""}{l.change_pct}%
-                      </span>
+              {visible.map((l, i) => {
+                const isExpanded = expandedId === l.id;
+                return (
+                  <Fragment key={l.id}>
+                    <tr
+                      onClick={() => setExpandedId(isExpanded ? null : l.id)}
+                      className={`cursor-pointer transition-colors ${isExpanded ? "bg-gray-50" : "hover:bg-gray-50/60"}`}
+                    >
+                      <td className="px-3 py-3 border border-gray-200 text-right text-gray-400">{i + 1}</td>
+                      <td className="px-4 py-3 border border-gray-200">
+                        <div className="flex items-center gap-1.5">
+                          <span aria-hidden className="text-gray-300 text-[10px] shrink-0 w-2.5">{isExpanded ? "▾" : "▸"}</span>
+                          <span className="font-semibold text-gray-900">{l.company_name}</span>
+                        </div>
+                        {l.notes && !isExpanded && (
+                          <div className="text-[12px] text-gray-400 mt-0.5 max-w-xs truncate" title={l.notes}>{l.notes}</div>
+                        )}
+                      </td>
+                      <td className="px-3 py-3 border border-gray-200">
+                        <ExchangeBadges exchange={l.exchange} />
+                      </td>
+                      <td className="px-3 py-3 border border-gray-200">
+                        <span className={`text-[10.5px] font-medium uppercase tracking-wide px-2 py-0.5 rounded ${STATUS_STYLE[l.status] ?? "text-gray-500 bg-gray-50"}`}>
+                          {l.status}
+                        </span>
+                      </td>
+                      <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">
+                        {l.issue_price_low != null || l.issue_price_high != null
+                          ? `${fmtPrice(l.issue_price_low)} – ${fmtPrice(l.issue_price_high)}`
+                          : "—"}
+                      </td>
+                      <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.open_date)}</td>
+                      <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.close_date)}</td>
+                      <td className="px-3 py-3 border border-gray-200 text-gray-600 whitespace-nowrap">{fmtDate(l.listing_date)}</td>
+                      <td className="px-3 py-3 border border-gray-200 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.listing_price)}</td>
+                      <td className="px-3 py-3 border border-gray-200 text-right text-gray-700 whitespace-nowrap">{fmtPrice(l.current_price)}</td>
+                      <td className="px-4 py-3 border border-gray-200 text-right whitespace-nowrap">
+                        {l.change_pct == null ? (
+                          <span className="text-gray-300">—</span>
+                        ) : (
+                          <span className={l.change_pct >= 0 ? "text-emerald-600 font-medium" : "text-red-500 font-medium"}>
+                            {l.change_pct >= 0 ? "+" : ""}{l.change_pct}%
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                    {isExpanded && (
+                      <tr>
+                        <td colSpan={11} className="border border-gray-200 bg-gray-50/60 p-0">
+                          <IpoFactSheet l={l} />
+                        </td>
+                      </tr>
                     )}
-                  </td>
-                </tr>
-              ))}
+                  </Fragment>
+                );
+              })}
             </tbody>
           </table>
         </div>
