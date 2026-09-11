@@ -748,6 +748,13 @@
       "importance": 4
     },
     {
+      "section": "Trade",
+      "headline": "India, Russia strengthening local-currency payment systems",
+      "summary": "Commerce and Industry Minister Piyush Goyal said India and Russia are deepening local-currency trade settlement mechanisms, speaking at the INNOPROM India 2026 Co-Chair Plenary Session alongside Russian Minister Anton Alikhanov. Russian banking sources indicate 96% of bilateral trade is now settled in national currencies. The International North-South Transport Corridor (INSTC) and the Chennai-Vladivostok Maritime Corridor were cited as the physical infrastructure backbone supporting this shift.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
       "section": "Growth & Development",
       "headline": "UIDAI working to take Aadhaar global, says CEO",
       "summary": "The Unique Identification Authority of India's chief executive said the agency is working to export the Aadhaar digital-identity model to other countries, building on interest from several governments in India's Digital Public Infrastructure approach.",
@@ -868,43 +875,167 @@
     }
   ],
   "stocksInFocus": [
-    { "name": "National Stock Exchange of India Limited", "note": "IPO price band fixed at ₹1,700-1,785; bidding opens Sept 17, closes Sept 21" },
-    { "name": "Rentomojo Limited", "note": "IPO closes today, price band ₹384-404" },
-    { "name": "Karamtara Engineering Limited", "note": "IPO closes today, price band ₹241-254" },
-    { "name": "Manipal Payment and Identity Solutions Limited", "note": "IPO closes today, price band ₹322-339" },
-    { "name": "Vodafone Idea", "note": "Launches brand comeback push with SRK campaign to rival Airtel and Jio" },
-    { "name": "HDFC Bank", "note": "Wins 7 Bahrain court cases over Credit Suisse AT1 bonds" },
-    { "name": "SI Capital & Financial Services Limited", "note": "Rights-issue shares list on exchanges today" },
-    { "name": "Canara Bank", "note": "To raise up to ₹4,500 crore via AT-1 bonds" }
+    {
+      "name": "National Stock Exchange of India Limited",
+      "note": "IPO price band fixed at ₹1,700-1,785; bidding opens Sept 17, closes Sept 21"
+    },
+    {
+      "name": "Rentomojo Limited",
+      "note": "IPO closes today, price band ₹384-404"
+    },
+    {
+      "name": "Karamtara Engineering Limited",
+      "note": "IPO closes today, price band ₹241-254"
+    },
+    {
+      "name": "Manipal Payment and Identity Solutions Limited",
+      "note": "IPO closes today, price band ₹322-339"
+    },
+    {
+      "name": "Vodafone Idea",
+      "note": "Launches brand comeback push with SRK campaign to rival Airtel and Jio"
+    },
+    {
+      "name": "HDFC Bank",
+      "note": "Wins 7 Bahrain court cases over Credit Suisse AT1 bonds"
+    },
+    {
+      "name": "SI Capital & Financial Services Limited",
+      "note": "Rights-issue shares list on exchanges today"
+    },
+    {
+      "name": "Canara Bank",
+      "note": "To raise up to ₹4,500 crore via AT-1 bonds"
+    }
   ],
   "topStories": [
-    { "headline": "National Stock Exchange of India Limited sets IPO price band at ₹1,700-1,785", "section": "IPO", "note": "Marquee IPO; post-offer market cap ~₹4,20,750 crore at cap price." },
-    { "headline": "Rentomojo Limited IPO closes today", "section": "IPO", "note": "Large main-board offer backed by marquee VC investors." },
-    { "headline": "War to end after midterm polls: Trump", "section": "International News", "note": "No near-term de-escalation signalled for the Iran conflict." },
-    { "headline": "Oil jumps to $107 a barrel", "section": "International News", "note": "Driven by intensifying conflict and lowest Saudi output since 1990." },
-    { "headline": "Meet may usher in India-China economic reset", "section": "Trade", "note": "Modi-Xi bilateral expected on the sidelines of a BRICS-linked summit." },
-    { "headline": "Guard customer data: Malhotra", "section": "Economy", "note": "RBI Governor's call at Global Fintech Fest 2026." },
-    { "headline": "Govt amends e-comm rules to check price manipulation, dark patterns", "section": "Policy", "note": "Tighter disclosure norms ahead of festive shopping season." },
-    { "headline": "Mandatory one-time test for all pilots by July 2027", "section": "Regulatory", "note": "DGCA tightens flight-safety oversight." },
-    { "headline": "Vi plots comeback to rival Airtel & Jio", "section": "Announcements", "note": "Renewed brand and network push after fresh funding infusions." },
-    { "headline": "VW-JSW tie-up talks focus on cost cuts, export access", "section": "Announcements", "note": "Potential EV and passenger-vehicle collaboration." },
-    { "headline": "Retail rush pushes monthly SIP contributions to record high in Aug", "section": "Market", "note": "Continued strong retail mutual-fund participation." },
-    { "headline": "HDFC Bank wins 7 Bahrain cases over CS AT1 bonds", "section": "Events", "note": "Favourable outcome in cross-border Credit Suisse AT1 litigation." },
-    { "headline": "ECB hikes rates, raises inflation forecasts", "section": "International News", "note": "Persistent eurozone price pressures cited." },
-    { "headline": "New pricing script for older iPhones", "section": "Sector", "note": "Fresh discounting strategy to defend market share." },
-    { "headline": "Bank strike today, services to be affected", "section": "Events", "note": "Nationwide one-day strike disrupts branch banking." }
+    {
+      "headline": "National Stock Exchange of India Limited sets IPO price band at ₹1,700-1,785",
+      "section": "IPO",
+      "note": "Marquee IPO; post-offer market cap ~₹4,20,750 crore at cap price."
+    },
+    {
+      "headline": "Rentomojo Limited IPO closes today",
+      "section": "IPO",
+      "note": "Large main-board offer backed by marquee VC investors."
+    },
+    {
+      "headline": "War to end after midterm polls: Trump",
+      "section": "International News",
+      "note": "No near-term de-escalation signalled for the Iran conflict."
+    },
+    {
+      "headline": "Oil jumps to $107 a barrel",
+      "section": "International News",
+      "note": "Driven by intensifying conflict and lowest Saudi output since 1990."
+    },
+    {
+      "headline": "Meet may usher in India-China economic reset",
+      "section": "Trade",
+      "note": "Modi-Xi bilateral expected on the sidelines of a BRICS-linked summit."
+    },
+    {
+      "headline": "Guard customer data: Malhotra",
+      "section": "Economy",
+      "note": "RBI Governor's call at Global Fintech Fest 2026."
+    },
+    {
+      "headline": "Govt amends e-comm rules to check price manipulation, dark patterns",
+      "section": "Policy",
+      "note": "Tighter disclosure norms ahead of festive shopping season."
+    },
+    {
+      "headline": "Mandatory one-time test for all pilots by July 2027",
+      "section": "Regulatory",
+      "note": "DGCA tightens flight-safety oversight."
+    },
+    {
+      "headline": "Vi plots comeback to rival Airtel & Jio",
+      "section": "Announcements",
+      "note": "Renewed brand and network push after fresh funding infusions."
+    },
+    {
+      "headline": "VW-JSW tie-up talks focus on cost cuts, export access",
+      "section": "Announcements",
+      "note": "Potential EV and passenger-vehicle collaboration."
+    },
+    {
+      "headline": "Retail rush pushes monthly SIP contributions to record high in Aug",
+      "section": "Market",
+      "note": "Continued strong retail mutual-fund participation."
+    },
+    {
+      "headline": "HDFC Bank wins 7 Bahrain cases over CS AT1 bonds",
+      "section": "Events",
+      "note": "Favourable outcome in cross-border Credit Suisse AT1 litigation."
+    },
+    {
+      "headline": "ECB hikes rates, raises inflation forecasts",
+      "section": "International News",
+      "note": "Persistent eurozone price pressures cited."
+    },
+    {
+      "headline": "New pricing script for older iPhones",
+      "section": "Sector",
+      "note": "Fresh discounting strategy to defend market share."
+    },
+    {
+      "headline": "Bank strike today, services to be affected",
+      "section": "Events",
+      "note": "Nationwide one-day strike disrupts branch banking."
+    }
   ],
   "marketImpact": [
-    { "headline": "Oil jumps to $107 a barrel", "section": "International News", "note": "Direct read-through to India's import bill and inflation outlook." },
-    { "headline": "National Stock Exchange of India Limited sets IPO price band at ₹1,700-1,785", "section": "IPO", "note": "Marquee listing with a large implied market cap." },
-    { "headline": "Rentomojo Limited IPO closes today", "section": "IPO", "note": "Large main-board offer, price-sensitive for subscribers." },
-    { "headline": "Retail rush pushes monthly SIP contributions to record high in Aug", "section": "Market", "note": "Signals sustained domestic liquidity support for equities." },
-    { "headline": "HDFC Bank wins 7 Bahrain cases over CS AT1 bonds", "section": "Events", "note": "Positive litigation outcome, relevant to bank's contingent-liability profile." },
-    { "headline": "ECB hikes rates, raises inflation forecasts", "section": "International News", "note": "Global rate and currency read-through." },
-    { "headline": "Canara Bank to raise up to ₹4,500 cr via AT-1 bonds", "section": "Market", "note": "New AT-1 supply, relevant for bank capital and bond pricing." },
-    { "headline": "War to end after midterm polls: Trump", "section": "International News", "note": "Sustains geopolitical risk premium across global markets." },
-    { "headline": "Vi plots comeback to rival Airtel & Jio", "section": "Announcements", "note": "Competitive-dynamics shift across telecom stocks." },
-    { "headline": "VW-JSW tie-up talks focus on cost cuts, export access", "section": "Announcements", "note": "Potential strategic re-rating for both auto players." }
+    {
+      "headline": "Oil jumps to $107 a barrel",
+      "section": "International News",
+      "note": "Direct read-through to India's import bill and inflation outlook."
+    },
+    {
+      "headline": "National Stock Exchange of India Limited sets IPO price band at ₹1,700-1,785",
+      "section": "IPO",
+      "note": "Marquee listing with a large implied market cap."
+    },
+    {
+      "headline": "Rentomojo Limited IPO closes today",
+      "section": "IPO",
+      "note": "Large main-board offer, price-sensitive for subscribers."
+    },
+    {
+      "headline": "Retail rush pushes monthly SIP contributions to record high in Aug",
+      "section": "Market",
+      "note": "Signals sustained domestic liquidity support for equities."
+    },
+    {
+      "headline": "HDFC Bank wins 7 Bahrain cases over CS AT1 bonds",
+      "section": "Events",
+      "note": "Positive litigation outcome, relevant to bank's contingent-liability profile."
+    },
+    {
+      "headline": "ECB hikes rates, raises inflation forecasts",
+      "section": "International News",
+      "note": "Global rate and currency read-through."
+    },
+    {
+      "headline": "Canara Bank to raise up to ₹4,500 cr via AT-1 bonds",
+      "section": "Market",
+      "note": "New AT-1 supply, relevant for bank capital and bond pricing."
+    },
+    {
+      "headline": "War to end after midterm polls: Trump",
+      "section": "International News",
+      "note": "Sustains geopolitical risk premium across global markets."
+    },
+    {
+      "headline": "Vi plots comeback to rival Airtel & Jio",
+      "section": "Announcements",
+      "note": "Competitive-dynamics shift across telecom stocks."
+    },
+    {
+      "headline": "VW-JSW tie-up talks focus on cost cuts, export access",
+      "section": "Announcements",
+      "note": "Potential strategic re-rating for both auto players."
+    }
   ],
   "ipoListings": [
     {
