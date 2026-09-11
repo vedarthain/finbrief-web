@@ -11,13 +11,23 @@ import { IpoFactSheet } from "./IpoTable";
 // today" still matches company_name "Rentomojo") so the same structured
 // fact-sheet table shown on the dedicated /ipo page can also render inline
 // here, instead of just the free-text bullet summary.
+function ipoRowCompleteness(l: IpoListing): number {
+  return [l.fresh_issue, l.offer_for_sale, l.offer_type, l.issue_size, l.sellers, l.implied_valuation].filter(
+    (v) => v != null && v !== ""
+  ).length;
+}
+
 function findIpoMatch(headline: string, listings: IpoListing[]): IpoListing | null {
   const h = headline.toLowerCase();
-  for (const l of listings) {
+  const candidates = listings.filter((l) => {
     const stem = l.company_name.replace(/\s+(limited|ltd\.?)$/i, "").trim().toLowerCase();
-    if (stem.length >= 3 && h.includes(stem)) return l;
-  }
-  return null;
+    return stem.length >= 3 && h.includes(stem);
+  });
+  if (candidates.length === 0) return null;
+  // If the same company shows up more than once (e.g. a stray untrimmed
+  // duplicate row), prefer whichever candidate actually has structured data
+  // rather than silently matching an empty one and falling back to bullets.
+  return candidates.reduce((best, c) => (ipoRowCompleteness(c) > ipoRowCompleteness(best) ? c : best));
 }
 
 export function renderSummary(text: string, dimClass: string) {

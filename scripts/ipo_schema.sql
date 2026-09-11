@@ -15,8 +15,22 @@ CREATE TABLE IF NOT EXISTS ipo_listings (
   listing_price     NUMERIC,            -- price on listing day (for since-listing % change)
   status            TEXT NOT NULL DEFAULT 'upcoming',  -- upcoming | open | closed | listed
   notes             TEXT,
+  offer_type        TEXT,               -- e.g. "Fresh issue + offer for sale" — shown as "Offer structure" in the fact sheet
+  issue_size        TEXT,               -- combined free-text issue size (legacy; prefer fresh_issue/offer_for_sale below when known)
+  sellers           TEXT,               -- selling shareholders in an OFS, shown as "Selling investors"
+  implied_valuation TEXT,
+  fresh_issue       TEXT,               -- fresh-issue portion only, e.g. "₹150 crore"
+  offer_for_sale    TEXT,               -- OFS portion only, e.g. "Large OFS by existing investors" or a specific amount
   created_at        TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at        TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+-- Idempotent for pre-existing tables that predate one of the columns above.
+ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS offer_type TEXT;
+ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS issue_size TEXT;
+ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS sellers TEXT;
+ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS implied_valuation TEXT;
+ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS fresh_issue TEXT;
+ALTER TABLE ipo_listings ADD COLUMN IF NOT EXISTS offer_for_sale TEXT;
 
 CREATE INDEX IF NOT EXISTS idx_ipo_listings_dates ON ipo_listings (listing_date DESC NULLS LAST, open_date DESC NULLS LAST);

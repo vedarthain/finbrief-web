@@ -362,6 +362,8 @@ export interface IpoListing {
   issue_size: string | null;
   sellers: string | null;
   implied_valuation: string | null;
+  fresh_issue: string | null;
+  offer_for_sale: string | null;
   current_price: number | null;
   change_pct: number | null;   // vs listing_price, using latest known price
 }
@@ -374,6 +376,7 @@ export async function getIpoListings(): Promise<IpoListing[]> {
       l.open_date::text, l.close_date::text, l.listing_date::text,
       l.listing_price, l.status, l.notes,
       l.offer_type, l.issue_size, l.sellers, l.implied_valuation,
+      l.fresh_issue, l.offer_for_sale,
       p.price AS current_price,
       CASE WHEN l.listing_price IS NOT NULL AND p.price IS NOT NULL AND l.listing_price != 0
         THEN ROUND(((p.price - l.listing_price) / l.listing_price * 100)::numeric, 2)

@@ -77,19 +77,22 @@ export function IpoFactSheet({ l }: { l: IpoListing }) {
       ? `₹${l.issue_price_low ?? "—"}–${l.issue_price_high ?? "—"}/share`
       : null;
   const structuredRows: [string, string | null][] = [
-    ["Offer type", l.offer_type],
-    ["Issue size", l.issue_size],
-    ["Sellers", l.sellers],
-    ["Implied valuation", l.implied_valuation],
-    ["Bidding closes", fmtDate(l.close_date)],
+    ["Fresh issue", l.fresh_issue],
+    ["Offer for sale", l.offer_for_sale],
+    ["Selling investors", l.sellers],
+    ["Offer structure", l.offer_type],
+    ["Price range", priceBand],
+    ["Closing date", fmtDate(l.close_date)],
     ["Expected listing", fmtDate(l.listing_date)],
+    ["Issue size", l.fresh_issue || l.offer_for_sale ? null : l.issue_size],
+    ["Implied valuation", l.implied_valuation],
   ].filter(([, v]) => v && v !== "—") as [string, string][];
-  const hasStructuredDetail = l.offer_type || l.issue_size || l.sellers || l.implied_valuation;
+  const hasStructuredDetail =
+    l.fresh_issue || l.offer_for_sale || l.offer_type || l.issue_size || l.sellers || l.implied_valuation;
 
   return (
     <div className="px-5 py-4 max-w-2xl">
       <h4 className="text-[17px] font-bold text-gray-900">{l.company_name}</h4>
-      {priceBand && <p className="text-[15px] font-semibold text-gray-900 mt-1">{priceBand}</p>}
       {l.exchange && <p className="text-[13px] text-gray-500 mt-0.5">{l.exchange}</p>}
 
       {hasStructuredDetail ? (
