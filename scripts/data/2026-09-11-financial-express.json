@@ -1,0 +1,1067 @@
+{
+  "edition": "Financial Express",
+  "paper_date": "2026-09-11",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "Guard customer data: Malhotra",
+      "summary": "RBI Governor Sanjay Malhotra, addressing the Global Fintech Fest 2026, urged fintechs and banks to strengthen cybersecurity and safeguard customer data as AI adoption accelerates across financial services, warning that the same AI tools driving efficiency also raise new fraud and privacy risks.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Economy",
+      "headline": "Nilekani's next leap: Building Finternet",
+      "summary": "Infosys co-founder Nandan Nilekani outlined his vision for a \"Finternet\" — an interoperable, tokenised financial network enabling seamless cross-border settlement of tokenized real-world assets (RWAs), building on India's UPI and Digital Public Infrastructure model.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "Economy",
+      "headline": "Power demand in August rises 12.8% to 169 bn units",
+      "summary": "India's power demand rose 12.8% year-on-year to 169 billion units in August, driven by higher industrial and residential consumption amid seasonal heat, continuing the sustained growth trend seen through FY27 so far.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Economy",
+      "headline": "Large variations in output and female workforce: Survey",
+      "summary": "A government survey flagged wide state-level variations in industrial output growth and female labour-force participation, pointing to uneven regional development outcomes despite aggregate national growth.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "SBI chief bats for 'know your agent' framework as AI enters banking",
+      "summary": "State Bank of India chairman CS Setty called for a \"know your agent\" (KYA) framework to govern autonomous AI agents transacting on behalf of customers, saying banks need new accountability and verification norms as agentic AI enters financial services.",
+      "page_number": 1,
+      "importance": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "FCNR(B) unlikely to drive abnormal lending",
+      "summary": "SBI chairman CS Setty said the recent relaxation in FCNR(B) deposit norms is unlikely to spur any abnormal surge in foreign-currency lending, describing the change as a moderate, well-calibrated adjustment rather than a source of systemic risk.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "FATF VP stresses investments to counter AI risks",
+      "summary": "The Financial Action Task Force's vice-president called on member countries to step up investment in monitoring and enforcement capacity to counter the growing use of AI tools in money laundering and terror financing.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "Govt amends e-comm rules to check price manipulation, dark patterns",
+      "summary": "The government amended the Consumer Protection (E-Commerce) Rules to curb price manipulation and \"dark patterns\" on online marketplaces, tightening disclosure norms for platforms on pricing, discounts and default add-ons ahead of the festive shopping season.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Policy",
+      "headline": "Centre pushes offshore oil, gas bid cutoff to Nov 15",
+      "summary": "The Centre extended the bid submission deadline for its latest offshore oil and gas exploration block auction round to November 15, giving bidders additional time amid subdued participation in earlier rounds.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "Govt to hold more talks on seed Bills, says agri minister",
+      "summary": "The agriculture minister said the government will hold further consultations with stakeholders on the pending seed-sector Bills before finalising the legislative framework, citing continuing concerns from farmer groups and seed companies.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "Gauba: Focus on 'nuts-and-bolts' reforms",
+      "summary": "NITI Aayog CEO B V R Subrahmanyam Gauba said the government's reform agenda is shifting toward granular \"nuts-and-bolts\" implementation issues at the state and district level, rather than large headline announcements, to unlock ease-of-doing-business gains.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "India supports a safe, sustainable space domain: PM",
+      "summary": "Prime Minister Narendra Modi said India supports keeping outer space safe, secure and sustainable for all nations, reiterating India's stance on responsible space governance at an international forum.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Insolvency regulator seeks greater vigil against fraud",
+      "summary": "The Insolvency and Bankruptcy Board of India (IBBI) called for greater vigilance by resolution professionals and creditors against fraudulent transactions during the corporate insolvency resolution process, flagging a rise in fraud-related litigation across ongoing cases.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sugar mills told to furnish monthly output, sale data",
+      "summary": "The government directed sugar mills to furnish detailed monthly production and sales data to improve monitoring of domestic sugar availability and support price-stabilisation measures ahead of the new crushing season.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "CCI seeks views on PVR INOX's plan to scrap VPF",
+      "summary": "The Competition Commission of India sought public and industry comments on [[PVR INOX]]'s proposal to discontinue its virtual print fee (VPF) arrangement with distributors, a mechanism long criticised by smaller film exhibitors as anti-competitive.",
+      "page_number": 5,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Pandey: Sebi to implement global regulatory AI toolkit",
+      "summary": "Sebi chairman Tuhin Kanta Pandey said the regulator plans to roll out an AI-based supervisory toolkit developed with international peers to strengthen market surveillance and detect irregular trading patterns faster.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "One-year landing fee waiver allowed for global flights at Navi Mumbai airport",
+      "summary": "The Airports Economic Regulatory Authority approved a one-year landing-fee waiver for international flights operating out of Navi Mumbai International Airport as part of a tariff revision aimed at attracting long-haul carriers to the new hub.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Centre, DGCA keeping close watch on SpiceJet ops",
+      "summary": "The civil aviation ministry and the Directorate General of Civil Aviation said they are closely monitoring [[SpiceJet]]'s operations amid continuing concerns over the airline's fleet serviceability and financial health.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Mandatory one-time test for all pilots by July 2027",
+      "summary": "The DGCA directed all commercial pilots in India to undergo a mandatory one-time competency test by July 2027, part of a broader push to tighten flight-safety oversight following recent aviation safety concerns.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Beco campaign against HUL put on hold by HC",
+      "summary": "The Delhi High Court put on hold an advertising campaign by sustainable personal-care brand [[Kwick Living]] (Beco) that had targeted [[Hindustan Unilever]], after HUL sought an injunction alleging the campaign disparaged its products.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Trai removes 12-minute TV ad cap per hour",
+      "summary": "The Telecom Regulatory Authority of India scrapped the existing cap limiting television advertisements to 12 minutes per hour, giving broadcasters greater flexibility in scheduling commercial content.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Centre weighs tougher food label rollout",
+      "summary": "The Food Safety and Standards Authority of India is considering a tougher rollout of front-of-pack nutritional labelling norms for packaged foods, aiming to flag high sugar, salt and fat content more prominently to consumers.",
+      "page_number": 5,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Building India's REITs",
+      "summary": "Sebi's consultation papers (CP-1 and CP-2) propose extending the depository-receipt framework to REITs and InvITs, potentially widening the investor base for these instruments; the piece argues the move could meaningfully deepen India's real-estate and infrastructure investment trust market if implemented with adequate safeguards.",
+      "page_number": 9,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Container Corporation of India Ltd: tender notice",
+      "summary": "Container Corporation of India Limited issued a tender notice inviting bids for its stated scope of work.",
+      "page_number": 22,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "RajCOMP Info Services Limited: tender notice",
+      "summary": "RajCOMP Info Services Limited issued a tender notice inviting bids for its stated scope of work.",
+      "page_number": 22,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Cell Point (India) Limited: notice of 13th AGM",
+      "summary": "Cell Point (India) Limited issued notice of its 13th Annual General Meeting.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sammaan Capital Limited: stressed-asset sale notice",
+      "summary": "Sammaan Capital Limited issued a notice inviting bids for the sale of a stressed asset.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sammaan Finserve Limited: stressed-asset sale notice",
+      "summary": "Sammaan Finserve Limited issued a notice inviting bids for the sale of a stressed asset.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "A.V Thomas International Limited: notice of 85th AGM",
+      "summary": "A.V Thomas International Limited issued notice of its 85th Annual General Meeting.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Voith Paper Fabrics India Limited: postal ballot notice",
+      "summary": "Voith Paper Fabrics India Limited issued a postal ballot notice seeking shareholder approval on stated resolutions.",
+      "page_number": 23,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Adon Agro Commodities Limited: notice of 5th AGM",
+      "summary": "Adon Agro Commodities Limited issued notice of its 5th Annual General Meeting.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Tata Investment Corporation Limited: lost share certificates notice",
+      "summary": "Tata Investment Corporation Limited issued a public notice regarding lost share certificates.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Rama Vision Limited: share transfer notice",
+      "summary": "Rama Vision Limited issued a public notice regarding a share transfer.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Hindustan Unilever Limited: notice of loss of shares",
+      "summary": "Hindustan Unilever Limited issued a public notice regarding loss of shares by a shareholder.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Punjab National Bank: locker break-open notice",
+      "summary": "Punjab National Bank issued a notice regarding the break-open of a safe deposit locker.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Indian Bank: CBD Belapur possession notice",
+      "summary": "Indian Bank issued a SARFAESI possession notice for a property at CBD Belapur.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Indian Bank: Vile Parle West locker break-open notice",
+      "summary": "Indian Bank issued a notice regarding the break-open of a safe deposit locker at its Vile Parle West branch.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Raconteur Global Resources Limited: AGM corrigendum",
+      "summary": "Raconteur Global Resources Limited issued a corrigendum to its earlier Annual General Meeting notice.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Patil Automation Limited: notice of EGM",
+      "summary": "Patil Automation Limited issued notice of an Extraordinary General Meeting.",
+      "page_number": 24,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Canara Bank: Kandivli East possession notice",
+      "summary": "Canara Bank issued a SARFAESI possession notice for a property at Kandivli East.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Union Bank of India: DRT summons notice",
+      "summary": "Union Bank of India issued a Debt Recovery Tribunal summons notice against a borrower.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Garware Hi-Tech Films Limited: lost share certificates notice",
+      "summary": "Garware Hi-Tech Films Limited issued a public notice regarding lost share certificates.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Reliance Industries Limited: duplicate share certificates notice",
+      "summary": "Reliance Industries Limited issued a classified notice regarding the issue of duplicate share certificates.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "ICICI Lombard General Insurance Company Limited: lost share certificate notice",
+      "summary": "ICICI Lombard General Insurance Company Limited issued a public notice regarding a lost share certificate.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "The Investment Trust of India Limited: special-window transfer notice",
+      "summary": "The Investment Trust of India Limited issued a notice regarding a special-window transfer and dematerialisation of shares.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "National General Industries Ltd: notice of 40th AGM",
+      "summary": "National General Industries Ltd issued notice of its 40th Annual General Meeting.",
+      "page_number": 25,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Inox Leasing and Finance Limited: notice of 31st AGM",
+      "summary": "Inox Leasing and Finance Limited issued notice of its 31st Annual General Meeting.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Deepak Fertilisers and Petrochemicals Corporation Limited: special-window transfer notice",
+      "summary": "Deepak Fertilisers and Petrochemicals Corporation Limited issued a notice regarding a special-window transfer and dematerialisation of shares.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "ICICI Bank Limited: lost share certificates public notice",
+      "summary": "ICICI Bank Limited issued a public notice regarding lost share certificates.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Seshaasai Technologies Limited: corrigendum to Annual Report",
+      "summary": "Seshaasai Technologies Limited issued a corrigendum to its previously published Annual Report.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Tata Power Company Limited: tender notice",
+      "summary": "Tata Power Company Limited issued a tender notice inviting bids for its stated scope of work.",
+      "page_number": 26,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Sector",
+      "headline": "EV shift continues to ride on subsidies",
+      "summary": "India's electric-vehicle adoption remains heavily dependent on state and central subsidies, with industry data showing sales growth slowing in states that recently trimmed incentive schemes, underscoring the sector's continued reliance on policy support rather than pure demand economics.",
+      "page_number": 6,
+      "importance": 3,
+      "industry": "EV/Automotive"
+    },
+    {
+      "section": "Sector",
+      "headline": "Delhi hotels put cultural foot forward for leaders",
+      "summary": "Delhi's luxury hotels, including [[Taj Mahal Hotel]], [[ITC]], [[Leela]] and [[The Lalit]] properties, are curating bespoke cultural experiences for visiting foreign dignitaries during the diplomatic season, part of a broader industry push to differentiate hospitality offerings for high-profile guests.",
+      "page_number": 6,
+      "importance": 3,
+      "industry": "Hospitality"
+    },
+    {
+      "section": "Sector",
+      "headline": "GLP-1 mkt to grow fourfold to ₹15,000 crore by FY32",
+      "summary": "India's GLP-1 drug market, covering diabetes and obesity treatments, is projected to grow roughly fourfold to ₹15,000 crore by FY32, driven by rising lifestyle-disease prevalence and expanding access to newer weight-management therapies.",
+      "page_number": 6,
+      "importance": 3,
+      "industry": "Pharma/GLP-1"
+    },
+    {
+      "section": "Sector",
+      "headline": "Domestic airlines cut capacity but double down on key routes",
+      "summary": "Indian carriers trimmed overall seat capacity in recent months while concentrating remaining capacity on high-demand metro and tourist routes, reflecting a strategic pivot toward yield management amid fleet and crew constraints across the industry.",
+      "page_number": 6,
+      "importance": 3,
+      "industry": "Aviation"
+    },
+    {
+      "section": "Sector",
+      "headline": "The new face of beauty",
+      "summary": "India's beauty and skincare industry is being reshaped by direct-to-consumer brands and acquisitions, with [[Nykaa]] expanding its owned-brand portfolio, [[L'Oreal]] deepening its India investment, and [[Hindustan Unilever]] and [[Wipro Consumer Care]] pursuing bolt-on acquisitions to capture the fast-growing premium and clean-beauty segments.",
+      "page_number": 6,
+      "importance": 3,
+      "industry": "Beauty/Skincare"
+    },
+    {
+      "section": "Sector",
+      "headline": "People are on the move",
+      "summary": "A Booking.com-YouGov survey found Indian travellers are prioritising experiential and off-beat destinations over traditional leisure spots, with rising spend on domestic weekend trips and a growing preference for personalised itineraries.",
+      "page_number": 6,
+      "importance": 2,
+      "industry": "Travel"
+    },
+    {
+      "section": "Sector",
+      "headline": "Telecom revenue to grow 12-14% in FY27: Report",
+      "summary": "India's telecom sector revenue is projected to grow 12-14% in FY27, driven by tariff hikes, rising data consumption and continued 5G subscriber additions, according to an industry report.",
+      "page_number": 6,
+      "importance": 3,
+      "industry": "Telecom"
+    },
+    {
+      "section": "Sector",
+      "headline": "Top global consumer firms sharpen India focus for growth",
+      "summary": "Leading global consumer goods companies are sharpening their India strategies, citing the country's rising per-capita consumption and large young population as key growth levers even as global demand elsewhere remains sluggish.",
+      "page_number": 6,
+      "importance": 3,
+      "industry": "FMCG/Consumer"
+    },
+    {
+      "section": "Sector",
+      "headline": "New pricing script for older iPhones",
+      "summary": "Apple and its India retail partners are adopting a fresh pricing strategy for older iPhone models following the latest launch, using deeper discounts and exchange offers to clear inventory and defend market share against aggressive Android competition in the premium segment.",
+      "page_number": 1,
+      "importance": 3,
+      "industry": "Smartphones"
+    },
+    {
+      "section": "Announcements",
+      "headline": "Vi plots comeback to rival Airtel & Jio",
+      "summary": "[[Vodafone Idea]] is preparing a renewed brand and network push to compete more aggressively with [[Bharti Airtel]] and [[Reliance Jio]], as the carrier looks to arrest subscriber losses following fresh funding infusions and government relief measures.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "Birla Estates targets top-3 spot in key realty markets",
+      "summary": "[[Birla Estates]] said it aims to break into the top three developers by market share in its key operating cities over the next few years, backed by an aggressive new-project launch pipeline across residential and commercial segments.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "Ultraviolette to invest ₹779 crore in new facility",
+      "summary": "Electric-motorcycle maker [[Ultraviolette]] said it will invest ₹779 crore to set up a new manufacturing facility, aimed at scaling up production capacity to meet growing demand for its premium electric two-wheelers.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "Frontier AI must go beyond efficiency: Anthropic India",
+      "summary": "[[Anthropic]]'s India team said frontier AI development must move beyond pure efficiency gains toward solving harder, higher-value problems, as the company expands its enterprise and developer engagement in the Indian market.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "VW-JSW tie-up talks focus on cost cuts, export access",
+      "summary": "[[Volkswagen Group]] and [[JSW Green Mobility]] are in talks for a potential tie-up focused on reducing manufacturing costs and gaining export-market access, as both sides explore deeper collaboration in India's electric and passenger-vehicle segments.",
+      "page_number": 7,
+      "importance": 4
+    },
+    {
+      "section": "Announcements",
+      "headline": "PepsiCo sees India among its top-10 market soon",
+      "summary": "[[PepsiCo]] said it expects India to become one of its top-10 global markets in the near term, citing strong growth in its snacks and beverages portfolio and continued investment in local manufacturing capacity.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Tariffs may raise US drug prices; manufacturing shift not easy: Lupin global CFO",
+      "summary": "[[Lupin]]'s global chief financial officer said prospective US tariffs on pharmaceutical imports could raise domestic drug prices, and cautioned that shifting manufacturing to the US is not straightforward given the capital intensity and regulatory lead times involved.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "'Aim to raise $2 bn under RBI swap facility'",
+      "summary": "[[Nabard]] said it aims to raise up to $2 billion under the RBI's currency swap facility to support refinancing of its rural and agricultural lending portfolio.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Access to credit key to retain e-comm sellers: Amazon Pay",
+      "summary": "[[Amazon Pay]] said improving access to affordable working-capital credit is critical to retaining small and medium sellers on e-commerce platforms, as competition for merchant loyalty intensifies among marketplaces.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Vi gives SRK a VIP pass",
+      "summary": "[[Vi]] launched a new premium subscriber perk campaign featuring actor Shah Rukh Khan, offering select customers VIP access to entertainment and lifestyle experiences as part of its brand relaunch push.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "Announcements",
+      "headline": "Britannia Milk Bikis reimagines its roots",
+      "summary": "[[Britannia]] refreshed the packaging and marketing campaign for its Milk Bikis biscuit brand, leaning on nostalgia-driven messaging to reconnect with long-time consumers while targeting a new generation of buyers.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "Announcements",
+      "headline": "Ayushmann fronts Just In Time",
+      "summary": "[[Just In Time]] signed on actor Ayushmann Khurrana as brand ambassador for a new advertising campaign aimed at boosting visibility for the company's product line.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "Appointments",
+      "headline": "Transworld Shipping Lines Limited re-appoints Executive Chairman",
+      "summary": "[[Transworld Shipping Lines Limited]]'s board approved the re-appointment of Ramkrishnan Sivaswamy as Executive Chairman for a further three-year term effective April 1, 2027.",
+      "page_number": 23,
+      "importance": 2
+    },
+    {
+      "section": "Appointments",
+      "headline": "Straive Limited proposes Arkor Raj as Managing Director",
+      "summary": "[[Straive Limited]]'s board and members approved, on August 19 and 21, 2026, the proposed appointment of Arkor Raj as Managing Director for a five-year term.",
+      "page_number": 23,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Mundra ops resume as operators call off strike",
+      "summary": "Operations at [[Adani Ports and Special Economic Zone]]'s Mundra terminal resumed after container-truck operators called off a strike, ending a brief disruption to cargo movement at one of India's largest private ports.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Wipro CTO: AI push frees work capacity equal to 20K workers",
+      "summary": "[[Wipro]]'s chief technology officer said the company's internal AI adoption drive has freed up work capacity equivalent to roughly 20,000 employees, redeployed toward higher-value client engagements and new service lines.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "HDFC Bank wins 7 Bahrain cases over CS AT1 bonds",
+      "summary": "[[HDFC Bank]] won seven cases in Bahrain courts related to disputes over Credit Suisse's written-down AT1 bonds, a favourable outcome in ongoing cross-border litigation stemming from the 2023 Credit Suisse writedown.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Amazon's value buy offering Bazaar logs 8x growth in non-metro cities",
+      "summary": "[[Amazon]]'s value-focused shopping offering, Bazaar, logged 8x year-on-year growth in non-metro cities, reflecting strong traction for budget-priced products among tier-2 and tier-3 consumers.",
+      "page_number": 8,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Fly91 to operate between Tirupati and Vijayawada",
+      "summary": "Regional carrier [[Fly91]] launched new flight operations connecting Tirupati and Vijayawada, expanding its regional connectivity network in Andhra Pradesh.",
+      "page_number": 8,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Bank strike today, services to be affected",
+      "summary": "Bank employee unions went on a nationwide one-day strike, disrupting branch banking, cheque clearance and some digital-service operations across public and private-sector banks.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "Events",
+      "headline": "Shankesh Jewellers Limited reports Q1 FY27 results",
+      "summary": "[[Shankesh Jewellers Limited]] reported unaudited Q1 FY27 total income of ₹4,236.09 million and profit after tax of ₹432.33 million.",
+      "page_number": 24,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Core Laboratories India and Saybolt Inspection Services India to amalgamate",
+      "summary": "[[Core Laboratories India]] and [[Saybolt Inspection Services India]] notified an NCLT-convened meeting of shareholders and creditors to approve their proposed scheme of amalgamation.",
+      "page_number": 25,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Mumbai bound flight delayed by 3.5 hours",
+      "summary": "An [[IndiGo]] flight bound for Mumbai was delayed by 3.5 hours, inconveniencing passengers amid ongoing scrutiny of airline on-time performance.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "IPO",
+      "headline": "Karamtara Engineering Limited IPO closes today",
+      "summary": "Karamtara Engineering Limited's main-board IPO, with a price band of ₹241-254 per share, closes for subscription today, September 11.",
+      "page_number": 21,
+      "importance": 4
+    },
+    {
+      "section": "IPO",
+      "headline": "Manipal Payment and Identity Solutions Limited IPO closes today",
+      "summary": "Manipal Payment and Identity Solutions Limited (formerly MCT Cards & Technology Limited)'s main-board IPO, with a price band of ₹322-339 per share, closes for subscription today, September 11.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Sunrise Middle East Turn Tech Limited files DRHP for SME IPO",
+      "summary": "Sunrise Middle East Turn Tech Limited filed its draft red herring prospectus for an SME IPO; the price band is yet to be finalised.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Bhagya Machine Tools Limited files DRHP for SME IPO",
+      "summary": "Bhagya Machine Tools Limited filed its draft red herring prospectus on September 10 for an SME IPO; the price band is yet to be finalised.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "SI Capital & Financial Services Limited rights shares list today",
+      "summary": "SI Capital & Financial Services Limited's rights-issue shares, following the finalised Basis of Allotment, list on the exchanges today, September 11.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Rentomojo Limited IPO closes today",
+      "summary": "Rentomojo Limited's main-board IPO, with a price band of ₹384-404 per share, closes for subscription today, September 11. The offer comprises a fresh issue of ₹1,500 million along with a large offer-for-sale by existing investors including Accel, Edelweiss, IDG, ValueQuest, Madison, Chiratae, GMO, Prathiti and Renaud Laplanche.",
+      "page_number": 21,
+      "importance": 5
+    },
+    {
+      "section": "IPO",
+      "headline": "National Stock Exchange of India Limited sets IPO price band at ₹1,700-1,785",
+      "summary": "National Stock Exchange of India Limited fixed a price band of ₹1,700-1,785 per share for its main-board IPO, comprising an offer-for-sale of roughly 12.64 crore shares by SBI, Canada Pension Plan Investment Board, Aranda Investments, MS Strategic, New India Assurance, SBI Capital Markets, Bank of Baroda, Stock Holding Corporation, GIC and United India Insurance. Anchor bidding opens September 16, with the public issue open from September 17 to September 21; the post-offer market capitalisation at the cap price is about ₹4,20,750 crore.",
+      "page_number": 21,
+      "importance": 5
+    },
+    {
+      "section": "IPO",
+      "headline": "SpectraA Technology Solutions Limited sets IPO price band at ₹112-118",
+      "summary": "SpectraA Technology Solutions Limited fixed a price band of ₹112-118 per share for its SME IPO on NSE Emerge, with anchor bidding on September 16 and the public issue open from September 17 to September 21.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Runwal Enterprises Limited files addendum to DRHP",
+      "summary": "Runwal Enterprises Limited filed an addendum to its draft red herring prospectus, comprising a fresh issue of up to ₹5,000 million; the price band is yet to be finalised.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Hero Motors sets price band at ₹79-84 for IPO",
+      "summary": "Hero Motors fixed a price band of ₹79-84 per share for its upcoming main-board IPO.",
+      "page_number": 21,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Sonaselection fixes IPO price band at ₹94-99",
+      "summary": "Sonaselection fixed a price band of ₹94-99 per share for its upcoming IPO.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Knack Global files for IPO via confidential route",
+      "summary": "Knack Global filed its draft IPO papers via the confidential pre-filing route, deferring public disclosure of offer details until closer to launch.",
+      "page_number": 21,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "Retail rush pushes monthly SIP contributions to record high in Aug",
+      "summary": "Monthly systematic investment plan (SIP) contributions from retail investors hit a record high in August, underscoring continued strong retail participation in mutual funds even amid volatile broader markets.",
+      "page_number": 10,
+      "importance": 4
+    },
+    {
+      "section": "Market",
+      "headline": "Canara Bank to raise up to ₹4,500 cr via AT-1 bonds",
+      "summary": "[[Canara Bank]] plans to raise up to ₹4,500 crore through Additional Tier-1 bonds to bolster its capital adequacy ratio and support balance-sheet growth.",
+      "page_number": 10,
+      "importance": 3
+    },
+    {
+      "section": "Market",
+      "headline": "Bond platforms seek insurance to boost retail play",
+      "summary": "Online bond platforms are exploring insurance-backed guarantee products to make fixed-income instruments more attractive to retail investors, aiming to widen participation beyond traditional bank deposits.",
+      "page_number": 10,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "Reliable Ventures India Limited issues post-offer advertisement",
+      "summary": "[[Reliable Ventures India Limited]] issued a post-offer advertisement under Sebi's Substantial Acquisition of Shares and Takeovers regulations, disclosing the outcome of its open offer.",
+      "page_number": 22,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "Helios Mutual Fund issues IDCW-option addendum",
+      "summary": "Helios Mutual Fund issued an addendum notice regarding changes to the Income Distribution cum Capital Withdrawal (IDCW) option of one of its schemes.",
+      "page_number": 22,
+      "importance": 1,
+      "is_notice": true
+    },
+    {
+      "section": "Trade",
+      "headline": "Meet may usher in India-China economic reset",
+      "summary": "The upcoming BRICS-linked summit, featuring a bilateral meeting between Prime Minister Narendra Modi and Chinese President Xi Jinping, is expected to open the door to an economic reset between the two countries, with trade, technology and investment high on the agenda after years of strained ties.",
+      "page_number": 1,
+      "importance": 4
+    },
+    {
+      "section": "Growth & Development",
+      "headline": "UIDAI working to take Aadhaar global, says CEO",
+      "summary": "The Unique Identification Authority of India's chief executive said the agency is working to export the Aadhaar digital-identity model to other countries, building on interest from several governments in India's Digital Public Infrastructure approach.",
+      "page_number": 3,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "War to end after midterm polls: Trump",
+      "summary": "US President Donald Trump said the ongoing Iran conflict is likely to end only after the US midterm elections, signalling no near-term de-escalation and adding to global uncertainty over the conflict's economic fallout.",
+      "page_number": 1,
+      "importance": 5
+    },
+    {
+      "section": "International News",
+      "headline": "Saudi's crude output at lowest since 1990",
+      "summary": "Saudi Arabia's crude oil output has fallen to its lowest level since 1990, reflecting both voluntary production cuts and the broader disruption to Gulf supply chains amid escalating regional conflict.",
+      "page_number": 11,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Houthis seize Yemen port city",
+      "summary": "Houthi forces seized control of a key Yemeni port city, escalating the regional conflict and raising fresh concerns over shipping security in the Red Sea corridor.",
+      "page_number": 11,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "Oil jumps to $107 a barrel",
+      "summary": "Crude oil prices jumped to $107 a barrel as the Iran conflict intensified and Saudi output fell to its lowest since 1990, raising fresh concerns over global inflation and import costs for oil-dependent economies including India.",
+      "page_number": 11,
+      "importance": 4
+    },
+    {
+      "section": "International News",
+      "headline": "US Prez promises $5,000 payout if Republicans win... $500 Obamacare refunds",
+      "summary": "US President Donald Trump promised a $5,000 payout to households if Republicans retain control in the midterm elections, alongside a proposed $500 refund tied to Affordable Care Act premium subsidies, as part of an election-season economic pitch.",
+      "page_number": 11,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Cargo vessel fire at east China shipyard kills 25",
+      "summary": "A fire aboard a cargo vessel at an East China shipyard killed 25 workers, prompting an investigation into safety lapses at the facility.",
+      "page_number": 11,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "JPMorgan upgrades Meta to 'overweight'",
+      "summary": "JPMorgan upgraded Meta Platforms to \"overweight,\" citing improving advertising revenue trends and AI-driven efficiency gains, in a note to clients.",
+      "page_number": 11,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "OpenAI faces US Senate probe into Hugging Face case",
+      "summary": "OpenAI is facing a US Senate probe related to a dispute involving AI model-hosting platform Hugging Face, with lawmakers seeking details on data practices and competitive conduct.",
+      "page_number": 11,
+      "importance": 3
+    },
+    {
+      "section": "International News",
+      "headline": "ECB hikes rates, raises inflation forecasts",
+      "summary": "The European Central Bank raised interest rates and lifted its inflation forecasts for the eurozone, citing persistent price pressures from energy costs and a tight labour market.",
+      "page_number": 11,
+      "importance": 4
+    },
+    {
+      "section": "International News",
+      "headline": "SpaceX is a huge threat to earth-bound rivals, too",
+      "summary": "A Bloomberg opinion piece argues SpaceX's rapid satellite-launch cadence and cost advantage pose a competitive threat not just to rival launch providers but to earth-bound telecom and broadband incumbents as Starlink scales globally.",
+      "page_number": 11,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "How India is steering the Global South's coalition",
+      "summary": "An explainer piece examines India's growing role in coordinating Global South priorities within BRICS and other multilateral forums, positioning New Delhi as a bridge between developing and developed economies on trade and climate issues.",
+      "page_number": 11,
+      "importance": 3
+    },
+    {
+      "section": "Others",
+      "headline": "World needs more women in leadership roles: Ambani",
+      "summary": "Nita Ambani said the world needs greater representation of women in leadership roles across business and public life, speaking at a forum on gender diversity.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Reservoir storage improves marginally",
+      "summary": "India's major reservoir storage levels improved marginally week-on-week, though they remain below the corresponding period's ten-year average in several river basins.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "'Rise in AI adoption risks deepening of gender bias'",
+      "summary": "A Salesforce executive warned that rising AI adoption in hiring and workplace decision-making risks deepening existing gender biases unless companies actively audit their AI systems for fairness.",
+      "page_number": 3,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Powering AI",
+      "summary": "An unsigned editorial argues that India's AI ambitions will be constrained by power-grid capacity unless energy infrastructure investment keeps pace with data-centre buildout over the next decade.",
+      "page_number": 9,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "Electricity, not oil, should define growth",
+      "summary": "In an opinion piece, ReNew chairman Sumant Sinha argues that electricity consumption, not oil demand, should be the primary benchmark for measuring India's economic growth trajectory as the country's energy mix shifts toward renewables and electrification.",
+      "page_number": 9,
+      "importance": 2
+    }
+  ],
+  "stocksInFocus": [
+    { "name": "National Stock Exchange of India Limited", "note": "IPO price band fixed at ₹1,700-1,785; bidding opens Sept 17, closes Sept 21" },
+    { "name": "Rentomojo Limited", "note": "IPO closes today, price band ₹384-404" },
+    { "name": "Karamtara Engineering Limited", "note": "IPO closes today, price band ₹241-254" },
+    { "name": "Manipal Payment and Identity Solutions Limited", "note": "IPO closes today, price band ₹322-339" },
+    { "name": "Vodafone Idea", "note": "Launches brand comeback push with SRK campaign to rival Airtel and Jio" },
+    { "name": "HDFC Bank", "note": "Wins 7 Bahrain court cases over Credit Suisse AT1 bonds" },
+    { "name": "SI Capital & Financial Services Limited", "note": "Rights-issue shares list on exchanges today" },
+    { "name": "Canara Bank", "note": "To raise up to ₹4,500 crore via AT-1 bonds" }
+  ],
+  "topStories": [
+    { "headline": "National Stock Exchange of India Limited sets IPO price band at ₹1,700-1,785", "section": "IPO", "note": "Marquee IPO; post-offer market cap ~₹4,20,750 crore at cap price." },
+    { "headline": "Rentomojo Limited IPO closes today", "section": "IPO", "note": "Large main-board offer backed by marquee VC investors." },
+    { "headline": "War to end after midterm polls: Trump", "section": "International News", "note": "No near-term de-escalation signalled for the Iran conflict." },
+    { "headline": "Oil jumps to $107 a barrel", "section": "International News", "note": "Driven by intensifying conflict and lowest Saudi output since 1990." },
+    { "headline": "Meet may usher in India-China economic reset", "section": "Trade", "note": "Modi-Xi bilateral expected on the sidelines of a BRICS-linked summit." },
+    { "headline": "Guard customer data: Malhotra", "section": "Economy", "note": "RBI Governor's call at Global Fintech Fest 2026." },
+    { "headline": "Govt amends e-comm rules to check price manipulation, dark patterns", "section": "Policy", "note": "Tighter disclosure norms ahead of festive shopping season." },
+    { "headline": "Mandatory one-time test for all pilots by July 2027", "section": "Regulatory", "note": "DGCA tightens flight-safety oversight." },
+    { "headline": "Vi plots comeback to rival Airtel & Jio", "section": "Announcements", "note": "Renewed brand and network push after fresh funding infusions." },
+    { "headline": "VW-JSW tie-up talks focus on cost cuts, export access", "section": "Announcements", "note": "Potential EV and passenger-vehicle collaboration." },
+    { "headline": "Retail rush pushes monthly SIP contributions to record high in Aug", "section": "Market", "note": "Continued strong retail mutual-fund participation." },
+    { "headline": "HDFC Bank wins 7 Bahrain cases over CS AT1 bonds", "section": "Events", "note": "Favourable outcome in cross-border Credit Suisse AT1 litigation." },
+    { "headline": "ECB hikes rates, raises inflation forecasts", "section": "International News", "note": "Persistent eurozone price pressures cited." },
+    { "headline": "New pricing script for older iPhones", "section": "Sector", "note": "Fresh discounting strategy to defend market share." },
+    { "headline": "Bank strike today, services to be affected", "section": "Events", "note": "Nationwide one-day strike disrupts branch banking." }
+  ],
+  "marketImpact": [
+    { "headline": "Oil jumps to $107 a barrel", "section": "International News", "note": "Direct read-through to India's import bill and inflation outlook." },
+    { "headline": "National Stock Exchange of India Limited sets IPO price band at ₹1,700-1,785", "section": "IPO", "note": "Marquee listing with a large implied market cap." },
+    { "headline": "Rentomojo Limited IPO closes today", "section": "IPO", "note": "Large main-board offer, price-sensitive for subscribers." },
+    { "headline": "Retail rush pushes monthly SIP contributions to record high in Aug", "section": "Market", "note": "Signals sustained domestic liquidity support for equities." },
+    { "headline": "HDFC Bank wins 7 Bahrain cases over CS AT1 bonds", "section": "Events", "note": "Positive litigation outcome, relevant to bank's contingent-liability profile." },
+    { "headline": "ECB hikes rates, raises inflation forecasts", "section": "International News", "note": "Global rate and currency read-through." },
+    { "headline": "Canara Bank to raise up to ₹4,500 cr via AT-1 bonds", "section": "Market", "note": "New AT-1 supply, relevant for bank capital and bond pricing." },
+    { "headline": "War to end after midterm polls: Trump", "section": "International News", "note": "Sustains geopolitical risk premium across global markets." },
+    { "headline": "Vi plots comeback to rival Airtel & Jio", "section": "Announcements", "note": "Competitive-dynamics shift across telecom stocks." },
+    { "headline": "VW-JSW tie-up talks focus on cost cuts, export access", "section": "Announcements", "note": "Potential strategic re-rating for both auto players." }
+  ],
+  "ipoListings": [
+    {
+      "company_name": "Karamtara Engineering Limited",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 241,
+      "issue_price_high": 254,
+      "open_date": null,
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "closing",
+      "notes": "Main-board IPO"
+    },
+    {
+      "company_name": "Manipal Payment and Identity Solutions Limited",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 322,
+      "issue_price_high": 339,
+      "open_date": null,
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "closing",
+      "notes": "Main-board IPO; formerly MCT Cards & Technology Limited"
+    },
+    {
+      "company_name": "Sunrise Middle East Turn Tech Limited",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "SME IPO; DRHP filed, price band TBD"
+    },
+    {
+      "company_name": "Bhagya Machine Tools Limited",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "SME IPO; DRHP filed Sept 10, price band TBD"
+    },
+    {
+      "company_name": "SI Capital & Financial Services Limited",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": "2026-09-11",
+      "listing_price": null,
+      "status": "listing",
+      "notes": "Rights issue; Basis of Allotment finalised"
+    },
+    {
+      "company_name": "Rentomojo Limited",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 384,
+      "issue_price_high": 404,
+      "open_date": null,
+      "close_date": "2026-09-11",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "closing",
+      "notes": "Main-board IPO; fresh issue ₹1,500mn plus OFS by Accel, Edelweiss, IDG, ValueQuest, Madison, Chiratae, GMO, Prathiti, Renaud Laplanche"
+    },
+    {
+      "company_name": "National Stock Exchange of India Limited",
+      "ticker": null,
+      "exchange": "BSE, NSE",
+      "issue_price_low": 1700,
+      "issue_price_high": 1785,
+      "open_date": "2026-09-17",
+      "close_date": "2026-09-21",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Main-board IPO; OFS ~12.64cr shares by SBI, CPPIB, Aranda Investments, MS Strategic, New India Assurance, SBI Capital Markets, Bank of Baroda, Stock Holding Corp, GIC, United India Insurance; anchor Sept 16; post-offer market cap ~₹4,20,750cr at cap price"
+    },
+    {
+      "company_name": "SpectraA Technology Solutions Limited",
+      "ticker": null,
+      "exchange": "NSE Emerge",
+      "issue_price_low": 112,
+      "issue_price_high": 118,
+      "open_date": "2026-09-17",
+      "close_date": "2026-09-21",
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "SME IPO; anchor Sept 16"
+    },
+    {
+      "company_name": "Runwal Enterprises Limited",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Addendum to DRHP; fresh issue up to ₹5,000mn, price band TBD"
+    },
+    {
+      "company_name": "Hero Motors",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": 79,
+      "issue_price_high": 84,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Price band fixed for upcoming main-board IPO"
+    },
+    {
+      "company_name": "Sonaselection",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": 94,
+      "issue_price_high": 99,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Price band fixed for upcoming IPO"
+    },
+    {
+      "company_name": "Knack Global",
+      "ticker": null,
+      "exchange": null,
+      "issue_price_low": null,
+      "issue_price_high": null,
+      "open_date": null,
+      "close_date": null,
+      "listing_date": null,
+      "listing_price": null,
+      "status": "upcoming",
+      "notes": "Filed for IPO via confidential pre-filing route"
+    }
+  ]
+}
