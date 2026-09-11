@@ -91,24 +91,25 @@ function IpoFactSheet({ l }: { l: IpoListing }) {
       {l.exchange && <p className="text-[13px] text-gray-500 mt-0.5">{l.exchange}</p>}
 
       {hasStructuredDetail ? (
-        <table className="w-full mt-3 text-[13px] border-collapse">
-          <thead>
-            <tr className="text-left text-gray-500 font-semibold border-b border-gray-200">
-              <th className="py-2 pr-4 font-semibold w-[38%]">Key detail</th>
-              <th className="py-2 font-semibold">Information</th>
-            </tr>
-          </thead>
-          <tbody>
-            {structuredRows.map(([k, v]) => (
-              <tr key={k} className="border-b border-gray-100 last:border-b-0">
-                <td className="py-2.5 pr-4 text-gray-500 align-top">{k}</td>
-                <td className="py-2.5 text-gray-800 align-top">{v}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <ul className="mt-3 space-y-2.5 text-[13.5px]">
+          {structuredRows.map(([k, v]) => (
+            <li key={k} className="flex gap-2 leading-relaxed">
+              <span className="text-gray-300 shrink-0 select-none">•</span>
+              <span className="text-gray-700">
+                <span className="font-semibold text-gray-900">{k}:</span> {v}
+              </span>
+            </li>
+          ))}
+        </ul>
       ) : (
-        l.notes && <p className="text-[13px] text-gray-600 mt-3 leading-relaxed">{l.notes}</p>
+        l.notes && (
+          <ul className="mt-3 space-y-2.5 text-[13.5px]">
+            <li className="flex gap-2 leading-relaxed">
+              <span className="text-gray-300 shrink-0 select-none">•</span>
+              <span className="text-gray-700">{l.notes}</span>
+            </li>
+          </ul>
+        )
       )}
     </div>
   );
