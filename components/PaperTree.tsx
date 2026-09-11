@@ -201,9 +201,6 @@ const GROUPS: { label: string; single?: string; children?: string[] }[] = [
   { label: "Policy", single: "Policy" },
   { label: "Regulatory", single: "Regulatory" },
   { label: "Sector", single: "Sector" },
-  { label: "IPO", single: "IPO" },
-  { label: "Market", single: "Market" },
-  { label: "Trade", single: "Trade" },
   { label: "Insurance", single: "Insurance" },
   { label: "Corporate Announcements", single: "Announcements" },
   { label: "Corporate Events", single: "Events" },
@@ -578,6 +575,23 @@ export default function PaperTree({
               <span className="text-[10px] font-normal tabular-nums opacity-70">{totalNoticeCount}</span>
             </button>
           )}
+          {["IPO", "Market", "Trade"].map((leaf) =>
+            countOf(leaf) > 0 ? (
+              <button
+                key={leaf}
+                onClick={() => selectLeaf(leaf)}
+                onDoubleClick={() => deselectRibbonTab()}
+                className={`flex items-center gap-1 text-[11.5px] font-semibold px-2.5 py-1.5 rounded-lg border transition-colors ${
+                  !searchActive && activeLeaf === leaf
+                    ? "bg-[#182131] border-[#182131] text-white"
+                    : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+                }`}
+              >
+                {leaf}
+                <span className="text-[10px] font-normal tabular-nums opacity-70">{countOf(leaf)}</span>
+              </button>
+            ) : null
+          )}
         </div>
         <div className="flex items-center gap-1 shrink-0">
         <span className="text-[10.5px] text-gray-400 mr-0.5">Text size</span>
@@ -688,11 +702,17 @@ export default function PaperTree({
                 {searchResults.length}
               </span>
             </div>
-          ) : activeLeaf === TOP_TAB || activeLeaf === MARKET_TAB || activeLeaf === STOCKS_TAB || activeLeaf === NOTICES_TAB ? (
+          ) : activeLeaf === TOP_TAB ||
+            activeLeaf === MARKET_TAB ||
+            activeLeaf === STOCKS_TAB ||
+            activeLeaf === NOTICES_TAB ||
+            activeLeaf === "IPO" ||
+            activeLeaf === "Market" ||
+            activeLeaf === "Trade" ? (
             <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100 flex-wrap">
               <span
                 className={`flex items-center gap-1.5 text-[12px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded ${
-                  SECTION_STYLE[activeLeaf] ?? "text-gray-700 bg-gray-100"
+                  SECTION_STYLE[activeLeaf ?? ""] ?? "text-gray-700 bg-gray-100"
                 }`}
               >
                 {activeLeaf}
@@ -703,7 +723,9 @@ export default function PaperTree({
                     ? marketImpactStories.length
                     : activeLeaf === STOCKS_TAB
                     ? stocksInFocus.length
-                    : allNotices.length}
+                    : activeLeaf === NOTICES_TAB
+                    ? allNotices.length
+                    : countOf(activeLeaf ?? "")}
                 </span>
               </span>
             </div>
