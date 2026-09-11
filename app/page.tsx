@@ -1,5 +1,5 @@
 import { unstable_cache } from "next/cache";
-import { getPaperStories, getPaperDays, getStocksInFocus, getTopStories, getMarketImpactStories } from "@/lib/queries";
+import { getPaperStories, getPaperDays, getStocksInFocus, getTopStories, getMarketImpactStories, getIpoListings } from "@/lib/queries";
 import PaperTree from "@/components/PaperTree";
 import NavTabs from "@/components/NavTabs";
 import DatePicker from "@/components/DatePicker";
@@ -17,6 +17,7 @@ const cachedGetPaperDays = unstable_cache(getPaperDays, ["paper-days"], { revali
 const cachedGetStocksInFocus = unstable_cache(getStocksInFocus, ["stocks-in-focus"], { revalidate: 300 });
 const cachedGetTopStories = unstable_cache(getTopStories, ["top-stories"], { revalidate: 300 });
 const cachedGetMarketImpactStories = unstable_cache(getMarketImpactStories, ["market-impact-stories"], { revalidate: 300 });
+const cachedGetIpoListings = unstable_cache(getIpoListings, ["ipo-listings"], { revalidate: 300 });
 
 export default async function HomePage({
   searchParams,
@@ -27,12 +28,13 @@ export default async function HomePage({
   const todayIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
   const activeDate = params.date ?? todayIST;
 
-  const [stories, days, stocksInFocus, topStories, marketImpactStories] = await Promise.all([
+  const [stories, days, stocksInFocus, topStories, marketImpactStories, ipoListings] = await Promise.all([
     cachedGetPaperStories(activeDate, params.edition),
     cachedGetPaperDays(),
     cachedGetStocksInFocus(activeDate, params.edition),
     cachedGetTopStories(activeDate, params.edition),
     cachedGetMarketImpactStories(activeDate, params.edition),
+    cachedGetIpoListings(),
   ]);
 
   const bySection = stories.reduce<Record<string, typeof stories>>((acc, s) => {
@@ -93,6 +95,7 @@ export default async function HomePage({
               stocksInFocus={stocksInFocus}
               topStories={topStories}
               marketImpactStories={marketImpactStories}
+              ipoListings={ipoListings}
             />
           )}
 

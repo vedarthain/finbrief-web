@@ -68,8 +68,10 @@ function isPending(l: IpoListing) {
 // row is clicked. Prefers the structured fields (offer_type/issue_size/
 // sellers/implied_valuation) captured at extraction time; older listings
 // published before those columns existed fall back to the free-text notes
-// blob so nothing goes blank for historical rows. ──
-function IpoFactSheet({ l }: { l: IpoListing }) {
+// blob so nothing goes blank for historical rows. Exported so PaperTree.tsx
+// can render the same table inline under a matching "IPO" section story on
+// the Today's Paper page, not just here on the dedicated /ipo page. ──
+export function IpoFactSheet({ l }: { l: IpoListing }) {
   const priceBand =
     l.issue_price_low != null || l.issue_price_high != null
       ? `₹${l.issue_price_low ?? "—"}–${l.issue_price_high ?? "—"}/share`

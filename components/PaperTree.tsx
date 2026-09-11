@@ -2,8 +2,23 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { PaperStory, StockInFocus, TopStory, MarketImpactStory } from "@/lib/queries";
+import { PaperStory, StockInFocus, TopStory, MarketImpactStory, IpoListing } from "@/lib/queries";
 import PaperSectionTable, { TableRow } from "./PaperSectionTable";
+import { IpoFactSheet } from "./IpoTable";
+
+// Matches an "IPO"-section story's headline against `ipo_listings.company_name`
+// (stripping a trailing "Limited"/"Ltd" so "Rentomojo Limited IPO closes
+// today" still matches company_name "Rentomojo") so the same structured
+// fact-sheet table shown on the dedicated /ipo page can also render inline
+// here, instead of just the free-text bullet summary.
+function findIpoMatch(headline: string, listings: IpoListing[]): IpoListing | null {
+  const h = headline.toLowerCase();
+  for (const l of listings) {
+    const stem = l.company_name.replace(/\s+(limited|ltd\.?)$/i, "").trim().toLowerCase();
+    if (stem.length >= 3 && h.includes(stem)) return l;
+  }
+  return null;
+}
 
 export function renderSummary(text: string, dimClass: string) {
   return text.split(/(\[\[[^\]]+\]\])/g).map((part, i) => {
@@ -234,11 +249,13 @@ export default function PaperTree({
   stocksInFocus,
   topStories,
   marketImpactStories,
+  ipoListings = [],
 }: {
   bySection: Record<string, PaperStory[]>;
   stocksInFocus: StockInFocus[];
   topStories: TopStory[];
   marketImpactStories: MarketImpactStory[];
+  ipoListings?: IpoListing[];
 }) {
   // Routine compliance filings (AGM/postal-ballot/SARFAESI/lost-share-cert notices,
   // etc.) are real content but not "news" — every section's default view
@@ -445,6 +462,17 @@ export default function PaperTree({
   const selectedMarket = !searchActive && activeLeaf === MARKET_TAB ? marketImpactStories[selIndex] ?? null : null;
   const selectedTopFull = selectedTop ? storyByHeadline.get(selectedTop.headline) ?? null : null;
   const selectedMarketFull = selectedMarket ? storyByHeadline.get(selectedMarket.headline) ?? null : null;
+
+  // If the selected story is filed under the "IPO" section (or, for Top
+  // Stories/Market Impact digest entries, its full story is), try to match
+  // it to a structured ipo_listings row so the description panel can show
+  // the same tabular fact sheet as the dedicated /ipo page, instead of only
+  // the free-text bullet summary.
+  const ipoMatchFor = (story: { section: string; headline: string } | null) =>
+    story && story.section === "IPO" ? findIpoMatch(story.headline, ipoListings) : null;
+  const selectedStoryIpoMatch = ipoMatchFor(selectedStory);
+  const selectedTopIpoMatch = ipoMatchFor(selectedTopFull);
+  const selectedMarketIpoMatch = ipoMatchFor(selectedMarketFull);
 
   function selectLeaf(leaf: string, focusAt = 0) {
     setActiveLeaf(leaf);
@@ -777,9 +805,13 @@ export default function PaperTree({
                     )}
                     {multiEdition && <EditionBadge edition={selectedStory.edition} />}
                   </div>
-                  <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
-                    {renderSummaryBullets(selectedStory.summary, "text-gray-700")}
-                  </div>
+                  {selectedStoryIpoMatch ? (
+                    <IpoFactSheet l={selectedStoryIpoMatch} />
+                  ) : (
+                    <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
+                      {renderSummaryBullets(selectedStory.summary, "text-gray-700")}
+                    </div>
+                  )}
                   {selectedStory.page_number != null && (
                     <p className="text-[13px] text-gray-400 mt-2">Page {selectedStory.page_number}</p>
                   )}
@@ -798,9 +830,13 @@ export default function PaperTree({
                   </div>
                   {selectedTopFull ? (
                     <>
-                      <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
-                        {renderSummaryBullets(selectedTopFull.summary, "text-gray-700")}
-                      </div>
+                      {selectedTopIpoMatch ? (
+                        <IpoFactSheet l={selectedTopIpoMatch} />
+                      ) : (
+                        <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
+                          {renderSummaryBullets(selectedTopFull.summary, "text-gray-700")}
+                        </div>
+                      )}
                       {selectedTopFull.page_number != null && (
                         <p className="text-[13px] text-gray-400 mt-2">Page {selectedTopFull.page_number}</p>
                       )}
@@ -827,9 +863,13 @@ export default function PaperTree({
                   </div>
                   {selectedMarketFull ? (
                     <>
-                      <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
-                        {renderSummaryBullets(selectedMarketFull.summary, "text-gray-700")}
-                      </div>
+                      {selectedMarketIpoMatch ? (
+                        <IpoFactSheet l={selectedMarketIpoMatch} />
+                      ) : (
+                        <div style={{ fontSize: px(16.5), minHeight: descMinHeight }} className="text-gray-700">
+                          {renderSummaryBullets(selectedMarketFull.summary, "text-gray-700")}
+                        </div>
+                      )}
                       {selectedMarketFull.page_number != null && (
                         <p className="text-[13px] text-gray-400 mt-2">Page {selectedMarketFull.page_number}</p>
                       )}
