@@ -1,0 +1,584 @@
+{
+  "edition": "Financial Express",
+  "paper_date": "2026-09-12",
+  "stories": [
+    {
+      "section": "Economy",
+      "headline": "Niti CEO bats for inclusive growth",
+      "summary": "Niti Aayog CEO Anuraj Jain said India has made reasonable progress on economic growth but needs more inclusive growth to become a developed nation by 2047, noting some states have done well on health and education while others need greater attention.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "Economy",
+      "headline": "Defunct, legacy firms drag down IBC recoveries: India Ratings",
+      "summary": "India Ratings said legacy stressed assets are dragging down recoveries under the Insolvency and Bankruptcy Code, with around 42% of insolvency cases yielding resolution plans previously held by the Board for Industrial and Financial Reconstruction (BIFR) or defunct before the insolvency process began.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Policy",
+      "headline": "Bankers' Books Evidence Act to take effect Oct 1",
+      "summary": "The Bankers' Books Evidence Act, 2026 comes into force from October 1, modernising the framework for using banking records as evidence in line with contemporary banking practices.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Sebi settles NSEL proceedings against 91 brokers",
+      "summary": "Markets regulator Sebi has settled proceedings against 91 commodity brokers in the National Spot Exchange (NSEL) matter, with several entities agreeing to temporary restrictions on proprietary trading and taking up new clients in the commodity segment.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "With ban on SRTT, Tata meet takes up routine issues",
+      "summary": "With Sir Ratan Tata Trust (SRTT) still unable to convene board meetings under a ban imposed by the Charity Commissioner of Maharashtra pending an investigation into alleged violations of the Maharashtra Public Trusts Act, a meeting of [[Tata Trusts]] on Friday took up only routine matters such as approval of accounts and grants. The ban, imposed in May, has significantly affected the Tata ecosystem, leaving [[Tata Sons]]' AGM adjourned since August 18 for want of quorum and its holding company unable to nominate its next chairman.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Fortune Assets Private Limited vs Edelweiss Asset Reconstruction Company Limited: NCLT publication notice of next hearing",
+      "summary": "NCLT Ahmedabad Bench-I: publication notice of next date of hearing (October 5, 2026) in an application filed by Fortune Assets Private Limited (through ARCK Resolution Professionals LLP) against [[Edelweiss Asset Reconstruction Company Limited]] and others under Section 60(5) of the IBC.",
+      "page_number": 10,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "AMNS Ports Shared Services, AMNS Ports India and AMNS Ports Hazira: NCLT notice of hearing of scheme of amalgamation petition",
+      "summary": "NCLT Ahmedabad Bench: notice of hearing of a company scheme petition for the composite scheme of amalgamation and arrangement amongst [[AMNS Ports Shared Services Private Limited]], [[AMNS Ports India Limited]] and [[AMNS Ports Hazira Limited]] and their respective shareholders.",
+      "page_number": 11,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Piombino Steel Limited amalgamation with JSW Steel Limited: NCLT notice of hearing of company scheme petition",
+      "summary": "NCLT Mumbai Bench: notice of hearing of the company scheme petition for amalgamation of [[Piombino Steel Limited]] with [[JSW Steel Limited]] and their respective shareholders, fixed for hearing on September 24, 2026.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Company AGM/EGM and postal-ballot notices: Meesho, Shree Renuka Sugars, Raymond Realty, Indian Wood Products, Rex Sealing and Packing, Bayer CropScience, Spandana Sphoorty Financial",
+      "summary": "Routine AGM/EGM and postal-ballot notices and corrigenda from [[Meesho Limited]] (corrigendum to 11th AGM notice), [[Shree Renuka Sugars Limited]] (corrigendum to 30th AGM notice), [[Raymond Realty Limited]] (EGM via video conferencing), [[The Indian Wood Products Company Ltd]] (corrigendum to 106th AGM notice), [[Rex Sealing and Packing Industries Limited]] (21st AGM notice), [[Bayer CropScience Limited]] (postal ballot for director appointment) and [[Spandana Sphoorty Financial Limited]] (postal ballot for director appointment).",
+      "page_number": 11,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Lost/duplicate share certificate notices: Hero MotoCorp, Grasim Industries, Titan Company, GlaxoSmithKline Pharmaceuticals, Kirloskar Brothers, NESCO, Larsen & Toubro",
+      "summary": "Routine notices of lost/misplaced share certificates and applications for duplicate certificates filed by shareholders of [[Hero MotoCorp Limited]], [[Grasim Industries Limited]], [[Titan Company Limited]], [[GlaxoSmithKline Pharmaceuticals Limited]], [[Kirloskar Brothers Ltd]], [[NESCO Limited]] and [[Larsen & Toubro Limited]].",
+      "page_number": 11,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Special window for demat/transfer of physical shares: Cenlub Industries, Divi's Laboratories",
+      "summary": "[[Cenlub Industries Limited]] and [[Divi's Laboratories Limited]] opened special windows for fresh lodgement/re-lodgement and dematerialisation of physical share transfer requests, per Sebi's special-window framework for physical share transfers.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "SARFAESI demand/possession notices from banks and ARCs across Maharashtra",
+      "summary": "Multiple banks and asset reconstruction companies issued Section 13(2)/13(4) SARFAESI demand and symbolic-possession notices against defaulting borrowers across Maharashtra: [[Axis Bank Ltd]], [[Bank of Baroda]], [[Bank of Maharashtra]], [[State Bank of India]], [[Punjab National Bank]], [[RBL Bank Ltd]], [[L&T Finance Limited]], [[Asset Reconstruction Company (India) Limited]] (ARCIL), [[The Kalyan Janata Sahakari Bank Ltd]] and [[Udyam Vikas Sahakari Bank Ltd]].",
+      "page_number": 17,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Union Bank of India: commercial summary suit against Vaibhav Tours & Travels",
+      "summary": "[[Union Bank of India]] filed a commercial summary suit in the Bombay City Civil Court seeking a decree of over ₹55.86 lakh with interest against M/s Vaibhav Tours & Travels and its proprietor for a defaulted loan.",
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Tata Power Company Limited: notice inviting tender for balance-of-plant works",
+      "summary": "[[Tata Power Company Limited]] invited tenders from eligible bidders for balance-of-plant works required for various transmission stations in and around Mumbai.",
+      "page_number": 11,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "IBBI creditor-claim notices for personal guarantors to PRC International Hotels: Kanaka Subbu Ganapathy, Senthil Kumar",
+      "summary": "NCLT-appointed resolution professional invited creditor claims against personal guarantors Mr. Kanaka Subbu Ganapathy and Mr. Senthil Kumar (both guarantors to M/s. PRC International Hotels Private Limited) under the Insolvency and Bankruptcy Code.",
+      "page_number": 12,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Eyemyeye Private Limited: Form-G invitation for expression of interest in eyewear business",
+      "summary": "[[Eyemyeye Private Limited]], a corporate debtor engaged in the eyewear business at Gurugram, Haryana, invited expressions of interest for its resolution plan under Section 25(2)(h) of the Insolvency and Bankruptcy Code.",
+      "page_number": 12,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Jet Airways (India) Limited: public announcement for e-auction of assets",
+      "summary": "[[Jet Airways (India) Limited]] (in liquidation) issued a public announcement inviting e-auction bids for engineering consumables inventory and IT inventory located in Mumbai and Delhi under the liquidation process.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Nakoda Limited: e-auction of assets and invitation for expression of interest",
+      "summary": "[[Nakoda Limited]] (in liquidation) issued notices for an e-auction of assets (plant, land and building at Surat) and a separate invitation for expression of interest for assignment of not readily realisable assets.",
+      "page_number": 14,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "European Projects & Aviation Limited: Schedule II Form B public announcement to stakeholders",
+      "summary": "[[European Projects & Aviation Limited]] (corporate debtor under liquidation) issued a public announcement calling on stakeholders to submit their claims to the liquidator by September 21, 2026.",
+      "page_number": 15,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "Meenakshi India Limited: notice to shareholders",
+      "summary": "[[Meenakshi India Limited]] issued a notice listing folio numbers, names and share quantities of shareholders as part of a company disclosure/verification exercise.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Regulatory",
+      "headline": "BSE Limited: public notice of compulsory delisting of Atcom Technologies and Ridings Consulting Engineers India",
+      "summary": "[[BSE Limited]] issued a public notice compulsorily delisting [[Atcom Technologies Ltd]] and [[Ridings Consulting Engineers India Ltd]] effective August 31, 2026, for prolonged non-compliance, directing their promoters to provide an exit option to public shareholders at fair value.",
+      "page_number": 18,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "Sector",
+      "headline": "Technology service firms set to gain as MDR returns to UPI",
+      "summary": "Banks and payment apps may split the merchant discount rate (MDR) on UPI transactions, with technology service providers (TSPs) building UPI switches, card platforms and payment apps set to benefit first from an influx of enquiries from banks and NBFCs launching third-party application provider (TPAP) apps.",
+      "page_number": 18,
+      "industry": "Fintech/Payments",
+      "importance": 3
+    },
+    {
+      "section": "Sector",
+      "headline": "From Maggi noodles to Thums Up: How India became dependent on cheap packaged food",
+      "summary": "India's packaged food market grew to $137.25 billion in 2026 from $129.18 billion in 2025 and is projected to reach $238.83 billion by 2034, even as over 101 million Indians live with diabetes and another 136 million are prediabetic; the FSSAI has proposed tougher front-of-pack health-warning labels amid industry pushback.",
+      "page_number": 18,
+      "industry": "Packaged Food/FMCG",
+      "importance": 3
+    },
+    {
+      "section": "Sector",
+      "headline": "Freight corridors, logistics parks could save ₹7L cr: IIM Mumbai",
+      "summary": "An IIM Mumbai study found Dedicated Freight Corridors (DFCs) and multi-modal logistics parks (MMLPs) could cut India's logistics cost by nearly ₹7 lakh crore annually and create close to 10 million jobs, requiring deployment of around 11.5 million additional logistics professionals by 2030.",
+      "page_number": 18,
+      "industry": "Logistics/Freight",
+      "importance": 2
+    },
+    {
+      "section": "Sector",
+      "headline": "AI can cut banks' cost-to-serve 20-30%: BCG",
+      "summary": "A Boston Consulting Group report, \"Balance: Thriving in the Age of AI,\" found AI could help banks reduce cost-to-serve by 20-30% as lenders increasingly deploy the technology across underwriting, collections and customer servicing, with 80% of surveyed CXOs expecting significant investment-return improvements over the next year.",
+      "page_number": 6,
+      "industry": "Banking/AI",
+      "importance": 2
+    },
+    {
+      "section": "Sector",
+      "headline": "Captive, commercial coal output set to top 228 MT",
+      "summary": "Coal production from captive and commercial mines is expected to cross 228 million tonnes in FY26-27, aided by nine new mines with a combined peak-rated capacity of 20.67 MT, as captive mine output continued despite the monsoon.",
+      "page_number": 3,
+      "industry": "Coal Mining",
+      "importance": 2
+    },
+    {
+      "section": "Sector",
+      "headline": "Agri trade by FPOs rises on NCDEX",
+      "summary": "Agricultural trade by farmer producer organisations (FPOs) has risen sharply on commodity bourse NCDEX in the current fiscal year, with 75 FPOs having traded 0.15 million tonne of agricultural commodities valued at ₹57 crore in the first five months.",
+      "page_number": 3,
+      "industry": "Agri Commodities",
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Banks can't do it all; plenty left for fintechs, says Bansal",
+      "summary": "Sachin Bansal, founder and executive chairman of [[Navi Group]] and co-founder of [[Flipkart]], said at the Global Fintech Fest that banks cannot address every customer need and much of what's next in India's digital-public-infrastructure-driven fintech sector will be built by new companies.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "UPI could be used as GST proxy for lending: SBI MD",
+      "summary": "[[State Bank of India]] managing director Ashwini Tewari said UPI transaction data could serve as an alternative to GST records for assessing sales and cash flows of small, informal businesses, with SBI developing a UPI-based solution to use transaction data as a proxy for sales.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Payments banks seek flexibility in pricing: Easwaran",
+      "summary": "[[Jio Payments Bank]] managing director and CEO Vinod Easwaran said the payments bank industry seeks greater flexibility in pricing certain services to offset the rise in operating costs, adding that pricing caps for products like Aadhaar-enabled Payment System (AePS) have remained largely unchanged even as the cost of doing business has risen.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "TAM India seeks licence to return to TV ratings",
+      "summary": "[[TAM India]] has applied to the Ministry of Information & Broadcasting for a licence to operate as an audience-measurement agency under the new Television Ratings Policy, 2026, potentially paving the way for a second TV ratings provider after it exited the space over a decade ago.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "SML Mahindra expects margin recovery by Q4",
+      "summary": "[[SML Mahindra]] expects its operating margins to recover by the fourth quarter of the current fiscal year, supported by further price hikes and cost-control measures even as higher input and employee costs weigh on profitability in Q1.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "Colgate plans $1-bn personal care brands divestment",
+      "summary": "[[Colgate-Palmolive]] is exploring a sale of certain mass-market personal care brands, including Softsoap, Irish Spring and Speed Stick, that together could fetch over $1 billion, working with [[Goldman Sachs]] on the process.",
+      "page_number": 7,
+      "importance": 3
+    },
+    {
+      "section": "Announcements",
+      "headline": "BMW to hike prices, 4th time this year",
+      "summary": "[[BMW Group India]] is considering another vehicle price increase next month as the luxury carmaker faces continued pressure from a weakening rupee and rising commodity costs, having already raised prices three times this calendar year by about 7% cumulatively.",
+      "page_number": 5,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "'Sovereign AI now applies to both nations & businesses'",
+      "summary": "Ganesh Gopalan, co-founder and CEO of [[Gnani AI]], said in an interview that enterprise AI companies will train on their own data and hand their \"secret sauce\" to foreign AI companies via cloud dependence; Gnani AI just closed a $14.19-million Series B and plans another large external round, while building sovereign-focused Indic models including a 30-billion-parameter text model, Evon.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Announcements",
+      "headline": "FM: Need stronger guardrails against agentic AI threats",
+      "summary": "Finance Minister Nirmala Sitharaman said at the 7th Global Fintech Fest in Mumbai that rapid adoption of agentic AI, tokenisation and quantum computing could create new systemic risks that outpace safeguards, calling for stronger accountability, oversight and institutional preparedness while cautioning against blocking innovation out of fear.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "Appointments",
+      "headline": "KPMG flagged gaps in Coforge board review",
+      "summary": "[[Coforge]]'s internal governance review by KPMG found the evaluation findings behind former non-executive chairman OP Bhatt's lowest board rating were not disclosed to the full board or its Nomination and Remuneration Committee, and were shared only with the board chairman and NRC chair. Bhatt resigned as chairman on September 8 after his reappointment as an independent director failed to secure the required 75% shareholder approval, and a second independent director at Coforge — nominated by Advent International, the company's largest investor — also resigned this week, citing differences between independent and executive directors.",
+      "page_number": 4,
+      "importance": 3
+    },
+    {
+      "section": "Appointments",
+      "headline": "Hotel body HRAWI elects Nirav Gandhi as president",
+      "summary": "The Hotel and Restaurant Association (Western India) elected Nirav Gandhi, director of the Express Group of Hotels and Resorts, Gujarat, as its president.",
+      "page_number": 5,
+      "importance": 1
+    },
+    {
+      "section": "Events",
+      "headline": "NTPC turns to sodium-ion storage, invites global bids",
+      "summary": "[[NTPC]] invited global expressions of interest to develop and install a grid-connected sodium-ion battery energy storage system, aiming to evaluate alternatives to lithium-ion batteries for its renewable-energy capacity and storage requirements, with bid submission due October 15.",
+      "page_number": 3,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Nabard unveils new experience centre in Mumbai",
+      "summary": "The National Bank for Agriculture and Rural Development ([[Nabard]]) unveiled a new experience centre at its head office in Mumbai.",
+      "page_number": 3,
+      "importance": 1
+    },
+    {
+      "section": "Events",
+      "headline": "Tata Steel scales up AI, workforce to boost safety",
+      "summary": "[[Tata Steel]] is scaling up AI, connected workforce systems and remote operations to make its industrial sites more predictive, already using over 10,000 CCTV cameras and AI-enabled surveillance to identify unsafe behaviour.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Pocket FM posts revenue run rate of $500 mn",
+      "summary": "[[Pocket FM]], the parent entertainment platform of audio-fiction app Pocket FM and micro-drama app Pocket Saga, has crossed $500 million in Annual Revenue Run Rate (ARR), registering 70% year-on-year growth.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Flipkart Minutes posts 4x growth",
+      "summary": "[[Flipkart]]'s quick-commerce platform Minutes has grown four times year-on-year as it completes two years of operations, with its network expanding to nearly 1,200 micro fulfilment centres across more than 150 cities; GenZ now accounts for over 45% of orders.",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "IIT, Nvidia tie up for AI models",
+      "summary": "Bodhan AI, an IIT Madras-incubated Centre of Excellence for Education, announced a suite of open foundational AI models for Indic languages developed in collaboration with [[Nvidia]].",
+      "page_number": 4,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Mercedes beefs up its luxury SUV portfolio with GLC EV",
+      "summary": "[[Mercedes-Benz India]] is launching the electric-version GLC EV, priced around ₹80-85 lakh, with bookings opening in October and deliveries expected by the end of the year, targeting a record 50% EV penetration in its GLC lineup.",
+      "page_number": 5,
+      "importance": 2
+    },
+    {
+      "section": "Events",
+      "headline": "Glenmark's allergic nasal spray launched in Brazil",
+      "summary": "[[Glenmark Pharmaceuticals]]' wholly-owned subsidiary Glenmark Specialty launched Ryaltris nasal spray in Brazil.",
+      "page_number": 5,
+      "importance": 1
+    },
+    {
+      "section": "Events",
+      "headline": "Premier Energies ties up with RCT India to form JV",
+      "summary": "[[Premier Energies]] signed an agreement with RCT India to explore a joint venture to establish a 12 GWh battery energy storage system manufacturing facility in Telangana.",
+      "page_number": 5,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Marco Secure Solutions Limited: public announcement of DRHP filing for IPO",
+      "summary": "[[Marco Secure Solutions Limited]] filed a Draft Red Herring Prospectus with SME platforms for an initial public offer of up to 33,74,000 equity shares of face value ₹10 each.",
+      "page_number": 12,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "IPO",
+      "headline": "German Green Steel and Power Limited: Addendum II to DRHP, notice to investors",
+      "summary": "[[German Green Steel and Power Limited]] filed Addendum II to its Draft Red Herring Prospectus reducing the fresh issue size by up to 50%, following Sebi's approval, ahead of its planned IPO of equity shares plus an offer for sale by promoters.",
+      "page_number": 11,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "IPO",
+      "headline": "Rayzon Solar Limited: public announcement cum addendum to DRHP",
+      "summary": "[[Rayzon Solar Limited]] issued a public announcement-cum-addendum to its Draft Red Herring Prospectus for an IPO of up to ₹7,500 million in fresh equity shares.",
+      "page_number": 13,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "IPO",
+      "headline": "Patil Automation Limited: advertisement on variation of IPO proceeds utilisation",
+      "summary": "[[Patil Automation Limited]] proposed to reallocate unutilised IPO proceeds of ₹9.16 crore from a planned manufacturing facility towards funding working-capital requirements, subject to shareholder approval via postal ballot/e-voting.",
+      "page_number": 15,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "IPO",
+      "headline": "Kshitij Polyline Limited: rights issue basis of allotment finalised",
+      "summary": "[[Kshitij Polyline Limited]] finalised the basis of allotment for its rights issue of up to 61,97,950 fully paid-up equity shares at ₹2 each (including ₹1.17 premium), aggregating ₹1,155.83 lakh, offered in a 2:9 ratio to existing shareholders.",
+      "page_number": 16,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "IPO",
+      "headline": "Ratnaveer Precision Engineering Limited: rights issue basis of allotment finalised",
+      "summary": "[[Ratnaveer Precision Engineering Limited]] finalised the basis of allotment for its rights issue of up to 1,24,99,669 fully paid-up equity shares at ₹264 per share, in a ratio of 7 rights shares for every 40 shares held.",
+      "page_number": 16,
+      "is_notice": true,
+      "importance": 1
+    },
+    {
+      "section": "IPO",
+      "headline": "Rentomojo, 4 others see strong demand in IPO bidding",
+      "summary": "[[Rentomojo]]'s IPO was subscribed 72.88 times on the final day of bidding, while four other IPOs — [[LCC Projects]], [[Karamtara Engineering]], [[Steamhouse India]] and [[Manipal Payment and Identity Solutions]] — were also fully subscribed; [[Manika Plastech]]'s IPO was subscribed 1.42 times and [[Veegaland Developers]]' IPO 1.15 times.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Arcil's IPO subscribed 20 times; institutional buyers lead demand",
+      "summary": "[[Asset Reconstruction Company (India) Limited]]'s (Arcil) ₹733-crore IPO was subscribed 20.10 times on the final day of bidding, with QIBs bidding 52.65 times their quota, while non-institutional and retail investors subscribed 15.69 times and 3.39 times, respectively.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "IPO",
+      "headline": "Mann Fleet Partners gets Sebi nod to raise funds via IPO",
+      "summary": "Chauffeured car rental services provider [[Mann Fleet Partners]] secured Sebi's approval to raise funds through an IPO comprising a fresh issue of over 6 million shares and an offer for sale of 1.9 million shares.",
+      "page_number": 6,
+      "importance": 2
+    },
+    {
+      "section": "IPO",
+      "headline": "Intel-backed Altera plans to file for IPO this year",
+      "summary": "[[Altera]], a chipmaker backed by Silver Lake and [[Intel]], is preparing to confidentially file for an initial public offering that could occur as soon as this year.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "Market",
+      "headline": "10-yr yield crosses 7% as crude rises",
+      "summary": "Indian government bonds plunged in early trade on Friday, with the benchmark 10-year yield topping 7% for the first time in more than three months as rising oil prices and US yields drove investors to sell; the benchmark 6.94% 2036 bond yield hit 7.0226%, its highest in more than three months.",
+      "page_number": 6,
+      "importance": 3
+    },
+    {
+      "section": "Trade",
+      "headline": "PM calls for stronger BRICS trade ties and secure seas",
+      "summary": "Prime Minister Narendra Modi told the BRICS Business Forum that global trade can advance only if navigation and seafarers' safety are secured, urging the grouping to identify and remove 10 trade barriers, scale 100 BRICS startups into unicorns, and build 1,000 new business partnerships every year.",
+      "page_number": 1,
+      "importance": 3
+    },
+    {
+      "section": "Trade",
+      "headline": "BRICS should link payment systems: Goyal",
+      "summary": "Commerce and Industry Minister Piyush Goyal called on BRICS countries to link their payment systems, expand trade in national currencies and open markets to each other, saying UPI is now used in more than 11 countries and BRICS exports have risen from about $900 billion in 2003 to $6 trillion in 2024.",
+      "page_number": 2,
+      "importance": 3
+    },
+    {
+      "section": "Trade",
+      "headline": "Russia, Iran seek bigger BRICS financing to counter sanctions",
+      "summary": "Russia and Iran called for strengthening BRICS financial and trade mechanisms, including an expanded role for the New Development Bank and greater use of local currencies, with Iranian President Masoud Pezeshkian proposing a BRICS joint reinsurance company backed by an initial capital of $10 billion.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Vance asks voters to stick with GOP",
+      "summary": "US Vice President JD Vance urged voters to stick with the Republican Party ahead of the 2028 presidential race even as he continues to nod to economic unease while branding Democrats as \"crazies,\" speaking at an event marking the one-year anniversary of conservative activist Charlie Kirk's assassination.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "UBS buys $7.9-bn Credit Suisse debt in biggest buyback",
+      "summary": "[[UBS Group]] is buying back $7.9 billion of old Credit Suisse bonds, its biggest debt-load move yet since taking over its crosstown rival, in the largest such buyback so far.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "France's budget deficit to top 5% of GDP this year",
+      "summary": "French Finance Minister Roland Lescure said the country's budget deficit will be over 5% of gross domestic product this year.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Moonshot AI eyes $2-bn annualised sales in 2026",
+      "summary": "[[Moonshot AI]] is targeting a manifold jump in annualised revenue to $2 billion by the end of the year, off the breakout success of its Kimi K3 model, aiming to dial up the heat on rivals including Anthropic.",
+      "page_number": 7,
+      "importance": 2
+    },
+    {
+      "section": "International News",
+      "headline": "Sberbank sees digital currencies as next step in trade settlements",
+      "summary": "[[Sberbank]], Russia's biggest lender, said digital currencies are playing a bigger role in India-Russia trade settlements as it expands its business ecosystem in India, with CEO Herman Gref saying the bank plans a 24,000-square-metre business centre in New Delhi to house its headquarters and serve as a hub for major Russian companies operating in India.",
+      "page_number": 2,
+      "importance": 2
+    },
+    {
+      "section": "Others",
+      "headline": "A knock at democracy's door",
+      "summary": "Badri Narayan, Vice Chancellor of the Tata Institute of Social Sciences, argues Gen Z-led protest movements rely heavily on pre-political forms of dissent — laughter, parody, satire, memes — that spread awareness but may not translate into a long-term organised movement given their scattered, dispersed nature across regions.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Securing our skies on our terms",
+      "summary": "Rameesh Kailasam, CEO of Indiatoi.org, argues India needs a formidable network of aerospace tech champions matching global standards while keeping intellectual and physical capital anchored at home, warning that shortcuts via conventional buy/license models will keep India's defence-technology ecosystem dependent on foreign partners.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "A logistical imperative",
+      "summary": "An editorial argues the Dedicated Freight Corridor must expand into a national grid and become a profit centre for Railways, noting only 4% of India's freight network carries the DFC's potential despite freight traffic on it growing 15% in under four years.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Some think AI might end us. Why race ahead?",
+      "summary": "Bloomberg's Parmy Olson writes on the contradiction of AI labs like Anthropic warning that superintelligent AI could threaten humanity while continuing to race toward building more powerful models, citing a resigned Anthropic researcher's warning that reckless commercial pressure could make AI harder to monitor.",
+      "page_number": 8,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Ladakhi lunch, Himalayan punch",
+      "summary": "A travel feature visits Pit Stop Kharu, a women-led vegetarian diner near Leh run by a local self-help group under Royal Enfield's Social Mission, reviewing local Ladakhi dishes alongside a ride on the Royal Enfield Himalayan 450.",
+      "page_number": 9,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "Grab the credit cards that have the best offers this festive season",
+      "summary": "A personal-finance roundup compares festive-season credit card cashback offers, highlighting cards from HSBC, Flipkart Axis Bank, Federal Bank-Paisabazaar, YES Bank, Cashback SBI, HDFC and Amazon Pay ICICI, advising readers to check caps, annual fees and category-specific cashback rates before choosing a card.",
+      "page_number": 9,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "File revised ITR if you have omitted late dividends",
+      "summary": "A tax Q&A column advises a reader who received FY25 bond dividends after filing their original return to file a revised income tax return since dividend income is taxable in the year it is declared, distributed or paid, whichever is earliest.",
+      "page_number": 9,
+      "importance": 1
+    },
+    {
+      "section": "Others",
+      "headline": "What does Baleno have in common with BMW",
+      "summary": "A motoring feature compares the simultaneous India launches of the updated Maruti Suzuki Baleno and the BMW i5 Long Wheelbase, noting luxury-tech features like Level 2 ADAS are trickling down faster than ever into mass-market cars.",
+      "page_number": 9,
+      "importance": 1
+    }
+  ],
+  "stocksInFocus": [
+    { "name": "National Stock Exchange of India", "note": "IPO priced at ₹1,700-1,785/share, offer worth ₹21,494-22,568 crore, opens Sept 17" },
+    { "name": "Coforge", "note": "KPMG board review flags undisclosed gaps in Bhatt's evaluation findings; second director also exits" },
+    { "name": "Flipkart", "note": "Quick-commerce arm Minutes posts 4x YoY growth, network now ~1,200 fulfilment centres" },
+    { "name": "Tata Steel", "note": "Scaling up AI and connected-workforce systems across 10,000+ CCTV-monitored sites" },
+    { "name": "Mercedes-Benz India", "note": "Launching GLC EV at ₹80-85 lakh, bookings open October, targeting 50% EV penetration" },
+    { "name": "BMW India", "note": "Considering fourth price hike of the year on weak rupee, rising commodity costs" },
+    { "name": "Pocket FM", "note": "Crosses $500 million Annual Revenue Run Rate, up 70% YoY" },
+    { "name": "Asset Reconstruction Company (India) Limited", "note": "IPO subscribed 20.1x on final bidding day, QIBs led demand at 52.65x" }
+  ],
+  "topStories": [
+    { "headline": "FM: Need stronger guardrails against agentic AI threats", "section": "Announcements", "note": "Sitharaman at Global Fintech Fest calls for stronger accountability as agentic AI, tokenisation and quantum computing outpace safeguards." },
+    { "headline": "PM calls for stronger BRICS trade ties and secure seas", "section": "Trade" },
+    { "headline": "KPMG flagged gaps in Coforge board review", "section": "Appointments", "note": "Referenced from Coforge governance fallout coverage." },
+    { "headline": "10-yr yield crosses 7% as crude rises", "section": "Market" },
+    { "headline": "Colgate plans $1-bn personal care brands divestment", "section": "Announcements" },
+    { "headline": "Arcil's IPO subscribed 20 times; institutional buyers lead demand", "section": "IPO" },
+    { "headline": "Sebi settles NSEL proceedings against 91 brokers", "section": "Regulatory" },
+    { "headline": "With ban on SRTT, Tata meet takes up routine issues", "section": "Regulatory" },
+    { "headline": "UBS buys $7.9-bn Credit Suisse debt in biggest buyback", "section": "International News" },
+    { "headline": "Technology service firms set to gain as MDR returns to UPI", "section": "Sector" },
+    { "headline": "AI can cut banks' cost-to-serve 20-30%: BCG", "section": "Sector" },
+    { "headline": "BRICS should link payment systems: Goyal", "section": "Trade" },
+    { "headline": "Flipkart Minutes posts 4x growth", "section": "Events" }
+  ],
+  "marketImpact": [
+    { "headline": "10-yr yield crosses 7% as crude rises", "section": "Market", "note": "Benchmark bond yield hits highest in over three months on oil price surge and US yield moves." },
+    { "headline": "UBS buys $7.9-bn Credit Suisse debt in biggest buyback", "section": "International News" },
+    { "headline": "Colgate plans $1-bn personal care brands divestment", "section": "Announcements" },
+    { "headline": "BMW to hike prices, 4th time this year", "section": "Announcements" },
+    { "headline": "Arcil's IPO subscribed 20 times; institutional buyers lead demand", "section": "IPO" }
+  ]
+}
