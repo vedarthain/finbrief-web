@@ -723,7 +723,7 @@ export default function PaperTree({
 
       {/* ── Right: headline list (left column) + description panel (right column) ── */}
       <div className="w-full flex-1 min-w-0 flex flex-col lg:flex-row gap-3 items-stretch lg:items-start">
-        <div className="w-full lg:w-[400px] shrink-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
+        <div className="w-full lg:w-[520px] shrink-0 rounded-lg bg-white border border-gray-200 divide-y divide-gray-100">
           {searchActive ? (
             <div className="flex items-center gap-1.5 px-4 py-2 border-b border-gray-100">
               <span className="text-[12px] font-semibold tracking-wide uppercase text-gray-700">
