@@ -15,13 +15,21 @@ PDF lives in `~/Documents/epapers/`. Ask the user for the exact filename/date/ed
 
 **Cross-edition dedup:** if two different newspapers cover the same underlying event on the same date (e.g. both report the same GDP print or the same company's results), do not publish it as two separate stories under two editions. Pick the more complete/better-written version as the single published story, and only keep both if they add genuinely distinct facts (in which case merge them into one story per the dedup rule in §3a, same as within-paper dedup). The goal is one story per real-world event across the whole day's paper set, not one per source.
 
-## 2. Read the PDF — mind the page offset
+## 2. Read the PDF — mind the page offset, and chunk first if it's large
 
 The `Read` tool's internal PDF page index is **NOT** the same as the printed page number.
 
 - **Internal page index = printed page number + 2** (confirmed empirically: internal page 7 = printed page 5, internal page 12 = printed page 10, etc.)
 - Printed pages typically run 1–22 even though the PDF has ~24 internal pages (front/back matter accounts for the offset).
 - If unsure, spot-check by reading a single internal page and looking for the printed page number visible in the page footer/header before committing to a page-range read.
+
+**Always chunk before reading, don't wait for a 100MB error.** Any day's source PDF can be large enough to blow past the `Read` tool's 100MB text-extraction ceiling, and even well under that ceiling, feeding full-resolution page renders into the conversation burns context fast enough to trigger mid-task compaction (lost several hundred KB of narration this way on 2026-09-12 before this step was formalized). So treat chunking as step zero, not a fallback:
+
+1. Run `bash .claude/skills/publish-epaper/chunk_pdf.sh <input.pdf> <output_dir>` (defaults to an 8MB-per-chunk target — do not override this down; 5MB caused excessive single-page fallback chunks on a prior run). This uses `pdfseparate`/`pdfunite` to group consecutive pages into merged chunk PDFs under the target size. When a single page alone exceeds the target (common for dense scanned legal-notice pages), the script cannot split within a page, so it rasterizes that page to a compressed JPEG instead (via `pdftocairo -jpeg -r 100 -jpegopt quality=70`) rather than emitting an oversized PDF — the `Read` tool handles that JPEG as a normal image.
+2. Read `<output_dir>/manifest.txt` first — it lists every chunk file with its page range and size (`chunk-01.pdf: pages 1-4 (4.9M)`, or `chunk-05-1.jpg: pages 13-13 (620K, rasterized)`). This is what tells you which files exist and what printed-page range each covers (apply the offset above to translate the manifest's page numbers, which are internal-PDF-index, to printed pages) — always read the manifest before reading any chunk, don't guess filenames.
+3. Read chunk files from `<output_dir>` in manifest order — never re-read the original oversized source PDF directly.
+4. Before extracting a legal/regulatory-notice-heavy chunk, check whether it's genuinely one story repeated across pages (e.g. a single bank's multi-page branch-address auction notice) rather than assuming every chunk maps to a distinct set of stories — collapse those into one `is_notice: true` entry per §3c rather than one per page.
+5. If `pdftotext -layout <page.pdf> <page.txt>` on a chunked page yields only a handful of lines (just header/footer, no body text), that page has no text layer — it's a pure scan. Fall back to `Read`-ing that page's PDF or the manifest's rasterized JPEG directly rather than trusting the near-empty `.txt` file.
 
 ## 3. Extract comprehensively
 
