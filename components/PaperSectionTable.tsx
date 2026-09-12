@@ -15,7 +15,7 @@ export interface TableRow {
   importance?: number;
 }
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 25;
 
 function EditionBadge({ edition }: { edition: string }) {
   const isBS = edition === "Business Standard";
